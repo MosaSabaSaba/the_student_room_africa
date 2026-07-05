@@ -1,0 +1,33 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif; display: inline-block; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 40" width="220" height="40">
+
+    <path d="M 12,8 C 7,12 7,28 12,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+    <g font-family="Times New Roman, serif" font-size="14" fill="#ffffff" text-anchor="middle">
+        <text x="24" y="18">1</text>
+        <text x="44" y="18">0</text>
+        <text x="24" y="33">0</text>
+        <text x="44" y="33">1</text>
+    </g>
+    <path d="M 56,8 C 61,12 61,28 56,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+
+    <!-- Second Matrix: Vector [x, y] (2x1) -->
+    <path d="M 72,8 C 67,12 67,28 72,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+    <g font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#ffffff" text-anchor="middle">
+        <text x="84" y="18">x</text>
+        <text x="84" y="33">y</text>
+    </g>
+    <path d="M 96,8 C 101,12 101,28 96,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+
+    <!-- Equals Sign -->
+    <text x="114" y="24" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" text-anchor="middle">=</text>
+
+    <!-- Third Matrix: Result Vector [x, y] (2x1) -->
+    <path d="M 142,8 C 137,12 137,28 142,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+    <g font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#ffffff" text-anchor="middle">
+        <text x="154" y="18">x</text>
+        <text x="154" y="33">y</text>
+    </g>
+    <path d="M 166,8 C 171,12 171,28 166,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+
+    <!-- Period/Full Stop -->
+    <text x="174" y="24" font-family="Times New Roman, serif" font-size="14" fill="#ffffff">.</text>
+</svg>

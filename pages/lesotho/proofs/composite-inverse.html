@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proof of Inverse Of Composites - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="#" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="#">Question Bank <span class="chevron">▾</span></a>
+        <a href="#">Answers <span class="chevron">▾</span></a>
+        <a href="#">Worked Solutions <span class="chevron">▾</span></a>
+        <a href="#">Contact <span class="chevron">▾</span></a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="#">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Functions</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li class="active"><a href="../lesotho/functions.html">Functions</a></li>
+            
+            <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li>
+        </ul> 
+        
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="functions">
+            <h1 id="functions">Functions</h1>
+            
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#functions">Functions</a></li>
+                    <li><a href="#types-of-relations">Types of Relations</a></li>
+                    <li><a href="#what-is-a-function">What is a Function?</a></li>
+                    <li><a href="#function-notation">Function Notation</a></li>
+                    <li><a href="#linear-functions">Linear Functions</a></li>
+                    <li><a href="#evaluating-functions">Evaluating Functions</a></li>
+                    <li><a href="#graphs-of-linear-functions">Graphs of Linear Functions</a></li>
+                    <li><a href="#finding-the-function-from-a-graph">Finding the Function from a Graph</a></li>
+                    <li><a href="#domain-and-range">Domain and Range</a></li>
+                    <li><a href="#inverse-functions">Inverse Functions</a></li>
+                    <li><a href="#composite-functions">Composite Functions</a></li>
+                    <li><a href="#inverse-of-composite-functions">Inverse of a Composite Function</a></li>
+                    <li><a href="#summary-table">Summary Table</a></li>
+                </ul>
+            </div>
+
+            <!-- INVERESES OF COMPOSITE FUNCTIONS -->
+            <div class="inverse-of-composite-functions">
+                
+
+
+
+
+
+
+
+
+
+
+
+                <h3 style="color: #00ffcc; margin-top: 2rem;">Composite of Inverses vs Inverse of Composite</h3>
+
+                <p>
+                    In this section, we are focusing on the inverse of the composite function 
+                    <strong>g(f(x))</strong> that is, <strong>[g(f(x))]⁻¹</strong>.
+                </p>
+
+                <p>
+                    Recall from earlier that:
+                </p>
+                <p style="padding-left: 20px;">
+                    <strong>g(f(x))</strong> means: apply <strong>f</strong> first, then apply <strong>g</strong> to the result.
+                </p>
+
+                <p>
+                    Now we want to answer a specific question:
+                </p>
+                <p style="padding-left: 20px; background-color: rgba(0, 255, 204, 0.1); padding: 1rem; border-radius: 8px;">
+                    <strong>Question:</strong> When finding the inverse of <strong>g(f(x))</strong>, do we apply the inverses 
+                    <strong>in the same order</strong> as the original functions (<strong>g⁻¹ ∘ f⁻¹</strong>), 
+                    or <strong>in reverse order</strong> (<strong>f⁻¹ ∘ g⁻¹</strong>)?
+                </p>
+
+                <p>
+                    Let us investigate this question using the same functions we have been working with:
+                </p>
+                <p style="padding-left: 20px;">
+                    f(x) = 2x + 1 &nbsp;&nbsp; (adds 1, then multiplies by 2)<br>
+                    g(x) = 3x - 2 &nbsp;&nbsp; (multiplies by 3, then subtracts 2)
+                </p>
+
+                <p>
+                    From <a href="#inverse-functions">earlier</a>, we already found the inverses of these functions:
+                </p>
+                <div style="padding-left: 20px;">
+                    <svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://w3.org">
+                        <text x="0" y="35" fill="white" font-style="italic" font-size="18">f⁻¹(x) =</text>
+                        <text x="70" y="22" fill="white" font-size="18">x - 1</text>
+                        <line x1="65" y1="30" x2="115" y2="30" stroke="white" stroke-width="2"></line>
+                        <text x="85" y="52" fill="white" font-size="18">2</text>
+                    </svg>
+                    <p style="margin-left: 20px; font-size: 14px; color: #aaaaaa;">(undoes: divides by 2, then subtracts 1?) Wait, no — f⁻¹ subtracts 1 first, then divides by 2</p>
+                </div>
+                <div style="padding-left: 20px;">
+                    <svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://w3.org">
+                        <text x="0" y="35" fill="white" font-style="italic" font-size="18">g⁻¹(x) =</text>
+                        <text x="70" y="22" fill="white" font-size="18">x + 2</text>
+                        <line x1="65" y1="30" x2="115" y2="30" stroke="white" stroke-width="2"></line>
+                        <text x="85" y="52" fill="white" font-size="18">3</text>
+                    </svg>
+                    <p style="margin-left: 20px; font-size: 14px; color: #aaaaaa;">(undoes: adds 2, then divides by 3)</p>
+                </div>
+
+                <p>
+                    <strong>What we want to find out:</strong>
+                </p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>Option A:</strong> Apply the inverses in the <strong>same order</strong> as the original functions → <span style="color: #ff8888;">g⁻¹ ∘ f⁻¹</span></li>
+                    <li><strong>Option B:</strong> Apply the inverses in the <strong>reverse order</strong> → <span style="color: #00ffcc;">f⁻¹ ∘ g⁻¹</span></li>
+                </ul>
+
+                <p>Let us calculate both options and see which one matches the inverse of the composite we found <a href="#inverse-of-composite-functions">earlier</a>.</p>
+
+                <p><strong>Step 1: Try Option A (same order) → g⁻¹ ∘ f⁻¹</strong></p>
+                <p style="padding-left: 20px;">
+                    (g⁻¹ ∘ f⁻¹)(x) means: apply f⁻¹ first, then apply g⁻¹ to the result.
+                </p>
+                <p style="padding-left: 20px;">
+                    (g⁻¹ ∘ f⁻¹)(x) = g⁻¹(f⁻¹(x)) = g⁻¹(<sup>(x - 1)</sup>&frasl;<sub>2</sub>)
+                </p>
+                <div style="padding-left: 20px;">
+                    <svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://w3.org">
+                        <text x="0" y="45" fill="white" font-style="italic" font-size="18">=</text>
+                        <text x="30" y="30" fill="white" font-size="18">(x - 1)</text>
+                        <line x1="25" y1="38" x2="80" y2="38" stroke="white" stroke-width="2"></line>
+                        <text x="50" y="60" fill="white" font-size="18">2</text>
+                        <text x="95" y="45" fill="white" font-size="18">+ 2</text>
+                        <line x1="115" y1="38" x2="170" y2="38" stroke="white" stroke-width="2"></line>
+                        <text x="140" y="60" fill="white" font-size="18">3</text>
+                    </svg>
+                </div>
+                <div style="padding-left: 20px;">
+                    <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://w3.org">
+                        <text x="0" y="35" fill="white" font-style="italic" font-size="18">=</text>
+                        <text x="25" y="22" fill="white" font-size="18">(x - 1 + 4)</text>
+                        <line x1="20" y1="30" x2="115" y2="30" stroke="white" stroke-width="2"></line>
+                        <text x="45" y="52" fill="white" font-size="18">2</text>
+                        <text x="125" y="35" fill="white" font-size="18">=</text>
+                        <text x="145" y="22" fill="white" font-size="18">(x + 3)</text>
+                        <line x1="140" y1="30" x2="190" y2="30" stroke="white" stroke-width="2"></line>
+                        <text x="160" y="52" fill="white" font-size="18">2</text>
+                        <line x1="200" y1="30" x2="240" y2="30" stroke="white" stroke-width="2"></line>
+                        <text x="215" y="52" fill="white" font-size="18">3</text>
+                    </svg>
+                </div>
+                <div style="padding-left: 20px;">
+                    <svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://w3.org">
+                        <text x="0" y="35" fill="white" font-style="italic" font-size="18">=</text>
+                        <text x="25" y="22" fill="#ff8888" font-size="18">x + 3</text>
+                        <line x1="20" y1="30" x2="80" y2="30" stroke="#ff8888" stroke-width="2"></line>
+                        <text x="45" y="52" fill="#ff8888" font-size="18">6</text>
+                    </svg>
+                </div>
+
+                <p><strong>Step 2: Try Option B (reverse order) → f⁻¹ ∘ g⁻¹</strong></p>
+                <p style="padding-left: 20px;">
+                    (f⁻¹ ∘ g⁻¹)(x) means: apply g⁻¹ first, then apply f⁻¹ to the result.
+                </p>
+                <p style="padding-left: 20px;">
+                    (f⁻¹ ∘ g⁻¹)(x) = f⁻¹(g⁻¹(x)) = f⁻¹(<sup>(x + 2)</sup>&frasl;<sub>3</sub>)
+                </p>
+                <div style="padding-left: 20px;">
+                    <svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://w3.org">
+                        <text x="0" y="45" fill="white" font-style="italic" font-size="18">=</text>
+                        <text x="30" y="30" fill="white" font-size="18">(x + 2)</text>
+                        <line x1="25" y1="38" x2="80" y2="38" stroke="white" stroke-width="2"></line>
+                        <text x="50" y="60" fill="white" font-size="18">3</text>
+                        <text x="95" y="45" fill="white" font-size="18">- 1</text>
+                        <line x1="115" y1="38" x2="170" y2="38" stroke="white" stroke-width="2"></line>
+                        <text x="140" y="60" fill="white" font-size="18">2</text>
+                    </svg>
+                </div>
+                <div style="padding-left: 20px;">
+                    <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://w3.org">
+                        <text x="0" y="35" fill="white" font-style="italic" font-size="18">=</text>
+                        <text x="25" y="22" fill="white" font-size="18">(x + 2 - 3)</text>
+                        <line x1="20" y1="30" x2="115" y2="30" stroke="white" stroke-width="2"></line>
+                        <text x="45" y="52" fill="white" font-size="18">3</text>
+                        <line x1="125" y1="30" x2="170" y2="30" stroke="white" stroke-width="2"></line>
+                        <text x="145" y="52" fill="white" font-size="18">2</text>
+                    </svg>
+                </div>
+                <div style="padding-left: 20px;">
+                    <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://w3.org">
+                        <text x="0" y="35" fill="white" font-style="italic" font-size="18">=</text>
+                        <text x="25" y="22" fill="white" font-size="18">(x - 1)</text>
+                        <line x1="20" y1="30" x2="85" y2="30" stroke="white" stroke-width="2"></line>
+                        <text x="50" y="52" fill="white" font-size="18">3</text>
+                        <line x1="95" y1="30" x2="140" y2="30" stroke="white" stroke-width="2"></line>
+                        <text x="115" y="52" fill="white" font-size="18">2</text>
+                    </svg>
+                </div>
+                <div style="padding-left: 20px;">
+                    <svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://w3.org">
+                        <text x="0" y="35" fill="white" font-style="italic" font-size="18">=</text>
+                        <text x="25" y="22" fill="#00ffcc" font-size="18">x - 1</text>
+                        <line x1="20" y1="30" x2="85" y2="30" stroke="#00ffcc" stroke-width="2"></line>
+                        <text x="50" y="52" fill="#00ffcc" font-size="18">6</text>
+                    </svg>
+                </div>
+
+                <p><strong>Step 3: Recall the inverse of the composite function we found <a href="#inverse-of-composite-functions">earlier</a></strong></p>
+                <div style="padding-left: 20px;">
+                    <svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://w3.org">
+                        <text x="0" y="35" fill="white" font-style="italic" font-size="18">[g(f(x))]⁻¹ =</text>
+                        <text x="120" y="22" fill="#00ffcc" font-size="18">x - 1</text>
+                        <line x1="115" y1="30" x2="175" y2="30" stroke="#00ffcc" stroke-width="2"></line>
+                        <text x="140" y="52" fill="#00ffcc" font-size="18">6</text>
+                    </svg>
+                </div>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1.0rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Conclusion — Answering Our Question:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 10px;">• <span style="color: #ff8888;">Option A (same order): g⁻¹ ∘ f⁻¹ = <sup>(x + 3)</sup>&frasl;<sub>6</sub></span></p>
+                    <p style="margin-bottom: 0;">• <span style="color: #00ffcc;">Option B (reverse order): f⁻¹ ∘ g⁻¹ = <sup>(x - 1)</sup>&frasl;<sub>6</sub></span></p>
+                    <p style="margin-bottom: 10px;">• <span style="color: #00ffcc;">The actual inverse [g(f(x))]⁻¹ = <sup>(x - 1)</sup>&frasl;<sub>6</sub></span></p>
+                    <p style="margin-bottom: 0; margin-top: 10px;">Therefore:</p>
+                    <p style="margin-bottom: 0;">• <span style="color: #ff8888;">g⁻¹ ∘ f⁻¹ ≠ [g(f(x))]⁻¹</span> (applying inverses in the same order gives the WRONG result)</p>
+                    <p style="margin-bottom: 0;">• <span style="color: #00ffcc;">f⁻¹ ∘ g⁻¹ = [g(f(x))]⁻¹</span> (applying inverses in reverse order gives the CORRECT result)</p>
+                    <p style="margin-bottom: 0; margin-top: 10px;"><strong>Conclusion: The inverse of a composite function is the composite of the inverses in REVERSE order.</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 10px;">In symbols: <strong>[g(f(x))]⁻¹ = f⁻¹ ∘ g⁻¹</strong></p>
+                </div>
+
+
+
+
+
+
+
+                <!-- SYLLABUS POINT: prove that [g(f(x))]⁻¹ = f⁻¹g⁻¹ -->
+                <h3 style="color: #00ffcc; margin-top: 2rem;">Proving the Inverse Composite Rule</h3>
+
+                <p>Prove that for any two functions f and g, [g(f(x))]⁻¹ = f⁻¹(g⁻¹(x)).</p>
+
+                <p><strong>Proof:</strong></p>
+                <p style="padding-left: 20px;">
+                    Let h(x) = g(f(x)). Then h⁻¹(x) is the inverse of h.
+                </p>
+                <p style="padding-left: 20px;">
+                    By definition of inverse functions: h(h⁻¹(x)) = x and h⁻¹(h(x)) = x.
+                </p>
+                <p style="padding-left: 20px;">
+                    Consider (f⁻¹ ∘ g⁻¹)(g ∘ f)(x):
+                </p>
+                <p style="padding-left: 20px;">
+                    (f⁻¹ ∘ g⁻¹)(g(f(x))) = f⁻¹(g⁻¹(g(f(x)))) = f⁻¹(f(x)) = x
+                </p>
+                <p style="padding-left: 20px;">
+                    Therefore, f⁻¹ ∘ g⁻¹ is the inverse of g ∘ f.
+                </p>
+                <p style="padding-left: 20px;">
+                    Hence, <strong>[g(f(x))]⁻¹ = f⁻¹(g⁻¹(x))</strong>
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1.0rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule for Inverse of Composite:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 10px;">• [f ∘ g]⁻¹ = g⁻¹ ∘ f⁻¹</p>
+                    <p style="margin-bottom: 0;">• The inverse of a composite is the composite of inverses in <strong>reverse order</strong></p>
+                    <p style="margin-bottom: 0;">• This is often remembered as: <em>"The inverse of a composite is the composite of the inverses, but in reverse order."</em></p>
+                </div>
+            </div>
+
+
+
+
+            <!-- SUMMARY TABLE -->
+            <div class="summary-table">
+                <h2 id="summary-table">Summary Table: Functions</h2>
+
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                    <thead>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Concept</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Description</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Function</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Each input has exactly one output</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">f(x) = 2x + 3</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Function Notation</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">f(x) represents the output for input x</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">f(2) = 2(2) + 3 = 7</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Linear Function</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Graph is a straight line: f(x) = mx + c</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">f(x) = 2x - 1</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Gradient (m)</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">How steep the line is: (y₂ - y₁) ÷ (x₂ - x₁)</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">m = (10-2) ÷ (4-0) = 2</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">y-intercept (c)</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Where the line crosses the y-axis</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">At (0, 2), so c = 2</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Vertical Line Test</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">If a vertical line touches the graph more than once, it is not a function</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">A circle fails the vertical line test</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Domain</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Set of all possible input values (x)</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">{x | -3 ≤ x ≤ 3}</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Range</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Set of all possible output values (f(x))</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">{y | -5 ≤ y ≤ 7}</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Inverse Function</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Reverses the operation of the original function</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">f⁻¹(x) = (x - 3)/2</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Composite Function</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Apply one function to the result of another: (f ∘ g)(x) = f(g(x))</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">(f ∘ g)(x) = 2(3x) + 1 = 6x + 1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1.0rem; margin: 1.5rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                <p style="margin-bottom: 0;"><strong>Key Takeaways:</strong></p>
+                <p style="margin-bottom: 0;">• A function gives exactly one output for each input. Use the vertical line test to check.</p>
+                <p style="margin-bottom: 0;">• Function notation f(x) replaces y in an equation.</p>
+                <p style="margin-bottom: 0;">• Linear functions have the form f(x) = mx + c, where m is the gradient and c is the y-intercept.</p>
+                <p style="margin-bottom: 0;">• To evaluate a function, substitute the input value into the function.</p>
+                <p style="margin-bottom: 0;">• To find the function from a graph, calculate the gradient and identify the y-intercept.</p>
+                <p style="margin-bottom: 0;">• The domain is the set of all inputs. The range is the set of all outputs.</p>
+                <p style="margin-bottom: 0;">• To find an inverse, swap x and y and solve for y.</p>
+                <p style="margin-bottom: 0;">• Composite functions apply one function to the result of another. The order matters.</p>
+            </div>
+
+            <p>
+                <strong>NB:</strong> Functions are a fundamental concept in mathematics. They describe how one quantity 
+                depends on another. Linear functions are the simplest type of function, but they are very useful 
+                for modelling real-world situations like cost, distance, and speed. Make sure you can evaluate 
+                functions, draw their graphs, find the function from a graph, find inverses, and work with composite functions.
+            </p>
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#functions">Functions</a></li>
+            <li><a href="#types-of-relations">Types of Relations</a></li>
+            <li><a href="#what-is-a-function">What is a Function?</a></li>
+            <li><a href="#function-notation">Function Notation</a></li>
+            <li><a href="#linear-functions">Linear Functions</a></li>
+            <li><a href="#evaluating-functions">Evaluating Functions</a></li>
+            <li><a href="#graphs-of-linear-functions">Graphs of Linear Functions</a></li>
+            <li><a href="#finding-the-function-from-a-graph">Finding the Function from a Graph</a></li>
+            <li><a href="#domain-and-range">Domain and Range</a></li>
+            <li><a href="#inverse-functions">Inverse Functions</a></li>
+            <li><a href="#composite-functions">Composite Functions</a></li>
+            <li><a href="#inverse-of-composite-functions">Inverse of a Composite Function</a></li>
+            <li><a href="#summary-table">Summary Table</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

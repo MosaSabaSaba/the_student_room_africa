@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Question Bank | Sequences | Extended LGCSE Mathematics Paper 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/contentStyles.css" />
+    <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../assets/css/question-bank.css" />
+
+    
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        <a href="../../../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+       <div class="nav-links">
+            <a href="../../conversions.html">Study Guide</a>
+            <a href="../../tracker.html">Revision Tracker</a>
+            <a href="../../tracker.html#past-papers">Past Papers</a>
+            <a href="../../questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="#">Lesotho</a><span class="bc-sep">›</span>
+            <a href="../../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../question-bank.html">Question Bank</a><span class="bc-sep">›</span>
+            <a href="extended.html">Extended</a><span class="bc-sep">›</span>
+            <span>Sequences</span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="page-layout">
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar" id="leftSidebar">
+            <div class="filter-wrap">
+                <span class="filter-icon">🔍</span>
+                <input class="filter-input" type="text" placeholder="Filter topics..." />
+            </div>
+
+            <ul class="sidebar-nav" id="topicNav">
+                <li><a href="basic-operations.html">Basic Operations</a></li>
+                <li><a href="number.html">Number</a></li>
+                <li><a href="estimation.html">Estimation and Limits of Accuracy</a></li>
+                <li><a href="indices.html">Indices and Standard Form</a></li>
+                <li><a href="algebra.html">Algebraic Representation and Manipulation</a></li>
+                <li><a href="linear-equations.html">Linear and Simultaneous Equations</a></li>
+                <li><a href="quadratic-expressions.html">Quadratic Expressions And Equations</a></li>
+                <li><a href="sets.html">Set Language and Notation</a></li>
+                <li><a href="angles.html">Angles</a></li>
+                <li><a href="trigonometry.html">Trigonometry</a></li>
+                <li><a href="constructions.html">Geometrical Constructions and Loci</a></li>
+                <li><a href="bearings.html">Bearings</a></li>
+                <li><a href="geometry.html">Geometrical Terms and Relationships</a></li>
+                <li><a href="ratio.html">Ratio, Proportion, Rates and Percentages</a></li>
+                <li><a href="mensuration.html">Mensuration</a></li>
+                <li><a href="functions.html">Relations and Function Notation</a></li>
+                <li><a href="inequalities.html">Inequalities and Linear Programming</a></li>
+                <li><a href="statistics.html">Statistics and Probability</a></li>
+                <li><a href="matrices.html">Matrices</a></li>
+                <li><a href="finance.html">Personal and Household Finance</a></li>
+                <li><a href="area-and-perimeter.html">Area and Perimeter</a></li>
+                <li><a href="rates.html">Rates of Change</a></li>
+                <li><a href="similarity-and-congruence.html">Similarity and Congruence</a></li>
+                <li class="active"><a href="sequences.html">Sequences</a></li>
+                <li><a href="linear-equations-and-graphs.html">Linear Equations and Graphs</a></li>
+                <li><a href="transformation.html">Transformations</a></li>
+                <li><a href="symmetry.html">Symmetry</a></li>
+                <li><a href="vectors.html">Vectors</a></li>
+                <li><a href="proportion.html">Proportion</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="mainContent">
+
+            <h1>LGCSE Mathematics Question Bank</h1>
+            <p style="color: #aaa; margin-bottom: 2rem; font-size: 0.95rem;">
+                Practice questions from past ECoL examination papers, organized by topic.
+            </p>
+
+            <div class="question-paper">
+
+                <!-- ============================================================ -->
+                <!-- 27. SEQUENCES -->
+                <!-- ============================================================ -->
+                <section class="topic-section" id="sequences">
+                    <h2 class="paper-heading">Sequences</h2>
+
+                    <!-- Question 138 -->
+                    <div class="question-block">
+                        <div class="question-number">138.</div>
+                        <div class="question-text">
+                            The nth term of the sequence 0, 9, 22, 39, ... is 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>T</mi>
+                                    <mi>n</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mi>a</mi>
+                                <msup>
+                                    <mi>n</mi>
+                                    <mn>2</mn>
+                                </msup>
+                                <mo>+</mo>
+                                <mi>b</mi>
+                                <mi>n</mi>
+                                <mo>&minus;</mo>
+                                <mn>5</mn>
+                            </math>,
+                            where a and b are integers.
+                            <br>
+                            Find the value of a and the value of b.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">a = ......................... b = .........................</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 2</div>
+                    </div>
+
+                    <!-- Question 140 -->
+                    <div class="question-block">
+                        <div class="question-number">140.</div>
+                        <div class="question-text">
+                            Consider the sequence:
+                            <br>
+                            7, 12, 17, 22, 27, ...
+                            <br>
+                            (a) Write the next two terms of the sequence.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">(a) .........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Find the nth term of the sequence.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">(b) .........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) If the kth term is 212, find the value of k.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">(c) k = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 2</div>
+                    </div>
+                   
+                    <!-- Question 145 -->
+                    <div class="question-block lost">
+                        <div class="question-number">145.</div>
+                        <div class="question-text">
+                            Given the sequence:
+                            <br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>2</mn>
+                                </mfrac>
+                                <mo>,</mo>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mn>4</mn>
+                                </mfrac>
+                                <mo>,</mo>
+                                <mfrac>
+                                    <mn>5</mn>
+                                    <mn>6</mn>
+                                </mfrac>
+                                <mo>,</mo>
+                                <mi>p</mi>
+                                <mo>,</mo>
+                                <mo>...</mo>
+                                <mo>,</mo>
+                                <mfrac>
+                                    <mn>21</mn>
+                                    <mn>22</mn>
+                                </mfrac>
+                                <mo>,</mo>
+                                <mi>q</mi>
+                                <mo>,</mo>
+                                <mo>...</mo>
+                            </math>
+                            <br>
+                            Find:
+                            <br>
+                            (a) The missing terms p and q,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">(a) p = ......................... q = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) The nth term.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">(b) .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 2</div>
+                    </div>
+
+                    
+
+                    <!-- Question 73 -->
+                    <div class="question-block lost">
+                        <div class="question-number">73.</div>
+                        <div class="question-text">
+                            (a) A sequence has 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>T</mi>
+                                    <mn>10</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mn>40</mn>
+                            </math>,
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>T</mi>
+                                    <mn>11</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mn>49.5</mn>
+                            </math>,
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>T</mi>
+                                    <mn>12</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mn>60</mn>
+                            </math>
+                            and
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>T</mi>
+                                    <mn>13</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mn>71.5</mn>
+                            </math>.
+                            <br>
+                            (i) Find 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                    <mi>T</mi>
+                                    <mn>3</mn>
+                                </msub>
+                            </math>.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">T<sub>3</sub> = .........................</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Write an expression for T<sub>n</sub>, in terms of n.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">T<sub>n</sub> = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (iii) Find n when T<sub>n</sub> = 312.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">n = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 76 -->
+                    <div class="question-block lost">
+                        <div class="question-number">76.</div>
+                        <div class="question-text">
+                            The diagram shows a sequence of patterns made from shaded and unshaded squares.
+                            <div class="question-image">
+                                <img src="../assets/img/p4q76.svg" alt="Patterns with shaded and unshaded squares" />
+                            </div>
+                            (a) Complete the table.
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 500px; margin: 1rem 0; font-size: 0.9rem; color: #ddd; border: 1px solid #3a3530;">
+                                <thead>
+                                    <tr style="border-bottom: 1px solid #ffffff;">
+                                        <th style="padding: 6px 10px; color: #ffffff; border: 1px solid #ffffff;">Pattern number</th>
+                                        <th style="padding: 6px 10px; color: #ffffff; border: 1px solid #ffffff;">1</th>
+                                        <th style="padding: 6px 10px; color: #ffffff; border: 1px solid #ffffff;">2</th>
+                                        <th style="padding: 6px 10px; color: #ffffff; border: 1px solid #ffffff;">3</th>
+                                        <th style="padding: 6px 10px; color: #ffffff; border: 1px solid #ffffff;">4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Number of unshaded squares</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">3</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Number of shaded squares</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">0</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">2</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">8</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Total number of squares</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">5</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">13</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content"></span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Write an expression in terms of n for the number of:
+                            <br>
+                            (i) unshaded squares in pattern n,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) shaded squares in pattern n.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) The total number of squares in n is 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>2</mn>
+                                <msup>
+                                    <mi>n</mi>
+                                    <mn>2</mn>
+                                </msup>
+                                <mo>&minus;</mo>
+                                <mn>2</mn>
+                                <mi>n</mi>
+                                <mo>+</mo>
+                                <mn>1</mn>
+                            </math>.
+                            <br>
+                            Find the pattern number with a total of 613 squares.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">n = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 81 -->
+                    <div class="question-block lost">
+                        <div class="question-number">81.</div>
+                        <div class="question-text">
+                            (a) The sequence 2, 7, 15, 26, 40, 57, ... has nth term 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>2</mn>
+                                </mfrac>
+                                <mi>n</mi>
+                                <mo>(</mo>
+                                <mn>3</mn>
+                                <mi>n</mi>
+                                <mo>+</mo>
+                                <mn>1</mn>
+                                <mo>)</mo>
+                            </math>.
+                            <br>
+                            (i) Find the 20th term of the sequence.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">T<sub>20</sub> = .........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Find the position of the term 3775 in the sequence.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">n = .........................</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Find the nth term of the sequence:
+                            <br>
+                            7, 15, 26, 40, 57, 77, ...
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">T<sub>n</sub> = .........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 84 -->
+                    <div class="question-block lost">
+                        <div class="question-number">84.</div>
+                        <div class="question-text">
+                            (a) The diagram shows patterns with dotted and plain tiles.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q84-tiles.png" alt="Patterns with dotted and plain tiles" /> -->
+                            
+                                <svg xmlns="http://w3.org" viewBox="0 0 1100 350" width="100%" height="100%">
+                                    <defs>
+                                        <!-- Dark theme styles for an ultra-sharp, high-contrast matrix graphic -->
+                                        <style>
+                                        .bg-rect { fill: #1e1e1e; }
+                                        /* Heavy 3.5px white borders to ensure grids stand out sharply */
+                                        .geometry-line { stroke: #ffffff; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        /* Solid white markers representing the sequence dots */
+                                        .sequence-dot { fill: #ffffff; }
+                                        /* Large, bold typography for the pattern labels */
+                                        .annotation-text { font-family: Arial, sans-serif; font-size: 26px; font-weight: bold; fill: #ffffff; text-anchor: middle; letter-spacing: 0.5px; }
+                                        </style>
+                                    </defs>
+
+                                    <!-- Dark high-contrast background -->
+                                    <rect width="100%" height="100%" class="bg-rect"></rect>
+
+                                    <!-- ==================== PATTERN 1 ==================== -->
+                                    <!-- 2x2 grid with 1 dot in the bottom-left corner -->
+                                    <g id="pattern-1" transform="translate(40, 20)">
+                                        <!-- Grid Structure (Each square is 50x50px) -->
+                                        <rect x="50" y="130" width="100" height="100" class="geometry-line"></rect>
+                                        <line x1="100" y1="130" x2="100" y2="230" class="geometry-line"></line>
+                                        <line x1="50" y1="180" x2="150" y2="180" class="geometry-line"></line>
+                                        
+                                        <!-- Pattern Dots -->
+                                        <circle cx="75" cy="205" r="8" class="sequence-dot"></circle>
+
+                                        <!-- Label -->
+                                        <text x="100" y="280" class="annotation-text">pattern 1</text>
+                                    </g>
+
+                                    <!-- ==================== PATTERN 2 ==================== -->
+                                    <!-- 3x3 grid with dots filling the bottom-left corner L-shape (length 2) -->
+                                    <g id="pattern-2" transform="translate(190, 20)">
+                                        <!-- Grid Structure -->
+                                        <rect x="50" y="80" width="150" height="150" class="geometry-line"></rect>
+                                        <line x1="100" y1="80" x2="100" y2="230" class="geometry-line"></line>
+                                        <line x1="150" y1="80" x2="150" y2="230" class="geometry-line"></line>
+                                        <line x1="50" y1="130" x2="200" y2="130" class="geometry-line"></line>
+                                        <line x1="50" y1="180" x2="200" y2="180" class="geometry-line"></line>
+
+                                        <!-- Pattern Dots -->
+                                        <circle cx="75" cy="205" r="8" class="sequence-dot"></circle>
+                                        <circle cx="75" cy="155" r="8" class="sequence-dot"></circle>
+                                        <circle cx="125" cy="205" r="8" class="sequence-dot"></circle>
+
+                                        <!-- Label -->
+                                        <text x="125" y="280" class="annotation-text">pattern 2</text>
+                                    </g>
+
+                                    <!-- ==================== PATTERN 3 ==================== -->
+                                    <!-- 4x4 grid with dots filling the bottom-left corner L-shape (length 3) -->
+                                    <g id="pattern-3" transform="translate(390, 20)">
+                                        <!-- Grid Structure -->
+                                        <rect x="50" y="30" width="200" height="200" class="geometry-line"></rect>
+                                        <line x1="100" y1="30" x2="100" y2="230" class="geometry-line"></line>
+                                        <line x1="150" y1="30" x2="150" y2="230" class="geometry-line"></line>
+                                        <line x1="200" y1="30" x2="200" y2="230" class="geometry-line"></line>
+                                        <line x1="50" y1="80" x2="250" y2="80" class="geometry-line"></line>
+                                        <line x1="50" y1="130" x2="250" y2="130" class="geometry-line"></line>
+                                        <line x1="50" y1="180" x2="250" y2="180" class="geometry-line"></line>
+
+                                        <!-- Pattern Dots -->
+                                        <circle cx="75" cy="205" r="8" class="sequence-dot"></circle>
+                                        <circle cx="75" cy="155" r="8" class="sequence-dot"></circle>
+                                        <circle cx="75" cy="105" r="8" class="sequence-dot"></circle>
+                                        <circle cx="125" cy="205" r="8" class="sequence-dot"></circle>
+                                        <circle cx="175" cy="205" r="8" class="sequence-dot"></circle>
+
+                                        <!-- Label -->
+                                        <text x="150" y="280" class="annotation-text">pattern 3</text>
+                                    </g>
+
+                                    <!-- ==================== PATTERN 4 ==================== -->
+                                    <!-- 5x5 grid left empty as a workspace question -->
+                                    <g id="pattern-4" transform="translate(680, 20)">
+                                        <!-- Grid Structure -->
+                                        <rect x="50" y="30" width="250" height="250" class="geometry-line"></rect>
+                                        <line x1="100" y1="30" x2="100" y2="280" class="geometry-line"></line>
+                                        <line x1="150" y1="30" x2="150" y2="280" class="geometry-line"></line>
+                                        <line x1="200" y1="30" x2="200" y2="280" class="geometry-line"></line>
+                                        <line x1="250" y1="30" x2="250" y2="280" class="geometry-line"></line>
+                                        <line x1="50" y1="80" x2="300" y2="80" class="geometry-line"></line>
+                                        <line x1="50" y1="130" x2="300" y2="130" class="geometry-line"></line>
+                                        <line x1="50" y1="180" x2="300" y2="180" class="geometry-line"></line>
+                                        <line x1="50" y1="230" x2="300" y2="230" class="geometry-line"></line>
+
+                                        <!-- Label -->
+                                        <text x="175" y="330" class="annotation-text">pattern 4</text>
+                                    </g>
+                                </svg>
+                            </div>
+                            (i) Complete the 4th pattern.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">See diagram</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Complete the table below.
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid #ffffff;">
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Pattern number</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">1</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">2</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">3</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">4</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">5</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Dotted tiles</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">3</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">5</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Plain tiles</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">3</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">6</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">11</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">See table</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (iii) Write an expression, in terms of n, for the number of dotted tiles in the pattern.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (iv) Find the number of dotted tiles in the 20th pattern.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (v) How many more dotted tiles are in pattern n + 7 than in pattern n?
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Write an expression, in terms of n, for the number of plain tiles in the nth pattern.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) Find:
+                            <br>
+                            (i) The pattern with 227 plain tiles,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">n = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) The total number of tiles in pattern 65.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 87 -->
+                    <div class="question-block lost">
+                        <div class="question-number">87.</div>
+                        <div class="question-text">
+                            The first three diagrams of a sequence are shown.
+                            <br>
+                            Each diagram is made from dots and lines in which the area of each square is 1 square unit.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q87-dots-lines.png" alt="Diagrams with dots and lines" /> -->
+                            
+                                <svg xmlns="http://w3.org" viewBox="0 0 540 160" width="100%" height="100%">
+                                <!-- White Background -->
+                                <rect width="100%" height="100%" fill="transparent" />
+
+                                <!-- Styles for crisp lines and text -->
+                                <style>
+                                    .grid-line { stroke: #ffffff; stroke-width: 1.5; stroke-linecap: round; }
+                                    .dot { fill: #ffffff; }
+                                    .label { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; fill: #ffffff; text-anchor: middle; }
+                                </style>
+
+                                <!-- ================= DIAGRAM 1 ================= -->
+                                <g id="diagram-1">
+                                    <!-- Grid Lines -->
+                                    <line x1="50" y1="80" x2="80" y2="80" class="grid-line" />
+                                    <line x1="50" y1="110" x2="80" y2="110" class="grid-line" />
+                                    <line x1="50" y1="80" x2="50" y2="110" class="grid-line" />
+                                    <line x1="80" y1="80" x2="80" y2="110" class="grid-line" />
+                                    
+                                    <!-- Dots (Vertices) -->
+                                    <circle cx="50" cy="80" r="2.5" class="dot" />
+                                    <circle cx="80" cy="80" r="2.5" class="dot" />
+                                    <circle cx="50" cy="110" r="2.5" class="dot" />
+                                    <circle cx="80" cy="110" r="2.5" class="dot" />
+                                    
+                                    <!-- Label -->
+                                    <text x="65" y="140" class="label">Diagram 1</text>
+                                </g>
+
+                                <!-- ================= DIAGRAM 2 ================= -->
+                                <g id="diagram-2">
+                                    <!-- Horizontal Lines -->
+                                    <line x1="180" y1="50" x2="240" y2="50" class="grid-line" />
+                                    <line x1="180" y1="80" x2="240" y2="80" class="grid-line" />
+                                    <line x1="180" y1="110" x2="240" y2="110" class="grid-line" />
+                                    
+                                    <!-- Vertical Lines -->
+                                    <line x1="180" y1="50" x2="180" y2="110" class="grid-line" />
+                                    <line x1="210" y1="50" x2="210" y2="110" class="grid-line" />
+                                    <line x1="240" y1="50" x2="240" y2="110" class="grid-line" />
+                                    
+                                    <!-- Dots (Vertices) -->
+                                    <circle cx="180" cy="50" r="2.5" class="dot" />
+                                    <circle cx="210" cy="50" r="2.5" class="dot" />
+                                    <circle cx="240" cy="50" r="2.5" class="dot" />
+                                    <circle cx="180" cy="80" r="2.5" class="dot" />
+                                    <circle cx="210" cy="80" r="2.5" class="dot" />
+                                    <circle cx="240" cy="80" r="2.5" class="dot" />
+                                    <circle cx="180" cy="110" r="2.5" class="dot" />
+                                    <circle cx="210" cy="110" r="2.5" class="dot" />
+                                    <circle cx="240" cy="110" r="2.5" class="dot" />
+                                    
+                                    <!-- Label -->
+                                    <text x="210" y="140" class="label">Diagram 2</text>
+                                </g>
+
+                                <!-- ================= DIAGRAM 3 ================= -->
+                                <g id="diagram-3">
+                                    <!-- Horizontal Lines -->
+                                    <line x1="360" y1="20" x2="450" y2="20" class="grid-line" />
+                                    <line x1="360" y1="50" x2="450" y2="50" class="grid-line" />
+                                    <line x1="360" y1="80" x2="450" y2="80" class="grid-line" />
+                                    <line x1="360" y1="110" x2="450" y2="110" class="grid-line" />
+                                    
+                                    <!-- Vertical Lines -->
+                                    <line x1="360" y1="20" x2="360" y2="110" class="grid-line" />
+                                    <line x1="390" y1="20" x2="390" y2="110" class="grid-line" />
+                                    <line x1="420" y1="20" x2="420" y2="110" class="grid-line" />
+                                    <line x1="450" y1="20" x2="450" y2="110" class="grid-line" />
+                                    
+                                    <!-- Dots (Vertices) -->
+                                    <circle cx="360" cy="20" r="2.5" class="dot" />
+                                    <circle cx="390" cy="20" r="2.5" class="dot" />
+                                    <circle cx="420" cy="20" r="2.5" class="dot" />
+                                    <circle cx="450" cy="20" r="2.5" class="dot" />
+                                    
+                                    <circle cx="360" cy="50" r="2.5" class="dot" />
+                                    <circle cx="390" cy="50" r="2.5" class="dot" />
+                                    <circle cx="420" cy="50" r="2.5" class="dot" />
+                                    <circle cx="450" cy="50" r="2.5" class="dot" />
+                                    
+                                    <circle cx="360" cy="80" r="2.5" class="dot" />
+                                    <circle cx="390" cy="80" r="2.5" class="dot" />
+                                    <circle cx="420" cy="80" r="2.5" class="dot" />
+                                    <circle cx="450" cy="80" r="2.5" class="dot" />
+                                    
+                                    <circle cx="360" cy="110" r="2.5" class="dot" />
+                                    <circle cx="390" cy="110" r="2.5" class="dot" />
+                                    <circle cx="420" cy="110" r="2.5" class="dot" />
+                                    <circle cx="450" cy="110" r="2.5" class="dot" />
+                                    
+                                    <!-- Label -->
+                                    <text x="405" y="140" class="label">Diagram 3</text>
+                                </g>
+                                </svg>
+
+                            </div>
+                            (a) Complete the table for diagram 4.
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid #ffffff;">
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">diagram</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">1</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">2</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">3</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">4</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">...</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">n</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Number of dots</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">4</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">9</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">16</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">x</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">area</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">4</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">9</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">y</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Number of lines</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">4</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">12</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">24</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">z</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content"></span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Express x, y and z in terms of n.
+                            <br>
+                            Give each answer in its simplest form.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">x = ......................... y = ......................... z = .........................</span> <span class="marks">[5]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) Diagram k has 361 dots.
+                            <br>
+                            Find:
+                            <br>
+                            (i) k,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">k = .........................</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) the number of lines in diagram k.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 88 -->
+                    <div class="question-block lost">
+                        <div class="question-number">88.</div>
+                        <div class="question-text">
+                            The first three diagrams in the sequence are shown below.
+                            <br>
+                            The diagrams are made up of dots and lines. Each line is one centimetre long.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q88-dots-lines-2.png" alt="Diagrams with dots and lines" /> -->
+                            
+                                <svg xmlns="http://w3.org" viewBox="0 0 720 160" width="100%" height="100%">
+                                <!-- White Background -->
+                                <rect width="100%" height="100%" fill="transparent" />
+
+                                <!-- Styles for crisp lines and text -->
+                                <style>
+                                    .grid-line { stroke: #ffffff; stroke-width: 1.5; stroke-linecap: round; }
+                                    .dot { fill: #ffffff; }
+                                    .label { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; fill: #ffffff; text-anchor: middle; }
+                                </style>
+
+                                <!-- ================= DIAGRAM 1 ================= -->
+                                <g id="diagram-1">
+                                    <!-- Grid Lines -->
+                                    <line x1="50" y1="80" x2="80" y2="80" class="grid-line" />
+                                    <line x1="50" y1="110" x2="80" y2="110" class="grid-line" />
+                                    <line x1="50" y1="80" x2="50" y2="110" class="grid-line" />
+                                    <line x1="80" y1="80" x2="80" y2="110" class="grid-line" />
+                                    
+                                    <!-- Dots (Vertices) -->
+                                    <circle cx="50" cy="80" r="2.5" class="dot" />
+                                    <circle cx="80" cy="80" r="2.5" class="dot" />
+                                    <circle cx="50" cy="110" r="2.5" class="dot" />
+                                    <circle cx="80" cy="110" r="2.5" class="dot" />
+                                    
+                                    <!-- Label -->
+                                    <text x="65" y="140" class="label">Diagram 1</text>
+                                </g>
+
+                                <!-- ================= DIAGRAM 2 ================= -->
+                                <g id="diagram-2">
+                                    <!-- Horizontal Lines -->
+                                    <line x1="180" y1="50" x2="240" y2="50" class="grid-line" />
+                                    <line x1="180" y1="80" x2="240" y2="80" class="grid-line" />
+                                    <line x1="180" y1="110" x2="240" y2="110" class="grid-line" />
+                                    
+                                    <!-- Vertical Lines -->
+                                    <line x1="180" y1="50" x2="180" y2="110" class="grid-line" />
+                                    <line x1="210" y1="50" x2="210" y2="110" class="grid-line" />
+                                    <line x1="240" y1="50" x2="240" y2="110" class="grid-line" />
+                                    
+                                    <!-- Dots -->
+                                    <circle cx="180" cy="50" r="2.5" class="dot" />
+                                    <circle cx="210" cy="50" r="2.5" class="dot" />
+                                    <circle cx="240" cy="50" r="2.5" class="dot" />
+                                    <circle cx="180" cy="80" r="2.5" class="dot" />
+                                    <circle cx="210" cy="80" r="2.5" class="dot" />
+                                    <circle cx="240" cy="80" r="2.5" class="dot" />
+                                    <circle cx="180" cy="110" r="2.5" class="dot" />
+                                    <circle cx="210" cy="110" r="2.5" class="dot" />
+                                    <circle cx="240" cy="110" r="2.5" class="dot" />
+                                    
+                                    <!-- Label -->
+                                    <text x="210" y="140" class="label">Diagram 2</text>
+                                </g>
+
+                                <!-- ================= DIAGRAM 3 ================= -->
+                                <g id="diagram-3">
+                                    <!-- Horizontal Lines -->
+                                    <line x1="340" y1="20" x2="430" y2="20" class="grid-line" />
+                                    <line x1="340" y1="50" x2="430" y2="50" class="grid-line" />
+                                    <line x1="340" y1="80" x2="430" y2="80" class="grid-line" />
+                                    <line x1="340" y1="110" x2="430" y2="110" class="grid-line" />
+                                    
+                                    <!-- Vertical Lines -->
+                                    <line x1="340" y1="20" x2="340" y2="110" class="grid-line" />
+                                    <line x1="370" y1="20" x2="370" y2="110" class="grid-line" />
+                                    <line x1="400" y1="20" x2="400" y2="110" class="grid-line" />
+                                    <line x1="430" y1="20" x2="430" y2="110" class="grid-line" />
+                                    
+                                    <!-- Dots -->
+                                    <circle cx="340" cy="20" r="2.5" class="dot" /> <circle cx="370" cy="20" r="2.5" class="dot" /> <circle cx="400" cy="20" r="2.5" class="dot" /> <circle cx="430" cy="20" r="2.5" class="dot" />
+                                    <circle cx="340" cy="50" r="2.5" class="dot" /> <circle cx="370" cy="50" r="2.5" class="dot" /> <circle cx="400" cy="50" r="2.5" class="dot" /> <circle cx="430" cy="50" r="2.5" class="dot" />
+                                    <circle cx="340" cy="80" r="2.5" class="dot" /> <circle cx="370" cy="80" r="2.5" class="dot" /> <circle cx="400" cy="80" r="2.5" class="dot" /> <circle cx="430" cy="80" r="2.5" class="dot" />
+                                    <circle cx="340" cy="110" r="2.5" class="dot" /> <circle cx="370" cy="110" r="2.5" class="dot" /> <circle cx="400" cy="110" r="2.5" class="dot" /> <circle cx="430" cy="110" r="2.5" class="dot" />
+                                    
+                                    <!-- Label -->
+                                    <text x="385" y="140" class="label">Diagram 3</text>
+                                </g>
+
+                                <!-- ================= DIAGRAM 4 (Completed) ================= -->
+                                <g id="diagram-4">
+                                    
+                                    <!-- Label -->
+                                    <text x="590" y="150" class="label">Diagram 4</text>
+                                </g>
+                                </svg>
+                            </div>
+                            (a) Draw the next diagram in the sequence.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">See diagram</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) The table shows some information about the diagrams.
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid #ffffff;">
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Diagram</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">1</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">2</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">3</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">4</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">...</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">n</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Perimeter</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">4</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">8</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">12</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">s</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">v</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Area</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">4</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">9</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">16</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">w</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Number of lines</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">4</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">12</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">21</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">t</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">x</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            (i) Write down the values of s and t.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">s = ......................... t = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Write expressions for v, w and x, in terms of n.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">v = ......................... w = ......................... x = .........................</span> <span class="marks">[4]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 89 -->
+                    <div class="question-block lost">
+                        <div class="question-number">89.</div>
+                        <div class="question-text">
+                            The total number of lines in the first n diagrams is given by the expression 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>2</mn>
+                                    <mn>3</mn>
+                                </mfrac>
+                                <msup>
+                                    <mi>n</mi>
+                                    <mn>3</mn>
+                                </msup>
+                                <mo>+</mo>
+                                <mi>h</mi>
+                                <msup>
+                                    <mi>n</mi>
+                                    <mn>2</mn>
+                                </msup>
+                                <mi>k</mi>
+                                <mi>n</mi>
+                            </math>.
+                            <br>
+                            (i) Show that:
+                            <br>
+                            (a) 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>h</mi>
+                                <mo>+</mo>
+                                <mi>k</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>10</mn>
+                                    <mn>3</mn>
+                                </mfrac>
+                            </math>
+                            for n = 1,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>4</mn>
+                                <mi>h</mi>
+                                <mo>+</mo>
+                                <mn>2</mn>
+                                <mi>k</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>32</mn>
+                                    <mn>3</mn>
+                                </mfrac>
+                            </math>
+                            for n = 2.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Find:
+                            <br>
+                            (a) The values of h and k,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">h = ......................... k = .........................</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) The total number of lines in the first 12 diagrams.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+
+                    <!-- Question 94 -->
+                    <div class="question-block lost">
+                        <div class="question-number">94.</div>
+                        <div class="question-text">
+                            The table shows the first five terms of sequences A, B and C.
+                            <br>
+                            (a) Complete the table for the 6th term of each sequence.
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 500px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid #ffffff;">
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Term</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">1</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">2</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">3</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">4</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">5</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">6</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Sequence A</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">21</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">19</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">17</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">15</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">13</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Sequence B</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">4</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">7</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">12</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff">19</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">28</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">Sequence C</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">25</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">26</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">29</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff">34</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">41</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">See table</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Find the nth term of:
+                            <br>
+                            (i) Sequence A,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">T<sub>n</sub> = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Sequence C.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">T<sub>n</sub> = .........................</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) For the sequence B, t<sub>n</sub> = n<sup>2</sup> + 3.
+                            <br>
+                            (i) Find the 17th term,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">T<sub>17</sub> = .........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Is 199 one of the terms in the sequence? Justify.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 96 -->
+                    <div class="question-block lost">
+                        <div class="question-number">96.</div>
+                        <div class="question-text">
+                            Lipuo makes a sequence of patterns using black and grey triangular tiles.
+                            <div class="question-image">
+                                <img src="../assets/img/p4q96.svg" alt="Triangular tiles patterns" />
+  
+                            </div>
+                            (a) Draw the fourth pattern in the space provided.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">See diagram</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Complete the table.
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid #ffffff;">
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Pattern</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Number of black tiles</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Number of grey tiles</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">2</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">3</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">5</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">6</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">n + 2</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #ffffff;">...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">See table</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) Find the number of grey tiles in the 15th pattern.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (d) Find the pattern number that can be made from 61 tiles.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">n = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (e) Find, in terms of n, the total number of tiles in the nth pattern.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../js/contentScript.js"></script>
+
+</body>
+</html>

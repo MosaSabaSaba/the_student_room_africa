@@ -1,0 +1,30 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="400" height="180" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .label-text { fill: #ffffff; font-family: sans-serif; font-size: 14px; font-weight: bold; }
+        .rise-line { stroke: #00ffcc; stroke-width: 3; stroke-dasharray: 5,5; }
+        .run-line { stroke: #ffcc00; stroke-width: 3; stroke-dasharray: 5,5; }
+        .hypotenuse { stroke: #ffffff; stroke-width: 4; }
+        .arrow { fill: #ffffff; }
+    </style>
+
+    <!-- The Slope Line -->
+    <line x1="50" y1="130" x2="250" y2="30" class="hypotenuse" />
+
+    <!-- Rise (Vertical) -->
+    <line x1="250" y1="130" x2="250" y2="30" class="rise-line" />
+    <text x="255" y="85" fill="#00ffcc" class="label-text">RISE (y₂ - y₁)</text>
+
+    <!-- Run (Horizontal) -->
+    <line x1="50" y1="130" x2="250" y2="130" class="run-line" />
+    <text x="110" y="155" fill="#ffcc00" class="label-text">RUN (x₂ - x₁)</text>
+
+    <!-- Points -->
+    <circle cx="50" cy="130" r="5" fill="#ffffff" />
+    <circle cx="250" cy="30" r="5" fill="#ffffff" />
+    
+    <!-- Formula Box -->
+    <rect x="10" y="10" width="80" height="50" rx="5" fill="none" stroke="#00ffcc" stroke-width="1" opacity="0.5" />
+    <text x="20" y="32" fill="#ffffff" font-family="serif" font-style="italic" font-size="16">Rise</text>
+    <line x1="18" y1="36" x2="82" y2="36" stroke="#ffffff" stroke-width="1" />
+    <text x="22" y="53" fill="#ffffff" font-family="serif" font-style="italic" font-size="16">Run</text>
+</svg>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limits Of Accuracy - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+
+
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="#" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="lesotho.html">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Limits Of Accuracy</span>
+    </div>
+    
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li class="active"><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+            
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="limits-of-accuracy">
+            <h1 id="limits-of-accuracy">Limits of Accuracy</h1>
+            
+            <p>
+                When a measurement is <strong>rounded</strong> to a certain degree of accuracy 
+                (such as to the nearest cm, nearest 0.1 cm, or to 2 significant figures), 
+                the true value lies within a <strong>range</strong>. The smallest and largest 
+                possible true values are called the <strong>lower bound</strong> and 
+                <strong>upper bound</strong>.
+            </p>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#limits-of-accuracy">Limits of Accuracy</a></li>
+                    <li><a href="#bounds-for-rounded-measurements">Finding Bounds for Rounded Measurements</a></li>
+                    <li><a href="#degrees-of-accuracy">Different Degrees of Accuracy</a></li>
+                    <li><a href="#bounds-with-significant-figures">Bounds with Significant Figures</a></li>
+                    <li><a href="#calculations-with-bounds">Calculations with Bounds</a></li>
+                    <li><a href="#speed-distance-with-bounds">Speed, Distance, Time Calculations with Bounds</a></li>
+                </ul>
+            </div>
+
+            <div class="bounds-for-rounded-measurements">
+                <h2 id="bounds-for-rounded-measurements">Finding Bounds for Rounded Measurements</h2>
+                
+                <p>
+                    When a measurement is rounded, the actual value could be slightly less or slightly more.
+                    The <strong>lower bound</strong> is the smallest value that would round up to the given measurement.
+                    The <strong>upper bound</strong> is the smallest value that would round up to the <strong>next</strong> measurement.
+                </p>
+
+                <p><strong>Rule:</strong> To find the bounds, <strong>halve the degree of accuracy</strong>, then subtract from and add to the rounded value.</p>
+                
+                <p>Lower Bound = Rounded value − ½ × degree of accuracy</p>
+                <p>Upper Bound = Rounded value + ½ × degree of accuracy</p>
+                    
+                <br>
+                <h3 style="color: #00ffcc;">
+                    Example 1: Cement Bag Weight
+                </h3>
+                <p>
+                    A bag of cement is marked as 50 kg, rounded to
+                    the nearest 10 kg. Degree of accuracy = 10 kg. Half of this = 5 kg.
+                </p>
+                <p style="color: #00ffcc;">Lower bound = 50 − 5 = 45 kg</p>
+                <p style="color: #00ffcc;">Upper bound = 50 + 5 = 55 kg</p> 
+                <p> True weight: 45 ≤ weight < 55</p>
+                <br>
+
+                <p>
+                    The <strong>upper bound</strong> uses a <strong>&lt;</strong> sign because if the value equals the upper bound,
+                    it would be rounded up to the next unit (60 kg in this case).
+                </p>
+            </div>
+
+            <div class="degrees-of-accuracy">
+                <h2 id="degrees-of-accuracy">Different Degrees of Accuracy</h2>
+
+                <p>To find bounds for any rounded measurement:</p>
+                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>Identify the degree of accuracy</strong> (e.g., nearest cm = 1, nearest 0.1 = 0.1, nearest 5 = 5)</li>
+                    <li><strong>Halve the degree of accuracy</strong> to find how much to add/subtract</li>
+                    <li><strong>Subtract</strong> from the rounded value to get the <strong>lower bound</strong></li>
+                    <li><strong>Add</strong> to the rounded value to get the <strong>upper bound</strong></li>
+                    <li><strong>Write the error interval</strong> using: LB ≤ value &lt; UB</li>
+                </ol>
+
+                <div style="margin: 1.5rem 0; width: 100%; box-sizing: border-box;">
+                    <style>
+                        .math-table th, .math-table td {
+                            font-size: clamp(14px, 4vw, 18px);
+                            box-sizing: border-box;
+                        }
+                        
+                        @media screen and (max-width: 600px) {
+                            .math-table th, .math-table td {
+                                font-size: 13px !important;
+                                padding: 8px 6px !important;
+                            }
+                        }
+                    </style>
+                    
+                    <table class="math-table" style="width: 100%; border-collapse: collapse; margin:1.5rem 0;">
+                        <thead>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Rounded Value</th>
+                                <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Degree of Accuracy</th>
+                                <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;"> Half of Degree</th>
+                                <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Lower Bound</th>
+                                <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Upper Bound</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">15 cm</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">nearest cm (1)</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">0.5 cm</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">14.5 cm</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">15.5 cm</td>
+                            </tr>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">6.8 m</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">nearest 0.1 m (0.1)</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">0.05 m</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">6.75 m</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">6.85 m</td>
+                            </tr>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">3.2 kg</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">nearest 0.1 kg (0.1)</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">0.05 kg</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">3.15 kg</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">3.25 kg</td>
+                            </tr>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">120 g</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">nearest 5 g (5)</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">2.5 g</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">117.5 g</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">122.5 g</td>
+                            </tr>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">4000 m</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">nearest 100 m (100)</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">50 m</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">3950 m</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">4050 m</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bounds-with-significant-figures">
+                <h2 id="bounds-with-significant-figures">Bounds with Significant Figures</h2>
+                
+                <p>
+                    For measurements given to a certain number of <strong>significant figures</strong>, 
+                    the same principle applies: find the smallest and largest possible values that 
+                    would round to the given number.
+                </p>
+
+                <p><strong>Rule:</strong> Identify the place value of the <strong>last significant figure</strong>. This becomes your degree of accuracy.</p>
+                
+                <br>
+                <h3 style="color: #00ffcc;">
+                    Example 2: Distance to 2 Significant Figures
+                </h3>
+                <p>
+                    A distance is given as 4500 m to 2 significant figures.
+                </p>
+                <p>
+                    4500 to 2 s.f. means the first two digits (4 and 5) are significant.
+                    The 5 is in the <strong>hundreds</strong> place (4500).
+                    So the degree of accuracy = 100. Half of this = 50.
+                </p>
+                <p style="color: #00ffcc;">Lower bound = 4500 − 50 = 4450 m</p>
+                <p style="color: #00ffcc;">Upper bound = 4500 + 50 = 4550 m</p>
+                <p>True distance: 4450 ≤ distance &lt; 4550</p>
+                <br>
+
+                <h3 style="color: #00ffcc;">
+                    Example 3: Decimal to 3 Significant Figures
+                </h3>
+                <p>
+                    A length is given as 0.0000639 m to 3 significant figures.
+                </p>
+                <p>
+                    0.0000639 to 3 s.f. means the digits 6, 3, and 9 are significant.
+                    The last significant figure (9) is in the <strong>hundred-millionths</strong> place (0.00000009).
+                    So the degree of accuracy = 0.0000001. Half of this = 0.00000005.
+                </p>
+                <p style="color: #00ffcc;">Lower bound = 0.0000639 − 0.00000005 = 0.00006385 m</p>
+                <p style="color: #00ffcc;">Upper bound = 0.0000639 + 0.00000005 = 0.00006395 m</p>
+                <p>True length: 0.00006385 ≤ length &lt; 0.00006395</p>
+                <br>
+
+                <p>
+                    <strong>NB:</strong> For decimals, the same rule applies: halve the degree of accuracy 
+                    (the place value of the last significant figure) and add/subtract from the rounded value.
+                </p>
+            </div>
+
+            <div class="calculations-with-bounds">
+                <h2 id="calculations-with-bounds">Calculations with Bounds</h2>
+                
+                <p>
+                    When we use rounded numbers in calculations, the answer will also have a range of possible values.
+                    To find the <strong>maximum</strong> or <strong>minimum</strong> possible result, we use the upper and lower bounds
+                    of the measurements.
+                </p>
+
+                <p><strong>Key Rules for Bounds in Calculations:</strong></p>
+                <p><strong>Addition:</strong> Max = UB + UB, Min = LB + LB</p>
+                <p><strong>Subtraction:</strong> Max = UB − LB, Min = LB − UB</p>
+                <p><strong>Multiplication:</strong> Max = UB × UB, Min = LB × LB</p>
+                <p><strong>Division:</strong> Max = UB ÷ LB, Min = LB ÷ UB</p>
+                <br>
+
+                <h3 style="color: #00ffcc;">
+                    Example 4: Maximum and Minimum Area of a Rectangle
+                </h3>
+                <p>
+                    A rectangle has length 12 cm (to nearest cm) and width 5 cm (to nearest cm).
+                </p>
+                <p style="color: #ffcc00; font-weight: bold;">Step 1: Find bounds for each measurement</p>
+                <p>Degree of accuracy = 1 cm. Half = 0.5 cm.</p>
+                <p style="color: #00ffcc;">Length: 11.5 ≤ L &lt; 12.5</p>
+                <p style="color: #00ffcc;">Width: 4.5 ≤ W &lt; 5.5</p>
+                
+                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 2: Maximum area (UB × UB)</p>
+                <p style="color: #00ffcc;">Max area = 12.5 × 5.5 = 68.75 cm²</p>
+                
+                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 3: Minimum area (LB × LB)</p>
+                <p style="color: #00ffcc;">Min area = 11.5 × 4.5 = 51.75 cm²</p>
+                <br>
+
+
+
+                <h3 style="color: #00ffcc;">
+                    Example 5: Multiple Items (Multiplication)
+                </h3>
+                <p>
+                    A bag of cement is marked 50 kg (to nearest 10 kg). Find the total mass of 5 bags.
+                </p>
+                <p style="color: #ffcc00; font-weight: bold;">Step 1: Find bounds for one bag</p>
+                <p>Degree of accuracy = 10 kg. Half = 5 kg.</p>
+                <p style="color: #00ffcc;">Lower bound = 45 kg, Upper bound = 55 kg</p>
+                
+                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 2: Total mass for 5 bags</p>
+                <p>Minimum total = 5 × 45 = <strong>225 kg</strong></p>
+                <p>Maximum total = 5 × 55 = <strong>275 kg</strong></p>
+                
+                <p style="color: #00ffcc; margin-top: 0.5rem;">Answer: 225 ≤ total &lt; 275 kg</p>
+                <br>
+
+                <p>
+                    <strong>NB:</strong> For multiplication, maximum uses the largest possible values (UB × UB), 
+                    while minimum uses the smallest possible values (LB × LB).
+                </p>
+            </div>
+
+            <div class="speed-distance-with-bounds">
+                <h2 id="speed-distance-with-bounds">Speed, Distance, Time Calculations with Bounds</h2>
+
+                <p>
+                    For speed problems, remember the formula: <strong>Speed = Distance ÷ Time</strong>
+                </p>
+                <p>
+                    To find <strong>maximum speed</strong>, use the <strong>largest possible distance (UB)</strong> and <strong>smallest possible time (LB)</strong>.
+                    To find <strong>minimum speed</strong>, use the <strong>smallest possible distance (LB)</strong> and <strong>largest possible time (UB)</strong>.
+                </p>
+
+                <br>
+                <h3 style="color: #00ffcc;">
+                    Example 6: Maximum and Minimum Speed
+                </h3>
+                <p>
+                    A car travels 150 km (to nearest km) in 2 hours (to nearest hour).
+                </p>
+                <p style="color: #ffcc00; font-weight: bold;">Step 1: Find bounds for each measurement</p>
+                <p>Distance: nearest km → half of 1 = 0.5</p>
+                <p style="color: #00ffcc;">149.5 ≤ D &lt; 150.5</p>
+                <p>Time: nearest hour → half of 1 = 0.5</p>
+                <p style="color: #00ffcc;">1.5 ≤ T &lt; 2.5</p>
+                
+                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 2: Maximum speed (UB ÷ LB)</p>
+                <p style="color: #00ffcc;">Max speed = 150.5 ÷ 1.5 = 100.33 km/h</p>
+                
+                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 3: Minimum speed (LB ÷ UB)</p>
+                <p style="color: #00ffcc;">Min speed = 149.5 ÷ 2.5 = 59.8 km/h</p>
+                
+                <p style="margin-top: 0.5rem;">Error interval: 59.8 ≤ speed &lt; 100.33 km/h</p>
+                <br>
+
+                <p>
+                    <strong>NB:</strong> For division, maximum uses UB ÷ LB, while minimum uses LB ÷ UB.
+                </p>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#limits-of-accuracy">Limits of Accuracy</a></li>
+            <li><a href="#bounds-for-rounded-measurements">Finding Bounds for Rounded Measurements</a></li>
+            <li><a href="#degrees-of-accuracy">Different Degrees of Accuracy</a></li>
+            <li><a href="#bounds-with-significant-figures">Bounds with Significant Figures</a></li>
+            <li><a href="#calculations-with-bounds">Calculations with Bounds</a></li>
+            <li><a href="#speed-distance-with-bounds">Speed, Distance, Time Calculations with Bounds</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

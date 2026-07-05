@@ -1,0 +1,2777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+    <link rel="stylesheet" href="../css/transformations.css" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "LGCSE Mathematics: Transformations Complete Guide",
+            "description": "Comprehensive guide for LGCSE learners covering all geometric transformations: translation (column vectors), reflection (mirror lines including x-axis, y-axis, y = x, y = -x, and lines parallel to axes), rotation (centre, angle, direction with coordinate rules), enlargement (positive, negative, fractional scale factors), shear (invariant line, shear factor, area preserved), stretch (invariant line, stretch factor, area change), and transformation matrices (2×2 matrices, base vectors, inverse matrices, determinant and area scaling).",
+            "educationalLevel": "Secondary School (LGCSE)",
+            "keywords": "transformations, translation, column vector, reflection, mirror line, rotation, centre of rotation, angle of rotation, clockwise, anticlockwise, enlargement, scale factor, centre of enlargement, shear, invariant line, shear factor, stretch, stretch factor, transformation matrix, 2x2 matrix, base vectors, inverse matrix, determinant, area scaling, LGCSE mathematics",
+            "about": {
+                "@type": "Thing",
+                "name": "Geometric Transformations"
+            },
+            "teaches": "How to translate shapes using column vectors (x,y) → (x + a, y + b); reflect shapes in mirror lines including x-axis (y=0), y-axis (x=0), y = x, y = -x, x = k, y = k; rotate shapes about any centre using coordinate rules (90° CW, 90° ACW, 180°); enlarge shapes with positive, negative, and fractional scale factors from a centre; apply shear with given invariant line and shear factor (area preserved); apply stretch with given invariant line and stretch factor (area multiplied by |k|); represent transformations as 2×2 matrices; find transformation matrix using base vectors (images of (1,0) and (0,1)); find image coordinates by multiplying T × object matrix; find object coordinates using inverse matrix T⁻¹ × image matrix; calculate area change using determinant |det(T)|",
+            "inLanguage": "en",
+            "audience": {
+                "@type": "Audience",
+                "name": "LGCSE Mathematics students in Lesotho"
+            },
+            "learningResourceType": "Study Guide",
+            "timeRequired": "PT150M",
+            "copyrightHolder": {
+                "@type": "Organization",
+                "name": "Student Room Africa"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Transformations</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li class="active"><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+            
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul>
+<!--         
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <div class="transformations">
+            <h1 id="transformations">Transformations</h1>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#transformations">Transformations</a></li>
+                    <li><a href="#translation">Translation</a></li>
+                    <li><a href="#reflection">Reflection</a></li>
+                    <li><a href="#rotation">Rotation</a></li>
+                    <li><a href="#enlargement">Enlargement</a></li>
+                    <!-- <li><a href="#combination-of-transformations">Combination of Transformations</a></li> -->
+                    <li><a href="#shear">Shear</a></li>
+                    <li><a href="#stretch">Stretch</a></li>
+                    <li><a href="#matrices">Transforming Shapes with Matrices</a></li>
+                </ul>
+            </div>
+
+            <div class="translation">
+                <h2 id="translation">Translation</h2>
+                
+                <p>
+                    A <strong>translation</strong> is a type of transformation that moves every point of a shape 
+                    by the same distance in the same direction. The shape is <strong>slid</strong> from one position 
+                    to another without being rotated, reflected, or resized. The original shape is called the 
+                    <strong>object</strong>, and the shape after translation is called the <strong>image</strong>.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Properties of a Translation:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• The shape does not change size or orientation.</p>
+                    <p style="margin-bottom: 0;">• Every point moves the same distance in the same direction.</p>
+                    <p style="margin-bottom: 0;">• The object and the image are <strong>congruent</strong> (identical in shape and size).</p>
+                </div>
+
+                <h3>Labelling Vertices in Transformations</h3>
+                
+                <p>
+                    When performing transformations, it is important to label vertices correctly to show corresponding points:
+                </p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>Vertices on the <strong>object</strong> (original shape) are labelled <strong>A, B, C, etc.</strong></li>
+                    <li>Vertices on the <strong>image</strong> (after the first transformation) are labelled <strong>A', B', C', etc.</strong> (read as "A prime", "B prime")</li>
+                    <li>If there is a <strong>second transformation</strong>, the new vertices become <strong>A", B", C", etc.</strong> (read as "A double prime", "B double prime")</li>
+                </ul>
+
+                <h3>The Translation Vector</h3>
+                
+                <p>
+                    A translation is described by a 
+                    <a href="#">column vector</a> in the form:
+                </p>
+                
+                <div style="display: flex; justify-content: center;">
+                    <img src="../assets/img/transformations/column-vector.svg" alt="Column Vector" />
+                </div>
+
+                <p>Where:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>x</strong> represents the horizontal movement (positive = right, negative = left)</li>
+                    <li><strong>y</strong> represents the vertical movement (positive = up, negative = down)</li>
+                </ul>
+
+                <h3>Translating a Shape</h3>
+
+                <p>
+                    A triangle has vertices at A(1, 1), B(3, 1), and C(2, 3). Translate the triangle using the translation vector 
+                    <math display="inline">
+                        <mrow>
+                            <!-- Left Parenthesis -->
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mn>4</mn></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mn>2</mn></mtd>
+                                </mtr>
+                            </mtable>
+                            <!-- Right Parenthesis -->
+                            <mo>)</mo>
+                        </mrow>
+                    </math>.
+                </p>
+
+                <p><strong>Step 1:</strong> Plot the original triangle (object).</p>
+                <p><strong>Step 2:</strong> Add the translation vector to each vertex.</p>
+                
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Calculations:</strong></p>
+                    <p style="padding-left: 20px;">
+                        <span>A</span>
+                        <math display="inline">
+                            <mrow>
+                                <!-- Left Parenthesis -->
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>1</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>1</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <!-- Right Parenthesis -->
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>→</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <!-- Left Parenthesis -->
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>1 + 4</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>1 + 2</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <!-- Right Parenthesis -->
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>= A'</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <!-- Left Parenthesis -->
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>5</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>3</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <!-- Right Parenthesis -->
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </p>
+
+                    <p style="padding-left: 20px;">
+                        <span>B</span>
+                        <math display="inline">
+                            <mrow>
+                                <!-- Left Parenthesis -->
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>3</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>1</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <!-- Right Parenthesis -->
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>→</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <!-- Left Parenthesis -->
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>3 + 4</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>1 + 2</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <!-- Right Parenthesis -->
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>= B'</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <!-- Left Parenthesis -->
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>7</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>3</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <!-- Right Parenthesis -->
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </p>
+
+                    <p style="padding-left: 20px;">
+                        <span>C</span>
+                        <math display="inline">
+                            <mrow>
+                                <!-- Left Parenthesis -->
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>2</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>3</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <!-- Right Parenthesis -->
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>→</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <!-- Left Parenthesis -->
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>2 + 4</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>3 + 2</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <!-- Right Parenthesis -->
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>= C'</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <!-- Left Parenthesis -->
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>6</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>5</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <!-- Right Parenthesis -->
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </p>
+                </div>
+
+                <p><strong>Step 3:</strong> Plot the image points and join them to form the translated triangle.</p>
+                <p>
+                    <strong>Answer:</strong> 
+                    The image has vertices at A'
+                    <math display="inline">
+                        <mrow>
+                            <!-- Left Parenthesis -->
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mn>5</mn></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mn>3</mn></mtd>
+                                </mtr>
+                            </mtable>
+                            <!-- Right Parenthesis -->
+                            <mo>)</mo>
+                        </mrow>
+                    </math>,
+                    B'
+                    <math display="inline">
+                        <mrow>
+                            <!-- Left Parenthesis -->
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mn>7</mn></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mn>3</mn></mtd>
+                                </mtr>
+                            </mtable>
+                            <!-- Right Parenthesis -->
+                            <mo>)</mo>
+                        </mrow>
+                    </math>, and 
+                    C'
+                    <math display="inline">
+                        <mrow>
+                            <!-- Left Parenthesis -->
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mn>6</mn></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mn>5</mn></mtd>
+                                </mtr>
+                            </mtable>
+                            <!-- Right Parenthesis -->
+                            <mo>)</mo>
+                        </mrow>
+                    </math>.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/translating-with-positive.svg" alt="Translating " />
+                </div>
+
+                <h3>Translating with a Negative Vector</h3>
+
+                <p>
+                    Translate the same triangle using the translation vector 
+                    <math display="inline">
+                        <mrow>
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mn>-3</mn></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mn>-1</mn></mtd>
+                                </mtr>
+                            </mtable>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>.
+                </p>
+
+                <p><strong>Step 1:</strong> Plot the original triangle (object).</p>
+                <p><strong>Step 2:</strong> Add the translation vector to each vertex.</p>
+                
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Calculations:</strong></p>
+                    <p style="padding-left: 20px;">
+                        <span>A</span>
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>1</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>1</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>→</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>1 - 3</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>1 - 1</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>= A''</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>-2</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>0</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </p>
+
+                    <p style="padding-left: 20px;">
+                        <span>B</span>
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>3</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>1</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>→</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>3 - 3</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>1 - 1</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>= B''</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>0</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>0</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </p>
+
+                    <p style="padding-left: 20px;">
+                        <span>C</span>
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>2</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>3</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>→</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>2 - 3</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>3 - 1</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+
+                        <span>= C''</span>
+
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>-1</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>2</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </p>
+                </div>
+
+                <p><strong>Step 3:</strong> Plot the image points and join them to form the translated triangle.</p>
+                <p>
+                    <strong>Answer:</strong> 
+                    The image has vertices at A''
+                    <math display="inline">
+                        <mrow>
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mn>-2</mn></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mn>0</mn></mtd>
+                                </mtr>
+                            </mtable>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>,
+                    B''
+                    <math display="inline">
+                        <mrow>
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mn>0</mn></mtd>
+                                </mtr>
+                                    <mtr>
+                                    <mtd><mn>0</mn></mtd>
+                                </mtr>
+                            </mtable>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>, and 
+                    C''
+                    <math display="inline">
+                        <mrow>
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mn>-1</mn></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mn>2</mn></mtd>
+                                </mtr>
+                            </mtable>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/translating-with-negative.svg" alt="Translating with negative Scale factor" />
+                </div>
+
+                <h3>Describing a Translation</h3>
+                
+                <p>
+                    To describe a translation from an object to its image, find the movement of one corresponding point 
+                    from the object to the image. The translation vector is written as a column vector.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Steps to Describe a Translation:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">1. Choose a point on the object and its corresponding point on the image.</p>
+                    <p style="margin-bottom: 0;">2. Calculate the horizontal change (x₂ - x₁).</p>
+                    <p style="margin-bottom: 0;">3. Calculate the vertical change (y₂ - y₁).</p>
+                    <p style="margin-bottom: 0;">4. Write the translation as a column vector 
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd><mn>x</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>y</mn></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>.
+                    </p>
+                </div>
+
+                <h3>Example</h3>
+
+                <p>
+                    The diagram below shows two triangles, labelled ABC and A'B'C'. 
+                    Describe fully the transformation that maps triangle ABC onto triangle A'B'C'.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/describing-a-translation.svg" alt="" />
+                </div>
+
+                <p><strong>Solution:</strong></p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Step 1:</strong> Identify the type of transformation.</p>
+                    <p style="padding-left: 20px;">The shape has been <strong>slid</strong> from one position to another. It has not been rotated, reflected, or resized. Therefore, the transformation is a <strong>translation</strong>.</p>
+                    
+                    <p><strong>Step 2:</strong> Find the horizontal and vertical movement.</p>
+                    <p style="padding-left: 20px;">Choose a corresponding point, for example C(2, 3) and C'(6, -2).</p>
+                    <p style="padding-left: 20px;">Horizontal change: 6 - 2 = 4 (4 units to the RIGHT)</p>
+                    <p style="padding-left: 20px;">Vertical change: -2 - 3 = -5 (5 units DOWN)</p>
+                    
+                    <p><strong>Step 3:</strong> Write the translation as a column vector.</p>
+                    <p style="padding-left: 20px;">
+                        <math display="inline">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr><mtd><mn>4</mn></mtd></mtr>
+                                    <mtr><mtd><mn>-5</mn></mtd></mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </p>
+                </div>
+
+                <p><strong>Answer:</strong> The transformation is a <strong>translation</strong> by the vector 
+                    <math display="inline">
+                        <mrow>
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr><mtd><mn>4</mn></mtd></mtr>
+                                <mtr><mtd><mn>-5</mn></mtd></mtr>
+                            </mtable>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>.
+                </p>
+
+                <p>
+                    <strong>NB:</strong> 
+                    To describe a transformation, always state the type of 
+                    transformation, and the details (e.g., translation vector)
+                </p>
+                
+            </div>
+
+            <div class="reflection">
+                <h2 id="reflection">Reflection</h2>
+                
+                <p>
+                    A <strong>reflection</strong> is a transformation that produces a mirror image of a shape across a fixed line called the <strong>mirror line</strong> (or line of reflection). The reflected image is the same shape and size as the original object, but it has been "flipped" across the mirror line to a new position and orientation.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Properties of a Reflection:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• The shape does not change size (congruent).</p>
+                    <p style="margin-bottom: 0;">• The orientation is reversed (flipped).</p>
+                    <p style="margin-bottom: 0;">• Points on the mirror line stay fixed (do not move).</p>
+                    <p style="margin-bottom: 0;">• The perpendicular distance from any point on the object to the mirror line equals the perpendicular distance from the corresponding point on the image to the mirror line.</p>
+                </div>
+
+                <h3>Reflection in the x-axis (y = 0)</h3>
+                
+                <p>
+                    When reflecting a shape in the <strong>x-axis</strong>, the x-coordinate stays the same, while the y-coordinate changes sign.
+                </p>
+
+                <p style="text-align: center; font-size: 1.2rem; margin: 1rem 0;">
+                    <strong>(x, y) → (x, -y)</strong>
+                </p>
+
+                <p>
+                    For example, triangle ABC has the following coordinates:<br>
+                    A(1, 3), <br>
+                    B(3, 3), <br>
+                    C(2, 5), <br>
+                    while its mirror image, triangle A'B'C' 
+                    has the following coordinates: <br>A'(1, -3), 
+                    <br>B'(3, -3), <br>C'(2, -5).
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/reflecting-in-the-y=0.svg" alt="" />
+                </div>
+
+                <h3>Reflection in the y-axis (x = 0)</h3>
+                
+                <p>
+                    When reflecting a shape in the <strong>y-axis</strong>, the y-coordinate stays the same, while the x-coordinate changes sign.
+                </p>
+
+                <p style="text-align: center; font-size: 1.2rem; margin: 1rem 0;">
+                    <strong>(x, y) → (-x, y)</strong>
+                </p>
+
+                <p>
+                    For example, triangle ABC has the following coordinates:<br>
+                    A(4, 3), <br>
+                    B(6, 3), <br>
+                    C(5, 5), <br>
+                    while its mirror image, triangle A'B'C' 
+                    has the following coordinates:<br>
+                    A'(-4, 3), <br>
+                    B'(-6, 3), <br>
+                    C'(-5, 5), <br>
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/reflecting-in-the-x=0.svg" alt="" />
+                </div>
+
+                <h3>Reflecting Across Lines Parallel to the Axes</h3>
+
+                <p>
+                    When reflecting across a vertical line <strong>x = k</strong> (where k is a constant), the y-coordinate stays the same. The x-coordinate changes according to the formula:
+                </p>
+
+                <p style="text-align: center; font-size: 1.2rem; margin: 1rem 0;">
+                    <strong>(x, y) → (2k - x, y)</strong>
+                </p>
+
+                <p>
+                    For example, triangle ABC has the following coordinates:<br>
+                    A(3, 3), <br>
+                    B(5, 3), <br>
+                    C(4, 5), <br>
+                    while its mirror image, triangle A'B'C' 
+                    has the following coordinates:<br>
+                    A'(1, 3), <br>
+                    B'(-1, 3), <br>
+                    C'(0, 5).
+                </p>
+
+                <p><strong>Calculating the x values:</strong></p>
+                <p>A(2 &times; 2 - 3) = A'<em>x</em>(1)</p>
+                <p>B(2 &times; 2 - 5) = B'<em>x</em>(-1)</p>
+                <p>C(2 &times; 2 - 4) = C'<em>x</em>(0)</p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/reflecting-in-x=2.svg" alt="Reflecting in the x=2" />
+                </div>
+
+                <p>
+                    When reflecting across a horizontal line <strong>y = k</strong> (where k is a constant), the x-coordinate stays the same. The y-coordinate changes according to the formula:
+                </p>
+
+                <p style="text-align: center; font-size: 1.2rem; margin: 1rem 0;">
+                    <strong>(x, y) → (x, 2k - y)</strong>
+                </p>
+
+                <p>
+                    For example, triangle ABC has the following coordinates:<br>
+                    A(3, 4), <br>
+                    B(5, 4), <br>
+                    C(4, 6), <br>
+                    while its mirror image, triangle A'B'C' 
+                    has the following coordinates:<br>
+                    A'(3, 0), <br>
+                    B'(5, 0), <br>
+                    C'(4, -2).
+                </p>
+
+                <p><strong>Calculating the y values:</strong></p>
+                <p>A(2 &times; 2 - 4) = A'<em>y</em>(0)</p>
+                <p>B(2 &times; 2 - 4) = B'<em>y</em>(0)</p>
+                <p>C(2 &times; 2 - 6) = C'<em>y</em>(-2)</p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/reflecting-in-y=2.svg" alt="Reflecting in the y=2" />
+                </div>
+                
+                <p>
+                    The diagram below shows triangle ABC and its image triangle A'B'C'. 
+                    Describe fully the single transformation that maps triangle ABC onto triangle A'B'C'.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/id-reflection.svg" alt="" />
+                </div>
+
+                <div>
+                    <p><strong>Solution:</strong></p>
+                    <p><strong>Step 1:</strong> Identify the type of transformation.</p>
+                    <p style="padding-left: 20px;">The shape has been <strong>flipped</strong> over a line. It has not been turned (rotated), slid (translated), or resized (enlarged). Therefore, the transformation is a <strong>reflection</strong>.</p>
+                    
+                    <p><strong>Step 2:</strong> Find the mirror line.</p>
+                    <p style="padding-left: 20px;">The mirror line is the perpendicular bisector of the line joining any corresponding point and its image. Using point C(5, 7) and C'(-1, 7):</p>
+                    <p style="padding-left: 20px;">The y-coordinates are the same (7), so the mirror line is vertical.</p>
+                    <p style="padding-left: 20px;">The midpoint is <strong>x = (5 + (-1)) ÷ 2 = 4 ÷ 2 = 2</strong>.</p>
+                    <p style="padding-left: 20px;">Therefore, the mirror line is <strong>x = 2</strong>.</p>
+                    
+                    <p><strong>Answer:</strong> The transformation is a <strong>reflection in the line x = 2</strong>.</p>
+                </div>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>NB:</strong> When describing a reflection, you must state:</p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">1. That it is a <strong>reflection</strong> (the type of transformation)</p>
+                    <p style="margin-bottom: 0;">2. The <strong>equation of the mirror line</strong> (e.g., x = 2, y = 0, y = x)</p>
+                </div>
+
+            </div>
+
+            <div class="rotation">
+                <h2 id="rotation">Rotation</h2>
+                <p>
+                    A <strong>rotation</strong> is a transformation that turns
+                    every point of a shape through the same angle about a 
+                    fixed point called the <strong>centre of rotation</strong>.
+                    The image produced is <strong>congruent</strong> to the original
+                    but its <strong>orientation</strong> changes.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Properties of a Rotation:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">
+                        • The shape does <strong>not</strong> change size (it is congruent
+                        to the original).
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        • Every point turns through the <strong>same angle</strong> about 
+                        the centre of rotation.
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        • The <strong>distance</strong> from the centre to any point on the shape
+                        stays the same.
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        • The oreintation of the shape changes as the object turns.
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        • The centre of rotation is the only <strong>invariant point</strong>
+                        (it does not move).
+                    </p>
+                </div>
+
+                <h3>Describing a rotation fully</h3>
+                <p>To fully describe any rotation you must state 
+                    <strong>four</strong> things:
+                </p>
+
+                <ol style="margin-left: 3rem;">
+                    <li>
+                        <strong>Type of transformation:</strong>
+                        that it is a rotation
+                    </li>
+                    <li>
+                        <strong>Centre of rotation:</strong>
+                        given as coordinates, e.g(0,0) 0r (2, -1)
+                    </li>
+                    <li>
+                        <strong>Angle of rotation:</strong>
+                        90°, 180°, 270°, etc.
+                    </li>
+
+                    <li>
+                        <strong>Direction:</strong>
+                        clockwise or anticlockwise
+                    </li>
+                </ol>
+
+                <h3>Rotation Rules (about the origin)</h3>
+                <p>
+                    When the centre of rotation is the 
+                    <strong>origin (0,0)</strong>, a simple coordinate rule
+                    applies to every vertex of the shape: 
+                </p>
+                <div class="rule-grid">
+                    <div class="rule-card">
+                        <div class="angle">90° clockwise</div>
+                        <div class="dir">(same as 270° anticlockwise)</div>
+                        <div class="formula">(x, y) → (y, −x)</div>
+                    </div>
+                    <div class="rule-card">
+                        <div class="angle">90° anticlockwise</div>
+                        <div class="dir">(same as 270° clockwise)</div>
+                        <div class="formula">(x, y) → (−y, x)</div>
+                    </div>
+                    <div class="rule-card">
+                        <div class="angle">180°</div>
+                        <div class="dir">clockwise or anticlockwise</div>
+                        <div class="formula">(x, y) → (−x, −y)</div>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                   <strong>Why these rules work</strong>
+                   <p>
+                        Rotating a point by 90° anticlockwise swaps the coordinates and 
+                        negates the new x-value: (x, y) → (−y, x). Each further 90° turn 
+                        applies the same swap again. After 180° both values negate; after 
+                        270° anticlockwise you get (y, −x), which is the same as 90° 
+                        clockwise.
+                   </p>
+                </div>
+
+                <h2>Rotating about the origin</h2>
+
+                <div class="interactive-wrap">
+                    <div class="ctrl-row">
+                        <label>Rotation</label>
+                        <select id="sel-angle">
+                            <option value="90cw">90° clockwise</option>
+                            <option value="90acw">90° anticlockwise</option>
+                            <option value="180">180°</option>
+                            <option value="270cw">270° clockwise</option>
+                        </select>
+                    </div>
+                    <svg id="origin-svg" width="100%" viewBox="0 0 520 520" style="display:block"></svg>
+                    <div class="svg-label">
+                        <p id="origin-caption">Triangle PQR rotated 90° clockwise about the origin → P'Q'R'</p>
+                    </div>
+                </div>
+                <small>The diagram above shows a rotation of a triangle in the clockwise direction</small>
+
+
+
+
+
+                <h3>WORKED EXAMPLE: ROTATION ABOUT THE ORIGIN</h3>
+                <p>
+                    Triangle PQR has vertices P(2, 3), Q(4, 1) and R(1, 1). Rotate it 90°
+                    clockwise about the 
+                    origin. Find the image coordinates.
+                </p>
+
+                <div class="worked">
+                    <div class="wtitle">Solution</div>
+                    <p style="font-size:.9rem;margin-bottom:.7rem">Rule for 90° clockwise: <span>(x, y) → (y, −x)</span></p>
+                    <div class="step"><span class="lbl">P(2, 3)</span><span class="val">→ P′(3, −2)</span></div>
+                    <div class="step"><span class="lbl">Q(4, 1)</span><span class="val">→ Q′(1, −4)</span></div>
+                    <div class="step"><span class="lbl">R(1, 1)</span><span class="val">→ R′(1, −1)</span></div>
+                    <div class="answer">Image vertices: P′(3, −2),  Q′(1, −4),  R′(1, −1)</div>
+                </div>
+
+
+
+
+
+
+
+                <h2>Rotation about a vertex (centre on the shape)</h2>
+
+                <p>
+                    When the centre of rotation is a <strong>vertex of the shape itself</strong>, that 
+                    point stays fixed while every other point turns around it. 
+                    This is a common exam scenario.
+                </p>
+
+                <p>
+                    The coordinate rule still applies; but you must first 
+                    <strong>work relative to the centre</strong>,
+                    apply the rule, then shift back.
+                </p>
+
+                <h3 style="text-transform: uppercase;">
+                    Step-by-step method for any centre (a, b)
+                </h3>
+
+                <ol style="margin-left:3rem;">
+                    <li>
+                        Subtract the centre coordinates from every vertex:
+                        (x − a, y − b)
+                    </li>
+                    <li>
+                        Apply the rotation rule for the given angle and direction.
+                    </li>
+                    <li>
+                        Add the centre coordinates back:
+                        (result_x + a, result_y + b).
+                    </li>
+                </ol>
+
+
+                <h3 style="text-transform: uppercase;">
+                    Worked example: rotation about a vertex
+                </h3>
+
+                <p>
+                    Triangle ABC has vertices A(2, 4), B(4, 4) and C(3, 1). Rotate it 
+                    <strong>90° anticlockwise</strong> about point C(3, 1).
+                </p>
+
+                <p>
+                    <strong>Ponit A</strong>
+                </p>
+                <p>
+                    Rule for 90° anticlockwise: (x, y) → (−y, x)
+                </p>
+
+                <p>
+                    A(2, 4)Relative to C(3,1): (2−3, 4−1) = (−1, 3)
+                </p>
+
+                <p>
+                    Apply rule(−1, 3) → (−3, −1)
+                </p>
+
+                <p>
+                   Add C back(−3+3, −1+1) = <strong>A′(0, 0)</strong> 
+                </p>
+
+                <p>
+                    <strong>Point B</strong>
+                </p>
+                <p>
+                   Rule for 90° anticlockwise: (x, y) → (−y, x)
+                </p>
+                <p>
+                   B(4, 4)Relative to C(3,1): (4−3, 4−1) = (1, 3) 
+                </p>
+                <p>
+                    Apply rule(1, 3) → (−3, 1)
+                </p>
+                <p>
+                    Add C back(−3+3, 1+1) = <strong>B′(0, 2)</strong>
+                </p>
+
+
+
+                <div id="ex1c" class="tab-content active">
+                    <p><strong>C stays fixed</strong> as the centre of rotation → C′(3, 1).</p>
+                    <div class="answer" style="margin-top:.8rem">Image vertices: A′(0, 0),  B′(0, 2),  C′(3, 1)</div>
+                    <div class="svg-wrap responsive-svg-container" style="margin-top:1rem">
+                        <img src="../assets/img/transformations/rotation-about-a-vertex.svg" alt="Rotation About a vertex" />
+                        
+                        <div class="svg-label">Triangle ABC rotated 90° anticlockwise about C(3,1)</div>
+                    </div>
+                </div>
+
+                <h3 style="text-transform: uppercase;">
+                    Exploring rotation through different angles
+                </h3>
+
+                <p>
+                    The diagram below shows how the same triangle looks after 
+                    rotations of 90°, 180° and 270° <strong>anticlockwise</strong>
+                    about the origin, so you can compare the orientations 
+                    side by side.
+                </p>
+
+                <div class="svg-wrap responsive-svg-container">
+                    <img src="../assets/img/transformations/exploring-rotation-through-angles.svg" alt="Exploring rotation through different angles" />
+                    
+                    <div class="svg-label">PQR (blue) and its images after 90°, 180° and 270° anticlockwise rotations about the origin</div>
+                </div>
+
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p>
+                        <strong>Comparing orientations:</strong> 
+                        Notice that each successive 90° rotation 
+                        moves the triangle one quadrant anticlockwise. 
+                        After 180°, every point is directly opposite
+                        the origin from where it started. After 270° 
+                        ACW, the shape is in the same position as it 
+                        would be after 90° CW, the two are equivalent.
+                    </p>
+                </div>
+
+                <h3>
+                    Finding the centre of rotation by construction
+                </h3>
+
+                <p>If you are given an object and its image and must find the centre of rotation, use <strong>perpendicular bisectors</strong>.</p>
+                <ol class="construction-steps" style="margin-left:3rem;">
+                    <li>Join a vertex on the object to its corresponding image vertex (e.g. A to A′).</li>
+                    <li>Construct the perpendicular bisector of that line segment.</li>
+                    <li>Repeat for a second pair of corresponding vertices (e.g. B to B′).</li>
+                    <li>The point where the two bisectors intersect is the <strong>centre of rotation</strong>.</li>
+                </ol>
+                <p style="margin-top:1rem;">
+                    To find the angle of rotation: measure the angle from the 
+                    centre to any vertex and to its image, using a protractor or 
+                    by calculation.
+                </p>
+
+                <img src="../assets/img/transformations/finding-centre-of-rotation.svg" alt="Finding the centre of rotation by construction" />
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p>
+                        <strong>
+                            How to find the angle and direction once you have the centre
+                        </strong>
+                    </p>
+
+                    <p>
+                        Join the centre to any vertex (e.g. centre to A), and 
+                        join the centre to its image (centre to A′). The angle 
+                        between these two line segments is the 
+                        <strong>angle of rotation</strong>. Use the direction 
+                        the shape has turned to state whether it is clockwise 
+                        or anticlockwise.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="enlargement">
+                <h2 id="enlargement">Enlargement</h2>
+
+                <p>
+                    An <strong>enlargement</strong> is a transformation that 
+                    changes the <strong>size</strong> of a shape
+                    by a given <strong>scale factor</strong> from a fixed 
+                    point called the <strong>centre of enlargement</strong>.
+                    Unlike translation, reflection, and rotation, enlargement 
+                    is <strong>not</strong> an isometric transformation. 
+                    The image is usually a different size from the object. 
+                    However, the shape and its image are always
+                    <strong>similar</strong> (same shape, all angles equal,
+                    sides in proportion).
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Properties of Enlargement:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• All angles in the image are <strong>equal</strong> to the corresponding angles in the object.</p>
+                    <p style="margin-bottom: 0;">• All corresponding sides are in the same ratio, the <strong>scale factor</strong>.</p>
+                    <p style="margin-bottom: 0;">• Lines joining corresponding vertices, when extended, all pass through the <strong>centre of enlargement</strong>.</p>
+                    <p style="margin-bottom: 0;">• The object and image are <a href="#">similar</a> (but only <a href="#">congruent</a> when the scale factor is ±1).</p>
+                </div>
+
+                <h3>Discovering Enlargement using Corresponding Sides</h3>
+
+                <p>
+                    To understand enlargement, first explore the relationship between 
+                    the corresponding sides of an object
+                    and its image. Consider the two triangles below:
+                </p>
+
+                <p>
+                    Object triangle ABC has vertices A(1, 1), B(3, 1) and C(1, 3).<br>
+                    Image triangle A'B'C' has vertices A'(1, 1), B'(5, 1) and C'(1, 5).
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/enlargement.svg" alt="Enlargement Diagram" />
+                </div>
+                <p>
+                    Measure and compare corresponding sides:
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Comparing side lengths:</strong></p>
+                    <p style="padding-left: 20px;">AB = 2 units &nbsp;&nbsp;→&nbsp;&nbsp; A'B' = 4 units &nbsp;&nbsp;→&nbsp;&nbsp; ratio = 4 ÷ 2 = <strong>2</strong></p>
+                    <p style="padding-left: 20px;">AC = 2 units &nbsp;&nbsp;→&nbsp;&nbsp; A'C' = 4 units &nbsp;&nbsp;→&nbsp;&nbsp; ratio = 4 ÷ 2 = <strong>2</strong></p>
+                    <p style="padding-left: 20px;">BC = 2√2 units →&nbsp;&nbsp; B'C' = 4√2 units →&nbsp;&nbsp; ratio = 4√2 ÷ 2√2 = <strong>2</strong></p>
+                    <p style="margin-top: 0.5rem;">Every pair of corresponding sides is in the ratio <strong>2 : 1</strong>. The scale factor is <strong>2</strong>.</p>
+                </div>
+            
+                <h3>Finding the Centre of Enlargement</h3>
+
+                <p>
+                    To find the centre of enlargement, join corresponding 
+                    vertices with straight lines and extend them.
+                    All such lines intersect at a single point, the 
+                    <strong>centre of enlargement</strong>.
+                </p>
+
+                <p>
+                    In the diagram below, triangle ABC (white) has been enlarged to triangle A'B'C' (cyan).
+                    The side lengths are:
+                </p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>Object triangle ABC: 2 cm, 2 cm, 2√2 cm (right-angled isosceles triangle)</li>
+                    <li>Image triangle A'B'C': 4 cm, 4 cm, 4√2 cm</li>
+                </ul>
+                <p>
+                    The scale factor is <strong>k = 2</strong> because every side of the image is twice the corresponding side of the object.
+                </p>
+
+                <div class="responsive-svg-container">
+                <img src="../assets/img/transformations/centre-of-enlargement.svg" alt="Finding centre of enlargement" />
+                </div>
+
+                <p>
+                    Notice that the three red dashed rays, drawn from the 
+                    centre O through each vertex of the object, pass
+                    exactly through the corresponding vertex of the image. 
+                    This is always the case: the <strong>centre of enlargement
+                    lies on every ray</strong> connecting corresponding 
+                    vertices.
+                </p>
+
+                <h3>Deducing the Scale Factor and Centre</h3>
+
+                <p>
+                    Once you have joined corresponding vertices and found the intersection point (the centre), the
+                    <strong>scale factor</strong> is found by measuring distances from the centre:
+                </p>
+
+                <div style="text-align: center; font-size: 1.1rem; margin: 1rem 0;">
+                    <strong>Scale factor (k) = distance from centre to image vertex ÷ distance from centre to object vertex</strong>
+                </div>
+
+                <p>
+                    Using the example above, with centre O(1, 1):
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="padding-left: 20px;">OA = distance from O(1,1) to A(2,1) = 1 unit</p>
+                    <p style="padding-left: 20px;">OA' = distance from O(1,1) to A'(3,1) = 2 units</p>
+                    <p style="padding-left: 20px;">Scale factor = OA' ÷ OA = 2 ÷ 1 = <strong>2</strong></p>
+                    <p style="padding-left: 20px; margin-top: 0.5rem;">OB = distance from O(1,1) to B(4,1) = 3 units</p>
+                    <p style="padding-left: 20px;">OB' = distance from O(1,1) to B'(7,1) = 6 units</p>
+                    <p style="padding-left: 20px;">Scale factor = 6 ÷ 3 = <strong>2</strong></p>
+                    <p style="padding-left: 20px; margin-top: 0.5rem;">OC = distance from O(1,1) to C(2,3) = √(1² + 2²) = √5 units</p>
+                    <p style="padding-left: 20px;">OC' = distance from O(1,1) to C'(3,5) = √(2² + 4²) = √20 = 2√5 units</p>
+                    <p style="padding-left: 20px;">Scale factor = 2√5 ÷ √5 = <strong>2</strong></p>
+                    <p style="padding-left: 20px; margin-top: 0.5rem;">The corresponding side lengths confirm the scale factor:</p>
+                    <p style="padding-left: 20px;">A'B' = 4 cm, AB = 2 cm → ratio = 4 ÷ 2 = <strong>2</strong></p>
+                    <p style="padding-left: 20px;">A'C' = 4 cm, AC = 2 cm → ratio = 4 ÷ 2 = <strong>2</strong></p>
+                    <p style="padding-left: 20px;">B'C' = 4√2 cm, BC = 2√2 cm → ratio = 4√2 ÷ 2√2 = <strong>2</strong></p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════════════════════ -->
+                <h3>Positive Scale Factor</h3>
+                <!-- ═══════════════════════════════════════════════════════════ -->
+
+                <p>
+                    When the scale factor <strong>k > 0</strong>, the image appears on the <strong>same side</strong> of the centre
+                    of enlargement as the object. The image is upright relative to the object.
+                </p>
+
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>If <strong>k > 1</strong>, the image is <strong>larger</strong> than the object.</li>
+                    <li>If <strong>k = 1</strong>, the image is the same size and position as the object (no change).</li>
+                    <li>If <strong>0 &lt; k &lt; 1</strong>, the image is <strong>smaller</strong> than the object (fractional scale factor).</li>
+                </ul>
+
+                <p>
+                    To enlarge a shape by scale factor k from centre O:
+                </p>
+
+                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>Draw a ray from O through each vertex of the object.</li>
+                    <li>Measure the distance from O to each vertex.</li>
+                    <li>Multiply that distance by k to get the distance from O to the image vertex.</li>
+                    <li>Mark the image vertex on the same ray, at the new distance from O.</li>
+                    <li>Join the image vertices to complete the image shape.</li>
+                </ol>
+
+                <p>
+                    <strong>Example 1:</strong> Triangle ABC has vertices A(1, 2), B(3, 2) and C(1, 4).
+                    Enlarge it by scale factor <strong>3</strong>, centre <strong>O(0, 0)</strong>.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p>Each image vertex = k × (object vertex − O) + O. Since O = (0,0): image vertex = 3 × object vertex.</p>
+                    <p style="padding-left: 20px;">A(1, 2) → A'(3 × 1, 3 × 2) = <strong>A'(3, 6)</strong></p>
+                    <p style="padding-left: 20px;">B(3, 2) → B'(3 × 3, 3 × 2) = <strong>B'(9, 6)</strong></p>
+                    <p style="padding-left: 20px;">C(1, 4) → C'(3 × 1, 3 × 4) = <strong>C'(3, 12)</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> Image vertices: A'(3, 6), B'(9, 6), C'(3, 12).</p>
+                    <p>Each side of the image is <strong>3 times</strong> the corresponding side of the object.</p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/positive-scale-factor.svg" alt="Enlargement with a positive scale factor" />
+                </div>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Describing an Enlargement with Positive Scale Factor:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">To fully describe an enlargement you must state:</p>
+                    <p style="margin-bottom: 0;">1. That it is an <strong>enlargement</strong>.</p>
+                    <p style="margin-bottom: 0;">2. The <strong>scale factor</strong> (e.g. scale factor 3).</p>
+                    <p style="margin-bottom: 0;">3. The <strong>centre of enlargement</strong> as coordinates (e.g. centre (0, 0)).</p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════════════════════ -->
+                <h3>Negative Scale Factor</h3>
+                <!-- ═══════════════════════════════════════════════════════════ -->
+
+                <p>
+                    When the scale factor <strong>k &lt; 0</strong>, the image appears on the <strong>opposite side</strong>
+                    of the centre of enlargement from the object. The image is also <strong>inverted</strong> (upside down
+                    and back to front relative to the object).
+                </p>
+
+                <p>
+                    This means the centre of enlargement lies 
+                    <strong>between</strong> the object and the image, not 
+                    outside both of them as with a positive scale factor.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Key deductions for a negative scale factor:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• The image is on the <strong>opposite side</strong> of the centre from the object.</p>
+                    <p style="margin-bottom: 0;">• The image is <strong>inverted</strong> (rotated 180° relative to the object).</p>
+                    <p style="margin-bottom: 0;">• The centre lies <strong>between</strong> object and image on every connecting ray.</p>
+                    <p style="margin-bottom: 0;">• The size ratio is |k| : 1. This means a scale factor of −2 makes the image twice as large, inverted.</p>
+                </div>
+
+                <p>
+                    To find the image vertex when given a negative scale factor k and centre O:
+                </p>
+                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>Draw a ray from the object vertex <strong>through</strong> the centre O and continue it on the other side.</li>
+                    <li>Measure the distance from O to the object vertex.</li>
+                    <li>Multiply that distance by |k| and mark the image vertex on the <strong>opposite side</strong> of O.</li>
+                </ol>
+
+                <p>
+                    <strong>Example 2:</strong> Triangle PQR has vertices P(2, 1), Q(4, 1) and R(2, 3).
+                    Enlarge it by scale factor <strong>−2</strong>, centre <strong>O(1, 1)</strong>. Find the image coordinates.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p>Image vertex = k × (object vertex − O) + O, where k 
+                        = −2, O 
+                        = (1,1).
+                    </p>
+                    <p style="padding-left: 20px;">P(2,1): 
+                        <br> −2 × (2−1, 1−1) + (1,1) 
+                        <br> = −2 × (1,0) + (1,1) 
+                        <br> = (−2,0) + (1,1) 
+                        <br> = <strong>P'(−1, 1)</strong>
+                    </p>
+
+                    <p style="padding-left: 20px;">
+                        <br>Q(4,1): 
+                        <br>−2 × (4−1, 1−1) + (1,1) 
+                        <br>= −2 × (3,0) + (1,1) 
+                        <br>= (−6,0) + (1,1) 
+                        <br>= <strong>Q'(−5, 1)</strong>
+                    </p>
+                    
+                    <p style="padding-left: 20px;">
+                        <br>R(2,3): 
+                        <br>−2 × (2−1, 3−1) + (1,1) 
+                        <br>= −2 × (1,2) + (1,1) 
+                        <br>= (−2,−4) + (1,1) 
+                        <br>= <strong>R'(−1, −3)</strong>
+                    </p>
+                    
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> Image vertices: P'(−1, 1), Q'(−5, 1), R'(−1, −3).</p>
+                    <p>The image is inverted and twice as large, with the centre O(1,1) lying between object and image on every ray.</p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/negative-scale-factor.svg" alt="Enlargement with a negative scale factor" />
+                </div>
+
+                <p>
+                    Notice how the image triangle P'Q'R' is inverted; it is a 
+                    "flipped" version of PQR, and the centre
+                    O(1, 1) lies <strong>between</strong> the object and image 
+                    on each ray.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Describing an Enlargement with Negative Scale Factor:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">1. State that it is an <strong>enlargement</strong>.</p>
+                    <p style="margin-bottom: 0;">2. Give the <strong>scale factor</strong> including the negative sign (e.g. scale factor −2).</p>
+                    <p style="margin-bottom: 0;">3. State the <strong>centre of enlargement</strong> as coordinates.</p>
+                    <!-- <p style="margin-bottom: 0; margin-top: 0.5rem;"><strong>Note:</strong> You may also add that the image is <em>inverted</em> — this helps show full understanding.</p> -->
+                </div>
+
+                
+                <!-- ═══════════════════════════════════════════════════════════ -->
+                <h3>Fractional Scale Factor</h3>
+                <!-- ═══════════════════════════════════════════════════════════ -->
+
+                <p>
+                    A <strong>fractional scale factor</strong> is any scale factor where |k| &lt; 1
+                    (for example, &frac12;, &frac13;, or 0.25). When |k| &lt; 1, the image is <strong>smaller</strong> than the object. 
+                    The shape is reduced, not enlarged in the everyday sense.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Key deductions for a fractional scale factor:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• The image is <strong>smaller</strong> than the object.</p>
+                    <p style="margin-bottom: 0;">• If the fractional scale factor is <strong>positive</strong>, the image is on the <strong>same side</strong> of the centre as the object.</p>
+                    <p style="margin-bottom: 0;">• If the fractional scale factor is <strong>negative</strong>, the image is on the <strong>opposite side</strong> of the centre (inverted and smaller).</p>
+                    <p style="margin-bottom: 0;">• The centre still lies <strong>outside</strong> both shapes when the scale factor is a positive fraction.</p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;"><strong>Useful relationship:</strong> If the image is the object under scale factor k, then the object is the image under scale factor 1/k.</p>
+                </div>
+
+                <!-- ─── POSITIVE FRACTIONAL ─────────────────────────────────── -->
+                <h3 style="font-size: 1rem; color: #00ffcc; margin-top: 1.5rem;">Positive Fractional Scale Factor</h3>
+
+                <p>
+                    <strong>Example 3:</strong> Triangle ABC has vertices A(−2, 2), B(4, 2) and C(−2, 6).
+                    Enlarge it by scale factor <strong>&frac12;</strong>, centre <strong>O(0, 0)</strong>. Find the image coordinates.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p>Since O = (0,0): image vertex = &frac12; × object vertex.</p>
+                    <p style="padding-left: 20px;">A(−2, 2) → A'(&frac12; × −2, &frac12; × 2) = <strong>A'(−1, 1)</strong></p>
+                    <p style="padding-left: 20px;">B(4, 2) → B'(&frac12; × 4, &frac12; × 2) = <strong>B'(2, 1)</strong></p>
+                    <p style="padding-left: 20px;">C(−2, 6) → C'(&frac12; × −2, &frac12; × 6) = <strong>C'(−1, 3)</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> Image vertices: A'(−1, 1), B'(2, 1), C'(−1, 3).</p>
+                    <p>Each side of the image is <strong>half</strong> the corresponding side of the object. The image is closer to the centre than the object.</p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/positive-fractional-scale-factor.svg" alt="Enlargement with positive fractiona scale factor" />
+                </div>
+
+                <p>
+                    Notice that the image lies <strong>between</strong> the centre O and the object. The rays from
+                    O pass through the image vertices before reaching the object vertices. This is a defining feature of
+                    a positive fractional scale factor.
+                </p>
+
+                <!-- ─── NEGATIVE FRACTIONAL ─────────────────────────────────── -->
+                <h3 style="font-size: 1rem; color: #00ffcc; margin-top: 1.8rem;">Negative Fractional Scale Factor</h3>
+
+                <p>
+                    A <strong>negative fractional scale factor</strong> combines both effects: the image is
+                    <strong>smaller</strong> than the object (because |k| &lt; 1) <em>and</em> it is
+                    <strong>inverted</strong> and on the <strong>opposite side</strong> of the centre (because k is negative).
+                    The centre of enlargement lies <strong>between</strong> the object and image, just as with any negative scale factor.
+                </p>
+
+                <p>
+                    <strong>Example 4:</strong> Triangle PQR has vertices P(−4, 2), Q(2, 2) and R(−4, 6).
+                    Enlarge it by scale factor <strong>−&frac12;</strong>, centre <strong>O(0, 0)</strong>. Find the image coordinates.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p>Use the formula: image vertex = k × (object vertex − O) + O. Since O = (0, 0): image vertex = −&frac12; × object vertex.</p>
+                    <p style="padding-left: 20px;">P(−4, 2) → P'(−&frac12; × −4, −&frac12; × 2) = <strong>P'(2, −1)</strong></p>
+                    <p style="padding-left: 20px;">Q(2, 2) → Q'(−&frac12; × 2, −&frac12; × 2) = <strong>Q'(−1, −1)</strong></p>
+                    <p style="padding-left: 20px;">R(−4, 6) → R'(−&frac12; × −4, −&frac12; × 6) = <strong>R'(2, −3)</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> Image vertices: P'(2, −1), Q'(−1, −1), R'(2, −3).</p>
+                    <p>The image is <strong>half the size</strong> of the object, <strong>inverted</strong>, 
+                        and sits on the <strong>opposite side</strong> of O from the object. The centre O lies 
+                        between the object and image on every ray.
+                    </p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/negative-fractional-scale-factor.svg" alt="Enlargement with negative fractional scale factor" />
+                </div>
+
+                <p>
+                    Compare this carefully with the positive scale factor of &frac12; above. The image is the <strong>same size</strong>
+                    in both cases. But with k = −&frac12;, the image is <strong>inverted</strong> and appears on the
+                    <strong>opposite side</strong> of O. 
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Scale Factor Quick Reference:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• <strong>k &gt; 1</strong>: image larger, same side of O, same orientation as object.</p>
+                    <p style="margin-bottom: 0;">• <strong>0 &lt; k &lt; 1</strong>: image smaller, same side of O, same orientation; image lies between O and object.</p>
+                    <p style="margin-bottom: 0;">• <strong>k &lt; −1</strong>: image larger, opposite side of O, inverted.</p>
+                    <p style="margin-bottom: 0;">• <strong>−1 &lt; k &lt; 0</strong>: image smaller, opposite side of O, inverted; image lies between O and object.</p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;"><strong>In all cases:</strong> all lines through corresponding vertices pass through the centre of enlargement.</p>
+                </div>
+
+            </div>
+
+            <div class="shear">
+                <h2 id="shear">Shear</h2>
+
+                <p>
+                    A <strong>shear</strong> is a transformation that slides every point of a shape parallel to a fixed line
+                    called the <strong>invariant line</strong>. Points on the invariant line do not move. Every other point
+                    is displaced by an amount <strong>proportional to its distance</strong> from the invariant line.
+                    The shape changes appearance. It is "slanted" but its <strong>area is preserved</strong>.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Properties of a Shear:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• All points on the <strong>invariant line</strong> remain fixed (do not move).</p>
+                    <p style="margin-bottom: 0;">• Every other point moves <strong>parallel to the invariant line</strong>.</p>
+                    <p style="margin-bottom: 0;">• The distance a point moves is proportional to its <strong>perpendicular distance</strong> from the invariant line.</p>
+                    <p style="margin-bottom: 0;">• The <strong>area</strong> of the shape is unchanged.</p>
+                    <p style="margin-bottom: 0;">• The shape is <strong>not congruent</strong> to the original (angles and some lengths change), but it has the same area.</p>
+                </div>
+
+                <h3>The Shear Factor</h3>
+
+                <p>
+                    The <strong>shear factor</strong> (k) tells you how far a point moves for each unit of perpendicular
+                    distance from the invariant line. Specifically:
+                </p>
+
+                <div style="text-align: center; margin: 1rem 0; font-size: 1.05rem;">
+                    <strong>displacement parallel to invariant line = shear factor × perpendicular distance from invariant line</strong>
+                </div>
+
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>A <strong>positive shear factor</strong> displaces points in the positive direction along the invariant line axis.</li>
+                    <li>A <strong>negative shear factor</strong> displaces points in the negative direction.</li>
+                    <li>The <strong>larger</strong> the magnitude of k, the more the shape is slanted.</li>
+                </ul>
+
+                <h3>Shear with the x-axis as Invariant Line</h3>
+
+                <p>
+                    When the <strong>x-axis</strong> is the invariant line, every point (x, y) is mapped as follows:
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0; text-align: center; font-size: 1rem;">
+                        <strong>(x, y) → (x + ky, &nbsp; y)</strong>
+                    </p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem; color: #aaaaaa; font-size: 0.9rem; text-align: center;">
+                        The y-coordinate is unchanged (points stay at the same height). The x-coordinate shifts by k × y.
+                    </p>
+                </div>
+
+                <p>
+                    Points <em>on</em> the x-axis have y = 0, so their x-coordinate is unchanged. They are invariant, as expected.
+                    Points further from the x-axis (larger |y|) shift more.
+                </p>
+
+                <h3 id="positive-shear">Positive Shear, x-axis Invariant</h3>
+
+                <p>
+                    Square ABCD has vertices A(0, 0), B(2, 0), C(2, 2) and D(0, 2).
+                    Apply a shear with <strong>shear factor k = 2</strong> and the <strong>x-axis as the invariant line</strong>.
+                    Find the image coordinates.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p style="margin-bottom: 0.3rem;">Rule: (x, y) → (x + 2y, &nbsp; y)</p>
+                    <p style="padding-left: 20px;">A(0, 0) → (0 + 2×0, &nbsp; 0) = <strong>A'(0, 0)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">B(2, 0) → (2 + 2×0, &nbsp; 0) = <strong>B'(2, 0)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">C(2, 2) → (2 + 2×2, &nbsp; 2) = <strong>C'(6, 2)</strong></p>
+                    <p style="padding-left: 20px;">D(0, 2) → (0 + 2×2, &nbsp; 2) = <strong>D'(4, 2)</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> A'(0, 0), B'(2, 0), C'(6, 2), D'(4, 2).</p>
+                    <p>A and B are on the x-axis so they do not move. C and D are 2 units above the x-axis, so each 
+                        shifts 2 × 2 = 4 units to the right.
+                    </p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/shear.svg" alt="Shear" />
+                </div>
+
+                <p>
+                    Notice that the bottom edge AB (which lies on the invariant x-axis) <strong>does not move</strong>.
+                    The top edge DC slides 4 units to the right because those points are 2 units above the invariant line
+                    and k = 2. The square becomes a parallelogram, but its area is unchanged.
+                </p>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Shear with the y-axis as Invariant Line</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    When the <strong>y-axis</strong> is the invariant line, every point (x, y) is mapped as follows:
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0; text-align: center; font-size: 1rem;">
+                        <strong>(x, y) → (x, &nbsp; y + kx)</strong>
+                    </p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem; color: #aaaaaa; font-size: 0.9rem; text-align: center;">
+                        The x-coordinate is unchanged. The y-coordinate shifts by k × x.
+                    </p>
+                </div>
+
+                <p>
+                    Points on the y-axis have x = 0, so their y-coordinate does not change, they are invariant.
+                    Points further from the y-axis (larger |x|) shift more in the y-direction.
+                </p>
+
+                <h3>Negative Shear, y-axis Invariant</h3>
+
+                <p>
+                    Triangle ABC has vertices A(0, 0), B(0, 3) and C(2, 1).
+                    Apply a shear with <strong>shear factor k = −1</strong> and the <strong>y-axis as the invariant line</strong>.
+                    Find the image coordinates.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p style="margin-bottom: 0.3rem;">Rule: (x, y) → (x, &nbsp; y + (−1)x) = (x, &nbsp; y − x)</p>
+                    <p style="padding-left: 20px;">A(0, 0) → (0, &nbsp; 0 − 0) = <strong>A'(0, 0)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">B(0, 3) → (0, &nbsp; 3 − 0) = <strong>B'(0, 3)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">C(2, 1) → (2, &nbsp; 1 − 2) = <strong>C'(2, −1)</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> A'(0, 0), B'(0, 3), C'(2, −1).</p>
+                    <p>A and B are on the y-axis so they do not move. C is 2 units from the y-axis, so it shifts by
+                        −1 × 2 = −2 units downward.
+                    </p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/negative-shear.svg" alt="Negatove Shear" />
+                </div>
+
+                <p>
+                    Here the negative shear factor means C moves <strong>downward</strong> (in the negative y-direction)
+                    rather than upward. A and B sit on the invariant y-axis and stay fixed. The triangle is slanted
+                    in the opposite direction compared to a positive shear.
+                </p>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Finding the Invariant Line and Shear Factor</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    When you are given an object and its image and must identify the shear, follow these steps:
+                </p>
+
+                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>
+                        <strong>Find the invariant line:</strong> look for the set of points that have not moved.
+                        Join each object vertex to its corresponding image vertex. These joining lines are all
+                        parallel to each other and parallel to the invariant line. The invariant line passes through
+                        any points that did not move.
+                    </li>
+                    <li>
+                        <strong>Find the shear factor:</strong> choose any point that <em>did</em> move.
+                        Measure its perpendicular distance <em>d</em> from the invariant line, and the distance <em>s</em> it moved
+                        parallel to the invariant line. Then:
+                        <div style="text-align: center; margin: 0.5rem 0;">
+                            <strong>k = s ÷ d</strong>
+                        </div>
+                        Use a negative sign if the point moved in the negative direction along the invariant line axis.
+                    </li>
+                </ol>
+
+
+
+                <h3>Finding the Shear Factor from a Diagram</h3>
+
+                <p>
+                    The diagram below shows triangle ABC and its image A'B'C' after a shear with the x-axis as the
+                    invariant line. A(0, 0) and B(3, 0) are unchanged. C(1, 2) has moved to C'(5, 2).
+                    Find the shear factor.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/shear-factor.svg" alt="Finding shear factor from diagram" />
+                </div>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p style="padding-left: 20px;">Perpendicular distance of C from x-axis: <strong>d = 2</strong></p>
+                    <p style="padding-left: 20px;">Distance C moved parallel to x-axis: from x = 1 to x = 5, so <strong>s = 4</strong></p>
+                    <p style="padding-left: 20px;">Shear factor: k = s ÷ d = 4 ÷ 2 = <strong>k = 2</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Check:</strong> Using the rule (x, y) → (x + 2y, y): C(1, 2) → (1 + 4, 2) = C'(5, 2)</p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Describing a Shear Fully</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>To describe a shear fully you must state:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">1. That it is a <strong>shear</strong>.</p>
+                    <p style="margin-bottom: 0;">2. The <strong>invariant line</strong> (e.g. the x-axis, the y-axis, or the line y = 2).</p>
+                    <p style="margin-bottom: 0;">3. The <strong>shear factor</strong> including the sign (e.g. shear factor 2, or shear factor −1).</p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Shear with a Non-Axis Invariant Line</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    The invariant line does not have to be a coordinate axis. It can be any straight line, such as
+                    y = 1 or x = 2. The same principles apply: points on the line are fixed, and every other
+                    point moves parallel to the line by an amount proportional to its perpendicular distance from it.
+                </p>
+
+                <p>
+                    <strong>Example 4:</strong> Triangle PQR has vertices P(1, 2), Q(4, 2) and R(1, 4).
+                    Apply a shear with <strong>invariant line y = 2</strong> and <strong>shear factor k = −1</strong>.
+                    Find the image coordinates.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p style="margin-bottom: 0.3rem;">
+                        The invariant line is y = 2. Each point's perpendicular distance from y = 2 is (y − 2).
+                        The shear shifts each point horizontally (parallel to y = 2) by k × (y − 2).
+                    </p>
+                    <p style="margin-bottom: 0.3rem;">Rule: (x, y) → (x + k(y − 2), &nbsp; y) = (x − (y − 2), &nbsp; y) = (x − y + 2, &nbsp; y)</p>
+                    <p style="padding-left: 20px;">P(1, 2): distance from y=2 is 0 → <strong>P'(1, 2)</strong> &nbsp;(on invariant line — does not move)</p>
+                    <p style="padding-left: 20px;">Q(4, 2): distance from y=2 is 0 → <strong>Q'(4, 2)</strong> &nbsp;(on invariant line — does not move)</p>
+                    <p style="padding-left: 20px;">R(1, 4): distance from y=2 is 2; shift = −1×2 = −2 → x moves from 1 to −1: <strong>R'(−1, 4)</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> P'(1, 2), Q'(4, 2), R'(−1, 4).</p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/shear-factor-non-invariant.svg" alt="Shear with a non-invariant line" />
+                </div>
+
+                <p>
+                    P and Q lie exactly on the invariant line y = 2, so they do not move. R is 2 units above the
+                    invariant line. With k = −1, it shifts 2 units to the <strong>left</strong>.
+                </p>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Area is Preserved Under Shear</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    A key property of shear is that the area of the shape does not change. You can verify this
+                    using the original object and its image in <a href="#positive-shear">this section</a>:
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Verification <a href="#positive-shear">(First Example)</a>:</strong></p>
+                    <p style="padding-left: 20px;">Area of square ABCD = base × height = 2 × 2 = <strong>4 square units</strong></p>
+                    <p style="padding-left: 20px;">Area of parallelogram A'B'C'D' = base × height = 2 × 2 = <strong>4 square units</strong></p>
+                    <p style="margin-top: 0.5rem;">
+                        The base AB = 2 units and the perpendicular height = 2 units remain unchanged after the shear,
+                        so the area is preserved.
+                    </p>
+                </div>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Shear Summary:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• <strong>Invariant line:</strong> every point on it stays fixed.</p>
+                    <p style="margin-bottom: 0;">• <strong>Shear direction:</strong> always parallel to the invariant line.</p>
+                    <p style="margin-bottom: 0;">• <strong>Shear factor k:</strong> displacement = k × perpendicular distance from invariant line.</p>
+                    <p style="margin-bottom: 0;">• <strong>k > 0:</strong> points shift in the positive direction along the invariant line axis.</p>
+                    <p style="margin-bottom: 0;">• <strong>k &lt; 0:</strong> points shift in the negative direction.</p>
+                    <p style="margin-bottom: 0;">• <strong>Area is always preserved</strong> because the shape is distorted but not resized.</p>
+                    <p style="margin-bottom: 0;">• To find k from a diagram: k = (distance moved parallel to invariant line) ÷ (perpendicular distance from invariant line).</p>
+                </div>
+
+            </div>
+
+            <div class="stretch">
+                <h2 id="stretch">Stretch</h2>
+
+                <p>
+                    A <strong>stretch</strong> is a transformation that moves every point of a shape perpendicular to a fixed line
+                    called the <strong>invariant line</strong>. Points on the invariant line do not move. Every other point is displaced
+                    by an amount <strong>proportional to its distance</strong> from the invariant line. The shape is extended or
+                    compressed in one direction, changing its proportions. Unlike a shear, the <strong>area is not preserved</strong>.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Properties of a Stretch:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• All points on the <strong>invariant line</strong> remain fixed (do not move).</p>
+                    <p style="margin-bottom: 0;">• Every other point moves <strong>perpendicular</strong> to the invariant line.</p>
+                    <p style="margin-bottom: 0;">• The distance a point moves is proportional to its <strong>perpendicular distance</strong> from the invariant line.</p>
+                    <p style="margin-bottom: 0;">• The <strong>area</strong> of the shape is <strong>multiplied by the absolute value of the stretch factor</strong> (|k|).</p>
+                    <p style="margin-bottom: 0;">• The shape is <strong>not congruent</strong> to the original (angles and lengths change), and its area changes unless |k| = 1.</p>
+                </div>
+
+                <h3>The Stretch Factor</h3>
+
+                <p>
+                    The <strong>stretch factor</strong> (k) tells you how much a point's perpendicular distance from the invariant line changes. Specifically:
+                </p>
+
+                <div style="text-align: center; margin: 1rem 0; font-size: 1.05rem;">
+                    <strong>new perpendicular distance from invariant line = stretch factor × original perpendicular distance</strong>
+                </div>
+
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>A <strong>positive stretch factor</strong> moves points to the same side of the invariant line.</li>
+                    <li>A <strong>negative stretch factor</strong> moves points to the opposite side of the invariant line (it reflects as it stretches).</li>
+                    <li>If |k| > 1, the shape is <strong>extended</strong> away from the invariant line.</li>
+                    <li>If 0 < |k| < 1, the shape is <strong>compressed</strong> towards the invariant line.</li>
+                </ul>
+
+                <h3>Stretch with the x-axis as Invariant Line</h3>
+
+                <p>
+                    When the <strong>x-axis</strong> is the invariant line, every point (x, y) is mapped as follows:
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0; text-align: center; font-size: 1rem;">
+                        <strong>(x, y) → (x, &nbsp; k &times; y)</strong>
+                    </p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem; color: #aaaaaa; font-size: 0.9rem; text-align: center;">
+                        The x-coordinate is unchanged. The y-coordinate is multiplied by k (perpendicular distance from x-axis).
+                    </p>
+                </div>
+
+                <p>
+                    Points <em>on</em> the x-axis have y = 0, so they are invariant. Points further from the x-axis (larger |y|) are stretched more.
+                </p>
+
+                <h3 id="positive-stretch">Positive Stretch, x-axis Invariant</h3>
+
+                <p>
+                    Square ABCD has vertices A(0, 0), B(2, 0), C(2, 2) and D(0, 2).
+                    Apply a stretch with <strong>stretch factor k = 2</strong> and the <strong>x-axis as the invariant line</strong>.
+                    Find the image coordinates.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p style="margin-bottom: 0.3rem;">Rule: (x, y) → (x, &nbsp; 2 &times; y)</p>
+                    <p style="padding-left: 20px;">A(0, 0) → (0, 2 &times; 0) = <strong>A'(0, 0)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">B(2, 0) → (2, 2 &times; 0) = <strong>B'(2, 0)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">C(2, 2) → (2, 2 &times; 2) = <strong>C'(2, 4)</strong></p>
+                    <p style="padding-left: 20px;">D(0, 2) → (0, 2 &times; 2) = <strong>D'(0, 4)</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> A'(0, 0), B'(2, 0), C'(2, 4), D'(0, 4).</p>
+                    <p>A and B are on the x-axis so they do not move. C and D are 2 units above the x-axis, so their y-coordinate 
+                        doubles to 4. The square becomes a rectangle, stretched vertically.
+                    </p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/positive-stretch.svg" alt="Positive shear factor" />
+                </div>
+
+                <p>
+                    Notice that the bottom edge AB (which lies on the invariant x-axis) <strong>does not move</strong>.
+                    The top edge DC moves further away from the x-axis because those points are 2 units above the invariant line
+                    and k = 2. The square becomes a rectangle, and its area is multiplied by |k| = 2 (from 4 to 8 square units).
+                </p>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Stretch with the y-axis as Invariant Line</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    When the <strong>y-axis</strong> is the invariant line, every point (x, y) is mapped as follows:
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0; text-align: center; font-size: 1rem;">
+                        <strong>(x, y) → (k &times; x, &nbsp; y)</strong>
+                    </p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem; color: #aaaaaa; font-size: 0.9rem; text-align: center;">
+                        The y-coordinate is unchanged. The x-coordinate is multiplied by k.
+                    </p>
+                </div>
+
+                <p>
+                    Points on the y-axis have x = 0, so they are invariant. Points further from the y-axis (larger |x|) are stretched more.
+                </p>
+
+                <h3>Negative Stretch, y-axis Invariant</h3>
+
+                <p>
+                    Triangle ABC has vertices A(0, 0), B(0, 3) and C(2, 1).
+                    Apply a stretch with <strong>stretch factor k = −1</strong> and the <strong>y-axis as the invariant line</strong>.
+                    Find the image coordinates.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p style="margin-bottom: 0.3rem;">Rule: (x, y) → (−1 &times; x, &nbsp; y) = (−x, &nbsp; y)</p>
+                    <p style="padding-left: 20px;">A(0, 0) → (0, 0) = <strong>A'(0, 0)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">B(0, 3) → (0, 3) = <strong>B'(0, 3)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">C(2, 1) → (−2, 1) = <strong>C'(−2, 1)</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> A'(0, 0), B'(0, 3), C'(−2, 1).</p>
+                    <p>A and B are on the y-axis so they do not move. C is 2 units from the y-axis, so its x-coordinate is
+                        multiplied by −1, reflecting it to the opposite side of the y-axis.
+                    </p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/negative-stretch.svg" alt="Negative stretch factor" />
+                </div>
+
+                <p>
+                    Here the negative stretch factor means C moves <strong>to the opposite side</strong> of the y-axis.
+                    A and B sit on the invariant y-axis and stay fixed. The triangle is reflected as it is stretched.
+                </p>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Finding the Invariant Line and Stretch Factor</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    When you are given an object and its image and must identify the stretch, follow these steps:
+                </p>
+
+                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>
+                        <strong>Find the invariant line:</strong> look for the set of points that have not moved.
+                        Join each object vertex to its corresponding image vertex. These joining lines are all
+                        perpendicular to the invariant line. The invariant line passes through any points that did not move.
+                    </li>
+                    <li>
+                        <strong>Find the stretch factor:</strong> choose any point that <em>did</em> move.
+                        Measure its perpendicular distance <em>d</em> from the invariant line, and its new perpendicular distance <em>d'</em> from the invariant line. Then:
+                        <div style="text-align: center; margin: 0.5rem 0;">
+                            <strong>k = d' ÷ d</strong>
+                        </div>
+                        Use a negative sign if the point moved to the opposite side of the invariant line.
+                    </li>
+                </ol>
+
+                <h3>Finding the Stretch Factor from a Diagram</h3>
+
+                <p>
+                    The diagram below shows triangle ABC and its image A'B'C' after a stretch with the x-axis as the
+                    invariant line. A(0, 0) and B(3, 0) are unchanged. C(1, 2) has moved to C'(1, 6).
+                    Find the stretch factor.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/finding-stretch-factor.svg" alt="Finding Stretch Factor" />
+                </div>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p style="padding-left: 20px;">Original perpendicular distance of C from x-axis: <strong>d = 2</strong></p>
+                    <p style="padding-left: 20px;">New perpendicular distance of C' from x-axis: <strong>d' = 6</strong></p>
+                    <p style="padding-left: 20px;">Stretch factor: k = d' ÷ d = 6 ÷ 2 = <strong>k = 3</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Check:</strong> Using the rule (x, y) → (x, 3y): C(1, 2) → (1, 6) = C'(1, 6)</p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Describing a Stretch Fully</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>To describe a stretch fully you must state:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">1. That it is a <strong>stretch</strong>.</p>
+                    <p style="margin-bottom: 0;">2. The <strong>invariant line</strong> (e.g. the x-axis, the y-axis, or the line y = 2).</p>
+                    <p style="margin-bottom: 0;">3. The <strong>stretch factor</strong> including the sign (e.g. stretch factor 2, or stretch factor −1).</p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Stretch with a Non-Axis Invariant Line</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    The invariant line does not have to be a coordinate axis. It can be any straight line, such as
+                    y = 1 or x = 2. The same principles apply: points on the line are fixed, and every other
+                    point moves perpendicular to the line by an amount proportional to its perpendicular distance from it.
+                </p>
+
+                <p>
+                    <strong>Example 4:</strong> Triangle PQR has vertices P(1, 2), Q(4, 2) and R(1, 4).
+                    Apply a stretch with <strong>invariant line y = 2</strong> and <strong>stretch factor k = 3</strong>.
+                    Find the image coordinates.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong></p>
+                    <p style="margin-bottom: 0.3rem;">
+                        The invariant line is y = 2. Each point's perpendicular distance from y = 2 is (y − 2).
+                        The stretch multiplies this distance by k and adds it to the invariant line.
+                    </p>
+                    <p style="margin-bottom: 0.3rem;">Rule: (x, y) → (x, &nbsp; 2 + k(y − 2)) = (x, &nbsp; 2 + 3(y − 2)) = (x, &nbsp; 3y − 4)</p>
+                    <p style="padding-left: 20px;">P(1, 2): distance from y=2 is 0 → <strong>P'(1, 2)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">Q(4, 2): distance from y=2 is 0 → <strong>Q'(4, 2)</strong> &nbsp;(on invariant line, does not move)</p>
+                    <p style="padding-left: 20px;">R(1, 4): distance from y=2 is 2; new distance = 3×2 = 6 → y-coordinate = 2 + 6 = 8: <strong>R'(1, 8)</strong></p>
+                    <p style="margin-top: 0.5rem;"><strong>Answer:</strong> P'(1, 2), Q'(4, 2), R'(1, 8).</p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/non-axis-invariant-line.svg" alt="Non axis invariant line" />
+                </div>
+
+                <p>
+                    P and Q lie exactly on the invariant line y = 2, so they do not move. R is 2 units above the
+                    invariant line. With k = 3, its distance from the invariant line becomes 2 × 3 = 6 units.
+                </p>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Area Changes Under Stretch</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    A key property of stretch is that the area of the shape is <strong>multiplied by |k|</strong>. You can verify this
+                    using the original object and its image in <a href="#positive-stretch">this section</a>:
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Verification <a href="#positive-stretch">(First Example)</a>:</strong></p>
+                    <p style="padding-left: 20px;">Area of square ABCD = base × height = 2 × 2 = <strong>4 square units</strong></p>
+                    <p style="padding-left: 20px;">Area of rectangle A'B'C'D' = base × height = 2 × 4 = <strong>8 square units</strong></p>
+                    <p style="margin-top: 0.5rem;">
+                        The base AB = 2 units remains unchanged, but the height increases from 2 to 4 units (multiplied by k = 2),
+                        so the area is multiplied by |k| = 2.
+                    </p>
+                </div>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Stretch Summary:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• <strong>Invariant line:</strong> every point on it stays fixed.</p>
+                    <p style="margin-bottom: 0;">• <strong>Stretch direction:</strong> always perpendicular to the invariant line.</p>
+                    <p style="margin-bottom: 0;">• <strong>Stretch factor k:</strong> new perpendicular distance = k × original perpendicular distance.</p>
+                    <p style="margin-bottom: 0;">• <strong>k > 1:</strong> points move further away from the invariant line (extension).</p>
+                    <p style="margin-bottom: 0;">• <strong>0 < k < 1:</strong> points move closer to the invariant line (compression).</p>
+                    <p style="margin-bottom: 0;">• <strong>k &lt; 0:</strong> points move to the opposite side of the invariant line (reflection).</p>
+                    <p style="margin-bottom: 0;">• <strong>Area is multiplied by |k|</strong>.</p>
+                    <p style="margin-bottom: 0;">• To find k from a diagram: k = (new perpendicular distance) ÷ (original perpendicular distance).</p>
+                </div>
+
+            </div>
+
+            <p>
+                <a href="shear">Shear</a> and <a href="stretch">stretch</a> are pretty much the same with respect to having an 
+                invariant line and a factor k. The <strong>two</strong> key differences are that the <strong>direction of movement</strong> 
+                differs (parallel vs. perpendicular to the invariant line), and <strong>shear preserves area</strong> while 
+                <strong>stretch multiplies area by |k|</strong>.
+            </p>
+
+            <div class="matrices">
+                <h2 id="matrices">Transforming Shapes with Matrices</h2>
+
+                <p>
+                    Every geometric transformation (reflection, rotation, enlargement, shear, and stretch) can be represented
+                    by a <strong>2×2 matrix</strong>. Multiplying the coordinate matrix of an object by a
+                    transformation matrix produces the coordinate matrix of the image. This gives a powerful,
+                    unified method for performing and describing any transformation algebraically.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Terms:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• <strong>Column matrix (coordinate matrix):</strong> each vertex is written as a 2×1 column
+                        <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mi>x</mi></mtd></mtr><mtr><mtd><mi>y</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>.
+                        Multiple vertices are combined into a 2×n matrix.
+                    </p>
+                    <p style="margin-bottom: 0;">• <strong>Transformation matrix (T):</strong> a 2×2 matrix that encodes the transformation.</p>
+                    <p style="margin-bottom: 0;">• <strong>Image matrix:</strong> the result of T × (object matrix), giving the coordinates of the image.</p>
+                    <p style="margin-bottom: 0;">• <strong>Identity matrix (I):</strong> the 2×2 matrix that leaves every point unchanged.</p>
+                    <p style="margin-bottom: 0;">• <strong>Inverse matrix (T⁻¹):</strong> the matrix that reverses the transformation; T⁻¹ × T = I.</p>
+                    <p style="margin-bottom: 0;">• <strong>Base vectors:</strong> the images of (1, 0) and (0, 1) under a transformation (they form the columns of the transformation matrix).</p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Representing Coordinates as a Matrix</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    Each vertex of a shape is written as a <strong>column</strong> in a matrix. For a triangle with
+                    vertices A, B, C, the object matrix is a <strong>2×3 matrix</strong> where the first row holds
+                    all x-coordinates and the second row holds all y-coordinates:
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/object-matrix.svg" alt="Object matrix" style="width: 100%; height:auto;" />
+                </div>
+
+                <p>
+                    For example, triangle ABC with A(1, 0), B(3, 0), C(1, 2) is written as:
+                </p>
+
+                <!-- SVG 2: Numerical Matrix -->
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/example-matrix.svg" alt="Example matrix" />.
+                </div>
+                
+
+                <p>
+                    The image coordinates are read the same way from the resulting image matrix after multiplication.
+                </p>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>The Identity Matrix</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    The <strong>identity matrix</strong> I is the transformation matrix that maps every point to itself. 
+                    No transformation occurs. It is:
+                </p>
+
+                
+                <img src="../assets/img/transformations/identity-matrix.svg" alt="Identity Matrix" />
+
+                <p>
+                    Multiplying any coordinate matrix by <em>I</em> returns the same coordinates:
+                </p>
+
+                <!-- SVG 4: Matrix Multiplication Equation -->
+                <img src="../assets/img/transformations/multiplying-identity-by-coordinate.svg" alt="Multiplying I by coordinate matrix" />
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Multiplying to Get the Image Matrix</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    To find the image of a shape under a transformation matrix T:
+                </p>
+                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>Write the object's vertices as a <strong>2×n coordinate matrix</strong>.</li>
+                    <li>Multiply: <strong>Image matrix = T × Object matrix</strong>.</li>
+                    <li>Read the image coordinates from the columns of the result.</li>
+                    <li>Plot both the object and the image on a coordinate grid.</li>
+                    <li>Identify and describe the transformation.</li>
+                </ol>
+
+                <p>
+                    For a 2 &times; 2 matrix T and a 2 &times; 3 object matrix, the multiplication works column by column:
+                </p>
+
+                <!-- SVG 5: Matrix Multiplication Expansion -->
+                <img src="../assets/img/transformations/matrix-multiplication-expansion.svg" alt="Matrix Multiplication Expansion" style="width:100%; height:auto;" />
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Example 1: Applying a Transformation Matrix</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    Triangle ABC has vertices A(1, 0), B(3, 0) and C(1, 2). Apply the transformation matrix
+                    <math display="inline"><mrow><mi>T</mi><mo>=</mo><mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>.
+                    Find the image coordinates, plot both shapes and describe the transformation.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Step 1: Write the object matrix:</strong></p>
+                    <div style="display: flex; justify-content: flex-start; padding-left: 20px; margin-bottom: 0.6rem;">
+                        <math display="inline">
+                            <mrow>
+                                <mi>M</mi><mo>=</mo>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr><mtd style="padding: 4px 8px;"><mn>1</mn></mtd><mtd style="padding: 4px 8px;"><mn>3</mn></mtd><mtd style="padding: 4px 8px;"><mn>1</mn></mtd></mtr>
+                                    <mtr><mtd style="padding: 4px 8px;"><mn>0</mn></mtd><mtd style="padding: 4px 8px;"><mn>0</mn></mtd><mtd style="padding: 4px 8px;"><mn>2</mn></mtd></mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem;"><strong>Step 2: Multiply T × M:</strong></p>
+                    <div style="padding-left: 20px; margin-bottom: 0.6rem;">
+                        <math display="block">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr><mtd style="padding: 4px 8px;"><mn>0</mn></mtd><mtd style="padding: 4px 8px;"><mn>−1</mn></mtd></mtr>
+                                    <mtr><mtd style="padding: 4px 8px;"><mn>1</mn></mtd><mtd style="padding: 4px 8px;"><mn>0</mn></mtd></mtr>
+                                </mtable>
+                                <mo>)</mo>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr><mtd style="padding: 4px 8px;"><mn>1</mn></mtd><mtd style="padding: 4px 8px;"><mn>3</mn></mtd><mtd style="padding: 4px 8px;"><mn>1</mn></mtd></mtr>
+                                    <mtr><mtd style="padding: 4px 8px;"><mn>0</mn></mtd><mtd style="padding: 4px 8px;"><mn>0</mn></mtd><mtd style="padding: 4px 8px;"><mn>2</mn></mtd></mtr>
+                                </mtable>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                            </mrow>
+                        </math>
+                        <math display="block">
+                            <mrow>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr>
+                                        <mtd style="padding: 4px 8px;"><mrow><mn>0</mn><mo>−</mo><mn>0</mn></mrow></mtd>
+                                        <mtd style="padding: 4px 8px;"><mrow><mn>0</mn><mo>−</mo><mn>0</mn></mrow></mtd>
+                                        <mtd style="padding: 4px 8px;"><mrow><mn>0</mn><mo>−</mo><mn>2</mn></mrow></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd style="padding: 4px 8px;"><mrow><mn>1</mn><mo>+</mo><mn>0</mn></mrow></mtd>
+                                        <mtd style="padding: 4px 8px;"><mrow><mn>3</mn><mo>+</mo><mn>0</mn></mrow></mtd>
+                                        <mtd style="padding: 4px 8px;"><mrow><mn>1</mn><mo>+</mo><mn>0</mn></mrow></mtd>
+                                    </mtr>
+                                </mtable>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr><mtd style="padding: 4px 8px;"><mn>0</mn></mtd><mtd style="padding: 4px 8px;"><mn>0</mn></mtd><mtd style="padding: 4px 8px;"><mn>−2</mn></mtd></mtr>
+                                    <mtr><mtd style="padding: 4px 8px;"><mn>1</mn></mtd><mtd style="padding: 4px 8px;"><mn>3</mn></mtd><mtd style="padding: 4px 8px;"><mn>1</mn></mtd></mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem;"><strong>Step 3: Read image coordinates:</strong></p>
+                    <p style="padding-left: 20px;">A'(0, 1) &nbsp;&nbsp; B'(0, 3) &nbsp;&nbsp; C'(−2, 1)</p>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 0.6rem;"><strong>Step 4: Describe the transformation:</strong></p>
+                    <p style="padding-left: 20px;">
+                        The matrix
+                        <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd style="padding: 4px 6px;"><mn>0</mn></mtd><mtd style="padding: 4px 6px;"><mn>−1</mn></mtd></mtr><mtr><mtd style="padding: 4px 6px;"><mn>1</mn></mtd><mtd style="padding: 4px 6px;"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                        is a <strong>rotation of 90° anticlockwise about the origin</strong>.
+                    </p>
+                </div>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/transformations/matrix-transformation.svg" alt="Matrix transformation" />
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Base Vectors and the Transformation Matrix</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    The <strong>base vectors</strong> are the unit vectors along the axes:
+                    <strong>e₁ = (1, 0)</strong> along the x-axis and <strong>e₂ = (0, 1)</strong> along the y-axis.
+                </p>
+
+                <p>
+                    The transformation matrix T is built directly from where these base vectors are mapped:
+                </p>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin: 1rem 0; gap: 0.5rem; flex-wrap: wrap;">
+                    <math display="inline">
+                        <mrow>
+                            <mi>T</mi><mo>=</mo>
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mo>↑</mo></mtd>
+                                    <mtd><mo>↑</mo></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mrow><mi>T</mi><mo>(</mo><msub><mi>e</mi><mn>1</mn></msub><mo>)</mo></mrow></mtd>
+                                    <mtd><mrow><mi>T</mi><mo>(</mo><msub><mi>e</mi><mn>2</mn></msub><mo>)</mo></mrow></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mo>↓</mo></mtd>
+                                    <mtd><mo>↓</mo></mtd>
+                                </mtr>
+                            </mtable>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>
+                </div>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>The Base Vector Method:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">
+                        1. Find where (1, 0) maps to under the transformation → this becomes the <strong>first column</strong> of T.
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        2. Find where (0, 1) maps to under the transformation → this becomes the <strong>second column</strong> of T.
+                    </p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">
+                        <strong>Example:</strong> Under a 90° anticlockwise rotation:
+                        (1, 0) → (0, 1) and (0, 1) → (−1, 0), so
+                        T =
+                        <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>.
+                    </p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Finding the Transformation Matrix from Object and Image</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    Given the object matrix M and the image matrix M', the transformation matrix T satisfies
+                    <strong>T × M = M'</strong>. If M is a square invertible matrix:
+                </p>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin: 1rem 0; gap: 0.5rem; flex-wrap: wrap;">
+                    <math display="inline">
+                        <mrow>
+                            <mi>T</mi><mo>=</mo><mi>M</mi><mo>'</mo><mo>×</mo><msup><mi>M</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup>
+                        </mrow>
+                    </math>
+                </div>
+
+                <p>
+                    For a 2×2 matrix
+                    <math display="inline"><mrow><mi>M</mi><mo>=</mo><mo>(</mo><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>,
+                    the inverse is:
+                </p>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin: 1rem 0; gap: 0.5rem; flex-wrap: wrap;">
+                    <math display="inline">
+                        <mrow>
+                            <msup><mi>M</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup>
+                            <mo>=</mo>
+                            <mfrac><mn>1</mn><mrow><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></mrow></mfrac>
+                            <mo>(</mo>
+                            <mtable>
+                                <mtr><mtd><mi>d</mi></mtd><mtd><mrow><mo>−</mo><mi>b</mi></mrow></mtd></mtr>
+                                <mtr><mtd><mrow><mo>−</mo><mi>c</mi></mrow></mtd><mtd><mi>a</mi></mtd></mtr>
+                            </mtable>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>
+                </div>
+
+                <p>where <strong>ad − bc</strong> is the <strong>determinant</strong> of M. The inverse only exists when the determinant ≠ 0.</p>
+
+                <h3>Example 2: Finding the Transformation Matrix</h3>
+
+                <p>
+                    Triangle ABC has vertices A(2, 0), B(2, 2) and C(0, 2). Its image after a transformation has
+                    vertices A'(0, 2), B'(−2, 2) and C'(−2, 0). Find the transformation matrix T.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Solution using base vectors:</strong></p>
+                    <p style="margin-bottom: 0.3rem;">
+                        Use two vertices that span both directions. Take A(2,0) → A'(0,2) and C(0,2) → C'(−2,0).
+                    </p>
+
+                    <p style="margin-bottom: 0.3rem;">A = 2×(1,0) + 0×(0,1). Since A→A', the image of 2e₁ is (0,2), so e₁ = (1,0) maps to (0,1). <strong>First column of T: (0, 1).</strong></p>
+                    <p style="margin-bottom: 0.5rem;">C = 0×(1,0) + 2×(0,1). Since C→C', the image of 2e₂ is (−2,0), so e₂ = (0,1) maps to (−1,0). <strong>Second column of T: (−1, 0).</strong></p>
+
+                    <p style="margin-bottom: 0.3rem;"><strong>Therefore:</strong></p>
+                    <div style="padding-left: 20px; margin-bottom: 0.5rem;">
+                        <math display="inline">
+                            <mrow>
+                                <mi>T</mi><mo>=</mo>
+                                <mo>(</mo>
+                                <mtable>
+                                    <mtr><mtd><mn>0</mn></mtd><mtd><mn>−1</mn></mtd></mtr>
+                                    <mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr>
+                                </mtable>
+                                <mo>)</mo>
+                            </mrow>
+                        </math>
+                    </div>
+
+                    <p style="margin-bottom: 0.3rem;"><strong>Verify:</strong></p>
+                    <div style="padding-left: 20px;">
+                        <math display="block">
+                            <mrow>
+                                <mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo>
+                                <mo>(</mo><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>)</mo>
+                                <mo>=</mo>
+                                <mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>−2</mn></mtd><mtd><mn>−2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo>
+                            </mrow>
+                        </math>
+                    </div>
+                    <p style="padding-left: 20px; margin-top: 0.4rem;">Image vertices: A'(0,2)  &nbsp; B'(−2,2)  &nbsp; C'(−2,0) </p>
+                    <p style="margin-top: 0.5rem;">This is a <strong>rotation of 90° anticlockwise about the origin</strong>.</p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Finding the Object from the Transformation Matrix and Image</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    If you know T and the image matrix M', you can recover the object matrix using the inverse:
+                </p>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin: 1rem 0;">
+                    <math display="inline">
+                        <mrow>
+                            <mi>M</mi><mo>=</mo><msup><mi>T</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>×</mo><mi>M</mi><mo>'</mo>
+                        </mrow>
+                    </math>
+                </div>
+
+                <h3>Example 3: Finding the Object Matrix</h3>
+
+                <p>
+                    The image of a triangle after transformation
+                    <math display="inline"><mrow><mi>T</mi><mo>=</mo><mo>(</mo><mtable><mtr><mtd style="padding: 4px 6px;"><mn>2</mn></mtd><mtd style="padding: 4px 6px;"><mn>0</mn></mtd></mtr><mtr><mtd style="padding: 4px 6px;"><mn>0</mn></mtd><mtd style="padding: 4px 6px;"><mn>2</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                    has vertices A'(2, 4), B'(6, 4) and C'(2, 8). Find the original object vertices.
+                </p>
+
+                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Step 1: Find T⁻¹:</strong></p>
+                    <p style="padding-left: 20px;">
+                        det(T) = (2)(2) − (0)(0) = 4
+                    </p>
+                    <div style="padding-left: 20px; margin-bottom: 0.5rem;">
+                        <math display="inline">
+                            <mrow>
+                                <msup><mi>T</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup>
+                                <mo>=</mo>
+                                <mfrac><mn>1</mn><mn>4</mn></mfrac>
+                                <mo>(</mo><mtable><mtr><mtd style="padding: 4px 6px;"><mn>2</mn></mtd><mtd style="padding: 4px 6px;"><mn>0</mn></mtd></mtr><mtr><mtd style="padding: 4px 6px;"><mn>0</mn></mtd><mtd style="padding: 4px 6px;"><mn>2</mn></mtd></mtr></mtable><mo>)</mo>
+                                <mo>=</mo>
+                                <mo>(</mo><mtable><mtr><mtd style="padding: 4px 6px;"><mfrac><mn>1</mn><mn>2</mn></mfrac></mtd><mtd style="padding: 4px 6px;"><mn>0</mn></mtd></mtr><mtr><mtd style="padding: 4px 6px;"><mn>0</mn></mtd><mtd style="padding: 4px 6px;"><mfrac><mn>1</mn><mn>2</mn></mfrac></mtd></mtr></mtable><mo>)</mo>
+                            </mrow>
+                        </math>
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem;"><strong>Step 2: Multiply T⁻¹ × M':</strong></p>
+                    <div style="padding-left: 20px; margin-bottom: 0.5rem;">
+                        <math display="block">
+                            <mrow>
+                                <mo>(</mo><mtable><mtr><mtd style="padding: 4px 8px;"><mfrac><mn>1</mn><mn>2</mn></mfrac></mtd><mtd style="padding: 4px 8px;"><mn>0</mn></mtd></mtr><mtr><mtd style="padding: 4px 8px;"><mn>0</mn></mtd><mtd style="padding: 4px 8px;"><mfrac><mn>1</mn><mn>2</mn></mfrac></mtd></mtr></mtable><mo>)</mo>
+                                <mo>(</mo><mtable><mtr><mtd style="padding: 4px 8px;"><mn>2</mn></mtd><mtd style="padding: 4px 8px;"><mn>6</mn></mtd><mtd style="padding: 4px 8px;"><mn>2</mn></mtd></mtr><mtr><mtd style="padding: 4px 8px;"><mn>4</mn></mtd><mtd style="padding: 4px 8px;"><mn>4</mn></mtd><mtd style="padding: 4px 8px;"><mn>8</mn></mtd></mtr></mtable><mo>)</mo>
+                                <mo>=</mo>
+                                <mo>(</mo><mtable><mtr><mtd style="padding: 4px 8px;"><mn>1</mn></mtd><mtd style="padding: 4px 8px;"><mn>3</mn></mtd><mtd style="padding: 4px 8px;"><mn>1</mn></mtd></mtr><mtr><mtd style="padding: 4px 8px;"><mn>2</mn></mtd><mtd style="padding: 4px 8px;"><mn>2</mn></mtd><mtd style="padding: 4px 8px;"><mn>4</mn></mtd></mtr></mtable><mo>)</mo>
+                            </mrow>
+                        </math>
+                    </div>
+
+                    <p style="margin-top: 0.3rem;"><strong>Answer:</strong> Original vertices: A(1, 2), B(3, 2), C(1, 4).</p>
+                    <p>This is an <strong>enlargement by scale factor 2</strong> centred at the origin, the transformation matrix
+                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd style="padding: 4px 6px;"><mn>2</mn></mtd><mtd style="padding: 4px 6px;"><mn>0</mn></mtd></mtr><mtr><mtd style="padding: 4px 6px;"><mn>0</mn></mtd><mtd style="padding: 4px 6px;"><mn>2</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                    doubles every coordinate.</p>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Standard Transformation Matrices</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    Every standard transformation has a recognisable matrix. Learning these matrices,
+                    and the features that identify each one, allows you to both <em>perform</em> and
+                    <em>describe</em> any transformation from the matrix alone.
+                </p>
+
+                <!-- Reflection matrices -->
+                <h3 style="font-size: 1rem; color: #00ffcc; margin-top: 1.5rem; margin-bottom: 0.5rem;">Reflection Matrices</h3>
+
+                <div style="overflow-x: auto; margin: 1rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; color: #e4e8f5;">
+                        <thead>
+                            <tr style="background: rgba(0,255,204,0.08); border-bottom: 1px solid #2e3450;">
+                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Mirror line</th>
+                                <th style="padding: 10px 14px; text-align: center; color: #00ffcc; font-weight: 600;">Matrix T</th>
+                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Key feature</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #2e3450;">
+                                <td style="padding: 10px 14px;">x-axis (y = 0)</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>−1</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Bottom-right entry is −1; top-left is 1; off-diagonal are 0</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #2e3450; background: rgba(255,255,255,0.02);">
+                                <td style="padding: 10px 14px;">y-axis (x = 0)</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>−1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Top-left entry is −1; bottom-right is 1; off-diagonal are 0</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #2e3450;">
+                                <td style="padding: 10px 14px;">y = x</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Diagonal entries are 0; off-diagonal entries are both 1</td>
+                            </tr>
+                            <tr style="background: rgba(255,255,255,0.02);">
+                                <td style="padding: 10px 14px;">y = −x</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>−1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Diagonal entries are 0; off-diagonal entries are both −1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Rotation matrices -->
+                <h3 style="font-size: 1rem; color: #00ffcc; margin-top: 1.5rem; margin-bottom: 0.5rem;">Rotation Matrices (about the origin)</h3>
+
+                <div style="overflow-x: auto; margin: 1rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; color: #e4e8f5;">
+                        <thead>
+                            <tr style="background: rgba(0,255,204,0.08); border-bottom: 1px solid #2e3450;">
+                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Rotation</th>
+                                <th style="padding: 10px 14px; text-align: center; color: #00ffcc; font-weight: 600;">Matrix T</th>
+                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Key feature</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #2e3450;">
+                                <td style="padding: 10px 14px;">90° anticlockwise</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Diagonal 0s; top-right −1; bottom-left +1</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #2e3450; background: rgba(255,255,255,0.02);">
+                                <td style="padding: 10px 14px;">90° clockwise</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>−1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Diagonal 0s; top-right +1; bottom-left −1</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #2e3450;">
+                                <td style="padding: 10px 14px;">180°</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>−1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>−1</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Both diagonal entries −1; off-diagonal 0</td>
+                            </tr>
+                            <tr style="background: rgba(255,255,255,0.02);">
+                                <td style="padding: 10px 14px;">270° anticlockwise (= 90° CW)</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>−1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Same as 90° clockwise</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Enlargement / Stretch / Shear matrices -->
+                <h3 style="font-size: 1rem; color: #00ffcc; margin-top: 1.5rem; margin-bottom: 0.5rem;">Enlargement, Stretch and Shear Matrices</h3>
+
+                <div style="overflow-x: auto; margin: 1rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; color: #e4e8f5;">
+                        <thead>
+                            <tr style="background: rgba(0,255,204,0.08); border-bottom: 1px solid #2e3450;">
+                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Transformation</th>
+                                <th style="padding: 10px 14px; text-align: center; color: #00ffcc; font-weight: 600;">Matrix T</th>
+                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Key feature</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #2e3450;">
+                                <td style="padding: 10px 14px;">Enlargement, scale factor k, centre O</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mi>k</mi></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mi>k</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Both diagonal entries equal k; off-diagonal 0. det = k².</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #2e3450; background: rgba(255,255,255,0.02);">
+                                <td style="padding: 10px 14px;">Stretch parallel to x-axis, factor k</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mi>k</mi></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Top-left k, bottom-right 1; off-diagonal 0</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #2e3450;">
+                                <td style="padding: 10px 14px;">Stretch parallel to y-axis, factor k</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mi>k</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Top-left 1, bottom-right k; off-diagonal 0</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #2e3450; background: rgba(255,255,255,0.02);">
+                                <td style="padding: 10px 14px;">Shear, x-axis invariant, factor k</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mi>k</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Diagonal entries both 1; top-right k; bottom-left 0. det = 1.</td>
+                            </tr>
+                            <tr style="background: rgba(255,255,255,0.02);">
+                                <td style="padding: 10px 14px;">Shear, y-axis invariant, factor k</td>
+                                <td style="padding: 10px 14px; text-align: center;">
+                                    <math display="inline"><mrow><mo>(</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mi>k</mi></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+                                </td>
+                                <td style="padding: 10px 14px;">Diagonal entries both 1; bottom-left k; top-right 0. det = 1.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <h3>Area and the Determinant</h3>
+                <!-- ═══════════════════════════════════════════ -->
+
+                <p>
+                    The <strong>determinant</strong> of the transformation matrix tells you how areas change:
+                </p>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin: 1rem 0;">
+                    <math display="inline">
+                        <mrow>
+                            <mtext>Area of image</mtext>
+                            <mo>=</mo>
+                            <mrow><mo>|</mo><mtext>det(T)</mtext><mo>|</mo></mrow>
+                            <mo>×</mo>
+                            <mtext>Area of object</mtext>
+                        </mrow>
+                    </math>
+                </div>
+
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>For <strong>reflections and rotations</strong>: det = ±1, so area is unchanged.</li>
+                    <li>For <strong>enlargement by scale factor k</strong>: det = k², so area is multiplied by k².</li>
+                    <li>For <strong>shear</strong>: det = 1, so area is unchanged.</li>
+                    <li>For <strong>stretch by factors p (x) and q (y)</strong>: det = pq, so area is multiplied by pq.</li>
+                </ul>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Identifying a transformation from its matrix:</strong></p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• Both diagonal entries equal, off-diagonal 0, det = k² → <strong>Enlargement</strong> scale factor k.</p>
+                    <p style="margin-bottom: 0;">• Diagonal entries 0, off-diagonal ±1 → <strong>Reflection</strong> (check sign pattern for mirror line).</p>
+                    <p style="margin-bottom: 0;">• Diagonal entries 0, off-diagonal +1 and −1 → <strong>Rotation</strong> (check which is positive for direction).</p>
+                    <p style="margin-bottom: 0;">• Both diagonal entries 1, exactly one off-diagonal entry non-zero → <strong>Shear</strong>.</p>
+                    <p style="margin-bottom: 0;">• Diagonal entries different and non-zero, off-diagonal 0, det ≠ 1 → <strong>Stretch</strong>.</p>
+                    <p style="margin-bottom: 0;">• det = 0 → the transformation collapses the shape to a line or point (not invertible).</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#transformations">Transformations</a></li>
+            <li><a href="#translation">Translation</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+            <li><a href="#rotation">Rotation</a></li>
+            <li><a href="#enlargement">Enlargement</a></li>
+            <!-- <li><a href="#combination-of-transformations">Combination of Transformations</a></li> -->
+            <li><a href="#shear">Shear</a></li>
+            <li><a href="#stretch">Stretch</a></li>
+            <li><a href="#matrices">Transforming Shapes with Matrices</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+<script src="../js/transformation.js"></script>
+</body>
+</html>

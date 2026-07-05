@@ -1,0 +1,19 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="420" viewBox="0 0 250 420" xmlns="http://www.w3.org/2000/svg">
+    <!-- 3D Pyramid -->
+    <g transform="translate(50, 20)">
+        <path d="M 0,150 L 120,150 L 160,110" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 0,150 L 80,20 L 120,150 M 80,20 L 160,110" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 0,150 L 40,110 L 160,110 M 40,110 L 80,20" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5"/>
+        <text x="45" y="165" fill="#00ffcc" font-size="14">s = 6cm</text>
+        <text x="130" y="65" fill="#00ffcc" font-size="14">l = 8cm</text>
+    </g>
+
+    <!-- Net -->
+    <g transform="translate(60, 220)">
+        <rect x="50" y="50" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 50,50 L 75,0 L 100,50 M 100,50 L 150,75 L 100,100 M 100,100 L 75,150 L 50,100 M 50,100 L 0,75 L 50,50" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <text x="60" y="80" fill="#00ffcc" font-size="12">6cm</text>
+        <text x="110" y="55" fill="#00ffcc" font-size="12">8cm</text>
+    </g>
+
+</svg>

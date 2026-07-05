@@ -1,0 +1,74 @@
+<svg width="830" height="500" viewBox="0 0 830 500" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', system-ui, sans-serif;">
+    <style>
+        .gr-axis    { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .gr-grid    { stroke: #ffffff; stroke-width: 0.4; stroke-dasharray: 3,3; opacity: 0.15; }
+        .gr-curve-t { stroke: #ffcc44; stroke-width: 2.5; fill: none; }
+        .gr-asymp   { stroke: #ff8888; stroke-width: 1.5; stroke-dasharray: 6,4; }
+    </style>
+    <defs>
+        <marker id="gr-arr-tan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffffff"/>
+        </marker>
+    </defs>
+
+    <!-- Grid -->
+    <line x1="80"  y1="60" x2="80"  y2="440" class="gr-grid"/>
+    <line x1="250" y1="60" x2="250" y2="440" class="gr-grid"/>
+    <line x1="420" y1="60" x2="420" y2="440" class="gr-grid"/>
+    <line x1="590" y1="60" x2="590" y2="440" class="gr-grid"/>
+    <line x1="760" y1="60" x2="760" y2="440" class="gr-grid"/>
+    <line x1="60"  y1="140" x2="780" y2="140" class="gr-grid"/>
+    <line x1="60"  y1="360" x2="780" y2="360" class="gr-grid"/>
+
+    <!-- Axes -->
+    <line x1="60"  y1="250" x2="790" y2="250" class="gr-axis" marker-end="url(#gr-arr-tan)"/>
+    <line x1="80"  y1="460" x2="80"  y2="50"  class="gr-axis" marker-end="url(#gr-arr-tan)"/>
+
+    <!-- Asymptotes at 90° and 270° -->
+    <line x1="250" y1="60" x2="250" y2="440" class="gr-asymp"/>
+    <line x1="590" y1="60" x2="590" y2="440" class="gr-asymp"/>
+    <text x="250" y="52" fill="#ff8888" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">θ=90°</text>
+    <text x="590" y="52" fill="#ff8888" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">θ=270°</text>
+
+    <!-- Labels -->
+    <text x="80"  y="268" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12px" text-anchor="middle">0°</text>
+    <text x="250" y="268" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12px" text-anchor="middle">90°</text>
+    <text x="420" y="268" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12px" text-anchor="middle">180°</text>
+    <text x="590" y="268" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12px" text-anchor="middle">270°</text>
+    <text x="760" y="268" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12px" text-anchor="middle">360°</text>
+    <text x="800" y="254" fill="#ffffff" font-family="Arial,sans-serif" font-size="14" font-weight="bold">θ</text>
+    <text x="60"  y="144" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12px" text-anchor="middle">2</text>
+    <text x="60"  y="254" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12px" text-anchor="middle">0</text>
+    <text x="60"  y="364" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12px" text-anchor="middle">−2</text>
+    <text x="80"  y="40"  fill="#ffffff" font-family="Arial,sans-serif" font-size="14" font-weight="bold" text-anchor="middle">y</text>
+
+    <!-- Tan curve branches -->
+    <path class="gr-curve-t" d="
+        M 80,250
+        C 110,240 130,220 155,195
+        C 175,175 200,155 218,110
+        C 228,82 238,65 248,62
+    " fill="none"/>
+
+    <path class="gr-curve-t" d="
+        M 252,440
+        C 262,430 275,410 300,370
+        C 340,308 380,258 420,250
+        C 460,242 500,215 535,175
+        C 558,150 572,115 588,65
+    " fill="none"/>
+
+    <path class="gr-curve-t" d="
+        M 592,440
+        C 605,420 625,390 660,340
+        C 700,285 730,265 760,250
+    " fill="none"/>
+
+    <!-- Key point: tan 45° = 1 -->
+    <circle cx="165" cy="195" r="4" fill="#ff8888"/>
+    <text x="165" y="183" fill="#ff8888" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">(45°,1)</text>
+
+    <!-- Title -->
+    <text x="430" y="30" fill="#ffcc44" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">y = tan θ</text>
+    <text x="430" y="18" fill="#aaaaaa" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">Period = 180°  No amplitude (unbounded)</text>
+</svg>

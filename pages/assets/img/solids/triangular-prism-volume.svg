@@ -1,0 +1,14 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="300" height="270" viewBox="0 0 300 270" xmlns="http://www.w3.org/2000/svg">
+    <!-- Triangular Prism Diagram -->
+    <g transform="translate(50, 60)">
+        <path d="M 0,120 L 80,120 L 0,40 Z" fill="rgba(0, 255, 204, 0.1)" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 0,120 L 100,70 M 80,120 L 180,70 M 0,40 L 100,-10" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 100,70 L 180,70 L 100,-10 Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5"/>
+        
+        <!-- Shape Labels -->
+        <text x="40" y="138" fill="#00ffcc" font-size="14" text-anchor="middle">3cm</text>
+        <text x="-5" y="85" fill="#00ffcc" font-size="14" text-anchor="end">4cm</text>
+        <text x="130" y="105" fill="#00ffcc" font-size="14">10cm(Length)</text>
+    </g>
+
+</svg>

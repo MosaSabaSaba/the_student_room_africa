@@ -1,0 +1,13 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <!-- Rectangle Outline -->
+    <rect x="100" y="50" width="200" height="120" fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Diagonal Dashed Line -->
+    <line x1="100" y1="50" x2="300" y2="170" stroke="#ffffff" stroke-width="2" stroke-dasharray="8,5"/>
+    
+    <!-- Height Label 'h' -->
+    <text x="75" y="115" fill="#ffffff" font-family="serif" font-style="italic" font-size="24">h</text>
+    
+    <!-- Base Label 'b' -->
+    <text x="195" y="205" fill="#ffffff" font-family="serif" font-style="italic" font-size="24">b</text>
+</svg>

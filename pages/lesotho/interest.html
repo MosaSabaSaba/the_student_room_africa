@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple and Compound Interest - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "LGCSE Mathematics: Simple and Compound Interest Complete Guide",
+            "description": "Step-by-step guide for LGCSE learners covering simple interest formula, compound interest formula, comparing both types with tables and graphs, and real-world financial mathematics applications.",
+            "educationalLevel": "Secondary School (LGCSE)",
+            "keywords": "simple interest, compound interest, interest formula, principal, rate, time, financial mathematics, comparing interest, interest graph, LGCSE mathematics",
+            "about": {
+                "@type": "Thing",
+                "name": "Financial Mathematics"
+            },
+            "teaches": "How to calculate simple interest using I = P × r × t; calculate compound interest using A = P(1 + r)ᵗ; compare both types of interest; interpret interest growth graphs; find total amount and interest earned",
+            "inLanguage": "en",
+            "audience": {
+                "@type": "Audience",
+                "name": "LGCSE Mathematics students in Lesotho"
+            },
+            "learningResourceType": "Study Guide",
+            "timeRequired": "PT50M",
+            "copyrightHolder": {
+                "@type": "Organization",
+                "name": "Student Room Africa"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Simple and Compound Interest</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li class="active"><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+            
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="interest">
+            <h1 id="interest">Simple and Compound Interest</h1>
+            
+            <p>
+                <strong>Interest</strong> is the money paid for borrowing money or the money earned 
+                when you save or invest money. There are two main types of interest: 
+                <strong>simple interest</strong> and <strong>compound interest</strong>.
+            </p>
+
+            <p>
+                <strong>Before You Begin:</strong> Make sure you have reviewed the following 
+                topics: Calculating percentages (finding a percentage of a quantity), 
+                Converting percentages to decimals (e.g., 5% = 0.05), Ratio and proportion 
+                (for comparing interest rates). If you need a refresher, visit our
+                <a href="../lesotho/ratios-and-percentages.html">Ratios and Percentages</a> 
+                page.
+                Understanding these concepts will help you grasp how interest works and
+                how to apply the formulas correctly.
+            </p>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#interest">Simple and Compound Interest</a></li>
+                    <li><a href="#simple-interest">Simple Interest</a></li>
+                    <li><a href="#compound-interest">Compound Interest</a></li>
+                    <li><a href="#comparing-simple-compound">Comparing Simple and Compound Interest</a></li>
+                    <li><a href="#interest-graphs">Graphical Representation of Interest</a></li>
+                    <li><a href="#summary-table">Summary Table</a></li>
+                </ul>
+            </div>
+            
+            <!-- SIMPLE INTEREST SECTION -->
+            <div class="simple-interest">
+                <h2 id="simple-interest">Simple Interest</h2>
+                
+                <p>
+                    <strong>Simple interest</strong> is calculated only on the <strong>original principal</strong> 
+                    (the amount borrowed or invested). The interest earned each year is the same because it is 
+                    always calculated on the original amount.
+                </p>
+
+                <h3>The Simple Interest Formula</h3>
+                
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>I = P × <em>r</em> × <em>t</em></strong>
+                </p>
+
+                <p>Where:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>I</strong> = Interest earned (or paid)</li>
+                    <li><strong>P</strong> = Principal (the original amount borrowed or invested)</li>
+                    <li><strong><em>r</em></strong> = Rate of interest per year (written as a decimal)</li>
+                    <li><strong><em>t</em></strong> = Time (in years)</li>
+                </ul>
+
+                <p><strong>Important:</strong> The rate <strong><em>r</em></strong> must be converted from a percentage to a decimal. 
+                For example, 5% = 5 ÷ 100 = 0.05.</p>
+
+                <p>The <strong>total amount</strong> (A) after simple interest is:</p>
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>A = P + I</strong> or <strong>A = P + (P × <em>r</em> × <em>t</em>)</strong>
+                </p>
+
+                <h3>Example 1: Calculating Simple Interest</h3>
+
+                <p>Calculate the simple interest earned on M2000 invested at 5% per year for 3 years.</p>
+
+                <p><strong>Step 1:</strong> Identify the values.</p>
+                <p style="padding-left: 20px;">
+                    P = M2000<br>
+                    <em>r</em> = 5% = <sup>5</sup>&frasl;<sub>100</sub> = 0.05<br>
+                    <em>t</em> = 3 years
+                </p>
+
+                <p><strong>Step 2:</strong> Apply the simple interest formula.</p>
+                <p style="padding-left: 20px;">
+                    I = P × <em>r</em> × <em>t</em><br>
+                    I = 2000 × 0.05 × 3
+                </p>
+
+                <p><strong>Step 3:</strong> Calculate step by step.</p>
+                <p style="padding-left: 20px;">
+                    2000 × 0.05 = 100<br>
+                    100 × 3 = 300
+                </p>
+
+                <p><strong>Step 4:</strong> Write the final answer.</p>
+                <p style="padding-left: 20px;">
+                    I = M300
+                </p>
+
+                <p><strong>Answer: The simple interest earned is M300.</strong></p>
+
+                <h3>Example 2: Finding the Total Amount</h3>
+
+                <p>M5000 is invested at 8% simple interest per year for 2 years. Find the total amount after 2 years.</p>
+
+                <p><strong>Step 1:</strong> Identify the values.</p>
+                <p style="padding-left: 20px;">
+                    P = M5000<br>
+                    <em>r</em> = 8% = 0.08<br>
+                    <em>t</em> = 2 years
+                </p>
+
+                <p><strong>Step 2:</strong> Calculate the simple interest.</p>
+                <p style="padding-left: 20px;">
+                    I = 5000 × 0.08 × 2<br>
+                    I = 5000 × 0.08 = 400<br>
+                    I = 400 × 2 = M800
+                </p>
+
+                <p><strong>Step 3:</strong> Calculate the total amount.</p>
+                <p style="padding-left: 20px;">
+                    A = P + I = 5000 + 800 = M5800
+                </p>
+
+                <p><strong>Answer: The total amount after 2 years is M5800.</strong></p>
+            </div>
+
+            <!-- COMPOUND INTEREST SECTION -->
+            <div class="compound-interest">
+                <h2 id="compound-interest">Compound Interest</h2>
+                
+                <p>
+                    <strong>Compound interest</strong> is calculated on the <strong>principal plus any interest already earned</strong>. 
+                    This means interest is earned on interest. Compound interest grows faster than simple interest because 
+                    the amount grows each year, and interest is calculated on the new, larger amount.
+                </p>
+
+                <h3>The Compound Interest Formula</h3>
+                
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>A = P (1 + <em>r</em>)<sup><em>t</em></sup></strong>
+                </p>
+
+                <p>Where:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>A</strong> = Total amount after interest</li>
+                    <li><strong>P</strong> = Principal (original amount)</li>
+                    <li><strong><em>r</em></strong> = Rate of interest per year (written as a decimal)</li>
+                    <li><strong><em>t</em></strong> = Time (in years)</li>
+                </ul>
+
+                <p>The <strong>compound interest</strong> earned is:</p>
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>I = A - P</strong>
+                </p>
+
+                <p><strong>Important:</strong> The rate <strong><em>r</em></strong> is added to 1 because you are keeping the original amount (1) and adding the interest rate.</p>
+
+                <h3>Example 3: Calculating Compound Interest</h3>
+
+                <p>Calculate the compound interest earned on M2000 invested at 5% per year for 3 years.</p>
+
+                <p><strong>Step 1:</strong> Identify the values.</p>
+                <p style="padding-left: 20px;">
+                    P = M2000<br>
+                    <em>r</em> = 5% = 0.05<br>
+                    <em>t</em> = 3 years
+                </p>
+
+                <p><strong>Step 2:</strong> Apply the compound interest formula.</p>
+                <p style="padding-left: 20px;">
+                    A = P (1 + <em>r</em>)<sup><em>t</em></sup><br>
+                    A = 2000 × (1 + 0.05)<sup>3</sup>
+                </p>
+
+                <p><strong>Step 3:</strong> Calculate the bracket first.</p>
+                <p style="padding-left: 20px;">
+                    1 + 0.05 = 1.05
+                </p>
+
+                <p><strong>Step 4:</strong> Raise to the power of 3.</p>
+                <p style="padding-left: 20px;">
+                    1.05<sup>3</sup> = 1.05 × 1.05 × 1.05<br>
+                    1.05 × 1.05 = 1.1025<br>
+                    1.1025 × 1.05 = 1.157625
+                </p>
+
+                <p><strong>Step 5:</strong> Multiply by the principal.</p>
+                <p style="padding-left: 20px;">
+                    A = 2000 × 1.157625 = M2315.25
+                </p>
+
+                <p><strong>Step 6:</strong> Calculate the compound interest.</p>
+                <p style="padding-left: 20px;">
+                    I = A - P = 2315.25 - 2000 = M315.25
+                </p>
+
+                <p><strong>Answer: The compound interest earned is M315.25.</strong></p>
+
+                <h3>Example 4: Finding the Total Amount</h3>
+
+                <p>M5000 is invested at 8% compound interest per year for 2 years. Find the total amount after 2 years.</p>
+
+                <p><strong>Step 1:</strong> Identify the values.</p>
+                <p style="padding-left: 20px;">
+                    P = M5000<br>
+                    <em>r</em> = 8% = 0.08<br>
+                    <em>t</em> = 2 years
+                </p>
+
+                <p><strong>Step 2:</strong> Apply the compound interest formula.</p>
+                <p style="padding-left: 20px;">
+                    A = P (1 + <em>r</em>)<sup><em>t</em></sup><br>
+                    A = 5000 × (1 + 0.08)<sup>2</sup>
+                </p>
+
+                <p><strong>Step 3:</strong> Calculate the bracket first.</p>
+                <p style="padding-left: 20px;">
+                    1 + 0.08 = 1.08
+                </p>
+
+                <p><strong>Step 4:</strong> Raise to the power of 2.</p>
+                <p style="padding-left: 20px;">
+                    1.08<sup>2</sup> = 1.08 × 1.08 = 1.1664
+                </p>
+
+                <p><strong>Step 5:</strong> Multiply by the principal.</p>
+                <p style="padding-left: 20px;">
+                    A = 5000 × 1.1664 = M5832
+                </p>
+
+                <p><strong>Answer: The total amount after 2 years is M5832.</strong></p>
+            </div>
+
+            <!-- COMPARING SIMPLE AND COMPOUND INTEREST -->
+            <div class="comparing-simple-compound">
+                <h2 id="comparing-simple-compound">Comparing Simple and Compound Interest</h2>
+                
+                <p>
+                    The table below shows the growth of M1000 invested at 10% per year using both simple and compound interest.
+                </p>
+
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                    <thead>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Year</th>
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Simple Interest (10%)</th>
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Compound Interest (10%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">1</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1100</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1100</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">2</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1200</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1210</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">3</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1300</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1331</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">4</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1400</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1464.10</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">5</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1500</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1610.51</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    <strong>Observation:</strong> Compound interest grows faster because you earn interest on the 
+                    interest already accumulated. After 5 years, compound interest gives M1610.51 compared to M1500 
+                    for simple interest, a difference of M110.51.
+                </p>
+            </div>
+
+            <!-- GRAPHICAL REPRESENTATION -->
+            <div class="interest-graphs">
+                <h2 id="interest-graphs">Graphical Representation of Interest</h2>
+                
+                <p>
+                    The data from the table above can be plotted on a graph. The <strong>x-axis</strong> represents time (years), 
+                    and the <strong>y-axis</strong> represents the total amount (Maloti).
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/interest/interest_graph.svg"  alt="Interest" />
+                </div>
+
+                <p><strong>Interpreting the Graph:</strong></p>
+                <ul>
+                    <li>Both lines start at the same point (M1000 at year 0).</li>
+                    <li>The <strong style="color: #00ffcc;">compound interest line</strong> (green) curves upward and is always above the <strong style="color: #ff8888;">simple interest line</strong> (red).</li>
+                    <li>As time increases, the gap between the two lines widens showing that compound interest grows faster.</li>
+                    <li>The simple interest line is <strong>straight</strong> because the same amount of interest is added each year.</li>
+                    <li>The compound interest line <strong>curves upward</strong> because interest is added to an ever-growing amount.</li>
+                </ul>
+            </div>
+
+            <!-- SUMMARY TABLE -->
+            <div class="summary-table">
+                <h2 id="summary-table">Summary Table: Simple vs Compound Interest</h2>
+
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                    <thead>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Feature</th>
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Simple Interest</th>
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Compound Interest</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">How it works</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Interest calculated only on the original principal</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Interest calculated on principal + previous interest</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Formula</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">I = P × <em>r</em> × <em>t</em></td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">A = P (1 + <em>r</em>)<sup><em>t</em></sup></td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Growth over time</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Linear (straight line on graph)</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Exponential (curved line on graph)</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Best for</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Short-term loans or investments</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Long-term savings and investments</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Example (M1000 at 10% for 5 years)</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1500</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M1610.51</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                <strong>NB:</strong> When solving interest problems, always check whether the question asks for <strong>simple interest</strong> or <strong>compound interest</strong>. 
+                For compound interest, make sure you understand how to calculate powers (e.g., 1.05<sup>3</sup> = 1.05 × 1.05 × 1.05). 
+                Remember to convert the rate from a percentage to a decimal before using it in any formula.
+            </p>
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#interest">Simple and Compound Interest</a></li>
+            <li><a href="#simple-interest">Simple Interest</a></li>
+            <li><a href="#compound-interest">Compound Interest</a></li>
+            <li><a href="#comparing-simple-compound">Comparing Simple and Compound Interest</a></li>
+            <li><a href="#interest-graphs">Graphical Representation of Interest</a></li>
+            <li><a href="#summary-table">Summary Table</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

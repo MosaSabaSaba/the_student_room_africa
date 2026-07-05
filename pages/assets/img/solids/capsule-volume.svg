@@ -1,0 +1,29 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="300" height="205" viewBox="0 0 300 205" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .sy   { stroke: #ffcc00; stroke-width: 1.8; fill: rgba(255,204,0,0.15); }
+        .join { stroke: #ff4444; stroke-width: 2; fill: none; stroke-dasharray: 5,3; }
+        .dm   { fill: #ffcc00; font-family: sans-serif; font-size: 11px; font-weight: bold; }
+    </style>
+
+    <g transform="translate(25,30)">
+        <text x="125" y="0" fill="#ffffff" font-family="sans-serif" font-size="14px" font-weight="bold" text-anchor="middle">Capsule Diagram</text>
+
+        <!-- Cylinder Body -->
+        <rect x="60" y="80" width="130" height="60" fill="rgba(0,255,204,0.12)" stroke="none"/>
+        <line x1="60" y1="80" x2="190" y2="80" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="60" y1="140" x2="190" y2="140" stroke="#ffffff" stroke-width="1.8"/>
+
+        <!-- Hemisphere Ends -->
+        <path d="M60,80 A30,30 0 0 0 60,140" class="sy"/>
+        <path d="M190,80 A30,30 0 0 1 190,140" class="sy"/>
+
+        <!-- Internal Joined Faces -->
+        <line x1="60"  y1="80" x2="60"  y2="140" class="join"/>
+        <line x1="190" y1="80" x2="190" y2="140" class="join"/>
+        <text x="125" y="113" fill="#ff4444" font-family="sans-serif" font-size="9px" text-anchor="middle">INTERNAL ENDS EXCLUDED</text>
+
+        <!-- Dimensions -->
+        <text x="25" y="114" class="dm" text-anchor="end">r = 3m</text>
+        <text x="125" y="170" class="dm" text-anchor="middle">height(h) = 9m</text>
+    </g>
+</svg>

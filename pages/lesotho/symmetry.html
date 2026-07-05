@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symmetry - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "LGCSE Mathematics: Symmetry Complete Guide",
+        "description": "Comprehensive guide for LGCSE learners covering line symmetry (reflection) for polygons, rotational symmetry (order and angle of rotation), and planes of symmetry for 3D solids including cubes, cuboids, pyramids, cylinders, cones and spheres.",
+        "educationalLevel": "Secondary School (LGCSE)",
+        "keywords": "symmetry, line symmetry, lines of symmetry, rotational symmetry, order of rotational symmetry, angle of rotation, planes of symmetry, cube symmetry, cuboid symmetry, pyramid symmetry, regular polygons, LGCSE mathematics",
+        "about": {
+            "@type": "Thing",
+            "name": "Geometric Symmetry"
+        },
+        "teaches": "How to identify and count lines of symmetry for regular polygons (triangle, square, pentagon, hexagon, rectangle); calculate order of rotational symmetry using 360° ÷ angle; find angle of rotation using 360° ÷ order; identify planes of symmetry for 3D shapes including cubes (9 planes), cuboids (3 planes), square-based pyramids (4 planes), cylinders (infinite vertical + 1 horizontal), cones (infinite vertical), and spheres (infinite in all directions)",
+        "inLanguage": "en",
+        "audience": {
+            "@type": "Audience",
+            "name": "LGCSE Mathematics students in Lesotho"
+        },
+        "learningResourceType": "Study Guide",
+        "timeRequired": "PT50M",
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "Student Room Africa"
+        }
+        }
+        </script>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Symmetry</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li class="active"><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="symmetry">
+            <h1 id="symmetry">Symmetry</h1>
+            
+            <p>
+                Symmetry describes when a shape or object can be divided into two or more identical parts.
+                In mathematics, we study two main types of symmetry: <strong>line symmetry</strong> (reflection) 
+                and <strong>rotational symmetry</strong> (turning). For 3D shapes, we also study 
+                <strong>planes of symmetry</strong>.
+            </p>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#symmetry">Symmetry</a></li>
+                    <li><a href="#line-symmetry">Line(s) Of Symmetry</a></li>
+                    <li><a href="#rotational-symmetry">Rotational Symmetry</a></li>
+                    <li><a href="#planes-of-symmetry">Plane(s) of Symmetry</a></li>
+                </ul>
+            </div>
+
+            <div class="line-of-symmetry">
+                <h2 id="line-symmetry">Line(s) Of Symmetry</h2>
+                <p>
+                    When a shape can be folded so that one half fits exactly over the other half, the shape 
+                    is symmetrical and the fold line is called a <strong>line of symmetry</strong>.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/lines-of-symmetry.svg" alt="Lines Of Symmetry" />
+                </div>
+
+                <p>
+                    <strong>NB:</strong> The <strong>center</strong> of a regular polygon is the 
+                    exact point where all its <strong>lines of symmetry intersect</strong>. By 
+                    drawing just two lines of symmetry, you can accurately 
+                    locate the center of the shape.
+                </p>
+            </div>
+
+            <div class="rotational-symmetry">
+                <h2 id="rotational-symmetry">Order Of Rotational Symmetry</h2>
+                
+                <p>
+                    A shape has <strong>rotational symmetry</strong> if it can be rotated about its centre 
+                    and still look exactly the same in more than one position. The <strong>order of rotational symmetry</strong> 
+                    is the number of times the shape fits onto itself during a full 360° rotation.
+                </p>
+
+                <!-- 1. EQUILATERAL TRIANGLE -->
+                <h3>Equilateral Triangle (Order 3)</h3>
+                <p>
+                    An equilateral triangle fits onto itself <strong>3 times</strong> during a full 360° turn. 
+                    Each rotation occurs at increments of <strong>120°</strong> (360° ÷ 3). 
+                    Because all three sides and all three angles are equal, the shape looks identical at each of these three stages.
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/equilateral-symmetry-rotational-symmetry.svg" alt="Rotational Symmetry Of Equilateral Triangles" />
+                </div>
+
+                <!-- 2. SQUARE -->
+                <h3>Square (Order 4)</h3>
+                <p>
+                    A square has a rotational symmetry of <strong>order 4</strong>. 
+                    It maps onto itself every <strong>90°</strong> (90°, 180°, 270°, and 360°). 
+                    The center of rotation is the exact point where the two diagonals of the square intersect.
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/square-rotational-symmetry.svg" alt="Square Rotational Symmetry" />
+                </div>
+
+                <!-- 3. RECTANGLE -->
+                <h3>Rectangle (Order 2)</h3>
+                <p>
+                    A rectangle has a rotational symmetry of <strong>order 2</strong>. 
+                    This means it looks the same twice during a full 360° rotation (at 180° and 360°). 
+                    Note that a 90° turn does <strong>not</strong> work for a rectangle because the length and width would swap positions.
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/rectangle-rotational-symmetry.svg" alt="Rectangle Rotational Symmetry"/>
+                </div>
+
+                <!-- 4. PENTAGON -->
+                <h3>Regular Pentagon (Order 5)</h3>
+                <p>
+                    A regular pentagon has <strong>order 5</strong> rotational symmetry. 
+                    Since 360° ÷ 5 = 72°, the shape fits onto itself every <strong>72°</strong>. 
+                    As the shape rotates, each vertex (A through E) moves to the next position while the overall outline remains unchanged.
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/pentagon-rotational-symmetry.svg" alt="Pentagon Rotational Symmetry" />
+                </div>
+
+                <!-- 5. HEXAGON -->
+                <h3>Regular Hexagon (Order 6)</h3>
+                <p>
+                    A regular hexagon has rotational symmetry of <strong>order 6</strong>. 
+                    It looks the same every <strong>60°</strong>. By labeling all vertices A-F, you can see how each point 
+                    cycles through all positions during a full rotation, while the hexagon appears unchanged.
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/hexagon-rotational-symmetry.svg" alt="Hexagon Rotational Symmetry" />
+                </div>
+
+                <hr />
+
+                <div class="symmetry-formula">
+                    <h3>The Mathematical Relationship</h3>
+                    <p>
+                        There is a direct correlation between the <strong>Order of Symmetry</strong> and the 
+                        <strong>Angle of Rotation</strong>. You can calculate one if you know the other using 
+                        the total 360° of a full circle:
+                    </p>
+                    
+                    <div style="background: #1a1a1a; border: 1px solid #00ffcc; padding: 15px; border-radius: 8px; color: #fff; font-family: sans-serif;">
+                        <p style="margin: 0; font-size: 1.1em; text-align: center;">
+                            <span style="color: #00ffcc; font-weight: bold;">Angle of Rotation</span> = 360° ÷ <span style="color: #00ffcc; font-weight: bold;">Order</span>
+                        </p>
+                        <p style="margin: 10px 0 0 0; font-size: 1.1em; text-align: center;">
+                            <span style="color: #00ffcc; font-weight: bold;">Order of Symmetry</span> = 360° ÷ <span style="color: #00ffcc; font-weight: bold;">Angle</span>
+                        </p>
+                    </div>
+
+                    <p><strong>Examples:</strong></p>
+                    
+                    <p>A <strong>Square</strong> (Order 4) matches every: 360° ÷ 4 = <strong>90°</strong></p>
+                    <p>A <strong>Hexagon</strong> (Order 6) matches every: 360° ÷ 6 = <strong>60°</strong></p>
+                    <p>If a shape matches every <strong>72°</strong>, its order is: 360° ÷ 72 = <strong>5</strong> (Pentagon)</p>
+                    
+                    <p>
+                        <strong>NB:</strong> Regular polygons (where all sides and angles are equal) 
+                        always have an order of rotational symmetry equal to their <strong>number of sides</strong>.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="planes-of-symmetry">
+                <h2 id="planes-of-symmetry">Plane(s) Of Symmetry</h2>
+                
+                <p>
+                    A <strong>plane of symmetry</strong> is an imaginary flat surface that divides a 3D shape into two 
+                    halves that are <strong>mirror images</strong> of each other. Some solids have multiple planes of symmetry.
+                </p>
+
+                <!-- 1. CUBE -->
+                <h3>The Cube (9 Planes)</h3>
+                <p>
+                    A cube is highly symmetrical. Its 9 planes are divided into two types: 
+                    <strong>3 planes</strong> parallel to the faces (middle slices) and 
+                    <strong>6 planes</strong> that cut diagonally through opposite edges.
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/cube-rotational-symmetry.svg" alt="Rotational Symmetry of a cube" />
+                </div>
+
+                <!-- 2. CUBOID -->
+                <h3>The Cuboid (3 Planes)</h3>
+                <p>
+                    Unlike a cube, a standard cuboid <strong>only has 3 planes</strong> of symmetry. 
+                    Because the sides are different lengths, diagonal planes do not result in perfect mirror images.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/cuboid-rotational-symmetry.svg" alt="Rotational Symmetry of a cuboid" />
+                </div>
+
+                <!-- 3. SQUARE-BASED PYRAMID -->
+                <h3>Square-Based Pyramid (4 Planes)</h3>
+                <p>
+                    A square-based pyramid has 4 planes of symmetry that all pass through the <strong>apex</strong> (top point).
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/pyramid-rotational-symmetry.svg" alt="Rotational Symmetry Of A Square Based Pyramid" />                
+                </div>
+
+                <!-- 4. CYLINDER, CONE, SPHERE -->
+                <h3>Infinite Symmetry Solids</h3>
+                <p>
+                    Shapes with circular cross-sections often have <strong>infinite vertical planes</strong> of symmetry passing through their central axis.
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/symmetry/infinite-planes-of-symmetry.svg" alt="Infinite planes of symmetry" />
+                </div>
+
+                <!-- SUMMARY -->
+                <p>
+                    <strong>Note:</strong> A sphere is the most symmetrical 3D object possible; any plane passing through its exact center point is a plane of symmetry.
+                </p>
+
+                <p>
+                    This topic is closely related to <a href="solids.html">solids</a>.
+                    It is reccommeded that learners also read this section after reading 
+                    about symmetry, particularly so that they understand other proterties of 
+                    polygons and solids.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#symmetry">Symmetry</a></li>
+            <li><a href="#line-symmetry">Line Symmetry</a></li>
+            <li><a href="#rotational-symmetry">Rotational Symmetry</a></li>
+            <li><a href="#planes-of-symmetry">Plane(s) of Symmetry</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

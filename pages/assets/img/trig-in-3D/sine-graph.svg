@@ -1,0 +1,70 @@
+<svg viewBox="0 0 840 360" width="840" height="360" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; max-width: 760px; font-family: 'Inter', system-ui, sans-serif;">
+    <style>
+        .gr-grid  { stroke: #ffffff; stroke-width: 0.5; stroke-dasharray: 4,4; opacity: 0.15; }
+        .gr-curve { stroke: #5ba3f5; stroke-width: 3; fill: none; stroke-linecap: round; }
+        .gr-label { fill: #ffffff; font-family: 'Times New Roman', serif; font-size: 13px; text-anchor: middle; }
+        .gr-axis-lbl { fill: #ffffff; font-family: 'Times New Roman', serif; font-size: 16px; font-style: italic; font-weight: bold; }
+        .gr-dot   { stroke-width: 1.5; stroke: #ffffff; }
+    </style>
+    
+    <defs>
+        <marker id="gr-arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ffffff"/>
+        </marker>
+    </defs>
+
+    <!-- Vertical Angular Grid Lines -->
+    <line x1="100" y1="40" x2="100" y2="320" class="gr-grid"/> <!-- -360° -->
+    <line x1="180" y1="40" x2="180" y2="320" class="gr-grid"/> <!-- -270° -->
+    <line x1="260" y1="40" x2="260" y2="320" class="gr-grid"/> <!-- -180° -->
+    <line x1="340" y1="40" x2="340" y2="320" class="gr-grid"/> <!-- -90° -->
+    <line x1="420" y1="40" x2="420" y2="320" class="gr-grid"/> <!-- 0° (Center Axis) -->
+    <line x1="500" y1="40" x2="500" y2="320" class="gr-grid"/> <!-- 90° -->
+    <line x1="580" y1="40" x2="580" y2="320" class="gr-grid"/> <!-- 180° -->
+    <line x1="660" y1="40" x2="660" y2="320" class="gr-grid"/> <!-- 270° -->
+    <line x1="740" y1="40" x2="740" y2="320" class="gr-grid"/> <!-- 360° -->
+    
+    <!-- Horizontal Amplitude Boundaries (+1, -1) -->
+    <line x1="80"  y1="60"  x2="760" y2="60"  class="gr-grid"/>
+    <line x1="80"  y1="300" x2="760" y2="300" class="gr-grid"/>
+
+    <!-- Axis Lines -->
+    <line x1="70"  y1="180" x2="785" y2="180" stroke="#ffffff" stroke-width="1.5" marker-end="url(#gr-arrow)"/> <!-- X Axis -->
+    <line x1="420" y1="330" x2="420" y2="35"  stroke="#ffffff" stroke-width="1.5" marker-end="url(#gr-arrow)"/> <!-- Y Axis -->
+
+    <!-- X Axis Degree Labels -->
+    <text x="100" y="198" class="gr-label">−360°</text>
+    <text x="180" y="198" class="gr-label">−270°</text>
+    <text x="260" y="198" class="gr-label">−180°</text>
+    <text x="340" y="198" class="gr-label">−90°</text>
+    <text x="435" y="198" class="gr-label">0°</text>
+    <text x="500" y="198" class="gr-label">90°</text>
+    <text x="580" y="198" class="gr-label">180°</text>
+    <text x="660" y="198" class="gr-label">270°</text>
+    <text x="740" y="198" class="gr-label">360°</text>
+    <text x="798" y="185" class="gr-axis-lbl">θ</text>
+
+    <!-- Y Axis Target Labels -->
+    <text x="406" y="64"  class="gr-label">1</text>
+    <text x="404" y="304" class="gr-label">−1</text>
+    <text x="420" y="24"  class="gr-axis-lbl" text-anchor="middle">sin(θ)</text>
+
+    <!-- Recalculated Fluid Sine Curve Path featuring an "S" inflection at the origin -->
+    <path class="gr-curve" d="
+        M 100,180
+        C 130,135 150,60 180,60
+        C 210,60 230,135 260,180
+        C 290,225 310,300 340,300
+        C 370,300 390,225 420,180
+        C 450,135 470,60 500,60
+        C 530,60 550,135 580,180
+        C 610,225 630,300 660,300
+        C 690,300 710,225 740,180
+    "/>
+
+    <!-- Turning Point Reference Indicators -->
+    <circle cx="180" cy="60"  r="3.5" fill="#00ffcc" class="gr-dot"/>
+    <circle cx="340" cy="300" r="3.5" fill="#ff8888" class="gr-dot"/>
+    <circle cx="500" cy="60"  r="3.5" fill="#00ffcc" class="gr-dot"/>
+    <circle cx="660" cy="300" r="3.5" fill="#ff8888" class="gr-dot"/>
+</svg>

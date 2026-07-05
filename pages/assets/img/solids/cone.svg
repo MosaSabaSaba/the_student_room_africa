@@ -1,0 +1,33 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="550" height="550" viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg">
+    <!-- 3D SHAPE -->
+    <g transform="translate(0, 20)">
+        <ellipse cx="180" cy="160" rx="100" ry="35" fill="none" stroke="#ffffff" stroke-width="3" />
+        <line x1="80" y1="160" x2="180" y2="20" stroke="#ffffff" stroke-width="3" />
+        <line x1="280" y1="160" x2="180" y2="20" stroke="#ffffff" stroke-width="3" />
+        
+        <!-- Characteristics in #00ffcc -->
+        <circle cx="180" cy="20" r="6" fill="#00ffcc"/>
+        <text x="195" y="25" fill="#00ffcc" font-weight="bold" font-size="18">Apex (Vertex)</text>
+        
+        <!-- Labeling the curved face and base -->
+        <text x="145" y="100" fill="#00ffcc" font-weight="bold" font-size="18">Face</text>
+        <text x="125" y="180" fill="#00ffcc" font-weight="bold" font-size="18">Circular Base</text>
+    </g>
+
+    <!-- Totals Box -->
+    <rect x="350" y="40" width="160" height="110" fill="none" stroke="#00ffcc" stroke-width="2"/>
+    <text x="360" y="70" fill="#00ffcc" font-weight="bold" font-size="18">Faces: 2</text>
+    <text x="360" y="100" fill="#00ffcc" font-weight="bold" font-size="18">Edges: 1</text>
+    <text x="360" y="130" fill="#00ffcc" font-weight="bold" font-size="18">Vertices: 1</text>
+
+    <!-- THE NET (Corrected Orientation) -->
+    <g transform="translate(180, 280)">
+        <text x="0" y="0" fill="#ffffff" font-size="16" font-style="italic">Unfolded Net</text>
+        
+        <!-- Sector: straight sides meeting at a top apex, curved bottom -->
+        <path d="M 0,110 A 100,60 0 0 0 140,110 L 70,20 Z" fill="none" stroke="#ffffff" stroke-width="2" />
+        
+        <!-- Circular Base: attached to the center of the curved bottom edge -->
+        <circle cx="70" cy="167" r="40" fill="none" stroke="#ffffff" stroke-width="2" />
+    </g>
+</svg>

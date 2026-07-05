@@ -1,0 +1,78 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .axis-line { stroke: #ffffff; stroke-width: 2; }
+        .axis-label { fill: #00ffcc; font-family: sans-serif; font-size: 12px; font-weight: bold; }
+        .simple-line { stroke: #ff8888; stroke-width: 3; fill: none; stroke-dasharray: 6,3; }
+        .compound-line { stroke: #00ffcc; stroke-width: 3; fill: none; }
+        .simple-point { fill: #ff8888; }
+        .compound-point { fill: #00ffcc; }
+        .grid-line { stroke: #ffffff; stroke-width: 0.5; stroke-dasharray: 3,3; opacity: 0.3; }
+        .legend-text { fill: #ffffff; font-family: sans-serif; font-size: 12px; }
+    </style>
+
+    <!-- Background grid -->
+    <rect x="60" y="20" width="520" height="340" fill="none" stroke="#00ffcc" stroke-width="1" opacity="0.5"/>
+    <line x1="60" y1="20" x2="60" y2="360" class="axis-line"/>
+    <line x1="60" y1="360" x2="580" y2="360" class="axis-line"/>
+
+    <!-- Grid lines -->
+    <line x1="164" y1="20" x2="164" y2="360" class="grid-line"/>
+    <line x1="268" y1="20" x2="268" y2="360" class="grid-line"/>
+    <line x1="372" y1="20" x2="372" y2="360" class="grid-line"/>
+    <line x1="476" y1="20" x2="476" y2="360" class="grid-line"/>
+    
+    <line x1="60" y1="288" x2="580" y2="288" class="grid-line"/>
+    <line x1="60" y1="216" x2="580" y2="216" class="grid-line"/>
+    <line x1="60" y1="144" x2="580" y2="144" class="grid-line"/>
+    <line x1="60" y1="72" x2="580" y2="72" class="grid-line"/>
+
+    <!-- X-axis labels -->
+    <text x="60" y="380" class="axis-label" text-anchor="middle">0</text>
+    <text x="164" y="380" class="axis-label" text-anchor="middle">1</text>
+    <text x="268" y="380" class="axis-label" text-anchor="middle">2</text>
+    <text x="372" y="380" class="axis-label" text-anchor="middle">3</text>
+    <text x="476" y="380" class="axis-label" text-anchor="middle">4</text>
+    <text x="560" y="380" class="axis-label" text-anchor="middle">5</text>
+
+    <!-- Y-axis labels -->
+    <text x="50" y="360" class="axis-label" text-anchor="end">0</text>
+    <text x="50" y="288" class="axis-label" text-anchor="end">500</text>
+    <text x="50" y="216" class="axis-label" text-anchor="end">1000</text>
+    <text x="50" y="144" class="axis-label" text-anchor="end">1500</text>
+    <text x="50" y="72" class="axis-label" text-anchor="end">2000</text>
+
+    <!-- Axes titles -->
+    <text x="300" y="400" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">Time (years)</text>
+    <text x="20" y="200" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle" transform="rotate(-90, 20, 200)">Amount (M)</text>
+
+    <!-- Simple Interest Line (Year 0-5: 1000,1100,1200,1300,1400,1500) -->
+    <!-- Scale: x: 60 + (year×104), y: 360 - (amount×0.192) -->
+    <polyline points="60,360 164,348.8 268,326.4 372,304 476,281.6 560,259.2" class="simple-line"/>
+    
+    <!-- Simple Interest Points -->
+    <circle cx="60" cy="360" r="4" class="simple-point"/>
+    <circle cx="164" cy="348.8" r="4" class="simple-point"/>
+    <circle cx="268" cy="326.4" r="4" class="simple-point"/>
+    <circle cx="372" cy="304" r="4" class="simple-point"/>
+    <circle cx="476" cy="281.6" r="4" class="simple-point"/>
+    <circle cx="560" cy="259.2" r="4" class="simple-point"/>
+
+    <!-- Compound Interest Line (Year 0-5: 1000,1100,1210,1331,1464.1,1610.51) -->
+    <!-- Y: 1100→348.8, 1210→326.08, 1331→303.36, 1464.1→278.4, 1610.51→250.88 -->
+    <polyline points="60,360 164,348.8 268,326.08 372,303.36 476,278.4 560,250.88" class="compound-line"/>
+    
+    <!-- Compound Interest Points -->
+    <circle cx="60" cy="360" r="4" class="compound-point"/>
+    <circle cx="164" cy="348.8" r="4" class="compound-point"/>
+    <circle cx="268" cy="326.08" r="4" class="compound-point"/>
+    <circle cx="372" cy="303.36" r="4" class="compound-point"/>
+    <circle cx="476" cy="278.4" r="4" class="compound-point"/>
+    <circle cx="560" cy="250.88" r="4" class="compound-point"/>
+
+    <!-- Legend -->
+    <rect x="380" y="30" width="180" height="50" fill="none" stroke="#00ffcc" stroke-width="1"/>
+    <line x1="390" y1="45" x2="420" y2="45" style="stroke:#ff8888; stroke-width:3; stroke-dasharray:6,3"/>
+    <text x="430" y="49" class="legend-text">Simple Interest</text>
+    <line x1="390" y1="65" x2="420" y2="65" style="stroke:#00ffcc; stroke-width:3"/>
+    <text x="430" y="69" class="legend-text">Compound Interest</text>
+</svg>

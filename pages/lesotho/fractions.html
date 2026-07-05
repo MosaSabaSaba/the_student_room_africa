@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractions - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "LGCSE Mathematics: Fractions Complete Guide",
+  "description": "Comprehensive guide for LGCSE learners covering LCM and HCF, equivalent fractions, identifying fractions and decimals, improper fractions and mixed numbers, adding and subtracting fractions (with common denominators and LCM), ordering fractions, multiplying fractions, dividing fractions (using reciprocals), and operations with fractions and decimals involving whole numbers.",
+  "educationalLevel": "Secondary School (LGCSE)",
+  "keywords": "fractions, LCM, lowest common multiple, HCF, highest common factor, equivalent fractions, improper fractions, mixed numbers, adding fractions, subtracting fractions, ordering fractions, multiplying fractions, dividing fractions, reciprocal, fraction operations, LGCSE mathematics",
+  "about": {
+    "@type": "Thing",
+    "name": "Fraction Arithmetic"
+  },
+  "teaches": "How to find LCM and HCF; create equivalent fractions by multiplying numerator and denominator; simplify fractions using HCF; convert between improper fractions and mixed numbers; add and subtract fractions by finding common denominators using LCM; order fractions by converting to common denominator; multiply fractions by multiplying numerators and denominators; divide fractions by multiplying by the reciprocal; perform operations with fractions and decimals involving whole numbers",
+  "inLanguage": "en",
+  "audience": {
+    "@type": "Audience",
+    "name": "LGCSE Mathematics students in Lesotho"
+  },
+  "learningResourceType": "Study Guide",
+  "timeRequired": "PT90M",
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Student Room Africa"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="#">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="guide.html">Guide</a><span class="bc-sep">›</span>
+        <span>Fractions</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li class="active"><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+            
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="fractions">
+            <h1 id="fractions">Fractions</h1>
+            
+            <p>
+                A <strong>fraction</strong> represents a part of a whole. It is written as <sup>a</sup>&frasl;<sub>b</sub>, 
+                where <strong>a</strong> is the numerator (the number of parts we have) and <strong>b</strong> is the 
+                denominator (the total number of equal parts the whole is divided into).
+            </p>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#fractions">Fractions</a></li>
+                    <li><a href="#lcm-and-hcf">LCM and HCF</a></li>
+                    <li><a href="#equivalent-fractions">Equivalent Fractions</a></li>
+                    <li><a href="#identifying-fractions-decimals">Identifying Fractions and Decimals</a></li>
+                    <li><a href="#improper-fractions">Improper Fractions and Mixed Numbers</a></li>
+                    <li><a href="#adding-subtracting-fractions">Adding and Subtracting Fractions</a></li>
+                    <li><a href="#ordering-fractions">Ordering Fractions</a></li>
+                    <li><a href="#multiplying-fractions">Multiplying Fractions</a></li>
+                    <li><a href="#dividing-fractions">Dividing Fractions</a></li>
+                    <li><a href="#fractions-with-whole-numbers">Fractions and Decimals with Whole Numbers</a></li>
+                </ul>
+            </div>
+
+            <!-- LCM AND HCF SECTION (for the link from ratios page) -->
+            <div class="lcm-and-hcf">
+                <h2 id="lcm-and-hcf">LCM and HCF</h2>
+                
+                <p>
+                    Before working with fractions, we need to understand two important concepts: 
+                    <strong>Lowest Common Multiple (LCM)</strong> and <strong>Highest Common Factor (HCF)</strong>.
+                </p>
+
+                <h3>What is LCM?</h3>
+                <p>
+                    The <strong>Lowest Common Multiple (LCM)</strong> is the smallest number that is a multiple of two or more numbers.
+                </p>
+
+                <h3>Example: Finding LCM of 4 and 6</h3>
+                <p>Multiples of 4: 4, 8, <strong>12</strong>, 16, 20, 24, ...</p>
+                <p>Multiples of 6: 6, <strong>12</strong>, 18, 24, 30, ...</p>
+                <p>The smallest common multiple is <strong>12</strong></p>
+                <p><strong>Answer: LCM(4,6) = 12</strong></p>
+
+                <h3>What is HCF?</h3>
+                <p>
+                    The <strong>Highest Common Factor (HCF)</strong> is the largest number that divides exactly into two or more numbers.
+                </p>
+
+                <h3>Example: Finding HCF of 12 and 18</h3>
+                <p>Factors of 12: 1, 2, 3, 4, <strong>6</strong>, 12</p>
+                <p>Factors of 18: 1, 2, 3, <strong>6</strong>, 9, 18</p>
+                <p>The largest common factor is <strong>6</strong></p>
+                <p><strong>Answer: HCF(12,18) = 6</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Uses:</strong> LCM helps us find common denominators when adding or subtracting fractions. HCF helps us simplify fractions to their lowest terms.</p>
+                </div>
+            </div>
+
+            <!-- EQUIVALENT FRACTIONS -->
+            <div class="equivalent-fractions">
+                <h2 id="equivalent-fractions">Equivalent Fractions</h2>
+                
+                <p>
+                    <strong>Equivalent fractions</strong> are fractions that represent the same value, even though they look different.
+                    You can create equivalent fractions by multiplying or dividing both the numerator and denominator by the same number.
+                </p>
+
+                <h3>Example 1: Finding Equivalent Fractions</h3>
+                <p>Find three fractions equivalent to ½.</p>
+                <p>Multiply numerator and denominator by 2: <sup>2</sup>&frasl;<sub>4</sub></p>
+                <p>Multiply numerator and denominator by 3: <sup>3</sup>&frasl;<sub>6</sub></p>
+                <p>Multiply numerator and denominator by 4: <sup>4</sup>&frasl;<sub>8</sub></p>
+                <p><strong>Answer: ²⁄₄, ³⁄₆, ⁴⁄₈</strong></p>
+
+                <h3>Example 2: Simplifying Fractions (using HCF)</h3>
+                <p>Simplify <sup>12</sup>&frasl;<sub>18</sub>.</p>
+                <p>HCF of 12 and 18 is 6</p>
+                <p>Divide numerator and denominator by 6: <sup>12÷6</sup>&frasl;<sub>18÷6</sub> = <sup>2</sup>&frasl;<sub>3</sub></p>
+                <p><strong>Answer: ¹²⁄₁₈ = ⅔</strong></p>
+            </div>
+
+            <!-- IDENTIFYING FRACTIONS AND DECIMALS -->
+            <div class="identifying-fractions-decimals">
+                <h2 id="identifying-fractions-decimals">Identifying Fractions and Decimals</h2>
+                
+                <p>
+                    A <strong>fraction</strong> represents a part of a whole. A <strong>decimal</strong> is another way to represent a part of a whole using place value.
+                </p>
+
+                
+                <h3 style="margin-top: 0;">Example: Identifying Fractions from Shapes</h3>
+                
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/fractions/fraction-demo.svg" alt="Fraction" />
+                </div>
+
+                <p style="line-height: 1.5;">If a circle is divided into <strong>8 equal parts</strong> and <strong>3 parts</strong> are shaded, what fraction is shaded?</p>
+                
+                <p>
+                    <strong>Answer: 3&frasl;8</span> of the circle is shaded.</strong>
+                </p>
+
+                <h3>Example: Identifying Decimals</h3>
+                <p>The digit 7 in 0.78 is in the tenths place (7 tenths = 0.7)</p>
+                <p>The digit 8 is in the hundredths place (8 hundredths = 0.08)</p>
+                <p><strong>Answer: 0.78 = 7 tenths + 8 hundredths</strong></p>
+            </div>
+
+            <!-- IMPROPER FRACTIONS AND MIXED NUMBERS -->
+            <div class="improper-fractions">
+                <h2 id="improper-fractions">Improper Fractions and Mixed Numbers</h2>
+                
+                <p>
+                    An <strong>improper fraction</strong> has a numerator larger than or equal to its denominator (e.g., ⁷⁄₄).
+                    A <strong>mixed number</strong> has a whole number part and a fractional part (e.g., 1¾).
+                </p>
+
+                <h3>Example 1: Converting Improper Fraction to Mixed Number</h3>
+                <p>Convert ⁷⁄₄ to a mixed number.</p>
+                <p>7 ÷ 4 = 1 remainder 3</p>
+                <p>So, ⁷⁄₄ = 1¾</p>
+                <p><strong>Answer: 1¾</strong></p>
+
+                <h3>Example 2: Converting Mixed Number to Improper Fraction</h3>
+                <p>Convert 2⅗ to an improper fraction.</p>
+                <p>Whole number × denominator + numerator = (2 × 5) + 3 = 10 + 3 = 13</p>
+                <p><strong>Answer: ¹³⁄₅</strong></p>
+            </div>
+
+            <!-- ADDING AND SUBTRACTING FRACTIONS -->
+            <div class="adding-subtracting-fractions">
+                <h2 id="adding-subtracting-fractions">Adding and Subtracting Fractions</h2>
+                
+                <p>
+                    To add or subtract fractions, they must have the <strong>same denominator</strong>. 
+                    If they don't, find the <strong>LCM</strong> of the denominators to create a common denominator.
+                </p>
+
+                <h3>Example 1: Adding Fractions with Same Denominator</h3>
+                <p style="font-family: sans-serif; font-size: 1.1em;">
+                    <sup>2</sup>&frasl;<sub>5</sub> + <sup>1</sup>&frasl;<sub>5</sub> = 
+                    <sup>(2 + 1)</sup>&frasl;<sub>5</sub> = 
+                    <strong style="color: #00ffcc;"><sup>3</sup>&frasl;<sub>5</sub></strong>
+                </p>
+                <p><strong>Answer: ³⁄₅</strong></p>
+
+                <h3>Example 2: Adding Fractions with Different Denominators</h3>
+
+                <p><sup>1</sup>&frasl;<sub>3</sub> + <sup>1</sup>&frasl;<sub>4</sub></p>
+
+                <p><strong>Step 1:</strong> Find the Least Common Multiple (LCM) of the denominators (3 and 4). The LCM is <strong>12</strong>.</p>
+
+                <p><strong>Step 2:</strong> Convert the fractions to have the denominator 12. To do this, multiply the top and bottom by the same number:</p>
+                <p style="padding-left: 20px;">
+                    <sup>1 (&times;4)</sup>&frasl;<sub>3 (&times;4)</sub> = <sup>4</sup>&frasl;<sub>12</sub><br>
+                    <sup>1 (&times;3)</sup>&frasl;<sub>4 (&times;3)</sub> = <sup>3</sup>&frasl;<sub>12</sub>
+                </p>
+
+                <p><strong>Step 3:</strong> Now that the denominators match, add the numerators together:</p>
+                <p style="padding-left: 20px;">
+                    <sup>4</sup>&frasl;<sub>12</sub> + <sup>3</sup>&frasl;<sub>12</sub> = <sup>(4 + 3)</sup>&frasl;<sub>12</sub> = <sup>7</sup>&frasl;<sub>12</sub>
+                </p>
+
+                <p><strong>Answer: <sup>7</sup>&frasl;<sub>12</sub></strong></p>
+
+
+                <h3>Example 3: Subtracting Fractions</h3>
+
+                <p><sup>5</sup>&frasl;<sub>6</sub> - <sup>1</sup>&frasl;<sub>3</sub></p>
+
+                <p><strong>Step 1:</strong> Find the Least Common Multiple (LCM) of 6 and 3. The LCM is <strong>6</strong>.</p>
+
+                <p><strong>Step 2:</strong> Convert the fractions to have the denominator 6. Since the first fraction already has 6, we only convert the second one:</p>
+                <p style="padding-left: 20px;">
+                    <sup>1 (&times;2)</sup>&frasl;<sub>3 (&times;2)</sub> = <sup>2</sup>&frasl;<sub>6</sub>
+                </p>
+
+                <p><strong>Step 3:</strong> Subtract the numerators while keeping the denominator the same:</p>
+                <p style="padding-left: 20px;">
+                    <sup>5</sup>&frasl;<sub>6</sub> - <sup>2</sup>&frasl;<sub>6</sub> = <sup>(5 - 2)</sup>&frasl;<sub>6</sub> = <sup>3</sup>&frasl;<sub>6</sub>
+                </p>
+
+                <p><strong>Step 4:</strong> Simplify the fraction by dividing both the top and bottom by their <a href="fractions.html#lcm-and-hcf">highest common factor</a> (3):</p>
+                <p style="padding-left: 20px;">
+                    <sup>3 (&divide;3)</sup>&frasl;<sub>6 (&divide;3)</sub> = <sup>1</sup>&frasl;<sub>2</sub>
+                </p>
+
+                <p><strong>Answer: <sup>1</sup>&frasl;<sub>2</sub></strong></p>
+
+
+                <h3>Example 4: Adding Improper Fractions</h3>
+
+                <p><sup>7</sup>&frasl;<sub>4</sub> + <sup>5</sup>&frasl;<sub>4</sub></p>
+
+                <p><strong>Step 1:</strong> Since the denominators are already the same (4), you can add the numerators directly:</p>
+                <p style="padding-left: 20px;">
+                    <sup>7</sup>&frasl;<sub>4</sub> + <sup>5</sup>&frasl;<sub>4</sub> = <sup>(7 + 5)</sup>&frasl;<sub>4</sub> = <sup>12</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Step 2:</strong> Simplify the fraction by dividing the numerator by the denominator:</p>
+                <p style="padding-left: 20px;">
+                    12 &divide; 4 = 3
+                </p>
+
+                <p><strong>Answer: 3</strong></p>
+
+            </div>
+
+            <!-- ORDERING FRACTIONS -->
+            <div class="ordering-fractions">
+                <h2 id="ordering-fractions">Ordering Fractions</h2>
+                
+                <p>
+                    To arrange fractions in order of size, convert them to <strong>equivalent fractions</strong> 
+                    with the same denominator (the LCM), then compare the numerators.
+                </p>
+
+                <h3>Example: Arranging Fractions in Ascending Order</h3>
+
+                <p>Arrange <sup>2</sup>&frasl;<sub>3</sub>, <sup>3</sup>&frasl;<sub>5</sub>, <sup>3</sup>&frasl;<sub>4</sub> in ascending order (smallest to largest).</p>
+
+                <p><strong>Step 1:</strong> Find the LCM of the denominators (3, 5, and 4).</p>
+                <p style="padding-left: 20px;">
+                    Multiples of 3: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, <strong>60</strong><br>
+                    Multiples of 5: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, <strong>60</strong><br>
+                    Multiples of 4: 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, <strong>60</strong>
+                </p>
+                <p style="padding-left: 20px;">
+                    The smallest common multiple is <strong>60</strong>. So, LCM = 60.
+                </p>
+
+                <p><strong>Step 2:</strong> Convert each fraction to an equivalent fraction with denominator 60.</p>
+                <p style="padding-left: 20px;">
+                    <sup>2</sup>&frasl;<sub>3</sub> = <sup>(2 × 20)</sup>&frasl;<sub>(3 × 20)</sub> = <sup>40</sup>&frasl;<sub>60</sub><br>
+                    <sup>3</sup>&frasl;<sub>5</sub> = <sup>(3 × 12)</sup>&frasl;<sub>(5 × 12)</sub> = <sup>36</sup>&frasl;<sub>60</sub><br>
+                    <sup>3</sup>&frasl;<sub>4</sub> = <sup>(3 × 15)</sup>&frasl;<sub>(4 × 15)</sub> = <sup>45</sup>&frasl;<sub>60</sub>
+                </p>
+
+                <p><strong>Step 3:</strong> Compare the numerators.</p>
+                <p style="padding-left: 20px;">
+                    <sup>36</sup>&frasl;<sub>60</sub> (smallest), <sup>40</sup>&frasl;<sub>60</sub>, <sup>45</sup>&frasl;<sub>60</sub> (largest)
+                </p>
+
+                <p><strong>Step 4:</strong> Write the original fractions in ascending order.</p>
+                <p style="padding-left: 20px;">
+                    <sup>3</sup>&frasl;<sub>5</sub> , <sup>2</sup>&frasl;<sub>3</sub> , <sup>3</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Answer: <sup>3</sup>&frasl;<sub>5</sub>, <sup>2</sup>&frasl;<sub>3</sub>, <sup>3</sup>&frasl;<sub>4</sub></strong></p>
+            </div>
+
+            <!-- MULTIPLYING FRACTIONS -->
+            <div class="multiplying-fractions">
+                <h2 id="multiplying-fractions">Multiplying Fractions</h2>
+                
+                <p>
+                    To multiply fractions, <strong>multiply the numerators together and multiply the denominators together</strong>.
+                    Then simplify if possible.
+                </p>
+
+                <h3>Example 1: Multiplying Two Fractions</h3>
+
+                <p>Calculate <sup>2</sup>&frasl;<sub>3</sub> × <sup>3</sup>&frasl;<sub>4</sub></p>
+
+                <p><strong>Step 1:</strong> Multiply the numerators together.</p>
+                <p style="padding-left: 20px;">
+                    2 × 3 = 6
+                </p>
+
+                <p><strong>Step 2:</strong> Multiply the denominators together.</p>
+                <p style="padding-left: 20px;">
+                    3 × 4 = 12
+                </p>
+
+                <p><strong>Step 3:</strong> Write the product as a fraction.</p>
+                <p style="padding-left: 20px;">
+                    <sup>2</sup>&frasl;<sub>3</sub> × <sup>3</sup>&frasl;<sub>4</sub> = <sup>(2 × 3)</sup>&frasl;<sub>(3 × 4)</sub> = <sup>6</sup>&frasl;<sub>12</sub>
+                </p>
+
+                <p><strong>Step 4:</strong> Simplify the fraction.</p>
+                <p style="padding-left: 20px;">
+                    HCF of 6 and 12 is 6<br>
+                    <sup>6 ÷ 6</sup>&frasl;<sub>12 ÷ 6</sub> = <sup>1</sup>&frasl;<sub>2</sub>
+                </p>
+
+                <p><strong>Answer: <sup>1</sup>&frasl;<sub>2</sub></strong></p>
+
+                <h3>Example 2: Multiplying a Fraction by a Whole Number</h3>
+
+                <p>Calculate <sup>3</sup>&frasl;<sub>4</sub> × 5</p>
+
+                <p><strong>Step 1:</strong> Write the whole number as a fraction with denominator 1.</p>
+                <p style="padding-left: 20px;">
+                    5 = <sup>5</sup>&frasl;<sub>1</sub>
+                </p>
+
+                <p><strong>Step 2:</strong> Multiply the numerators together.</p>
+                <p style="padding-left: 20px;">
+                    3 × 5 = 15
+                </p>
+
+                <p><strong>Step 3:</strong> Multiply the denominators together.</p>
+                <p style="padding-left: 20px;">
+                    4 × 1 = 4
+                </p>
+
+                <p><strong>Step 4:</strong> Write the product as a fraction.</p>
+                <p style="padding-left: 20px;">
+                    <sup>3</sup>&frasl;<sub>4</sub> × 5 = <sup>(3 × 5)</sup>&frasl;<sub>(4 × 1)</sub> = <sup>15</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Step 5:</strong> Convert the improper fraction to a mixed number.</p>
+                <p style="padding-left: 20px;">
+                    15 ÷ 4 = 3 remainder 3<br>
+                    <sup>15</sup>&frasl;<sub>4</sub> = 3<sup>3</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Answer: 3<sup>3</sup>&frasl;<sub>4</sub> or <sup>15</sup>&frasl;<sub>4</sub></strong></p>
+
+                <h3>Example 3: Multiplying Mixed Numbers</h3>
+
+                <p>Calculate 1<sup>2</sup>&frasl;<sub>3</sub> × 2<sup>1</sup>&frasl;<sub>4</sub></p>
+
+                <p><strong>Step 1:</strong> Convert each mixed number to an improper fraction.</p>
+                <p style="padding-left: 20px;">
+                    1<sup>2</sup>&frasl;<sub>3</sub> = <sup>(1 × 3 + 2)</sup>&frasl;<sub>3</sub> = <sup>5</sup>&frasl;<sub>3</sub><br>
+                    2<sup>1</sup>&frasl;<sub>4</sub> = <sup>(2 × 4 + 1)</sup>&frasl;<sub>4</sub> = <sup>9</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Step 2:</strong> Multiply the numerators together.</p>
+                <p style="padding-left: 20px;">
+                    5 × 9 = 45
+                </p>
+
+                <p><strong>Step 3:</strong> Multiply the denominators together.</p>
+                <p style="padding-left: 20px;">
+                    3 × 4 = 12
+                </p>
+
+                <p><strong>Step 4:</strong> Write the product as a fraction.</p>
+                <p style="padding-left: 20px;">
+                    <sup>5</sup>&frasl;<sub>3</sub> × <sup>9</sup>&frasl;<sub>4</sub> = <sup>(5 × 9)</sup>&frasl;<sub>(3 × 4)</sub> = <sup>45</sup>&frasl;<sub>12</sub>
+                </p>
+
+                <p><strong>Step 5:</strong> Simplify the fraction.</p>
+                <p style="padding-left: 20px;">
+                    HCF of 45 and 12 is 3<br>
+                    <sup>45 ÷ 3</sup>&frasl;<sub>12 ÷ 3</sub> = <sup>15</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Step 6:</strong> Convert the improper fraction to a mixed number.</p>
+                <p style="padding-left: 20px;">
+                    15 ÷ 4 = 3 remainder 3<br>
+                    <sup>15</sup>&frasl;<sub>4</sub> = 3<sup>3</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Answer: 3<sup>3</sup>&frasl;<sub>4</sub></strong></p>
+            </div>
+
+            <!-- DIVIDING FRACTIONS -->
+            <div class="dividing-fractions">
+                <h2 id="dividing-fractions">Dividing Fractions</h2>
+                
+                <p>
+                    To divide fractions, <strong>multiply by the reciprocal</strong> of the second fraction 
+                    (flip the numerator and denominator of the divisor).
+                </p>
+
+                <h3>What is a Reciprocal?</h3>
+                <p>The reciprocal of a fraction is obtained by swapping its numerator and denominator.</p>
+                <p>Example: Reciprocal of <sup>2</sup>&frasl;<sub>3</sub> is <sup>3</sup>&frasl;<sub>2</sub>. Reciprocal of 5 is <sup>1</sup>&frasl;<sub>5</sub>.</p>
+
+                <h3>Example 1: Dividing Two Fractions</h3>
+
+                <p>Calculate <sup>3</sup>&frasl;<sub>4</sub> ÷ <sup>2</sup>&frasl;<sub>3</sub></p>
+
+                <p><strong>Step 1:</strong> Find the reciprocal of the second fraction (the divisor).</p>
+                <p style="padding-left: 20px;">
+                    The second fraction is <sup>2</sup>&frasl;<sub>3</sub>.<br>
+                    Its reciprocal is <sup>3</sup>&frasl;<sub>2</sub>.
+                </p>
+
+                <p><strong>Step 2:</strong> Change the division sign to multiplication and multiply by the reciprocal.</p>
+                <p style="padding-left: 20px;">
+                    <sup>3</sup>&frasl;<sub>4</sub> ÷ <sup>2</sup>&frasl;<sub>3</sub> = <sup>3</sup>&frasl;<sub>4</sub> × <sup>3</sup>&frasl;<sub>2</sub>
+                </p>
+
+                <p><strong>Step 3:</strong> Multiply the numerators together.</p>
+                <p style="padding-left: 20px;">
+                    3 × 3 = 9
+                </p>
+
+                <p><strong>Step 4:</strong> Multiply the denominators together.</p>
+                <p style="padding-left: 20px;">
+                    4 × 2 = 8
+                </p>
+
+                <p><strong>Step 5:</strong> Write the product as a fraction.</p>
+                <p style="padding-left: 20px;">
+                    <sup>3</sup>&frasl;<sub>4</sub> × <sup>3</sup>&frasl;<sub>2</sub> = <sup>(3 × 3)</sup>&frasl;<sub>(4 × 2)</sub> = <sup>9</sup>&frasl;<sub>8</sub>
+                </p>
+
+                <p><strong>Step 6:</strong> Convert the improper fraction to a mixed number.</p>
+                <p style="padding-left: 20px;">
+                    9 ÷ 8 = 1 remainder 1<br>
+                    <sup>9</sup>&frasl;<sub>8</sub> = 1<sup>1</sup>&frasl;<sub>8</sub>
+                </p>
+
+                <p><strong>Answer: 1<sup>1</sup>&frasl;<sub>8</sub></strong></p>
+
+                <h3>Example 2: Dividing a Fraction by a Whole Number</h3>
+
+                <p>Calculate <sup>5</sup>&frasl;<sub>6</sub> ÷ 3</p>
+
+                <p><strong>Step 1:</strong> Write the whole number as a fraction with denominator 1.</p>
+                <p style="padding-left: 20px;">
+                    3 = <sup>3</sup>&frasl;<sub>1</sub>
+                </p>
+
+                <p><strong>Step 2:</strong> Find the reciprocal of the second fraction (the divisor).</p>
+                <p style="padding-left: 20px;">
+                    The second fraction is <sup>3</sup>&frasl;<sub>1</sub>.<br>
+                    Its reciprocal is <sup>1</sup>&frasl;<sub>3</sub>.
+                </p>
+
+                <p><strong>Step 3:</strong> Change the division sign to multiplication and multiply by the reciprocal.</p>
+                <p style="padding-left: 20px;">
+                    <sup>5</sup>&frasl;<sub>6</sub> ÷ <sup>3</sup>&frasl;<sub>1</sub> = <sup>5</sup>&frasl;<sub>6</sub> × <sup>1</sup>&frasl;<sub>3</sub>
+                </p>
+
+                <p><strong>Step 4:</strong> Multiply the numerators together.</p>
+                <p style="padding-left: 20px;">
+                    5 × 1 = 5
+                </p>
+
+                <p><strong>Step 5:</strong> Multiply the denominators together.</p>
+                <p style="padding-left: 20px;">
+                    6 × 3 = 18
+                </p>
+
+                <p><strong>Step 6:</strong> Write the product as a fraction.</p>
+                <p style="padding-left: 20px;">
+                    <sup>5</sup>&frasl;<sub>6</sub> × <sup>1</sup>&frasl;<sub>3</sub> = <sup>(5 × 1)</sup>&frasl;<sub>(6 × 3)</sub> = <sup>5</sup>&frasl;<sub>18</sub>
+                </p>
+
+                <p><strong>Answer: <sup>5</sup>&frasl;<sub>18</sub></strong></p>
+
+                <h3>Example 3: Dividing Mixed Numbers</h3>
+
+                <p>Calculate 2<sup>1</sup>&frasl;<sub>4</sub> ÷ 1<sup>1</sup>&frasl;<sub>2</sub></p>
+
+                <p><strong>Step 1:</strong> Convert each mixed number to an improper fraction.</p>
+                <p style="padding-left: 20px;">
+                    2<sup>1</sup>&frasl;<sub>4</sub> = <sup>(2 × 4 + 1)</sup>&frasl;<sub>4</sub> = <sup>9</sup>&frasl;<sub>4</sub><br>
+                    1<sup>1</sup>&frasl;<sub>2</sub> = <sup>(1 × 2 + 1)</sup>&frasl;<sub>2</sub> = <sup>3</sup>&frasl;<sub>2</sub>
+                </p>
+
+                <p><strong>Step 2:</strong> Find the reciprocal of the second fraction (the divisor).</p>
+                <p style="padding-left: 20px;">
+                    The second fraction is <sup>3</sup>&frasl;<sub>2</sub>.<br>
+                    Its reciprocal is <sup>2</sup>&frasl;<sub>3</sub>.
+                </p>
+
+                <p><strong>Step 3:</strong> Change the division sign to multiplication and multiply by the reciprocal.</p>
+                <p style="padding-left: 20px;">
+                    <sup>9</sup>&frasl;<sub>4</sub> ÷ <sup>3</sup>&frasl;<sub>2</sub> = <sup>9</sup>&frasl;<sub>4</sub> × <sup>2</sup>&frasl;<sub>3</sub>
+                </p>
+
+                <p><strong>Step 4:</strong> Multiply the numerators together.</p>
+                <p style="padding-left: 20px;">
+                    9 × 2 = 18
+                </p>
+
+                <p><strong>Step 5:</strong> Multiply the denominators together.</p>
+                <p style="padding-left: 20px;">
+                    4 × 3 = 12
+                </p>
+
+                <p><strong>Step 6:</strong> Write the product as a fraction.</p>
+                <p style="padding-left: 20px;">
+                    <sup>9</sup>&frasl;<sub>4</sub> × <sup>2</sup>&frasl;<sub>3</sub> = <sup>(9 × 2)</sup>&frasl;<sub>(4 × 3)</sub> = <sup>18</sup>&frasl;<sub>12</sub>
+                </p>
+
+                <p><strong>Step 7:</strong> Simplify the fraction.</p>
+                <p style="padding-left: 20px;">
+                    HCF of 18 and 12 is 6<br>
+                    <sup>18 ÷ 6</sup>&frasl;<sub>12 ÷ 6</sub> = <sup>3</sup>&frasl;<sub>2</sub>
+                </p>
+
+                <p><strong>Step 8:</strong> Convert the improper fraction to a mixed number.</p>
+                <p style="padding-left: 20px;">
+                    3 ÷ 2 = 1 remainder 1<br>
+                    <sup>3</sup>&frasl;<sub>2</sub> = 1<sup>1</sup>&frasl;<sub>2</sub>
+                </p>
+
+                <p><strong>Answer: 1<sup>1</sup>&frasl;<sub>2</sub></strong></p>
+            </div>
+
+            <!-- FRACTIONS AND DECIMALS WITH WHOLE NUMBERS -->
+            <div class="fractions-with-whole-numbers">
+                <h2 id="fractions-with-whole-numbers">Fractions and Decimals with Whole Numbers</h2>
+                
+                <p>
+                    When multiplying or dividing fractions and decimals by whole numbers greater than 10, 
+                    the same rules apply. The numbers are larger, but the method does not change.
+                </p>
+
+                <h3>Example 1: Multiplying a Fraction by a Large Whole Number</h3>
+
+                <p>Calculate <sup>3</sup>&frasl;<sub>4</sub> × 24</p>
+
+                <p><strong>Step 1:</strong> Write the whole number as a fraction with denominator 1.</p>
+                <p style="padding-left: 20px;">
+                    24 = <sup>24</sup>&frasl;<sub>1</sub>
+                </p>
+
+                <p><strong>Step 2:</strong> Multiply the numerators together.</p>
+                <p style="padding-left: 20px;">
+                    3 × 24 = 72
+                </p>
+
+                <p><strong>Step 3:</strong> Multiply the denominators together.</p>
+                <p style="padding-left: 20px;">
+                    4 × 1 = 4
+                </p>
+
+                <p><strong>Step 4:</strong> Write the product as a fraction.</p>
+                <p style="padding-left: 20px;">
+                    <sup>3</sup>&frasl;<sub>4</sub> × 24 = <sup>(3 × 24)</sup>&frasl;<sub>(4 × 1)</sub> = <sup>72</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Step 5:</strong> Simplify the fraction by dividing the numerator by the denominator.</p>
+                <p style="padding-left: 20px;">
+                    72 ÷ 4 = 18
+                </p>
+
+                <p><strong>Answer: 18</strong></p>
+
+                <h3>Example 2: Multiplying a Decimal by a Large Whole Number</h3>
+
+                <p>Calculate 0.25 × 36</p>
+
+                <p><strong>Step 1:</strong> Convert the decimal to a fraction.</p>
+                <p style="padding-left: 20px;">
+                    0.25 = <sup>25</sup>&frasl;<sub>100</sub> = <sup>1</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Step 2:</strong> Multiply the fraction by the whole number.</p>
+                <p style="padding-left: 20px;">
+                    <sup>1</sup>&frasl;<sub>4</sub> × 36 = <sup>(1 × 36)</sup>&frasl;<sub>(4 × 1)</sub> = <sup>36</sup>&frasl;<sub>4</sub>
+                </p>
+
+                <p><strong>Step 3:</strong> Simplify the fraction by dividing the numerator by the denominator.</p>
+                <p style="padding-left: 20px;">
+                    36 ÷ 4 = 9
+                </p>
+
+                <p><strong>Answer: 9</strong></p>
+
+                <h3>Example 3: Dividing a Fraction by a Large Whole Number</h3>
+
+                <p>Calculate <sup>5</sup>&frasl;<sub>6</sub> ÷ 15</p>
+
+                <p><strong>Step 1:</strong> Write the whole number as a fraction with denominator 1.</p>
+                <p style="padding-left: 20px;">
+                    15 = <sup>15</sup>&frasl;<sub>1</sub>
+                </p>
+
+                <p><strong>Step 2:</strong> Find the reciprocal of the second fraction (the divisor).</p>
+                <p style="padding-left: 20px;">
+                    The second fraction is <sup>15</sup>&frasl;<sub>1</sub>.<br>
+                    Its reciprocal is <sup>1</sup>&frasl;<sub>15</sub>.
+                </p>
+
+                <p><strong>Step 3:</strong> Change the division sign to multiplication and multiply by the reciprocal.</p>
+                <p style="padding-left: 20px;">
+                    <sup>5</sup>&frasl;<sub>6</sub> ÷ <sup>15</sup>&frasl;<sub>1</sub> = <sup>5</sup>&frasl;<sub>6</sub> × <sup>1</sup>&frasl;<sub>15</sub>
+                </p>
+
+                <p><strong>Step 4:</strong> Multiply the numerators together.</p>
+                <p style="padding-left: 20px;">
+                    5 × 1 = 5
+                </p>
+
+                <p><strong>Step 5:</strong> Multiply the denominators together.</p>
+                <p style="padding-left: 20px;">
+                    6 × 15 = 90
+                </p>
+
+                <p><strong>Step 6:</strong> Write the product as a fraction.</p>
+                <p style="padding-left: 20px;">
+                    <sup>5</sup>&frasl;<sub>6</sub> × <sup>1</sup>&frasl;<sub>15</sub> = <sup>(5 × 1)</sup>&frasl;<sub>(6 × 15)</sub> = <sup>5</sup>&frasl;<sub>90</sub>
+                </p>
+
+                <p><strong>Step 7:</strong> Simplify the fraction.</p>
+                <p style="padding-left: 20px;">
+                    HCF of 5 and 90 is 5<br>
+                    <sup>5 ÷ 5</sup>&frasl;<sub>90 ÷ 5</sub> = <sup>1</sup>&frasl;<sub>18</sub>
+                </p>
+
+                <p><strong>Answer: <sup>1</sup>&frasl;<sub>18</sub></strong></p>
+
+                <h3>Example 4: Dividing a Decimal by a Large Whole Number</h3>
+
+                <p>Calculate 4.8 ÷ 12</p>
+
+                <p><strong>Step 1:</strong> Convert the decimal to a fraction.</p>
+                <p style="padding-left: 20px;">
+                    4.8 = <sup>48</sup>&frasl;<sub>10</sub> = <sup>24</sup>&frasl;<sub>5</sub>
+                </p>
+
+                <p><strong>Step 2:</strong> Write the whole number as a fraction with denominator 1.</p>
+                <p style="padding-left: 20px;">
+                    12 = <sup>12</sup>&frasl;<sub>1</sub>
+                </p>
+
+                <p><strong>Step 3:</strong> Find the reciprocal of the second fraction (the divisor).</p>
+                <p style="padding-left: 20px;">
+                    The second fraction is <sup>12</sup>&frasl;<sub>1</sub>.<br>
+                    Its reciprocal is <sup>1</sup>&frasl;<sub>12</sub>.
+                </p>
+
+                <p><strong>Step 4:</strong> Change the division sign to multiplication and multiply by the reciprocal.</p>
+                <p style="padding-left: 20px;">
+                    <sup>24</sup>&frasl;<sub>5</sub> ÷ <sup>12</sup>&frasl;<sub>1</sub> = <sup>24</sup>&frasl;<sub>5</sub> × <sup>1</sup>&frasl;<sub>12</sub>
+                </p>
+
+                <p><strong>Step 5:</strong> Multiply the numerators together.</p>
+                <p style="padding-left: 20px;">
+                    24 × 1 = 24
+                </p>
+
+                <p><strong>Step 6:</strong> Multiply the denominators together.</p>
+                <p style="padding-left: 20px;">
+                    5 × 12 = 60
+                </p>
+
+                <p><strong>Step 7:</strong> Write the product as a fraction.</p>
+                <p style="padding-left: 20px;">
+                    <sup>24</sup>&frasl;<sub>5</sub> × <sup>1</sup>&frasl;<sub>12</sub> = <sup>(24 × 1)</sup>&frasl;<sub>(5 × 12)</sub> = <sup>24</sup>&frasl;<sub>60</sub>
+                </p>
+
+                <p><strong>Step 8:</strong> Simplify the fraction.</p>
+                <p style="padding-left: 20px;">
+                    HCF of 24 and 60 is 12<br>
+                    <sup>24 ÷ 12</sup>&frasl;<sub>60 ÷ 12</sub> = <sup>2</sup>&frasl;<sub>5</sub>
+                </p>
+
+                <p><strong>Step 9:</strong> Convert the fraction to a decimal (if needed).</p>
+                <p style="padding-left: 20px;">
+                    <sup>2</sup>&frasl;<sub>5</sub> = 0.4
+                </p>
+
+                <p><strong>Answer: 0.4</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Key Rules Summary:</strong></p>
+                    <p style="margin-bottom: 0;">• Multiply fractions: numerator × numerator, denominator × denominator</p>
+                    <p style="margin-bottom: 0;">• Divide fractions: multiply by the reciprocal</p>
+                    <p style="margin-bottom: 0;">• Add/subtract fractions: same denominator needed (use LCM)</p>
+                    <p style="margin-bottom: 0;">• Simplify fractions: divide by HCF</p>
+                    <p style="margin-bottom: 0; margin-top: 10px;">• For decimals: convert to fractions first, or use place value understanding</p>
+                </div>
+            </div>
+
+            <p>
+                <strong>NB:</strong> Always simplify your final answer. To find a common denominator, use the LCM of the denominators. 
+                To simplify a fraction, divide by the HCF of the numerator and denominator.
+            </p>
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#fractions">Fractions</a></li>
+            <li><a href="#lcm-and-hcf">LCM and HCF</a></li>
+            <li><a href="#equivalent-fractions">Equivalent Fractions</a></li>
+            <li><a href="#identifying-fractions-decimals">Identifying Fractions and Decimals</a></li>
+            <li><a href="#improper-fractions">Improper Fractions and Mixed Numbers</a></li>
+            <li><a href="#adding-subtracting-fractions">Adding and Subtracting Fractions</a></li>
+            <li><a href="#ordering-fractions">Ordering Fractions</a></li>
+            <li><a href="#multiplying-fractions">Multiplying Fractions</a></li>
+            <li><a href="#dividing-fractions">Dividing Fractions</a></li>
+            <li><a href="#fractions-with-whole-numbers">Fractions and Decimals with Whole Numbers</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

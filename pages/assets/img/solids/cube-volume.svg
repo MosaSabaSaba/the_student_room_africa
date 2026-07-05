@@ -1,0 +1,22 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="200" height="180" viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cube Styles -->
+    <defs>
+        <style>
+        .cube-edge { fill: none; stroke: #fff; stroke-width: 2; stroke-linejoin: round; }
+        .label-text { font-family: Arial, sans-serif; font-size: 16px; font-style: italic; font-weight: bold; fill: #00ffcc; }
+        </style>
+    </defs>
+
+    <!-- Cube Body (Isometric Perspective) -->
+    <!-- Top Face -->
+    <path d="M 60 50 L 140 50 L 170 20 L 90 20 Z" class="cube-edge" fill="#f0f0f0" />
+    <!-- Side Face -->
+    <path d="M 140 50 L 170 20 L 170 100 L 140 130 Z" class="cube-edge" fill="#e0e0e0" />
+    <!-- Front Face -->
+    <rect x="60" y="50" width="80" height="80" class="cube-edge" fill="#ffffff" />
+
+    <!-- Labels (s) -->
+    <text x="95" y="150" class="label-text">s</text> <!-- Width -->
+    <text x="40" y="95" class="label-text">s</text>  <!-- Height -->
+    <text x="150" y="105" class="label-text">s</text> <!-- Breadth -->
+</svg>

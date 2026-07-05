@@ -1,0 +1,21 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif; display: inline-block; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 40" width="115" height="40">
+    <!-- Label: I = -->
+    <text x="5" y="24" font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#ffffff">I =</text>
+
+    <!-- Left Parenthesis -->
+    <path d="M 47,8 C 42,12 42,28 47,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+
+    <!-- Matrix Elements -->
+    <g font-family="Times New Roman, serif" font-size="14" fill="#ffffff" text-anchor="middle">
+        <!-- Row 1 -->
+        <text x="62" y="18">1</text>
+        <text x="87" y="18">0</text>
+
+        <!-- Row 2 -->
+        <text x="62" y="33">0</text>
+        <text x="87" y="33">1</text>
+    </g>
+
+    <!-- Right Parenthesis -->
+    <path d="M 103,8 C 108,12 108,28 103,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+</svg>

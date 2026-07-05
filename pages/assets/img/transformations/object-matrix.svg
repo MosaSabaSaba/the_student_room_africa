@@ -1,0 +1,26 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="80">
+    <!-- Background -->
+    <!-- <rect width="100%" height="100%" fill="#1e1e1e" /> -->
+
+    <!-- Label: Object matrix = -->
+    <text x="20" y="46" font-family="Times New Roman, serif" font-style="italic" font-size="12" fill="#ffffff">Object matrix =</text>
+
+    <!-- Left Parenthesis -->
+    <path d="M 152,18 C 145,25 145,55 152,62" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+    <!-- Matrix Elements -->
+    <g font-family="Times New Roman, serif" font-style="italic" font-size="12" fill="#ffffff">
+        <!-- Row 1 -->
+        <text x="165" y="35">x<tspan font-style="normal" font-size="8" dy="5">A</tspan></text>
+        <text x="210" y="35">x<tspan font-style="normal" font-size="8" dy="5">B</tspan></text>
+        <text x="255" y="35">x<tspan font-style="normal" font-size="8" dy="5">C</tspan></text>
+
+        <!-- Row 2 (Resetting dy baseline shift) -->
+        <text x="165" y="58">y<tspan font-style="normal" font-size="8" dy="5">A</tspan></text>
+        <text x="210" y="58">y<tspan font-style="normal" font-size="8" dy="5">B</tspan></text>
+        <text x="255" y="58">y<tspan font-style="normal" font-size="8" dy="5">C</tspan></text>
+    </g>
+
+    <!-- Right Parenthesis -->
+    <path d="M 288,18 C 295,25 295,55 288,62" stroke="#ffffff" stroke-width="1.5" fill="none" />
+</svg>

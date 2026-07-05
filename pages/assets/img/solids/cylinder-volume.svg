@@ -1,0 +1,40 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="200" viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .label { fill: #00ffcc; font-family: sans-serif; font-size: 13px; }
+        .hidden { stroke: #ffffff; stroke-width: 2; stroke-dasharray: 6,4; fill: none; }
+        .visible { stroke: #ffffff; stroke-width: 2; fill: none; }
+        .dimension { stroke: #ffcc00; stroke-width: 2; stroke-dasharray: 4,3; }
+    </style>
+
+    <!-- 3D Cylinder with hidden lines -->
+    <g transform="translate(50, 30)">
+        <!-- Back half of bottom ellipse (hidden) -->
+        <path d="M 20,130 A 60,20 0 0 1 140,130" class="hidden" />
+        
+        <!-- Back vertical edge (hidden) -->
+        <line x1="140" y1="130" x2="140" y2="30" class="visible" />
+        
+        <!-- Back half of top ellipse (hidden) -->
+        <path d="M 20,30 A 60,20 0 0 1 140,30" class="hidden" />
+        
+        <!-- Front half of top ellipse (visible) -->
+        <path d="M 20,30 A 60,20 0 0 0 140,30" class="visible" />
+        
+        <!-- Front vertical edges (visible) -->
+        <line x1="20" y1="30" x2="20" y2="130" class="visible" />
+
+        <!-- Front half of bottom ellipse (visible) -->
+        <path d="M 20,130 A 60,20 0 0 0 140,130" class="visible" />
+        
+        <!-- Height dimension -->
+        <line x1="80" y1="30" x2="80" y2="130" class="dimension" />
+        <polygon points="77,127 80,130 83,127" fill="#ffcc00" />
+        <polygon points="77,33 80,30 83,33" fill="#ffcc00" />
+        <text x="85" y="85" fill="#ffcc00" font-size="14">h = 12cm</text>
+        
+        <!-- Radius dimension -->
+        <line x1="80" y1="30" x2="140" y2="30" class="dimension" />
+        <polygon points="137,27 140,30 137,33" fill="#ffcc00" />
+        <text x="105" y="25" class="label">r = 5cm</text>
+    </g>
+</svg>

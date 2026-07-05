@@ -1,0 +1,37 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="350" height="250" viewBox="0 0 350 250" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .building { stroke: #ffffff; stroke-width: 2; fill: rgba(255, 255, 255, 0.1); }
+        .ground { stroke: #ffffff; stroke-width: 2; }
+        .sight-line { stroke: #00ffcc; stroke-width: 2.5; }
+        .angle-arc { stroke: #ffcc00; stroke-width: 2; fill: none; }
+        .label { fill: #ffffff; font-family: sans-serif; font-size: 12px; }
+        .angle-label { fill: #ffcc00; font-family: sans-serif; font-size: 12px; font-weight: bold; }
+    </style>
+
+    <!-- Building -->
+    <rect x="260" y="50" width="30" height="150" class="building"/>
+
+    <!-- Ground -->
+    <line x1="30" y1="200" x2="290" y2="200" class="ground"/>
+
+    <!-- Line of sight (From 50,200 to 275,50) -->
+    <line x1="50" y1="200" x2="275" y2="50" class="sight-line"/>
+
+    <!-- Corrected Angle of elevation (Radius: 40px) -->
+    <!-- Starts at (90,200) and sweeps cleanly up to the line of sight -->
+    <path d="M 90 200 A 40 40 0 0 0 83.3 177.8" class="angle-arc"/>
+    <text x="96" y="193" class="angle-label">35°</text>
+
+    <!-- Observer -->
+    <circle cx="50" cy="200" r="4" fill="#ffffff"/>
+    <text x="35" y="215" class="label">Observer</text>
+
+    <!-- Building top -->
+    <circle cx="275" cy="50" r="3" fill="#ffcc00"/>
+
+    <!-- Height label -->
+    <text x="300" y="130" class="label">h = ?</text>
+
+    <!-- Distance label -->
+    <text x="140" y="220" class="label">40 m</text>
+</svg>

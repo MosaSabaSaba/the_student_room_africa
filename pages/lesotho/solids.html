@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polygons, Prisms, and 3D Shapes - Mathematics | Student Room Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/contentStyles.css" />
+<link rel="stylesheet" href="../css/svg.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "LGCSE Mathematics: Polygons, Prisms and Solids Complete Guide",
+  "description": "Comprehensive guide for LGCSE learners covering polygons (naming, perimeter, apothem, area of n-sided polygons), prisms (triangular, rectangular, pentagonal, hexagonal with nets, faces, edges, vertices), surface area and volume calculations for prisms and solids (pyramids, cones, cylinders, spheres), composite solids, and optimization of area and volume with bounds.",
+  "educationalLevel": "Secondary School (LGCSE)",
+  "keywords": "polygons, regular polygons, perimeter, apothem, area of polygon, prisms, triangular prism, rectangular prism, pentagonal prism, hexagonal prism, surface area, volume, square-based pyramid, cone, cylinder, sphere, composite solids, optimization, bounds, LGCSE mathematics",
+  "about": {
+    "@type": "Thing",
+    "name": "Geometric Measurement"
+  },
+  "teaches": "How to name polygons by number of sides; calculate perimeter of regular polygons using P = n × s; define and use apothem; find area of regular polygons using A = ½ × perimeter × apothem; identify properties of prisms (faces, edges, vertices); calculate total surface area of prisms using nets; find volume of any prism using V = A_base × h; calculate surface area and volume of square-based pyramids, cones, cylinders, and spheres; solve composite solid problems by adding/subtracting volumes and surface areas; apply bounds to find maximum/minimum area and volume",
+  "inLanguage": "en",
+  "audience": {
+    "@type": "Audience",
+    "name": "LGCSE Mathematics students in Lesotho"
+  },
+  "learningResourceType": "Study Guide",
+  "timeRequired": "PT120M",
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Student Room Africa"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Polygons, Prisms, and Solids</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li class="active"><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <h1>Polygons, Prisms, and Solids</h1>
+        <p>
+            In geometry, understanding the relationships between 2D polygons and 
+            their 3D extensions is fundamental to visualizing spatial 
+            relationships. A <strong>polygon</strong> forms the base of many 
+            three-dimensional solids, with <strong>prisms</strong> being prime 
+            examples.
+            When you master the properties of polygons (their sides, angles, 
+            and symmetry), you unlock the ability to calculate surface areas and 
+            volumes of complex solids. This foundation connects directly to 
+            <a href="https://en.wikipedia.org/wiki/Architecture" target="_blank" rel="noopener noreferrer">architecture</a>, <a href="https://en.wikipedia.org/wiki/Engineering" target="_blank" rel="noopener noreferrer">engineering</a>, and <a href="https://en.wikipedia.org/wiki/Computer_graphics" target="_blank" rel="noopener noreferrer">
+                computer graphics</a>, where basic geometric principles scale to real-world applications.
+        </p>
+
+        <!-- INLINE TOC (mobile only) -->
+        <div class="inline-toc" id="inlineToc">
+            <div class="toc-heading">In this article</div>
+
+            <ul class="toc-list">
+                <li class="active"><a href="#polygons">Polygons</a></li>
+                <li><a href="#perimeter">Perimeter</a></li>
+                <li><a href="#apothem">Apothem</a></li>
+                <li><a href="#area">Area Of <em>n</em>-sided Polygons</a></li>
+                <li><a href="#prisms">Prisms</a></li>
+                <li><a href="#sum-all-areas">Sum Of Areas Of All Surfaces</a></li>
+                <li><a href="#pentagon-and-hexagon">Total Surface Area Of Pentagon And Hexagon</a></li>
+                <li><a href="#remaining-area">Calculating Area Of Remaining Surfaces</a></li>
+                <li><a href="#volume-of-prisms">Calculating Volume Of Prisms</a></li>
+                <li><a href="#solids">Solids</a></li>
+                <li><a href="#solids-surface-area">Surface Area Of Solids</a></li>
+                <li><a href="#solids-volume">Volumes Of Solids</a></li>
+                <li><a href="#optimizing-areas-and-volumes">Optimsation Of Measures On Area And Volumes</a></li>
+                <li><a href="#composite-solids">Composite Solids</a></li>
+            </ul>
+        </div>
+
+        <div class="polygons">
+            <h2 id="polygons">Polygons</h2>
+
+            <p>A <strong>polygon</strong> is a closed shape.
+                A polygon is named by the number of its sides or angles.
+            </p>
+
+            <p>Here is how naming polygons works:</p>
+
+            <div style="overflow-x: auto; margin: 1.5rem 0;">
+                <table style="width: 100%; border-collapse: collapse; min-width: 400px;">
+                    <thead>
+                        <tr style="border: 1px solid #ffffff;">
+                            <th style="border: 1px solid #ffffff; padding: 12px; color: #ffffff; font-weight: bold;">Prefix</th>
+                            <th style="border: 1px solid #ffffff; padding: 12px; color: #ffffff; font-weight: bold;">Sides</th>
+                            <th style="border: 1px solid #ffffff; padding: 12px; color: #ffffff; font-weight: bold;">Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border: 1px solid #ffffff;">
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Tri-</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">3</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Triangle</td>
+                        </tr>
+                        <tr style="border: 1px solid #ffffff;">
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Quad-</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">4</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Quadrilateral</td>
+                        </tr>
+                        <tr style="border: 1px solid #ffffff;">
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Penta-</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">5</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Pentagon</td>
+                        </tr>
+                        <tr style="border: 1px solid #ffffff;">
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Hexa-</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">6</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Hexagon</td>
+                        </tr>
+                        <tr style="border: 1px solid #ffffff;">
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Hepta-</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">7</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Heptagon</td>
+                        </tr>
+                        <tr style="border: 1px solid #ffffff;">
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Octa-</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">8</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Octagon</td>
+                        </tr>
+                        <tr style="border: 1px solid #ffffff;">
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Nona-</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">9</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Nonagon</td>
+                        </tr>
+                        <tr style="border: 1px solid #ffffff;">
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Deca-</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">10</td>
+                            <td style="border: 1px solid #ffffff; padding: 10px; color: #ffffff;">Decagon</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                It is recommended that learners remind themselves about 
+                <a href="symmetry.html">symmetry</a>
+                before proceeding with the latter contents of this topic. 
+            </p>
+    
+
+            <div class="perimeter">
+                <h2 id="perimeter">Perimeter</h2>
+                <p>
+                    The <strong>perimeter</strong> is the total distance around the outside of a 2D shape.
+                    For any polygon, you find the perimeter by adding the lengths 
+                    of all its sides together. In a <strong>regular polygon</strong>, where all 
+                    sides are equal, you can simply multiply the length of one 
+                    side by the total number of sides.
+                </p>
+
+                <p>Perimeter of a Regular Hexagon</p>
+                            
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/perimeter-demo.svg" alt="perimeter" style="max-width: 100%; height: auto; width: 370px;" />
+                </div>
+
+    
+                <p>The Formula</p>
+
+                <p>Perimeter (P) = s + s + s + s + s + s</p>
+
+                <p>For a regular hexagon with side length <strong><em>s</em></strong>, the formula is:</p>
+
+                <p><em><strong>P</strong> = 6 &times s</em></p>
+
+                <p>For any regular polygon with <em><strong>n</strong></em> sides, the general formula is:</p>
+
+                <p><em><strong>P</strong> = n &times s</em></p>
+            </div>
+
+            <div class="apothem">
+                <h2 id="apothem">Apothem</h2>
+                <p>
+                    The <strong>apothem</strong> is a line segment drawn from the center of a 
+                    regular polygon to the midpoint of one of its sides. In a 
+                    regular polygon, every side is at an equal distance from 
+                    the center, meaning all apothems are equal in length. Because
+                    the apothem acts as a perpendicular bisector, it always
+                    meets the side at a right angle (90&deg;) and splits that side into 
+                    two equal halves. This measurement is essential for 
+                    calculating the size of the shape; you can find the area of 
+                    any regular polygon by taking half the product of its 
+                    perimeter and its apothem.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/apothem.svg" alt="Apothem" style="max-width: 100%; height: auto; width: 400px;" />
+                </div>
+
+                <p>
+                    To calculate the area using perimeter and apothem,
+                    use the following formula:
+                </p>
+
+                <p>A = 1&frasl;2 &times; perimeter &times; apothem</p>
+            </div>
+
+            <div class="area">
+                <h2 id="area">Area</h2>
+                <p>
+                    Look at the rectangle below. Its area is <em>bh</em> square units.
+                    The diagonal divides the rectangle into two congruent triangles. 
+                    The area of each triangle is half the area of the rectangle, or 
+                    1&frasl;2<em>bh</em> square units. This is true for all triangles.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/rectangle-area.svg" alt="area of a rectangle" />
+                </div>
+
+
+                <p>
+                    A more formal theorem for area of a triangle states: If a triangle has 
+                    an area of <em>A</em> square units, a base of <em>b</em> units, and a 
+                    corresponding height of <em>h</em> units, then 
+                    <em>A</em> = 1&frasl;2<em>bh</em>.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/triangle-area.svg" alt="Area of a Triangle" />
+                </div>
+
+                <p>Understanding this concept about triangles will help us easily understand the next sub-topic, so make sure you complete enough <a href="#">practice questions</a> before moving on.</p>
+
+
+                
+
+                <h2 id="area">Area of n-sided Polygons</h2>
+                <p>
+                    The easiest way to understand the area of any 
+                    regular polygon is to see it as a collection of 
+                    identical triangles meeting at the center.
+                </p>
+
+                <p>
+                    To find the area of a regular polygon, you can divide it into 
+                    <strong><em>n</em> sided triangles</strong> (where
+                    <em>n</em> is the number of sides). The area of the whole
+                    polygon is simply the area of the triangle multiplied by the
+                    number of sides.
+                </p>
+
+                <p>
+                    If you are given the side length (<em>s</em>) and the 
+                    apothem (<em>a</em>), treat the apothem as the 
+                    <strong>height</strong> of a triangle and the side as 
+                    the <strong>base</strong>.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/polygon-area.svg" alt="area of n-sided polygon" />
+                </div>
+
+                <h1>OR</h1>
+
+                <p>
+                    If you know the <strong>Perimeter (<em>p</em>)</strong>
+                    and the <strong>Apothem (<em>a</em>)</strong>, you can use this "shortcut"
+                    formula:
+                </p>
+
+                <p>A = 1&frasl;2 &times; perimeter &times; apothem</p>
+            </div>
+        </div>
+
+        <div class="prisms">
+            <h2 id="prisms">Prisms</h2>            <p>
+                A prism is a shape with a contant cross-section throughout its length. 
+                Also, the bases of all prisms are
+                always <a href="#">congruent</a>. This is means
+                they are identical.
+            </p>
+            <p>
+                It is important to understand their properties and how they "unfold"
+                2D nets.
+            </p>
+
+            <div class="prisms">
+                <!-- Triangular Prism -->
+                <h3>Triangular Prism</h3>
+                <p>Defined by its two triangular bases. The net consists of three rectangles in a row with two triangles attached.</p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/triangular-prisms.svg" alt="Triangular Prism"/>
+                </div>
+
+                <!-- Rectangular Prism -->
+                <h3>Rectangular Prism (Cuboid)</h3>
+                <p>
+                    A shape where all faces are rectangles. The net is often a "cross" shape.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/rectangular-prism.svg" alt="Rectangular Prism"/>
+                </div>
+
+                <!-- Pentagonal Prism -->
+                <h3>Pentagonal Prism</h3>
+                <p>
+                    A pentagonal prism has a five-sided polygon as its cross-section.
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/pentagonal-prism.svg" alt="Pentagonal Prism" />
+                </div>
+            
+                <!-- Hexagonal Prism -->
+                <h3>Hexagonal Prism</h3>
+                <p>
+                    A complex prism with two hexagonal bases. Its net features a long strip of six rectangles.
+                </p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/hexagonal-prism.svg" alt="hexagonal prism" />
+                </div>
+
+                <p>Did you notice a pattern when we add one extra side to the base of a prism?</p>
+
+                <p>
+                    For <strong>every additional side</strong> added to the base polygon, the 
+                    structure of the prism follows a consistent mathematical progression. The
+                    number of <strong>Faces</strong> increases by <strong><em>1</em></strong>, 
+                    the number of <strong>Edges</strong> increases by 
+                    <strong><em>3</em></strong>, and the number of <strong>Vertices</strong> 
+                    increases by <strong><em>2</em></strong>.
+                </p>
+
+                <p>
+                    This predictable pattern allows us to calculate the properties of any 
+                    prism without having to draw it. For instance, if a prism is built 
+                    from a base with <strong><em>n</em></strong> sides, then the number of 
+                    <strong>Faces</strong> equals <strong><em>n</em> + 2</strong> (the 
+                    <em>n</em> lateral faces plus the two bases), the number of <strong>
+                    Edges</strong> equals <strong>3<em>n</em></strong> (each base 
+                    contributes <em>n</em> edges, plus <em>n</em> connecting lateral 
+                    edges), and the number of <strong>Vertices</strong> equals 
+                    <strong>2<em>n</em></strong> (<em>n</em> vertices on the top base and 
+                    <em>n</em> on the bottom base). 
+                </p>
+            </div>
+
+            <div class="surface-area-of-prisms">
+                <h2 id="sum-all-areas">Sum Of Areas Of All Surfaces</h2>
+                <p>The nets from the <a href="#prisms">section above</a> will come in 
+                    handy when calculating areas. So be sure to fully understand how to layout
+                    these 3D shapes into their 2D forms.
+                </p>
+
+                <p>
+                    To find the <strong>total surface area</strong>(TSA) of any prism, you simply
+                    sum the areas of every shape in its <strong>2D Net</strong>.
+                </p>
+
+                <!-- Triangular prism area -->
+                <h3>Triangular Prism Surface Area</h3>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/triangular-prism-area.svg" alt="Triangular prism surface area" />
+            
+                </div>
+
+                <!-- Cuboid area -->
+                <h3>Rectangular Prism (Cuboid) Surface Area</h3>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cuboid-area.svg" alt="Area of a Cuboid" />
+                </div>
+
+                <h3>
+                    Surface Area of a Cube
+                </h3>
+
+                <p>
+                    A <strong>Cube</strong> is the special case of a cuboid where every face is an identical square.
+                    This makes the calculation much faster because you only need to 
+                    find the area of one face and multiply it by six.
+                </p>
+
+                <p>For a cube where every side (<em>s</em>) is <strong>4cm</strong>.</p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cube-area.svg" alt="Area of a cube" />
+                </div>
+
+                <!-- Pentagonal and hexagonal prisms area -->
+                <h2 id="pentagon-and-hexagon">Deducing Formula For Calculating Total Surface Area Of Pentagon And Hexagon</h2>
+                <p>This the standard procedure that you would follow to find the total surface area of this two prisms:</p>
+
+                <h3>pentagonal prism</h3>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/pentagonal-prism-area.svg" alt="Area of a pentagonal prism" />
+                </div>
+
+                <h3>hexagonal prism</h3>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/hexagonal-prism.area.svg" alt="Area of a hexagonal prism" />
+                </div>
+
+                <p>
+                    Thus we conclude that total surface area is equal to the sum of the area of both bases
+                    and the area of all the sides:
+                </p>
+
+                <p>Area of both bases + Area of all sides </p>
+
+                <p>2 (½ × p × a) + (p × l)</p>
+                <p>p × a + p × l</p>
+                <p>p(a + l)</p>
+
+                <p>where: p = perimeter</p>
+                <p style="margin-left:3.5em;">a = apothem</p>
+                <p style="margin-left:3.5em;">l = length</p>
+
+                <p><strong>NB:</strong> Use this formula only for finding total surface area for pentagonal and hexagonal prisms.</p>
+            </div>
+
+            <div class="remaining-area">
+                <h2 id="remaining-area">Calculating Area Of Remaining Surfaces</h2>
+                
+                <p>
+                    In some problems, you will not be asked to find the total surface area of a complete prism. 
+                    Instead, you may encounter a shape that is <strong>open</strong>, meaning one or more faces are missing. 
+                    Common examples include an <strong>open tank</strong> (no lid), an open box, or a container with one side removed.
+                </p>
+
+                <p>
+                    When a prism is <strong>open</strong>, the approach is straightforward: 
+                    <strong>start with the full total surface area, then subtract the area of the missing face(s)</strong>.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1.5rem 0;">
+                    <p style="margin-bottom: 0;"><strong>Key Idea:</strong> Surface Area of Open Shape = Full TSA − Area of Missing Face(s)</p>
+                </div>
+
+                <h3>Example: Open Rectangular Tank (No Lid)</h3>
+                
+                <p>
+                    Consider a rectangular tank with length <strong>8m</strong>, width <strong>5m</strong>, 
+                    and height <strong>3m</strong>. The tank is <strong>open at the top</strong> (no lid). 
+                    Find the surface area of the remaining five faces.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/open-rectangular-prism-area.svg" alt="Calcilating area of an open rectangular prism" />
+                </div>
+
+
+                <h3>General Rule for Open Prisms</h3>
+                
+                <p>
+                    For any prism that is <strong>open</strong> (missing one or more faces), the same logic applies:
+                </p>
+
+                <p>
+                    <strong>Surface Area of Open Shape = Full TSA − Area of Missing Face(s)</strong>
+                </p>
+
+                <p>
+                    This works because the net of the shape already accounts for every surface. 
+                    When a prism is open, those missing faces are simply not included in the final total.
+                </p>
+
+                <p><strong>NB:</strong> Sometimes a problem will ask for the "surface area" of an open or cut shape. 
+                    Always ask yourself: <em>"What surfaces are actually present?"</em> Then start with the full TSA and subtract what's missing. 
+                    Do <strong>not</strong> try to calculate each remaining face individually, that's slower and easier to mess up.
+                </p>
+                <!-- <p>
+                     <a href="#">practice! practice! practice!</a>
+                </p> -->
+            </div>
+
+            <div class="volume-of-prims">
+                <h2 id="volume-of-prisms">Calculating Volume Of Prisms</h2>
+                <p>
+                    While surface area deals with the <strong>outside</strong> of a 3D shape, 
+                    <strong>volume</strong> measures the <strong>space inside</strong> the shape, as in, 
+                    how much it can hold. Think of filling a tank with water or packing a box with 
+                    cubes; that is volume.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1.5rem 0;">
+                    <p style="margin-bottom: 0;"><strong>Key Idea:</strong> Volume = Area of Base × Height (or Length)</p>
+                </div>
+
+                <p>
+                    For <strong>any prism</strong>, the formula is the same regardless of the shape of the base:
+                </p>
+
+                <p style="text-align: center; font-size: 1.4rem; margin: 1.5rem 0;">
+                    <strong><em>V = A<sub>base</sub> × h</em></strong>
+                </p>
+
+                <p>
+                    where <strong><em>A<sub>base</sub></em></strong> is the area of the cross-section (the base shape) 
+                    and <strong><em>h</em></strong> is the perpendicular height (or length) of the prism.
+                </p>
+
+                <h3>Example 1: Volume of a Rectangular Prism (Cuboid)</h3>
+
+                <p>
+                    A rectangular tank has length <strong>8m</strong>, width <strong>5m</strong>, 
+                    and height <strong>3m</strong>. Find its volume.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cuboid-volume.svg" alt="Diagram of a cuboid with dimensions length 8m, width 5m, height 3m">
+                </div>
+
+                <p><strong>Step 1:</strong> Recall the formula for the volume of a cuboid</p>
+                <p class="indent">Volume = length × width × height</p>
+                <p class="indent">V = l × w × h</p>
+
+                <p><strong>Step 2:</strong> Substitute the given values into the formula</p>
+                <p class="indent">l = 8 m, w = 5 m, h = 3 m</p>
+                <p class="indent">V = 8 × 5 × 3</p>
+
+                <p><strong>Step 3:</strong> Multiply step by step</p>
+                <p class="indent">8 × 5 = 40</p>
+                <p class="indent">40 × 3 = 120</p>
+
+                <p><strong>Step 4:</strong> Write the answer with the correct units</p>
+                <p class="indent">Volume = 120 m³</p>
+
+                <p><strong>Answer: The volume of the tank is 120 cubic metres (120 m³).</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Note:</strong> Volume is measured in cubic units (m³, cm³, etc.). A cubic metre (m³) is the amount of space occupied by a cube with side length 1 metre.</p>
+                </div>
+
+
+                <h3>Example 2: Volume of a Triangular Prism</h3>
+
+                <p>
+                    A triangular prism has a triangular base with base <strong>4cm</strong> and height <strong>3cm</strong>, 
+                    and a prism length of <strong>10cm</strong>. Find its volume.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/triangular-prism-volume.svg" alt="Volume of a triangular prism"/>
+                </div>
+
+                <p><strong>Calculation Container</strong></p>
+                
+                <p><strong>Step 1:</strong> Calculate Area of Base</p> 
+                <p>base area = ½ × base × height</p>
+                <p>base area = ½ × 4cm × 3cm</p>
+                <p>base area = 6cm²</p> 
+
+                <p><strong>Step 2:</strong> Multiply Area Of Base By Length</p>
+                <p>V = base area × length</p>
+                <p>V = 6cm² × 10cm</p>
+                <p>V = 60cm³</p>
+                
+
+
+                <h3>Example 3: Volume of a Pentagonal Prism</h3>
+
+                <p>
+                    A regular pentagonal prism has a base perimeter of <strong>30cm</strong>, apothem <strong>4cm</strong>, 
+                    and length <strong>10cm</strong>. Find its volume.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/pentagonal-prism-volume.svg" alt="Volume Of Pentagonal Prism" />
+                </div>
+
+                
+                <!-- Step 1 Text -->
+                <p><strong>Step 1:</strong> Calculate Area of Base</p>
+                <p>base area = ½ × perimeter × apothem</p>
+                <p>base area = ½ × 30cm × 4cm</p>
+                <p>base area = 60cm²</p>
+
+                <!-- Step 2 Text -->
+                <p><strong>Step 2:</strong> Multiply Area Of Base by Height</p>
+                <p>V = base area × height</p>
+                <p>V = 60cm² × 10cm</p>
+                <p>V = 600cm³</p>
+                    
+
+                <h3>Volume of a Cube</h3>
+
+                <p>
+                    A cube is a special rectangular prism where all edges are equal. If the side length is <em>s</em>, 
+                    then the volume is:
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cube-volume.svg" alt="Volume of a cube" />
+                </div>
+
+
+                <p>
+                    <strong><em>V = s × s × s = s³</em></strong>
+                </p>
+
+                <p> For <strong>any prism</strong>, volume is always 
+                    <strong>Area of Base × Height</strong>. Whether the base is a triangle, rectangle, pentagon, or hexagon, 
+                    the method never changes. Only the way you calculate the base area changes.
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="solids">
+            <h2 id="solids">Solids</h2>
+            <p>
+                A solid is a three-dimensional object. Unlike prisms, these shapes often taper to a point (pyramids and cones) or feature curved surfaces (cylinders and spheres).
+            </p>
+
+            <div class="solids">
+                <!-- SQUARE-BASED PYRAMID -->
+                <h3>Square-Based Pyramid</h3>
+                <p>
+                    A <strong>square-based pyramid</strong> has a square base and four triangular 
+                    faces that slope upward to meet at a single point called the 
+                    apex.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/square-based-pyramid.svg" alt="Volume Of A Square Based Pyramid" />    
+                </div>
+
+                <!-- CONE -->
+                <h3>Cone</h3>
+                <p>
+                    A <strong>cone</strong> is a solid with one circular base and one curved surface that tapers to a point
+                    called the apex (or vertex). It has one edge where the base meets the curved surface.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cone.svg" alt="Volume of a cone" />
+                </div>
+
+                <!-- CYLINDER -->
+                <h3>Cylinder</h3>
+                <p>
+                    A <strong>cylinder</strong> has two identical circular faces (top and bottom) and 
+                    one curved surface that wraps around the sides. It has no 
+                    vertices and no edges.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cylinder.svg" alt="Cylinder" />
+                </div>
+
+                <!-- SPHERE -->
+                <h3>Sphere</h3>
+                <p>
+                    A <strong>sphere</strong> is a perfectly round solid where every point on its surface is the same distance from its centre. It has no faces, no edges, and no vertices.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/sphere.svg" alt="sphere" />
+                </div>
+
+                <p>
+                    <em>A sphere cannot be "unfolded" into a flat 2D net.</em>
+                </p>
+            </div>
+
+            <div class="surface-area">
+                <h2 id="solids-surface-area">Surface Area Of Solids</h2>
+                <p>
+                    The procedure for finding <strong>total surface area</strong>
+                    of a solid is the face as that for finding 
+                    <a href="#sum-all-areas">sum of areas of all surfaces</a> 
+                    for prisms.
+                </p>
+
+                <h3>Square-Based Pyramid Surface Area</h3>
+                <p>
+                    A square-based pyramid has <strong>1 square base</strong> and
+                    <strong>4 triangular faces</strong> that slope up to the apex.
+                    To find the total surface area, we add the area of the base to the
+                    sum of the areas of the four triangular faces.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/square-based-pyramid-area.svg" />
+                </div>
+
+                <!-- Calculation Steps -->
+                <p><strong>Step 1:</strong> Write Generic Formula:</p>
+                <p class="indent">TSA = s² + 4(½ × s × l)</p>
+                
+                <p><strong>Step 2:</strong> Plug in Numbers:</p>
+                <p class="indent">Base: 6 × 6 = 36</p>
+                <p class="indent">4 Triangles: 4 × (0.5 × 6 × 8) = 96</p>
+                
+                <p class="indent">Total = 132cm²</p>
+            
+
+
+
+                <h3>Cone Surface Area</h3>
+                <p>
+                    A cone has <strong>1 circular base</strong> and 
+                    <strong>1 curved surface</strong> that tapers to the apex.
+                </p>
+
+                <p>
+                    When you unwrap the curved surface of a cone, it becomes a 
+                    <a href="#">sector</a> of a circle. The radius of this 
+                    sector is the <strong>slant height</strong> (l), and the arc
+                    length equals the circumference of the base. 
+                </p>
+                <p>
+                    Therefore, 
+                    total surface area = area of a base (<em>a circle = πr² </em>)
+                    + area of curved surface (sector = πrl).
+                </p>
+                <p>Where:</p>
+                <p>r = radius of the circular base</p>
+                <p>l = slant height (distance from apex to edge of base along the curved surface)</p>
+                
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cone-area.svg" alt="Surface Area Of Cone" />
+                </div>
+
+                <!-- Calculation Steps -->
+                <p><strong>Step 1:</strong> Generic Formula:</p>
+                <p class="indent">TSA = πr² + πrl</p>
+                
+                <p><strong>Step 2:</strong> Plug in (π ≈ 3.14):</p>
+                <p class="indent">Base: 3.14 × 4² = 50.24</p>
+                <p class="indent">Curved: 3.14 × 4 × 10 = 125.6</p>
+                
+                <p class="indent">Total = 175.84cm²</p>
+            
+
+
+
+                <h3>Cylinder Surface Area</h3>
+
+                <p>
+                    A cylinder has 
+                    <strong>2 indentical circular bases </strong> and
+                    <strong>1 curved surface</strong> that wraps around.
+                </p>
+
+                <p>
+                    When you "unwrap" the curved surface of a cylinder, it becomes
+                    a rectangle. The length of the rectangle equals the 
+                    circumference of the base (2πr), and the width equals the
+                    height (h) of the cylinder. Thus the total surface area =
+                    area of both bases (<em>2 circles 2πr²</em>) + area of curved
+                    surface (circumference × height = 2πr × h).
+                </p>
+                <p>= 2πr(r + h)</p>
+                <p>Where:</p>
+                <p>r = radius of the circular base</p>
+                <p>h = height of the cylinder</p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cylinder-area.svg" alt="Area Of A Cylinder" />
+                </div>
+
+                <p><strong>Step 1:</strong> Area of Two Circular Bases:</p>
+                <p class="indent">Area of two circles = 2 × π × 5²</p>
+                <p class="indent">= 50π cm²</p>
+
+                <p><strong>Step 2:</strong> Area of Curved Surface:</p>
+                <p class="indent">Area = (2π × 5) × 12</p>
+                <p class="indent">= 10π × 12 = 120π cm²</p>
+
+                <p><strong>Step 3:</strong> Total Surface Area:</p>
+                <p class="indent">TSA = 50π + 120π</p>
+                <p class="indent">TSA = 170π cm²</p>
+            
+
+     
+                <h3>Sphere Surface Area</h3>
+                <p>A <strong>Sphere</strong> has no flat net, but its surface area is four times the area of its circle.</p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/sphere-area.svg" alt="Area of A Sphere" />
+                </div>
+
+                <!-- Calculation Steps -->
+                <p><strong>Step 1:</strong> Generic Formula:</p>
+                <p class="indent">TSA = 4πr²</p>
+                
+                <p><strong>Step 2:</strong> Plug in Numbers:</p>
+                <p class="indent">Area = 4 × π × 3²</p>
+                
+                <p class="indent">Total = 36π cm²</p>
+
+
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Solid</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Formula</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">What the letters mean</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Square-Based Pyramid</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">TSA = s² + 2sl</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">s = side, l = slant height</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Cone</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">TSA = πr² + πrl</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">r = radius, l = slant height</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Cylinder</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">TSA = 2πr² + 2πrh</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">r = radius, h = height</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Sphere</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">TSA = 4πr²</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">r = radius</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <small>Note: π ≈ 3.14 or 22/7 unless otherwise specified</small>
+                    
+
+                <p style="margin-top: 2rem;">
+                    <strong>NB:</strong>You will be expected to memorise the formula for the surface area of a 
+                    sphere. The formula for the curved surface area of a cone (πrl) may be 
+                    provided in some exam papers, but it is better to know it
+                </p>
+            </div>
+
+            <div class="volume">
+                <h2 id="solids-volume">Volume Of Solids</h2>
+                <p>
+                    The <strong>volume</strong> of a solid is the amount of space it occupies.
+                    While surface area deals with the <strong>outside</strong>, volume measures
+                    the <strong>inside</strong>, that is, how much a solid can hold.
+                </p>
+
+                <h3>Square-Based Pyramid Volume</h3>
+                <p>
+                    A square-based pyramid has <strong>1 square base</strong> and
+                    <strong>4 triangular faces</strong> that meet at the apex.
+                    The volume of a pyramid is <strong>one-third</strong> of the volume of a prism
+                    with the same base and height.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/square-based-pyramid-volume.svg" alt="Volume of Square Based Pyramid" />
+                </div>
+
+                <p><strong>Step 1:</strong> Generic Formula:</p>
+                <p class="indent">V = ⅓ × Area of base × height</p>
+                <p class="indent">V = ⅓ × s² × h</p>
+                
+                <p><strong>Step 2:</strong> Plug in Numbers:</p>
+                <p class="indent">Area of base: 6 × 6 = 36 cm²</p>
+                <p class="indent">V = ⅓ × 36 × 10</p>
+                
+                <p class="indent">Volume = ⅓ × 360 = 120 cm³</p>
+            
+
+                <h3>Cone Volume</h3>
+                <p>
+                    A cone has <strong>1 circular base</strong> and 
+                    <strong>1 curved surface</strong> that tapers to the apex.
+                    Like a pyramid, the volume of a cone is <strong>one-third</strong> of
+                    the volume of a cylinder with the same base and height.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cone-volume.svg" alt="volume of a cone" />
+                </div>
+
+                <p><strong>Step 1:</strong> Generic Formula:</p>
+                <p class="indent">V = ⅓ × Area of base × height</p>
+                <p class="indent">V = ⅓ × πr² × h</p>
+                
+                <p><strong>Step 2:</strong> Plug in Numbers (π ≈ 3.14):</p>
+                <p class="indent">Area of base: 3.14 × 4² = 50.24 cm²</p>
+                <p class="indent">V = ⅓ × 50.24 × 12</p>
+                
+                <p class="indent">Volume = ⅓ × 602.88 = 200.96 cm³</p>
+            
+
+                <h3>Cylinder Volume</h3>
+
+                <p>
+                    A cylinder has 
+                    <strong>2 identical circular bases</strong> and
+                    <strong>1 curved surface</strong> that wraps around.
+                    The volume of a cylinder is the <strong>area of the base × height</strong>.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cylinder-volume.svg" alt="Volume Of Cylinder" />
+                </div>
+
+               
+                <p><strong>Step 1:</strong> Generic Formula:</p>
+                <p class="indent">V = Area of base × height</p>
+                <p class="indent">V = πr² × h</p>
+
+                <p><strong>Step 2:</strong> Plug in Numbers (in terms of π):</pt>
+                <p class="indent">Area of base: π × 5² = 25π cm²</p>
+                <p class="indent">V = 25π × 12</p>
+
+                <p class="indent">Volume = 300π cm³</p>
+            
+
+                <h3>Sphere Volume</h3>
+                <p>
+                    A <strong>Sphere</strong> is a perfectly round solid where every point 
+                    on its surface is the same distance from the center.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/sphere-volume.svg" alt="Volume Of Sphere" />
+                </div>
+                
+                <p><strong>Step 1:</strong> Generic Formula:</p>
+                <p class="indent">V = ⁴⁄₃ × π × r³</p>
+                
+                <p><strong>Step 3:</strong> Plug in Numbers:</p>
+                <p class="indent">V = ⁴⁄₃ × π × 3³</p>
+                <p class="indent">V = ⁴⁄₃ × π × 27</p>
+                
+                <p class="indent">Volume = 36π cm³</p>
+
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Solid</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Formula</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">What the letters mean</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Square-Based Pyramid</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">V = ⅓ × s² × h</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">s = side, h = height</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Cone</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">V = ⅓ × πr² × h</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">r = radius, h = height</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Cylinder</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">V = πr² × h</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">r = radius, h = height</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Sphere</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">V = ⁴⁄₃ × πr³</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">r = radius</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <small>Note: π ≈ 3.14 or 22/7 unless otherwise specified</small>
+                <small>Remember: For pyramids and cones, volume is ⅓ of a prism/cylinder with the same base and height</small>
+
+                <p style="margin-top: 2rem;">
+                    <strong>NB:</strong> You will be expected to memorise the formula for the volume of a 
+                    sphere (⁴⁄₃πr³). The formulas for the volume of a cone and pyramid both contain the 
+                    factor "⅓", this is because they taper to a point, unlike prisms and cylinders.
+                </p>
+            </div>
+
+            <div class="optimization-of-area-and-volume">
+                <h2 id="optimizing-areas-and-volumes">Optimisation Of Measures On Area And Volumes</h2>
+            
+                <p>
+                    Before proceeding with this section, be sure to revisit 
+                    <a href="accuracy.html">limits of accuracy</a>. If you do so, 
+                    you will realise that this sub-topic is a simple application of the 
+                    <a href="accuracy.html#calculations-with-bounds">key rules for bounds</a> 
+                    on area and volume calculations.
+                </p>
+
+                <p>
+                    <strong>Optimisation</strong> in this context means finding the <strong>maximum</strong> or 
+                    <strong>minimum</strong> possible value of an area or volume when the measurements 
+                    used in the calculation have been rounded.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding-left: 1.5rem; margin: 1.5rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Key Idea:</strong> Use Upper Bound to get MAXIMUM, Lower Bound to get MINIMUM for multiplication.</p>
+                </div>
+
+                <!-- EXAMPLE 1: MAXIMUM VOLUME OF A CUBE -->
+                <h3>Example 1: Maximum Volume of a Cube</h3>
+                <p>
+                    A cube has side length <strong>6 cm</strong> measured to the nearest cm. 
+                    Find the <strong>maximum possible volume</strong> of the cube.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cube-maximum-volume.svg" alt="Maximum Volume Of A Cube" />
+                </div>
+
+                <p><strong>Step 1:</strong> Find bounds</p>
+                <p class="indent">Degree of accuracy = 1 cm</p>
+                <p class="indent">Half of 1 = 0.5 cm</p>
+                <p class="indent">UB = 6 + 0.5 = 6.5 cm</p>
+
+                <p><strong>Step 2:</strong> Use UB for max</p>
+                <p class="indent">Max V = 6.5 × 6.5 × 6.5</p>
+                <p class="indent">Max V = 274.625 cm³</p>
+                    
+
+                <!-- EXAMPLE 1 (CONTINUED): MINIMUM VOLUME OF A CUBE -->
+                <h3 style="color: #ff8888;">Example 1 (continued): Minimum Volume of a Cube</h3>
+                <p>
+                    Using the same cube with side length <strong>6 cm</strong> measured to the nearest cm, 
+                    find the <strong>minimum possible volume</strong>.
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cube-minimum-volume.svg" alt="Minimum volume of a cube" />
+                </div>
+
+                <p><strong>Step 1:</strong> Find bounds</p>
+                <p class="indent">Degree of accuracy = 1 cm</p>
+                <p class="indent">Half of 1 = 0.5 cm</p>
+                <p class="indent">LB = 6 - 0.5 = 5.5 cm</p>
+
+                <p><strong>Step 2:</strong> Use LB for min</p>
+                <p class="indent">Min V = 5.5 × 5.5 × 5.5</p>
+                <p class="indent">Min V = 166.375 cm³</p>
+                    
+
+                <!-- EXAMPLE 2: MAXIMUM AND MINIMUM SURFACE AREA OF A CYLINDER -->
+                <h3>Example 2: Maximum and Minimum Surface Area of a Cylinder</h3>
+                <p>
+                    A cylinder has a radius of <strong>4 cm</strong> (to nearest cm) and a height of <strong>10 cm</strong> (to nearest cm). 
+                    Calculate the maximum and minimum possible total surface area. (Use π = 3.14)
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/cylinder-min-and-max-volume.svg" alt="Calculating minimum and maximum volume of a cylinder" />
+                </div>
+
+                <!-- Maximum Calculation Box -->
+                <p style="color: #00ffcc;">MAXIMUM Surface Area</p>
+                <p class="indent">Use UB for r and h</p>
+                <p class="indent">r = 4.5 cm, h = 10.5 cm</p>
+                <p class="indent">TSA = 2×3.14×4.5×(4.5+10.5)</p>
+                <p class="indent">Max TSA = 423.9 cm²</p>
+
+                <!-- Minimum Calculation Box -->
+                <p style="color: #ff8888;">MINIMUM Surface Area</p>
+                <p class="indent">Use LB for r and h</p>
+                <p class="indent">r = 3.5 cm, h = 9.5 cm</p>
+                <p class="indent">TSA = 2×3.14×3.5×(3.5+9.5)</p>
+                <p class="indent">Min TSA = 285.74 cm²</p>
+
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Quantity</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">To get Maximum</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">To get Minimum</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Area / Volume</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Use UB</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Use LB</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Division (Speed)</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">UB ÷ LB</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">LB ÷ UB</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Subtraction</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">UB − LB</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">LB − UB</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Addition</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">UB + UB</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">LB + LB</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    <strong>NB:</strong> Optimisation problems are simply limits of accuracy problems applied to area and volume formulas. 
+                    The key steps are always:
+                </p>
+                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>Find the <strong>upper and lower bounds</strong> for each measurement</li>
+                    <li>To get the <strong>maximum</strong>, use the <strong>UB</strong> for multiplication/area/volume (or UB ÷ LB for speed)</li>
+                    <li>To get the <strong>minimum</strong>, use the <strong>LB</strong> for multiplication/area/volume (or LB ÷ UB for speed)</li>
+                </ol>
+            </div>
+
+            <div class="composite-solids">
+                <h2 id="composite-solids">Composite Solids</h2>
+                
+                <p>
+                    A <strong>composite solid</strong> is a 3D shape made up of two or more basic solids 
+                    (such as cubes, cuboids, cylinders, cones, spheres, or prisms) joined together. 
+                    Common examples include a house (cube + triangular prism), a silo (cylinder + cone), 
+                    or a capsule (cylinder + two hemispheres).
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding-left: 1.5rem; margin: 1.5rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Key Idea:</strong> Identify the individual solids that make up the composite shape, then calculate the required values for each part separately before combining them.</p>
+                </div>
+
+                <h3>Identifying Composite Solids</h3>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/solids/composite-solids.svg" alt="Identifying Composite Solids" />
+                </div>
+
+                <div class="volume">
+                    <h3>Volume of Composite Solids</h3>
+
+                    <p>
+                        To find the volume of a composite solid, <strong>add the volumes</strong> of the individual solids 
+                        that make it up.
+                    </p>
+
+                    <h4 style="color: #00ffcc;">Example 1: Volume of a House</h4>
+
+                    <p>
+                        A house is shown in the diagram below. The length of the house is 10 m, 
+                        the width is 10 m, the height of the walls is 8 m, and the height of the roof is 5 m. 
+                        Calculate the total volume of the house.
+                    </p>
+
+                    <div class="responsive-svg-container">
+                        <img src="../assets/img/solids/composite-house.svg" alt="Volume of a composite solid (house)" />
+                    </div>
+
+                    <p><strong>Step 1:</strong> Find the volume of the cuboid (main building)</p>
+                    <p class="indent">Volume of a cuboid = length × breadth × height</p>
+                    <p class="indent">l = 10 m, b = 10 m, h = 8 m</p>
+                    <p class="indent">Cuboid volume = 10 × 10 × 8 = <strong>800 m³</strong></p>
+
+                    <p><strong>Step 2:</strong> Find the volume of the triangular prism (roof)</p>
+                    <p class="indent">Volume of a triangular prism = (½ × base × height of triangle) × length</p>
+                    <p class="indent">base = 10 m, triangle height = 5 m, length = 10 m</p>
+                    <p class="indent">Roof volume = ½ × 10 × 5 × 10 = <strong>250 m³</strong></p>
+
+                    <p><strong>Step 3:</strong> Add the volumes together</p>
+                    <p class="indent">Total volume = 800 m³ + 250 m³ = <strong>1050 m³</strong></p>
+
+                    <p><strong>Answer: The volume of the house is 1050 m³.</strong></p>
+
+                    <hr style="margin: 2rem 0;">
+
+                    <h4 style="color: #00ffcc;">Example 2: Volume of a Capsule</h4>
+
+                    <p>
+                        The diagram below shows a solid shape consisting of a cylinder with 
+                        a hemisphere attached to each end. The cylinder has a radius of 3 m 
+                        and a length of 9 m. Each hemisphere has a radius of 3 m. Calculate 
+                        the total volume of the solid.
+                    </p>
+
+                    <div class="responsive-svg-container">
+                        <img src="../assets/img/solids/capsule.svg" alt="volume of a cupsule" />
+                    </div>
+
+                    <p><strong>Step 1:</strong> Find the volume of the cylinder (middle section)</p>
+                    <p class="indent">Volume of a cylinder = π × r² × length</p>
+                    <p class="indent">r = 3 m, length = 9 m</p>
+                    <p class="indent">Cylinder volume = π × 3² × 9 = π × 9 × 9 = <strong>81π m³</strong></p>
+
+                    <p><strong>Step 2:</strong> Find the volume of the two hemispheres (ends)</p>
+                    <p class="indent">Two hemispheres together make one full sphere</p>
+                    <p class="indent">Volume of a sphere = ⁴⁄₃ × π × r³</p>
+                    <p class="indent">r = 3 m</p>
+                    <p class="indent">Sphere volume = ⁴⁄₃ × π × 3³ = ⁴⁄₃ × π × 27 = <strong>36π m³</strong></p>
+
+                    <p><strong>Step 3:</strong> Add the volumes together</p>
+                    <p class="indent">Total volume = 81π m³ + 36π m³ = <strong>117π m³</strong></p>
+                    <p class="indent">If needed as a decimal: 117 × 3.14 ≈ <strong>367.38 m³</strong></p>
+
+                    <p><strong>Answer: The volume of the capsule is 117π m³ (approximately 367.38 m³).</strong></p>
+
+                    <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                        <p style="margin-bottom: 0;"><strong>Key Rule for Composite Solids:</strong></p>
+                        <p style="margin-bottom: 0;">• Volume = Volume of Part 1 + Volume of Part 2 + ...</p>
+                        <p style="margin-bottom: 0;">• Always identify each individual solid first</p>
+                        <p style="margin-bottom: 0;">• Two hemispheres = one full sphere</p>
+                    </div>
+                </div>
+
+                <div class="total-surface-area">
+                    <h3>Surface Area of Composite Solids</h3>
+
+                    <p>
+                        To find the surface area of a composite solid, <strong>add the surface areas</strong> of the individual solids, 
+                        but <strong>subtract</strong> the area of any faces that are <strong>joined together</strong> (hidden inside the composite shape).
+                    </p>
+
+                    <h4 style="color: #00ffcc;">Example 1: House (Cube + Triangular Prism)</h4>
+
+                    <p>The diagram below shows a house with a length of 10 m, a width of 10 m, a wall height of 8 m, and a roof height of 5 m. The roof has a slant height of approximately 7.07 m. Calculate the total surface area of the house (including the roof but excluding the floor).</p>
+
+                    <div class="responsive-svg-container">
+                        <img src="../assets/img/solids/composite-house-volume.svg" alt="Vollume of a composite solid" />
+                    </div>
+
+                    <p><strong>Step 1: Calculate the surface area of the cube (walls only, no floor)</strong></p>
+                    <p class="indent">Front and back walls: 2 × (10 × 8) = 160 m²</p>
+                    <p class="indent">Side walls: 2 × (10 × 8) = 160 m²</p>
+                    <p class="indent">Floor: 1 × (10 × 10) = 100 m²</p>
+                    <p class="indent"><strong>Subtotal: 420 m²</strong></p>
+
+                    <p><strong>Step 2: Calculate the surface area of the roof (triangular prism)</strong></p>
+                    <p class="indent">Gables (triangular ends): 2 × (½ × 10 × 5) = 50 m²</p>
+                    <p class="indent">Slanted roof faces: 2 × (10 × 7.07) = 141.4 m²</p>
+                    <p class="indent"><strong>Subtotal: 191.4 m²</strong></p>
+
+                    <p><strong>Step 3: Add the surface areas together</strong></p>
+                    <p class="indent">Total surface area = 420 m² + 191.4 m² = <strong>611.4 m²</strong></p>
+
+                    <p><strong>Answer: The total surface area of the house is 611.4 m².</strong></p>
+
+                    <hr style="margin: 2rem 0;">
+
+                    <h4 style="color: #00ffcc;">Example 2: Capsule (Cylinder + Two Hemispheres)</h4>
+
+                    <p>The diagram below shows a capsule consisting of a cylinder with a hemisphere attached to each end. The cylinder has a radius of 3 m and a height of 9 m. Each hemisphere has a radius of 3 m. Calculate the total surface area of the capsule.</p>
+
+                    <div class="responsive-svg-container">
+                        <img src="../assets/img/solids/capsule-volume.svg" alt="Volume of a Capsule" />
+                    </div>
+
+                    <p><strong>Note:</strong> The internal ends where the cylinder meets the hemispheres are <strong>not</strong> part of the surface area because they are joined together.</p>
+
+                    <p><strong>Step 1: Calculate the curved surface area of the cylinder</strong></p>
+                    <p class="indent">Curved surface area of a cylinder = 2 × π × r × h</p>
+                    <p class="indent">r = 3 m, h = 9 m</p>
+                    <p class="indent">Area = 2 × π × 3 × 9 = <strong>54π m²</strong></p>
+
+                    <p><strong>Step 2: Calculate the surface area of the two hemispheres</strong></p>
+                    <p class="indent">Two hemispheres together make one full sphere</p>
+                    <p class="indent">Surface area of a sphere = 4 × π × r²</p>
+                    <p class="indent">r = 3 m</p>
+                    <p class="indent">Area = 4 × π × 3² = 4 × π × 9 = <strong>36π m²</strong></p>
+
+                    <p><strong>Step 3: Add the surface areas together</strong></p>
+                    <p class="indent">Total surface area = 54π m² + 36π m² = <strong>90π m²</strong></p>
+                    <p class="indent">If needed as a decimal: 90 × 3.14 ≈ <strong>282.74 m²</strong></p>
+
+                    <p><strong>Answer: The total surface area of the capsule is 90π m² (approximately 282.74 m²).</strong></p>
+
+                    <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                        <p style="margin-bottom: 0;"><strong>Key Rule for Surface Area of Composite Solids:</strong></p>
+                        <p style="margin-bottom: 0;">• Add the surface areas of all individual solids</p>
+                        <p style="margin-bottom: 0;">• Subtract the area of any faces that are joined together (hidden)</p>
+                        <p style="margin-bottom: 0;">• For a capsule, the internal circular ends are excluded</p>
+                    </div>
+                </div>
+
+                <div class="quantity-survey">
+                    <h3>Quantity Survey Application</h3>
+
+                    <p>
+                        In real life, composite solids appear in construction, manufacturing, and packaging. 
+                        <strong>Quantity surveyors</strong> use these calculations to estimate materials needed 
+                        (concrete, paint, insulation) and costs.
+                    </p>
+
+                    <h4 style="color: #00ffcc;">Example 1: Water Tank Capacity</h4>
+
+                    <p>A water tank consists of a cylinder with a hemispherical bottom. The cylinder has a radius of 2 m and a height of 5 m. The hemispherical bottom has the same radius of 2 m. Calculate the total capacity of the tank in cubic metres and litres.</p>
+
+                    <div class="responsive-svg-container">
+                        <img src="../assets/img/solids/water-tank-diagram.svg" alt="eater tank diagram"/>
+                    </div>
+
+                    <p><strong>Step 1: Calculate the volume of the cylinder</strong></p>
+                    <p class="indent">Volume of a cylinder = π × r² × h</p>
+                    <p class="indent">r = 2 m, h = 5 m</p>
+                    <p class="indent">Cylinder volume = π × 2² × 5 = 20π m³ ≈ 62.83 m³</p>
+
+                    <p><strong>Step 2: Calculate the volume of the hemisphere (bottom)</strong></p>
+                    <p class="indent">Volume of a hemisphere = ⅔ × π × r³</p>
+                    <p class="indent">r = 2 m</p>
+                    <p class="indent">Hemisphere volume = ⅔ × π × 2³ = ⅔ × π × 8 = 5.33π m³ ≈ 16.76 m³</p>
+
+                    <p><strong>Step 3: Add the volumes together</strong></p>
+                    <p class="indent">Total volume = 62.83 m³ + 16.76 m³ = <strong>79.6 m³</strong></p>
+
+                    <p><strong>Step 4: Convert to litres</strong></p>
+                    <p class="indent">1 m³ = 1000 litres</p>
+                    <p class="indent">79.6 m³ × 1000 = <strong>79,600 litres</strong></p>
+
+                    <p><strong>Answer: The water tank has a capacity of approximately 79,600 litres.</strong></p>
+
+                    <hr style="margin: 2rem 0;">
+
+                    <h4 style="color: #00ffcc;">Example 2: Concrete Beam Volume and Cost</h4>
+
+                    <p>A concrete beam consists of a rectangular prism (cuboid) base with a triangular prism on top. The beam has a length of 8 m, a width of 2 m, and a height of 2 m. The triangular prism on top has a base of 8 m and a height of 2 m. Calculate the total volume of concrete needed and the total cost at M150 per cubic metre.</p>
+
+                    <div class="responsive-svg-container">
+                        <img src="../assets/img/solids/concrete-beam.svg" alt="Concrete Beam" />
+                    </div>
+
+                    <p><strong>Step 1: Calculate the volume of the cuboid base</strong></p>
+                    <p class="indent">Volume of a cuboid = length × width × height</p>
+                    <p class="indent">l = 8 m, w = 2 m, h = 2 m</p>
+                    <p class="indent">Cuboid volume = 8 × 2 × 2 = <strong>32 m³</strong></p>
+
+                    <p><strong>Step 2: Calculate the volume of the triangular prism (top)</strong></p>
+                    <p class="indent">Volume of a triangular prism = (½ × base × height of triangle) × length</p>
+                    <p class="indent">base = 8 m, triangle height = 2 m, length = 8 m</p>
+                    <p class="indent">Prism volume = ½ × 8 × 2 × 8 = <strong>64 m³</strong></p>
+
+                    <p><strong>Step 3: Add the volumes together</strong></p>
+                    <p class="indent">Total volume = 32 m³ + 64 m³ = <strong>96 m³</strong></p>
+
+                    <p><strong>Step 4: Calculate the cost</strong></p>
+                    <p class="indent">Cost = volume × price per cubic metre</p>
+                    <p class="indent">Cost = 96 m³ × M150/m³ = <strong>M14,400</strong></p>
+
+                    <p><strong>Answer: The concrete beam requires 96 m³ of concrete, costing M14,400.</strong></p>
+
+                    <hr style="margin: 2rem 0;">
+
+                    <h4 style="color: #00ffcc;">Summary Table: Composite Solids Rules</h4>
+
+                    <div style="overflow-x: auto; margin: 1.5rem 0;">
+                        <table style="width: 100%; border-collapse: collapse; min-width: 500px;">
+                            <thead>
+                                <tr style="border: 1px solid #00ffcc;">
+                                    <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Situation</th>
+                                    <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Volume</th>
+                                    <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Surface Area</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border: 1px solid #00ffcc;">
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Solids joined together</td>
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">V₁ + V₂ + ...</td>
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Add, subtract joined faces</td>
+                                </tr>
+                                <tr style="border: 1px solid #00ffcc;">
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Joined at flat faces</td>
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">No adjustment</td>
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Subtract joined area × 2</td>
+                                </tr>
+                                <tr style="border: 1px solid #00ffcc;">
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Hole drilled through</td>
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Subtract hole volume</td>
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Add inner surface area</td>
+                                </tr>
+                                <tr style="border: 1px solid #00ffcc;">
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Container (open top)</td>
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Normal calculation</td>
+                                    <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Subtract missing face area</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                        <p style="margin-bottom: 0;"><strong>Quantity Survey Application Summary:</strong></p>
+                        <p style="margin-bottom: 0;">• Volume calculations determine how much material (concrete, water, etc.) is needed</p>
+                        <p style="margin-bottom: 0;">• Cost = Volume × price per unit volume</p>
+                        <p style="margin-bottom: 0;">• 1 m³ = 1000 litres (for water tank capacity)</p>
+                    </div>
+                
+
+                    <p><strong>NB:</strong> When calculating surface area of a composite solid:</p>
+                    <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                        <li>Identify which faces are <strong>exposed</strong> (visible from the outside)</li>
+                        <li>Faces that are <strong>joined together</strong> are <strong>not</strong> part of the surface area</li>
+                        <li>For a hole, the <strong>inner surface</strong> must be included</li>
+                    </ul>
+
+                    <p><strong>Quantity Survey Application:</strong><br>
+                    Quantity surveyors use composite solid calculations to estimate:</p>
+                    <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                        <li><strong>Concrete volume</strong> for foundations, beams, and columns</li>
+                        <li><strong>Paint or plaster area</strong> for walls and ceilings</li>
+                        <li><strong>Water tank capacity</strong> for storage and supply</li>
+                        <li><strong>Material costs</strong> based on volume (e.g., concrete at M150/m³)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#polygons">Polygons</a></li>
+            <li><a href="#perimeter">Perimeter</a></li>
+            <li><a href="#apothem">Apothem</a></li>
+            <li><a href="#area">Area of <em>n</em>-Sided Polygons</a></li>
+            <li><a href="#prisms">Prisms</a></li>
+            <li><a href="#sum-all-areas">Sum Of Areas Of All Surfaces</a></li>
+            <li><a href="#pentagon-and-hexagon">Total Surface Area Of Pentagon And Hexagon</a></li>
+            <li><a href="#remaining-area">Calculating Area Of Remaining Surfaces</a></li>
+            <li><a href="#volume-of-prisms">Calculating Volume Of Prisms</a></li>
+            <li><a href="#solids">Solids</a></li>
+            <li><a href="#solids-surface-area">Surface Area Of Solids</a></li>
+            <li><a href="#solids-volume">Volumes Of Solids</a></li>
+            <li><a href="#optimizing-areas-and-volumes">Optimsation Of Measures On Area And Volumes</a></li>
+            <li><a href="#composite-solids">Composite Solids</a></li>
+            
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .math-text { fill: #ffffff; font-family: 'serif', Times, serif; font-style: italic; font-size: 22px; }
+        .subscript { font-size: 14px; }
+        .fraction-line { stroke: #00ffcc; stroke-width: 2; }
+        .equals { fill: #ffffff; font-family: sans-serif; font-size: 20px; }
+    </style>
+
+    <!-- m = -->
+    <text x="10" y="48" class="math-text">m</text>
+    <text x="35" y="47" class="equals">=</text>
+
+    <!-- Numerator: y2 - y1 -->
+    <text x="65" y="32" class="math-text">y<tspan dy="5" class="subscript">2</tspan><tspan dy="-5"> - y</tspan><tspan dy="5" class="subscript">1</tspan></text>
+
+    <!-- Division Line -->
+    <line x1="60" y1="42" x2="155" y2="42" class="fraction-line"/>
+
+    <!-- Denominator: x2 - x1 -->
+    <text x="65" y="68" class="math-text">x<tspan dy="5" class="subscript">2</tspan><tspan dy="-5"> - x</tspan><tspan dy="5" class="subscript">1</tspan></text>
+</svg>

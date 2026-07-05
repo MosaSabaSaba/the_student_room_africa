@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 130" width="280" height="130" style="display: inline-block; font-family: 'Inter', system-ui, sans-serif;">
+    <line x1="40" y1="100" x2="180" y2="100" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- Base 12cm -->
+    <line x1="180" y1="100" x2="180" y2="20" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- Height 10cm -->
+    <line x1="40" y1="100" x2="180" y2="20" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- Face Diagonal -->
+    
+    <!-- Right Angle Square Indicator -->
+    <path d="M 170,100 L 170,90 L 180,90" stroke="#ffffff" stroke-width="1" fill="none" />
+    
+    <!-- Angle θ Arc -->
+    <path d="M 65,100 C 65,94 60,89 55,92" stroke="#ffffff" stroke-width="1" fill="none" />
+    
+    <!-- Labels -->
+    <text x="110" y="115" font-family="Times New Roman, serif" font-size="12" fill="#ffffff" text-anchor="middle">12 cm (Adjacent)</text>
+    <text x="186" y="65" font-family="Times New Roman, serif" font-size="12" fill="#ffffff">10 cm (Opposite)</text>
+    <text x="70" y="93" font-family="Times New Roman, serif" font-size="13" fill="#ffffff">θ</text>
+</svg>

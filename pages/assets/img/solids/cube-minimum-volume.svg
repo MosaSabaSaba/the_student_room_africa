@@ -1,0 +1,16 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="200" viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- 3D Cube with Units (Minimum - using LB) -->
+    <g transform="translate(60, 40)">
+        <!-- Front Face -->
+        <rect x="0" y="40" width="80" height="80" fill="rgba(255, 136, 136, 0.1)" stroke="#ffffff" stroke-width="2"/>
+        <!-- Top and Right Sides -->
+        <path d="M 0,40 L 30,10 L 110,10 L 110,90 L 80,120" fill="rgba(255, 136, 136, 0.05)" stroke="#ffffff" stroke-width="2"/>
+        <!-- Connector Line -->
+        <line x1="80" y1="40" x2="110" y2="10" stroke="#ffffff" stroke-width="2"/>
+        
+        <!-- Units (showing LB = 5.5 cm) -->
+        <text x="30" y="140" fill="#ff8888" font-weight="bold" font-size="16">5.5 cm</text>
+        <text x="115" y="55" fill="#ff8888" font-weight="bold" font-size="16">5.5 cm</text>
+        <text x="-45" y="85" fill="#ff8888" font-weight="bold" font-size="16">5.5 cm</text>
+    </g>
+</svg>

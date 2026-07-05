@@ -1,0 +1,41 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="430" height="250" viewBox="0 0 430 250" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .triangle-line { stroke: #ffffff; stroke-width: 3; fill: none; }
+        .right-angle { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label { fill: #ffffff; font-family: 'Times New Roman', serif; font-style: italic; font-size: 18px; font-weight: bold; }
+        .formula { fill: #ffffff; font-family: monospace; font-size: 20px; font-weight: bold; }
+    </style>
+
+    <!-- Base line (C to B) -->
+    <line x1="380" y1="200" x2="180" y2="200" class="triangle-line"/>
+    
+    <!-- Vertical line (C to A) -->
+    <line x1="380" y1="200" x2="380" y2="50" class="triangle-line"/>
+    
+    <!-- Hypotenuse (B to A) -->
+    <line x1="180" y1="200" x2="380" y2="50" class="triangle-line"/>
+    
+    <!-- Right angle symbol at C (bottom right) -->
+    <polyline points="380,180 360,180 360,200" class="right-angle"/>
+    
+    <!-- Label for angle C (right angle) -->
+    <text x="384" y="205" class="label" font-size="14">C</text>
+    
+    <!-- Label for vertex B (bottom left) -->
+    <text x="165" y="205" class="label">B</text>
+    
+    <!-- Label for vertex A (top right) -->
+    <text x="385" y="45" class="label">A</text>
+    
+    <!-- Label for side c (hypotenuse AB) -->
+    <text x="265" y="120" class="label">c</text>
+    
+    <!-- Label for side a (side CB) - bottom side from C to B -->
+    <text x="280" y="220" class="label">a</text>
+    
+    <!-- Label for side b (side AC) - right side from C to A -->
+    <text x="395" y="130" class="label">b</text>
+    
+    <!-- Formula at the bottom -->
+    <text x="85" y="50" class="formula" text-anchor="middle">a² + b² = c²</text>
+</svg>

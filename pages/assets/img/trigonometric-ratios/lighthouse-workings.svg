@@ -1,0 +1,6 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="30" fill="#ffffff" font-family="Times New Roman, serif" font-style="italic" font-size="18">tan 20° =</text>
+    <text x="90" y="22" fill="#00ffcc" font-size="18">80</text>
+    <line x1="85" y1="30" x2="135" y2="30" stroke="#00ffcc" stroke-width="2"/>
+    <text x="95" y="52" fill="#00ffcc" font-size="18">d</text>
+</svg>

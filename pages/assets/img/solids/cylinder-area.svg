@@ -1,0 +1,41 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="260" height="470" viewBox="0 0 260 470" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .label { fill: #00ffcc; font-family: sans-serif; font-size: 13px; }
+        .title { fill: #ffffff; font-family: sans-serif; font-size: 14px; font-weight: bold; }
+    </style>
+
+    <!-- 3D Cylinder -->
+    <g transform="translate(50, 30)">
+        <ellipse cx="80" cy="30" rx="60" ry="20" class="shape" stroke-width="2" stroke="#ffffff" fill="transparent"/>
+
+        <path d="M 20,30 L 20,130 A 60,20 0 0 0 140,130 L 140,30" stroke-width="2" class="shape" stroke="#ffffff" fill="transparent" />
+
+        <line x1="80" y1="30" x2="140" y2="30" stroke="#00ffcc" stroke-width="1.5" />
+
+        <polygon points="135,27 140,30 135,33" fill="#00ffcc" stroke="#ffffff"  />
+
+        <text x="85" y="25" class="label" text-anchor="middle">r = 5cm</text>
+        <text x="145" y="85" class="label">h = 12cm</text>
+        <text x="115" y="25" class="label" text-anchor="middle">r</text>
+    </g>
+
+    <!-- Net -->
+    <g transform="translate(60, 240)">
+        <!-- Top circle -->
+        <circle cx="60" cy="25" r="25" class="shape" stroke="#ffffff" stroke-width="2" fill="transparent" />
+        
+        <!-- Rectangle -->
+        <rect x="0" y="50" width="120" height="80" stroke="#ffffff" stroke-width="2" fill="transparent" class="shape" />
+        
+        <!-- Bottom circle -->
+        <circle cx="60" cy="155" r="25" class="shape" stroke-width="2"  stroke="#ffffff" fill="transparent" />
+        
+        <!-- Labels -->
+        <text x="125" y="95" class="label">h = 12</text>
+        <text x="100" y="145" class="label" text-anchor="middle">2πr</text>
+        <line x1="0" y1="135" x2="120" y2="135" stroke="#00ffcc" stroke-width="1.5" />
+        
+        <text x="60" y="195" class="label" text-anchor="middle" fill="#ff8888">Area of circle = 2πr²</text>
+    </g>
+
+</svg>

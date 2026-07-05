@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" width="160" height="120" style="display: inline-block; font-family: 'Inter', system-ui, sans-serif;">
+    <line x1="40" y1="100" x2="40" y2="20" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- Height 8cm -->
+    <line x1="40" y1="100" x2="140" y2="100" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- Base 6cm -->
+    <line x1="40" y1="20" x2="140" y2="100" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- Hypotenuse -->
+    
+    <!-- Right Angle Square Indicator -->
+    <path d="M 40,90 L 50,90 L 50,100" stroke="#ffffff" stroke-width="1" fill="none" />
+    
+    <!-- Labels -->
+    <text x="25" y="65" font-family="Times New Roman, serif" font-size="12" fill="#ffffff">8 cm</text>
+    <text x="90" y="115" font-family="Times New Roman, serif" font-size="12" fill="#ffffff" text-anchor="middle">6 cm</text>
+    <text x="100" y="55" font-family="Times New Roman, serif" font-size="12" fill="#ffffff">Hypotenuse</text>
+</svg>

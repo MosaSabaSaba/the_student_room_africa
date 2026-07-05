@@ -1,0 +1,124 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="600" height="160" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+    <!-- Style to keep lines uniform and match your aesthetic -->
+    <style>
+        .cube-edge { fill: none; stroke: #fff; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+    </style>
+
+    <!-- ==================== CUBE 1 (1x1x1) ==================== -->
+    <g transform="translate(10, 50)">
+        <!-- Front Face -->
+        <rect x="0" y="10" width="15" height="15" class="cube-edge"/>
+        <!-- Top Face -->
+        <path d="M 0 10 L 8 0 L 23 0 L 15 10 Z" class="cube-edge"/>
+        <!-- Right Face -->
+        <path d="M 15 10 L 23 0 L 23 15 L 15 25 Z" class="cube-edge"/>
+    </g>
+
+    <!-- ==================== CUBE 2 (2x2x2) ==================== -->
+    <g transform="translate(65, 50)">
+        <!-- Front Grid -->
+        <rect x="0" y="15" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="15" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="30" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="30" width="15" height="15" class="cube-edge"/>
+        <!-- Top Grid -->
+        <path d="M 0 15 L 8 5 L 23 5 L 15 15 Z" class="cube-edge"/>
+        <path d="M 15 15 L 23 5 L 38 5 L 30 15 Z" class="cube-edge"/>
+        <path d="M 8 5 L 16 -5 L 31 -5 L 23 5 Z" class="cube-edge"/>
+        <path d="M 23 5 L 31 -5 L 46 -5 L 38 5 Z" class="cube-edge"/>
+        <!-- Right Grid -->
+        <path d="M 30 15 L 38 5 L 38 20 L 30 30 Z" class="cube-edge"/>
+        <path d="M 30 30 L 38 20 L 38 35 L 30 45 Z" class="cube-edge"/>
+        <path d="M 38 5 L 46 -5 L 46 10 L 38 20 Z" class="cube-edge"/>
+        <path d="M 38 20 L 46 10 L 46 25 L 38 35 Z" class="cube-edge"/>
+    </g>
+
+    <!-- ==================== CUBE 3 (3x3x3) ==================== -->
+    <g transform="translate(145, 50)">
+        <!-- Front Layer Grid (3x3 blocks) -->
+        <rect x="0" y="20" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="20" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="20" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="35" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="35" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="35" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="50" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="50" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="50" width="15" height="15" class="cube-edge"/>
+        <!-- Top Outer Edges for Depth -->
+        <path d="M 0 20 L 24 -10 L 69 -10 L 45 20 Z" class="cube-edge"/>
+        <path d="M 15 20 L 39 -10 M 30 20 L 54 -10" class="cube-edge"/>
+        <path d="M 8 10 L 53 10 M 16 0 L 61 0" class="cube-edge"/>
+        <!-- Right Outer Edges for Depth -->
+        <path d="M 45 20 L 69 -10 L 69 35 L 45 65 Z" class="cube-edge"/>
+        <path d="M 45 35 L 69 5 M 45 50 L 69 20" class="cube-edge"/>
+        <path d="M 53 10 L 53 40 M 61 0 L 61 30" class="cube-edge"/>
+    </g>
+
+    <!-- ==================== CUBE 4 (4x4x4) ==================== -->
+    <g transform="translate(255, 50)">
+        <!-- Front Layer Grid (4x4 blocks) -->
+        <rect x="0" y="25" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="25" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="25" width="15" height="15" class="cube-edge"/>
+        <rect x="45" y="25" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="40" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="40" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="40" width="15" height="15" class="cube-edge"/>
+        <rect x="45" y="40" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="55" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="55" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="55" width="15" height="15" class="cube-edge"/>
+        <rect x="45" y="55" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="70" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="70" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="70" width="15" height="15" class="cube-edge"/>
+        <rect x="45" y="70" width="15" height="15" class="cube-edge"/>
+        <!-- Top Outer Edges for Depth -->
+        <path d="M 0 25 L 32 -15 L 92 -15 L 60 25 Z" class="cube-edge"/>
+        <path d="M 15 25 L 47 -15 M 30 25 L 62 -15 M 45 25 L 77 -15" class="cube-edge"/>
+        <path d="M 8 15 L 68 15 M 16 5 L 76 5 M 24 -5 L 84 -5" class="cube-edge"/>
+        <!-- Right Outer Edges for Depth -->
+        <path d="M 60 25 L 92 -15 L 92 45 L 60 85 Z" class="cube-edge"/>
+        <path d="M 60 40 L 92 0 M 60 55 L 92 15 M 60 70 L 92 30" class="cube-edge"/>
+        <path d="M 68 15 L 68 75 M 76 5 L 76 65 M 84 -5 L 84 55" class="cube-edge"/>
+    </g>
+
+    <!-- ==================== CUBE 5 (5x5x5) ==================== -->
+    <g transform="translate(390, 50)">
+        <!-- Front Layer Grid (5x5 blocks) -->
+        <rect x="0" y="30" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="30" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="30" width="15" height="15" class="cube-edge"/>
+        <rect x="45" y="30" width="15" height="15" class="cube-edge"/>
+        <rect x="60" y="30" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="45" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="45" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="45" width="15" height="15" class="cube-edge"/>
+        <rect x="45" y="45" width="15" height="15" class="cube-edge"/>
+        <rect x="60" y="45" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="60" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="60" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="60" width="15" height="15" class="cube-edge"/>
+        <rect x="45" y="60" width="15" height="15" class="cube-edge"/>
+        <rect x="60" y="60" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="75" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="75" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="75" width="15" height="15" class="cube-edge"/>
+        <rect x="45" y="75" width="15" height="15" class="cube-edge"/>
+        <rect x="60" y="75" width="15" height="15" class="cube-edge"/>
+        <rect x="0" y="90" width="15" height="15" class="cube-edge"/>
+        <rect x="15" y="90" width="15" height="15" class="cube-edge"/>
+        <rect x="30" y="90" width="15" height="15" class="cube-edge"/>
+        <rect x="45" y="90" width="15" height="15" class="cube-edge"/>
+        <rect x="60" y="90" width="15" height="15" class="cube-edge"/>
+        <!-- Top Outer Edges for Depth -->
+        <path d="M 0 30 L 40 -20 L 115 -20 L 75 30 Z" class="cube-edge"/>
+        <path d="M 15 30 L 55 -20 M 30 30 L 70 -20 M 45 30 L 85 -20 M 60 30 L 100 -20" class="cube-edge"/>
+        <path d="M 8 20 L 83 20 M 16 10 L 91 10 M 24 0 L 99 0 M 32 -10 L 107 -10" class="cube-edge"/>
+        <!-- Right Outer Edges for Depth -->
+        <path d="M 75 30 L 115 -20 L 115 55 L 75 105 Z" class="cube-edge"/>
+        <path d="M 75 45 L 115 -5 M 75 60 L 115 10 M 75 75 L 115 25 M 75 90 L 115 40" class="cube-edge"/>
+        <path d="M 83 20 L 83 95 M 91 10 L 91 85 M 99 0 L 99 75 M 107 -10 L 107 65" class="cube-edge"/>
+    </g>
+</svg>

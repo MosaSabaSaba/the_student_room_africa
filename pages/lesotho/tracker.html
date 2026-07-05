@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>The Student Room | LGCSE Mathematics Revision Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css"/>
+
+    <style>
+        /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
+        .custom-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            .custom-container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .custom-container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .custom-container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+
+        .page-body {
+            padding: 2rem 0;
+        }
+
+        /* tracker header */
+        .tracker-header {
+            /* border-left: 6px solid #f4b942; */
+            padding: 1rem 1.5rem;
+            /* border-radius: 20px; */
+            margin: 0 0 2rem 0;
+        }
+
+        .tracker-header h1 {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 2rem;
+            margin: 0 0 0.4rem 0;
+            letter-spacing: -0.01em;
+        }
+
+        .tracker-header p {
+            margin: 0;
+            color: #bbb;
+        }
+
+        /* section tip box */
+        .section-tip {
+            background: rgba(244, 185, 66, 0.08);
+            /* border-radius: 16px; */
+            padding: 1rem 1.5rem;
+            margin: 0.5rem 0 1.5rem 0;
+            border-left: 4px solid #f4b942;
+        }
+
+        .section-tip p {
+            margin: 0 0 0.5rem 0;
+            color: #ddd;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .section-tip .tip-highlight {
+            color: #ffcf8a;
+            font-weight: 600;
+        }
+
+        .section-tip .guide-link {
+            color: #f4b942;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .section-tip .guide-link:hover {
+            color: #ffcf8a;
+        }
+
+        /* table styles */
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0 2.5rem 0;
+            border-radius: 16px;
+            border: 1px solid #2a2a2a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            min-width: 700px;
+        }
+
+        th {
+            background: rgba(244, 185, 66, 0.15);
+            padding: 0.9rem 0.8rem;
+            text-align: left;
+            font-weight: 600;
+            color: #ffcf8a;
+            border-bottom: 1px solid #3a3530;
+        }
+
+        td {
+            padding: 0.7rem 0.8rem;
+            border-bottom: 1px solid #2a2a2a;
+            color: #ddd;
+            vertical-align: middle;
+        }
+
+        tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+
+        .section-badge {
+            background: #1e3a2f;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #ffda9e;
+            display: inline-block;
+        }
+
+        /* .topic-link {
+            color: #ffcf8a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .topic-link:hover {
+            text-decoration: underline;
+            color: #f4b942;
+        }
+
+        .checkbox-col {
+            text-align: center;
+            width: 35px;
+        } */
+
+        .questions-col {
+            width: 145px;
+            text-align: center;
+        }
+
+        .questions-link {
+            color: #ffcf8a;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .questions-link:hover {
+            color: #f4b942;
+            text-decoration: underline;
+        }
+
+        .checkbox-col input {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #f4b942;
+        }
+
+        .notes-col {
+            width: 100px;
+            text-align: center;
+        }
+
+        .notes-link {
+            color: #ffcf8a;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .notes-link:hover {
+            color: #f4b942;
+            text-decoration: underline;
+        }
+
+        .mark-input {
+            width: 60px;
+            padding: 0.3rem;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin: 1rem 0 0 0;
+            color: #ffda9e;
+            border-left: 4px solid #f4b942;
+            padding-left: 1rem;
+        }
+
+        .subnote {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 0.25rem;
+            margin-bottom: 0rem;
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #2e2a24, transparent);
+        }
+
+        @media (max-width: 640px) {
+            .page-body {
+                padding: 1rem 0;
+            }
+            .tracker-header {
+                padding: 0.8rem 1rem;
+            }
+            .notes-link {
+                font-size: 0.75rem;
+            }
+            .section-tip {
+                padding: 0.8rem 1rem;
+            }
+        }
+ 
+        .pagination-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 0;
+            margin-top: 1rem;
+            border-top: 1px solid #2a2a2a;
+        }
+        
+        .pagination-controls button {
+            background: rgba(244, 185, 66, 0.15);
+            border: 1px solid #f4b942;
+            color: #ffcf8a;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        
+        .pagination-controls button:hover:not(:disabled) {
+            background: #f4b942;
+            color: #1a1a1a;
+        }
+        
+        .pagination-controls button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            border-color: #555;
+            color: #888;
+        }
+        
+        #pageInfo {
+            color: #aaa;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <a href="../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner 
+        <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="lesotho.html">Lesotho</a><span class="bc-sep">›</span>
+            <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="tracker.html">Tracker</a>
+        </div>
+
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- PAGE LAYOUT with Bootstrap-like container behavior -->
+    <div class="custom-container">
+        <div class="page-body">
+            <div class="tracker-header">
+                <h1>LGCSE Mathematics Revision Tracker</h1>
+                <p>Track your video lessons, mark topics as watched, and keep notes. Your progress saves automatically to this device.</p>
+            </div>
+
+            <!-- ========== SECTION 1: VIDEO LESSONS with TIPS ========== -->
+            <div id="reading-list">
+                <div class="section-title">Course Content</div>
+                <div class="subnote">Core syllabus </div>
+                
+                <!-- Tip box for video lessons section -->
+                <div class="section-tip">
+                    <p><span class="tip-highlight">Study tip:</span> Before marking a video as "Watched", make sure you have:</p>
+                    <p>✓ Watched the full video lesson <br>
+                    ✓ Read the accompanying <strong>notes page</strong> (click "View Notes") <br>
+                    ✓ Practiced at least 3 examples from your <strong>textbook</strong> or the guide</p>
+                    <p>Only check "Watched" when you truly understand the concept. Review the <a href="conversions.html" class="guide-link">study strategies in the guide</a> for more effective revision techniques.</p>
+                </div>
+
+                <div class="table-container" id="trackerTableContainer">
+                    <table id="trackerTable">
+                        <thead>
+                            <tr>
+                                <th>Video Topic</th>
+                                <th style="width: 90px;">Watched</th>
+                                <th style="width: 120px;">Not Watched</th>
+                                <th style="width: 145px;">Typical Questions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tableBody">
+                            <!-- ====== -->
+                            <!-- Page 1 -->
+                            <!-- ====== -->
+                            <!-- CONVERSIONS -->
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/A1iGzAugfcs?si=pnMaMvsssIjO5LLs" target="_blank" class="topic-link">Converting Decimals to Fractions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="conv-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="conv-01" checked></td>
+                                <td class="questions-col"><a href="questions/conv-01-decimals-to-fractions.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/8hkRcYWQiFg?si=8434Wu8SpHXw231o" target="_blank" class="topic-link">Converting Fractions to Percentages</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="conv-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="conv-02" checked></td>
+                                <td class="questions-col"><a href="questions/conv-02-fractions-to-percentages.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/IYDhHIpPJW4?si=dtSIXr2AOmg9rba7" target="_blank" class="topic-link">Converting Fraction to Decimals</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="conv-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="conv-03" checked></td>
+                                <td class="questions-col"><a href="questions/conv-03-fractions-to-decimals.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/Nq0i6iYzghw?si=Q8uCSlnjeK2yxONq" target="_blank" class="topic-link">Converting Percentages to Decimals</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="conv-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="conv-04" checked></td>
+                                <td class="questions-col"><a href="questions/conv-04-percentages-to-decimals.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/YnO1Ohk7Xfw?si=w34IMjwjz5LJ4P1R" target="_blank" class="topic-link">Converting Percentages to Fractions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="conv-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="conv-05" checked></td>
+                                <td class="questions-col"><a href="questions/conv-05-percentages-to-fractions.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- RATIOS AND PERCENTAGES -->
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/0yv4--wAVHw?si=Roan9u4dnYdo-gPB" target="_blank" class="topic-link">Equivalent Ratios and Simplification</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="ratio-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="ratio-01" checked></td>
+                                <td class="questions-col"><a href="questions/ratio-01-equivalent-ratios.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/xVIeBohgcaE?si=wMjeZTwOG0chpmQi" target="_blank" class="topic-link">Representing Ratios as Fractions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="ratio-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="ratio-02" checked></td>
+                                <td class="questions-col"><a href="questions/ratio-02-ratios-as-fractions.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/hE7QlE8iRcQ?si=aV3q3N99qtoAQdTN" target="_blank" class="topic-link">Comparing Quantities Using Ratios</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="ratio-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="ratio-03" checked></td>
+                                <td class="questions-col"><a href="questions/ratio-03-comparing-quantities.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/EjfkLyX5ZBw?si=3xTYo_nF_RYGlAOn" target="_blank" class="topic-link">Percentage Increase and Decrease</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="ratio-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="ratio-04" checked></td>
+                                <td class="questions-col"><a href="questions/ratio-04-percentage-change.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="1">
+                                <td><a href="https://youtu.be/dIeb2ryQ1ko?si=y6U0n8RsKF4EjWJB" target="_blank" class="topic-link">Reverse Percentages</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="ratio-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="ratio-05" checked></td>
+                                <td class="questions-col"><a href="questions/ratio-05-reverse-percentages.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+
+                            <!-- ====== -->
+                            <!-- Page 2 -->
+                            <!-- ====== -->
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/locM5FbFv_A?si=v3Rne7SeYUSyXySh" target="_blank" class="topic-link">Dividing a Quantity in a Given Ratio</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="ratio-06"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="ratio-06" checked></td>
+                                <td class="questions-col"><a href="questions/ratio-06-dividing-in-ratio.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- SIMPLE AND COMPOUND INTEREST -->
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/32p4P9NM1EA?si=MN7L1SV-TAfhWFw0" target="_blank" class="topic-link">Simple Interest</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="interest-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="interest-01" checked></td>
+                                <td class="questions-col"><a href="questions/interest-01-simple-interest.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/GitPZtwJhz4?si=CEi_P1K4BauJHtFi" target="_blank" class="topic-link">Compound Interest</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="interest-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="interest-02" checked></td>
+                                <td class="questions-col"><a href="questions/interest-02-compound-interest.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/AJZfRhgw4AM?si=5f5ww7oILlbni8cB" target="_blank" class="topic-link">Comparing Simple and Compound Interest</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="interest-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="interest-03" checked></td>
+                                <td class="questions-col"><a href="questions/interest-03-comparing-interest.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/3OaqIo8u1nw?si=Q2Fu98rstU-rgssy" target="_blank" class="topic-link">Graphical Representation of Simple Interest</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="interest-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="interest-04" checked></td>
+                                <td class="questions-col"><a href="questions/interest-04-graphical-interest.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/NN9jCktv_b8?si=R4WSnrsmwZ9aayYt" target="_blank" class="topic-link">Graphical Representation of Compound Interest</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="interest-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="interest-05" checked></td>
+                                <td class="questions-col"><a href="questions/interest-05-graphical-compound.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- RATES OF CHANGE -->
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/GyspEO0orpY?si=n3oMDRdHzQ9YpbUR" target="_blank" class="topic-link">Direct Proportion</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="rate-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="rate-01" checked></td>
+                                <td class="questions-col"><a href="questions/rate-01-direct-proportion.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/VE6Dq3M-WS4?si=GRjcYpsJzWnRFJ3V" target="_blank" class="topic-link">Inverse Proportion</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="rate-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="rate-02" checked></td>
+                                <td class="questions-col"><a href="questions/rate-02-inverse-proportion.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/_lnUfvgOy3o?si=0u4ZfIETAxmjYB1m" class="topic-link">Scales and Maps</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="rate-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="rate-03" checked></td>
+                                <td class="questions-col"><a href="questions/rate-03-scales-and-maps.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="2">
+                                <td><a href="https://youtu.be/D_LgjsWq2tc?si=RO2J147MApDip5_g" target="_blank" class="topic-link">Speed as a Rate</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="rate-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="rate-04" checked></td>
+                                <td class="questions-col"><a href="questions/rate-04-speed-as-rate.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+
+                            <!-- ====== -->
+                            <!-- Page 3 -->
+                            <!-- ====== -->
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/uikrxC4X6TY?si=q3zhNnIxE4QLUy_f" target="_blank" class="topic-link">Cost and Consumption Graphs</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="rate-06"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="rate-06" checked></td>
+                                <td class="questions-col"><a href="questions/rate-06-cost-consumption.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/RM02SnuJ0MY?si=iHFKbhjBBqJIMYkC" target="_blank" class="topic-link">Distance Time Graphs</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="rate-07"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="rate-07" checked></td>
+                                <td class="questions-col"><a href="questions/rate-07-distance-time.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/mCDbe99TzP4?si=QsisZeTcEehoUR5O" target="_blank" class="topic-link">Speed Time Graphs</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="rate-08"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="rate-08" checked></td>
+                                <td class="questions-col"><a href="questions/rate-08-speed-time.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/D_LgjsWq2tc?si=RO2J147MApDip5_g" target="_blank" class="topic-link">Area Under Graphs</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="rate-09"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="rate-09" checked></td>
+                                <td class="questions-col"><a href="questions/rate-09-area-under-graphs.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- SYMMETRY -->
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/dAqDwuHOi4g?si=j1abw-u5XgiaDoHq" target="_blank" class="topic-link">Line Symmetry</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sym-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sym-01" checked></td>
+                                <td class="questions-col"><a href="questions/sym-01-line-symmetry.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/Rp8j4K-9p_o?si=vbsGOvua3rtktYUC" target="_blank" class="topic-link">Rotational Symmetry</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sym-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sym-02" checked></td>
+                                <td class="questions-col"><a href="questions/sym-02-rotational-symmetry.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/STWkj1RhYxM?si=kSGcjcbDhoaSh288" target="_blank" class="topic-link">Plane(s) of Symmetry</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sym-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sym-03" checked></td>
+                                <td class="questions-col"><a href="questions/sym-03-plane-symmetry.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- LIMITS OF ACCURACY -->
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/dVsORsO1T4I?si=L3NaRwtmgShYQpS_" target="_blank" class="topic-link">Finding Bounds for Rounded Measurements</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="bounds-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="bounds-01" checked></td>
+                                <td class="questions-col"><a href="questions/bounds-01-rounded-measurements.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/soM_nkSrDzs?si=Xi6_FpPpT2PpOYnK" target="_blank" class="topic-link">Bounds with Significant Figures</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="bounds-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="bounds-03" checked></td>
+                                <td class="questions-col"><a href="questions/bounds-03-significant-figures.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="3">
+                                <td><a href="https://youtu.be/N7wClFwdEhk?si=nnFOCzgGG6DVSS48" target="_blank" class="topic-link">Calculations with Bounds</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="bounds-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="bounds-04" checked></td>
+                                <td class="questions-col"><a href="questions/bounds-04-calculations.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+
+                            <!-- ====== -->
+                            <!-- PAGE 4 -->
+                            <!-- ====== -->
+                            <tr class="page-row" data-page="4">
+                                <td><a href="https://youtu.be/awEnIiHRjtA?si=_cZBackkNw6IzX2L" target="_blank" class="topic-link">Speed, Distance, Time Calculations with Bounds</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="bounds-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="bounds-05" checked></td>
+                                <td class="questions-col"><a href="questions/bounds-05-speed-distance-time.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- POLYGONS -->
+                            <tr class="page-row" data-page="4">
+                                <td><a href="https://youtu.be/E_-3ulbtcLk?si=eE-vNLGadT5YseqX" target="_blank" class="topic-link">Polygons</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="polygons-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="polygons-01" checked></td>
+                                <td class="questions-col"><a href="questions/polygons-01-polygons.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="4">
+                                <td><a href="https://youtu.be/AAY1bsazcgM?si=eHEtmh44WcNa7FA9" target="_blank" class="topic-link">Perimeter</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="polygons-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="polygons-02" checked></td>
+                                <td class="questions-col"><a href="questions/polygons-02-perimeter.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="4">
+                                <td><a href="https://youtu.be/n1YKOggLjUQ?si=0rR-f3JeD4BHEm7x" target="_blank" class="topic-link">Area of <em>n</em>-sided polygons</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="polygons-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="polygons-03" checked></td>
+                                <td class="questions-col"><a href="questions/polygons-03-area-n-sided.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="4">
+                                <td><a href="https://youtu.be/jPdhyLNgijw?si=GKBJ55Y3PO5x6Mib" target="_blank" class="topic-link">Prisms</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="polygons-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="polygons-04" checked></td>
+                                <td class="questions-col"><a href="questions/polygons-04-prisms.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="4">
+                                <td><a href="https://youtu.be/lLZEGaD33Ik?si=PTKkPpVE-xms7grl" target="_blank" class="topic-link">Sum of Areas of All Surfaces</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="polygons-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="polygons-05" checked></td>
+                                <td class="questions-col"><a href="questions/polygons-05-sum-areas.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="4">
+                                <td><a href="https://youtu.be/TkLSrdAyJKg?si=AVNRszYxTQi1FvHl" target="_blank" class="topic-link">Total Surface Area Of Pentagon and Hexagon</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="polygons-06"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="polygons-06" checked></td>
+                                <td class="questions-col"><a href="questions/polygons-06-surface-area-pentagon-hexagon.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="4">
+                                <td><a href="https://youtu.be/RP_MZL7MddY?si=TN2Vsf-7VVFYv3QX" target="_blank" class="topic-link">Calculating Area Of Remaining Surfaces</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="polygons-07"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="polygons-07" checked></td>
+                                <td class="questions-col"><a href="questions/polygons-07-remaining-surfaces.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="4">
+                                <td><a href="https://youtu.be/oGNQ1wyZfu0?si=h8VLGIdEyf0tigPi" target="_blank" class="topic-link">Calculating Volume Of Prisms</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="polygons-08"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="polygons-08" checked></td>
+                                <td class="questions-col"><a href="questions/polygons-08-volume-prisms.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+
+                            <!-- ====== -->
+                            <!-- PAGE 5 -->
+                            <!-- ====== -->
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/cS28z1cdAdY?si=J4yCmxE2lHNH3rVr" target="_blank" class="topic-link">Surface Area and Volumes Of Solids</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="solids-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="solids-02" checked></td>
+                                <td class="questions-col"><a href="questions/solids-02-surface-area.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/38aztTAQJDs?si=T7365jYYQIS3mvG3" target="_blank" class="topic-link">Optimisation Of Measures Of Area And Volume</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="solids-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="solids-04" checked></td>
+                                <td class="questions-col"><a href="questions/solids-04-optimisation.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/7-r9UMPFh6U?si=JqMG0cBep954pOSk" target="_blank" class="topic-link">Composite Solids</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="solids-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="solids-05" checked></td>
+                                <td class="questions-col"><a href="questions/solids-05-composite.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- SEQUENCES -->
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/ke0LGvMFPrQ?si=zotIH9Wr7e6dC-8K" target="_blank" class="topic-link">Arithmetic Sequences</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sequences-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sequences-01" checked></td>
+                                <td class="questions-col"><a href="questions/sequences-01-arithmetic.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/3xbormMmuK4?si=ghDq0ToNEuOzlMAb" target="_blank" class="topic-link">Geometric Sequences</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sequences-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sequences-02" checked></td>
+                                <td class="questions-col"><a href="questions/sequences-02-geometric.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/xtvJwaYfXss?si=4dLrtCbY7BtOZ1TL" target="_blank" class="topic-link">Quadratic Sequences</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sequences-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sequences-03" checked></td>
+                                <td class="questions-col"><a href="questions/sequences-03-quadratic.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/ahvT3FWjXvs?si=AnXbA_DZlYDqjVss" target="_blank" class="topic-link">Cubic Sequences</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sequences-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sequences-04" checked></td>
+                                <td class="questions-col"><a href="questions/sequences-04-cubic.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/yezeRz4J_e0?si=oXCaRlncHc5y0p95" target="_blank" class="topic-link">Special Sequences</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sequences-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sequences-05" checked></td>
+                                <td class="questions-col"><a href="questions/sequences-05-special.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- APPRECIATION AND DEPRECIATION -->
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/UXopTXftWJI?si=LqCRRgipfszvzkWD" target="_blank" class="topic-link">Appreciation And Depreciation</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="interest-06"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="interest-06" checked></td>
+                                <td class="questions-col"><a href="questions/interest-06-appreciation-depreciation.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- FRACTIONS -->
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/BKIZbQrSQNA?si=M-RwRkGYRBCnDT1C" target="_blank" class="topic-link">LCM and HCF</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="fractions-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="fractions-01" checked></td>
+                                <td class="questions-col"><a href="questions/fractions-01-lcm-hcf.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="5">
+                                <td><a href="https://youtu.be/RPgOz56S9Kc?si=Cvqf1MVOmrD_NiS8" target="_blank" class="topic-link">Equivalent Fractions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="fractions-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="fractions-02" checked></td>
+                                <td class="questions-col"><a href="questions/fractions-02-equivalent.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+
+                            <!-- ====== -->
+                            <!-- PAGE 6 -->
+                            <!-- ====== -->
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/NxFf5tfxgq8?si=zZkM2UW3EqkunE7S" target="_blank" class="topic-link">Identifying Fractions and Decimals</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="fractions-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="fractions-03" checked></td>
+                                <td class="questions-col"><a href="questions/fractions-03-identifying.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/_ZM1sC90y5c?si=Awywq6pKqeQUy4Yz" target="_blank" class="topic-link">Improper Fractions and Mixed Numbers</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="fractions-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="fractions-04" checked></td>
+                                <td class="questions-col"><a href="questions/fractions-04-improper-mixed.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/DSnBs17tc3U?si=Oj_jajhsLf-vGXnq" target="_blank" class="topic-link">Adding and Subtracting Fractions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="fractions-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="fractions-05" checked></td>
+                                <td class="questions-col"><a href="questions/fractions-05-add-subtract.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/6SgAxGXgn0c?si=lk3fKcEjKHOFrd_g" target="_blank" class="topic-link">Ordering Fractions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="fractions-06"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="fractions-06" checked></td>
+                                <td class="questions-col"><a href="questions/fractions-06-ordering.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/2pEqgSbZSW0?si=EIYcYLBwKQsPtPCT" target="_blank" class="topic-link">Multiplying Fractions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="fractions-07"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="fractions-07" checked></td>
+                                <td class="questions-col"><a href="questions/fractions-07-multiplying.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/RAKwouL-lTc?si=wHfKZHI9N3vEHbYc" target="_blank" class="topic-link">Dividing Fractions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="fractions-08"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="fractions-08" checked></td>
+                                <td class="questions-col"><a href="questions/fractions-08-dividing.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/NxFf5tfxgq8?si=WITCfsffKUnNTvOB" target="_blank" class="topic-link">Fractions and Decimals with Whole Numbers</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="fractions-09"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="fractions-09" checked></td>
+                                <td class="questions-col"><a href="questions/fractions-09-whole-numbers.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <!-- Linear Equations and Graphs -->
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/Zd7Ayw71o6A?si=N0vepPqVsFBOfmiA" target="_blank" class="topic-link">The Coordinate Plane</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="linear-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="linear-01" checked></td>
+                                <td class="questions-col"><a href="questions/linear-01-coordinate-plane.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/WAhshT1Njzw?si=qimiFS2X3Un8jaFB" target="_blank" class="topic-link">Equations of Lines Parallel to Axes</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="linear-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="linear-02" checked></td>
+                                <td class="questions-col"><a href="questions/linear-02-parallel-axes.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="6">
+                                <td><a href="https://youtu.be/ct1dRi7IcQw?si=oV5kX1GJ6didyRce" target="_blank" class="topic-link">Calculating Coordinates from Equations</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="linear-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="linear-03" checked></td>
+                                <td class="questions-col"><a href="questions/linear-03-coordinates.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+
+                            <!-- ====== -->
+                            <!-- PAGE 7 -->
+                            <!-- ====== -->
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/7CL9Vt69Dqo?si=BbQz8uzCKrnMrewA" target="_blank" class="topic-link">Gradient and y-intercept</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="linear-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="linear-05" checked></td>
+                                <td class="questions-col"><a href="questions/linear-05-gradient-intercept.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/KJuuqF6alRY?si=MvCjHxxBHara0njc" target="_blank" class="topic-link">Linear Functions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="function-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="function-01" checked></td>
+                                <td class="questions-col"><a href="questions/function-01-linear-functions.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/uha8WJ5J-WA?si=KGbOsgXPvUcuuw27" target="_blank" class="topic-link">Compound Functions</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="function-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="function-04" checked></td>
+                                <td class="questions-col"><a href="questions/function-04-compound-functions.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/1aBkyMVvlsU?si=P_2rbEAwgsGOFgbD" target="_blank" class="topic-link">Inverse of a Compound Function</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="function-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="function-05" checked></td>
+                                <td class="questions-col"><a href="questions/function-05-inverse-compound.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/nCD-bAEbB3I?si=Sh7Ethc56NxkXJ0H" target="_blank" class="topic-link">Pythagoras's Theorem</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trig-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trig-01" checked></td>
+                                <td class="questions-col"><a href="questions/trig-01-pythagoras.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/lRDHqGqRNwg?si=Hx3jPTvec737-sNB" target="_blank" class="topic-link">Trigonometric Ratios</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trig-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trig-02" checked></td>
+                                <td class="questions-col"><a href="questions/trig-02-ratios.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/iSzIrrydyLM?si=6Hzg7sfJd0CGGDWY" target="_blank" class="topic-link">Translation</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trans-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trans-01" checked></td>
+                                <td class="questions-col"><a href="questions/trans-01-translation.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/3RlioQo8qwE?si=UZwfU2pBeOtFs1zF" target="_blank" class="topic-link">Reflection</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trans-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trans-02" checked></td>
+                                <td class="questions-col"><a href="questions/trans-02-reflection.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/gKdTYgrk_8U?si=lQXe6kcjihb7rdkK" target="_blank" class="topic-link">Rotation</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trans-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trans-03" checked></td>
+                                <td class="questions-col"><a href="questions/trans-03-rotation.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="7">
+                                <td><a href="https://youtu.be/z8NUrhU2e6M?si=GRD1tYH9Tb-fTEN7" target="_blank" class="topic-link">Enlargement</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trans-04"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trans-04" checked></td>
+                                <td class="questions-col"><a href="questions/trans-04-enlargement.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+
+                            <!-- ====== -->
+                            <!-- PAGE 8 -->
+                            <!-- ====== -->
+                            <tr class="page-row" data-page="8">
+                                <td><a href="https://youtu.be/8b7cITl4S6o?si=B6Q9hrcbfgGiwzwT" target="_blank" class="topic-link">Shear</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trans-05"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trans-05" checked></td>
+                                <td class="questions-col"><a href="questions/trans-05-shear.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="8">
+                                <td><a href="https://youtu.be/qZAPhY1Wokw?si=-MVuDPBWl3BSXT-l" target="_blank" class="topic-link">Stretch</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trans-06"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trans-06" checked></td>
+                                <td class="questions-col"><a href="questions/trans-06-stretch.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="8">
+                                <td><a href="https://youtu.be/TZTjWVB1iTc?si=7-M7W7NPk-GUaayp" target="_blank" class="topic-link">Transforming Shapes with Matrices</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trans-07"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trans-07" checked></td>
+                                <td class="questions-col"><a href="questions/trans-07-matrices.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="8">
+                                <td><a href="https://youtu.be/99CL-tNyNR0?si=ZEBWNjzGr_3K-oNb" target="_blank" class="topic-link">Trigonometry in 3D</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="trig-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="trig-03" checked></td>
+                                <td class="questions-col"><a href="questions/trig-03-3d.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="8">
+                                <td><a href="https://youtu.be/POXZ6ZdKws0?si=0SXKjVtj_b7VQHjK" target="_blank" class="topic-link">Similarity</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sim-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sim-01" checked></td>
+                                <td class="questions-col"><a href="questions/sim-01-similarity.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="8">
+                                <td><a href="https://youtu.be/aK8i7LKZd9o?si=P6riKcMJazpZVnp6" target="_blank" class="topic-link">Congruence</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="sim-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="sim-02" checked></td>
+                                <td class="questions-col"><a href="questions/sim-02-congruence.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="8">
+                                <td><a href="https://youtu.be/AWH6wQBbpo0?si=aE5GnnchUr3SYUF5" target="_blank" class="topic-link">Direct and Inverse Variation</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="var-01"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="var-01" checked></td>
+                                <td class="questions-col"><a href="questions/var-01-direct-inverse.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="8">
+                                <td><a href="https://youtu.be/oVBPrKoWbgw?si=1I7leWUcDMX3Cu8_" target="_blank" class="topic-link">Joint Variation</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="var-02"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="var-02" checked></td>
+                                <td class="questions-col"><a href="questions/var-02-joint.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                            <tr class="page-row" data-page="8">
+                                <td><a href="https://youtu.be/3AVVxJkBJTU?si=Y6dZ0ot362Y-oYDJ" target="_blank" class="topic-link">Combined Variation</a></td>
+                                <td class="checkbox-col"><input type="checkbox" class="watched-check" data-group="var-03"></td>
+                                <td class="checkbox-col"><input type="checkbox" class="not-watched-check" data-group="var-03" checked></td>
+                                <td class="questions-col"><a href="questions/var-03-combined.html" class="questions-link" target="_blank">View Questions</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <!-- Pagination Controls -->
+                    <div class="pagination-controls">
+                        <button id="prevPageBtn" disabled>Previous</button>
+                        <span id="pageInfo">Page 1 of 3</span>
+                        <button id="nextPageBtn">Next</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- ========== SECTION 2: PAST PAPERS with TIPS ========== -->
+            <div id="past-papers">
+                <div class="section-title">Past Examination Papers</div>
+                <div class="subnote">Core and Extended papers — click links to download question papers and mark schemes</div>
+                
+                <!-- Tip box for past papers section -->
+                <div class="section-tip">
+                    <p><span class="tip-highlight">Exam practice tip:</span> For each past paper, follow this proven cycle:</p>
+                    <p>✓ <strong>Take the exam paper</strong> under timed conditions (no peeking at answers!)<br>
+                    ✓ <strong>Check your answers</strong> using the Answer Booklet and Mark Scheme<br>
+                    ✓ <strong>Record your average mark</strong> in the "Mark" column (add up your scores and divide by total marks)<br>
+                    ✓ <strong>Review mistakes</strong> and revisit weak topics in the <a href="conversions.html" class="guide-link">LGCSE Mathematics Guide</a></p>
+                    <p>Only check "Completed" when you have honestly attempted the paper AND reviewed your errors. Repeat papers after 2 weeks to measure improvement.</p>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Papers</th>
+                                <th>Answer Booklet</th>
+                                <th>Mark Scheme</th>
+                                <th>Notes / Paper Type</th>
+                                <th style="width: 50px;">Completed</th>
+                                <th style="width: 80px;">Mark</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Core Pure papers -->
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2019 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">June 2019 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2019 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2022 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">June 2022 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2022 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2023 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">June 2023 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2023 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">November 2020 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">November 2020 AB</a></td>
+                                <td><a href="#" class="topic-link">November 2020 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">November 2021 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">November 2021 AB</a></td>
+                                <td><a href="#" class="topic-link">November 2021 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">Sample QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">Sample AB</a></td>
+                                <td><a href="#" class="topic-link">Sample MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <!-- Extended / Mechanics Minor papers -->
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2019 QP (Extended)</a></td>
+                                <td><a href="#" class="topic-link">June 2019 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2019 MS</a></td>
+                                <td><span class="section-badge">Mech Minor</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2022 QP (Extended)</a></td>
+                                <td><a href="#" class="topic-link">June 2022 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2022 MS</a></td>
+                                <td><span class="section-badge">Mech Minor</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Additional note about local storage -->
+                <div style="background: rgba(36, 56, 48, 0.3); border-radius: 16px; padding: 1rem; margin-top: 1.5rem; border-left: 3px solid #f4b942;">
+                    <p style="margin: 0; font-size: 0.85rem;"><strong>Tracker saves automatically</strong> — Your checkboxes and marks are saved to your browser's local storage. Return to this page anytime on the same device to continue tracking your progress.</p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p style="color: #888; font-size: 0.8rem;">
+                Need to reset your progress? Clear your browser cache or 
+                use the "Reset" option in your browser settings. All 
+                topic notes pages can be accessed by clicking the 
+                video name or the "View Notes" link. For detailed 
+                study strategies, visit the <a href="conversions.html" style="color: #ffcf8a;">LGCSE Mathematics Guide</a>.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+    <script>
+        // Pagination and checkbox logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const rows = document.querySelectorAll('.page-row');
+            const prevBtn = document.getElementById('prevPageBtn');
+            const nextBtn = document.getElementById('nextPageBtn');
+            const pageInfo = document.getElementById('pageInfo');
+            let currentPage = 1;
+            const rowsPerPage = 9;
+            const totalPages = Math.ceil(rows.length / rowsPerPage);
+            
+            function showPage(page) {
+                let visibleCount = 0;
+                const start = (page - 1) * rowsPerPage;
+                const end = start + rowsPerPage;
+                
+                rows.forEach((row, index) => {
+                    if (index >= start && index < end) {
+                        row.style.display = '';
+                        visibleCount++;
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+                
+                currentPage = page;
+                pageInfo.innerText = `Page ${currentPage} of ${totalPages}`;
+                prevBtn.disabled = currentPage === 1;
+                nextBtn.disabled = currentPage === totalPages;
+            }
+            
+            prevBtn.addEventListener('click', () => {
+                if (currentPage > 1) showPage(currentPage - 1);
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                if (currentPage < totalPages) showPage(currentPage + 1);
+            });
+            
+            // Mutual exclusivity for checkboxes
+            const watchedChecks = document.querySelectorAll('.watched-check');
+            const notWatchedChecks = document.querySelectorAll('.not-watched-check');
+            
+            function makeMutuallyExclusive(watchedCb, notWatchedCb) {
+                watchedCb.addEventListener('change', function() {
+                    if (watchedCb.checked) {
+                        notWatchedCb.checked = false;
+                    } else {
+                        if (!notWatchedCb.checked) {
+                            watchedCb.checked = true;
+                        }
+                    }
+                    saveStates();
+                });
+                
+                notWatchedCb.addEventListener('change', function() {
+                    if (notWatchedCb.checked) {
+                        watchedCb.checked = false;
+                    } else {
+                        if (!watchedCb.checked) {
+                            notWatchedCb.checked = true;
+                        }
+                    }
+                    saveStates();
+                });
+            }
+            
+            // Pair by data-group
+            const watchedMap = new Map();
+            const notWatchedMap = new Map();
+            
+            watchedChecks.forEach(cb => {
+                const group = cb.getAttribute('data-group');
+                if (group) watchedMap.set(group, cb);
+            });
+            
+            notWatchedChecks.forEach(cb => {
+                const group = cb.getAttribute('data-group');
+                if (group) notWatchedMap.set(group, cb);
+            });
+            
+            for (const [group, watchedCb] of watchedMap) {
+                const notWatchedCb = notWatchedMap.get(group);
+                if (notWatchedCb) {
+                    makeMutuallyExclusive(watchedCb, notWatchedCb);
+                }
+            }
+            
+            // Load and save states to localStorage
+            function saveStates() {
+                const states = {};
+                watchedChecks.forEach(cb => {
+                    const group = cb.getAttribute('data-group');
+                    if (group) states[`${group}_watched`] = cb.checked;
+                });
+                notWatchedChecks.forEach(cb => {
+                    const group = cb.getAttribute('data-group');
+                    if (group) states[`${group}_notWatched`] = cb.checked;
+                });
+                localStorage.setItem('trackerStates', JSON.stringify(states));
+            }
+            
+            function loadStates() {
+                const saved = localStorage.getItem('trackerStates');
+                if (saved) {
+                    const states = JSON.parse(saved);
+                    watchedChecks.forEach(cb => {
+                        const group = cb.getAttribute('data-group');
+                        if (group && states[`${group}_watched`] !== undefined) {
+                            cb.checked = states[`${group}_watched`];
+                        }
+                    });
+                    notWatchedChecks.forEach(cb => {
+                        const group = cb.getAttribute('data-group');
+                        if (group && states[`${group}_notWatched`] !== undefined) {
+                            cb.checked = states[`${group}_notWatched`];
+                        }
+                    });
+                }
+            }
+            
+            loadStates();
+            showPage(1);
+        });
+    </script>
+
+</body>
+</html>

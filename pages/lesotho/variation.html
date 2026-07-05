@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variation - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "LGCSE Mathematics: Variation Complete Guide",
+            "description": "Comprehensive guide for LGCSE learners covering direct variation (y = kxⁿ), inverse variation (y = k/xⁿ), joint variation (y = kxᵐzⁿ), combined variation (y = kxᵐ/zⁿ), finding the constant of variation k, solving for unknown variables, and real-world applications.",
+            "educationalLevel": "Secondary School (LGCSE)",
+            "keywords": "variation, direct variation, inverse variation, joint variation, combined variation, constant of variation, proportionality, y ∝ x, y = kx, y = k/x, y = kx², y = k/x², LGCSE mathematics",
+            "about": {
+                "@type": "Thing",
+                "name": "Proportional Reasoning and Variation"
+            },
+            "teaches": "How to write direct variation statements as equations y = kxⁿ; find constant of variation k using known values; calculate unknown values after finding k; write inverse variation statements as equations y = k/xⁿ; identify inverse relationship (as x increases, y decreases); write joint variation statements as equations y = kxᵐzⁿ (all variables in numerator); write combined variation statements as equations y = kxᵐ/zⁿ (direct variables numerator, inverse denominator); solve real-world variation problems including work, area, volume, and physical laws; recognize variation type from word problems before writing equation",
+            "inLanguage": "en",
+            "audience": {
+                "@type": "Audience",
+                "name": "LGCSE Mathematics students in Lesotho"
+            },
+            "learningResourceType": "Study Guide",
+            "timeRequired": "PT60M",
+            "copyrightHolder": {
+                "@type": "Organization",
+                "name": "Student Room Africa"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    <div class="nav-right">
+        <button class="search-btn">
+            <span class="search-icon">🔍</span>
+            <span style="display:none" class="search-label">Search ...</span>
+            <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+    Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Variation</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shapes</a></li>
+            <li class="active"><a href="../lesotho/variation.html">Variation</a></li>
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul>
+
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="variation">
+            <h1 id="variation">Variation</h1>
+
+            <p>
+                <strong>Variation</strong> describes how one quantity changes in 
+                relation to another.
+                When two or more quantities are connected by a rule, we say they 
+                <em>vary</em> with
+                each other. Understanding variation allows us to express real-life 
+                relationships
+                algebraically, find unknown quantities, and solve practical problems.
+            </p>
+
+            <p>
+                <strong>Before You Begin:</strong> Make sure you are confident with
+                <a href="../lesotho/ratios-and-percentages.html">Ratios and 
+                    Percentages</a> and
+                <a href="../lesotho/rate.html">Rates of Change</a>, especially direct
+                and inverse proportion.
+                Variation extends those ideas using index notation and the constant 
+                of variation <strong>k</strong>.
+            </p>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#variation">Variation</a></li>
+                    <li><a href="#direct-variation">Direct Variation</a></li>
+                    <li><a href="#inverse-variation">Inverse Variation</a></li>
+                    <li><a href="#joint-variation">Joint Variation</a></li>
+                    <li><a href="#combined-variation">Combined Variation</a></li>
+                    <li><a href="#summary-table">Summary Table</a></li>
+                </ul>
+            </div>
+
+            <!-- ═══════════════════════════════════════════ -->
+            <!-- DIRECT VARIATION -->
+            <!-- ═══════════════════════════════════════════ -->
+            <div class="direct-variation">
+                <h2 id="direct-variation">Direct Variation</h2>
+
+                <p>
+                    When we say <strong>y varies directly as x</strong>, we mean that as x increases,
+                    y increases in the same proportion, and as x decreases, y decreases in the same proportion.
+                    The ratio y : x always stays constant.
+                </p>
+
+                <p><strong>Examples of direct variation in real life:</strong></p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>The cost of fuel varies directly as the number of litres bought.</li>
+                    <li>The distance a car travels varies directly as the time spent driving at a constant speed.</li>
+                    <li>The area of a square varies directly as the square of its side length.</li>
+                </ul>
+
+                <h3 style="color: #00ffcc;">Notation and Equation</h3>
+
+                <p>We write direct variation using the proportionality symbol <strong>∝</strong>:</p>
+
+                <p style="text-align: center; font-size: 1.2rem; margin: 0.8rem 0;">
+                    <strong>y ∝ x<sup>n</sup> &nbsp; where n ∈ ℚ</strong>
+                </p>
+
+                <p>This is then expressed as an equation by introducing the <strong>constant of variation k</strong>:</p>
+
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>y = kx<sup>n</sup></strong>
+                </p>
+
+                <p>Where:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>k</strong> is the constant of variation (always positive for direct variation)</li>
+                    <li><strong>n</strong> is a rational number (commonly 1, 2, 3, or ½)</li>
+                    <li>When n = 1: y varies directly as x &nbsp;→&nbsp; y = kx</li>
+                    <li>When n = 2: y varies directly as the square of x &nbsp;→&nbsp; y = kx²</li>
+                    <li>When n = ½: y varies directly as the square root of x &nbsp;→&nbsp; y = k√x</li>
+                </ul>
+
+                <h3 style="color: #00ffcc;">Finding k</h3>
+
+                <p>
+                    To find k, substitute a known pair of values (x, y) into the equation y = kx<sup>n</sup>
+                    and solve for k.
+                </p>
+
+                <h3 style="color: #00ffcc;">Example 1: Direct Variation (n = 1)</h3>
+
+                <p>y varies directly as x. When x = 4, y = 20. Find the equation connecting y and x, then find y when x = 7.</p>
+
+                <p><strong>Step 1:</strong> Write the variation statement as an equation.</p>
+                <p style="padding-left: 20px;">y = kx</p>
+
+                <p><strong>Step 2:</strong> Substitute the known values to find k.</p>
+                <p style="padding-left: 20px;">
+                    20 = k × 4<br>
+                    k = 20 ÷ 4 = <strong>5</strong>
+                </p>
+
+                <p><strong>Step 3:</strong> Write the complete equation.</p>
+                <p style="padding-left: 20px;">y = 5x</p>
+
+                <p><strong>Step 4:</strong> Substitute x = 7 to find y.</p>
+                <p style="padding-left: 20px;">
+                    y = 5 × 7 = <strong>35</strong>
+                </p>
+
+                <p><strong>Answer: The equation is y = 5x. When x = 7, y = 35.</strong></p>
+
+                <h3 style="color: #00ffcc;">Example 2: Direct Variation (n = 2)</h3>
+
+                <p>y varies directly as the square of x. When x = 3, y = 36. Find y when x = 5.</p>
+
+                <p><strong>Step 1:</strong> Write the equation.</p>
+                <p style="padding-left: 20px;">y = kx²</p>
+
+                <p><strong>Step 2:</strong> Substitute x = 3, y = 36 to find k.</p>
+                <p style="padding-left: 20px;">
+                    36 = k × 3²<br>
+                    36 = 9k<br>
+                    k = 36 ÷ 9 = <strong>4</strong>
+                </p>
+
+                <p><strong>Step 3:</strong> Write the complete equation.</p>
+                <p style="padding-left: 20px;">y = 4x²</p>
+
+                <p><strong>Step 4:</strong> Find y when x = 5.</p>
+                <p style="padding-left: 20px;">
+                    y = 4 × 5² = 4 × 25 = <strong>100</strong>
+                </p>
+
+                <p><strong>Answer: The equation is y = 4x². When x = 5, y = 100.</strong></p>
+
+                <h3 style="color: #00ffcc;">Example 3: Finding x given y</h3>
+
+                <p>Using the equation y = 4x² from Example 2, find x when y = 64.</p>
+
+                <p><strong>Step 1:</strong> Substitute y = 64 into y = 4x².</p>
+                <p style="padding-left: 20px;">
+                    64 = 4x²<br>
+                    x² = 64 ÷ 4 = 16<br>
+                    x = √16 = <strong>4</strong>
+                </p>
+
+                <p><strong>Answer: When y = 64, x = 4.</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule For Direct Variation:</strong></p>
+                    <p style="margin-bottom: 0;">y ∝ x<sup>n</sup> means y = kx<sup>n</sup>. To find k, substitute a known pair of values. Once k is known, substitute any value of x to find y, or any value of y to find x.</p>
+                </div>
+            </div>
+
+            <!-- ═══════════════════════════════════════════ -->
+            <!-- INVERSE VARIATION -->
+            <!-- ═══════════════════════════════════════════ -->
+            <div class="inverse-variation">
+                <h2 id="inverse-variation">Inverse Variation</h2>
+
+                <p>
+                    When we say <strong>y varies inversely as x</strong>, we mean that as x increases,
+                    y decreases in the same proportion, and as x decreases, y increases. The product
+                    y × x<sup>n</sup> always stays constant (equal to k).
+                </p>
+
+                <p><strong>Examples of inverse variation in real life:</strong></p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>The time taken to complete a job varies inversely as the number of workers.</li>
+                    <li>The pressure of a gas varies inversely as its volume (at constant temperature).</li>
+                    <li>The brightness of a light source varies inversely as the square of the distance from it.</li>
+                </ul>
+
+                <h3>Notation and Equation</h3>
+
+                <p style="text-align: center; font-size: 1.2rem; margin: 0.8rem 0;">
+                    <strong>y ∝ <math display="inline"><mfrac><mn>1</mn><msup><mi>x</mi><mi>n</mi></msup></mfrac></math> &nbsp; where n ∈ ℚ</strong>
+                </p>
+
+                <p>Expressed as an equation:</p>
+
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                     <strong>y = <math display="inline"><mfrac><mi>k</mi><msup><mi>x</mi><mi>n</mi></msup></mfrac></math></strong>
+                </p>
+
+                <p>Where:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>When n = 1: y varies inversely as x &nbsp;→&nbsp; y = k/x</li>
+                    <li>When n = 2: y varies inversely as the square of x &nbsp;→&nbsp; y = k/x²</li>
+                    <li>When n = ½: y varies inversely as the square root of x &nbsp;→&nbsp; y = k/√x</li>
+                </ul>
+
+                <h3>Example 4: Inverse Variation (n = 1)</h3>
+
+                <p>y varies inversely as x. When x = 5, y = 12. Find the equation connecting y and x, then find y when x = 20.</p>
+
+                <p><strong>Step 1:</strong> Write the equation.</p>
+                <p style="padding-left: 20px;">y = k/x</p>
+
+                <p><strong>Step 2:</strong> Substitute x = 5, y = 12 to find k.</p>
+                <p style="padding-left: 20px;">
+                    12 = k/5<br>
+                    k = 12 × 5 = <strong>60</strong>
+                </p>
+
+                <p><strong>Step 3:</strong> Write the complete equation.</p>
+                <p style="padding-left: 20px;">y = 60/x</p>
+
+                <p><strong>Step 4:</strong> Find y when x = 20.</p>
+                <p style="padding-left: 20px;">
+                    y = 60/20 = <strong>3</strong>
+                </p>
+
+                <p><strong>Answer: The equation is y = 60/x. When x = 20, y = 3.</strong></p>
+
+                <h3>Example 5: Inverse Variation (n = 2)</h3>
+
+                <p>y varies inversely as the square of x. When x = 2, y = 25. Find y when x = 5.</p>
+
+                <p><strong>Step 1:</strong> Write the equation.</p>
+                <p style="padding-left: 20px;">y = k/x²</p>
+
+                <p><strong>Step 2:</strong> Substitute x = 2, y = 25 to find k.</p>
+                <p style="padding-left: 20px;">
+                    25 = k/2²<br>
+                    25 = k/4<br>
+                    k = 25 × 4 = <strong>100</strong>
+                </p>
+
+                <p><strong>Step 3:</strong> Write the complete equation.</p>
+                <p style="padding-left: 20px;">y = 100/x²</p>
+
+                <p><strong>Step 4:</strong> Find y when x = 5.</p>
+                <p style="padding-left: 20px;">
+                    y = 100/5² = 100/25 = <strong>4</strong>
+                </p>
+
+                <p><strong>Answer: The equation is y = 100/x². When x = 5, y = 4.</strong></p>
+
+                <h3>Example 6: Finding x given y (Inverse Variation)</h3>
+
+                <p>Using y = 60/x from Example 4, find x when y = 4.</p>
+
+                <p><strong>Step 1:</strong> Substitute y = 4.</p>
+                <p style="padding-left: 20px;">
+                    4 = 60/x<br>
+                    x = 60/4 = <strong>15</strong>
+                </p>
+
+                <p><strong>Answer: When y = 4, x = 15.</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule For Inverse Variation:</strong></p>
+                    <p style="margin-bottom: 0;">y ∝ 1/x<sup>n</sup> means y = k/x<sup>n</sup>, which can be rewritten as yx<sup>n</sup> = k. As one variable increases, the other decreases. The product yx<sup>n</sup> is always equal to k.</p>
+                </div>
+            </div>
+
+            <!-- ═══════════════════════════════════════════ -->
+            <!-- JOINT VARIATION -->
+            <!-- ═══════════════════════════════════════════ -->
+            <div class="joint-variation">
+                <h2 id="joint-variation">Joint Variation</h2>
+
+                <p>
+                    <strong>Joint variation</strong> occurs when one quantity varies directly as two or more
+                    other quantities at the same time. All of the related quantities appear in the
+                    numerator of the equation.
+                </p>
+
+                <p><strong>Examples of joint variation in real life:</strong></p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>The volume of a cylinder varies jointly as its height and the square of its radius: V = πr²h.</li>
+                    <li>The earnings of a worker vary jointly as the number of hours worked and the hourly rate.</li>
+                    <li>The distance a vehicle travels varies jointly as its speed and the time spent travelling.</li>
+                </ul>
+
+                <h3>Notation and Equation</h3>
+
+                <p>If y varies jointly as x<sup>m</sup> and z<sup>n</sup>, we write:</p>
+
+                <p style="text-align: center; font-size: 1.2rem; margin: 0.8rem 0;">
+                    <strong>y ∝ x<sup>m</sup>z<sup>n</sup> &nbsp; where m, n ∈ ℚ</strong>
+                </p>
+
+                <p>Expressed as an equation:</p>
+
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>y = kx<sup>m</sup>z<sup>n</sup></strong>
+                </p>
+
+                <p>Where k is the constant of variation, found by substituting a known set of values.</p>
+
+                <h3>Example 7: Joint Variation (m = 1, n = 1)</h3>
+
+                <p>y varies jointly as x and z. When x = 2 and z = 3, y = 24. Find y when x = 5 and z = 4.</p>
+
+                <p><strong>Step 1:</strong> Write the equation.</p>
+                <p style="padding-left: 20px;">y = kxz</p>
+
+                <p><strong>Step 2:</strong> Substitute x = 2, z = 3, y = 24 to find k.</p>
+                <p style="padding-left: 20px;">
+                    24 = k × 2 × 3<br>
+                    24 = 6k<br>
+                    k = 24 ÷ 6 = <strong>4</strong>
+                </p>
+
+                <p><strong>Step 3:</strong> Write the complete equation.</p>
+                <p style="padding-left: 20px;">y = 4xz</p>
+
+                <p><strong>Step 4:</strong> Find y when x = 5, z = 4.</p>
+                <p style="padding-left: 20px;">
+                    y = 4 × 5 × 4 = <strong>80</strong>
+                </p>
+
+                <p><strong>Answer: The equation is y = 4xz. When x = 5 and z = 4, y = 80.</strong></p>
+
+                <h3>Example 8: Joint Variation with Powers</h3>
+
+                <p>y varies jointly as the square of x and the cube of z. When x = 2 and z = 1, y = 16. Find y when x = 3 and z = 2.</p>
+
+                <p><strong>Step 1:</strong> Write the equation.</p>
+                <p style="padding-left: 20px;">y = kx²z³</p>
+
+                <p><strong>Step 2:</strong> Substitute x = 2, z = 1, y = 16 to find k.</p>
+                <p style="padding-left: 20px;">
+                    16 = k × 2² × 1³<br>
+                    16 = k × 4 × 1<br>
+                    k = 16 ÷ 4 = <strong>4</strong>
+                </p>
+
+                <p><strong>Step 3:</strong> Write the complete equation.</p>
+                <p style="padding-left: 20px;">y = 4x²z³</p>
+
+                <p><strong>Step 4:</strong> Find y when x = 3, z = 2.</p>
+                <p style="padding-left: 20px;">
+                    y = 4 × 3² × 2³ = 4 × 9 × 8 = <strong>288</strong>
+                </p>
+
+                <p><strong>Answer: The equation is y = 4x²z³. When x = 3 and z = 2, y = 288.</strong></p>
+
+                <h3>Example 9: Finding a Variable (Joint Variation)</h3>
+
+                <p>Given y = 4xz from Example 7, find z when y = 60 and x = 3.</p>
+
+                <p><strong>Step 1:</strong> Substitute y = 60 and x = 3.</p>
+                <p style="padding-left: 20px;">
+                    60 = 4 × 3 × z<br>
+                    60 = 12z<br>
+                    z = 60 ÷ 12 = <strong>5</strong>
+                </p>
+
+                <p><strong>Answer: When y = 60 and x = 3, z = 5.</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule For Joint Variation:</strong></p>
+                    <p style="margin-bottom: 0;">y ∝ x<sup>m</sup>z<sup>n</sup> means y = kx<sup>m</sup>z<sup>n</sup>. All varying quantities appear in the numerator. Substitute a complete known set of values to find k first, then solve for any unknown.</p>
+                </div>
+            </div>
+
+            <!-- ═══════════════════════════════════════════ -->
+            <!-- COMBINED VARIATION -->
+            <!-- ═══════════════════════════════════════════ -->
+            <div class="combined-variation">
+                <h2 id="combined-variation">Combined Variation</h2>
+
+                <p>
+                    <strong>Combined variation</strong> (also called <strong>partial variation</strong> by some texts)
+                    occurs when one quantity varies directly as some variables <em>and</em> inversely as others
+                    at the same time. The direct variables appear in the numerator and the inverse variables
+                    appear in the denominator.
+                </p>
+
+                <p><strong>Examples of combined variation in real life:</strong></p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>The time to complete a task varies directly as the amount of work and inversely as the number of workers.</li>
+                    <li>The gravitational force between two objects varies directly as their masses and inversely as the square of the distance between them.</li>
+                    <li>The resistance of a wire varies directly as its length and inversely as the square of its radius.</li>
+                </ul>
+
+                <h3>Notation and Equation</h3>
+
+                <p>If y varies directly as x<sup>m</sup> and inversely as z<sup>n</sup>, we write:</p>
+
+                <p style="text-align: center; font-size: 1.2rem; margin: 0.8rem 0;">
+                        <strong>y ∝ <math display="inline"><mfrac><msup><mi>x</mi><mi>m</mi></msup><msup><mi>z</mi><mi>n</mi></msup></mfrac></math> &nbsp; where m, n ∈ ℚ</strong>
+                </p>
+
+                <p>Expressed as an equation:</p>
+
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>y = k <math display="inline"><mfrac><msup><mi>x</mi><mi>m</mi></msup><msup><mi>z</mi><mi>n</mi></msup></mfrac></math></strong>
+                </p>
+
+                <p>
+                    Notice the structure: direct variables on top, inverse variables on the bottom.
+                    k is found by substituting a complete known set of values.
+                </p>
+
+                <h3>Example 10: Combined Variation (Direct and Inverse, n = m = 1)</h3>
+
+                <p>y varies directly as x and inversely as z. When x = 6 and z = 2, y = 9. Find y when x = 10 and z = 5.</p>
+
+                <p><strong>Step 1:</strong> Write the equation.</p>
+                <p style="padding-left: 20px;">y = k <math display="inline"><mfrac><mi>x</mi><mi>z</mi></mfrac></math></p>
+                
+
+                <p><strong>Step 2:</strong> Substitute x = 6, z = 2, y = 9 to find k.</p>
+                
+
+                <p style="padding-left: 20px;">
+                    9 = k × <math display="inline"><mfrac><mn>6</mn><mn>2</mn></mfrac></math><br>
+                    9 = 3k<br>
+                    k = 9 ÷ 3 = <strong>3</strong>
+                </p>
+
+                <p><strong>Step 3:</strong> Write the complete equation.</p>
+                <p style="padding-left: 20px;">y = <math display="inline"><mfrac><mrow><mn>3</mn><mi>x</mi></mrow><mi>z</mi></mfrac></math></p>
+
+                <p><strong>Step 4:</strong> Find y when x = 10, z = 5.</p>
+                <p style="padding-left: 20px;">
+                    y = <math display="inline"><mfrac><mrow><mn>3</mn><mo>×</mo><mn>10</mn></mrow><mn>5</mn></mfrac></math>
+                    = <math display="inline"><mfrac><mn>30</mn><mn>5</mn></mfrac></math>
+                    = <strong>6</strong>
+                </p>
+
+                <p><strong>Answer: The equation is y = <math display="inline"><mfrac><mrow><mn>3</mn><mi>x</mi></mrow><mi>z</mi></mfrac></math>. When x = 10 and z = 5, y = 6.</strong></p>
+                
+                <h3>Example 11: Combined Variation with Powers</h3>
+
+                <p>y varies directly as the square of x and inversely as z. When x = 3 and z = 3, y = 12. Find y when x = 6 and z = 4.</p>
+
+                <p><strong>Step 1:</strong> Write the equation.</p>
+                <p style="padding-left: 20px;">y = k <math display="inline"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mi>z</mi></mfrac></math></p>
+
+                <p><strong>Step 2:</strong> Substitute x = 3, z = 3, y = 12 to find k.</p>
+                <p style="padding-left: 20px;">
+                    12 = k × <math display="inline"><mfrac><msup><mn>3</mn><mn>2</mn></msup><mn>3</mn></mfrac></math><br>
+                    12 = k × <math display="inline"><mfrac><mn>9</mn><mn>3</mn></mfrac></math><br>
+                    12 = 3k<br>
+                    k = 12 ÷ 3 = <strong>4</strong>
+                </p>
+
+                <p><strong>Step 3:</strong> Write the complete equation.</p>
+                <p style="padding-left: 20px;">y = <math display="inline"><mfrac><mrow><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup></mrow><mi>z</mi></mfrac></math></p>
+
+                <p><strong>Step 4:</strong> Find y when x = 6, z = 4.</p>
+                <p style="padding-left: 20px;">
+                    y = 4 × <math display="inline"><mfrac><msup><mn>6</mn><mn>2</mn></msup><mn>4</mn></mfrac></math>
+                    = 4 × <math display="inline"><mfrac><mn>36</mn><mn>4</mn></mfrac></math>
+                    = <math display="inline"><mfrac><mn>144</mn><mn>4</mn></mfrac></math>
+                    = <strong>36</strong>
+                </p>
+
+                <p><strong>Answer: The equation is y = <math display="inline"><mfrac><mrow><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup></mrow><mi>z</mi></mfrac></math>. When x = 6 and z = 4, y = 36.</strong></p>
+
+                <h3>Example 12: Finding a Variable (Combined Variation)</h3>
+
+                <p>Given y = <span style="display: inline-block; text-align: center; vertical-align: middle;">
+                    <span style="display: block; border-bottom: 2px solid currentColor;">3x</span>
+                    <span>z</span>
+                </span> from Example 10, find z when y = 5 and x = 15.</p>
+
+                <p><strong>Step 1:</strong> Substitute y = 5 and x = 15.</p>
+                <p style="padding-left: 20px;">
+                    5 = <span style="display: inline-block; text-align: center; vertical-align: middle;">
+                        <span style="display: block; border-bottom: 2px solid currentColor;">3 × 15</span>
+                        <span>z</span>
+                    </span><br>
+                    5 = <span style="display: inline-block; text-align: center; vertical-align: middle;">
+                        <span style="display: block; border-bottom: 2px solid currentColor;">45</span>
+                        <span>z</span>
+                    </span><br>
+                    z = <span style="display: inline-block; text-align: center; vertical-align: middle;">
+                        <span style="display: block; border-bottom: 2px solid currentColor;">45</span>
+                        <span>5</span>
+                    </span> = <strong>9</strong>
+                </p>
+
+                <p><strong>Answer: When y = 5 and x = 15, z = 9.</strong></p>
+                       
+
+                <h3>Example 13: Real-Life Combined Variation</h3>
+
+                <p>
+                    The time T (in hours) taken to build a wall varies directly as the area A (in m²) of the wall
+                    and inversely as the number of workers W. When A = 30 m² and W = 5, T = 6 hours.
+                </p>
+                <p>Find T when A = 48 m² and W = 8.</p>
+
+                <p><strong>Step 1:</strong> Write the equation.</p>
+                <p style="padding-left: 20px;">T = k <math display="inline"><mfrac><mi>A</mi><mi>W</mi></mfrac></math></p>
+
+                <p><strong>Step 2:</strong> Substitute A = 30, W = 5, T = 6 to find k.</p>
+                <p style="padding-left: 20px;">
+                    6 = k × <math display="inline"><mfrac><mn>30</mn><mn>5</mn></mfrac></math><br>
+                    6 = 6k<br>
+                    k = <strong>1</strong>
+                </p>
+
+                <p><strong>Step 3:</strong> Write the complete equation.</p>
+                <p style="padding-left: 20px;">T = <math display="inline"><mfrac><mi>A</mi><mi>W</mi></mfrac></math></p>
+
+                <p><strong>Step 4:</strong> Find T when A = 48, W = 8.</p>
+                <p style="padding-left: 20px;">
+                    T = <math display="inline"><mfrac><mn>48</mn><mn>8</mn></mfrac></math> = <strong>6 hours</strong>
+                </p>
+
+                <p><strong>Answer: It will take 6 hours to build the wall with 8 workers covering 48 m².</strong></p>
+
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule For Combined Variation:</strong></p>
+                    <p style="margin-bottom: 0;">y ∝ x<sup>m</sup>/z<sup>n</sup> means y = kx<sup>m</sup>/z<sup>n</sup>. Direct variables go in the numerator; inverse variables go in the denominator. Always find k first using a complete set of known values, then substitute to find the unknown.</p>
+                </div>
+            </div>
+
+            <!-- ═══════════════════════════════════════════ -->
+            <!-- SUMMARY TABLE -->
+            <!-- ═══════════════════════════════════════════ -->
+            <div class="summary-table">
+                <h2 id="summary-table">Summary Table: Types of Variation</h2>
+
+                <div style="margin: 1.5rem 0; width: 100%; box-sizing: border-box;">
+                    <style>
+                        .math-table th, .math-table td {
+                            font-size: clamp(14px, 4vw, 18px);
+                            box-sizing: border-box;
+                        }
+                        
+                        @media screen and (max-width: 600px) {
+                            .math-table th, .math-table td {
+                                font-size: 13px !important;
+                                padding: 8px 6px !important;
+                            }
+                        }
+                    </style>
+                    
+                    <table class="math-table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                        <thead>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc; width: 15%;">Type</th>
+                                <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc; width: 25%;">Proportionality Statement</th>
+                                <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc; width: 25%;">Equation</th>
+                                <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc; width: 35%;">What stays constant?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Direct</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">y ∝ x<sup>n</sup></td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">y = kx<sup>n</sup></td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff; word-break: break-word;">y/x<sup>n</sup> = k</td>
+                            </tr>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Inverse</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff; word-break: break-word;">y ∝ 1/x<sup>n</sup></td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff; word-break: break-word;">y = k/x<sup>n</sup></td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">yx<sup>n</sup> = k</td>
+                            </tr>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Joint</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">y ∝ x<sup>m</sup>z<sup>n</sup></td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">y = kx<sup>m</sup>z<sup>n</sup></td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff; word-break: break-word;">y/(x<sup>m</sup>z<sup>n</sup>) = k</td>
+                            </tr>
+                            <tr style="border: 1px solid #00ffcc;">
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Combined</td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff; word-break: break-word;">y ∝ x<sup>m</sup>/z<sup>n</sup></td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff; word-break: break-word;">y = kx<sup>m</sup>/z<sup>n</sup></td>
+                                <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff; word-break: break-word;">yz<sup>n</sup>/x<sup>m</sup> = k</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1.5rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Takeaways:</strong></p>
+                    <p style="margin-bottom: 0;">• All variation problems follow the same three steps: write the equation, find k using known values, then solve for the unknown.</p>
+                    <p style="margin-bottom: 0;">• The symbol ∝ means "is proportional to." Replace it with "= k ×" to form the equation.</p>
+                    <p style="margin-bottom: 0;">• Direct variation: y increases as x increases. Equation: y = kx<sup>n</sup>.</p>
+                    <p style="margin-bottom: 0;">• Inverse variation: y decreases as x increases. Equation: y = <math display="inline"><mfrac><mi>k</mi><msup><mi>x</mi><mi>n</mi></msup></mfrac></math>.</p>
+                    <p style="margin-bottom: 0;">• Joint variation: y varies directly as two or more variables. Equation: y = kx<sup>m</sup>z<sup>n</sup>.</p>
+                    <p style="margin-bottom: 0;">• Combined variation: y varies directly as some variables and inversely as others. Equation: y = <math display="inline"><mfrac><mrow><mi>k</mi><msup><mi>x</mi><mi>m</mi></msup></mrow><msup><mi>z</mi><mi>n</mi></msup></mfrac></math>.</p>
+                    <p style="margin-bottom: 0;">• Always find k first before solving for any other unknown.</p>
+                </div>
+
+                <p>
+                    <strong>NB:</strong> Variation appears throughout mathematics and science. Recognising the type of
+                    variation from a word problem, and knowing which equation to write, is the most important skill.
+                    Once the equation is set up and k is found, the rest is substitution and algebra.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#variation">Variation</a></li>
+            <li><a href="#direct-variation">Direct Variation</a></li>
+            <li><a href="#inverse-variation">Inverse Variation</a></li>
+            <li><a href="#joint-variation">Joint Variation</a></li>
+            <li><a href="#combined-variation">Combined Variation</a></li>
+            <li><a href="#summary-table">Summary Table</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

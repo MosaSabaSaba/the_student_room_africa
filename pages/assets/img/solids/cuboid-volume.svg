@@ -1,0 +1,31 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="300" height="300" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+    <!-- Optimized for Dark Mode -->
+    <style>
+        .outline { stroke: #ffffff; stroke-width: 2; fill: none; stroke-linejoin: round; }
+        .hidden-edge { stroke: #ffffff; stroke-width: 1.5; stroke-dasharray: 5; fill: none; }
+        .label { fill: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: 500; }
+    </style>
+
+    <!-- Dashed Back Edges (Hidden perspective) -->
+    <path d="M 60 180 L 60 50" class="hidden-edge" />
+    <path d="M 60 180 L 20 210" class="hidden-edge" />
+    <path d="M 60 180 L 180 180" class="hidden-edge" />
+
+    <!-- Visible Main Frame -->
+    <!-- Bottom-Front Edge -->
+    <path d="M 20 210 L 140 210 L 180 180" class="outline" />
+    <!-- Vertical Edges -->
+    <path d="M 20 210 L 20 80" class="outline" />
+    <path d="M 140 210 L 140 80" class="outline" />
+    <path d="M 180 180 L 180 50" class="outline" />
+    <!-- Top Face -->
+    <path d="M 20 80 L 60 50 L 180 50 L 140 80 Z" class="outline" />
+
+    <!-- Dimension Labels -->
+    <!-- Width -->
+    <text x="70" y="230" class="label" text-anchor="middle">12 cm</text>
+    <!-- Depth -->
+    <text x="175" y="205" class="label" transform="rotate(-36, 175, 205)">5 cm</text>
+    <!-- Height -->
+    <text x="60" y="145" class="label" text-anchor="end">20 cm</text>
+</svg>

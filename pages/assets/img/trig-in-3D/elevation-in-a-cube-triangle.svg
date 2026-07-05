@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 110" width="200" height="110" style="display: inline-block; font-family: 'Inter', system-ui, sans-serif;">
+    <line x1="30" y1="90" x2="170" y2="90" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- Base BF -->
+    <line x1="170" y1="90" x2="170" y2="20" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- Height FG -->
+    <line x1="30" y1="90" x2="170" y2="20" stroke="#ffffff" stroke-width="2" fill="none"  /> <!-- Hypotenuse BG -->
+    
+    <!-- Right Angle Square -->
+    <path d="M 160,90 L 160,80 L 170,80" stroke="#ffffff" stroke-width="1" fill="none" />
+    
+    <!-- Angle θ Arc -->
+    <path d="M 55,90 C 55,85 50,81 46,83" stroke="#ffffff" stroke-width="1" fill="none" />
+    
+    <!-- Labels -->
+    <text x="20" y="95" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">B</text>
+    <text x="178" y="95" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">F</text>
+    <text x="175" y="15" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">G</text>
+    
+    <text x="100" y="105" font-family="Times New Roman, serif" font-size="12" fill="#ffffff" text-anchor="middle">10 cm (Adjacent)</text>
+    <text x="182" y="58" font-family="Times New Roman, serif" font-size="12" fill="#ffffff">5 cm (Opposite)</text>
+    <text x="60" y="83" font-family="Times New Roman, serif" font-size="13" fill="#ffffff">θ</text>
+</svg>

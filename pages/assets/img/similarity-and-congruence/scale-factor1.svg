@@ -1,0 +1,9 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="20,110 80,110 50,30" fill="rgba(255, 255, 255, 0.1)" stroke="#ffffff" stroke-width="2"/>
+    <text x="50" y="125" fill="#00ffcc" font-size="12" font-weight="bold" text-anchor="middle">5 cm</text>
+    <text x="30" y="75" fill="#5ba3f5" font-size="12" font-weight="bold" text-anchor="middle">3 cm</text>
+    <text x="70" y="75" fill="#ff8888" font-size="12" font-weight="bold" text-anchor="middle">4 cm</text>
+    <text x="10" y="125" fill="#ffffff" font-size="13" font-weight="bold">A</text>
+    <text x="85" y="125" fill="#ffffff" font-size="13" font-weight="bold">B</text>
+    <text x="55" y="25" fill="#ffffff" font-size="13" font-weight="bold">C</text>
+</svg>

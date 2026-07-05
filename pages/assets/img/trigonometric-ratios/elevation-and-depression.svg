@@ -1,0 +1,41 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="450" height="220" viewBox="0 0 450 220" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .horiz-line { stroke: #ffffff; stroke-width: 1.5; stroke-dasharray: 6,4; }
+        .sight-line { stroke: #00ffcc; stroke-width: 2.5; }
+        .angle-arc-elev { stroke: #ffcc00; stroke-width: 2; fill: none; }
+        .angle-arc-dep { stroke: #ff8888; stroke-width: 2; fill: none; }
+        .label { fill: #ffffff; font-family: sans-serif; font-size: 12px; }
+        .angle-label { font-family: sans-serif; font-size: 12px; font-weight: bold; }
+        .point { fill: #ffffff; }
+    </style>
+
+    <!-- Top horizontal line (Extended further right for context) -->
+    <line x1="40" y1="50" x2="380" y2="50" class="horiz-line"/>
+    
+    <!-- Line of sight (downward from 60,50 to 280,150) -->
+    <line x1="60" y1="50" x2="280" y2="150" class="sight-line"/>
+
+    <!-- Angle of depression arc (Vertex at 60,50) -->
+    <!-- Starts 40px right at (100,50), sweeps down to the line of sight -->
+    <path d="M 100 50 A 40 40 0 0 1 96.4 66.4" class="angle-arc-dep"/>
+    <text x="110" y="65" class="angle-label" fill="#ff8888">depression</text>
+
+    <!-- Observer point -->
+    <circle cx="60" cy="50" r="5" class="point"/>
+    <text x="45" y="35" class="label">Observer</text>
+
+    <!-- Object point -->
+    <circle cx="280" cy="150" r="5" class="point"/>
+    <text x="295" y="165" class="label">Object</text>
+
+    <!-- Bottom horizontal line (Extended left to touch the line of sight vector) -->
+    <line x1="40" y1="150" x2="380" y2="150" class="horiz-line"/>
+
+    <!-- Angle of elevation arc (Vertex at 280,150) -->
+    <!-- Starts 40px left at (240,150), sweeps up to the line of sight -->
+    <path d="M 240 150 A 40 40 0 0 1 243.6 133.6" class="angle-arc-elev"/>
+    <text x="175" y="140" class="angle-label" fill="#ffcc00">elevation</text>
+
+    <!-- Note -->
+    <text x="210" y="200" fill="#00ffcc" font-size="12" text-anchor="middle">These two angles are EQUAL (alternate interior angles)</text>
+</svg>

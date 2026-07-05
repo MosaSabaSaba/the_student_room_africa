@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagoras' Theorem - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Pythagoras' Theorem</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li class="active"><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+            
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <div class="trigonometric-ratios">
+            <h1 id="pythagoras">Pythagoras' Theorem</h1>
+            
+            <p>
+                For any right-angled triangle, the square of the length of the hypotenuse is equal to the
+                sum of the squares of the lengths of the other two sides.
+            </p>
+
+            <p>
+                <strong>Before You Begin:</strong> Make sure you have reviewed:
+            </p>
+            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li><strong>Square numbers</strong> (e.g., 1² = 1, 2² = 4, 3² = 9, 4² = 16, etc.)</li>
+                <li><strong>Square roots</strong> (finding the number that multiplied by itself gives the square)</li>
+                <li><strong>Types of triangles</strong> (right-angled, equilateral, isosceles, scalene)</li>
+            </ul>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#pythagoras">Pythagorean Theorem</a></li>
+                    <li><a href="#naming-sides">Naming the Sides of a Right-Angled Triangle</a></li>
+                    <li><a href="#pythagorean-theorem">Pythagoras' Theorem</a></li>
+                </ul>
+            </div>
+
+            <p>In any right-angled triangle, the side opposite the right 
+                angle is called the <strong>hypotenuse</strong> and this 
+                is always the longest side.
+            </p>
+
+            <div class="responsive-svg-container" style="display: flex; justify-content: center;">
+                <img src="../assets/img/pythagoras/triangle.svg" alt="Triangle showing the hypotenuse" />
+            </div>
+
+
+            <div class="naming-sides">
+                <h2 id="naming-sides">Naming the Sides of a Right-Angled Triangle</h2>
+
+                <p>
+                    Side designations shift dynamically based on the observed target angle.
+                </p>
+
+                <ul style="margin-left: 2.5rem;">
+                    <li><strong>Hypotenuse:</strong> The side opposite the right angle. Always the longest side.</li>
+                    <li><strong>Opposite Side:</strong> The side directly facing the reference angle.</li>
+                    <li><strong>Adjacent Side:</strong> The side neighboring the reference angle that is not the hypotenuse.</li>
+                </ul>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0; justify-content: center;">
+                    <img src="../assets/img/pythagoras/naming-sides1.svg" alt="Naming sides of a right angled triangle"/>
+
+                    <img src="../assets/img/pythagoras/naming-sides2.svg" alt="Naming sides of a right angled triangle"/>
+                </div>
+
+
+                <h3>Context Comparison</h3>
+                <p>When studying angle A, side BC represents the opposite side. Side AB represents the adjacent side. If switching focus to angle C, side AB becomes the opposite side. Side BC changes into the adjacent side.</p>
+
+            </div>
+
+            <div class="pythagorean-theorem">
+                <h2 id="pythagorean-theorem">Pythagorean Theorem</h2>
+                
+                <p>
+                    The Pythagorean Theorem describes the relationship between the three sides of a right-angled triangle. 
+                    It states that the square of the hypotenuse is equal to the sum of the squares of the other two sides.
+                </p>
+
+                <div class="responsive-svg-container" style="display: flex; justify-content: center;">
+                    <img src="../assets/img/pythagoras/pythagoras-theorem.svg" alt="Pythagoras theorem" />
+                </div>
+
+                <p>
+                    Where:
+                </p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>c</strong> is the length of the <strong>hypotenuse</strong> (the side opposite the right angle, always the longest side)</li>
+                    <li><strong>a</strong> and <strong>b</strong> are the lengths of the <strong>other two sides</strong> (the legs)</li>
+                </ul>
+
+                <p>
+                    This formula can be rearranged to find any missing side, depending on which values are known.
+                </p>
+
+                <h3 style="color: #00ffcc;">Finding the Hypotenuse (c)</h3>
+                
+                <p>
+                    When the lengths of both shorter sides (a and b) are known, the hypotenuse can be found using:
+                </p>
+                <p style="text-align: center; font-size: 1.2rem; margin: 1rem 0;">
+                    <strong>c = 
+                        <math display="inline">
+                            <msqrt>
+                                <mi>a</mi>
+                                <mn>²</mn>
+                                <mo>+</mo>
+                                <mi>b</mi>
+                                <mn>²</mn>
+                            </msqrt>
+                        </math>
+                    </strong>
+                </p>
+
+                <div class="example-box" style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="color: #00ffcc; font-weight: bold; margin-bottom: 0.5rem;">Example:</p>
+                    <p>If a = 3 cm and b = 4 cm, then:</p>
+                    <p style="padding-left: 20px;">
+                        c = 
+                        <math display="inline">
+                            <msqrt>
+                                <mn>3</mn>
+                                <mn>²</mn>
+                                <mo>+</mo>
+                                <mn>4</mn>
+                                <mn>²</mn>
+                            </msqrt>
+                        </math>
+                        = 
+                        <math display="inline">
+                            <msqrt>
+                                <mn>9</mn>
+                                <mo>+</mo>
+                                <mn>16</mn>
+                            </msqrt>
+                        </math>
+                        = 
+                        <math display="inline">
+                            <msqrt>
+                                <mn>25</mn>
+                            </msqrt>
+                        </math>
+                        = 5 cm
+                    </p>
+                </div>
+
+                <h3 style="color: #00ffcc;">Finding a Shorter Side (a)</h3>
+                
+                <p>
+                    When the hypotenuse (c) and side b are known, side a can be found using:
+                </p>
+                <p style="text-align: center; font-size: 1.2rem; margin: 1rem 0;">
+                    <strong>a = 
+                        <math display="inline">
+                            <msqrt>
+                                <mi>c</mi>
+                                <mn>²</mn>
+                                <mo>-</mo>
+                                <mi>b</mi>
+                                <mn>²</mn>
+                            </msqrt>
+                        </math>
+                    </strong>
+                </p>
+
+                <div class="example-box" style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="color: #00ffcc; font-weight: bold; margin-bottom: 0.5rem;">Example:</p>
+                    <p>If c = 13 cm and b = 12 cm, then:</p>
+                    <p style="padding-left: 20px;">
+                        a = 
+                        <math display="inline">
+                            <msqrt>
+                                <mn>13</mn>
+                                <mn>²</mn>
+                                <mo>-</mo>
+                                <mn>12</mn>
+                                <mn>²</mn>
+                            </msqrt>
+                        </math>
+                        = 
+                        <math display="inline">
+                            <msqrt>
+                                <mn>169</mn>
+                                <mo>-</mo>
+                                <mn>144</mn>
+                            </msqrt>
+                        </math>
+                        = 
+                        <math display="inline">
+                            <msqrt>
+                                <mn>25</mn>
+                            </msqrt>
+                        </math>
+                        = 5 cm
+                    </p>
+                </div>
+
+                <h3 style="color: #00ffcc;">Finding a Shorter Side (b)</h3>
+                
+                <p>
+                    When the hypotenuse (c) and side a are known, side b can be found using:
+                </p>
+                <p style="text-align: center; font-size: 1.2rem; margin: 1rem 0;">
+                    <strong>b = 
+                        <math display="inline">
+                            <msqrt>
+                                <mi>c</mi>
+                                <mn>²</mn>
+                                <mo>-</mo>
+                                <mi>a</mi>
+                                <mn>²</mn>
+                            </msqrt>
+                        </math>
+                    </strong>
+                </p>
+
+                <div class="example-box" style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="color: #00ffcc; font-weight: bold; margin-bottom: 0.5rem;">Example:</p>
+                    <p>If c = 10 cm and a = 6 cm, then:</p>
+                    <p style="padding-left: 20px;">
+                        b = 
+                        <math display="inline">
+                            <msqrt>
+                                <mn>10</mn>
+                                <mn>²</mn>
+                                <mo>-</mo>
+                                <mn>6</mn>
+                                <mn>²</mn>
+                            </msqrt>
+                        </math>
+                        = 
+                        <math display="inline">
+                            <msqrt>
+                                <mn>100</mn>
+                                <mo>-</mo>
+                                <mn>36</mn>
+                            </msqrt>
+                        </math>
+                        = 
+                        <math display="inline">
+                            <msqrt>
+                                <mn>64</mn>
+                            </msqrt>
+                        </math>
+                        = 8 cm
+                    </p>
+                </div>
+
+                <h3 style="color: #00ffcc;">Summary of Formulas</h3>
+
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; margin: 1rem 0;">
+                    <div style="background-color: rgba(0, 255, 204, 0.1); border: 1px solid #00ffcc; border-radius: 12px; padding: 1rem; text-align: center; min-width: 150px;">
+                        <p style="color: #00ffcc; font-weight: bold; margin-bottom: 0.5rem;">Hypotenuse (c)</p>
+                        <p style="color: #ffffff; font-size: 18px; margin: 0;">
+                            c = 
+                            <math display="inline">
+                                <msqrt>
+                                    <mi>a</mi>
+                                    <mn>²</mn>
+                                    <mo>+</mo>
+                                    <mi>b</mi>
+                                    <mn>²</mn>
+                                </msqrt>
+                            </math>
+                        </p>
+                    </div>
+
+                    <div style="background-color: rgba(0, 255, 204, 0.1); border: 1px solid #00ffcc; border-radius: 12px; padding: 1rem; text-align: center; min-width: 150px;">
+                        <p style="color: #00ffcc; font-weight: bold; margin-bottom: 0.5rem;">Shorter Side (a)</p>
+                        <p style="color: #ffffff; font-size: 18px; margin: 0;">
+                            a = 
+                            <math display="inline">
+                                <msqrt>
+                                    <mi>c</mi>
+                                    <mn>²</mn>
+                                    <mo>-</mo>
+                                    <mi>b</mi>
+                                    <mn>²</mn>
+                                </msqrt>
+                            </math>
+                        </p>
+                    </div>
+
+                    <div style="background-color: rgba(0, 255, 204, 0.1); border: 1px solid #00ffcc; border-radius: 12px; padding: 1rem; text-align: center; min-width: 150px;">
+                        <p style="color: #00ffcc; font-weight: bold; margin-bottom: 0.5rem;">Shorter Side (b)</p>
+                        <p style="color: #ffffff; font-size: 18px; margin: 0;">
+                            b = 
+                            <math display="inline">
+                                <msqrt>
+                                    <mi>c</mi>
+                                    <mn>²</mn>
+                                    <mo>-</mo>
+                                    <mi>a</mi>
+                                    <mn>²</mn>
+                                </msqrt>
+                            </math>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0; text-align: center;">
+                        <strong>Summary:</strong> To find any side, substitute the known values into the appropriate formula and solve.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#pythagoras">Pythagorean Theorem</a></li>
+            <li><a href="#naming-sides">Naming the Sides of a Right-Angled Triangle</a></li>
+            <li><a href="#pythagorean-theorem">Pythagoras' Theorem</a></li>
+
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="650" height="300" viewBox="0 0 650 300" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .lbl { fill: #00ffcc; font-family: sans-serif; font-size: 13px; font-weight: bold; }
+        .ttl { fill: #ffffff; font-family: sans-serif; font-size: 13px; font-weight: bold; }
+        .st  { stroke: #ffffff; stroke-width: 1.8; fill: rgba(0,255,204,0.12); }
+        .sy  { stroke: #ffcc00; stroke-width: 1.8; fill: rgba(255,204,0,0.15); }
+        .dk  { stroke: #ffffff; stroke-width: 1.2; fill: none; stroke-dasharray: 4,3; }
+        .dky { stroke: #ffcc00; stroke-width: 1.2; fill: none; stroke-dasharray: 4,3; }
+    </style>
+
+    <!-- ══ HOUSE ══ -->
+    <g transform="translate(20,30)">
+        <text x="82" y="0" class="ttl" text-anchor="middle">House</text>
+        <!-- cube front -->
+        <rect x="20" y="110" width="100" height="80" class="st"/>
+        <!-- cube top -->
+        <path d="M20,110 L44,88 L144,88 L120,110 Z" class="st"/>
+        <!-- cube right -->
+        <path d="M120,110 L144,88 L144,168 L120,190 Z" class="st"/>
+        <!-- hidden edges -->
+        <line x1="44" y1="88"  x2="44"  y2="168" class="dk"/>
+        <line x1="44" y1="168" x2="144" y2="168" class="dk"/>
+        <line x1="44" y1="168" x2="20"  y2="190" class="dk"/>
+        <!-- roof front triangle -->
+        <path d="M20,110 L70,62 L120,110 Z" class="sy"/>
+        <!-- roof back edges dashed -->
+        <line x1="44" y1="88" x2="94"  y2="40" class="dky"/>
+        <line x1="94" y1="40" x2="144" y2="88" class="dky"/>
+        <!-- roof left + right faces -->
+        <path d="M20,110 L70,62 L94,40 L44,88 Z" class="sy"/>
+        <path d="M120,110 L70,62 L94,40 L144,88 Z" class="sy"/>
+        <!-- ridge -->
+        <line x1="70" y1="62" x2="94" y2="40" stroke="#ffffff" stroke-width="1.8"/>
+        <text x="82" y="212" class="lbl" text-anchor="middle">Cube +</text>
+        <text x="82" y="229" class="lbl" text-anchor="middle">Triangular Prism</text>
+    </g>
+
+    <!-- ══ SILO ══ -->
+    <g transform="translate(235,30)">
+        <text x="70" y="0" class="ttl" text-anchor="middle">Silo</text>
+        <!-- cylinder sides -->
+        <line x1="30" y1="105" x2="30" y2="200" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="110" y1="105" x2="110" y2="200" stroke="#ffffff" stroke-width="1.8"/>
+        <!-- cylinder bottom front arc -->
+        <path d="M30,200 A40,12 0 0 0 110,200" fill="rgba(0,255,204,0.12)" stroke="#ffffff" stroke-width="1.8"/>
+        <!-- cylinder bottom back arc dashed -->
+        <path d="M30,200 A40,12 0 0 1 110,200" class="dk"/>
+        <!-- cylinder body fill -->
+        <rect x="30" y="105" width="80" height="95" fill="rgba(0,255,204,0.12)" stroke="none"/>
+        <!-- cylinder top ellipse -->
+        <ellipse cx="70" cy="105" rx="40" ry="12" fill="rgba(0,255,204,0.12)" stroke="#ffffff" stroke-width="1.8"/>
+        <!-- cylinder top back arc dashed -->
+        <path d="M30,105 A40,12 0 0 0 110,105" class="dk"/>
+        <!-- cone sides -->
+        <line x1="30" y1="105" x2="70" y2="50" stroke="#ffcc00" stroke-width="1.8"/>
+        <line x1="110" y1="105" x2="70" y2="50" stroke="#ffcc00" stroke-width="1.8"/>
+        <!-- cone base ellipse -->
+        <ellipse cx="70" cy="105" rx="40" ry="12" fill="rgba(255,204,0,0.15)" stroke="#ffcc00" stroke-width="1.8"/>
+        <text x="70" y="228" class="lbl" text-anchor="middle">Cylinder +</text>
+        <text x="70" y="245" class="lbl" text-anchor="middle">Cone</text>
+    </g>
+
+    <!-- ══ CAPSULE ══ -->
+    <!-- pill shape lying flat: cylinder body + left dome + right dome -->
+    <g transform="translate(420,80)">
+        <text x="100" y="-55" class="ttl" text-anchor="middle">Capsule</text>
+
+        <!-- cylinder top edge -->
+        <line x1="50" y1="30" x2="150" y2="30" stroke="#ffffff" stroke-width="1.8"/>
+        <!-- cylinder bottom edge -->
+        <line x1="50" y1="90" x2="150" y2="90" stroke="#ffffff" stroke-width="1.8"/>
+        <!-- cylinder body fill -->
+        <rect x="50" y="30" width="100" height="60" fill="rgba(0,255,204,0.12)" stroke="none"/>
+        <!-- cylinder top back line dashed -->
+        <line x1="50" y1="30" x2="150" y2="30" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+        <!-- left hemisphere (dome curving left) -->
+        <path d="M50,30 A30,30 0 0 0 50,90" fill="rgba(255,204,0,0.15)" stroke="#ffcc00" stroke-width="1.8"/>
+        <!-- left hemisphere back arc dashed -->
+        <path d="M50,30 A10,30 0 0 1 50,90" class="dky"/>
+
+        <!-- right hemisphere (dome curving right) -->
+        <path d="M150,30 A30,30 0 0 1 150,90" fill="rgba(255,204,0,0.15)" stroke="#ffcc00" stroke-width="1.8"/>
+        <!-- right hemisphere back arc dashed -->
+        <path d="M150,30 A10,30 0 0 0 150,90" class="dky"/>
+
+        <!-- dividing line between cylinder and hemispheres -->
+        <line x1="50"  y1="30" x2="50"  y2="90" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4,3"/>
+        <line x1="150" y1="30" x2="150" y2="90" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+        <text x="100" y="132" class="lbl" text-anchor="middle">Cylinder +</text>
+        <text x="100" y="149" class="lbl" text-anchor="middle">2 Hemispheres</text>
+    </g>
+</svg>

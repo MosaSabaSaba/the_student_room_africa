@@ -1,0 +1,17 @@
+<svg  style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="180" viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="arrow4" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#ff8888"/>
+        </marker>
+    </defs>
+    <ellipse cx="50" cy="90" rx="35" ry="70" fill="rgba(255, 68, 68, 0.1)" stroke="#ff8888" stroke-width="2"/>
+    <ellipse cx="200" cy="90" rx="35" ry="70" fill="rgba(255, 68, 68, 0.1)" stroke="#ff8888" stroke-width="2"/>
+    <text x="45" y="60" fill="#ffffff" font-size="14" text-anchor="middle">X</text>
+    <text x="45" y="130" fill="#ffffff" font-size="14" text-anchor="middle">Y</text>
+    <text x="195" y="60" fill="#ffffff" font-size="14" text-anchor="middle">1</text>
+    <text x="195" y="130" fill="#ffffff" font-size="14" text-anchor="middle">2</text>
+    <line x1="75" y1="60" x2="175" y2="60" stroke="#ff8888" stroke-width="2" marker-end="url(#arrow4)"/>
+    <line x1="75" y1="65" x2="175" y2="120" stroke="#ff8888" stroke-width="2" marker-end="url(#arrow4)"/>
+    <line x1="75" y1="125" x2="175" y2="70" stroke="#ff8888" stroke-width="2" marker-end="url(#arrow4)"/>
+    <line x1="75" y1="130" x2="175" y2="130" stroke="#ff8888" stroke-width="2" marker-end="url(#arrow4)"/>
+</svg>

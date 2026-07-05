@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" style="display: inline-block; font-family: 'Inter', system-ui, sans-serif;">           
+    <!-- Hidden Back Edges (Dashed) -->
+    <line x1="40" y1="170" x2="120" y2="130" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4,4" fill="none" /> <!-- A to B -->
+    <line x1="120" y1="130" x2="260" y2="130" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4,4" fill="none" /> <!-- B to C -->
+    <line x1="120" y1="130" x2="120" y2="60" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4,4" fill="none" />  <!-- B to E -->
+
+    <!-- Internal Base Diagonal BF (Dashed construction line) -->
+    <line x1="120" y1="130" x2="180" y2="170" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4,4" fill="none" />
+
+    <!-- Internal Space Diagonal BG (Dashed construction line) -->
+    <line x1="120" y1="130" x2="180" y2="100" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,4" fill="none" />
+
+    <!-- Visible Outer Edges (Solid) -->
+    <!-- Front Face -->
+    <rect x="40" y="100" width="140" height="70" stroke="#ffffff" stroke-width="2" fill="none" />
+    
+    <!-- Back Face Outlines -->
+    <line x1="260" y1="130" x2="260" y2="60" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- C to D -->
+    <line x1="120" y1="60" x2="260" y2="60" stroke="#ffffff" stroke-width="2" fill="none" />  <!-- E to D -->
+    <!-- Depth Connecting Lines -->
+    <line x1="180" y1="170" x2="260" y2="130" stroke="#ffffff" stroke-width="2" fill="none" /> <!-- F to C -->
+    <line x1="180" y1="100" x2="260" y2="60" stroke="#ffffff" stroke-width="2" fill="none" />  <!-- G to D -->
+    <line x1="40" y1="100" x2="120" y2="60" stroke="#ffffff" stroke-width="2" fill="none" />   <!-- H to E -->
+    <!-- Right Angle Marker in the internal triangle ABF -->
+    <path d="M 120,120 L 128,124 L 128,134" stroke="#ffffff" stroke-width="1" fill="none" />
+
+    <!-- Angle Arc for Target Angle Theta (θ) -->
+    <path d="M 162,166 C 160,161 163,155 168,154" stroke="#ffffff" stroke-width="1.2" fill="none" />
+
+    <!-- Dimension Labels -->
+    <text x="110" y="185" font-family="Times New Roman, serif" font-size="13" fill="#ffffff" text-anchor="middle">8 cm</text>
+    <text x="228" y="152" font-family="Times New Roman, serif" font-size="13" fill="#ffffff" text-anchor="middle">6 cm</text>
+    <text x="192" y="140" font-family="Times New Roman, serif" font-size="13" fill="#ffffff">5 cm</text>
+    <text x="150" y="160" font-family="Times New Roman, serif" font-size="14" fill="#ffffff">θ</text>
+    
+    <!-- All 8 Corner Labels for Exam Precision -->
+    <text x="28" y="180" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">A</text>
+    <text x="110" y="132" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">B</text>
+    <text x="268" y="140" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">C</text>
+    <text x="268" y="58" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">D</text>
+    <text x="115" y="54" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">E</text>
+    <text x="188" y="182" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">F</text>
+    <text x="174" y="94" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">G</text>
+    <text x="28" y="96" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="#ffffff">H</text>
+</svg>

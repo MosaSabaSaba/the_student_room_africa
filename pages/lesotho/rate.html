@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rates of Change - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "LGCSE Mathematics: Rates of Change Complete Guide",
+            "description": "Comprehensive guide for LGCSE learners covering direct proportion, inverse proportion, scales and maps, speed as a rate, cost and consumption graphs, distance-time graphs, speed-time graphs, area under graphs, and solving rate problems with worked examples.",
+            "educationalLevel": "Secondary School (LGCSE)",
+            "keywords": "rates of change, direct proportion, inverse proportion, scales and maps, speed, distance-time graphs, speed-time graphs, area under graph, constant of proportionality, LGCSE mathematics",
+            "about": {
+                "@type": "Thing",
+                "name": "Rates and Proportional Reasoning"
+            },
+            "teaches": "How to identify and solve direct and inverse proportion problems; use map scales to calculate actual distances; calculate speed, distance and time; interpret distance-time graphs (gradient = speed); interpret speed-time graphs (gradient = acceleration, area = distance); find total cost from consumption graphs; solve real-world rate problems",
+            "inLanguage": "en",
+            "audience": {
+                "@type": "Audience",
+                "name": "LGCSE Mathematics students in Lesotho"
+            },
+            "learningResourceType": "Study Guide",
+            "timeRequired": "PT90M",
+            "copyrightHolder": {
+                "@type": "Organization",
+                "name": "Student Room Africa"
+            }
+        }
+    </script>
+
+    <style>
+        .responsive-svg-container {
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Rates Of Change</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li class="active"><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+            
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="rates">
+            <h1 id="rates">Rates of Change</h1>
+            
+            <p>
+                A <strong>rate</strong> is a comparison of two quantities that have different units. 
+                It tells us how one quantity changes in relation to another. For example, 
+                <strong>speed</strong> is a rate that compares distance to time (kilometres per hour).
+            </p>
+
+            <p>
+                <strong>Before You Begin:</strong> Make sure you have reviewed our 
+                <a href="../lesotho/ratios-and-percentages.html">Ratios and Percentages</a> page. 
+                Rates are closely related to ratios. A ratio compares two quantities with the same units 
+                (e.g., boys to girls), while a rate compares two quantities with different units 
+                (e.g., kilometres per hour).
+            </p>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#rates">Rates of Change</a></li>
+                    <li><a href="#direct-proportion">Direct Proportion</a></li>
+                    <li><a href="#inverse-proportion">Inverse Proportion</a></li>
+                    <li><a href="#scales-and-maps">Scales and Maps</a></li>
+                    <li><a href="#speed-as-a-rate">Speed as a Rate</a></li>
+                    <li><a href="#interest-rates">Interest Rates</a></li>
+                    <li><a href="#cost-and-consumption-graphs">Cost and Consumption Graphs</a></li>
+                    <li><a href="#distance-time-graphs">Distance Time Graphs</a></li>
+                    <li><a href="#speed-time-graphs">Speed Time Graphs</a></li>
+                    <li><a href="#area-under-graphs">Area Under Graphs</a></li>
+                    <li><a href="#solving-rate-problems">Solving Rate Problems</a></li>
+                    <li><a href="#summary-table">Summary Table</a></li>
+                </ul>
+            </div>
+
+            <!-- DIRECT PROPORTION -->
+            <div class="direct-proportion">
+                <h2 id="direct-proportion">Direct Proportion</h2>
+                
+                <p>
+                    When two quantities are in <strong>direct proportion</strong>, they increase or decrease 
+                    at the same rate. If one quantity doubles, the other doubles. If one quantity halves, 
+                    the other halves. The ratio between the two quantities stays constant.
+                </p>
+
+                <p><strong>Examples of direct proportion:</strong></p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>The more hours you work, the more money you earn (at a fixed hourly rate).</li>
+                    <li>The more packets of sweets you buy, the more you pay (at a fixed price per packet).</li>
+                    <li>The longer the distance you travel, the more time it takes (at a fixed speed).</li>
+                </ul>
+
+                <h3 style="color: #00ffcc;">Direct Proportion Formula</h3>
+                
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>y = k × x</strong>
+                </p>
+
+                <p>Where:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>y</strong> and <strong>x</strong> are the two quantities</li>
+                    <li><strong>k</strong> is the constant of proportionality (the rate)</li>
+                </ul>
+
+                <h3 style="color: #00ffcc;">Example 1: Direct Proportion (Cost of Items)</h3>
+
+                <p>If 5 packets of sweets cost M30, how much will 8 packets cost?</p>
+
+                <p><strong>Step 1:</strong> Find the cost of one packet (the rate).</p>
+                <p style="padding-left: 20px;">
+                    Cost per packet = M30 ÷ 5 = M6 per packet
+                </p>
+
+                <p><strong>Step 2:</strong> Multiply by the number of packets.</p>
+                <p style="padding-left: 20px;">
+                    Cost of 8 packets = 8 × M6 = M48
+                </p>
+
+                <p><strong>Answer: 8 packets cost M48.</strong></p>
+
+                <h3 style="color: #00ffcc;">Example 2: Direct Proportion (Distance and Time)</h3>
+
+                <p>A car travels at a constant speed. It covers 120 km in 2 hours. How far will it travel in 5 hours?</p>
+
+                <p><strong>Step 1:</strong> Find the speed (the rate).</p>
+                <p style="padding-left: 20px;">
+                    Speed = 120 km ÷ 2 hours = 60 km/h
+                </p>
+
+                <p><strong>Step 2:</strong> Multiply by the new time.</p>
+                <p style="padding-left: 20px;">
+                    Distance = 60 km/h × 5 hours = 300 km
+                </p>
+
+                <p><strong>Answer: The car will travel 300 km in 5 hours.</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule:</strong> In direct proportion, the ratio y : x is constant. As one quantity increases, the other increases by the same factor.</p>
+                </div>
+            </div>
+
+            <!-- INVERSE PROPORTION -->
+            <div class="inverse-proportion">
+                <h2 id="inverse-proportion">Inverse Proportion</h2>
+                
+                <p>
+                    When two quantities are in <strong>inverse proportion</strong>, one quantity increases 
+                    while the other decreases at the same rate. If one quantity doubles, the other halves. 
+                    The product of the two quantities stays constant.
+                </p>
+
+                <p><strong>Examples of inverse proportion:</strong></p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>The more workers you have, the less time it takes to complete a job.</li>
+                    <li>The faster you drive, the less time it takes to reach your destination.</li>
+                    <li>The more people sharing a pizza, the smaller each person's slice.</li>
+                </ul>
+
+                <h3 style="color: #00ffcc;">Inverse Proportion Formula</h3>
+                
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>y = k ÷ x</strong>
+                </p>
+
+                <p>Where:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>y</strong> and <strong>x</strong> are the two quantities</li>
+                    <li><strong>k</strong> is the constant of proportionality</li>
+                </ul>
+
+                <h3 style="color: #00ffcc;">Example 3: Inverse Proportion (Work and Time)</h3>
+
+                <p>It takes 4 workers 6 hours to paint a house. How long will it take 8 workers?</p>
+
+                <p><strong>Step 1:</strong> Find the total work in worker-hours (the constant).</p>
+                <p style="padding-left: 20px;">
+                    Total work = 4 workers × 6 hours = 24 worker-hours
+                </p>
+
+                <p><strong>Step 2:</strong> Divide by the new number of workers.</p>
+                <p style="padding-left: 20px;">
+                    Time with 8 workers = 24 ÷ 8 = 3 hours
+                </p>
+
+                <p><strong>Answer: It will take 8 workers 3 hours.</strong></p>
+
+                <h3 style="color: #00ffcc;">Example 4: Inverse Proportion (Speed and Time)</h3>
+
+                <p>A car travels a fixed distance. At 60 km/h, the journey takes 4 hours. How long will it take at 80 km/h?</p>
+
+                <p><strong>Step 1:</strong> Find the total distance (the constant).</p>
+                <p style="padding-left: 20px;">
+                    Distance = Speed × Time = 60 km/h × 4 hours = 240 km
+                </p>
+
+                <p><strong>Step 2:</strong> Divide by the new speed.</p>
+                <p style="padding-left: 20px;">
+                    Time = 240 km ÷ 80 km/h = 3 hours
+                </p>
+
+                <p><strong>Answer: The journey will take 3 hours at 80 km/h.</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule:</strong> In inverse proportion, the product y × x is constant. As one quantity increases, the other decreases by the same factor.</p>
+                </div>
+            </div>
+
+            <!-- SCALES AND MAPS -->
+            <div class="scales-and-maps">
+                <h2 id="scales-and-maps">Scales and Maps</h2>
+                
+                <p>
+                    A <strong>scale</strong> is a special type of ratio that compares a distance on a map 
+                    to the actual distance on the ground. Scales are written in the form 1 : n, meaning 
+                    1 unit on the map represents n units in real life.
+                </p>
+
+                <h3 style="color: #00ffcc;">Example 5: Using a Map Scale</h3>
+
+                <p>A map has a scale of 1 : 50,000. The distance between two towns on the map is 8 cm. What is the actual distance in kilometres?</p>
+
+                <p><strong>Step 1:</strong> Understand the scale.</p>
+                <p style="padding-left: 20px;">
+                    Scale 1 : 50,000 means 1 cm on the map = 50,000 cm in real life
+                </p>
+
+                <p><strong>Step 2:</strong> Multiply the map distance by the scale factor.</p>
+                <p style="padding-left: 20px;">
+                    Actual distance in cm = 8 × 50,000 = 400,000 cm
+                </p>
+
+                <p><strong>Step 3:</strong> Convert to kilometres.</p>
+                <p style="padding-left: 20px;">
+                    400,000 cm ÷ 100,000 = 4 km
+                </p>
+
+                <p><strong>Answer: The actual distance is 4 km.</strong></p>
+
+                <h3 style="color: #00ffcc;">Example 6: Finding the Scale</h3>
+
+                <p>The actual distance between two villages is 15 km. On a map, they are 5 cm apart. Find the scale of the map.</p>
+
+                <p><strong>Step 1:</strong> Convert both distances to the same unit.</p>
+                <p style="padding-left: 20px;">
+                    15 km = 15 × 100,000 = 1,500,000 cm
+                </p>
+
+                <p><strong>Step 2:</strong> Write the ratio of map distance to actual distance.</p>
+                <p style="padding-left: 20px;">
+                    Scale = 5 : 1,500,000
+                </p>
+
+                <p><strong>Step 3:</strong> Simplify by dividing both sides by 5.</p>
+                <p style="padding-left: 20px;">
+                    Scale = 1 : 300,000
+                </p>
+
+                <p><strong>Answer: The scale of the map is 1 : 300,000.</strong></p>
+            </div>
+
+            <!-- SPEED AS A RATE -->
+            <div class="speed-as-a-rate">
+                <h2 id="speed-as-a-rate">Speed as a Rate</h2>
+                
+                <p>
+                    <strong>Speed</strong> is a rate that compares distance traveled to time taken. 
+                    It tells us how fast an object is moving. The formula for speed is:
+                </p>
+
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>Speed = Distance ÷ Time</strong>
+                </p>
+
+                <h3 style="color: #00ffcc;">Example 7: Calculating Speed</h3>
+
+                <p>A car travels 240 kilometres in 3 hours. What is its average speed?</p>
+
+                <p><strong>Step 1:</strong> Identify the quantities.</p>
+                <p style="padding-left: 20px;">
+                    Distance = 240 km<br>
+                    Time = 3 hours
+                </p>
+
+                <p><strong>Step 2:</strong> Apply the speed formula.</p>
+                <p style="padding-left: 20px;">
+                    Speed = 240 km ÷ 3 hours = 80 km/h
+                </p>
+
+                <p><strong>Answer: The car's average speed is 80 km/h.</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Related Formulas:</strong></p>
+                    <p style="margin-bottom: 0;">Distance = Speed × Time</p>
+                    <p style="margin-bottom: 0;">Time = Distance ÷ Speed</p>
+                </div>
+            </div>
+
+            <!-- INTEREST RATES -->
+            <div class="interest-rates">
+                <h2 id="interest-rates">Interest Rates</h2>
+                
+                <p>
+                    An <strong>interest rate</strong> is a percentage rate that tells you how much money 
+                    you earn on savings or pay on a loan over time. Interest rates are usually given 
+                    as a percentage per year, for example 5% per year.
+                </p>
+
+                <p>
+                    Understanding interest rates helps you compare different financial products like 
+                    bank accounts, loans, and investments. A higher interest rate means more money earned 
+                    on savings, but also more money paid on loans.
+                </p>
+
+                <h3 style="color: #00ffcc;">Example 8: Calculating Simple Interest Rate</h3>
+
+                <p>M2000 is invested for 3 years and earns M300 in simple interest. What is the annual interest rate?</p>
+
+                <p><strong>Step 1:</strong> Recall the simple interest formula.</p>
+                <p style="padding-left: 20px;">
+                    I = P × <em>r</em> × <em>t</em>
+                </p>
+
+                <p><strong>Step 2:</strong> Substitute the known values.</p>
+                <p style="padding-left: 20px;">
+                    300 = 2000 × <em>r</em> × 3
+                </p>
+
+                <p><strong>Step 3:</strong> Solve for <em>r</em>.</p>
+                <p style="padding-left: 20px;">
+                    300 = 6000 × <em>r</em><br>
+                    <em>r</em> = 300 ÷ 6000 = 0.05
+                </p>
+
+                <p><strong>Step 4:</strong> Convert to a percentage.</p>
+                <p style="padding-left: 20px;">
+                    <em>r</em> = 0.05 × 100% = 5%
+                </p>
+
+                <p><strong>Answer: The annual interest rate is 5%.</strong></p>
+
+                <h3 style="color: #00ffcc;">Example 9: Comparing Interest Rates</h3>
+
+                <p>Bank A offers 6% simple interest per year. Bank B offers 5.5% compound interest per year. 
+                Which bank gives more interest on M1000 after 3 years?</p>
+
+                <p><strong>Step 1:</strong> Calculate Bank A (simple interest).</p>
+                <p style="padding-left: 20px;">
+                    I = 1000 × 0.06 × 3 = M180<br>
+                    Total = M1180
+                </p>
+
+                <p><strong>Step 2:</strong> Calculate Bank B (compound interest).</p>
+                <p style="padding-left: 20px;">
+                    A = 1000 × (1.055)<sup>3</sup><br>
+                    A = 1000 × 1.174241 = M1174.24
+                </p>
+
+                <p><strong>Answer: Bank A gives M1180, which is more than Bank B's M1174.24.</strong></p>
+            </div>
+
+            <!-- COST AND CONSUMPTION GRAPHS -->
+            <div class="cost-and-consumption-graphs">
+                <h2 id="cost-and-consumption-graphs">Cost and Consumption Graphs</h2>
+                
+                <p>
+                    Cost and consumption graphs show the relationship between the quantity of an item 
+                    purchased (consumption) and the total cost. These graphs are usually <strong>straight lines</strong> 
+                    because the cost per unit is constant (direct proportion).
+                </p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/rate/cost-and-consumption.svg" alt="Cost And Comsumption Graph" />
+                </div>
+
+                <h3 style="color: #00ffcc;">Example 10: Interpreting a Cost Graph</h3>
+
+                <p>The graph above shows the cost of fuel at M2 per litre.</p>
+                <p><strong>Question:</strong> How much will 250 litres cost?</p>
+
+                <p><strong>Step 1:</strong> Read from the graph. At 200 litres, cost is M400. At 300 litres, cost is M600.</p>
+                <p><strong>Step 2:</strong> 250 litres is halfway between 200 and 300 litres, so cost is halfway between M400 and M600.</p>
+                <p><strong>Answer: 250 litres cost M500.</strong></p>
+            </div>
+
+            <!-- DISTANCE TIME GRAPHS -->
+            <div class="distance-time-graphs">
+                <h2 id="distance-time-graphs">Distance Time Graphs</h2>
+                
+                <p>
+                    A <strong>distance time graph</strong> shows how distance changes over time. 
+                    The <strong>gradient (slope)</strong> of a distance time graph represents <strong>speed</strong>.
+                </p>
+
+                <p><strong>Key points for distance time graphs:</strong></p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>A horizontal line means the object is stationary (not moving).</li>
+                    <li>A straight sloping line means constant speed.</li>
+                    <li>A steeper slope means a higher speed.</li>
+                    <li>A downward slope means returning to the start.</li>
+                </ul>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/rate/distance-time-graph.svg" alt="Distance Time Graphs" />
+                </div>
+
+                <h3 style="color: #00ffcc;">Example 11: Interpreting a Distance Time Graph</h3>
+
+                <p><strong>The graph shows the journey of a car.</strong></p>
+
+                <p><strong>Step 1:</strong> Calculate the speed for each segment using the formula Speed = Distance ÷ Time.</p>
+                <p style="padding-left: 20px;">
+                    Segment A (0 to 1 hour): 40 km ÷ 1 hour = 40 km/h<br>
+                    Segment B (1 to 2 hours): 0 km ÷ 1 hour = 0 km/h (stationary)<br>
+                    Segment C (2 to 3 hours): 40 km ÷ 1 hour = 40 km/h<br>
+                    Segment D (3 to 4 hours): 80 km ÷ 1 hour = 80 km/h (return journey)
+                </p>
+
+                <p><strong>Answer: The car travelled at 40 km/h, stopped for 1 hour, continued at 40 km/h, then returned at 80 km/h.</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule:</strong> The gradient of a distance time graph equals speed. A steeper gradient means higher speed. A horizontal line means stationary.</p>
+                </div>
+            </div>
+
+            <!-- SPEED TIME GRAPHS -->
+            <div class="speed-time-graphs">
+                <h2 id="speed-time-graphs">Speed Time Graphs</h2>
+                
+                <p>
+                    A <strong>speed time graph</strong> shows how speed changes over time. 
+                    The <strong>gradient (slope)</strong> of a speed time graph represents <strong>acceleration</strong>.
+                </p>
+
+                <p><strong>Key points for speed time graphs:</strong></p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>A horizontal line means constant speed (zero acceleration).</li>
+                    <li>A straight sloping line means constant acceleration or deceleration.</li>
+                    <li>A positive slope means speeding up (acceleration).</li>
+                    <li>A negative slope means slowing down (deceleration or retardation).</li>
+                </ul>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/rate/speed-time-graphs.svg" alt="Speed Time Graph" />
+                </div>
+
+                <h3 style="color: #00ffcc;">Example 12: Interpreting a Speed Time Graph</h3>
+
+                <p><strong>The graph shows the motion of a car.</strong></p>
+
+                <p><strong>Step 1:</strong> Calculate acceleration using the formula Acceleration = Change in speed ÷ Time.</p>
+                <p style="padding-left: 20px;">
+                    Segment A (0 to 10 seconds): speed changes from 0 to 40 m/s<br>
+                    Acceleration = (40 - 0) ÷ 10 = 40 ÷ 10 = 4 m/s²
+                </p>
+
+                <p><strong>Step 2:</strong> Segment B (10 to 15 seconds): speed is constant at 40 m/s.</p>
+                <p style="padding-left: 20px;">
+                    Acceleration = 0 m/s² (constant speed)
+                </p>
+
+                <p><strong>Step 3:</strong> Segment C (15 to 20 seconds): speed changes from 40 to 0 m/s.</p>
+                <p style="padding-left: 20px;">
+                    Deceleration = (0 - 40) ÷ 5 = -40 ÷ 5 = -8 m/s² (negative means slowing down)
+                </p>
+
+                <p><strong>Answer: The car accelerated at 4 m/s², travelled at constant speed for 5 seconds, then decelerated at 8 m/s².</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule:</strong> The gradient of a speed time graph equals acceleration. A positive gradient means speeding up. A negative gradient means slowing down.</p>
+                </div>
+            </div>
+
+            <!-- AREA UNDER GRAPHS -->
+            <div class="area-under-graphs">
+                <h2 id="area-under-graphs">Area Under Speed Time Graphs</h2>
+                
+                <p>
+                    The <strong>area under a speed time graph</strong> represents the <strong>distance travelled</strong>.
+                    This is because Distance = Speed × Time, and multiplying speed by time on a graph gives the area 
+                    of the shapes underneath the line.
+                </p>
+
+                <p><strong>Common shapes under speed time graphs:</strong></p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>Rectangle: Area = length × width = speed × time</li>
+                    <li>Triangle: Area = ½ × base × height = ½ × time × change in speed</li>
+                    <li>Trapezium: Area = ½ × (a + b) × height</li>
+                </ul>
+
+                <h3 style="color: #00ffcc;">Example 13: Finding Distance from Speed Time Graph</h3>
+
+                <p>Using the speed time graph from Example 12, calculate the total distance travelled.</p>
+
+                <p><strong>Step 1:</strong> Find the area of each segment.</p>
+                <p style="padding-left: 20px;">
+                    Segment A (Triangle): ½ × base × height = ½ × 10 s × 40 m/s = 200 m
+                </p>
+                <p style="padding-left: 20px;">
+                    Segment B (Rectangle): length × width = 5 s × 40 m/s = 200 m
+                </p>
+                <p style="padding-left: 20px;">
+                    Segment C (Triangle): ½ × base × height = ½ × 5 s × 40 m/s = 100 m
+                </p>
+
+                <p><strong>Step 2:</strong> Add the areas together.</p>
+                <p style="padding-left: 20px;">
+                    Total distance = 200 m + 200 m + 100 m = 500 m
+                </p>
+
+                <p><strong>Answer: The car travelled a total distance of 500 metres.</strong></p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;"><strong>Key Rule:</strong> Area under a speed time graph equals distance travelled. Split the graph into triangles and rectangles to find the area.</p>
+                </div>
+
+                <h3 style="color: #00ffcc;">Example 14: Area Under a Cost Graph</h3>
+
+                <p>The area under a cost graph can represent total cost when the graph shows cost per unit over quantity.</p>
+                <p style="padding-left: 20px;">
+                    For a constant rate of M2 per litre, the area from 0 to 250 litres is:<br>
+                    Area = length × width = 250 litres × M2 = M500 (total cost)
+                </p>
+            </div>
+
+            <!-- SOLVING RATE PROBLEMS -->
+            <div class="solving-rate-problems">
+                <h2 id="solving-rate-problems">Solving Rate Problems</h2>
+                
+                <p>
+                    Many real-life problems involve rates. The key steps are:
+                </p>
+                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li>Identify the rate given in the problem.</li>
+                    <li>Determine whether the quantities are directly or inversely proportional.</li>
+                    <li>Use the correct formula or method to find the unknown value.</li>
+                    <li>Check your units and convert if necessary.</li>
+                </ol>
+
+                <h3 style="color: #00ffcc;">Example 15: Mixed Rate Problem</h3>
+
+                <p>Water flows from a tap at a rate of 12 litres per minute. How many litres will flow in 15 minutes? How long will it take to fill a 300 litre tank?</p>
+
+                <p><strong>Part A: Find volume after 15 minutes.</strong></p>
+                <p style="padding-left: 20px;">
+                    Volume = Flow rate × Time = 12 L/min × 15 min = 180 litres
+                </p>
+
+                <p><strong>Part B: Find time to fill 300 litres.</strong></p>
+                <p style="padding-left: 20px;">
+                    Time = Volume ÷ Flow rate = 300 L ÷ 12 L/min = 25 minutes
+                </p>
+
+                <p><strong>Answer: 180 litres will flow in 15 minutes. It will take 25 minutes to fill 300 litres.</strong></p>
+            </div>
+
+            <!-- SUMMARY TABLE -->
+            <div style="overflow-x: auto; margin: 1.5rem 0;" class="summary-table">
+                <h2 id="summary-table">Summary Table: Rates and Graphs</h2>
+
+                <table style="width: 100%; border-collapse: collapse; min-width: 700px;">
+                    <thead>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Graph Type</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">X Axis</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Y Axis</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Gradient Represents</th>
+                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Area Represents</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Distance Time</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Time</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Distance</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Speed</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Not usually used</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Speed Time</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Time</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Speed</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Acceleration</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Distance</td>
+                        </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Cost Consumption</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Quantity</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Cost</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Cost per unit</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Total cost</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1.5rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                <p style="margin-bottom: 0;"><strong>Key Takeaways:</strong></p>
+                <p style="margin-bottom: 0;">• Direct proportion: both quantities increase together. The ratio stays constant.</p>
+                <p style="margin-bottom: 0;">• Inverse proportion: one quantity increases while the other decreases. The product stays constant.</p>
+                <p style="margin-bottom: 0;">• A scale is a ratio that compares map distance to actual distance.</p>
+                <p style="margin-bottom: 0;">• Speed = Distance ÷ Time. Gradient of distance time graph = speed.</p>
+                <p style="margin-bottom: 0;">• Acceleration = Change in speed ÷ Time. Gradient of speed time graph = acceleration.</p>
+                <p style="margin-bottom: 0;">• Area under a speed time graph = distance travelled.</p>
+                <p style="margin-bottom: 0;">• Always check your units and convert when necessary.</p>
+            </div>
+
+            <p>
+                <strong>NB:</strong> Rates are everywhere in real life. Understanding direct and inverse proportion, 
+                distance time graphs, and speed time graphs will help you solve many practical problems. 
+                The gradient of a graph tells you how quickly something is changing, and the area under a 
+                graph tells you the total amount accumulated.
+            </p>
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#rates">Rates of Change</a></li>
+            <li><a href="#direct-proportion">Direct Proportion</a></li>
+            <li><a href="#inverse-proportion">Inverse Proportion</a></li>
+            <li><a href="#scales-and-maps">Scales and Maps</a></li>
+            <li><a href="#speed-as-a-rate">Speed as a Rate</a></li>
+            <li><a href="#interest-rates">Interest Rates</a></li>
+            <li><a href="#cost-and-consumption-graphs">Cost and Consumption Graphs</a></li>
+            <li><a href="#distance-time-graphs">Distance Time Graphs</a></li>
+            <li><a href="#speed-time-graphs">Speed Time Graphs</a></li>
+            <li><a href="#area-under-graphs">Area Under Graphs</a></li>
+            <li><a href="#solving-rate-problems">Solving Rate Problems</a></li>
+            <li><a href="#summary-table">Summary Table</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

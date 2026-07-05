@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Question Bank | Rates of Change | Extended LGCSE Mathematics Paper 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/contentStyles.css" />
+    <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../assets/css/question-bank.css" />
+
+    
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        <a href="../../../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="../../conversions.html">Study Guide</a>
+            <a href="../../tracker.html">Revision Tracker</a>
+            <a href="../../tracker.html#past-papers">Past Papers</a>
+            <a href="../../questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="#">Lesotho</a><span class="bc-sep">›</span>
+            <a href="../../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../question-bank.html">Question Bank</a><span class="bc-sep">›</span>
+            <a href="extended.html">Extended</a><span class="bc-sep">›</span>
+            <span>Rates of Change</span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="page-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar" id="leftSidebar">
+            <div class="filter-wrap">
+                <span class="filter-icon">🔍</span>
+                <input class="filter-input" type="text" placeholder="Filter topics..." />
+            </div>
+
+            <ul class="sidebar-nav" id="topicNav">
+                <li><a href="basic-operations.html">Basic Operations</a></li>
+                <li><a href="number.html">Number</a></li>
+                <li><a href="estimation.html">Estimation and Limits of Accuracy</a></li>
+                <li><a href="indices.html">Indices and Standard Form</a></li>
+                <li><a href="algebra.html">Algebraic Representation and Manipulation</a></li>
+                <li><a href="linear-equations.html">Linear and Simultaneous Equations</a></li>
+                <li><a href="quadratic-expressions.html">Quadratic Expressions And Equations</a></li>
+                <li><a href="sets.html">Set Language and Notation</a></li>
+                <li><a href="angles.html">Angles</a></li>
+                <li><a href="trigonometry.html">Trigonometry</a></li>
+                <li><a href="constructions.html">Geometrical Constructions and Loci</a></li>
+                <li><a href="bearings.html">Bearings</a></li>
+                <li><a href="geometry.html">Geometrical Terms and Relationships</a></li>
+                <li><a href="ratio.html">Ratio, Proportion, Rates and Percentages</a></li>
+                <li><a href="mensuration.html">Mensuration</a></li>
+                <li><a href="functions.html">Relations and Function Notation</a></li>
+                <li><a href="inequalities.html">Inequalities and Linear Programming</a></li>
+                <li><a href="statistics.html">Statistics and Probability</a></li>
+                <li><a href="matrices.html">Matrices</a></li>
+                <li><a href="finance.html">Personal and Household Finance</a></li>
+                <li><a href="area-and-perimeter.html">Area and Perimeter</a></li>
+                <li class="active"><a href="rates.html">Rates of Change</a></li>
+                <li><a href="similarity-and-congruence.html">Similarity and Congruence</a></li>
+                <li><a href="sequences.html">Sequences</a></li>
+                <li><a href="linear-equations-and-graphs.html">Linear Equations and Graphs</a></li>
+                <li><a href="transformation.html">Transformations</a></li>
+                <li><a href="symmetry.html">Symmetry</a></li>
+                <li><a href="vectors.html">Vectors</a></li>
+                <li><a href="proportion.html">Proportion</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="mainContent">
+
+            <h1>LGCSE Mathematics Question Bank</h1>
+            <p style="color: #aaa; margin-bottom: 2rem; font-size: 0.95rem;">
+                Practice questions from past ECoL examination papers, organized by topic.
+            </p>
+
+            <div class="question-paper">
+
+                <!-- ============================================================ -->
+                <!-- 24. RATES -->
+                <!-- ============================================================ -->
+                <section class="topic-section" id="rates">
+                    <h2 class="paper-heading">Rates</h2>
+
+                    <!-- Question 1 -->
+                    <div class="question-block">
+                        <div class="question-number">1.</div>
+                        <div class="question-text">
+                            Tsela flew by plane from Lesotho to Nigeria.
+                            <br>
+                            The flight time was 6 hours 42 minutes.
+                            <br>
+                            The flight leaves Lesotho at 8.27 pm on Monday.
+                            <br>
+                            (a) On what day, and at which time does the plane arrive in Nigeria.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">Day: ......................... Time: .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) The average speed of the plane is 650 kilometres per hour.
+                            <br>
+                            Calculate the distance the plane flew.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">km</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) The return journey took 30 minutes less.
+                            <br>
+                            Find the average speed of the plane for the return journey.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">km/h</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question-block">
+                        <div class="question-number">2.</div>
+                        <div class="question-text">
+                            The table shows arrival time, lunch time, and departure time 
+                            
+                            for three employees Chale, Mpata and Nko.
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 600px; margin: 1rem 0; font-size: 0.9rem; color: #ddd; border: 1px solid #3a3530;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid #3a3530;">
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">EMPLOYEE</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">ARRIVAL TIME</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">LUNCH TIME</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">DEPARTURE TIME</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">Chale</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">08 00 hrs</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">12 30 hrs – 13 30 hrs</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">16 45 hrs</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">Mpata</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">10 05 hrs</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">13 15 hrs – 14 00 hrs</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">17 05 hrs</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">Nko</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">07 30 hrs</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">12 05 hrs – 13 05 hrs</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">17 20 hrs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <br>
+                            (a) Write Nko's time in 12 hour clock.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Another employee, Thipa, takes 3 hours 5 minutes at work before lunch.
+                            <br>
+                            Between Thipa and Mpata, who spends the longest time at work before lunch?
+                            <br>
+                            Support your answer.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) One day Mpata took his lunch outside the workplace.
+                            <br>
+                            Calculate the time, in hours and minutes, that Mpata spent at work on this day.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">......................... hours, ......................... minutes</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (d) The distance, d km, between Chale's home and work is 120 km, correct to the nearest 10 km.
+                            <br>
+                            (i) Complete the statement for d km.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">......................... &le; d &le; .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) One day after work Chale reached home at 18 25 hrs.
+                            <br>
+                            Calculate the upper bound to his average speed in this journey.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">km/h</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question-block">
+                        <div class="question-number">3.</div>
+                        <div class="question-text">
+                            The diagram shows the positions of three places; Home (H), School (S) and Union hall (U).
+                            <br>
+                            HS = 230 km, HU = 157 km and angle SHU = 46°.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q3-triangle.png" alt="Triangle with Home, School and Union hall" /> -->
+                            
+                                <svg xmlns="http://w3.org" viewBox="0 0 450 220" width="450" height="220">
+                                    <style>
+                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-dasharray: 4,4; }
+                                        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+                                        .value-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+                                        .angle-text { font-family: Arial, sans-serif; font-size: 11px; fill: #ffffff; }
+                                    </style>
+
+                                    <!-- Definitions for Arrowheads -->
+                                    <defs>
+                                    <marker id="north-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                                        <g transform="rotate(90 5 5)">
+                                            <path d="M 0 8 L 5 2 L 10 8 L 5 6 z" fill="#ffffff" stroke="none" />
+                                        </g>
+                                    </marker>
+                                </defs>
+
+                                    <!-- Triangle Sides -->
+                                    <!-- Side HS -->
+                                    <line x1="45" y1="45" x2="320" y2="80" class="geometry-line" />
+                                    
+                                    <!-- Side HU -->
+                                    <line x1="45" y1="45" x2="95" y2="180" class="geometry-line" />
+                                    
+                                    <!-- Side US (Dashed) -->
+                                    <line x1="95" y1="180" x2="320" y2="80" class="dashed-line" />
+
+                                    <!-- North Indicator Line at S -->
+                                    <line x1="320" y1="80" x2="320" y2="35" class="geometry-line" marker-end="url(#north-arrow)" />
+
+                                    <!-- Angle Arc at H -->
+                                    <path d="M 65 48 A 22 22 0 0 1 53 65" class="geometry-line" stroke-width="1" />
+
+                                    <!-- Vertex Labels -->
+                                    <text x="25" y="45" class="label-text">H</text>
+                                    <text x="330" y="85" class="label-text">S</text>
+                                    <text x="90" y="198" class="label-text">U</text>
+
+                                    <!-- Technical / Measurement Labels -->
+                                    <text x="64" y="60" class="angle-text">46°</text>
+                                    <text x="170" y="55" class="value-text">230 km</text>
+                                    <text x="32" y="125" class="value-text" transform="rotate(70, 32, 125)">157 km</text>
+                                    <text x="305" y="25" class="label-text">North</text>
+                                    
+                                    <!-- Notice Text -->
+                                    <text x="370" y="30" class="label-text">NOT TO</text>
+                                    <text x="370" y="46" class="label-text">SCALE</text>
+                                </svg>
+
+                            </div>
+                            (a) Show that the distance US is approximately 165 km.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">km</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Calculate the shortest distance from Union hall (U) to the road HS.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">km</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) Ts'itso leaves School at 1645hrs and travels at an average speed of 50 km/h.
+                            <br>
+                            Calculate the time he arrives at Home.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">hrs</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question-block">
+                        <div class="question-number">4.</div>
+                        <div class="question-text">
+                            A firm produces door frames and window frames.
+                            <br>
+                            For one order the firm has 100 hours available to assemble the frames and 150 hours available to polish them.
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 600px; margin: 1rem 0; font-size: 0.9rem; color: #ddd; border: 1px solid #3a3530;">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;"></th>
+                                        <th colspan="2" style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">Time in hours to produce one unit</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;"></th>
+                                    </tr>
+                                    <tr style="border-bottom: 2px solid #3a3530;">
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">Door frames</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">Window frames</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">Time available (h)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530; font-weight: 600; text-align: left;">Assembling</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">1</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">4</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">100</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530; font-weight: 600; text-align: left;">Polishing</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">3</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">2</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">150</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            Let d be the number of door frames produced and w be the number of window frames produced.
+                            <br><br>
+                            (a) Write an expression, in terms of d and w, for the total number of hours needed to assemble the door frames and window frames.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Two inequalities that represent the information in the table are:
+                            <br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>3</mn>
+                                <mi>d</mi>
+                                <mo>+</mo>
+                                <mn>2</mn>
+                                <mi>w</mi>
+                                <mo>&le;</mo>
+                                <mn>150</mn>
+                            </math>
+                            and 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>w</mi>
+                                <mo>&ge;</mo>
+                                <mn>0</mn>
+                            </math>.
+                            <br>
+                            Write the other two inequalities.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) On the grid provided, show the information from part (b) by drawing 4 straight lines and shading the region that is not required.
+                        
+                            <div class="question-image">
+                                <svg xmlns="http://w3.org" viewBox="0 0 520 460" width="520" height="460">
+                                    <style>
+                                        .axis-line { stroke: #ffffff; stroke-width: 2; fill: none; }
+                                        .grid-major { stroke: rgba(255, 255, 255, 0.5); stroke-width: 0.8; fill: none; }
+                                        .grid-minor { stroke: rgba(255, 255, 255, 0.18); stroke-width: 0.4; fill: none; }
+                                        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+                                        .axis-title { font-family: Arial, sans-serif; font-size: 14px; fill: #ffffff; }
+                                        .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 15px; font-weight: bold; fill: #ffffff; }
+                                    </style>
+
+                                    <!-- Definitions for Axis Arrowheads -->
+                                    <defs>
+                                        <marker id="axis-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                            <path d="M 0 1.5 L 7 5 L 0 8.5 z" fill="#ffffff" stroke="none" />
+                                        </marker>
+                                        
+                                        <!-- Reusable 20x20 unit grid cell with 10 subdivisions (each small square is 2 units / 5px) -->
+                                        <pattern id="grid-pattern" width="50" height="50" patternUnits="userSpaceOnUse" x="80" y="40">
+                                            <!-- 9 internal minor lines for 10 subdivisions horizontally -->
+                                            <path d="M 5 0 v 50 M 10 0 v 50 M 15 0 v 50 M 20 0 v 50 M 25 0 v 50 M 30 0 v 50 M 35 0 v 50 M 40 0 v 50 M 45 0 v 50" class="grid-minor" />
+                                            <!-- 9 internal minor lines for 10 subdivisions vertically -->
+                                            <path d="M 0 5 h 50 M 0 10 h 50 M 0 15 h 50 M 0 20 h 50 M 0 25 h 50 M 0 30 h 50 M 0 35 h 50 M 0 40 h 50 M 0 45 h 50" class="grid-minor" />
+                                            <!-- Major outer boundaries -->
+                                            <path d="M 50 0 v 50 M 0 50 h 50" class="grid-major" />
+                                        </pattern>
+                                    </defs>
+
+                                    <!-- Background Grid Area (350px by 350px, spanning 0 to 140 units) -->
+                                    <rect x="80" y="40" width="350" height="350" fill="url(#grid-pattern)" stroke="rgba(255, 255, 255, 0.5)" stroke-width="0.8" />
+
+                                    <!-- Main Coordinate Axes -->
+                                    <!-- X-Axis -->
+                                    <line x1="80" y1="390" x2="465" y2="390" class="axis-line" marker-end="url(#axis-arrow)" />
+                                    <!-- Y-Axis -->
+                                    <line x1="80" y1="390" x2="80" y2="15" class="axis-line" marker-end="url(#axis-arrow)" />
+
+                                    <!-- X-Axis Tick Labels -->
+                                    <text x="75" y="408" class="label-text" text-anchor="middle">0</text>
+                                    <text x="130" y="408" class="label-text" text-anchor="middle">20</text>
+                                    <text x="180" y="408" class="label-text" text-anchor="middle">40</text>
+                                    <text x="230" y="408" class="label-text" text-anchor="middle">60</text>
+                                    <text x="280" y="408" class="label-text" text-anchor="middle">80</text>
+                                    <text x="330" y="408" class="label-text" text-anchor="middle">100</text>
+                                    <text x="380" y="408" class="label-text" text-anchor="middle">120</text>
+                                    <text x="430" y="408" class="label-text" text-anchor="middle">140</text>
+
+                                    <!-- Y-Axis Tick Labels -->
+                                    <text x="70" y="344" class="label-text" text-anchor="end">20</text>
+                                    <text x="70" y="294" class="label-text" text-anchor="end">40</text>
+                                    <text x="70" y="244" class="label-text" text-anchor="end">60</text>
+                                    <text x="70" y="194" class="label-text" text-anchor="end">80</text>
+                                    <text x="70" y="144" class="label-text" text-anchor="end">100</text>
+                                    <text x="70" y="94" class="label-text" text-anchor="end">120</text>
+                                    <text x="70" y="44" class="label-text" text-anchor="end">140</text>
+
+                                    <!-- Unit & Variable Labels near Arrowheads -->
+                                    <!-- X-Axis Arrow Labels -->
+                                    <text x="470" y="383" class="label-text">hrs</text>
+                                    <text x="473" y="405" class="variable-text">d</text>
+                                    
+                                    <!-- Y-Axis Arrow Labels -->
+                                    <text x="80" y="10" class="label-text" text-anchor="middle">hrs</text>
+                                    <text x="68" y="26" class="variable-text">w</text>
+
+                                    <!-- Full Axis Descriptive Titles -->
+                                    <!-- Bottom Title -->
+                                    <text x="255" y="435" class="axis-title" text-anchor="middle">making door frames (hrs)</text>
+                                    <!-- Left Title (Rotated) -->
+                                    <text x="30" y="215" class="axis-title" text-anchor="middle" transform="rotate(-90, 30, 215)">making window frames (hrs)</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">See diagram</span> <span class="marks">[4]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (d) Given that the firm makes a profit, P in Maloti, where 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>P</mi>
+                                <mo>=</mo>
+                                <mn>500</mn>
+                                <mi>d</mi>
+                                <mo>+</mo>
+                                <mn>700</mn>
+                                <mi>w</mi>
+                            </math>, 
+                            use your graph to find the maximum profit the firm can make.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">M .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="question-block">
+                        <div class="question-number">5.</div>
+                        <div class="question-text">
+                            Three students, Atang, Bene and Chabeli, train daily for 
+                            one week for a marathon race.
+                            <br>
+                            The table shows the average running and cycling speeds of 
+                            the students during training.
+
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 600px; margin: 1rem 0; font-size: 0.9rem; color: #ddd; border: 1px solid #3a3530;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid #3a3530;">
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">Student</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">Running (km/h)</th>
+                                        <th style="padding: 6px 10px; font-weight: 600; color: #ffcf8a; border: 1px solid #3a3530;">Cycling (km/h)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">Atang</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">2.5</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">Bene</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">3</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">2.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">Chabeli</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">3.8</td>
+                                        <td style="padding: 6px 10px; border: 1px solid #3a3530;">3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            Each student, runs for 1 hour and cycles for 1 hour in total during weekdays, and runs for 3
+                            hours and cycles for 2 hours in total during weekends.
+
+                            <br><br>
+                            (a) Write the training speed in a matrix form.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">
+                                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <mrow>
+                                            <mo>(</mo>
+                                            <mtable>
+                                                <mtr><mtd>&nbsp;</mtd><mtd>&nbsp;</mtd></mtr>
+                                                <mtr><mtd>&nbsp;</mtd><mtd>&nbsp;</mtd></mtr>
+                                                <mtr><mtd>&nbsp;</mtd><mtd>&nbsp;</mtd></mtr>
+                                            </mtable>
+                                            <mo>)</mo>
+                                        </mrow>
+                                    </math>
+                                </span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) The total time training is represented by the matrix 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>B</mi>
+                                <mo>=</mo>
+                                <mrow>
+                                    <mo>(</mo>
+                                    <mtable>
+                                        <mtr><mtd>1</mtd><mtd>3</mtd></mtr>
+                                        <mtr><mtd>1</mtd><mtd>2</mtd></mtr>
+                                    </mtable>
+                                    <mo>)</mo>
+                                </mrow>
+                            </math>.
+                            <br>
+                            (i) Work out AB.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Explain what AB represents.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (iii) Find the total distance travelled in training by each student during the week.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">Atang ......................... km</span></span>
+                            </div>
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">Bene ......................... km</span></span>
+                            </div>
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">Chabeli ......................... km</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="question-block">
+                        <div class="question-number">6.</div>
+                        <div class="question-text">
+                            Lineo runs at a rate of 170 m/min and walks at a rate of 90 m/min.
+                            <br>
+                            Lineo leaves home and takes 6 minutes, by running and walking, to reach a bus stop.
+                            <br>
+                            Lineo runs for t minutes.
+                            <br><br>
+                            (i) Find, in terms of <em>t</em>, an expression for:
+                            <br>
+                            (a) the number of minutes she walks,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">min</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) the distance she runs,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">m</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) the distance to the bus stop.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">m</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) The distance to the bus stop is 740 m.
+                            <br>
+                            Find the value of t.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">t = .........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../js/contentScript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="70" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="35" fill="white" font-style="italic" font-size="18">m =</text>
+    <text x="40" y="22" fill="#ff8888" font-size="18">14 - 2</text>
+    <line x1="35" y1="30" x2="105" y2="30" stroke="white" stroke-width="2"/>
+    <text x="40" y="52" fill="#88ff88" font-size="18">4 - 0</text>
+    <text x="115" y="35" fill="white" font-size="18">= 12 ÷ 4 = 3</text>
+</svg>

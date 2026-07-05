@@ -1,0 +1,35 @@
+<svg style="max-width: 100%; font-family: 'Inter', system-ui, sans-serif;" width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Outer Triangle ABC -->
+    <polygon points="200,40 50,260 350,260" fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Parallel Segment DE (at y=150) -->
+    <!-- Calculated x coordinates for scale factor 0.5: x1 = 200 - 150*0.75 = 125, x2 = 200 + 150*0.75 = 275 -->
+    <line x1="125" y1="150" x2="275" y2="150" stroke="#00ffcc" stroke-width="2"/>
+    
+    <!-- Parallel Directional Feathers / Arrows -->
+    <!-- Arrow on DE -->
+    <path d="M 195,145 L 202,150 L 195,155 M 200,145 L 207,150 L 200,155" fill="none" stroke="#00ffcc" stroke-width="2" stroke-linecap="round"/>
+    <!-- Arrow on BC -->
+    <path d="M 195,255 L 202,260 L 195,265 M 200,255 L 207,260 L 200,265" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Angle Arcs (Corresponding Angles) -->
+    <!-- Angle D (Pink) -->
+    <path d="M 137,150 A 15,15 0 0,1 133,138" fill="none" stroke="#ff3366" stroke-width="2"/>
+    <!-- Angle B (Pink) -->
+    <path d="M 62,260 A 15,15 0 0,1 58,248" fill="none" stroke="#ff3366" stroke-width="2"/>
+    
+    <!-- Angle E (Yellow) -->
+    <path d="M 263,138 A 15,15 0 0,1 263,150" fill="none" stroke="#ffcc00" stroke-width="2"/>
+    <!-- Angle C (Yellow) -->
+    <path d="M 338,248 A 15,15 0 0,1 338,260" fill="none" stroke="#ffcc00" stroke-width="2"/>
+
+    <!-- Vertex Text Labels -->
+    <text x="200" y="28" fill="#ffffff" font-size="16" font-family="sans-serif" font-weight="bold" text-anchor="middle">A</text>
+    <text x="35" y="275" fill="#ffffff" font-size="16" font-family="sans-serif" font-weight="bold" text-anchor="middle">B</text>
+    <text x="365" y="275" fill="#ffffff" font-size="16" font-family="sans-serif" font-weight="bold" text-anchor="middle">C</text>
+    <text x="110" y="155" fill="#00ffcc" font-size="16" font-family="sans-serif" font-weight="bold" text-anchor="middle">D</text>
+    <text x="290" y="155" fill="#00ffcc" font-size="16" font-family="sans-serif" font-weight="bold" text-anchor="middle">E</text>
+    
+    <!-- Text Info Tag -->
+    <text x="200" y="135" fill="#aaaaaa" font-size="12" font-family="sans-serif" font-style="italic" text-anchor="middle">DE ∥ BC</text>
+</svg>

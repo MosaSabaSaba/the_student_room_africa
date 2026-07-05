@@ -1,0 +1,31 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 550 220" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .solid { stroke: #ffffff; stroke-width: 2; fill: none; }
+        .plane { stroke: #00ffcc; stroke-width: 2; stroke-dasharray: 4; fill: rgba(0, 255, 204, 0.15); }
+        .label { fill: #00ffcc; font-family: sans-serif; font-size: 12px; font-weight: bold; }
+        .sub { fill: #ffffff; font-family: sans-serif; font-size: 11px; }
+    </style>
+    <!-- Cylinder -->
+    <g transform="translate(30, 40)">
+        <ellipse cx="60" cy="20" rx="50" ry="15" class="solid" />
+        <path d="M 10,20 L 10,100 A 50,15 0 0 0 110,100 L 110,20" class="solid" />
+        <ellipse cx="60" cy="60" rx="50" ry="15" class="plane" />
+        <text x="60" y="140" class="label" text-anchor="middle">Cylinder</text>
+        <text x="60" y="155" class="sub" text-anchor="middle">Inf. Vertical + 1 Horiz.</text>
+    </g>
+    <!-- Cone -->
+    <g transform="translate(195, 40)">
+        <ellipse cx="60" cy="100" rx="50" ry="15" class="solid" />
+        <path d="M 10,100 L 60,10 L 110,100" class="solid" />
+        <line x1="60" y1="10" x2="60" y2="115" class="plane" />
+        <text x="60" y="140" class="label" text-anchor="middle">Cone</text>
+        <text x="60" y="155" class="sub" text-anchor="middle">Infinite Vertical Only</text>
+    </g>
+    <!-- Sphere -->
+    <g transform="translate(360, 40)">
+        <circle cx="70" cy="60" r="55" class="solid" />
+        <ellipse cx="70" cy="60" rx="55" ry="15" class="plane" />
+        <text x="70" y="140" class="label" text-anchor="middle">Sphere</text>
+        <text x="70" y="155" class="sub" text-anchor="middle">Infinite in All Directions</text>
+    </g>
+</svg>

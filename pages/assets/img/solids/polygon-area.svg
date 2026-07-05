@@ -1,0 +1,39 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="450" height="380" viewBox="0 0 450 380" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;">
+    <style>
+        .shape { stroke: #fff; stroke-width: 2; fill: none; }
+        .divider { stroke: #fff; stroke-width: 1; stroke-dasharray: 2; opacity: 0.5; }
+        .apothem { stroke: #00ffcc; stroke-width: 2; }
+        .txt { fill: #fff; font-family: sans-serif; font-size: 14px; }
+    </style>
+
+    <g transform="translate(50, 50)">
+        <text x="0" y="0" class="txt" font-weight="bold">Dividing a Hexagon into 6 Triangles</text>
+        
+        <!-- Hexagon Path -->
+        <path d="M 150 50 L 236 100 L 236 200 L 150 250 L 64 200 L 64 100 Z" class="shape" />
+        
+        <!-- Dividing Lines -->
+        <line x1="150" y1="150" x2="150" y2="50" class="divider" />
+        <line x1="150" y1="150" x2="236" y2="100" class="divider" />
+        <line x1="150" y1="150" x2="236" y2="200" class="divider" />
+        <line x1="150" y1="150" x2="150" y2="250" class="divider" />
+        <line x1="150" y1="150" x2="64" y2="200" class="divider" />
+        <line x1="150" y1="150" x2="64" y2="100" class="divider" />
+
+        <!-- Center Point -->
+        <circle cx="150" cy="150" r="3" fill="#fff" />
+
+        <!-- Apothem (Height of one triangle) -->
+        <line x1="150" y1="150" x2="193" y2="75" class="apothem" />
+        <text x="175" y="110" class="txt" fill="#00ffcc">a (height)</text>
+        
+        <!-- Side Label -->
+        <text x="210" y="80" class="txt">s (base)</text>
+        
+        <!-- <text x="50" y="280" class="txt">Area = n &times; (Area of one triangle)</text>
+        <text x="50" y="305" class="txt">Area = 6 &times; (1&frasl;2 &times; perimeter &times; apothem)</text> -->
+    
+        <text x="50" y="280" class="txt">Area = n × (Area of one triangle)</text>
+        <text x="50" y="305" class="txt">Area = 6 × (1⁄2 × perimeter × apothem)</text>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="500" height="220" viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .axis { stroke: #ffffff; stroke-width: 2; }
+        .function-line { stroke: #00ffcc; stroke-width: 3; fill: none; }
+        .not-function { stroke: #ff8888; stroke-width: 3; fill: none; }
+        .vertical-line { stroke: #ffcc00; stroke-width: 2; stroke-dasharray: 5,3; }
+        .label { fill: #00ffcc; font-family: sans-serif; font-size: 12px; font-weight: bold; }
+    </style>
+
+    <!-- Function graph (straight line) -->
+    <g transform="translate(30, 20)">
+        <line x1="0" y1="180" x2="0" y2="0" class="axis"/>
+        <line x1="0" y1="180" x2="200" y2="180" class="axis"/>
+        <line x1="50" y1="0" x2="180" y2="180" class="function-line"/>
+        <line x1="100" y1="20" x2="100" y2="180" class="vertical-line"/>
+        <text x="100" y="200" class="label" text-anchor="middle">Vertical line touches</text>
+        <text x="100" y="215" class="label" text-anchor="middle">ONCE = FUNCTION</text>
+    </g>
+
+    <!-- Not a function graph (circle) -->
+    <g transform="translate(270, 20)">
+        <line x1="0" y1="180" x2="0" y2="0" class="axis"/>
+        <line x1="0" y1="180" x2="200" y2="180" class="axis"/>
+        <circle cx="100" cy="90" r="50" class="not-function"/>
+        <line x1="100" y1="0" x2="100" y2="180" class="vertical-line"/>
+        <text x="100" y="200" class="label" text-anchor="middle">Vertical line touches</text>
+        <text x="100" y="215" class="label" text-anchor="middle">TWICE = NOT A FUNCTION</text>
+    </g>
+</svg>

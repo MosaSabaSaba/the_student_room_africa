@@ -1,0 +1,11 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="240" height="180" viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 40 140 L 200 140 L 200 30 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <rect x="188" y="128" width="12" height="12" fill="none" stroke="#00ffcc" stroke-width="1.5"/>
+    <path d="M 200 60 A 30 30 0 0 1 183 55" fill="none" stroke="#ffcc00" stroke-width="2"/>
+    <text x="45" y="145" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">A</text>
+    <text x="205" y="145" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">B</text>
+    <text x="195" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffcc00">C</text>
+    <text x="95" y="75" font-family="Inter, sans-serif" font-size="11" fill="#00ffcc" transform="rotate(-34, 110, 85)">hypotenuse</text>
+    <text x="100" y="155" font-family="Inter, sans-serif" font-size="11" fill="#ffffff">opposite to C</text>
+    <text x="205" y="85" font-family="Inter, sans-serif" font-size="11" fill="#ffffff">adjacent to C</text>
+</svg>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>The Student Room | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages/css/contentStyles.css"/>
+
+    <style>
+        /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
+        .custom-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 1.5rem;
+        }
+
+        @media (min-width: 992px) {
+            .custom-container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .custom-container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .custom-container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+
+        .page-body {
+            padding: 3rem 0;
+            min-height: calc(100vh - 300px);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-section h1 {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 2.8rem;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.01em;
+            color: #ffda9e;
+        }
+
+        .hero-section p {
+            margin: 0 auto;
+            color: #bbb;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            max-width: 700px;
+        }
+
+        .hero-section .tagline {
+            color: #888;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Country Selection */
+        .country-section {
+            margin: 2rem 0 3rem 0;
+        }
+
+        .country-section h2 {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: #ffda9e;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+            padding-bottom: 0.75rem;
+        }
+
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .country-card {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 1.5rem;
+            border: 1px solid #2a2a2a;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .country-card:hover {
+            border-color: #f4b942;
+            background: rgba(244, 185, 66, 0.05);
+            transform: translateY(-3px);
+        }
+
+        .country-card .flag {
+            font-size: 2.8rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .country-card h3 {
+            font-family: 'Zilla Slab', serif;
+            font-size: 1.3rem;
+            margin: 0 0 0.25rem 0;
+            color: #ffcf8a;
+        }
+
+        .country-card p {
+            margin: 0;
+            color: #aaa;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .country-card .status {
+            display: inline-block;
+            margin-top: 0.75rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            background: #1e3a2f;
+            color: #7ecf9e;
+        }
+
+        .country-card .status.soon {
+            background: #3a2a1e;
+            color: #ccaa88;
+        }
+
+        /* Features Section */
+        .features-section {
+            margin: 3rem 0;
+        }
+
+        .features-section h2 {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: #ffda9e;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+            padding-bottom: 0.75rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            background: rgba(255,255,255,0.02);
+            border-radius: 16px;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            border: 1px solid #2a2a2a;
+        }
+
+        .feature-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .feature-item h4 {
+            font-family: 'Zilla Slab', serif;
+            font-size: 1.1rem;
+            margin: 0 0 0.3rem 0;
+            color: #ffcf8a;
+        }
+
+        .feature-item p {
+            margin: 0;
+            color: #888;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.02);
+            border-radius: 20px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-family: 'Zilla Slab', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffda9e;
+        }
+
+        .stat-item .label {
+            color: #888;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(244, 185, 66, 0.05);
+            border-radius: 24px;
+            border: 1px solid #2a2a2a;
+            margin: 2rem 0;
+        }
+
+        .cta-section h3 {
+            font-family: 'Zilla Slab', serif;
+            font-size: 1.5rem;
+            color: #ffda9e;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .cta-section p {
+            color: #aaa;
+            font-size: 0.95rem;
+            margin: 0 0 1rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.7rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #f4b942;
+            color: #1a1a1a;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #ffcf6e;
+            transform: translateY(-2px);
+        }
+
+        /* -- FOOTER -- */
+        .site-footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 2rem 0 1.5rem;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 1.5rem auto 0;
+            padding: 1rem 24px 0;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .footer-bottom a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.75rem;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .page-body {
+                padding: 1.5rem 0;
+            }
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            .hero-section p {
+                font-size: 1rem;
+            }
+            .country-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .features-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .stats-section {
+                gap: 1rem;
+                padding: 1rem;
+            }
+            .stat-item .number {
+                font-size: 1.6rem;
+            }
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .country-grid {
+                grid-template-columns: 1fr;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .site-footer {
+                padding: 1.5rem 0 1rem;
+            }
+            .custom-container {
+                padding: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <a href="index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+            <span class="search-icon">🔍</span>
+            <span style="display:none" class="search-label">Search ...</span>
+            <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+    Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar" style="display:none;">
+    <div class="breadcrumbs">
+        <span>Home</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>Theme</button>
+        <button>English (US)</button>
+    </div>
+</div>
+
+<!-- PAGE LAYOUT -->
+<div class="custom-container">
+    <div class="page-body">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Welcome to Student Room Africa</h1>
+            <p>The best collection of revision material across Southern Africa.</p>
+            <p class="tagline">Free, accessible, and built for you. Select your country below to get started.</p>
+        </section>
+
+        <!-- Country Selection -->
+        <section class="country-section">
+            <h2>Select Your Country</h2>
+            <div class="country-grid">
+
+                <!-- Lesotho (Active) -->
+                <a href="pages/lesotho/lesotho.html" class="country-card">
+                    <span class="flag">🇱🇸</span>
+                    <h3>Lesotho</h3>
+                    <p>LGCSE Mathematics — Core & Extended</p>
+                    <span class="status">Available Now</span>
+                </a>
+
+                <!-- South Africa (Coming Soon) -->
+                <div class="country-card" style="cursor: default; opacity: 0.7;">
+                    <span class="flag">🇿🇦</span>
+                    <h3>South Africa</h3>
+                    <p>CAPS Mathematics — Grades 10-12</p>
+                    <span class="status soon">Coming Soon</span>
+                </div>
+
+                <!-- Botswana (Coming Soon) -->
+                <div class="country-card" style="cursor: default; opacity: 0.7;">
+                    <span class="flag">🇧🇼</span>
+                    <h3>Botswana</h3>
+                    <p>BGCSE Mathematics</p>
+                    <span class="status soon">Coming Soon</span>
+                </div>
+
+                <!-- Eswatini (Coming Soon) -->
+                <div class="country-card" style="cursor: default; opacity: 0.7;">
+                    <span class="flag">🇸🇿</span>
+                    <h3>Eswatini</h3>
+                    <p>IGCSE / EGCSE Mathematics</p>
+                    <span class="status soon">Coming Soon</span>
+                </div>
+
+                <!-- Namibia (Coming Soon) -->
+                <div class="country-card" style="cursor: default; opacity: 0.7;">
+                    <span class="flag">🇳🇦</span>
+                    <h3>Namibia</h3>
+                    <p>NSSC Mathematics</p>
+                    <span class="status soon">Coming Soon</span>
+                </div>
+
+                <!-- Zimbabwe (Coming Soon) -->
+                <div class="country-card" style="cursor: default; opacity: 0.7;">
+                    <span class="flag">🇿🇼</span>
+                    <h3>Zimbabwe</h3>
+                    <p>ZIMSEC / Cambridge Mathematics</p>
+                    <span class="status soon">Coming Soon</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2>What We Offer</h2>
+            <div class="features-grid">
+                <a href="pages/lesotho/conversions.html" class="feature-item">
+                    <span class="icon">📘</span>
+                    <h4>Study Guides</h4>
+                    <p>Complete syllabus coverage with worked examples and exam techniques.</p>
+                </a>
+                <a href="pages/lesotho/tracker.html" class="feature-item">
+                    <span class="icon">📋</span>
+                    <h4>Revision Tracker</h4>
+                    <p>Track your progress, mark topics as watched, and save your data locally.</p>
+                </a>
+                <a href="pages/lesotho/questionBank/question-bank.html  " class="feature-item">
+                    <span class="icon">📝</span>
+                    <h4>Question Bank</h4>
+                    <p>Practice with ECoL past paper questions organized by topic.</p>
+                </a>
+                <a href="pages/lesotho/tracker.html#past-papers" class="feature-item">
+                    <span class="icon">📄</span>
+                    <h4>Past Papers</h4>
+                    <p>Download past LGCSE Mathematics examination papers and mark schemes.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stat-item">
+                <div class="number">18+</div>
+                <div class="label">Mathematics Topics</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">150+</div>
+                <div class="label">Practice Questions</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">100%</div>
+                <div class="label">Free to Access</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">1</div>
+                <div class="label">Goal — Your Success</div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h3>Ready to Start Learning?</h3>
+            <p>All resources are completely free. No registration required.</p>
+            <a href="pages/lesotho/lgcse.html" class="cta-button">Explore LGCSE Mathematics</a>
+        </section>
+
+    </div>
+</div>
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE Syllabus</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="pages/lesotho/conversions.html">Study Guide</a></li>
+                <li><a href="pages/lesotho/tracker.html">Revision Tracker</a></li>
+                <li><a href="pages/lesotho/questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="pages/lesotho/tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="pages/lesotho/conversions.html">Conversions</a></li>
+                <li><a href="pages/lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="pages/lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="pages/lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="pages/contact.html">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="pages/js/contentScript.js"></script>
+</body>
+</html>

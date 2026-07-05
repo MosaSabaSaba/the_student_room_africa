@@ -1,0 +1,41 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="550" height="550" viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg">
+    <!-- 3D SHAPE -->
+    <!-- Bottom Pentagon -->
+    <path d="M 100,220 L 180,220 L 210,180 L 140,150 L 70,180 Z" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <!-- Connecting Vertical Lines -->
+    <line x1="100" y1="220" x2="100" y2="100" stroke="#ffffff" stroke-width="3"/>
+    <line x1="180" y1="220" x2="180" y2="100" stroke="#ffffff" stroke-width="3"/>
+    <line x1="210" y1="180" x2="210" y2="60" stroke="#ffffff" stroke-width="3"/>
+    <line x1="140" y1="150" x2="140" y2="30" stroke="#ffffff" stroke-width="3" stroke-dasharray="8,5"/>
+    <line x1="70" y1="180" x2="70" y2="60" stroke="#ffffff" stroke-width="3"/>
+    <!-- Top Pentagon -->
+    <path d="M 100,100 L 180,100 L 210,60 L 140,30 L 70,60 Z" fill="none" stroke="#ffffff" stroke-width="3"/>
+
+    <!-- Characteristics in #00ffcc -->
+    <circle cx="210" cy="60" r="6" fill="#00ffcc"/>
+    <text x="225" y="60" fill="#00ffcc" font-weight="bold" font-size="18">Vertex</text>
+    <line x1="100" y1="220" x2="180" y2="220" stroke="#00ffcc" stroke-width="5"/>
+    <text x="115" y="245" fill="#00ffcc" font-weight="bold" font-size="18">Edge</text>
+    <text x="130" y="190" fill="#00ffcc" font-weight="bold" font-size="18">Face</text>
+
+    <!-- Totals -->
+    <rect x="350" y="40" width="160" height="110" fill="none" stroke="#00ffcc" stroke-width="2"/>
+    <text x="360" y="70" fill="#00ffcc" font-weight="bold" font-size="18">Faces: 7</text>
+    <text x="360" y="100" fill="#00ffcc" font-weight="bold" font-size="18">Edges: 15</text>
+    <text x="360" y="130" fill="#00ffcc" font-weight="bold" font-size="18">Vertices: 10</text>
+
+    <!-- THE NET -->
+    <g transform="translate(60, 320)">
+        <text x="100" y="10" fill="#ffffff" font-size="16" font-style="italic">Unfolded Net</text>
+        <!-- 5 Rectangles in a row -->
+        <rect x="0" y="60" width="45" height="90" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <rect x="45" y="60" width="45" height="90" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <rect x="90" y="60" width="45" height="90" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <rect x="135" y="60" width="45" height="90" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <rect x="180" y="60" width="45" height="90" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <!-- Top Pentagon Flap -->
+        <path d="M 90,60 L 75,35 L 112.5,10 L 150,35 L 135,60" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <!-- Bottom Pentagon Flap -->
+        <path d="M 90,150 L 75,175 L 112.5,200 L 150,175 L 135,150" fill="none" stroke="#ffffff" stroke-width="2"/>
+    </g>
+</svg>

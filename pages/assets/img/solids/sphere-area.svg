@@ -1,0 +1,9 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="230" viewBox="0 0 250 230" xmlns="http://www.w3.org/2000/svg">
+    <!-- 3D Sphere -->
+    <g transform="translate(60, 40)">
+        <circle cx="80" cy="80" r="75" fill="none" stroke="#ffffff" stroke-width="2" />
+        <ellipse cx="80" cy="80" rx="75" ry="25" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5" />
+        <line x1="80" y1="80" x2="155" y2="80" stroke="#00ffcc" stroke-width="2" stroke-dasharray="4,2" />
+        <text x="95" y="75" fill="#00ffcc" font-size="14">r = 3cm</text>
+    </g>
+</svg>

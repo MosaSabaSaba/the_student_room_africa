@@ -1,0 +1,14 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="200" viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- 3D Cone -->
+    <g transform="translate(60, 30)">
+        <ellipse cx="80" cy="140" rx="70" ry="25" fill="none" stroke="#ffffff" stroke-width="2" />
+        <line x1="10" y1="140" x2="80" y2="10" stroke="#ffffff" stroke-width="2" />
+        <line x1="150" y1="140" x2="80" y2="10" stroke="#ffffff" stroke-width="2" />
+        
+        <!-- Height dimension -->
+        <line x1="80" y1="10" x2="80" y2="140" stroke="#ffcc00" stroke-width="2" stroke-dasharray="4,2"/>
+        <text x="85" y="80" fill="#ffcc00" font-size="14">h = 12cm</text>
+        <text x="95" y="135" fill="#00ffcc" font-size="14">r = 4cm</text>
+    </g>
+
+</svg>

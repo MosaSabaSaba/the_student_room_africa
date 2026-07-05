@@ -1,0 +1,6 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="35" fill="white" font-style="italic" font-size="18">y =</text>
+    <text x="40" y="22" fill="white" font-size="18">(x + 4)</text>
+    <line x1="35" y1="30" x2="90" y2="30" stroke="white" stroke-width="2"></line>
+    <text x="55" y="52" fill="white" font-size="18">3</text>
+</svg>

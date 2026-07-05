@@ -1,0 +1,12 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Right-Angled Triangle -->
+    <path d="M 100 300 L 300 300 L 100 100 Z" fill="none" stroke="#fff" stroke-width="2" />
+    
+    <!-- Right Angle Square Indicator -->
+    <path d="M 100 280 L 120 280 L 120 300" fill="none" stroke="#00ffcc" stroke-width="2" />
+    
+    <!-- Labels -->
+    <text x="210" y="190" fill="#fff" font-family="Arial" font-size="24" text-anchor="start">
+        hypotenuse
+    </text>
+</svg>

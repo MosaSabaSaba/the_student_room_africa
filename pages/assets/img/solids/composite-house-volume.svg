@@ -1,0 +1,29 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="300" height="210" viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .st   { stroke: #ffffff; stroke-width: 1.8; fill: rgba(0,255,204,0.12); }
+        .sy   { stroke: #ffcc00; stroke-width: 1.8; fill: rgba(255,204,0,0.15); }
+        .hid  { stroke: #ff4444; stroke-width: 2; fill: rgba(255,68,68,0.2); stroke-dasharray: 5,3; }
+        .dm   { fill: #ffcc00; font-family: sans-serif; font-size: 11px; font-weight: bold; }
+    </style>
+
+    <g transform="translate(20,30)">
+        <text x="110" y="0" fill="#ffffff" font-family="sans-serif" font-size="14px" font-weight="bold" text-anchor="middle">House Diagram</text>
+        
+        <!-- Cube Structure -->
+        <rect x="20" y="100" width="100" height="80" class="st"/>
+        <path d="M120,100 L144,78 L144,158 L120,180 Z" class="st"/>
+        <path d="M20,100 L44,78 L144,78 L120,100 Z" class="hid"/>
+        <text x="82" y="94" fill="#ff4444" font-family="sans-serif" font-size="9px" text-anchor="middle">JOINED (EXCLUDE)</text>
+
+        <!-- Roof Structure -->
+        <path d="M20,100 L70,52 L120,100 Z" class="sy"/>
+        <path d="M20,100 L70,52 L94,30 L44,78 Z" class="sy"/>
+        <path d="M120,100 L70,52 L94,30 L144,78 Z" class="sy"/>
+
+        <!-- Visual Labels -->
+        <text x="70" y="202" class="dm" text-anchor="middle">10m (l)</text>
+        <text x="0" y="145" class="dm" text-anchor="end">8m (h)</text>
+        <text x="145" y="100" class="dm">10m (b)</text>
+        <text x="115" y="55" class="dm" fill="#ffcc00">slant(s) ≈ 7.07m</text>
+    </g>
+</svg>

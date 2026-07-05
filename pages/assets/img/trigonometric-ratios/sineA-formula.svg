@@ -1,0 +1,6 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="30" fill="#ffffff" font-family="Times New Roman, serif" font-style="italic" font-size="18">sin A =</text>
+    <text x="70" y="22" fill="#00ffcc" font-size="18">Opposite</text>
+    <line x1="65" y1="30" x2="173" y2="30" stroke="#00ffcc" stroke-width="2"/>
+    <text x="73" y="52" fill="#00ffcc" font-size="18">Hypotenuse</text>
+</svg>

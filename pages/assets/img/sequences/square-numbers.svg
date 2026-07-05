@@ -1,0 +1,76 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 550 110" xmlns="http://www.w3.org/2000/svg">
+    <!-- 1x1 Square (Total Width: 18) -->
+    <g transform="translate(10, 10)">
+        <rect x="0" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+
+    <!-- 2x2 Square (Total Width: 38) -->
+    <g transform="translate(50, 10)">
+        <rect x="0" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+
+    <!-- 3x3 Square (Total Width: 58) -->
+    <g transform="translate(110, 10)">
+        <rect x="0" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+
+    <!-- 4x4 Square (Total Width: 78) -->
+    <g transform="translate(190, 10)">
+        <rect x="0" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="60" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="60" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="60" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="60" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="60" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="60" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="60" y="60" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+
+    <!-- 5x5 Square (Total Width: 98) -->
+    <g transform="translate(290, 10)">
+        <rect x="0" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="60" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="80" y="0" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="60" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="80" y="20" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="60" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="80" y="40" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="60" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="60" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="60" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="60" y="60" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="80" y="60" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="0" y="80" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="20" y="80" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="40" y="80" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="60" y="80" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="80" y="80" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+</svg>

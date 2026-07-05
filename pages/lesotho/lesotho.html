@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>The Student Room | Mathematics Curricula in Lesotho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css"/>
+
+    <style>
+        /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
+        .custom-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            .custom-container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .custom-container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .custom-container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+
+        .page-body {
+            padding: 2rem 0;
+        }
+
+        /* hero section */
+        .hero-section {
+            padding: 1.5rem 2rem;
+            border-radius: 24px;
+            margin: 0 0 2rem 0;
+            background: rgba(244, 185, 66, 0.05);
+        }
+
+        .hero-section h1 {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.01em;
+            color: #ffda9e;
+        }
+
+        .hero-section p {
+            margin: 0;
+            color: #bbb;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* section titles */
+        .section-title {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            margin: 1.5rem 0 0.5rem 0;
+            color: #ffda9e;
+            border-left: 4px solid #f4b942;
+            padding-left: 1rem;
+        }
+
+        .section-sub {
+            color: #888;
+            font-size: 0.85rem;
+            margin-top: -0.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* curricula cards grid */
+        .curricula-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0 2rem 0;
+        }
+
+        .curriculum-card {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 1.5rem;
+            border: 1px solid #2a2a2a;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .curriculum-card.active {
+            border-color: #f4b942;
+            background: rgba(244, 185, 66, 0.05);
+            box-shadow: 0 0 0 1px rgba(244, 185, 66, 0.2);
+        }
+
+        .curriculum-card.inactive {
+            opacity: 0.6;
+            filter: grayscale(0.2);
+        }
+
+        .curriculum-card h3 {
+            font-family: 'Zilla Slab', serif;
+            font-size: 1.4rem;
+            margin: 0 0 0.5rem 0;
+            color: #ffcf8a;
+        }
+
+        .curriculum-card p {
+            margin: 0.5rem 0;
+            color: #aaa;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .curriculum-badge {
+            display: inline-block;
+            background: #1e3a2f;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 500;
+            color: #ffda9e;
+            margin-top: 0.5rem;
+        }
+
+        .curriculum-badge.active-badge {
+            background: #4a7c2e;
+            color: #fff;
+        }
+
+        .curriculum-badge.inactive-badge {
+            background: #5a3a2a;
+            color: #ccaa88;
+        }
+
+        .status-label {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            background: #2a2a2a;
+            color: #888;
+        }
+
+        .status-label.active {
+            background: #4a7c2e;
+            color: #fff;
+        }
+
+        .status-label.inactive {
+            background: #5a3a2a;
+            color: #ccaa88;
+        }
+
+        .action-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            border: 1px solid #f4b942;
+            color: #f4b942;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .action-button:hover {
+            background: #f4b942;
+            color: #1a1a1a;
+        }
+
+        .action-button.disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            border-color: #666;
+            color: #666;
+            pointer-events: none;
+        }
+
+        /* note box */
+        .note-box {
+            background: rgba(36, 56, 48, 0.3);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .note-box p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #bbb;
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #2e2a24, transparent);
+        }
+
+        /* -- FOOTER -- */
+        .site-footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 2rem 0 1.5rem;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 1.5rem auto 0;
+            padding: 1rem 24px 0;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .footer-bottom a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.75rem;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .page-body {
+                padding: 1rem 0;
+            }
+            .hero-section {
+                padding: 1rem 1.2rem;
+            }
+            .hero-section h1 {
+                font-size: 1.6rem;
+            }
+            .curriculum-card {
+                padding: 1rem;
+            }
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .site-footer {
+                padding: 1.5rem 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <a href="../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner 
+        <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="lesotho.html">Lesotho</a>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- PAGE LAYOUT with container behavior -->
+    <div class="custom-container">
+        <div class="page-body">
+            
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h1>Mathematics Curricula in Lesotho</h1>
+                <p>Explore the different mathematics qualifications available in Lesotho. Select the curriculum that matches your educational pathway.</p>
+            </div>
+
+            <!-- Curricula Cards -->
+            <div class="curricula-grid">
+                
+                <!-- PSLE - Primary School -->
+                <div class="curriculum-card inactive">
+                    <div class="status-label inactive">Coming Soon</div>
+                    <h3>PSLE Mathematics</h3>
+                    <p>Primary School Leaving Examination</p>
+                    <p>National examination taken at the end of Standard 7 (Grade 7). Covers foundational arithmetic, basic geometry, measurement, and simple problem-solving. This is the stepping stone to secondary school mathematics.</p>
+                    <div class="curriculum-badge inactive-badge">Standard 7</div>
+                    <div class="curriculum-badge inactive-badge">Primary Level</div>
+                    <span class="action-button disabled">Coming Soon</span>
+                </div>
+
+                <!-- JC - Junior Certificate -->
+                <!-- <div class="curriculum-card inactive">
+                    <div class="status-label inactive">Coming Soon</div>
+                    <h3>JC Mathematics</h3>
+                    <p>Junior Certificate</p>
+                    <p>National examination taken at the end of Form 3 (Grade 9). Bridges primary mathematics and LGCSE. Covers more advanced arithmetic, introductory algebra, geometry, trigonometry basics, and statistics.</p>
+                    <div class="curriculum-badge inactive-badge">Form 3</div>
+                    <div class="curriculum-badge inactive-badge">Junior Secondary</div>
+                    <span class="action-button disabled">Coming Soon</span>
+                </div> -->
+
+                <!-- LGCSE - Senior Secondary -->
+                <div class="curriculum-card active">
+                    <div class="status-label active">Available Now</div>
+                    <h3>LGCSE Mathematics</h3>
+                    <p>Lesotho General Certificate of Secondary Education</p>
+                    <p>National examination taken at the end of Form 4 and Form 5 (Grades 10-11). Core and Extended pathways available. This is the main secondary school leaving qualification recognized across Southern Africa.</p>
+                    <div class="curriculum-badge active-badge">Core + Extended</div>
+                    <div class="curriculum-badge">Forms 4 &amp; 5</div>
+                    <a href="lgcse.html" class="action-button">Access LGCSE Resources</a>
+                </div>
+
+                <!-- IGCSE - International -->
+                <div class="curriculum-card inactive">
+                    <div class="status-label inactive">Coming Soon</div>
+                    <h3>IGCSE Mathematics</h3>
+                    <p>International General Certificate of Secondary Education</p>
+                    <p>Cambridge International qualification offered by some international schools in Lesotho. Covers number, algebra, shape and space, probability, and statistics. Available at Core and Extended levels.</p>
+                    <div class="curriculum-badge inactive-badge">Core + Extended</div>
+                    <div class="curriculum-badge inactive-badge">International</div>
+                    <span class="action-button disabled">Coming Soon</span>
+                </div>
+            </div>
+
+            <!-- Educational Pathway Note -->
+            <div class="note-box">
+                <p><strong>Understanding the Lesotho Education Pathway</strong><br>
+                Students in Lesotho typically follow this mathematics progression:<br>
+                <strong>PSLE</strong> (Grade 7) → <strong>LGCSE</strong> (Grade 8 - 11) → Post-Secondary<br>
+                <!-- <strong>PSLE</strong> (Grade 7) → <strong>JC</strong> (Form 3) → <strong>LGCSE</strong> (Forms 4-5) → Post-Secondary<br> -->
+                Most Lesotho secondary schools follow the LGCSE pathway, which is the national curriculum aligned with local educational policies. The Examinations Council of Lesotho (ECoL) administers all national examinations.</p>
+            </div>
+
+            <div style="text-align: center; font-size: 0.75rem; color: #555; margin-top: 1rem;">
+                <p>Lesotho mathematics curricula information is updated regularly to reflect current educational policies.<br>
+                For official curriculum documents, please refer to the <a href="https://www.examscouncil.org.ls" target="_blank" style="color: #ffcf8a;">Examinations Council of Lesotho (ECoL)</a> or Cambridge International (for IGCSE).</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE Syllabus</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="contact.html">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/contentScript.js"></script>
+</body>
+</html>

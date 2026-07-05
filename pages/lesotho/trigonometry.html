@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometric Ratios - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="googleapis.com">
+    <link href="googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "LGCSE Mathematics: Trigonometric Ratios Complete Guide",
+            "description": "Comprehensive guide for LGCSE learners covering the three primary trigonometric ratios (sine, cosine, tangent), SOH CAH TOA mnemonic, finding missing sides in right-angled triangles using trigonometry, finding missing angles using inverse trigonometric functions (sin⁻¹, cos⁻¹, tan⁻¹), and solving real-world problems involving angles of elevation and depression.",
+            "educationalLevel": "Secondary School (LGCSE)",
+            "keywords": "trigonometry, trigonometric ratios, sine, sin, cosine, cos, tangent, tan, SOH CAH TOA, right-angled triangle, opposite side, adjacent side, hypotenuse, finding sides, finding angles, inverse sine, inverse cosine, inverse tangent, angle of elevation, angle of depression, LGCSE mathematics",
+            "about": {
+                "@type": "Thing",
+                "name": "Trigonometry"
+            },
+            "teaches": "How to identify opposite, adjacent, and hypotenuse sides in a right-angled triangle; calculate sine = opposite/hypotenuse; calculate cosine = adjacent/hypotenuse; calculate tangent = opposite/adjacent; use SOH CAH TOA to remember ratios; find missing side lengths by selecting correct ratio and solving equation; find missing angles using inverse trigonometric functions (sin⁻¹, cos⁻¹, tan⁻¹); solve angle of elevation problems (angle upward from horizontal); solve angle of depression problems (angle downward from horizontal); recognize that angle of elevation equals angle of depression (alternate interior angles)",
+            "inLanguage": "en",
+            "audience": {
+                "@type": "Audience",
+                "name": "LGCSE Mathematics students in Lesotho"
+            },
+            "learningResourceType": "Study Guide",
+            "timeRequired": "PT90M",
+            "copyrightHolder": {
+                "@type": "Organization",
+                "name": "Student Room Africa"
+            }
+        }
+    </script>
+
+    <style>
+        .responsive-svg-container {
+            width:auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Trigonometric Ratios</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li class="active"><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+            
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <div class="trigonometric-ratios">
+            <h1 id="trigonometric-ratios">Trigonometric Ratios</h1>
+
+            <p>
+                The sides of a right-angled triangle are given special names, as shown
+                in 
+                <a href="pythagoras-theorem.html#naming-sides">
+                    naming the sides of a right-angled triangle
+                </a> section.
+            </p>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#trigonometric-ratios">Trigonometric Ratios</a></li>
+                    <li><a href="#sine-ratio">The Sine Ratio (sin)</a></li>
+                    <li><a href="#cosine-ratio">The Cosine Ratio (cos)</a></li>
+                    <li><a href="#tangent-ratio">The Tangent Ratio (tan)</a></li>
+                    <li><a href="#finding-sides">Finding Sides Using Trigonometric Ratios</a></li>
+                    <li><a href="#elevation-and-depression">Angles of Elevation and Depression</a></li>
+                </ul>
+            </div>
+
+            <div class="sine-ratio">
+                <h2 id="sine-ratio">The Sine Ratio (sin)</h2>
+                <p>
+                    The sine of an angle (usually abbreviated as sin) is a fundamental geometric ratio. 
+                    It divides opposite side length by hypotenuse length.
+                </p>
+
+                <p>For the following triangle:</p>
+
+                <div class="responsive-svg-container" style="display:flex; justify-content: center;">
+                    <img src="../assets/img/trigonometric-ratios/sine-ratio-triangle.svg" alt="Sine ratio triangle" />
+                </div>
+
+                <p><strong>Formula:</strong></p>
+                <div style="margin-left: 110px;">
+                    <img src="../assets/img/trigonometric-ratios/sine-formula.svg" alt="Sine formula" />
+                </div>
+
+                <h3 style="margin-top: 1.5rem;">Example Calculation</h3>
+
+                <p>
+                    Calculate the sine of angle A
+                </p>
+
+                <div class="responsive-svg-container" style="display:flex; justify-content: center;">
+                    <!-- SVG Diagram for Angle A -->
+                    <img src="../assets/img/trigonometric-ratios/sineA-diagram.svg" alt="Sine Of angle A" />
+                </div>
+
+                <div style="padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;">
+                        <strong>Step 1:</strong> Write the sine formula.
+                    </p>
+                    <div style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/sineA-formula.svg" alt="Sine formula for angle A" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 2:</strong> Substitute the known values.
+                    </p>
+                    <div style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/sineA-workings.svg" alt="Substitute Values" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 3:</strong> Simplify the fraction.
+                    </p>
+                    <div style="padding-left: 20px;">
+                        
+                        <p><em>sin A = 0.5</em></p>
+                        
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 4:</strong> Find the angle A using the inverse sine function (sin⁻¹).
+                    </p>
+                    <p style="padding-left: 20px;">
+                        A = sin⁻¹(0.5) = <strong>30°</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="cosine-ratio">
+                <h2 id="cosine-ratio">The Cosine Ratio (cos)</h2>
+                <p>
+                    The cosine of an angle (abbreviated as cos) is a fundamental geometric ratio. 
+                    It divides the adjacent side length by the hypotenuse length.
+                </p>
+
+                <p>For the following triangle:</p>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/trigonometric-ratios/cosine-ratio-triangle.svg" alt="" />
+                </div>
+
+                <p><strong>Formula:</strong></p>
+                <div class="responsive-svg-container" style="margin-left: 110px;">
+                    <img src="../assets/img/trigonometric-ratios/cosine-formula.svg" alt="Cosine Formula" />
+                </div>
+
+                <h3 style="margin-top: 1.5rem;">Example Calculation</h3>
+
+                <p>
+                    Calculate the cosine of angle A
+                </p>
+
+                <div style="padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;">
+                        <strong>Step 1:</strong> Write the cosine formula.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/cosineA-formula.svg" alt="Cosine Formula" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 2:</strong> Substitute the known values.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/cosineA-workings.svg" alt="" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 3:</strong> Simplify the fraction.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        
+                        <p><em>cos A = 0.8</em></p>
+                        
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 4:</strong> Find the angle A using the inverse cosine function (cos⁻¹).
+                    </p>
+                    <p style="padding-left: 20px;">
+                        A = cos⁻¹(0.8) ≈ <strong>36.9°</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="tangent-ratio">
+                <h2 id="tangent-ratio">The Tangent Ratio (tan)</h2>
+                <p>
+                    The tangent of an angle (abbreviated as tan) is a fundamental geometric ratio. 
+                    It divides the opposite side length by the adjacent side length.
+                </p>
+
+                <p>For the following triangle:</p>
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/trigonometric-ratios/cosine-ratio-triangle.svg" alt="" />
+                </div>
+
+                <p><strong>Formula:</strong></p>
+                <div class="responsive-svg-container" style="margin-left: 110px;">
+                    <img src="../assets/img/trigonometric-ratios/tan-formula.svg" alt="tan formula" />
+                </div>
+
+                <h3 style="margin-top: 1.5rem;">Example Calculation</h3>
+
+                <p>
+                    Calculate the tangent of angle A
+                </p>
+
+                <div style="padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p style="margin-bottom: 0.5rem;">
+                        <strong>Step 1:</strong> Write the tangent formula.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/tanA-formula.svg" alt="" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 2:</strong> Substitute the known values.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/tanA-workings.svg" alt="" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 3:</strong> Simplify the fraction.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        
+                        <p><em>tan A = 0.75</em></p>
+                        
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 4:</strong> Find the angle A using the inverse tangent function (tan⁻¹).
+                    </p>
+                    <p style="padding-left: 20px;">
+                        A = tan⁻¹(0.75) ≈ <strong>36.9°</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="finding-sides">
+                <h2 id="finding-sides">Finding Sides Using Trigonometric Ratios</h2>
+                
+                <p>
+                    Unknown side lengths in a right-angled triangle can be found using a systematic approach.
+                </p>
+
+                <h3>Step-by-Step Process</h3>
+
+                <div class="responsive-svg-container" style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1.5rem 0;">
+                    
+                    <!-- Step 1: Identify the given angle -->
+                    <div style="flex: 1; min-width: 200px; background-color: rgba(0, 255, 204, 0.05); border-radius: 12px; padding: 1rem;">
+                        <p style="color: #00ffcc; font-weight: bold; margin-bottom: 0.5rem;">Step 1: Identify the given angle</p>
+                        <img src="../assets/img/trigonometric-ratios/process-step1.svg" alt="" />
+                        <p style="margin-top: 0.5rem; font-size: 13px; color: #ffffff;">Locate the angle θ (theta) in the triangle.</p>
+                    </div>
+
+                    <!-- Step 2: Label the sides -->
+                    <div style="flex: 1; min-width: 200px; background-color: rgba(0, 255, 204, 0.05); border-radius: 12px; padding: 1rem;">
+                        <p style="color: #00ffcc; font-weight: bold; margin-bottom: 0.5rem;">Step 2: Label the sides</p>
+                        <img src="../assets/img/trigonometric-ratios/process-step2.svg" alt="" />
+                        <p style="margin-top: 0.5rem; font-size: 13px; color: #ffffff;">Label H (hypotenuse), O (opposite), A (adjacent).</p>
+                    </div>
+
+                    <!-- Step 3: Choose the correct ratio -->
+                    <div style="flex: 1; min-width: 200px; background-color: rgba(0, 255, 204, 0.05); border-radius: 12px; padding: 1rem;">
+                        <p style="color: #00ffcc; font-weight: bold; margin-bottom: 0.5rem;">Step 3: Choose the correct ratio</p>
+                        <div style="text-align: center; font-size: 12px;">
+                            
+                            <p>sin θ = O/H</p>
+                            <p>cos θ = A/H</p>
+                            <p>tan θ = O/A</p>
+                            
+                        </div>
+                        <p style="margin-top: 0.5rem; font-size: 13px; color: #ffffff;">Use SOH CAH TOA to select the ratio that uses the known and unknown sides.</p>
+                    </div>
+                </div>
+
+                <h3 style=" margin-top: 1.5rem;">Example: Finding a Missing Side</h3>
+
+                <p>Find the length of the opposite side in a right-angled triangle with a hypotenuse of 10 cm and an angle of 30°.</p>
+
+                <div class="responsive-svg-container" style="display: flex; justify-content: center; margin: 1rem 0;">
+                    <img src="../assets/img/trigonometric-ratios/missing-side.svg" alt="" />
+                </div>
+
+                <div>
+                    <p style="margin-bottom: 0.5rem;">
+                        <strong>Step 1:</strong> Identify the given angle (30°) and label the sides.
+                    </p>
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 2:</strong> Choose the correct ratio. We know the hypotenuse and want the opposite side. Use <strong>sine</strong>.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/sin30-working.svg" alt="" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 3:</strong> Substitute the known values.
+                    </p>
+
+                    <p>
+                        sin 30° = 0.5
+                    </p>
+
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/sin30-working2.svg" alt="" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 4:</strong> Solve for the unknown side.
+                    </p>
+                    <div style="padding-left: 20px;">
+                        <p>Opposite = 0.5 × 10 = 5 cm</p>
+                    </div>
+                </div>
+                
+                <p>
+                    To find a missing side, always use the trigonometric ratio 
+                    that connects the known side and the unknown side. To help
+                    figure out which ratio to use, remember the pneumonic
+                    SOH CAH TOA
+                </p> 
+
+                <p>This pneumonic, helps remember which ratio to use:</p>
+
+                <p>
+                    <span style="color: #00ffcc;">S</span>in = <span style="color: #00ffcc;">O</span>pposite ÷ <span style="color: #00ffcc;">H</span>ypotenuse<br>
+                    <span style="color: #00ffcc;">C</span>os = <span style="color: #00ffcc;">A</span>djacent ÷ <span style="color: #00ffcc;">H</span>ypotenuse<br>
+                    <span style="color: #00ffcc;">T</span>an = <span style="color: #00ffcc;">O</span>pposite ÷ <span style="color: #00ffcc;">A</span>djacent
+                </p>
+            </div>
+
+            <div class="elevation-and-depression">
+                <h2 id="elevation-and-depression">Angles of Elevation and Depression</h2>
+                
+                <p>
+                    In trigonometry, the <strong>angle of elevation</strong> and <strong>angle of depression</strong> are used to measure the angle between a horizontal line and a line of sight when looking up or down at an object.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                    <p style="margin-bottom: 0;">
+                        <strong>Key Definitions:</strong>
+                    </p>
+                    <p style="margin-bottom: 0; margin-top: 0.5rem;">
+                        • <strong>Angle of Elevation:</strong> The angle measured <strong>upward</strong> from the horizontal line to the line of sight.
+                    </p>
+                    <p style="margin-bottom: 0; margin-top: 0.25rem;">
+                        • <strong>Angle of Depression:</strong> The angle measured <strong>downward</strong> from the horizontal line to the line of sight.
+                    </p>
+                </div>
+
+                <!-- Diagram 1: Both angles shown -->
+                <div class="responsive-svg-container" style="display: flex; justify-content: center; margin: 1.5rem 0;">
+                    <img src="../assets/img/trigonometric-ratios/elevation-and-depression.svg" alt="Diagram showing angles of elevation and depression" />
+                </div>
+
+                <p>
+                    In the diagram above, an observer at point A looking down at an object forms an <strong>angle of depression</strong>. 
+                    From the object's perspective looking up at the observer, the <strong>angle of elevation</strong> is formed. 
+                    Because the two horizontal lines are parallel, these angles are <a href="../lesotho/angels.html">alternate interior angles</a> and are therefore <strong>equal</strong>.
+                </p>
+
+                <p>
+                    <strong>NB:</strong> Angle of Elevation = Angle of Depression. This is 
+                    always true when the observer and the object are at different heights 
+                    and the horizontal lines are parallel.
+                </p>
+
+                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
+                    <p style="margin-bottom: 0;">
+                        The examples below cover the most frequently asked exam questions.
+                        Be sure to understand the decisions made at each of the steps
+                        so that you can apply the same process to any question involving 
+                        angles of elevation and depression.
+                    </p>
+                </div>
+
+                <h3>Example 1: Finding the Height of a Building</h3>
+
+                <p>
+                    A person stands 40 m away from the base of a building. The angle of elevation to the top of the building is 35°. 
+                    Find the height of the building.
+                </p>
+
+                <div class="responsive-svg-container" style="display: flex; justify-content: center; margin: 1rem 0;">
+                    <img src="../assets/img/trigonometric-ratios/height-of-building.svg" alt="" />
+                </div>
+
+                <div>
+                    <p style="margin-bottom: 0.5rem;">
+                        <strong>Step 1:</strong> Identify the trigonometric ratio to use.
+                    </p>
+                    <p style="padding-left: 20px;">
+                        We know the adjacent side (40 m) and want the opposite side 
+                        (height). The ratio that connects the opposite and adjacent 
+                        sides is the tangent. So we use <strong>tangent</strong>.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/tan35.svg" alt="" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 2:</strong> tan 35° = 0.700 (from calculator or table).
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        
+                        <p>0.700 = h ÷ 40</p>
+                        
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 3:</strong> Solve for the height.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        
+                        <p>h = 0.700 × 40 = 28 m</p>
+                        
+                    </div>
+                </div>
+
+                <p><strong>Answer: The height of the building is 28 m.</strong></p>
+
+                <h3>Example 2: Finding the Distance from an Object</h3>
+
+                <p>
+                    From the top of a lighthouse 80 m above sea level, the angle of depression to a boat is 20°. 
+                    Find the horizontal distance of the boat from the base of the lighthouse.
+                </p>
+
+                <div class="responsive-svg-container" class="responsive-svg-container" style="display: flex; justify-content: center; margin: 1rem 0;">
+                    <img src="../assets/img/trigonometric-ratios/lighthouse.svg" alt="" />
+                </div>
+
+                <div>
+                    <p>
+                        <strong>Step 1:</strong> Recognize that the angle of depression from the lighthouse equals the angle of elevation from the boat.
+                    </p>
+                    <p>
+                        Therefore, the angle at the boat looking up to the lighthouse is also <strong>20°</strong>.
+                    </p>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 2:</strong> Identify the trigonometric ratio to use.
+                    </p>
+                    <p style="padding-left: 20px;">
+                        We know the opposite side (80 m) and want the adjacent side (distance). Use <strong>tangent</strong>.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/lighthouse-workings.svg" alt="" />
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 3:</strong> tan 20° = 0.364 (from calculator or table).
+                    </p>
+                    <div style="padding-left: 20px;">
+                        
+                        <p>0.364 = 80 ÷ d</p>
+                        
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 4:</strong> Solve for the distance.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        
+                        <p>d = 80 ÷ 0.364 = 219.8 m</p>
+                        
+                    </div>
+                </div>
+
+                <p><strong>Answer: The boat is approximately 220 m from the base of the lighthouse (3 s.f.).</strong></p>
+
+                <h3 style="margin-top: 1.5rem;">Example 3: Finding the Angle of Elevation</h3>
+
+                <p>
+                    A 10 m ladder leans against a vertical wall. The foot of the ladder is 4 m from the base of the wall. 
+                    Find the angle that the ladder makes with the ground.
+                </p>
+
+                <div class="responsive-svg-container" style="display: flex; justify-content: center; margin: 1rem 0;">
+                    <img src="../assets/img/trigonometric-ratios/ladder.svg" alt="" />
+                </div>
+
+                <div>
+                    <p style="margin-bottom: 0.5rem;">
+                        <strong>Step 1:</strong> Identify the trigonometric ratio to use.
+                    </p>
+
+                    <p style="padding-left: 20px;">
+                        We know the adjacent side (4 m) and the hypotenuse (10 m). 
+                        The ratio that connects the adjacent and hypotenuse sides is cosine.
+                        So we use  <strong>cosine</strong>.
+                    </p>
+                    <div class="responsive-svg-container" style="padding-left: 20px;">
+                        <img src="../assets/img/trigonometric-ratios/ladder-workings.svg" alt="" />
+                    </div>
+                    <div style="padding-left: 20px;">
+                        
+                        <p>cos θ = 4 ÷ 10 = 0.4</p>
+                        
+                    </div>
+
+                    <p style="margin-bottom: 0.5rem; margin-top: 1rem;">
+                        <strong>Step 2:</strong> Find the angle using inverse cosine.
+                    </p>
+                    <div style="padding-left: 20px;">
+                        
+                        <p>θ = cos⁻¹(0.4) = 66.4°</p>
+                        
+                    </div>
+                </div>
+
+                <p><strong>Answer: The ladder makes an angle of approximately 66.4° with the ground.</strong></p>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#trigonometric-ratios">Trigonometric Ratios</a></li>
+            <li><a href="#sine-ratio">The Sine Ratio (sin)</a></li>
+            <li><a href="#cosine-ratio">The Cosine Ratio (cos)</a></li>
+            <li><a href="#tangent-ratio">The Tangent Ratio (tan)</a></li>
+            <li><a href="#finding-sides">Finding Sides Using Trigonometric Ratios</a></li>
+            <li><a href="#elevation-and-depression">Angles of Elevation and Depression</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>
+
+
+
+                

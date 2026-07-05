@@ -1,0 +1,37 @@
+/* Make all SVGs horizontally scrollable on small screens */
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For SVGs that need their full width (like wide tables) */
+.responsive-svg,
+.svg-container svg {
+    display: block;
+    width: 100%;
+    min-width: fit-content;
+    height: auto;
+}
+
+.responsive-svg-container,
+.svg-container {
+    overflow-x: auto;
+    overflow-y: visible;
+    margin: 1.5rem 0;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile phones */
+@media (max-width: 640px) {
+    .responsive-svg-container,
+    .svg-container {
+        overflow-x: scroll;
+    }
+    
+    .responsive-svg-container svg,
+    .svg-container svg {
+        width: auto;
+        min-width: 100%;
+    }
+}

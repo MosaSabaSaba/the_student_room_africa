@@ -1,0 +1,76 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 550 650" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .solid { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .hidden-edge { stroke: #ffffff; stroke-width: 1; stroke-dasharray: 3,3; fill: none; opacity: 0.5; }
+        .plane { fill: rgba(0, 255, 204, 0.4); stroke: #00ffcc; stroke-width: 1.5; }
+        .label { fill: #00ffcc; font-family: sans-serif; font-size: 14px; font-weight: bold; }
+    </style>
+
+    <!-- ROW 1: 3 PLANES PARALLEL TO FACES -->
+    <g transform="translate(30, 20)">
+        <!-- Horizontal Middle -->
+        <g transform="translate(0, 0)">
+            <path d="M 0,30 L 100,30 L 100,110 L 0,110 Z M 100,30 L 130,0 L 130,80 L 100,110 M 0,30 L 30,0 L 130,0" class="solid" />
+            <path d="M 0,110 L 30,80 L 30,0 M 30,80 L 130,80" class="hidden-edge" />
+            <polygon points="0,70 100,70 130,40 30,40" class="plane" />
+        </g>
+        <!-- Vertical Middle (Front-Back) -->
+        <g transform="translate(170, 0)">
+            <path d="M 0,30 L 100,30 L 100,110 L 0,110 Z M 100,30 L 130,0 L 130,80 L 100,110 M 0,30 L 30,0 L 130,0" class="solid" />
+            <path d="M 0,110 L 30,80 L 30,0 M 30,80 L 130,80" class="hidden-edge" />
+            <polygon points="50,110 50,30 80,0 80,80" class="plane" />
+        </g>
+        <!-- Vertical Middle (Side-Side) -->
+        <g transform="translate(340, 0)">
+            <path d="M 0,30 L 100,30 L 100,110 L 0,110 Z M 100,30 L 130,0 L 130,80 L 100,110 M 0,30 L 30,0 L 130,0" class="solid" />
+            <path d="M 0,110 L 30,80 L 30,0 M 30,80 L 130,80" class="hidden-edge" />
+            <polygon points="15,15 115,15 115,95 15,95" class="plane" />
+        </g>
+    </g>
+
+    <!-- ROW 2: FIRST 3 DIAGONAL PLANES -->
+    <g transform="translate(30, 220)">
+        <!-- Diagonal 1 -->
+        <g transform="translate(0, 0)">
+            <path d="M 0,30 L 100,30 L 100,110 L 0,110 Z M 100,30 L 130,0 L 130,80 L 100,110 M 0,30 L 30,0 L 130,0" class="solid" />
+            <path d="M 0,110 L 30,80 L 30,0 M 30,80 L 130,80" class="hidden-edge" />
+            <polygon points="0,30 100,30 130,80 30,80" class="plane" />
+        </g>
+        <!-- Diagonal 2 -->
+        <g transform="translate(170, 0)">
+            <path d="M 0,30 L 100,30 L 100,110 L 0,110 Z M 100,30 L 130,0 L 130,80 L 100,110 M 0,30 L 30,0 L 130,0" class="solid" />
+            <path d="M 0,110 L 30,80 L 30,0 M 30,80 L 130,80" class="hidden-edge" />
+            <polygon points="0,110 100,110 130,0 30,0" class="plane" />
+        </g>
+        <!-- Diagonal 3 -->
+        <g transform="translate(340, 0)">
+            <path d="M 0,30 L 100,30 L 100,110 L 0,110 Z M 100,30 L 130,0 L 130,80 L 100,110 M 0,30 L 30,0 L 130,0" class="solid" />
+            <path d="M 0,110 L 30,80 L 30,0 M 30,80 L 130,80" class="hidden-edge" />
+            <polygon points="0,30 30,0 130,80 100,110" class="plane" />
+        </g>
+    </g>
+
+    <!-- ROW 3: FINAL 3 DIAGONAL PLANES -->
+    <g transform="translate(30, 420)">
+        <!-- Diagonal 4 -->
+        <g transform="translate(0, 0)">
+            <path d="M 0,30 L 100,30 L 100,110 L 0,110 Z M 100,30 L 130,0 L 130,80 L 100,110 M 0,30 L 30,0 L 130,0" class="solid" />
+            <path d="M 0,110 L 30,80 L 30,0 M 30,80 L 130,80" class="hidden-edge" />
+            <polygon points="100,30 130,0 30,80 0,110" class="plane" />
+        </g>
+        <!-- Diagonal 5 -->
+        <g transform="translate(170, 0)">
+            <path d="M 0,30 L 100,30 L 100,110 L 0,110 Z M 100,30 L 130,0 L 130,80 L 100,110 M 0,30 L 30,0 L 130,0" class="solid" />
+            <path d="M 0,110 L 30,80 L 30,0 M 30,80 L 130,80" class="hidden-edge" />
+            <polygon points="100,30 100,110 30,80 30,0" class="plane" />
+        </g>
+        <!-- Diagonal 6 -->
+        <g transform="translate(340, 0)">
+            <path d="M 0,30 L 100,30 L 100,110 L 0,110 Z M 100,30 L 130,0 L 130,80 L 100,110 M 0,30 L 30,0 L 130,0" class="solid" />
+            <path d="M 0,110 L 30,80 L 30,0 M 30,80 L 130,80" class="hidden-edge" />
+            <polygon points="0,30 0,110 130,80 130,0" class="plane" />
+        </g>
+    </g>
+    
+    <text x="275" y="600" class="label" text-anchor="middle">Total: 9 Planes of Symmetry</text>
+</svg>

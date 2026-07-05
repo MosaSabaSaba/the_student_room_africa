@@ -1,0 +1,41 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="550" height="420" viewBox="0 0 550 420" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(60, 40)">
+        <!-- 3D Shape -->
+        <path d="M 30,60 L 90,60 L 110,30 L 60,0 L 10,30 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 30,60 L 30,140 M 90,60 L 90,140 M 110,30 L 110,110 M 60,0 L 60,80 M 10,30 L 10,110" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 30,140 L 90,140 L 110,110" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <path d="M 110,110 L 60,80 L 10,110 L 30,140" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="4,4"/>
+        
+        <!-- Apothem Visualization -->
+        <circle cx="60" cy="36" r="3" fill="#00ffcc"/>
+        <line x1="60" y1="36" x2="60" y2="60" stroke="#00ffcc" stroke-width="2"/>
+        <text x="65" y="52" fill="#00ffcc" font-size="12" font-weight="bold">a=4cm</text>
+        
+        <text x="45" y="160" fill="#ffffff" font-size="12">s = 6cm</text>
+        <text x="120" y="80" fill="#ffffff" font-size="12">L = 10cm</text>
+    </g>
+
+    <!-- Calculation with Swapped Y-Values -->
+    <rect x="260" y="10" width="280" height="380" fill="none" stroke="#00ffcc" stroke-width="2"/>
+    
+    <!-- STEP 1 (Now at the top) -->
+    <text x="270" y="40" fill="#00ffcc" font-weight="bold" font-size="16">STEP 1: Perimeter of Base</text>
+    <text x="270" y="65" fill="#ffffff" font-size="14">Perim = 5 sides × 6cm</text>
+    <text x="270" y="85" fill="#00ffcc" font-size="14">Perim = 30cm</text>
+
+    <!-- STEP 2 (Now using P=30 from above) -->
+    <text x="270" y="130" fill="#00ffcc" font-weight="bold" font-size="16">STEP 2: Area of 2 Bases</text>
+    <text x="270" y="155" fill="#ffffff" font-size="14">Area = ½ × Perim × apothem</text>
+    <text x="270" y="175" fill="#ffffff" font-size="14">Area = ½ × (30) × 4 = 60cm²</text>
+    <text x="270" y="195" fill="#00ffcc" font-size="14">Total Bases = 60 × 2 = 120cm²</text>
+
+    <!-- STEP 3 -->
+    <text x="270" y="240" fill="#00ffcc" font-weight="bold" font-size="16">STEP 3: Area of Sides</text>
+    <text x="270" y="265" fill="#ffffff" font-size="14">Side Area = Perim × Length</text>
+    <text x="270" y="285" fill="#00ffcc" font-size="14">Side Area = 30 × 10 = 300cm²</text>
+
+    <!-- STEP 4 -->
+    <text x="270" y="330" fill="#00ffcc" font-weight="bold" font-size="16">STEP 4: Total Surface Area</text>
+    <text x="270" y="355" fill="#ffffff" font-size="14">TSA = 120 + 300</text>
+    <text x="270" y="375" fill="#00ffcc" font-weight="bold" font-size="18">TSA = 420cm²</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .edge { stroke: #fff; stroke-width: 1.5; fill: none; }
+        .edge-dash { stroke: #fff; stroke-width: 1.5; fill: none; stroke-dasharray: 4,3; }
+        .plane { fill: rgba(0, 255, 204, 0.4); stroke: #00ffcc; stroke-width: 1; stroke-dasharray: 4,3; }
+        .label { font-family: Arial, sans-serif; font-size: 11px; fill: #00ffcc; text-anchor: middle; }
+        .label-bold { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #00ffcc; text-anchor: middle; }
+        .title { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #00ffcc; text-anchor: middle; }
+    </style>
+
+    <!-- Title -->
+    <text class="title" x="200" y="18">4 Planes of Symmetry — Square-Based Pyramid</text>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- ROW 1, COL 1 — midpoints front-to-back -->
+    <!-- ═══════════════════════════════════════ -->
+    <g transform="translate(15,30)">
+        <line class="edge" x1="10" y1="135" x2="90" y2="135"/>
+        <line class="edge" x1="10" y1="135" x2="38" y2="108"/>
+        <line class="edge" x1="90" y1="135" x2="118" y2="108"/>
+        <line class="edge-dash" x1="38" y1="108" x2="118" y2="108"/>
+        <line class="edge" x1="10" y1="135" x2="64" y2="18"/>
+        <line class="edge" x1="90" y1="135" x2="64" y2="18"/>
+        <line class="edge-dash" x1="38" y1="108" x2="64" y2="18"/>
+        <line class="edge-dash" x1="118" y1="108" x2="64" y2="18"/>
+        <polygon class="plane" points="64,18 50,135 104,108"/>
+        <text class="label" x="64" y="155">Midpoints (front–back)</text>
+    </g>
+
+    <!-- ══════════════════════════════════════ -->
+    <!-- ROW 1, COL 2 — midpoints left-to-right -->
+    <!-- ══════════════════════════════════════ -->
+    <g transform="translate(210,30)">
+        <line class="edge" x1="10" y1="135" x2="90" y2="135"/>
+        <line class="edge" x1="10" y1="135" x2="38" y2="108"/>
+        <line class="edge" x1="90" y1="135" x2="118" y2="108"/>
+        <line class="edge-dash" x1="38" y1="108" x2="118" y2="108"/>
+        <line class="edge" x1="10" y1="135" x2="64" y2="18"/>
+        <line class="edge" x1="90" y1="135" x2="64" y2="18"/>
+        <line class="edge-dash" x1="38" y1="108" x2="64" y2="18"/>
+        <line class="edge-dash" x1="118" y1="108" x2="64" y2="18"/>
+        <polygon class="plane" points="64,18 24,121 104,121"/>
+        <text class="label" x="64" y="155">Midpoints (left–right)</text>
+    </g>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- ROW 2, COL 1 — diagonal front-left/back-right -->
+    <!-- ══════════════════════════════════════════════ -->
+    <g transform="translate(15,220)">
+        <line class="edge" x1="10" y1="135" x2="90" y2="135"/>
+        <line class="edge" x1="10" y1="135" x2="38" y2="108"/>
+        <line class="edge" x1="90" y1="135" x2="118" y2="108"/>
+        <line class="edge-dash" x1="38" y1="108" x2="118" y2="108"/>
+        <line class="edge" x1="10" y1="135" x2="64" y2="18"/>
+        <line class="edge" x1="90" y1="135" x2="64" y2="18"/>
+        <line class="edge-dash" x1="38" y1="108" x2="64" y2="18"/>
+        <line class="edge-dash" x1="118" y1="108" x2="64" y2="18"/>
+        <polygon class="plane" points="64,18 10,135 118,108"/>
+        <text class="label" x="64" y="155">Corners (diagonal 1)</text>
+    </g>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- ROW 2, COL 2 — diagonal front-right/back-left -->
+    <!-- ══════════════════════════════════════════════ -->
+    <g transform="translate(210,220)">
+        <line class="edge" x1="10" y1="135" x2="90" y2="135"/>
+        <line class="edge" x1="10" y1="135" x2="38" y2="108"/>
+        <line class="edge" x1="90" y1="135" x2="118" y2="108"/>
+        <line class="edge-dash" x1="38" y1="108" x2="118" y2="108"/>
+        <line class="edge" x1="10" y1="135" x2="64" y2="18"/>
+        <line class="edge" x1="90" y1="135" x2="64" y2="18"/>
+        <line class="edge-dash" x1="38" y1="108" x2="64" y2="18"/>
+        <line class="edge-dash" x1="118" y1="108" x2="64" y2="18"/>
+        <polygon class="plane" points="64,18 90,135 38,108"/>
+        <text class="label" x="64" y="155">Corners (diagonal 2)</text>
+    </g>
+
+    <!-- Group labels at bottom -->
+    <text class="label-bold" x="100" y="410">2 through midpoints</text>
+    <text class="label-bold" x="300" y="410">2 through corners</text>
+</svg>

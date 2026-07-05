@@ -1,0 +1,74 @@
+<svg viewBox="0 0 840 360" width="840" height="360" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; max-width: 760px; font-family: 'Inter', system-ui, sans-serif;">
+    <style>
+        .gr-grid  { stroke: #ffffff; stroke-width: 0.5; stroke-dasharray: 4,4; opacity: 0.15; }
+        .gr-curve { stroke: #5ba3f5; stroke-width: 3; fill: none; stroke-linecap: round; }
+        .gr-label { fill: #ffffff; font-family: 'Times New Roman', serif; font-size: 13px; text-anchor: middle; }
+        .gr-axis-lbl { fill: #ffffff; font-family: 'Times New Roman', serif; font-size: 16px; font-style: italic; font-weight: bold; }
+        .gr-dot   { stroke-width: 1.5; stroke: #ffffff; }
+    </style>
+    
+    <defs>
+        <marker id="gr-arrow-cos" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ffffff"/>
+        </marker>
+    </defs>
+
+    <!-- Vertical Angular Grid Lines (-360° to 360°) -->
+    <line x1="100" y1="40" x2="100" y2="320" class="gr-grid"/>
+    <line x1="180" y1="40" x2="180" y2="320" class="gr-grid"/>
+    <line x1="260" y1="40" x2="260" y2="320" class="gr-grid"/>
+    <line x1="340" y1="40" x2="340" y2="320" class="gr-grid"/>
+    <line x1="420" y1="40" x2="420" y2="320" class="gr-grid"/>
+    <line x1="500" y1="40" x2="500" y2="320" class="gr-grid"/>
+    <line x1="580" y1="40" x2="580" y2="320" class="gr-grid"/>
+    <line x1="660" y1="40" x2="660" y2="320" class="gr-grid"/>
+    <line x1="740" y1="40" x2="740" y2="320" class="gr-grid"/>
+    
+    <!-- Horizontal Amplitude Boundaries (+1, -1) -->
+    <line x1="80"  y1="60"  x2="760" y2="60"  class="gr-grid"/>
+    <line x1="80"  y1="300" x2="760" y2="300" class="gr-grid"/>
+
+    <!-- Axis Lines -->
+    <line x1="70"  y1="180" x2="785" y2="180" stroke="#ffffff" stroke-width="1.5" marker-end="url(#gr-arrow-cos)"/>
+    <line x1="420" y1="330" x2="420" y2="35"  stroke="#ffffff" stroke-width="1.5" marker-end="url(#gr-arrow-cos)"/>
+
+    <!-- X Axis Degree Labels -->
+    <text x="100" y="198" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">−360°</text>
+    <text x="180" y="198" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">−270°</text>
+    <text x="260" y="198" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">−180°</text>
+    <text x="340" y="198" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">−90°</text>
+    <text x="435" y="198" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">0°</text>
+    <text x="500" y="198" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">90°</text>
+    <text x="580" y="198" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">180°</text>
+    <text x="660" y="198" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">270°</text>
+    <text x="740" y="198" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">360°</text>
+    <text x="798" y="185" fill="#ffffff" font-family="'Times New Roman', serif" font-size="16px" font-style="italic" font-weight="bold">θ</text>
+
+    <!-- Y Axis Labels -->
+    <text x="406" y="64" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">1</text>
+    <text x="404" y="304" fill="#ffffff" font-family="'Times New Roman', serif" font-size="13px" text-anchor="middle">−1</text>
+    <text x="420" y="24" fill="#ffffff" font-family="'Times New Roman', serif" font-size="16px" font-style="italic" font-weight="bold" text-anchor="middle">cos(θ)</text>
+
+    <!-- Fluid Cosine Curve -->
+    <path class="gr-curve" d="
+        M 100,60
+        C 130,60 150,135 180,180
+        C 210,225 230,300 260,300
+        C 290,300 310,225 340,180
+        C 370,135 390,60 420,60
+        C 450,60 470,135 500,180
+        C 530,225 550,300 580,300
+        C 610,300 630,225 660,180
+        C 690,135 710,60 740,60
+    "/>
+
+    <!-- Turning Point Reference Indicators -->
+    <circle cx="100" cy="60"  r="3.5" fill="#ff8888"/>
+    <circle cx="260" cy="300" r="3.5" fill="#ff8888"/>
+    <circle cx="420" cy="60"  r="3.5" fill="#00ffcc"/>
+    <circle cx="580" cy="300" r="3.5" fill="#ff8888"/>
+    <circle cx="740" cy="60"  r="3.5" fill="#00ffcc"/>
+
+    <!-- Title -->
+    <text x="420" y="345" fill="#5ba3f5" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">y = cos θ</text>
+</svg>

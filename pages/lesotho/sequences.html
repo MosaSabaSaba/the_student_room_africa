@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sequences - Mathematics | Student Room Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/contentStyles.css"/>
+<link rel="stylesheet" href="../css/svg.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "LGCSE Mathematics: Sequences Complete Guide",
+  "description": "Comprehensive guide for LGCSE learners covering arithmetic sequences (linear), geometric sequences (geometric progressions), quadratic sequences (nth term = an² + bn + c), cubic sequences (nth term = an³ + bn² + cn + d), and special sequences including square numbers, cube numbers, triangle numbers, prime numbers, and the Fibonacci sequence.",
+  "educationalLevel": "Secondary School (LGCSE)",
+  "keywords": "sequences, arithmetic sequences, linear sequences, geometric sequences, geometric progressions, quadratic sequences, cubic sequences, nth term, square numbers, cube numbers, triangle numbers, prime numbers, Fibonacci sequence, first differences, second differences, third differences, LGCSE mathematics",
+  "about": {
+    "@type": "Thing",
+    "name": "Sequences and Series"
+  },
+  "teaches": "How to identify arithmetic sequences where terms increase/decrease by constant difference using nth term = first term + (n-1)×d; identify geometric sequences where terms are multiplied by common ratio using nth term = first term × r^(n-1); find nth term of quadratic sequences using second differences and formula an² + bn + c; find nth term of cubic sequences using third differences and formula an³ + bn² + cn + d; recognize special sequences: square numbers (n²), cube numbers (n³), triangle numbers (n(n+1)/2), prime numbers, and Fibonacci sequence (each term sum of previous two)",
+  "inLanguage": "en",
+  "audience": {
+    "@type": "Audience",
+    "name": "LGCSE Mathematics students in Lesotho"
+  },
+  "learningResourceType": "Study Guide",
+  "timeRequired": "PT80M",
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Student Room Africa"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Sequences</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li class="active"><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="sequences_intro">
+            <h1>Sequences</h1>
+
+            <p>
+                A <strong>sequence</strong> is a set of numbers which follow
+                a particular rule. The word <em>'term'</em> is often used to 
+                describe the numbers in the sequence.
+            </p>
+
+            <p>For instance</p>
+
+            <p>3, 7, 11, 15, 19, 23, ...</p>
+
+            <p>
+                The <em>first term</em> is 3 and the <em>second term</em>
+                is 7 etc. 
+            </p>
+
+            <p>
+                The expression 'the <em>n</em>th term' is often used to describe
+                the value of any term in the sequence.
+            </p>
+
+            <p>
+                For the above sequence the <em>n</em>th term is 4<em>n</em> - 1
+                so that:
+            </p>
+
+            <p>
+                the first term(where <em>n</em> = 1) is 4 × 1 - 1 = 3
+            </p>
+
+            <p>
+                the second term(where <em>n</em> = 2) is 4 × 2 - 1 = 7
+            </p>
+
+            <p>
+                Similarly:
+            </p>
+
+            <p>
+                the 50th term(where <em>n</em> = 50) is 4 × 50 - 1 = 199
+            </p>
+        </div>
+
+        <!-- INLINE TOC (mobile only) -->
+        <div class="inline-toc" id="inlineToc">
+            <div class="toc-heading">In this article</div>
+            <ul class="toc-list">
+                <li class="active"><a href="#arithmetic-sequences">Arithmetic Sequences</a></li>
+                <li><a href="#geometric-sequence">Geometric Sequence</a></li>
+                <li><a href="#quadratic-sequences">Quadratic Sequences</a></li>
+                <li><a href="#cubic-sequences">Cubic Sequences</a></li>
+                <li><a href="#special-sequences">Special Sequences</a></li>
+            </ul>
+        </div>
+
+        <div class="arithmetic_sequences">
+            <h2 id="arithmetic-sequences">Arithmetic Sequences</h2>
+            <p><strong>Arithmetic Sequences</strong> (or linear sequences) are sequences where the terms 
+                <em>increase</em> or <em>decrease</em> by the <strong>same value</strong>
+                each time.
+            </p>
+
+            <div class="responsive-svg-container">
+                <img src="../assets/img/sequences/first-differences.svg" alt="Arithemetic Sequences" />
+            </div>
+            <p>
+                As the first differences are all the same then 
+                the sequence is linear, so you can use the formula:
+            </p>
+            <p style="margin-bottom: 0;">
+                <strong>the <em>n</em>th term = first terms + 
+                (n - 1) × 1st difference</strong>
+            </p>
+            <p>nth term = n<sub>1</sub> + (n - 1) × <e>d</e></p>
+            <br>
+            <p>For this sequence:</p>
+            
+            <p>
+                the <em>n</em>th term = 3 + (<em>n</em> - 1) × 4
+            </p>
+            <p>= 3 + (n - 1) × 4 = 3 + 4n - 4 = <strong>4<em>n</em> - 1</strong></p>
+
+            <p><strong>NB:</strong> When we consistently add or minus, it is an arithmetic sequence.</p>
+        </div>
+
+        <div class="geometric_sequences">
+            <h2 id="geometric-sequence">Geometric Sequence</h2>
+            <p><strong>Geometric Sequences</strong> (or geometric progressions) 
+                are sequences where consecutive terms are found by <em>multiplying</em> or 
+                <em>dividing</em> by the <strong>same value</strong> each time.
+            </p>
+
+            <div class="responsive-svg-container">
+                <img src="../assets/img/sequences/geometric-sequence.svg" alt="Geometric Sequence"/>
+            </div>
+            <p style="margin-bottom: 0;">the <em>n</em>th term = first term × common ratio<sup><em>n</em>-1</sup></p>
+            <p><em>n</em>th term = <strong>n<sub>1</sub> × 3<sup>n-1</sup></strong></p>
+
+            <p>For this sequence:</p>
+            <p>the <em>n</em>th term = <strong>1 × 3<sup>n-1</sup></strong></p>
+
+            <p><strong>NB:</strong> When we consistently multiply or divide, it is a geometric progression.</p>
+        </div>
+        
+        <div class="quadratic_sequences">
+            <h2 id="quadratic-sequences">Quadratic Sequences</h2>
+            <p>
+                The <em>n</em>th term of the <strong>quadratic sequence</strong> has the form <em>an<sup>2</sup> + bn + c</em>
+                where <em>a, b</em> and <em>c</em> are constants and <em>a</em> is generally not 0. if <em>a</em> is 0 then the
+                sequence is an arithmetic sequence.
+            </p>
+
+            <p>For the sequence</p>
+            <p>-1, 2, 7, 14, 23, 34, ...</p>
+            <p>work out the differences as shown.</p>
+
+            <div class="responsive-svg-container">
+                <img src="../assets/img/sequences/quadratic-sequence.svg" alt="Quadratic Sequence"/>
+            </div>
+            <p>
+                As the first differences are not the same, work out the second
+                differences (or the differences of the differences).
+            </p>
+        
+
+            <p>For this sequence:</p>
+
+            <p>As the second differences are all the same, the sequence is quadratic so use the formula:</p>
+
+            <p>
+                <strong>the <em>n</em>th term = <em>an</em><sup>2</sup> + <em>bn</em> + <em>c</em></strong>
+            </p>
+
+            <p>
+                As you can see, this is 2 sequences in 1 sequence. 
+                And there are 6 steps to finding <em>n</em>th term for quadratic sequences.
+            </p>
+
+            <p><strong>Step 1:</strong> Find the 1st difference</p>
+            <p><strong>Step 2:</strong> Find the 2nd difference</p>
+            <p><strong>Step 3:</strong> Divide the 2nd difference by 2 and attach n<sup>2</sup> to it </p>
+            <p> 2 ÷ 2 = 1 </p>
+            <p>= 1n<sup>2</sup></p>
+
+            <p><strong>Step 4:</strong> Find the values of 1n<sup>2</sup> from step 3</p>
+            <p>1 × 1<sup>2</sup>, 1 × 2<sup>2</sup>, 1 × 3<sup>2</sup>, 1 × 4<sup>2</sup>, 1 × 5<sup>2</sup>, 1 × 6<sup>2</sup></p>
+            <p>= 1, 4, 9, 16, 25, 36</p>
+
+            <p><strong>Step 5:</strong> Original Sequence take away new sequence from step 4 to get another new sequence</p>
+            <p>-1, 2, 7, 14, 23, 34 </p>
+            <p style="border-bottom: 1px solid #fff; display: inline;"> 1, 4, 9, 16, 25, 36 </p>
+            <p>-2, -2, -2, -2, -2, -2 </p>
+
+            <p><strong>Step 6:</strong>All new differences give two, so we just combine out answer to step 3 with -2 from step 5 above</p>
+            <p>= 1n<sup>2</sup> - 2</p>
+            <p style="text-decoration:underline;">= n<sup>2</sup> - 2</p>
+
+            <small>Sometimes there can be more to step 6 if the differences form yet another new sequence. Check <a href="#">Quadratic Sequences Practice questions</a> for more variations.</small>
+
+
+            <br><br>
+            <h1>OR</h1>
+
+            <p>
+                <strong>the <em>n</em>th term = first term + (n - 1) 
+                    × 1st difference + (n - 1)(n - 2) × (2nd Difference ÷ 2)
+                </strong>
+            </p>
+
+            <p style="margin-bottom: 0;">
+                = -1 + (n - 1) × 3 + (n - 1)(n - 2) × (2 ÷ 2)
+            </p>
+            <p style="margin-bottom: 0;">
+                = -1 + 3n - 3 + n<sup>2</sup> - 2n - n + 2 × 1
+            </p>
+            <p style="margin-bottom: 0;">
+                = -1 -3 + 2 + 3n - 2n - n + n<sup>2</sup>
+            </p>
+            <p style="margin-bottom: 0;">
+                = -4 + 2 + 3n - 3n + n<sup>2</sup>
+            </p>
+            <p style="margin-bottom: 0;">
+                = -2 + n<sup>2</sup>
+            </p>
+            <p style="text-decoration:underline;">
+                = n<sup>2</sup> -2
+            </p>
+        </div>
+
+        <div class="cubic_sequences">
+            <h2 id="cubic-sequences">Cubic Sequences</h2>
+            <p><strong>Cubic Sequences</strong> are sequences where the <strong>third differences</strong> between terms are constant. The <em>n</em>th term formula has the form <em>an<sup>3</sup> + bn<sup>2</sup> + cn + d</em>.</p>
+
+            <p>For the sequence:</p>
+            <p>4, 14, 40, 88, 164, ...</p>
+            <p>Work out the differences until they become constant.</p>
+
+            <p>
+                As the first and second differences are not the same, work out the <strong>third differences</strong>. 
+                If the third differences are constant, the sequence is cubic.
+            </p>
+
+            <p>For this sequence:</p>
+            <p><strong>the <em>n</em>th term = <em>an</em><sup>3</sup> + <em>bn</em><sup>2</sup> + <em>cn</em> + <em>d</em></strong></p>
+
+            <p><strong>Step 1:</strong> Find the 1st, 2nd, and 3rd differences.</p>
+
+            <div class="responsive-svg-container">
+                <img src="../assets/img/sequences/cubic-sequences.svg" alt="Cubic Sequence" />
+            </div>
+
+            <p><strong>Step 2:</strong> Divide the 3rd difference by 6 to find <em>a</em> and attach n<sup>3</sup>.</p>
+            <p>6 ÷ 6 = 1</p>
+            <p>= <strong>1n<sup>3</sup></strong></p>
+
+            <p><strong>Step 3:</strong> Calculate the values of 1n<sup>3</sup> for <em>n</em> = 1, 2, 3, 4.</p>
+            <p>= 1, 8, 27, 64</p>
+
+            <p><strong>Step 4:</strong> Original Sequence take away new sequence from step 3 to get another new sequence.</p>
+            <p>4, 14, 40, 88</p>
+            <p style="border-bottom: 1px solid #fff; display: inline;"> 1, 8, 27, 64 </p>
+            <p><strong>3, 6, 13, 24</strong></p>
+
+            <p><strong>Step 5:</strong> Find the <em>n</em>th term of this new sequence (3, 6, 13, 24). This is a quadratic calculation:</p>
+
+            <div style="margin-left: 20px; border-left: 2px solid #ccc; padding-left: 15px;">
+                <p><em>Step 5a:</em> Find the differences of this sequence.</p>
+                <p>1st diff: 3, 7, 11 | 2nd diff: <strong>4, 4</strong></p>
+
+                <p><em>Step 5b:</em> Divide 2nd difference by 2 for the <em>n<sup>2</sup></em> term.</p>
+                <p>4 ÷ 2 = 2 → <strong>2n<sup>2</sup></strong></p>
+
+                <p><em>Step 5c:</em> Subtract 2n<sup>2</sup> values (2, 8, 18, 32) from the Step 5 sequence.</p>
+                <p>3, 6, 13, 24</p>
+                <p style="border-bottom: 1px solid #fff; display: inline;"> 2, 8, 18, 32 </p>
+                <p>Linear sequence: <strong>1, -2, -5, -8</strong></p>
+
+                <p><em>Step 5d:</em> Find the linear <em>n</em>th term for (1, -2, -5, -8).</p>
+                <p>Difference is -3. Use: 1 + (n - 1) × -3</p>
+                <p>= 1 - 3n + 3 = <strong>-3n + 4</strong></p>
+
+                <p><strong>Step 5 Result:</strong> Combine these to get <strong>2n<sup>2</sup> - 3n + 4</strong></p>
+            </div>
+
+            <p><strong>Step 6:</strong> Combine Step 2 (n<sup>3</sup>) with the result from Step 5.</p>
+            <p>= 1n<sup>3</sup> + 2n<sup>2</sup> - 3n + 4</p>
+            <p style="text-decoration:underline;">= <strong>n<sup>3</sup> + 2n<sup>2</sup> - 3n + 4</strong></p>
+
+            <br><br>
+            <h1>OR</h1>
+
+            <p>
+                <strong>the <em>n</em>th term = <em>an</em><sup>3</sup> + <em>bn</em><sup>2</sup> + <em>cn</em> + <em>d</em></strong>
+            </p>
+
+            <p>Solve these four equations using the sequence's first differences:</p>
+
+            <div style="background-color: rgba(255,255,255,0.1); padding: 15px; border-radius: 5px;">
+                <p><strong>1) 6<em>a</em> = 3rd Difference</strong></p>
+                <p><strong>2) 12<em>a</em> + 2<em>b</em> = 1st of the 2nd differences</strong></p>
+                <p><strong>3) 7<em>a</em> + 3<em>b</em> + <em>c</em> = 1st of the 1st differences</strong></p>
+                <p><strong>4) <em>a</em> + <em>b</em> + <em>c</em> + <em>d</em> = 1st term of the sequence</strong></p>
+            </div>
+
+            <p>For our sequence (4, 14, 40, 88...):</p>
+
+            <p><strong>Step 1:</strong> 6<em>a</em> = 6 &rarr; <strong><em>a</em> = 1</strong></p>
+
+            <p><strong>Step 2:</strong> 12(1) + 2<em>b</em> = 16 &rarr; 2<em>b</em> = 4 &rarr; <strong><em>b</em> = 2</strong></p>
+
+            <p><strong>Step 3:</strong> 7(1) + 3(2) + <em>c</em> = 10 &rarr; 13 + <em>c</em> = 10 &rarr; <strong><em>c</em> = -3</strong></p>
+
+            <p><strong>Step 4:</strong> 1 + 2 + (-3) + <em>d</em> = 4 &rarr; 0 + <em>d</em> = 4 &rarr; <strong><em>d</em> = 4</strong></p>
+
+            <p>Combine the values:</p>
+            <p style="text-decoration:underline;">
+                = <strong><em>n</em><sup>3</sup> + 2<em>n</em><sup>2</sup> - 3<em>n</em> + 4</strong>
+            </p>
+
+            <p><strong>NB:</strong> If you consistently find a 3rd difference, the sequence is cubic.</p>
+        </div>
+
+        <div class="special_sequences">
+            <h2 id="special-sequences">Special Sequences</h2>
+            <p>The following are <strong>Special Sequences</strong> of numbers that you should be able to recognize instantly.</p>
+
+            
+            <div class="square-numbers">
+                <h3 id="square-numbers">Square Numbers</h3>
+                <p>The first few terms of a square number sequence are as follows: </p>
+                <p><strong>1, 4, 9, 16, 25, ...</strong></p>
+                <p>These are the result of multiplying an integer by itself (<em>n</em> &times; <em>n</em>).</p>
+                <p>For the first 5 terms, this multiplication looks like:</p>
+
+                <ul style="margin-left:2rem; margin-bottom:1rem;">
+                    <li><strong>1 &times; 1 = 1</strong></li>
+                    <li><strong>2 &times; 2 = 4</strong></li>
+                    <li><strong>3 &times; 3 = 9</strong></li>
+                    <li><strong>4 &times; 4 = 16</strong></li>
+                    <li><strong>5 &times; 5 = 25</strong></li>
+                </ul>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/sequences/square-numbers.svg" alt="Square Numbers"/>
+                </div>
+
+                <p><em>n</em>th term = <strong>n<sup>2</sup></strong></p>
+            </div>
+
+            <div class="cube-numbers">
+                <h3 id="cube-numbers">Cube Numbers</h3>
+
+                <p>The first few terms of a cube number sequence are as follows: </p>
+                <p><strong>1, 8, 27, 64, 125, ...</strong></p>
+                <p>These are the result of multiplying an integer by itself three times (<em>n</em> &times; <em>n</em> &times; <em>n</em>).</p>
+                <p>For the first 5 terms, this multiplication looks like:</p>
+                <ul style="margin-left:2rem;">
+                    <li><strong>1 &times; 1 &times; 1 = 1</strong></li>
+                    <li><strong>2 &times; 2 &times; 2 = 8</strong></li>
+                    <li><strong>3 &times; 3 &times; 3 = 27</strong></li>
+                    <li><strong>4 &times; 4 &times; 4 = 64</strong></li>
+                    <li><strong>5 &times; 5 &times; 5 = 125</strong></li>
+                </ul>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/sequences/cube-numbers.svg" alt="Cube Numbers" />
+                </div>
+
+                <p><em>n</em>th term = <strong>n<sup>3</sup></strong></p>
+            </div>
+
+            <div class="triangle-numbers">
+                <h3 id="triangle-numbers">Triangle Numbers</h3>
+
+                <p>The first few terms of a triangle number sequence are as follows: </p>
+                <p><strong>1, 3, 6, 10, 15, ...</strong></p>
+                <p>These numbers can be arranged in an equilateral triangle. Each term is the sum of the consecutive integers up to <em>n</em>.</p>
+                <p>For the first 5 terms, this addition looks like:</p>
+                <ul>
+                    <li><strong>1 = 1</strong></li>
+                    <li><strong>1 + 2 = 3</strong></li>
+                    <li><strong>1 + 2 + 3 = 6</strong></li>
+                    <li><strong>1 + 2 + 3 + 4 = 10</strong></li>
+                    <li><strong>1 + 2 + 3 + 4 + 5 = 15</strong></li>
+                </ul>
+                
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/sequences/triangle-numbers.svg" alt="Triangle Numbers" />
+                </div>
+
+                <p><em>n</em>th term = <strong><sup>n(n + 1)</sup> / <sub>2</sub></strong></p>
+                
+                <p><strong>Derivation:</strong> We can visualize the formula by taking two identical triangles and putting them together to form a rectangle.</p>
+                
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/sequences/triangular-numbers-demo.svg" alt="Triangular Numbers Derivation" />
+                </div>
+                
+
+                <p>The rectangle has a width of <strong>n + 1</strong> and a height of <strong>n</strong>. Since the triangle is exactly half of that rectangle, the <em>n</em>th triangle number is <strong>half of n(n + 1)</strong>.</p>
+            </div>
+
+
+            <div class="prime-numbers">
+                <h3 id="prime-numbers">Prime Numbers</h3>
+                <p>The first few terms of a prime number sequence are as follows: </p>
+                <p><strong>2, 3, 5, 7, 11, 13, 17, ...</strong></p>
+                <p>Numbers that have exactly two factors: 1 and themselves. Note that <strong>1 is NOT a prime number</strong> and <strong>2 is the only even prime</strong>.</p>
+            </div>
+
+            <div class="fibonacci-sequence">
+                <h3 id="fibonacci-sequence">Fibonacci Sequence</h3>
+                <p>The first few terms of a fibonacci sequence are as follows: </p>
+                <p><strong>1, 1, 2, 3, 5, 8, 13, 21, ...</strong></p>
+                <p>In this sequence, each term is found by <strong>adding the two previous terms</strong>.</p>
+                
+                <p>The <em>n</em>th term is defined by the formula: <strong>x<sub>n</sub> = x<sub>n-1</sub> + x<sub>n-2</sub></strong></p>
+                
+                <p>To find the elements of the sequence step-by-step:</p>
+                <ul>
+                    <li><strong>Term 1 (x<sub>1</sub>):</strong> Given as <strong>1</strong></li>
+                    <li><strong>Term 2 (x<sub>2</sub>):</strong> Given as <strong>1</strong></li>
+                    <li><strong>Term 3 (x<sub>3</sub>):</strong> x<sub>2</sub> + x<sub>1</sub> = 1 + 1 = <strong>2</strong></li>
+                    <li><strong>Term 4 (x<sub>4</sub>):</strong> x<sub>3</sub> + x<sub>2</sub> = 2 + 1 = <strong>3</strong></li>
+                    <li><strong>Term 5 (x<sub>5</sub>):</strong> x<sub>4</sub> + x<sub>3</sub> = 3 + 2 = <strong>5</strong></li>
+                </ul>
+
+                <p><strong>NB:</strong> If the terms are growing but not by a consistent multiplication or addition, check if the sum of the previous two terms works!</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#arithmetic-sequences">Arithmetic Sequences</a></li>
+            <li><a href="#geometric-sequence">Geometric Sequence</a></li>
+            <li><a href="#quadratic-sequences">Quadratic Sequences</a></li>
+            <li><a href="#cubic-sequences">Cubic Sequences</a></li>
+            <li><a href="#special-sequences">Special Sequences</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

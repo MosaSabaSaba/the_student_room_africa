@@ -1,0 +1,29 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 550 220" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .solid { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .hidden-edge { stroke: #ffffff; stroke-width: 1; stroke-dasharray: 3,3; fill: none; opacity: 0.5; }
+        .plane { fill: rgba(0, 255, 204, 0.4); stroke: #00ffcc; stroke-width: 1.5; }
+        .label { fill: #00ffcc; font-family: sans-serif; font-size: 13px; font-weight: bold; }
+    </style>
+
+    <g transform="translate(20, 40)">
+        <path d="M 0,30 L 100,30 L 100,80 L 0,80 Z M 100,30 L 130,0 L 130,50 L 100,80 M 0,30 L 30,0 L 130,0" class="solid" />
+        <path d="M 0,80 L 30,50 L 30,0 M 30,50 L 130,50" class="hidden-edge" />
+        <polygon points="50,80 50,30 80,0 80,50" class="plane" />
+        <text x="65" y="110" class="label" text-anchor="middle">Vertical (Width)</text>
+    </g>
+
+    <g transform="translate(190, 40)">
+        <path d="M 0,30 L 100,30 L 100,80 L 0,80 Z M 100,30 L 130,0 L 130,50 L 100,80 M 0,30 L 30,0 L 130,0" class="solid" />
+        <path d="M 0,80 L 30,50 L 30,0 M 30,50 L 130,50" class="hidden-edge" />
+        <polygon points="15,15 115,15 115,65 15,65" class="plane" />
+        <text x="65" y="110" class="label" text-anchor="middle">Vertical (Length)</text>
+    </g>
+
+    <g transform="translate(360, 40)">
+        <path d="M 0,30 L 100,30 L 100,80 L 0,80 Z M 100,30 L 130,0 L 130,50 L 100,80 M 0,30 L 30,0 L 130,0" class="solid" />
+        <path d="M 0,80 L 30,50 L 30,0 M 30,50 L 130,50" class="hidden-edge" />
+        <polygon points="0,55 100,55 130,25 30,25" class="plane" />
+        <text x="65" y="110" class="label" text-anchor="middle">Horizontal</text>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="300" height="220" viewBox="0 0 300 220" xmlns="http://w3.org/2000/svg">
+    <style>
+        .wall { stroke: #ffffff; stroke-width: 2; }
+        .ground { stroke: #ffffff; stroke-width: 2; }
+        .ladder { stroke: #00ffcc; stroke-width: 2.5; }
+        .angle-arc { stroke: #ffcc00; stroke-width: 2; fill: none; }
+        .label { fill: #ffffff; font-family: sans-serif; font-size: 12px; }
+        .angle-label { fill: #ffcc00; font-family: sans-serif; font-size: 12px; font-weight: bold; }
+    </style>
+
+    <!-- Wall (Vertical) -->
+    <line x1="60" y1="20" x2="60" y2="180" class="wall"/>
+    
+    <!-- Ground (Horizontal) -->
+    <line x1="20" y1="180" x2="280" y2="180" class="ground"/>
+
+    <!-- Ladder (From wall 60,40 down to ground 240,180) -->
+    <line x1="60" y1="40" x2="240" y2="180" class="ladder"/>
+
+    <!-- Corrected Angle of Elevation (Vertex at 240,180) -->
+    <!-- Starts 40px left at (200,180) and sweeps up inside to hit the ladder line -->
+    <path d="M 200 180 A 40 40 0 0 1 208.4 155.4" class="angle-arc"/>
+    <text x="185" y="172" class="angle-label">θ</text>
+
+    <!-- Top of ladder contact point -->
+    <circle cx="60" cy="40" r="3" fill="#ffcc00"/>
+
+    <!-- Labels (Repositioned clearly without messy transforms) -->
+    <text x="35" y="110" class="label">wall</text>
+    <text x="245" y="198" class="label">ground</text>
+    <text x="155" y="100" class="label">10 m</text>
+    <text x="130" y="198" class="label">4 m</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="arrow4" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffcc00"/>
+        </marker>
+    </defs>
+    <rect x="20" y="25" width="130" height="60" fill="rgba(0, 255, 204, 0.1)" stroke="#00ffcc" stroke-width="2"/>
+    <text x="85" y="100" fill="#00ffcc" font-size="13" font-weight="bold" text-anchor="middle">? cm</text>
+    <text x="15" y="58" fill="#5ba3f5" font-size="13" font-weight="bold" text-anchor="middle">? cm</text>
+</svg>

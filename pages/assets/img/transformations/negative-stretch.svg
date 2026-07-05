@@ -1,0 +1,134 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="100%" height="100%" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .grid-line   { stroke: #ffffff; stroke-width: 0.5; stroke-dasharray: 3,3; opacity: 0.2; }
+        .axis-line   { stroke: #ffffff; stroke-width: 2; }
+        .axis-label  { fill: #ffffff; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+        .axis-value  { fill: #aaaaaa; font-family: Arial, sans-serif; font-size: 12px; text-anchor: middle; }
+        .object      { fill: rgba(255,255,255,0.12); stroke: #ffffff; stroke-width: 2; }
+        .image       { fill: rgba(0,255,204,0.15);   stroke: #00ffcc; stroke-width: 2.5; }
+        .invar-line  { stroke: #ffcc00; stroke-width: 2; stroke-dasharray: 10,5; }
+        .stretch-arrow { stroke: #ff8888; stroke-width: 1.5; stroke-dasharray: 5,3; fill: none; }
+        .point-label { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; }
+        .pre-label   { fill: #ffffff; }
+        .post-label  { fill: #00ffcc; }
+    </style>
+    <defs>
+        <marker id="axis-arr-st2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffffff"/>
+        </marker>
+        <marker id="stretch-arr-st2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ff8888"/>
+        </marker>
+    </defs>
+
+    <!-- Vertical grid lines -->
+    <line x1="50"  y1="50" x2="50"  y2="680" class="grid-line"/>
+    <line x1="90"  y1="50" x2="90"  y2="680" class="grid-line"/>
+    <line x1="130" y1="50" x2="130" y2="680" class="grid-line"/>
+    <line x1="170" y1="50" x2="170" y2="680" class="grid-line"/>
+    <line x1="210" y1="50" x2="210" y2="680" class="grid-line"/>
+    <line x1="250" y1="50" x2="250" y2="680" class="grid-line"/>
+    <line x1="290" y1="50" x2="290" y2="680" class="grid-line"/>
+    <line x1="330" y1="50" x2="330" y2="680" class="grid-line"/>
+    <line x1="370" y1="50" x2="370" y2="680" class="grid-line"/>
+    <line x1="410" y1="50" x2="410" y2="680" class="grid-line"/>
+    <line x1="490" y1="50" x2="490" y2="680" class="grid-line"/>
+    <line x1="530" y1="50" x2="530" y2="680" class="grid-line"/>
+    <line x1="570" y1="50" x2="570" y2="680" class="grid-line"/>
+    <line x1="610" y1="50" x2="610" y2="680" class="grid-line"/>
+    <line x1="650" y1="50" x2="650" y2="680" class="grid-line"/>
+    <line x1="690" y1="50" x2="690" y2="680" class="grid-line"/>
+    <line x1="730" y1="50" x2="730" y2="680" class="grid-line"/>
+    <line x1="770" y1="50" x2="770" y2="680" class="grid-line"/>
+    <line x1="810" y1="50" x2="810" y2="680" class="grid-line"/>
+    <line x1="850" y1="50" x2="850" y2="680" class="grid-line"/>
+
+    <!-- Horizontal grid lines -->
+    <line x1="50" y1="50"  x2="850" y2="50"  class="grid-line"/>
+    <line x1="50" y1="90"  x2="850" y2="90"  class="grid-line"/>
+    <line x1="50" y1="130" x2="850" y2="130" class="grid-line"/>
+    <line x1="50" y1="170" x2="850" y2="170" class="grid-line"/>
+    <line x1="50" y1="210" x2="850" y2="210" class="grid-line"/>
+    <line x1="50" y1="250" x2="850" y2="250" class="grid-line"/>
+    <line x1="50" y1="290" x2="850" y2="290" class="grid-line"/>
+    <line x1="50" y1="330" x2="850" y2="330" class="grid-line"/>
+    <line x1="50" y1="370" x2="850" y2="370" class="grid-line"/>
+    <line x1="50" y1="410" x2="850" y2="410" class="grid-line"/>
+    <line x1="50" y1="490" x2="850" y2="490" class="grid-line"/>
+    <line x1="50" y1="530" x2="850" y2="530" class="grid-line"/>
+    <line x1="50" y1="570" x2="850" y2="570" class="grid-line"/>
+    <line x1="50" y1="610" x2="850" y2="610" class="grid-line"/>
+    <line x1="50" y1="650" x2="850" y2="650" class="grid-line"/>
+
+    <!-- Axes: origin at (450,450), scale 40px/unit -->
+    <line x1="30"  y1="450" x2="870" y2="450" class="axis-line" marker-end="url(#axis-arr-st2)"/>
+    <line x1="450" y1="670" x2="450" y2="30"  class="axis-line" marker-end="url(#axis-arr-st2)"/>
+    <text x="880" y="455" class="axis-label">x</text>
+    <text x="450" y="20"  class="axis-label">y</text>
+
+    <!-- Axis numbers -->
+    <text x="50" y="468" class="axis-value">-10</text>
+    <text x="90" y="468" class="axis-value">-9</text>
+    <text x="130" y="468" class="axis-value">-8</text>
+    <text x="170" y="468" class="axis-value">-7</text>
+    <text x="210" y="468" class="axis-value">-6</text>
+    <text x="250" y="468" class="axis-value">-5</text>
+    <text x="290" y="468" class="axis-value">-4</text>
+    <text x="330" y="468" class="axis-value">-3</text>
+    <text x="370" y="468" class="axis-value">-2</text>
+    <text x="410" y="468" class="axis-value">-1</text>
+    <text x="438" y="468" class="axis-value">0</text>
+    <text x="490" y="468" class="axis-value">1</text>
+    <text x="530" y="468" class="axis-value">2</text>
+    <text x="570" y="468" class="axis-value">3</text>
+    <text x="610" y="468" class="axis-value">4</text>
+    <text x="650" y="468" class="axis-value">5</text>
+    <text x="690" y="468" class="axis-value">6</text>
+    <text x="730" y="468" class="axis-value">7</text>
+    <text x="770" y="468" class="axis-value">8</text>
+    <text x="810" y="468" class="axis-value">9</text>
+    <text x="850" y="468" class="axis-value">10</text>
+    <text x="434" y="414" class="axis-value">1</text>
+    <text x="434" y="374" class="axis-value">2</text>
+    <text x="434" y="334" class="axis-value">3</text>
+    <text x="434" y="294" class="axis-value">4</text>
+    <text x="434" y="254" class="axis-value">5</text>
+    <text x="434" y="214" class="axis-value">6</text>
+    <text x="434" y="174" class="axis-value">7</text>
+    <text x="434" y="134" class="axis-value">8</text>
+    <text x="434" y="94" class="axis-value">9</text>
+    <text x="434" y="54" class="axis-value">10</text>
+    <text x="431" y="494" class="axis-value">-1</text>
+    <text x="431" y="534" class="axis-value">-2</text>
+    <text x="431" y="574" class="axis-value">-3</text>
+    <text x="431" y="614" class="axis-value">-4</text>
+    <text x="431" y="654" class="axis-value">-5</text>
+
+    <!-- Invariant line: y-axis -->
+    <line x1="450" y1="670" x2="450" y2="30" class="invar-line"/>
+    <text x="475" y="80" fill="#ffcc00" font-family="Arial, sans-serif" font-size="12" font-weight="bold">invariant line (y-axis)</text>
+
+    <!-- Object triangle ABC -->
+    <polygon points="450,450 450,330 530,410" class="object"/>
+    <circle cx="450" cy="450" r="4" fill="#ffffff"/>
+    <text x="432" y="466" class="point-label pre-label">A</text>
+    <circle cx="450" cy="330" r="4" fill="#ffffff"/>
+    <text x="432" y="326" class="point-label pre-label">B</text>
+    <circle cx="530" cy="410" r="4" fill="#ffffff"/>
+    <text x="536" y="407" class="point-label pre-label">C</text>
+
+    <!-- Image triangle A'B'C' -->
+    <polygon points="450,450 450,330 370,410" class="image"/>
+    <circle cx="450" cy="450" r="5" fill="#00ffcc"/>
+    <circle cx="450" cy="330" r="5" fill="#00ffcc"/>
+    <circle cx="370" cy="410" r="4" fill="#00ffcc"/>
+    <text x="356" y="407" class="point-label post-label">C'</text>
+
+    <!-- Stretch arrow: C(530,410) → C'(370,410) -->
+    <line x1="526" y1="410" x2="374" y2="410" class="stretch-arrow" marker-end="url(#stretch-arr-st2)"/>
+    <text x="450" y="400" fill="#ff8888" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">new distance = k×x = −1×2 = −2</text>
+
+    <!-- k label -->
+    <text x="720" y="200" fill="#ff8888" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">k = −1</text>
+    <text x="720" y="218" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">y-axis invariant</text>
+</svg>

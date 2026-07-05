@@ -1,0 +1,98 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="780" height="620" viewBox="0 0 780 620" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .uc-axis    { stroke: #ffffff; stroke-width: 1.8; fill: none; }
+        .uc-circle  { stroke: #00ffcc; stroke-width: 2.5; fill: rgba(0,255,204,0.04); }
+        .uc-radius  { stroke: #ff8888; stroke-width: 2; fill: none; }
+        .uc-proj    { stroke: #ffcc00; stroke-width: 1.5; stroke-dasharray: 6,4; fill: none; }
+        .uc-label   { fill: #ffffff; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; text-anchor: middle; }
+        .uc-angle   { fill: #ff8888; font-family: Arial, sans-serif; font-size: 13px; }
+        .uc-coord   { fill: #ffcc00; font-family: Arial, sans-serif; font-size: 12px; text-anchor: middle; }
+        .uc-quad    { fill: #aaaaaa; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; opacity: 0.5; }
+        .axis-val   { fill: #aaaaaa; font-family: Arial, sans-serif; font-size: 11px; text-anchor: middle; }
+    </style>
+    <defs>
+        <marker id="uc-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffffff"/>
+        </marker>
+    </defs>
+
+    <!-- Axes -->
+    <line x1="80"  y1="300" x2="820" y2="300" class="uc-axis" marker-end="url(#uc-arrow)"/>
+    <line x1="450" y1="560" x2="450" y2="50"  class="uc-axis" marker-end="url(#uc-arrow)"/>
+    <text x="830" y="305" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">x</text>
+    <text x="450" y="42"  fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">y</text>
+
+    <!-- Axis scale labels -->
+    <text x="650" y="318" class="axis-val">1</text>
+    <text x="250" y="318" class="axis-val">−1</text>
+    <text x="438" y="105" class="axis-val">1</text>
+    <text x="434" y="500" class="axis-val">−1</text>
+    <text x="438" y="318" class="axis-val">0</text>
+
+    <!-- Unit circle -->
+    <circle cx="450" cy="300" r="200" class="uc-circle"/>
+
+    <!-- Quadrant labels -->
+    <text x="570" y="210" class="uc-quad">Q1</text>
+    <text x="330" y="210" class="uc-quad">Q2</text>
+    <text x="330" y="420" class="uc-quad">Q3</text>
+    <text x="570" y="420" class="uc-quad">Q4</text>
+
+    <!-- Key angle points on the circle -->
+    <!-- 0° = (650,300) -->
+    <circle cx="650" cy="300" r="4" fill="#ffffff"/>
+    <text x="672" y="296" class="uc-label" style="font-size:12px;">(1, 0)</text>
+    <text x="672" y="312" fill="#aaaaaa" font-family="Arial,sans-serif" font-size="11" text-anchor="start">0°</text>
+
+    <!-- 90° = (450,100) -->
+    <circle cx="450" cy="100" r="4" fill="#ffffff"/>
+    <text x="490" y="98" class="uc-label" style="font-size:12px;">(0, 1)</text>
+    <text x="490" y="113" fill="#aaaaaa" font-family="Arial,sans-serif" font-size="11">90°</text>
+
+    <!-- 180° = (250,300) -->
+    <circle cx="250" cy="300" r="4" fill="#ffffff"/>
+    <text x="212" y="296" class="uc-label" style="font-size:12px;">(−1, 0)</text>
+    <text x="212" y="312" fill="#aaaaaa" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">180°</text>
+
+    <!-- 270° = (450,500) -->
+    <circle cx="450" cy="500" r="4" fill="#ffffff"/>
+    <text x="510" y="500" class="uc-label" style="font-size:12px;">(0, −1)</text>
+    <text x="510" y="515" fill="#aaaaaa" font-family="Arial,sans-serif" font-size="11">270°</text>
+
+    <!-- 30° point: (√3/2, 1/2) ≈ (0.866, 0.5) → px(623, 200) -->
+    <circle cx="623" cy="200" r="3" fill="#ffcc00"/>
+    <text x="645" y="196" fill="#ffcc00" font-family="Arial,sans-serif" font-size="11">30°</text>
+
+    <!-- 45° point: (√2/2, √2/2) ≈ (0.707,0.707) → px(591,159) -->
+    <circle cx="591" cy="159" r="3" fill="#ffcc00"/>
+    <text x="610" y="152" fill="#ffcc00" font-family="Arial,sans-serif" font-size="11">45°</text>
+
+    <!-- 60° point: (0.5, √3/2) ≈ (0.5,0.866) → px(550,127) -->
+    <circle cx="550" cy="127" r="3" fill="#ffcc00"/>
+    <text x="562" y="120" fill="#ffcc00" font-family="Arial,sans-serif" font-size="11">60°</text>
+
+    <!-- Example point P at θ=50°: cos50≈0.643, sin50≈0.766 → px(579,147) -->
+    <circle cx="579" cy="147" r="6" fill="#ff8888"/>
+    <!-- Radius line from centre to P -->
+    <line x1="450" y1="300" x2="579" y2="147" class="uc-radius"/>
+    <!-- Projection lines -->
+    <line x1="579" y1="147" x2="579" y2="300" class="uc-proj"/>
+    <line x1="579" y1="147" x2="450" y2="147" class="uc-proj"/>
+
+    <!-- Labels on projection lines -->
+    <text x="579" y="340" class="uc-coord">cos θ</text>
+    <text x="395" y="150" class="uc-coord">sin θ</text>
+
+    <!-- Angle arc -->
+    <path d="M 490,300 A 40,40 0 0 0 476,269" stroke="#ff8888" stroke-width="1.5" fill="none"/>
+    <text x="512" y="284" class="uc-angle">θ</text>
+
+    <!-- P label -->
+    <text x="592" y="140" fill="#ff8888" font-family="Arial,sans-serif" font-size="13" font-weight="bold">P(cos θ, sin θ)</text>
+
+    <!-- CAST rule quadrant signs -->
+    <text x="570" y="245" fill="#00ffcc" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">sin +, cos +, tan +</text>
+    <text x="330" y="245" fill="#5ba3f5" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">sin +, cos −, tan −</text>
+    <text x="330" y="390" fill="#f06292" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">sin −, cos −, tan +</text>
+    <text x="570" y="390" fill="#ffcc00" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">sin −, cos +, tan −</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="30" fill="#ffffff" font-family="Times New Roman, serif" font-style="italic" font-size="18">cos θ =</text>
+    <text x="70" y="25" fill="#00ffcc" font-family="Times New Roman, serif" font-size="18">Adjacent</text>
+    <line x1="65" y1="35" x2="160" y2="35" stroke="#00ffcc" stroke-width="2"/>
+    <text x="70" y="60" fill="#00ffcc" font-family="Times New Roman, serif" font-size="18">Hypotenuse</text>
+</svg>

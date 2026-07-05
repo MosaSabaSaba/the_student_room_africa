@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>The Student Room | LGCSE Mathematics — Subject Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css"/>
+
+    <style>
+        /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
+        .custom-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            padding:1rem;
+        }
+
+        @media (min-width: 992px) {
+            .custom-container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .custom-container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .custom-container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+
+        .page-body {
+            padding: 2rem 0;
+        }
+
+        /* hero / header section */
+        .hero-section {
+            /* border-left: 6px solid #f4b942; */
+            padding: 1.5rem 2rem;
+            border-radius: 24px;
+            margin: 0 0 2rem 0;
+            /* background: rgba(244, 185, 66, 0.05); */
+        }
+
+        .hero-section h1 {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.01em;
+            color: #ffda9e;
+        }
+
+        .hero-section p {
+            margin: 0;
+            color: #bbb;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* resource cards grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0 2.5rem 0;
+        }
+
+        .resource-card {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 1.5rem;
+            border: 1px solid #2a2a2a;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: block;
+        }
+
+        .resource-card:hover {
+            border-color: #f4b942;
+            background: rgba(244, 185, 66, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .resource-card h3 {
+            font-family: 'Zilla Slab', serif;
+            font-size: 1.4rem;
+            margin: 0 0 0.5rem 0;
+            color: #ffcf8a;
+        }
+
+        .resource-card p {
+            margin: 0;
+            color: #aaa;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .resource-card .card-note {
+            margin-top: 0.75rem;
+            font-size: 0.75rem;
+            color: #777;
+        }
+
+        /* section titles */
+        .section-title {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            margin: 1.5rem 0 0.5rem 0;
+            color: #ffda9e;
+            border-left: 4px solid #f4b942;
+            padding-left: 1rem;
+        }
+
+        .section-sub {
+            color: #888;
+            font-size: 0.85rem;
+            margin-top: -0.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* topics grid */
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem;
+            margin: 1rem 0 2rem 0;
+        }
+
+        .topic-link-card {
+            background: rgba(255,255,255,0.02);
+            border-radius: 40px;
+            padding: 0.6rem 1.2rem;
+            border: 1px solid #333a44;
+            text-decoration: none;
+            color: #ddd;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .topic-link-card:hover {
+            border-color: #f4b942;
+            background: rgba(244, 185, 66, 0.1);
+            color: #ffcf8a;
+        }
+
+        .topic-category-group {
+            margin-bottom: 2rem;
+        }
+
+        .topic-category-group h4 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0 0 0.8rem 0;
+            color: #ffcf8a;
+            letter-spacing: -0.2px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1e3a2f;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 500;
+            color: #ffda9e;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .extended-note {
+            background: rgba(36, 56, 48, 0.25);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #ccc;
+            border-left: 3px solid #4a7c6b;
+        }
+
+        .extended-note strong {
+            color: #ffcf8a;
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #2e2a24, transparent);
+        }
+
+        .footer-note {
+            background: rgba(36, 56, 48, 0.3);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            border-left: 3px solid #f4b942;
+            margin-top: 2rem;
+        }
+
+        .footer-note p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #bbb;
+        }
+
+        @media (max-width: 640px) {
+            .page-body {
+                padding: 1rem 0;
+            }
+            .hero-section {
+                padding: 1rem 1.2rem;
+            }
+            .hero-section h1 {
+                font-size: 1.6rem;
+            }
+            .resource-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <a href="../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="conversions.html">Study Guide</a>
+            <a href="tracker.html">Revision Tracker</a>
+            <a href="tracker.html#past-papers">Past Papers</a>
+            <a href="questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner 
+        <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="lesotho.html">Lesotho</a><span class="bc-sep">›</span>
+            <a href="lgcse.html">L.G.C.S.E</a>
+        </div>
+
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- PAGE LAYOUT with Bootstrap-like container behavior -->
+    <div class="custom-container">
+        <div class="page-body">
+            
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h1>LGCSE Mathematics</h1>
+                <p>Your complete revision hub for the Lesotho General Certificate of Secondary Education Mathematics examination. Access study guides, track your progress, and master every topic across both Core and Extended levels.</p>
+            </div>
+
+            <!-- Resource Cards -->
+            <div class="resource-grid">
+                <a href="conversions.html" class="resource-card">
+                    <h3>Study Guide</h3>
+                    <p>Complete syllabus breakdown, exam structure, and proven study strategies for Core and Extended levels.</p>
+                    <div class="card-note">Includes topic explanations, worked examples, and exam techniques</div>
+                </a>
+                <a href="tracker.html" class="resource-card">
+                    <h3>Revision Tracker</h3>
+                    <p>Track video lessons, mark topics as watched, and monitor past paper progress. Your data saves automatically to your device.</p>
+                    <div class="card-note">No login required. Works offline. Persistent storage across sessions.</div>
+                </a>
+                <a href="tracker.html#past-papers" class="resource-card">
+                    <h3>Past Papers</h3>
+                    <p>Download official question papers, answer booklets, and detailed mark schemes for Core and Extended examinations.</p>
+                    <div class="card-note">Includes June and November series from 2019 to 2023</div>
+                </a>
+                <a href="questionBank/question-bank.html" class="resource-card">
+                    <h3>Question Bank</h3>
+                    <p>Practice with topic-specific questions from past ECoL examination papers. Each question is labeled with its original paper and mark allocation.</p>
+                    <div class="card-note">Questions grouped by topic for focused revision. Updated every two days.</div>
+                </a>
+            </div>
+
+            <div style="margin-top: 1.5rem; font-size: 0.8rem; color: #666; text-align: center;">
+                <p>LGCSE Mathematics: Lesotho General Certificate of Secondary Education<br>
+                Syllabus content aligns with the official Lesotho Examinations Council framework. Updates are published termly to reflect any syllabus changes.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/contentScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<svg  style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="230" viewBox="0 0 250 230" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .cylinder-visible { stroke: #ffffff; stroke-width: 2; fill: none; }
+        .cylinder-hidden { stroke: #ffffff; stroke-width: 2; stroke-dasharray: 6,4; fill: none; }
+        .dim-label { fill: #ffcc00; font-family: sans-serif; font-size: 13px; font-weight: bold; }
+    </style>
+
+    <!-- 3D Cylinder -->
+    <g transform="translate(60, 30)">
+        <!-- Back edges (hidden) -->
+        <path d="M 20,40 A 80,22 0 0 1 180,40" class="cylinder-hidden" />
+        <line x1="180" y1="40" x2="180" y2="150" class="cylinder-hidden" />
+        <path d="M 20,150 A 80,22 0 0 1 180,150" class="cylinder-hidden" />
+        
+        <!-- Front edges (visible) -->
+        <path d="M 20,40 A 80,22 0 0 0 180,40" class="cylinder-visible" />
+        <line x1="20" y1="40" x2="20" y2="150" class="cylinder-visible" />
+        <path d="M 20,150 A 80,22 0 0 0 180,150" class="cylinder-visible" />
+        
+        <!-- Dimensions -->
+        <line x1="20" y1="30" x2="20" y2="150" stroke="#ffcc00" stroke-width="2" stroke-dasharray="5,3"/>
+        <polygon points="15,147 20,150 25,147" fill="#ffcc00" />
+        <polygon points="15,33 20,30 25,33" fill="#ffcc00" />
+        <text x="10" y="95" class="dim-label" text-anchor="end">h = 10 cm</text>
+        
+        <line x1="100" y1="40" x2="180" y2="40" stroke="#ffcc00" stroke-width="2" stroke-dasharray="5,3"/>
+        <polygon points="177,37 180,40 177,43" fill="#ffcc00" />
+        <text x="140" y="30" class="dim-label" text-anchor="middle">r = 4 cm</text>
+        
+        <!-- Formula -->
+        <text x="100" y="200" fill="#00ffcc" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">TSA = 2πr² + 2πrh</text>
+    </g>
+</svg>

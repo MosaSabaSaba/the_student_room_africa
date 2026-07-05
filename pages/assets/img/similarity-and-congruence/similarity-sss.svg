@@ -1,0 +1,15 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="100%" height="100" viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Triangle 1 (Small) -->
+    <polygon points="20,80 75,80 40,30" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <!-- T1 Side Labels -->
+    <text x="43" y="93" fill="#ff8888" font-size="12" font-weight="bold" text-anchor="middle">a</text>
+    <text x="20" y="52" fill="#5ba3f5" font-size="12" font-weight="bold" text-anchor="middle">b</text>
+    <text x="66" y="52" fill="#00ffcc" font-size="12" font-weight="bold" text-anchor="middle">c</text>
+
+    <!-- Triangle 2 (Large Scale 1.5x) -->
+    <polygon points="135,80 217.5,80 165,5" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <!-- T2 Side Labels -->
+    <text x="176" y="93" fill="#ff8888" font-size="12" font-weight="bold" text-anchor="middle">2a</text>
+    <text x="138" y="38" fill="#5ba3f5" font-size="12" font-weight="bold" text-anchor="middle">2b</text>
+    <text x="202" y="38" fill="#00ffcc" font-size="12" font-weight="bold" text-anchor="middle">2c</text>
+</svg>

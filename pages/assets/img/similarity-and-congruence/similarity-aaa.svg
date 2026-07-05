@@ -1,0 +1,15 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="100%" height="100" viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Triangle 1 (Small) -->
+    <polygon points="15,80 70,80 45,30" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <!-- T1 Angles -->
+    <path d="M 27,80 A 12,12 0 0,1 21,68" fill="none" stroke="#ff8888" stroke-width="2"/>
+    <path d="M 59,80 A 11,11 0 0,0 64,71 M 56,80 A 14,14 0 0,0 62,69" fill="none" stroke="#ffcc00" stroke-width="2"/>
+    <path d="M 40,40 A 10,10 0 0,0 50,40" fill="none" stroke="#5ba3f5" stroke-width="2"/>
+
+    <!-- Triangle 2 (Large) -->
+    <polygon points="130,80 225,80 182,14" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <!-- T2 Angles -->
+    <path d="M 142,80 A 12,12 0 0,1 136,68" fill="none" stroke="#ff8888" stroke-width="2"/>
+    <path d="M 214,80 A 11,11 0 0,0 219,71 M 211,80 A 14,14 0 0,0 217,69" fill="none" stroke="#ffcc00" stroke-width="2"/>
+    <path d="M 177,24 A 10,10 0 0,0 187,24" fill="none" stroke="#5ba3f5" stroke-width="2"/>
+</svg>

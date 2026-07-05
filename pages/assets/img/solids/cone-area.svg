@@ -1,0 +1,19 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="420" viewBox="0 0 250 420" xmlns="http://www.w3.org/2000/svg">
+    <!-- 3D Cone -->
+    <g transform="translate(60, 30)">
+        <ellipse cx="80" cy="140" rx="70" ry="25" fill="none" stroke="#ffffff" stroke-width="2" />
+        <line x1="10" y1="140" x2="80" y2="10" stroke="#ffffff" stroke-width="2" />
+        <line x1="150" y1="140" x2="80" y2="10" stroke="#ffffff" stroke-width="2" />
+        <text x="85" y="135" fill="#00ffcc" font-size="14">r = 4cm</text>
+        <text x="120" y="70" fill="#00ffcc" font-size="14">l = 10cm</text>
+    </g>
+
+    <!-- Net -->
+    <g transform="translate(40, 230)">
+        <path d="M 80,10 L 20,80 A 80,80 0 0 0 140,80 Z" fill="none" stroke="#ffffff" stroke-width="2" />
+        <circle cx="80" cy="140" r="30" fill="none" stroke="#ffffff" stroke-width="2" />
+        <text x="95" y="50" fill="#00ffcc" font-size="12">l = 10</text>
+        <text x="70" y="145" fill="#00ffcc" font-size="12">r = 4</text>
+    </g>
+
+</svg>

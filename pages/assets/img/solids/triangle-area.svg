@@ -1,0 +1,26 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Triangle Outline -->
+    <path d="M 80,220 L 320,220 L 160,40 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Height Line (Dashed) -->
+    <line x1="160" y1="40" x2="160" y2="220" stroke="#ffffff" stroke-width="2" stroke-dasharray="8,5"/>
+    
+    <!-- Right Angle Symbol -->
+    <path d="M 160,200 L 185,200 L 185,220" fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Base Measurement Line with Arrows -->
+    <g stroke="#ffffff" stroke-width="2" fill="none">
+        <!-- Left segment and arrow -->
+        <line x1="80" y1="250" x2="180" y2="250"/>
+        <path d="M 90,245 L 80,250 L 90,255"/>
+        <!-- Right segment and arrow -->
+        <line x1="220" y1="250" x2="320" y2="250"/>
+        <path d="M 310,245 L 320,250 L 310,255"/>
+    </g>
+    
+    <!-- Height Label 'h' -->
+    <text x="170" y="140" fill="#ffffff" font-family="serif" font-style="italic" font-size="24">h</text>
+    
+    <!-- Base Label 'b' -->
+    <text x="193" y="258" fill="#ffffff" font-family="serif" font-style="italic" font-size="24">b</text>
+</svg>

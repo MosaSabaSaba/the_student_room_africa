@@ -1,0 +1,56 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+    <!-- T1 (1 dot) -->
+    <g transform="translate(10, 0)">
+        <circle cx="15" cy="80" r="5" fill="#fff"/>
+    </g>
+
+    <!-- T2 (3 dots) -->
+    <g transform="translate(50, 0)">
+        <circle cx="25" cy="60" r="5" fill="#fff"/>
+        <circle cx="13" cy="80" r="5" fill="#fff"/>
+        <circle cx="37" cy="80" r="5" fill="#fff"/>
+    </g>
+
+    <!-- T3 (6 dots) -->
+    <g transform="translate(110, 0)">
+        <circle cx="35" cy="40" r="5" fill="#fff"/>
+        <circle cx="23" cy="60" r="5" fill="#fff"/>
+        <circle cx="47" cy="60" r="5" fill="#fff"/>
+        <circle cx="11" cy="80" r="5" fill="#fff"/>
+        <circle cx="35" cy="80" r="5" fill="#fff"/>
+        <circle cx="59" cy="80" r="5" fill="#fff"/>
+    </g>
+
+    <!-- T4 (10 dots) -->
+    <g transform="translate(200, 0)">
+        <circle cx="45" cy="20" r="5" fill="#fff"/>
+        <circle cx="33" cy="40" r="5" fill="#fff"/>
+        <circle cx="57" cy="40" r="5" fill="#fff"/>
+        <circle cx="21" cy="60" r="5" fill="#fff"/>
+        <circle cx="45" cy="60" r="5" fill="#fff"/>
+        <circle cx="69" cy="60" r="5" fill="#fff"/>
+        <circle cx="9" cy="80" r="5" fill="#fff"/>
+        <circle cx="33" cy="80" r="5" fill="#fff"/>
+        <circle cx="57" cy="80" r="5" fill="#fff"/>
+        <circle cx="81" cy="80" r="5" fill="#fff"/>
+    </g>
+
+    <!-- T5 (15 dots) -->
+    <g transform="translate(310, 0)">
+        <circle cx="55" cy="0" r="5" fill="#fff"/>
+        <circle cx="43" cy="20" r="5" fill="#fff"/>
+        <circle cx="67" cy="20" r="5" fill="#fff"/>
+        <circle cx="31" cy="40" r="5" fill="#fff"/>
+        <circle cx="55" cy="40" r="5" fill="#fff"/>
+        <circle cx="79" cy="40" r="5" fill="#fff"/>
+        <circle cx="19" cy="60" r="5" fill="#fff"/>
+        <circle cx="43" cy="60" r="5" fill="#fff"/>
+        <circle cx="67" cy="60" r="5" fill="#fff"/>
+        <circle cx="91" cy="60" r="5" fill="#fff"/>
+        <circle cx="7" cy="80" r="5" fill="#fff"/>
+        <circle cx="31" cy="80" r="5" fill="#fff"/>
+        <circle cx="55" cy="80" r="5" fill="#fff"/>
+        <circle cx="79" cy="80" r="5" fill="#fff"/>
+        <circle cx="103" cy="80" r="5" fill="#fff"/>
+    </g>
+</svg>

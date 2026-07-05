@@ -1,0 +1,17 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="520" height="290" viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg">
+    <!-- 3D SHAPE -->
+    <circle cx="180" cy="150" r="100" fill="none" stroke="#ffffff" stroke-width="3" />
+    <ellipse cx="180" cy="150" rx="100" ry="35" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="8,5" />
+    
+    <!-- Characteristics in #00ffcc -->
+    <line x1="180" y1="150" x2="280" y2="150" stroke="#00ffcc" stroke-width="4" />
+    <circle cx="180" cy="150" r="4" fill="#00ffcc"/>
+    <text x="200" y="140" fill="#00ffcc" font-weight="bold" font-size="18">Radius</text>
+
+    <!-- Totals -->
+    <rect x="350" y="40" width="160" height="110" fill="none" stroke="#00ffcc" stroke-width="2"/>
+    <text x="360" y="70" fill="#00ffcc" font-weight="bold" font-size="18">Faces: 1</text>
+    <text x="360" y="100" fill="#00ffcc" font-weight="bold" font-size="18">Edges: 0</text>
+    <text x="360" y="130" fill="#00ffcc" font-weight="bold" font-size="18">Vertices: 0</text>
+
+</svg>

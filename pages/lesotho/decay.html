@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appreciation And Depreciation - Mathematics | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "LGCSE Mathematics: Appreciation and Depreciation Complete Guide",
+  "description": "Comprehensive guide for LGCSE learners covering appreciation (increase in value of assets like houses, land, currency), simple depreciation (straight-line method losing same amount each year), compound depreciation (reducing balance method losing percentage of current value), with worked examples and comparison tables.",
+  "educationalLevel": "Secondary School (LGCSE)",
+  "keywords": "appreciation, depreciation, asset appreciation, currency appreciation, simple depreciation, straight-line depreciation, compound depreciation, reducing balance method, asset value, decay, financial mathematics, LGCSE mathematics",
+  "about": {
+    "@type": "Thing",
+    "name": "Financial Mathematics - Asset Value Change"
+  },
+  "teaches": "How to calculate appreciation using A = P(1 + r)ᵗ for assets increasing in value (houses, land, currency); calculate simple depreciation using A = P(1 - r × t) where same amount lost each year; calculate compound depreciation using A = P(1 - r)ᵗ where percentage of current value lost each year; distinguish between capital appreciation and currency appreciation; compare simple vs compound depreciation methods",
+  "inLanguage": "en",
+  "audience": {
+    "@type": "Audience",
+    "name": "LGCSE Mathematics students in Lesotho"
+  },
+  "learningResourceType": "Study Guide",
+  "timeRequired": "PT50M",
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Student Room Africa"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <a href="../../index.html" class="logo">
+        <span class="logo-m">Student Room Africa</span>
+    </a>
+    <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+    
+    <div class="nav-right">
+        <button class="search-btn">
+        <span class="search-icon">🔍</span>
+        <span style="display:none" class="search-label">Search ...</span>
+        <kbd class="kbd">/</kbd>
+        </button>
+    </div>
+</nav>
+
+<!-- SCRIMBA BANNER -->
+<div class="scrimba-banner">
+  Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+</div>
+
+<!-- BREADCRUMB BAR -->
+<div class="breadcrumb-bar">
+    <div class="breadcrumbs">
+        <a href="#">Lesotho</a><span class="bc-sep">›</span>
+        <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+        <a href="#">Guide</a><span class="bc-sep">›</span>
+        <span>Appreciation And Depreciation</span>
+    </div>
+    <div class="breadcrumb-right">
+        <button>🌐 Theme</button>
+        <button>🌐 English (US)</button>
+    </div>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- PAGE LAYOUT -->
+<div class="page-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar" id="leftSidebar">
+        <div class="filter-wrap">
+            <span class="filter-icon">🔍</span>
+            <input class="filter-input" type="text" placeholder="Filter" />
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><a href="../lesotho/conversions.html">Conversions Involving Percentages, Fractions And Decimals</a></li>
+            <li><a href="../lesotho/ratios-and-percentages.html">Ratios And Percentages</a></li>
+            <li><a href="../lesotho/interest.html">Simple And Compound Interest</a></li>
+            <li><a href="../lesotho/rate.html">Rates of Change</a></li>
+            <li><a href="../lesotho/symmetry.html">Symmetry</a></li>
+            <li><a href="../lesotho/accuracy.html">Limits Of Accuracy</a></li>
+            <li><a href="../lesotho/solids.html">Polygons, Prisms, and Solids</a></li>
+            <li><a href="../lesotho/sequences.html">Sequences</a></li>
+            <li class="active"><a href="../lesotho/decay.html">Appreciation And Depreciation</a></li>
+            <li><a href="../lesotho/fractions.html">Fractions</a></li>
+            <li><a href="../lesotho/linear-equations.html">Linear Equations and Graphs</a></li>
+            <li><a href="../lesotho/functions.html">Functions</a></li>
+            <li><a href="../lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+            <li><a href="../lesotho/trigonometry.html">Trigonometric Ratios</a></li>
+            <li><a href="../lesotho/transformations.html">Transformations</a></li>
+            <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
+            <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
+            <li><a href="../lesotho/variation.html">Variation</a></li>
+            
+            <!-- <li>
+                <button class="sidebar-section-btn">Advanced</button>
+            </li> -->
+        </ul> 
+        
+        <!-- <div class="sidebar-divider"></div>
+        <div class="sidebar-label">References</div>
+
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-section-btn">Built-in objects</button></li>
+            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
+            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
+            <li><button class="sidebar-section-btn">Functions</button></li>
+            <li><button class="sidebar-section-btn">Classes</button></li>
+            <li><button class="sidebar-section-btn">Regular expressions</button></li>
+            <li><button class="sidebar-section-btn">Errors</button></li>
+        </ul> -->
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="decay">
+            <h1 id="decay">Appreciation And Depreciation</h1>
+            
+            <p>
+                <strong>Assets</strong> are items of value that a person or company owns. Examples include:
+                houses, cars, land, jewellery, shares in a company, currency, and machinery.
+            </p>
+
+            <p>
+                Some assets <strong>increase</strong> in value over time. 
+                This is called 
+                <strong>appreciation</strong>. Other assets <strong>
+                decrease</strong> in value over time. 
+                This is called <strong>depreciation</strong> (or decay).
+            </p>
+
+            <p>
+                <strong>Before You Begin:</strong> Make sure you have reviewed 
+                our <a href="../lesotho/interest.html">Simple and Compound 
+                Interest</a> page and our <a href="../lesotho/rate.html">Rates of Change</a> 
+                page. Appreciation and depreciation use the <strong>same formulas</strong> 
+                as compound interest, the only difference is that appreciation adds value 
+                (growth), while depreciation subtracts value (decay).
+            </p>
+
+            <p>
+                <strong>Why understanding rates is important for appreciation and depreciation:</strong>
+                The <strong>rate</strong> (often written as <em>r</em> in formulas) tells us 
+                <strong>how fast</strong> an asset grows or shrinks in value. For example, 
+                if a house appreciates at 8% per year, the <strong>rate</strong> is 8% (0.08). 
+                If a car depreciates at 15% per year, the <strong>rate</strong> is 15% (0.15). 
+                Without the rate, you cannot predict how the value will change over time. 
+                A higher rate means faster growth (appreciation) or faster loss (depreciation). 
+                Understanding rates helps you compare different investments (e.g., which house 
+                grows faster?) or decide when to sell an asset before it loses too much value.
+            </p>
+
+            <!-- INLINE TOC (mobile only) -->
+            <div class="inline-toc" id="inlineToc">
+                <div class="toc-heading">In this article</div>
+                <ul class="toc-list">
+                    <li class="active"><a href="#decay">Appreciation And Depreciation</a></li>
+                    <li><a href="#appreciation">Appreciation (Increase in Value)</a></li>
+                    <li><a href="#types-of-appreciation">Types of Appreciation</a></li>
+                    <li><a href="#depreciation">Depreciation (Decrease in Value)</a></li>
+                    <li><a href="#simple-depreciation">Simple Depreciation</a></li>
+                    <li><a href="#compound-depreciation">Compound Depreciation</a></li>
+                    <li><a href="#summary-table">Summary Table</a></li>
+                </ul>
+            </div>
+
+            <!-- APPRECIATION SECTION -->
+            <div class="appreciation">
+                <h2 id="appreciation">Appreciation (Increase in Value)</h2>
+                
+                <p>
+                    <strong>Appreciation</strong> occurs when an asset increases in value over time. 
+                    This happens with assets like houses, land, gold, and sometimes currency.
+                </p>
+
+                <h3 style="color: #00ffcc;">The Appreciation Formula</h3>
+                
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>A = P (1 + <em>r</em>)<sup><em>t</em></sup></strong>
+                </p>
+
+                <p>Where:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>A</strong> = Final value of the asset after appreciation</li>
+                    <li><strong>P</strong> = Initial value of the asset (principal)</li>
+                    <li><strong><em>r</em></strong> = Rate of appreciation per year (written as a decimal)</li>
+                    <li><strong><em>t</em></strong> = Time (in years)</li>
+                </ul>
+
+                <p><strong>Note:</strong> This is the <strong>compound interest formula</strong> because appreciation happens on the 
+                growing value each year.</p>
+
+                <h3 style="color: #00ffcc;">Example 1: House Appreciation</h3>
+
+                <p>A house is bought for M500,000. Its value appreciates at 8% per year. What will it be worth after 3 years?</p>
+
+                <p><strong>Step 1:</strong> Identify the values.</p>
+                <p style="padding-left: 20px;">
+                    P = M500,000<br>
+                    <em>r</em> = 8% = 0.08<br>
+                    <em>t</em> = 3 years
+                </p>
+
+                <p><strong>Step 2:</strong> Apply the appreciation formula.</p>
+                <p style="padding-left: 20px;">
+                    A = P (1 + <em>r</em>)<sup><em>t</em></sup><br>
+                    A = 500,000 × (1 + 0.08)<sup>3</sup>
+                </p>
+
+                <p><strong>Step 3:</strong> Calculate the bracket first.</p>
+                <p style="padding-left: 20px;">
+                    1 + 0.08 = 1.08
+                </p>
+
+                <p><strong>Step 4:</strong> Raise to the power of 3.</p>
+                <p style="padding-left: 20px;">
+                    1.08<sup>3</sup> = 1.08 × 1.08 × 1.08<br>
+                    1.08 × 1.08 = 1.1664<br>
+                    1.1664 × 1.08 = 1.259712
+                </p>
+
+                <p><strong>Step 5:</strong> Multiply by the initial value.</p>
+                <p style="padding-left: 20px;">
+                    A = 500,000 × 1.259712 = M629,856
+                </p>
+
+                <p><strong>Answer: The house will be worth M629,856 after 3 years.</strong></p>
+
+                <h3 style="color: #00ffcc;">Example 2: Currency Appreciation</h3>
+
+                <p>An investor bought currency worth M10,000. The currency appreciated at 5% per year. Find its value after 4 years.</p>
+
+                <p><strong>Step 1:</strong> Identify the values.</p>
+                <p style="padding-left: 20px;">
+                    P = M10,000<br>
+                    <em>r</em> = 5% = 0.05<br>
+                    <em>t</em> = 4 years
+                </p>
+
+                <p><strong>Step 2:</strong> Apply the appreciation formula.</p>
+                <p style="padding-left: 20px;">
+                    A = 10,000 × (1 + 0.05)<sup>4</sup><br>
+                    A = 10,000 × (1.05)<sup>4</sup>
+                </p>
+
+                <p><strong>Step 3:</strong> Calculate 1.05<sup>4</sup>.</p>
+                <p style="padding-left: 20px;">
+                    1.05<sup>2</sup> = 1.1025<br>
+                    1.05<sup>4</sup> = 1.1025 × 1.1025 = 1.21550625
+                </p>
+
+                <p><strong>Step 4:</strong> Multiply by the initial value.</p>
+                <p style="padding-left: 20px;">
+                    A = 10,000 × 1.21550625 = M12,155.06
+                </p>
+
+                <p><strong>Answer: The currency will be worth M12,155.06 after 4 years.</strong></p>
+            </div>
+
+            <!-- TYPES OF APPRECIATION -->
+            <div class="types-of-appreciation">
+                <h2 id="types-of-appreciation">Types of Appreciation</h2>
+                
+                <p>
+                    There are different types of appreciation depending on what is increasing in value:
+                </p>
+
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>Capital Appreciation:</strong> When assets like houses, land, or shares increase in value.</li>
+                    <li><strong>Currency Appreciation:</strong> When the value of a country's currency increases compared to another currency.</li>
+                </ul>
+
+                <p><strong>Note:</strong> Both types use the same formula A = P (1 + <em>r</em>)<sup><em>t</em></sup>.</p>
+            </div>
+
+            <!-- DEPRECIATION SECTION -->
+            <div class="depreciation">
+                <h2 id="depreciation">Depreciation (Decrease in Value)</h2>
+                
+                <p>
+                    <strong>Depreciation</strong> occurs when an asset decreases in value over time. 
+                    This happens with assets like cars, machinery, electronics, and office equipment.
+                </p>
+
+                <h3 style="color: #00ffcc;">The Depreciation Formula</h3>
+                
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>A = P (1 - <em>r</em>)<sup><em>t</em></sup></strong>
+                </p>
+
+                <p>Where:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>A</strong> = Final value of the asset after depreciation</li>
+                    <li><strong>P</strong> = Initial value of the asset (principal)</li>
+                    <li><strong><em>r</em></strong> = Rate of depreciation per year (written as a decimal)</li>
+                    <li><strong><em>t</em></strong> = Time (in years)</li>
+                </ul>
+
+                <p><strong>Note:</strong> We use <strong>(1 - <em>r</em>)</strong> because the value is <strong>decreasing</strong> by <em>r</em> each year.</p>
+            </div>
+
+            <!-- SIMPLE DEPRECIATION -->
+            <div class="simple-depreciation">
+                <h2 id="simple-depreciation">Simple Depreciation (Straight-Line Method)</h2>
+                
+                <p>
+                    <strong>Simple depreciation</strong> reduces the value by the <strong>same amount</strong> each year. 
+                    This is similar to <strong>simple interest</strong>, but decreasing instead of increasing.
+                </p>
+
+                <h3 style="color: #00ffcc;">Simple Depreciation Formula</h3>
+                
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>A = P - (P × <em>r</em> × <em>t</em>)</strong>
+                </p>
+
+                <p>Or: <strong>A = P (1 - <em>r</em> × <em>t</em>)</strong></p>
+
+                <h3 style="color: #00ffcc;">Example 3: Simple Depreciation of a Car</h3>
+
+                <p>A car is bought for M150,000. It depreciates at 10% per year using the simple depreciation method. What is its value after 4 years?</p>
+
+                <p><strong>Step 1:</strong> Identify the values.</p>
+                <p style="padding-left: 20px;">
+                    P = M150,000<br>
+                    <em>r</em> = 10% = 0.10<br>
+                    <em>t</em> = 4 years
+                </p>
+
+                <p><strong>Step 2:</strong> Apply the simple depreciation formula.</p>
+                <p style="padding-left: 20px;">
+                    A = P (1 - <em>r</em> × <em>t</em>)<br>
+                    A = 150,000 × (1 - 0.10 × 4)<br>
+                    A = 150,000 × (1 - 0.4)<br>
+                    A = 150,000 × 0.6
+                </p>
+
+                <p><strong>Step 3:</strong> Calculate the final value.</p>
+                <p style="padding-left: 20px;">
+                    A = M90,000
+                </p>
+
+                <p><strong>Answer: The car will be worth M90,000 after 4 years.</strong></p>
+
+                <p><strong>Check:</strong> Each year, depreciation = 150,000 × 0.10 = M15,000. Over 4 years = M60,000 lost. 150,000 - 60,000 = M90,000.</p>
+            </div>
+
+            <!-- COMPOUND DEPRECIATION -->
+            <div class="compound-depreciation">
+                <h2 id="compound-depreciation">Compound Depreciation (Reducing Balance Method)</h2>
+                
+                <p>
+                    <strong>Compound depreciation</strong> reduces the value by a <strong>percentage of the current value</strong> each year. 
+                    This is similar to <strong>compound interest</strong>, but decreasing instead of increasing.
+                </p>
+
+                <h3 style="color: #00ffcc;">Compound Depreciation Formula</h3>
+                
+                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                    <strong>A = P (1 - <em>r</em>)<sup><em>t</em></sup></strong>
+                </p>
+
+                <h3 style="color: #00ffcc;">Example 4: Compound Depreciation of a Car</h3>
+
+                <p>A car is bought for M150,000. It depreciates at 10% per year using the compound depreciation method. What is its value after 4 years?</p>
+
+                <p><strong>Step 1:</strong> Identify the values.</p>
+                <p style="padding-left: 20px;">
+                    P = M150,000<br>
+                    <em>r</em> = 10% = 0.10<br>
+                    <em>t</em> = 4 years
+                </p>
+
+                <p><strong>Step 2:</strong> Apply the compound depreciation formula.</p>
+                <p style="padding-left: 20px;">
+                    A = P (1 - <em>r</em>)<sup><em>t</em></sup><br>
+                    A = 150,000 × (1 - 0.10)<sup>4</sup><br>
+                    A = 150,000 × (0.9)<sup>4</sup>
+                </p>
+
+                <p><strong>Step 3:</strong> Calculate 0.9<sup>4</sup>.</p>
+                <p style="padding-left: 20px;">
+                    0.9<sup>2</sup> = 0.81<br>
+                    0.9<sup>4</sup> = 0.81 × 0.81 = 0.6561
+                </p>
+
+                <p><strong>Step 4:</strong> Multiply by the initial value.</p>
+                <p style="padding-left: 20px;">
+                    A = 150,000 × 0.6561 = M98,415
+                </p>
+
+                <p><strong>Answer: The car will be worth M98,415 after 4 years using compound depreciation.</strong></p>
+            </div>
+
+            <!-- COMPARING SIMPLE AND COMPOUND DEPRECIATION -->
+            <div class="comparing-depreciation">
+                <h2 style="color: #ffcc00;">Comparing Simple and Compound Depreciation</h2>
+
+                <p>
+                    The table below compares the value of a M150,000 car depreciating at 10% per year using both methods:
+                </p>
+
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                    <thead>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Year</th>
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Simple Depreciation (10%)</th>
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Compound Depreciation (10%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">0</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M150,000</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M150,000</td>
+                         </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">1</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M135,000</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M135,000</td>
+                         </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">2</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M120,000</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M121,500</td>
+                         </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">3</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M105,000</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M109,350</td>
+                         </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">4</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M90,000</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">M98,415</td>
+                         </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    <strong>Observation:</strong> Compound depreciation loses value more slowly in the early years 
+                    because the depreciation amount decreases as the value decreases. Simple depreciation loses the 
+                    same amount each year.
+                </p>
+            </div>
+
+            <!-- SUMMARY TABLE -->
+            <div class="summary-table">
+                <h2 id="summary-table">Summary Table: Appreciation vs Depreciation</h2>
+
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                    <thead>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Concept</th>
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Formula</th>
+                            <th style="border: 1px solid #00ffcc; padding: 10px; color: #00ffcc;">Example</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Appreciation (Compound)</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">A = P (1 + <em>r</em>)<sup><em>t</em></sup></td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">House: M500,000 → M629,856 at 8% over 3 years</td>
+                         </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Simple Depreciation</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">A = P (1 - <em>r</em> × <em>t</em>)</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Car: M150,000 → M90,000 at 10% over 4 years</td>
+                         </tr>
+                        <tr style="border: 1px solid #00ffcc;">
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Compound Depreciation</td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">A = P (1 - <em>r</em>)<sup><em>t</em></sup></td>
+                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Car: M150,000 → M98,415 at 10% over 4 years</td>
+                         </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1.5rem 0; background-color: rgba(0, 255, 204, 0.05);">
+                <p style="margin-bottom: 0;"><strong>Key Takeaways:</strong></p>
+                <p style="margin-bottom: 0;">• Appreciation uses <strong>(1 + <em>r</em>)</strong> — value increases over time.</p>
+                <p style="margin-bottom: 0;">• Depreciation uses <strong>(1 - <em>r</em>)</strong> — value decreases over time.</p>
+                <p style="margin-bottom: 0;">• Simple depreciation loses the <strong>same amount</strong> each year.</p>
+                <p style="margin-bottom: 0;">• Compound depreciation loses a <strong>percentage of the current value</strong> each year.</p>
+                <p style="margin-bottom: 0;">• Always convert the percentage rate to a decimal (divide by 100).</p>
+            </div>
+
+            <p>
+                <strong>NB:</strong> Appreciation and depreciation are <strong>real-life applications</strong> of compound interest. 
+                When buying assets like cars or houses, it is important to understand how their value changes over time. 
+                Simple depreciation is often used for accounting purposes, while compound depreciation better reflects 
+                how assets like cars actually lose value.
+            </p>
+        </div>
+    </main>
+
+    <!-- RIGHT TOC -->
+    <aside class="right-toc">
+        <div class="toc-heading">In this article</div>
+        <ul class="toc-list" id="rightToc">
+            <li class="active"><a href="#decay">Appreciation And Depreciation</a></li>
+            <li><a href="#appreciation">Appreciation (Increase in Value)</a></li>
+            <li><a href="#types-of-appreciation">Types of Appreciation</a></li>
+            <li><a href="#depreciation">Depreciation (Decrease in Value)</a></li>
+            <li><a href="#simple-depreciation">Simple Depreciation</a></li>
+            <li><a href="#compound-depreciation">Compound Depreciation</a></li>
+            <li><a href="#summary-table">Summary Table</a></li>
+        </ul>
+    </aside>
+
+</div><!-- /page-layout -->
+
+<!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../js/contentScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 180" width="340" height="180" style="display: inline-block; font-family: 'Inter', system-ui, sans-serif;">
+                                                
+    <!-- Hidden Internal Back Edges (Dashed) -->
+    <line x1="40" y1="150" x2="200" y2="120" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4,4" fill="none" /> <!-- Bottom Left Base Edge -->
+    <line x1="200" y1="120" x2="200" y2="40" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4,4" fill="none" />  <!-- Back Vertical Edge -->
+    <line x1="200" y1="120" x2="260" y2="120" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4,4" fill="none" /> <!-- Back Horizontal Base Edge -->
+
+    <!-- Target Slant Face Diagonal Line (Dashed Hypotenuse for Angle) -->
+    <!-- Runs from Front-Bottom-Right C(100,150) to Back-Top-Left B'(200,40) -->
+    <line x1="100" y1="150" x2="200" y2="40" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="5,4" fill="none" />
+
+    <!-- Front Triangular Cross-Section Face (Visible) -->
+    <line x1="40" y1="150" x2="40" y2="70" stroke="#ffffff" stroke-width="2" fill="none" />
+    <line x1="40" y1="150" x2="100" y2="150" stroke="#ffffff" stroke-width="2" fill="none" />
+    <line x1="40" y1="70" x2="100" y2="150" stroke="#ffffff" stroke-width="2" fill="none" />
+
+    <!-- Front Face 90-Degree Right-Angle Square Marker -->
+    <path d="M 40,140 L 50,140 L 50,150" stroke="#ffffff" stroke-width="1" fill="none" />
+
+    <!-- Longitudinal Connecting Edges (Visible) -->
+    <line x1="40" y1="70" x2="200" y2="40" stroke="#ffffff" stroke-width="2" fill="none" />    <!-- Top Ridge Line -->
+    <line x1="100" y1="150" x2="260" y2="120" stroke="#ffffff" stroke-width="2" fill="none" />  <!-- Main Base Edge (12 cm) -->
+    <!-- Back Triangular Face Profile (Visible Outer Edges) -->
+    <line x1="200" y1="40" x2="260" y2="120" stroke="#ffffff" stroke-width="2" fill="none" />  <!-- Back Slant Face Hypotenuse -->
+
+    <!-- Angle Arc for Target Theta Angle (θ) -->
+    <!-- Positioned at vertex C(100, 150) looking toward B'(200, 40) relative to baseline C-C' -->
+    <path d="M 125,145 C 126,140 123,135 118,133" stroke="#ffffff" stroke-width="1.2" fill="none" />
+    <!-- Labels -->
+    <text x="25" y="115" font-family="Times New Roman, serif" font-size="13" fill="#ffffff">8 cm</text>
+    <text x="65" y="165" font-family="Times New Roman, serif" font-size="13" fill="#ffffff" text-anchor="middle">6 cm</text>
+    <text x="185" y="150" font-family="Times New Roman, serif" font-size="13" fill="#ffffff" text-anchor="middle">12 cm</text>
+    <text x="245" y="75" font-family="Times New Roman, serif" font-size="13" fill="#ffffff">10 cm</text>
+    <text x="132" y="130" font-family="Times New Roman, serif" font-size="14" fill="#ffffff">θ</text>
+</svg>

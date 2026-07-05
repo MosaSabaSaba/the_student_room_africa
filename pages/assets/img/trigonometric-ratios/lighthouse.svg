@@ -1,0 +1,42 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="400" height="280" viewBox="0 0 400 280" xmlns="http://w3.org/200/svg">
+    <style>
+        .lighthouse { stroke: #ffffff; stroke-width: 2; fill: rgba(255, 255, 255, 0.1); }
+        .sea { stroke: #ffffff; stroke-width: 2; }
+        .horiz-line { stroke: #ffffff; stroke-width: 1.5; stroke-dasharray: 6,4; }
+        .sight-line { stroke: #00ffcc; stroke-width: 2.5; }
+        .angle-arc { stroke: #ff8888; stroke-width: 2; fill: none; }
+        .label { fill: #ffffff; font-family: sans-serif; font-size: 12px; }
+        .angle-label { fill: #ff8888; font-family: sans-serif; font-size: 12px; font-weight: bold; }
+    </style>
+
+    <!-- Lighthouse -->
+    <rect x="50" y="40" width="25" height="160" class="lighthouse"/>
+
+    <!-- Sea -->
+    <line x1="30" y1="200" x2="380" y2="200" class="sea"/>
+
+    <!-- Essential Top Horizontal Reference Line (Eye Level) -->
+    <line x1="75" y1="50" x2="200" y2="50" class="horiz-line"/>
+
+    <!-- Line of sight (From 75,50 to 340,200) -->
+    <line x1="75" y1="50" x2="340" y2="200" class="sight-line"/>
+
+    <!-- Corrected Angle of Depression (Radius: 40px) -->
+    <!-- Traces cleanly from horizontal line (115,50) down to the line of sight -->
+    <path d="M 115 50 A 40 40 0 0 1 110.1 69.1" class="angle-arc"/>
+    <text x="125" y="62" class="angle-label">20°</text>
+
+    <!-- Observer -->
+    <circle cx="75" cy="50" r="4" fill="#ffffff"/>
+    <text x="20" y="55" class="label">Observer</text>
+
+    <!-- Boat -->
+    <circle cx="340" cy="200" r="4" fill="#ffffff"/>
+    <text x="350" y="210" class="label">Boat</text>
+
+    <!-- Height label (Repositioned outside for clean presentation) -->
+    <text x="15" y="125" class="label">80 m</text>
+
+    <!-- Distance label -->
+    <text x="200" y="220" class="label">d = ?</text>
+</svg>

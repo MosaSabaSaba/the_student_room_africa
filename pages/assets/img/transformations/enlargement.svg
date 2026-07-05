@@ -1,0 +1,141 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="100%" height="100%" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .grid-line { stroke: #ffffff; stroke-width: 0.5; stroke-dasharray: 3,3; opacity: 0.2; }
+        .axis-line { stroke: #ffffff; stroke-width: 2; }
+        .axis-label { fill: #ffffff; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+        .axis-value { fill: #aaaaaa; font-family: Arial, sans-serif; font-size: 12px; text-anchor: middle; }
+        .mirror-line { stroke: #ffcc00; stroke-width: 2.5; stroke-dasharray: 8,4; }
+        .object { fill: rgba(255, 255, 255, 0.15); stroke: #ffffff; stroke-width: 2; }
+        .image { fill: rgba(0, 255, 204, 0.15); stroke: #00ffcc; stroke-width: 2.5; }
+        .point-label { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; }
+        .pre-label { fill: #ffffff; }
+        .post-label { fill: #00ffcc; }
+    </style>
+
+    <defs>
+        <marker id="axis-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffffff"></path>
+        </marker>
+    </defs>
+
+    <!-- Vertical Grid Lines (40px spacing, x = -10 to x = 10) -->
+    <line x1="50" y1="50" x2="50" y2="650" class="grid-line"></line>
+    <line x1="90" y1="50" x2="90" y2="650" class="grid-line"></line>
+    <line x1="130" y1="50" x2="130" y2="650" class="grid-line"></line>
+    <line x1="170" y1="50" x2="170" y2="650" class="grid-line"></line>
+    <line x1="210" y1="50" x2="210" y2="650" class="grid-line"></line>
+    <line x1="250" y1="50" x2="250" y2="650" class="grid-line"></line>
+    <line x1="290" y1="50" x2="290" y2="650" class="grid-line"></line>
+    <line x1="330" y1="50" x2="330" y2="650" class="grid-line"></line>
+    <line x1="370" y1="50" x2="370" y2="650" class="grid-line"></line>
+    <line x1="410" y1="50" x2="410" y2="650" class="grid-line"></line>
+    <line x1="450" y1="50" x2="450" y2="650" class="axis-line"></line>
+    <line x1="490" y1="50" x2="490" y2="650" class="grid-line"></line>
+    <line x1="530" y1="50" x2="530" y2="650" class="grid-line"></line>
+    <line x1="570" y1="50" x2="570" y2="650" class="grid-line"></line>
+    <line x1="610" y1="50" x2="610" y2="650" class="grid-line"></line>
+    <line x1="650" y1="50" x2="650" y2="650" class="grid-line"></line>
+    <line x1="690" y1="50" x2="690" y2="650" class="grid-line"></line>
+    <line x1="730" y1="50" x2="730" y2="650" class="grid-line"></line>
+    <line x1="770" y1="50" x2="770" y2="650" class="grid-line"></line>
+    <line x1="810" y1="50" x2="810" y2="650" class="grid-line"></line>
+    <line x1="850" y1="50" x2="850" y2="650" class="grid-line"></line>
+
+    <!-- Horizontal Grid Lines (40px spacing, y = -10 to y = 10) -->
+    <line x1="50" y1="50" x2="850" y2="50" class="grid-line"></line>
+    <line x1="50" y1="90" x2="850" y2="90" class="grid-line"></line>
+    <line x1="50" y1="130" x2="850" y2="130" class="grid-line"></line>
+    <line x1="50" y1="170" x2="850" y2="170" class="grid-line"></line>
+    <line x1="50" y1="210" x2="850" y2="210" class="grid-line"></line>
+    <line x1="50" y1="250" x2="850" y2="250" class="grid-line"></line>
+    <line x1="50" y1="290" x2="850" y2="290" class="grid-line"></line>
+    <line x1="50" y1="330" x2="850" y2="330" class="grid-line"></line>
+    <line x1="50" y1="370" x2="850" y2="370" class="grid-line"></line>
+    <line x1="50" y1="410" x2="850" y2="410" class="grid-line"></line>
+    <line x1="50" y1="450" x2="850" y2="450" class="axis-line"></line>
+    <line x1="50" y1="490" x2="850" y2="490" class="grid-line"></line>
+    <line x1="50" y1="530" x2="850" y2="530" class="grid-line"></line>
+    <line x1="50" y1="570" x2="850" y2="570" class="grid-line"></line>
+    <line x1="50" y1="610" x2="850" y2="610" class="grid-line"></line>
+    <line x1="50" y1="650" x2="850" y2="650" class="grid-line"></line>
+
+    <!-- Axes Lines with Directional Arrows -->
+    <line x1="30" y1="450" x2="870" y2="450" class="axis-line" marker-end="url(#axis-arrow)"></line>
+    <line x1="450" y1="670" x2="450" y2="30" class="axis-line" marker-end="url(#axis-arrow)"></line>
+
+    <!-- Axis Labels -->
+    <text x="885" y="455" class="axis-label">x</text>
+    <text x="450" y="20" class="axis-label">y</text>
+
+    <!-- X-Axis Numeric Markers -->
+    <text x="50" y="468" class="axis-value">-10</text>
+    <text x="90" y="468" class="axis-value">-9</text>
+    <text x="130" y="468" class="axis-value">-8</text>
+    <text x="170" y="468" class="axis-value">-7</text>
+    <text x="210" y="468" class="axis-value">-6</text>
+    <text x="250" y="468" class="axis-value">-5</text>
+    <text x="290" y="468" class="axis-value">-4</text>
+    <text x="330" y="468" class="axis-value">-3</text>
+    <text x="370" y="468" class="axis-value">-2</text>
+    <text x="410" y="468" class="axis-value">-1</text>
+    <text x="438" y="468" class="axis-value">0</text>
+    <text x="490" y="468" class="axis-value">1</text>
+    <text x="530" y="468" class="axis-value">2</text>
+    <text x="570" y="468" class="axis-value">3</text>
+    <text x="610" y="468" class="axis-value">4</text>
+    <text x="650" y="468" class="axis-value">5</text>
+    <text x="690" y="468" class="axis-value">6</text>
+    <text x="730" y="468" class="axis-value">7</text>
+    <text x="770" y="468" class="axis-value">8</text>
+    <text x="810" y="468" class="axis-value">9</text>
+    <text x="850" y="468" class="axis-value">10</text>
+
+    <!-- Y-Axis Numeric Markers -->
+    <text x="434" y="54" class="axis-value">10</text>
+    <text x="434" y="94" class="axis-value">9</text>
+    <text x="434" y="134" class="axis-value">8</text>
+    <text x="434" y="174" class="axis-value">7</text>
+    <text x="434" y="214" class="axis-value">6</text>
+    <text x="434" y="254" class="axis-value">5</text>
+    <text x="434" y="294" class="axis-value">4</text>
+    <text x="434" y="334" class="axis-value">3</text>
+    <text x="434" y="374" class="axis-value">2</text>
+    <text x="434" y="414" class="axis-value">1</text>
+    <text x="434" y="494" class="axis-value">-1</text>
+    <text x="434" y="534" class="axis-value">-2</text>
+    <text x="434" y="574" class="axis-value">-3</text>
+    <text x="434" y="614" class="axis-value">-4</text>
+    <text x="434" y="654" class="axis-value">-5</text>
+
+    <!-- ========================================== -->
+    <!-- GEOMETRY MAPPING FROM NOTES                -->
+    <!-- Center (0,0) is at canvas pixel (450, 450) -->
+    <!-- x_pixel = 450 + (x_units * 40)             -->
+    <!-- y_pixel = 450 - (y_units * 40)             -->
+    <!-- ========================================== -->
+
+    <!-- Image Triangle A'B'C' (Scale Factor 2) -->
+    <!-- A'(1,1) -> (490, 410) | B'(5,1) -> (650, 410) | C'(1,5) -> (490, 250) -->
+    <polygon points="490,410 650,410 490,250" class="image" />
+
+    <!-- Object Triangle ABC (Original) -->
+    <!-- A(1,1) -> (490, 410) | B(3,1) -> (570, 410) | C(1,3) -> (490, 330) -->
+    <polygon points="490,410 570,410 490,330" class="object" />
+
+    <!-- Vertices Point Markers -->
+    <circle cx="490" cy="410" r="4" fill="#ffffff" />
+    <circle cx="570" cy="410" r="4" fill="#ffffff" />
+    <circle cx="490" cy="330" r="4" fill="#ffffff" />
+    <circle cx="650" cy="410" r="4" fill="#00ffcc" />
+    <circle cx="490" cy="250" r="4" fill="#00ffcc" />
+
+    <!-- Object Labels (White text / Above or offset from dots) -->
+    <text x="500" y="425" class="point-label pre-label">A(1,1)</text>
+    <text x="570" y="425" class="point-label pre-label">B(3,1)</text>
+    <text x="480" y="325" class="point-label pre-label" text-anchor="end">C(1,3)</text>
+
+    <!-- Image Labels (Teal text) -->
+    <text x="500" y="395" class="point-label post-label">A'(1,1)</text>
+    <text x="650" y="425" class="point-label post-label">B'(5,1)</text>
+    <text x="480" y="245" class="point-label post-label" text-anchor="end">C'(1,5)</text>
+</svg>

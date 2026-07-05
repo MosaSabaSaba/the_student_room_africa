@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Question Bank | Area and Perimeter | Extended LGCSE Mathematics Paper 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/contentStyles.css" />
+    <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../assets/css/question-bank.css" />
+
+    
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        <a href="../../../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="../../conversions.html">Study Guide</a>
+            <a href="../../tracker.html">Revision Tracker</a>
+            <a href="../../tracker.html#past-papers">Past Papers</a>
+            <a href="../../questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="#">Lesotho</a><span class="bc-sep">›</span>
+            <a href="../../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../question-bank.html">Question Bank</a><span class="bc-sep">›</span>
+            <a href="extended.html">Extended</a><span class="bc-sep">›</span>
+            <span>Area and Perimeter</span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="page-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar" id="leftSidebar">
+            <div class="filter-wrap">
+                <span class="filter-icon">🔍</span>
+                <input class="filter-input" type="text" placeholder="Filter topics..." />
+            </div>
+
+            <ul class="sidebar-nav" id="topicNav">
+                <li><a href="basic-operations.html">Basic Operations</a></li>
+                <li><a href="number.html">Number</a></li>
+                <li><a href="estimation.html">Estimation and Limits of Accuracy</a></li>
+                <li><a href="indices.html">Indices and Standard Form</a></li>
+                <li><a href="algebra.html">Algebraic Representation and Manipulation</a></li>
+                <li><a href="linear-equations.html">Linear and Simultaneous Equations</a></li>
+                <li><a href="quadratic-expressions.html">Quadratic Expressions And Equations</a></li>
+                <li><a href="sets.html">Set Language and Notation</a></li>
+                <li><a href="angles.html">Angles</a></li>
+                <li><a href="trigonometry.html">Trigonometry</a></li>
+                <li><a href="constructions.html">Geometrical Constructions and Loci</a></li>
+                <li><a href="bearings.html">Bearings</a></li>
+                <li><a href="geometry.html">Geometrical Terms and Relationships</a></li>
+                <li><a href="ratio.html">Ratio, Proportion, Rates and Percentages</a></li>
+                <li><a href="mensuration.html">Mensuration</a></li>
+                <li><a href="functions.html">Relations and Function Notation</a></li>
+                <li><a href="inequalities.html">Inequalities and Linear Programming</a></li>
+                <li><a href="statistics.html">Statistics and Probability</a></li>
+                <li><a href="matrices.html">Matrices</a></li>
+                <li><a href="finance.html">Personal and Household Finance</a></li>
+                <li class="active"><a href="area-and-perimeter.html">Area and Perimeter</a></li>
+                <li><a href="rates.html">Rates of Change</a></li>
+                <li><a href="similarity-and-congruence.html">Similarity and Congruence</a></li>
+                <li><a href="sequences.html">Sequences</a></li>
+                <li><a href="linear-equations-and-graphs.html">Linear Equations and Graphs</a></li>
+                <li><a href="transformation.html">Transformations</a></li>
+                <li><a href="symmetry.html">Symmetry</a></li>
+                <li><a href="vectors.html">Vectors</a></li>
+                <li><a href="proportion.html">Proportion</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="mainContent">
+
+            <h1>LGCSE Mathematics Question Bank</h1>
+            <p style="color: #aaa; margin-bottom: 2rem; font-size: 0.95rem;">
+                Practice questions from past ECoL examination papers, organized by topic.
+            </p>
+
+            <div class="question-paper">
+
+                <!-- ============================================================ -->
+                <!-- 25. AREAS -->
+                <!-- ============================================================ -->
+                <section class="topic-section" id="areas">
+                    <h2 class="paper-heading">Areas</h2>
+
+                    <!-- Question 10 -->
+                    <div class="question-block">
+                        <div class="question-number">10.</div>
+                        <div class="question-text">
+                            A, B and C is an isosceles triangle with AB = 12 cm and angle ABC = 60°.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q10-isosceles.png" alt="Isosceles triangle ABC" /> -->
+                            
+                                <svg xmlns="http://w3.org" viewBox="0 0 380 200" width="380" height="200">
+                                    <style>
+                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+                                        .tick-mark { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+                                        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+                                        .value-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+                                        .angle-text { font-family: Arial, sans-serif; font-size: 11px; fill: #ffffff; }
+                                    </style>
+
+                                    <!-- Main Triangle ABC -->
+                                    <!-- Base BC -->
+                                    <line x1="50" y1="170" x2="230" y2="170" class="geometry-line" />
+                                    
+                                    <!-- Side AC -->
+                                    <line x1="140" y1="30" x2="50" y2="170" class="geometry-line" />
+                                    
+                                    <!-- Side AB -->
+                                    <line x1="140" y1="30" x2="230" y2="170" class="geometry-line" />
+
+                                    <!-- Congruency Tick Marks -->
+                                    <!-- Tick on side AC -->
+                                    <line x1="88" y1="102" x2="101" y2="102" class="tick-mark" />
+                                    <!-- Tick on side AB -->
+                                    <line x1="178" y1="98" x2="191" y2="98" class="tick-mark" />
+
+                                    <!-- Angle Arc at B -->
+                                    <path d="M 205 170 A 25 25 0 0 1 216.5 149" class="geometry-line" stroke-width="1" />
+
+                                    <!-- Vertex Labels -->
+                                    <text x="135" y="22" class="label-text">A</text>
+                                    <text x="236" y="174" class="label-text">B</text>
+                                    <text x="36" y="174" class="label-text">C</text>
+
+                                    <!-- Technical / Measurement Labels -->
+                                    <text x="184" y="163" class="angle-text">65°</text>
+                                    <text x="192" y="112" class="value-text">12cm</text>
+                                    
+                                    <!-- Notice Text -->
+                                    <text x="290" y="45" class="label-text">NOT TO</text>
+                                    <text x="290" y="61" class="label-text">SCALE</text>
+                                </svg>
+
+                            </div>
+                            (a) Find the length of BC.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Calculate the area of the triangle.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm<sup>2</sup></span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) C is due West of B.
+                            <br>
+                            Find the bearing of C from A.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (d) Triangle ABC is a face of a square-based pyramid ABCDE.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q10-pyramid.png" alt="Square-based pyramid" /> -->
+                           
+                                <svg xmlns="http://w3.org" viewBox="0 0 380 240" width="380" height="240">
+                                    <style>
+                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-dasharray: 4,4; stroke-linejoin: round; }
+                                        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+                                    </style>
+
+                                    <!-- Hidden Back Edges (Dashed) -->
+                                    <!-- Edge DC -->
+                                    <line x1="45" y1="180" x2="110" y2="165" class="dashed-line" />
+                                    <!-- Edge CB -->
+                                    <line x1="110" y1="165" x2="205" y2="175" class="dashed-line" />
+                                    <!-- Slant Edge AC -->
+                                    <line x1="135" y1="30" x2="110" y2="165" class="dashed-line" />
+
+                                    <!-- Visible Solid Edges -->
+                                    <!-- Base Edge DE -->
+                                    <line x1="45" y1="180" x2="145" y2="195" class="geometry-line" />
+                                    <!-- Base Edge EB -->
+                                    <line x1="145" y1="195" x2="205" y2="175" class="geometry-line" />
+                                    
+                                    <!-- Slant Edge AD -->
+                                    <line x1="135" y1="30" x2="45" y2="180" class="geometry-line" />
+                                    <!-- Slant Edge AE -->
+                                    <line x1="135" y1="30" x2="145" y2="195" class="geometry-line" />
+                                    <!-- Slant Edge AB -->
+                                    <line x1="135" y1="30" x2="205" y2="175" class="geometry-line" />
+
+                                    <!-- Vertex Labels -->
+                                    <text x="130" y="22" class="label-text">A</text>
+                                    <text x="210" y="178" class="label-text">B</text>
+                                    <text x="114" y="162" class="label-text">C</text>
+                                    <text x="30" y="185" class="label-text">D</text>
+                                    <text x="140" y="210" class="label-text">E</text>
+                                    
+                                    <!-- Notice Text -->
+                                    <text x="290" y="45" class="label-text">NOT TO</text>
+                                    <text x="290" y="61" class="label-text">SCALE</text>
+                                </svg>
+
+                            </div>
+                            (i) Find the height of the pyramid correct to 2 decimal places.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm</span> <span class="marks">[4]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Calculate the total surface area of the pyramid.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm<sup>2</sup></span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 11 -->
+                    <div class="question-block">
+                        <div class="question-number">11.</div>
+                        <div class="question-text">
+                            The diagram shows a cross section of a machine. QR = UV.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q11-cross-section.png" alt="Cross section of a machine" /> -->
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 440" width="100%" height="auto" style="background: #1a1a1a; border-radius: 8px; max-width: 100%;">
+                                    <!-- Background for high contrast -->
+                                    <rect width="100%" height="100%" fill="#1a1a1a"></rect>
+
+                                    <!-- Definition block for dimension arrows -->
+                                    <defs>
+                                        <marker id="arrow-left" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                            <path d="M 10,0 L 0,5 L 10,10 Z" fill="#ffffff"></path>
+                                        </marker>
+                                        <marker id="arrow-right" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                            <path d="M 0,0 L 10,5 L 0,10 Z" fill="#ffffff"></path>
+                                        </marker>
+                                        <!-- Flipped arrows (rotated 180°) -->
+                                        <marker id="arrow-left-flip" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                            <g transform="rotate(180 5 5)">
+                                                <path d="M 10,0 L 0,5 L 10,10 Z" fill="#ffffff"></path>
+                                            </g>
+                                        </marker>
+                                        <marker id="arrow-right-flip" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                            <g transform="rotate(180 5 5)">
+                                                <path d="M 0,0 L 10,5 L 0,10 Z" fill="#ffffff"></path>
+                                            </g>
+                                        </marker>
+                                    </defs>
+
+                                    <!-- Main Geometry Polygon Group -->
+                                    <g stroke="#ffffff" stroke-width="3.5" fill="none" stroke-linejoin="miter">
+                                        <!-- Perimeter path tracing points P -> Q -> R -> S -> T -> U -> V -> W -> Z -->
+                                        <path d="M 120,320 L 120,180 L 330,180 L 330,90 L 560,90 L 560,230 L 800,230 L 800,320 Z"></path>
+
+                                        <!-- Right Angle Squares -->
+                                        <g stroke-width="2">
+                                            <rect x="120" y="300" width="20" height="20"></rect> <!-- P -->
+                                            <rect x="120" y="180" width="20" height="20"></rect> <!-- Q -->
+                                            <rect x="330" y="90" width="20" height="20"></rect>  <!-- S -->
+                                            <rect x="540" y="90" width="20" height="20"></rect>  <!-- T -->
+                                            <rect x="780" y="230" width="20" height="20"></rect> <!-- V -->
+                                            <rect x="780" y="300" width="20" height="20"></rect> <!-- W -->
+                                        </g>
+                                    </g>
+
+                                    <!-- Dimension Lines and Arrows (USING FLIPPED ARROWS) -->
+                                    <g stroke="#ffffff" stroke-width="2">
+                                        <!-- 25 cm Vertical Dimension (Left) -->
+                                        <line x1="50" y1="200" x2="50" y2="180" marker-end="url(#arrow-left-flip)"></line>
+                                        <line x1="50" y1="300" x2="50" y2="320" marker-end="url(#arrow-left-flip)"></line>
+                                        
+                                        <!-- 15 cm Vertical Dimension (Right) -->
+                                        <line x1="870" y1="245" x2="870" y2="230" marker-end="url(#arrow-left-flip)"></line>
+                                        <line x1="870" y1="305" x2="870" y2="320" marker-end="url(#arrow-left-flip)"></line>
+
+                                        <!-- 35 cm Horizontal Dimension (Top) -->
+                                        <line x1="375" y1="55" x2="330" y2="55" marker-end="url(#arrow-left-flip)"></line>
+                                        <line x1="515" y1="55" x2="560" y2="55" marker-end="url(#arrow-left-flip)"></line>
+
+                                        <!-- 45 cm Vertical Total Height Dimension (Center) -->
+                                        <line x1="445" y1="125" x2="445" y2="90" marker-end="url(#arrow-left-flip)"></line>
+                                        <line x1="445" y1="225" x2="445" y2="320" marker-end="url(#arrow-left-flip)"></line>
+
+                                        <!-- 115 cm Total Horizontal Base Dimension (Bottom) -->
+                                        <line x1="370" y1="375" x2="120" y2="375" marker-end="url(#arrow-left-flip)"></line>
+                                        <line x1="510" y1="375" x2="800" y2="375" marker-end="url(#arrow-left-flip)"></line>
+                                    </g>
+
+                                    <!-- Text and Labels -->
+                                    <g font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff">
+                                        <!-- Vertex Labels -->
+                                        <text x="95" y="350" font-size="28">P</text>
+                                        <text x="95" y="165" font-size="28">Q</text>
+                                        <text x="340" y="210" font-size="28">R</text>
+                                        <text x="300" y="120" font-size="28">S</text>
+                                        <text x="580" y="120" font-size="28">T</text>
+                                        <text x="530" y="260" font-size="28">U</text>
+                                        <text x="815" y="220" font-size="28">V</text>
+                                        <text x="815" y="350" font-size="28">W</text>
+
+                                        <!-- Variable x Label -->
+                                        <text x="680" y="215" font-size="38" text-anchor="middle" font-style="italic">x</text>
+
+                                        <!-- Ultra-Enlarged Values Strings Inside Dimensions -->
+                                        <text x="50" y="258" font-size="34" text-anchor="middle">25 cm</text>
+                                        <text x="870" y="285" font-size="34" text-anchor="middle">15 cm</text>
+                                        <text x="445" y="65" font-size="34" text-anchor="middle">35 cm</text>
+                                        <text x="445" y="185" font-size="34" text-anchor="middle">45 cm</text>
+                                        <text x="440" y="386" font-size="34" text-anchor="middle">115 cm</text>
+
+                                        <!-- "NOT TO SCALE" Disclaimer -->
+                                        <g font-size="18" text-anchor="end" letter-spacing="1">
+                                            <text x="800" y="40">NOT TO</text>
+                                            <text x="800" y="65">SCALE</text>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            (a) Show that QR = 40 cm.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Find the perimeter of the cross section.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) (i) Calculate the area of the cross section.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm<sup>2</sup></span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) This machine is in the form of a prism, 200 cm long.
+                            <br>
+                            Find the volume of the machine.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm<sup>3</sup></span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 12 -->
+                    <div class="question-block">
+                        <div class="question-number">12.</div>
+                        <div class="question-text">
+                            The prism is completely filled with some material.
+                            <br>
+                            1 cubic metre of this material has mass 2 kg.
+                            <br>
+                            Calculate the mass of the material used.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">kg</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 13 -->
+                    <div class="question-block">
+                        <div class="question-number">13.</div>
+                        <div class="question-text">
+                            The diagram shows a circle of radius 4 cm, inscribed in an equilateral triangle ABC.
+                            <br>
+                            AB, BC and AC are tangent to the circle at P, T and M respectively, and AB = 14 cm.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q13-circle-triangle.png" alt="Circle inscribed in equilateral triangle" /> -->
+                            
+                                <svg xmlns="http://w3.org" viewBox="0 0 420 240" width="420" height="240">
+                                    <style>
+                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+                                        .shaded-area { fill: #555555; stroke: none; }
+                                        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+                                        .value-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+                                    </style>
+
+                                    <!-- Definitions for Double-Headed Dimension Arrow -->
+                                    <defs>
+                                        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                            <path d="M 0 1.5 L 7 5 L 0 8.5 z" fill="#ffffff" stroke="none" />
+                                        </marker>
+                                    </defs>
+
+                                    <!-- Shaded Region (Bounded by AM, AP, and Arc PM) -->
+                                    <path d="M 173.4 210 L 216.7 135 A 50 50 0 0 0 260 210 Z" class="shaded-area" />
+
+                                    <!-- Main Triangle ABC -->
+                                    <line x1="173.4" y1="210" x2="346.6" y2="210" class="geometry-line" />
+                                    <line x1="173.4" y1="210" x2="260" y2="60" class="geometry-line" />
+                                    <line x1="260" y1="60" x2="346.6" y2="210" class="geometry-line" />
+
+                                    <!-- Inscribed Circle -->
+                                    <circle cx="260" cy="160" r="50" class="geometry-line" />
+
+                                    <!-- Radius OM -->
+                                    <line x1="260" y1="160" x2="260" y2="210" class="geometry-line" />
+
+                                    <!-- Center Point O -->
+                                    <circle cx="260" cy="160" r="3" fill="#ffffff" />
+
+                                    <!-- Dimension Arrow for Side Length (14 cm) -->
+                                    <line x1="138.8" y1="190" x2="225.4" y2="40" class="geometry-line" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+
+                                    <!-- Letter Labels for Vertices and Tangent Points -->
+                                    <text x="158" y="222" class="label-text">A</text>
+                                    <text x="254" y="52" class="label-text">B</text>
+                                    <text x="352" y="222" class="label-text">C</text>
+                                    <text x="255" y="222" class="label-text">M</text>
+                                    <text x="200" y="132" class="label-text">P</text>
+                                    <text x="310" y="135" class="label-text">T</text>
+                                    <text x="254" y="150" class="label-text">0</text>
+
+                                    <!-- Measurement Values -->
+                                    <text x="266" y="190" class="value-text">4 cm</text>
+                                    <text x="175" y="112" class="value-text" transform="rotate(-60, 175, 112)" text-anchor="middle">14 cm</text>
+                                </svg>
+
+                            </div>
+                            (a) State the value of:
+                            <br>
+                            (i) The sector angle MOP,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) The length BP.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm</span> <span class="marks">[1]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Calculate:
+                            <br>
+                            (i) The height of the triangle ABC,
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) The area of the shaded region.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm<sup>2</sup></span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 14 -->
+                    <div class="question-block">
+                        <div class="question-number">14.</div>
+                        <div class="question-text">
+                            The diagram shows the positions of two houses at P and Q. The point R represents the position of the electrical pole which is 40 m from P and 50 m from Q.
+                            <br>
+                            Angle PRQ = 108°.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q14-triangle.png" alt="Triangle PQR" /> -->
+                            
+                                <svg xmlns="http://w3.org" viewBox="0 0 540 240" width="540" height="240">
+                                    <style>
+                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+                                        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+                                        .value-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+                                        .angle-text { font-family: Arial, sans-serif; font-size: 11px; fill: #ffffff; }
+                                    </style>
+
+                                    <!-- Definitions for North Arrowhead -->
+                                    <defs>
+                                        <marker id="north-arrow" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                            <path d="M 0 2 L 5 8 L 10 2 L 5 4 z" fill="#ffffff" stroke="none" />
+                                        </marker>
+                                    </defs>
+
+                                    <!-- Border Top Line -->
+                                    <line x1="10" y1="20" x2="530" y2="20" class="geometry-line" stroke-width="1" />
+
+                                    <!-- Main Triangle PQR -->
+                                    <!-- Side PQ -->
+                                    <line x1="70" y1="95" x2="430" y2="92" class="geometry-line" />
+                                    
+                                    <!-- Side PR -->
+                                    <line x1="70" y1="95" x2="220" y2="200" class="geometry-line" />
+                                    
+                                    <!-- Side RQ -->
+                                    <line x1="220" y1="200" x2="430" y2="92" class="geometry-line" />
+
+                                    <!-- North Indicator Line at P -->
+                                    <line x1="70" y1="95" x2="70" y2="38" class="geometry-line" marker-end="url(#north-arrow)" />
+
+                                    <!-- Angle Arc at R -->
+                                    <path d="M 197 184 A 30 30 0 0 1 241 189" class="geometry-line" stroke-width="1" />
+
+                                    <!-- Point Labels -->
+                                    <text x="52" y="100" class="label-text">P</text>
+                                    <text x="438" y="97" class="label-text">Q</text>
+                                    <text x="216" y="218" class="label-text">R</text>
+                                    <text x="60" y="30" class="label-text">North</text>
+
+                                    <!-- Measurement Values -->
+                                    <text x="206" y="176" class="angle-text">108°</text>
+                                    <text x="120" y="152" class="value-text">40 m</text>
+                                    <text x="325" y="160" class="value-text">50 m</text>
+                                    
+                                    <!-- Notice Text -->
+                                    <text x="475" y="35" class="label-text">NOT TO</text>
+                                    <text x="475" y="51" class="label-text">SCALE</text>
+                                </svg>
+
+                            </div>
+                            (a) Calculate PQ, the distance between the two houses.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">m</span> <span class="marks">[4]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) Calculate the area of triangle PQR.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">m<sup>2</sup></span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (c) Q is due East of P.
+                            <br>
+                            Calculate the bearing of R from P.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[4]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (d) Another house is constructed along PQ such that it is at the shortest distance from R.
+                            <br>
+                            Calculate this shortest distance.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">m</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+
+                    <!-- Question 15 -->
+                    <div class="question-block">
+                        <div class="question-number">15.</div>
+                        <div class="question-text">
+                            (a) The diagram shows triangle OPQ.
+                            <br>
+                            Angle OPQ = 90°, OP = 4.5 cm and PQ = 4.8 cm.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q15-right-triangle.png" alt="Right triangle OPQ" /> -->
+                            
+                                <svg xmlns="http://w3.org" viewBox="0 0 450 200" width="450" height="200">
+                                    <style>
+                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+                                        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+                                        .value-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+                                    </style>
+
+                                    <!-- Main Right-Angled Triangle OPQ -->
+                                    <!-- Base OP -->
+                                    <line x1="40" y1="150" x2="270" y2="150" class="geometry-line" />
+                                    
+                                    <!-- Perpendicular Height PQ -->
+                                    <line x1="270" y1="150" x2="270" y2="30" class="geometry-line" />
+                                    
+                                    <!-- Hypotenuse OQ -->
+                                    <line x1="40" y1="150" x2="270" y2="30" class="geometry-line" />
+
+                                    <!-- Right-Angle Indicator Square at P -->
+                                    <path d="M 258 150 L 258 138 L 270 138" class="geometry-line" stroke-width="1.2" />
+
+                                    <!-- Point Labels -->
+                                    <text x="24" y="154" class="label-text">O</text>
+                                    <text x="275" y="158" class="label-text">P</text>
+                                    <text x="272" y="24" class="label-text">Q</text>
+
+                                    <!-- Measurement Values -->
+                                    <text x="145" y="166" class="value-text" text-anchor="middle">5.4 cm</text>
+                                    <text x="282" y="94" class="value-text">4.8 cm</text>
+                                    
+                                    <!-- Notice Text -->
+                                    <text x="360" y="85" class="label-text">NOT TO</text>
+                                    <text x="360" y="101" class="label-text">SCALE</text>
+                                </svg>
+
+                            </div>
+                            (i) Calculate OQ.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Calculate the gradient of line OQ.
+                            <br>
+                            Give your answer correct to 2 significant figures.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (iii) OP and PQ are measured correct to 2 significant figures.
+                            <br>
+                            Calculate the greatest possible area of triangle OPQ.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm<sup>3</sup></span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (b) In the diagram, XZ has length 63 cm and YC is a vertical line of length 16 cm.
+                            <br>
+                            Points X, Z and C lie on a horizontal plane.
+                            <br>
+                            The angle of elevation of Y from Z is 25° and &theta;° respectively.
+                            <br>
+                            Angle CXZ = 30°.
+                            <div class="question-image">
+                                <!-- <img src="assets/img/questions/paper4/q15-3d.png" alt="3D diagram with right triangles" /> -->
+                            
+                                <svg xmlns="http://w3.org" viewBox="0 0 450 220" width="450" height="220">
+                                    <style>
+                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+                                        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+                                        .value-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+                                        .angle-text { font-family: Arial, sans-serif; font-size: 11px; fill: #ffffff; }
+                                        .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 13px; font-weight: bold; fill: #ffffff; }
+                                    </style>
+
+                                    <!-- Outer Triangle and Main Infrastructure -->
+                                    <!-- Base Line (Left X to Bottom-Right C) -->
+                                    <line x1="50" y1="185" x2="340" y2="195" class="geometry-line" />
+                                    
+                                    <!-- Left Outer Slant XY -->
+                                    <line x1="50" y1="185" x2="160" y2="35" class="geometry-line" />
+                                    
+                                    <!-- Right Outer Slant YC -->
+                                    <line x1="160" y1="35" x2="340" y2="195" class="geometry-line" />
+
+                                    <!-- Interior Structural Lines connected to Central Point C -->
+                                    <!-- Vertical Height YC -->
+                                    <line x1="160" y1="35" x2="160" y2="115" class="geometry-line" stroke-width="1.8" />
+                                    
+                                    <!-- Internal Ray XC -->
+                                    <line x1="50" y1="185" x2="160" y2="115" class="geometry-line" />
+                                    
+                                    <!-- Internal Ray CC -->
+                                    <line x1="160" y1="115" x2="340" y2="195" class="geometry-line" />
+
+                                    <!-- Perpendicular Right-Angle Indicators at Central Vertex C -->
+                                    <!-- Left Right-Angle Box -->
+                                    <path d="M 148 120 L 148 107 L 160 107" class="geometry-line" stroke-width="1.2" />
+                                    <!-- Right Right-Angle Box -->
+                                    <path d="M 172 120 L 172 109 L 160 104" class="geometry-line" stroke-width="1.2" />
+
+                                    <!-- Corrected Angle Arcs to precisely match the image -->
+                                    <!-- Upper Angle at X: between XY and Internal Ray XC (labeled 25°) -->
+                                    <path d="M 96 126 A 40 40 0 0 1 110 145" class="geometry-line" stroke-width="1" />
+                                    
+                                    <!-- Lower Angle at X: between Internal Ray XC and Base Line (unlabeled arc) -->
+                                    <path d="M 89 159 A 40 40 0 0 1 97 187" class="geometry-line" stroke-width="1" />
+                                    
+                                    <!-- Angle at Bottom-Right C: between Right Outer Slant YC and Internal Ray CC (labeled θ°) -->
+                                    <path d="M 280 169 A 50 50 0 0 1 290 151" class="geometry-line" stroke-width="1" />
+
+                                    <!-- Structural Letter Labels (reproducing both 'C' labels exactly as shown) -->
+                                    <text x="32" y="193" class="label-text">X</text>
+                                    <text x="156" y="24" class="label-text">Y</text>
+                                    <text x="163" y="128" class="label-text">C</text>
+                                    <text x="345" y="202" class="label-text">C</text>
+
+                                    <!-- Technical / Measurement Value Labels -->
+                                    <text x="168" y="78" class="value-text">16cm</text>
+                                    <text x="88" y="148" class="angle-text">25°</text>
+                                    <text x="290" y="170" class="variable-text">θ°</text>
+                                    
+                                    <!-- Scale Notice -->
+                                    <text x="375" y="80" class="label-text">NOT TO</text>
+                                    <text x="375" y="96" class="label-text">SCALE</text>
+                                </svg>
+
+                            </div>
+                            (i) Calculate the length of XC.
+                            <br>
+                            Give your answer correct to 4 significant figures.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (ii) Show that the length of ZC = 37.4 cm correct to 3 significant figures.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[4]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (iii) Find the value of &theta;.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (iv) Calculate the area of triangle XZC.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm<sup>2</sup></span> <span class="marks">[3]</span></span>
+                            </div>
+                        </div>
+                        <div class="question-text">
+                            (v) Find the shortest distance from C to XZ.
+                        </div>
+                        <div class="answer-row">
+                            <div class="answer-space">
+                                <span class="answer-part"><span class="answer-content">.........................</span> <span class="unit">cm</span> <span class="marks">[2]</span></span>
+                            </div>
+                        </div>
+                        <div class="paper-ref-row">Paper 4</div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../js/contentScript.js"></script>
+
+</body>
+</html>

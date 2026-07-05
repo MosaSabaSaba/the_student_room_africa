@@ -1,0 +1,84 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="700" height="455" viewBox="0 0 700 455" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .cub-solid  { stroke: #ffffff; stroke-width: 2; fill: none; }
+        .cub-hidden { stroke: #ffffff; stroke-width: 1.2; fill: none; stroke-dasharray: 6,4; opacity: 0.4; }
+        .cub-diag   { stroke: #ff8888; stroke-width: 2.5; fill: none; stroke-dasharray: 8,4; }
+        .cub-base   { stroke: #00ffcc; stroke-width: 2; fill: none; stroke-dasharray: 6,4; }
+        .cub-label  { fill: #ffffff; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; }
+        .dim-label  { fill: #ffcc00; font-family: Arial, sans-serif; font-size: 13px; text-anchor: middle; }
+        .diag-label { fill: #ff8888; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; }
+        .base-label { fill: #00ffcc; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; }
+    </style>
+
+    <!-- Oblique cuboid vertices (px):
+            Bottom face: A(160,420) B(460,420) F(560,320) E(260,320)
+            Top face:    D(160,220) C(460,220) G(560,120) H(260,120)
+            Dims: AB=300px=5u, AD=200px=4u, AE offset(100,−100)=3u
+    -->
+
+    <!-- Hidden back edges -->
+    <line x1="260" y1="320" x2="260" y2="120" class="cub-hidden"/>
+    <line x1="260" y1="320" x2="160" y2="420" class="cub-hidden"/>
+    <line x1="260" y1="320" x2="560" y2="320" class="cub-hidden"/>
+
+    <!-- Base diagonal BG (via F) — teal dashed -->
+    <!-- B to F: (460,420)→(560,320) already an edge; F to G not needed -->
+    <!-- Actually the base diagonal of the bottom face: B(460,420) to E(260,320) -->
+    <line x1="460" y1="420" x2="260" y2="320" class="cub-base"/>
+
+    <!-- Space diagonal A to G: (160,420)→(560,120) — red dashed -->
+    <line x1="160" y1="420" x2="560" y2="120" class="cub-diag"/>
+
+    <!-- Solid front and top edges -->
+    <!-- Bottom face visible edges -->
+    <line x1="160" y1="420" x2="460" y2="420" class="cub-solid"/>
+    <line x1="460" y1="420" x2="560" y2="320" class="cub-solid"/>
+    <line x1="560" y1="320" x2="560" y2="120" class="cub-solid"/>
+    <line x1="560" y1="120" x2="460" y2="220" class="cub-solid"/>
+    <line x1="460" y1="220" x2="160" y2="220" class="cub-solid"/>
+    <line x1="160" y1="220" x2="160" y2="420" class="cub-solid"/>
+    <line x1="460" y1="420" x2="460" y2="220" class="cub-solid"/>
+    <line x1="160" y1="220" x2="260" y2="120" class="cub-solid"/>
+    <line x1="260" y1="120" x2="560" y2="120" class="cub-solid"/>
+
+    <!-- Vertex dots -->
+    <circle cx="160" cy="420" r="5" fill="#ffffff"/>
+    <circle cx="460" cy="420" r="5" fill="#ffffff"/>
+    <circle cx="560" cy="320" r="5" fill="#ffffff"/>
+    <circle cx="260" cy="320" r="5" fill="#ffffff" opacity="0.5"/>
+    <circle cx="160" cy="220" r="5" fill="#ffffff"/>
+    <circle cx="460" cy="220" r="5" fill="#ffffff"/>
+    <circle cx="560" cy="120" r="5" fill="#ff8888"/>
+    <circle cx="260" cy="120" r="5" fill="#ffffff"/>
+
+    <!-- Vertex labels -->
+    <text x="140" y="440" class="cub-label">A</text>
+    <text x="476" y="440" class="cub-label">B</text>
+    <text x="578" y="320" class="cub-label">F</text>
+    <text x="248" y="340" class="cub-label" opacity="0.6">E</text>
+    <text x="140" y="215" class="cub-label">D</text>
+    <text x="476" y="215" class="cub-label">C</text>
+    <text x="578" y="115" class="cub-label" style="fill:#ff8888">G</text>
+    <text x="248" y="112" class="cub-label">H</text>
+
+    <!-- Dimension labels -->
+    <text x="310" y="448" class="dim-label">length = l</text>
+    <text x="134" y="322" class="dim-label">height = h</text>
+    <text x="528" y="378" class="dim-label" transform="rotate(-45,528,378)">width = w</text>
+
+    <!-- Space diagonal label -->
+    <text x="330" y="275" class="diag-label" transform="rotate(-33,330,275)">space diagonal AG</text>
+
+    <!-- Base diagonal label -->
+    <text x="380" y="396" class="base-label">base diag BF</text>
+
+    <!-- Right angle marker at F (foot of space diagonal triangle) -->
+    <rect x="548" y="308" width="12" height="12" fill="none" stroke="#00ffcc" stroke-width="1.5"/>
+
+    <!-- Annotations -->
+    <text x="580" y="200" fill="#ff8888" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Step 1: find BF</text>
+    <text x="580" y="218" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12">BF² = l² + w²</text>
+    <text x="580" y="240" fill="#ff8888" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Step 2: find AG</text>
+    <text x="580" y="258" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12">AG² = BF² + h²</text>
+    <text x="580" y="278" fill="#aaaaaa" font-family="Arial, sans-serif" font-size="12">AG² = l² + w² + h²</text>
+</svg>

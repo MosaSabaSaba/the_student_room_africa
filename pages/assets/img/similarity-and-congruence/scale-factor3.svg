@@ -1,0 +1,14 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="220" height="170" viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="arrow3" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffcc00"/>
+        </marker>
+    </defs>
+    <polygon points="30,130 140,130 85,30" fill="rgba(0, 255, 204, 0.1)" stroke="#00ffcc" stroke-width="2"/>
+    <text x="85" y="148" fill="#00ffcc" font-size="13" font-weight="bold" text-anchor="middle">15 cm</text>
+    <text x="50" y="90" fill="#5ba3f5" font-size="13" font-weight="bold" text-anchor="middle">9 cm</text>
+    <text x="120" y="90" fill="#ff8888" font-size="13" font-weight="bold" text-anchor="middle">12 cm</text>
+    <text x="20" y="145" fill="#ffffff" font-size="13" font-weight="bold">D</text>
+    <text x="145" y="145" fill="#ffffff" font-size="13" font-weight="bold">E</text>
+    <text x="90" y="25" fill="#ffffff" font-size="13" font-weight="bold">F</text>
+</svg>

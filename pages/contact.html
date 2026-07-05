@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Contact Us | Student Room Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/pages//css/contentStyles.css" />
+
+    <style>
+        /* ----- Simple contact page layout (no sidebar, no toc) ----- */
+        .contact-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            min-height: calc(100vh - 200px);
+        }
+
+        .contact-header {
+            padding: 1rem 1.5rem;
+            border-radius: 20px;
+            margin: 0 0 2rem 0;
+            background: rgba(244, 185, 66, 0.05);
+        }
+
+        .contact-header h1 {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin: 0 0 0.4rem 0;
+            letter-spacing: -0.01em;
+            color: #ffda9e;
+        }
+
+        .contact-header p {
+            margin: 0;
+            color: #bbb;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 1.5rem;
+            border: 1px solid #2a2a2a;
+            transition: all 0.2s ease;
+        }
+
+        .contact-card:hover {
+            border-color: #f4b942;
+            background: rgba(244, 185, 66, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .contact-card h3 {
+            font-family: 'Zilla Slab', serif;
+            font-size: 1.2rem;
+            margin: 0 0 0.5rem 0;
+            color: #ffcf8a;
+        }
+
+        .contact-card p {
+            margin: 0.3rem 0;
+            color: #ddd;
+            font-size: 0.95rem;
+        }
+
+        .contact-card .label {
+            color: #888;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-card .value {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .contact-card .value a {
+            color: #ffcf8a;
+            text-decoration: none;
+        }
+
+        .contact-card .value a:hover {
+            color: #f4b942;
+            text-decoration: underline;
+        }
+
+        .contact-note {
+            background: rgba(36, 56, 48, 0.3);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            /* border-left: 3px solid #f4b942; */
+            margin: 1.5rem 0;
+        }
+
+        .contact-note p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        .contact-note strong {
+            color: #ffcf8a;
+        }
+
+        /* ── FOOTER ── */
+        .site-footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 2rem 0 1.5rem;
+            margin-top: 0;
+            width: 100%;
+        }
+
+        .footer-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .footer-bottom a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.75rem;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .contact-page {
+                padding: 2rem 1rem;
+            }
+            .contact-header {
+                padding: 0.8rem 1rem;
+            }
+            .contact-header h1 {
+                font-size: 1.6rem;
+            }
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .site-footer {
+                padding: 1.5rem 0 1rem;
+            }
+            .footer-inner {
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <a href="../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="lesotho/conversions.html">Study Guide</a>
+            <a href="lesotho/tracker.html">Revision Tracker</a>
+            <a href="lesotho/tracker.html#past-papers">Past Papers</a>
+            <a href="lesotho/questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="lesotho/lesotho.html">Lesotho</a><span class="bc-sep">›</span>
+            <a href="lesotho/lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <span>Contact</span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- CONTENT (no sidebar, no toc) -->
+    <main class="contact-page">
+        
+        <!-- Contact Header -->
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for inquiries, feedback, or support regarding LGCSE Mathematics resources.</p>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="contact-grid">
+            <!-- Phone -->
+            <div class="contact-card">
+                <h3>Phone</h3>
+                <p class="label">Call or WhatsApp</p>
+                <p class="value"><a href="tel:+26663615957">+266 6361 5957</a></p>
+                <p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Available during business hours</p>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p class="label">Send us a message</p>
+                <p class="value">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=revisionguides.grade11.deal@gmail.com" target="_blank">revisionguides.grade11.deal@gmail.com</a>
+                </p>
+                <p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">We aim to respond within 24 hours</p>
+            </div>
+
+            <!-- Website -->
+            <div class="contact-card">
+                <h3>Website</h3>
+                <p class="label">Our online platform</p>
+                <p class="value"><a href="https://www.studentroomafrica.edu" target="_blank">www.studentroomafrica.edu</a></p>
+                <p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Currently under construction.</p>
+            </div>
+        </div>
+
+        <!-- Note Box -->
+        <div class="contact-note">
+            <p><strong>Looking for answers?</strong><br>
+            Answer keys to all study guides will be available for free on our website <strong>www.studentroomafrica.edu</strong> starting January 2025. The website will also give you access to loads of resources to help you excel across all subjects under the Lesotho General Certificate of Secondary Education.</p>
+        </div>
+
+        <div style="margin-top: 1.5rem; font-size: 0.8rem; color: #666; text-align: center;">
+            <p>Student Room Africa — Your academic excellence is our pride!</p>
+        </div>
+
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LGCSE Mathematics</h4>
+                    <ul>
+                        <li><a href="/pages/lesotho/fractions.html">Fractions</a></li>
+                        <li><a href="/pages/lesotho/ratios-and-percentages.html">Ratios and Percentages</a></li>
+                        <li><a href="/pages/lesotho/trigonometry.html">Trigonometry</a></li>
+                        <li><a href="/pages/lesotho/pythagoras-theorem.html">Pythagoras Theorem</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/pages/lesotho/conversions.html">Study Guide</a></li>
+                        <li><a href="/pages/lesotho/tracker.html">Revision Tracker</a></li>
+                        <li><a href="/pages/lesotho/questionBank/question-bank.html">Question Bank</a></li>
+                        <li><a href="/pages/lesotho/tracker.html#past-papers">Past Papers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/pages/lesotho/conversions.html">Conversions</a></li>
+                        <li><a href="/pages/lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                        <li><a href="/pages/lesotho/linear-equations.html">Linear Equations</a></li>
+                        <li><a href="/pages/lesotho/functions.html">Functions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy</a> &middot;
+                    <a href="#">Terms</a> &middot;
+                    <a href="contact.html">Contact</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/pages/js/contentScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" width="450" height="450" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .axis { stroke: #ffffff; stroke-width: 2; }
+        .grid { stroke: #ffffff; stroke-width: 0.5; stroke-dasharray: 3,3; opacity: 0.2; }
+        .function-line { stroke: #00ffcc; stroke-width: 3; fill: none; }
+        .rise-run { stroke: #ffcc00; stroke-width: 2; stroke-dasharray: 5,5; fill: none; }
+        .point { fill: #ffcc00; }
+        .coord-label { fill: #00ffcc; font-family: sans-serif; font-size: 12px; font-weight: bold; }
+        .axis-value { fill: #aaaaaa; font-family: sans-serif; font-size: 10px; }
+        .rise-label { fill: #ff8888; font-family: sans-serif; font-size: 12px; font-weight: bold; }
+        .run-label { fill: #88ff88; font-family: sans-serif; font-size: 12px; font-weight: bold; }
+    </style>
+
+    <!-- Grid with 40px spacing (Origin at x=70, y=310) -->
+    
+    <!-- Vertical Grid Lines & X-Axis Labels -->
+    <line x1="70" y1="20" x2="70" y2="420" class="axis"/> 
+    <text x="65" y="325" class="axis-value">0</text>
+    <line x1="110" y1="20" x2="110" y2="420" class="grid"/> 
+    <text x="105" y="325" class="axis-value">1</text>
+    <line x1="150" y1="20" x2="150" y2="420" class="grid"/> 
+    <text x="145" y="325" class="axis-value">2</text>
+    <line x1="190" y1="20" x2="190" y2="420" class="grid"/> 
+    <text x="185" y="325" class="axis-value">3</text>
+    <line x1="230" y1="20" x2="230" y2="420" class="grid"/> 
+    <text x="225" y="325" class="axis-value">4</text>
+    <line x1="270" y1="20" x2="270" y2="420" class="grid"/> 
+    <text x="265" y="325" class="axis-value">5</text>
+
+    <!-- Horizontal Grid Lines & Y-Axis Labels -->
+    <line x1="20" y1="390" x2="320" y2="390" class="grid"/> 
+    <text x="50" y="393" class="axis-value">-4</text>
+    <line x1="20" y1="350" x2="320" y2="350" class="grid"/> 
+    <text x="50" y="353" class="axis-value">-2</text>
+    <line x1="20" y1="310" x2="320" y2="310" class="axis"/> <!-- X Axis (y=0) -->
+    <line x1="20" y1="270" x2="320" y2="270" class="grid"/> 
+    <text x="55" y="273" class="axis-value">2</text>
+    <line x1="20" y1="230" x2="320" y2="230" class="grid"/> 
+    <text x="55" y="233" class="axis-value">4</text>
+    <line x1="20" y1="190" x2="320" y2="190" class="grid"/> 
+    <text x="55" y="193" class="axis-value">6</text>
+    <line x1="20" y1="150" x2="320" y2="150" class="grid"/> 
+    <text x="55" y="153" class="axis-value">8</text>
+    <line x1="20" y1="110" x2="320" y2="110" class="grid"/> 
+    <text x="55" y="113" class="axis-value">10</text>
+    <line x1="20" y1="70" x2="320" y2="70" class="grid"/> 
+    <text x="55" y="73" class="axis-value">12</text>
+    <line x1="20" y1="30" x2="320" y2="30" class="grid"/> 
+    <text x="55" y="33" class="axis-value">14</text>
+
+    <!-- Function Line passing through (0,2) and (4,10) -->
+    <!-- (0,2) at x=70, y=270 | (4,10) at x=230, y=70 -->
+    <line x1="70" y1="270" x2="230" y2="33" class="function-line"/>
+
+    <!-- Rise/Run Steps between (0,2) and (4,10) -->
+    <path d="M 33 270 L 230 270 L 230 33" class="rise-run"/>
+    <text x="235" y="155" class="rise-label">Rise: 12</text>
+    <text x="135" y="285" class="run-label">Run: 4</text>
+
+    <!-- Points and Coordinate Labels -->
+    <circle cx="70" cy="270" r="5" class="point" fill="#00ffcc"/>
+    <text x="30" y="265" class="coord-label">(0, 2)</text>
+
+    <circle cx="230" cy="33" r="5" class="point"/>
+    <text x="240" y="33" class="coord-label">(4, 14)</text>
+
+    <!-- Axis Titles -->
+    <text x="310" y="315" class="coord-label">x</text>
+    <text x="75" y="20" class="coord-label">y</text>
+</svg>

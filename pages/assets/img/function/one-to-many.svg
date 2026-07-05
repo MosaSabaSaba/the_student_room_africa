@@ -1,0 +1,14 @@
+<svg  style="font-family: 'Inter', system-ui, sans-serif;" width="250" height="180" viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="arrow3" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#ff8888"/>
+        </marker>
+    </defs>
+    <ellipse cx="50" cy="90" rx="35" ry="70" fill="rgba(255, 68, 68, 0.1)" stroke="#ff8888" stroke-width="2"/>
+    <ellipse cx="200" cy="90" rx="35" ry="70" fill="rgba(255, 68, 68, 0.1)" stroke="#ff8888" stroke-width="2"/>
+    <text x="45" y="95" fill="#ffffff" font-size="14" text-anchor="middle">9</text>
+    <text x="195" y="55" fill="#ffffff" font-size="14" text-anchor="middle">3</text>
+    <text x="195" y="135" fill="#ffffff" font-size="14" text-anchor="middle">-3</text>
+    <line x1="75" y1="90" x2="175" y2="55" stroke="#ff8888" stroke-width="2" marker-end="url(#arrow3)"/>
+    <line x1="75" y1="100" x2="175" y2="130" stroke="#ff8888" stroke-width="2" marker-end="url(#arrow3)"/>
+</svg>

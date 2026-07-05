@@ -1,0 +1,18 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="6" fill="#fff"/>
+    <circle cx="20" cy="50" r="6" fill="#fff"/>
+    <circle cx="50" cy="50" r="6" fill="#fff"/>
+    <circle cx="20" cy="80" r="6" fill="#fff"/>
+    <circle cx="50" cy="80" r="6" fill="#fff"/>
+    <circle cx="80" cy="80" r="6" fill="#fff"/>
+    
+    <circle cx="50" cy="20" r="6" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2"/>
+    <circle cx="80" cy="20" r="6" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2"/>
+    <circle cx="110" cy="20" r="6" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2"/>
+    <circle cx="80" cy="50" r="6" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2"/>
+    <circle cx="110" cy="50" r="6" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2"/>
+    <circle cx="110" cy="80" r="6" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2"/>
+
+    <text x="10" y="110" fill="#fff" font-size="12">n + 1 rows</text>
+    <text x="130" y="55" fill="#fff" font-size="12">n columns</text>
+</svg>

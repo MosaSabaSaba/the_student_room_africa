@@ -1,0 +1,52 @@
+<svg style="font-family: 'Inter', system-ui, sans-serif; display: inline-block; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 40" width="540" height="40">
+
+    <!-- First Matrix: Transformation (2x2) -->
+    <path d="M 12,8 C 7,12 7,28 12,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+    <g font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#ffffff" text-anchor="middle">
+        <text x="24" y="18">a</text>
+        <text x="44" y="18">b</text>
+        <text x="24" y="33">c</text>
+        <text x="44" y="33">d</text>
+    </g>
+    <path d="M 56,8 C 61,12 61,28 56,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+
+    <!-- Second Matrix: Coordinates (2x3) -->
+    <path d="M 68,8 C 63,12 63,28 68,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+    <g font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#ffffff">
+        <!-- Row 1 -->
+        <text x="78" y="18">x<tspan font-style="normal" font-size="9" dy="3">1</tspan></text>
+        <text x="113" y="18">x<tspan font-style="normal" font-size="9" dy="3">2</tspan></text>
+        <text x="148" y="18">x<tspan font-style="normal" font-size="9" dy="3">3</tspan></text>
+        <!-- Row 2 -->
+        <text x="78" y="33">y<tspan font-style="normal" font-size="9" dy="3">1</tspan></text>
+        <text x="113" y="33">y<tspan font-style="normal" font-size="9" dy="3">2</tspan></text>
+        <text x="148" y="33">y<tspan font-style="normal" font-size="9" dy="3">3</tspan></text>
+    </g>
+    <path d="M 178,8 C 183,12 183,28 178,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+
+    <!-- Equals Sign -->
+    <text x="196" y="24" font-family="Times New Roman, serif" font-size="14" fill="#ffffff" text-anchor="middle">=</text>
+
+    <!-- Third Matrix: Result (2x3 Expanded) -->
+    <path d="M 214,8 C 209,12 209,28 214,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+    
+    <!-- Row 1 Expanded Strings -->
+    <g font-family="Times New Roman, serif" font-style="italic" font-size="14" fill="#ffffff">
+        <!-- Col 1 -->
+        <text x="226" y="18">ax<tspan font-style="normal" font-size="9" dy="3">1</tspan><tspan font-style="normal" dy="-3"> + </tspan>by<tspan font-style="normal" font-size="9" dy="3">1</tspan></text>
+        <!-- Col 2 -->
+        <text x="326" y="18">ax<tspan font-style="normal" font-size="9" dy="3">2</tspan><tspan font-style="normal" dy="-3"> + </tspan>by<tspan font-style="normal" font-size="9" dy="3">2</tspan></text>
+        <!-- Col 3 -->
+        <text x="426" y="18">ax<tspan font-style="normal" font-size="9" dy="3">3</tspan><tspan font-style="normal" dy="-3"> + </tspan>by<tspan font-style="normal" font-size="9" dy="3">3</tspan></text>
+
+        <!-- Row 2 Expanded Strings -->
+        <!-- Col 1 -->
+        <text x="226" y="33">cx<tspan font-style="normal" font-size="9" dy="3">1</tspan><tspan font-style="normal" dy="-3"> + </tspan>dy<tspan font-style="normal" font-size="9" dy="3">1</tspan></text>
+        <!-- Col 2 -->
+        <text x="326" y="33">cx<tspan font-style="normal" font-size="9" dy="3">2</tspan><tspan font-style="normal" dy="-3"> + </tspan>dy<tspan font-style="normal" font-size="9" dy="3">2</tspan></text>
+        <!-- Col 3 -->
+        <text x="426" y="33">cx<tspan font-style="normal" font-size="9" dy="3">3</tspan><tspan font-style="normal" dy="-3"> + </tspan>dy<tspan font-style="normal" font-size="9" dy="3">3</tspan></text>
+    </g>
+    
+    <path d="M 526,8 C 531,12 531,28 526,32" stroke="#ffffff" stroke-width="1.2" fill="none" />
+</svg>
