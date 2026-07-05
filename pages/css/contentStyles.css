@@ -650,7 +650,12 @@ ul { margin-left: 2rem; }
     }
 }
 
-
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap; 
+    margin: 1.5rem 0;
+}
 
 
 
