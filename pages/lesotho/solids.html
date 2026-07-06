@@ -253,7 +253,29 @@
                             
 
                 <div class="responsive-svg-container">
-                    <img src="../assets/img/solids/perimeter-demo.svg" alt="perimeter" style="max-width: 100%; height: auto; width: 370px;" />
+                    <!-- <img src="../assets/img/solids/perimeter-demo.svg" alt="perimeter" style="max-width: 100%; height: auto; width: 370px;" /> -->
+                
+                    <svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 450 370" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;">
+                        <style>
+                            .shape { stroke: #fff; stroke-width: 3; fill: none; }
+                            .txt { fill: #fff; font-family: sans-serif; font-size: 16px; }
+                            .side-label { fill: #00ffcc; font-family: sans-serif; font-size: 18px; font-weight: bold; }
+                        </style>
+
+                        <g transform="translate(50, 50)">
+                            
+                            <!-- Regular Hexagon -->
+                            <path d="M 150 50 L 236 100 L 236 200 L 150 250 L 64 200 L 64 100 Z" class="shape" />
+                            
+                            <!-- Side Labels (s) -->
+                            <text x="185" y="70" class="side-label">s</text>
+                            <text x="245" y="155" class="side-label">s</text>
+                            <text x="185" y="240" class="side-label">s</text>
+                            <text x="100" y="240" class="side-label">s</text>
+                            <text x="45" y="155" class="side-label">s</text>
+                            <text x="100" y="70" class="side-label">s</text>
+                        </g>
+                    </svg>
                 </div>
 
     
@@ -286,7 +308,37 @@
                 </p>
 
                 <div class="responsive-svg-container">
-                    <img src="../assets/img/solids/apothem.svg" alt="Apothem" style="max-width: 100%; height: auto; width: 400px;" />
+                    <!-- <img src="../assets/img/solids/apothem.svg" alt="Apothem" style="max-width: 100%; height: auto; width: 400px;" /> -->
+                
+                    <svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 400 400" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;">
+                        <style>
+                            .shape { stroke: #fff; stroke-width: 2; fill: none; }
+                            /* Green apothem to match your image */
+                            .apothem { stroke: #00ffcc; stroke-width: 3; stroke-linecap: round; }
+                            .angle-box { stroke: #fff; stroke-width: 1; fill: none; stroke-dasharray: 2; }
+                            .txt { fill: #fff; font-family: sans-serif; font-size: 16px; }
+                        </style>
+
+                        <g transform="translate(50, 50)">
+                            <!-- Regular Hexagon -->
+                            <!-- Vertices: (150,0), (280,75), (280,225), (150,300), (20,225), (20,75) -->
+                            <path d="M 150 0 L 280 75 L 280 225 L 150 300 L 20 225 L 20 75 Z" class="shape" />
+                            
+                            <!-- Center Point -->
+                            <circle cx="150" cy="150" r="3" fill="#fff" />
+
+                            <!-- APOTHEM: Center (150,150) to Midpoint of top-right edge (215, 37.5) -->
+                            <line x1="150" y1="150" x2="215" y2="37.5" class="apothem" />
+
+                            <!-- Right Angle Symbol (Rotated to match the slope) -->
+                            <g transform="translate(215, 37.5) rotate(30)">
+                            <path d="M -15 0 L -15 15 L 0 15" class="angle-box" />
+                            </g>
+
+                            <!-- Label -->
+                            <text x="185" y="110" class="txt" font-style="italic" fill="#00ffcc">apothem</text>
+                        </g>
+                    </svg>
                 </div>
 
                 <p>
