@@ -658,8 +658,21 @@ table {
 }
 
 
+.math-table th, .math-table td {
+    font-size: clamp(14px, 4vw, 18px);
+    box-sizing: border-box;
+}
 
+@media screen and (max-width: 600px) {
+    .math-table th, .math-table td {
+        font-size: 13px !important;
+        padding: 8px 6px !important;
+    }
+}
 
+.math-table-container {
+    margin: 1.5rem 0; width: 100%; box-sizing: border-box;
+}
 
 
 
