@@ -2,6 +2,8 @@
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const leftSidebar = document.getElementById('leftSidebar');
 const sidebarOverlay = document.getElementById('sidebarOverlay');
+const footerBottom = document.querySelector('.footer-bottom');
+
 
 hamburgerBtn.addEventListener('click', () => {
     leftSidebar.classList.toggle('open');
