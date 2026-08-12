@@ -114,7 +114,7 @@
                 <section class="topic-section" id="unit1b">
                     <h2>Unit 1B - Arithmetic - Arithmetic Problems, Simple Financial Transactions, Profit and Loss, Simple Interest</h2>
 
-                                        <!-- Question 32 -->
+                    <!-- Question 32 -->
                     <div class="question-block">
                         <div class="question-text">
                             <p><span>32.</span> A bank exchanges United States currency for British currency at the rate of 1.60 dollars to the &pound;.</p>
@@ -419,49 +419,57 @@
                     </div>
 
                     <!-- Question 60 -->
-                    <div class="question-block incomplete">
+                    <div class="question-block">
                         <div class="question-text">
                             <p><span>60.</span> The diagram shows a timetable, part of which has been torn away, for trains from Manchester to London.</p>
                             
                             <!-- Timetable SVG visual placeholder instead of a missing image -->
                             <div class="timetable-visual" style="margin: 15px 0;">
-                                <svg xmlns="http://w3.org" viewBox="0 0 450 240" width="100%" height="auto">
+                                <svg xmlns="http://w3.org" viewBox="0 0 550 220" width="100%" height="auto">
                                     <style>
-                                        .bg-box { fill: none; }
-                                        .frame { stroke: #ffffff; stroke-width: 2; fill: none; }
-                                        .text-label { font-family: 'Courier New', Courier, monospace, sans-serif; font-size: 15px; fill: #ffffff; font-weight: bold; }
-                                        .time-val { font-family: 'Courier New', Courier, monospace, sans-serif; font-size: 15px; fill: #ffffff; }
-                                        .torn-edge { stroke: #ffffff; stroke-width: 2; fill: none; stroke-dasharray: 4,4; }
+                                        .bg-transparent { fill: none; }
+                                        .text-header { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 19px; fill: #ffffff; }
+                                        .text-time { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 19px; fill: #ffffff; letter-spacing: 0.5px; }
+                                        .border-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
                                     </style>
-                                    <rect width="450" height="240" class="bg-box"/>
                                     
-                                    <!-- Main Header Table Outline -->
-                                    <path d="M 40,20 L 410,20 L 410,220 L 40,220 Z" class="frame"/>
-                                    <line x1="210" y1="20" x2="210" y2="220" stroke="#ffffff" stroke-width="2"/>
-                                    <line x1="40" y1="65" x2="410" y2="65" stroke="#ffffff" stroke-width="2"/>
+                                    <!-- Transparent Background -->
+                                    <rect width="550" height="220" class="bg-transparent"/>
                                     
-                                    <!-- Headers -->
-                                    <text x="50" y="45" class="text-label">Manchester (depart)</text>
-                                    <text x="220" y="45" class="text-label">London (arrive)</text>
+                                    <!-- Torn Paper Boundary Box Shape -->
+                                    <path d="M 52,15 
+                                            L 505,15 
+                                            L 505,65
+                                            C 505,80 495,95 490,105
+                                            C 475,103 460,105 450,112
+                                            C 440,112 430,125 410,135
+                                            C 390,145 375,150 355,160
+                                            C 345,162 335,148 322,152
+                                            C 310,155 295,158 280,155
+                                            C 265,155 250,158 235,152
+                                            C 210,152 195,168 175,178
+                                            C 155,185 140,190 115,192
+                                            C 95,195 72,192 48,180
+                                            Z" class="border-line"/>
+                                            
+                                    <!-- Column Headers -->
+                                    <text x="70" y="45" class="text-header">Manchester (depart)</text>
+                                    <text x="315" y="45" class="text-header">London (arrive)</text>
                                     
-                                    <!-- Row 1 -->
-                                    <text x="90" y="95" class="time-val">08 35</text>
-                                    <text x="260" y="95" class="time-val">11 25</text>
+                                    <!-- Row 1 Times -->
+                                    <text x="128" y="82" class="text-time">08 35</text>
+                                    <text x="358" y="82" class="text-time">11 25</text>
                                     
-                                    <!-- Row 2 -->
-                                    <text x="90" y="130" class="time-val">12 31</text>
-                                    <text x="260" y="130" class="time-val">15 19</text>
+                                    <!-- Row 2 Times -->
+                                    <text x="128" y="117" class="text-time">12 31</text>
+                                    <text x="358" y="117" class="text-time">15 19</text>
                                     
-                                    <!-- Row 3 -->
-                                    <text x="90" y="165" class="time-val">17 15</text>
-                                    <text x="260" y="165" class="time-val">20</text>
+                                    <!-- Row 3 Times -->
+                                    <text x="128" y="152" class="text-time">17 15</text>
+                                    <text x="358" y="152" class="text-time">20</text>
                                     
-                                    <!-- Row 4 -->
-                                    <text x="90" y="200" class="time-val">22 37</text>
-                                    
-                                    <!-- Torn Section Representation -->
-                                    <path d="M 285,155 Q 310,150 340,165 T 390,158 T 410,165" class="torn-edge"/>
-                                    <path d="M 145,190 Q 200,185 250,200 T 350,190 T 410,200" class="torn-edge"/>
+                                    <!-- Row 4 Times -->
+                                    <text x="124" y="187" class="text-time">22 37</text>
                                 </svg>
                             </div>
 
