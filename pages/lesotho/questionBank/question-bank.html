@@ -13,29 +13,11 @@
     <style>
         .main {
             padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
-        
-        .custom-btn {
-            display: inline-block;
-            font-weight: bold;
-            color: #ffffff; 
-            font-size: 1.2rem;
-            padding: .5rem 1.5rem; 
-            text-decoration: none; 
-            border-radius: 4px; 
-            text-align: center;
-        }
-
-        .core {
-            background: #f4b942;
-            border: 2px solid #f4b942;
-        }
-
-        .extended {
-            background: #f44242;
-            border: 2px solid #f44242;
-        }
     </style>
     
 </head>
@@ -86,8 +68,9 @@
 
     <!-- PAGE LAYOUT -->
     <div class="main">
-        <a href="core/core.html" class="custom-btn core">Core</a>
-        <a href="extended/extended.html" class="custom-btn extended">Extended</a>
+        <a href="core/core.html" class="plain-link core">Core</a>
+        <a href="extended/extended.html" class="plain-link extended">Extended</a>
+        <a href="practice/practice-questions.html" class="plain-link practice">Practice Questions</a>
     </div>
 
     <script src="../../js/contentScript.js"></script>

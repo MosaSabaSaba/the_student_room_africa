@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Question Bank | Unit 1A - Arithmetic - Number Operations, Squares and Square Roots</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/contentStyles.css" />
+    <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../assets/css/question-bank.css" />
+
+    
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        <a href="../../../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="../../conversions.html">Study Guide</a>
+            <a href="../../tracker.html">Revision Tracker</a>
+            <a href="../../tracker.html#past-papers">Past Papers</a>
+            <a href="../../questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="#">Lesotho</a><span class="bc-sep">›</span>
+            <a href="../../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../question-bank.html">Question Bank</a><span class="bc-sep">›</span>
+            <a href="practice-questions.html">Practice Questions</a><span class="bc-sep">›</span>
+            <span>Unit 1A </span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="page-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar" id="leftSidebar">
+            <div class="filter-wrap">
+                <span class="filter-icon">🔍</span>
+                <input class="filter-input" type="text" placeholder="Filter topics..." />
+            </div>
+
+            <ul class="sidebar-nav" id="topicNav">
+                <li class="active"><a href="number-operations.html">Unit 1A - Arithmetic - Number Operations, Squares and Square Roots</a></li>
+                <li><a href="financial-transactions.html">Unit 1B - Arithmetic - Arithmetic Problems, Simple Financial Transactions, Profit and Loss, Simple Interest</a></li>
+                <li><a href="ratio-proportions-percentages.html">Unit 1C - Arithmetic - Ratio, Proportions and Percentages, Scales and Simple Map Problems</a></li>
+                <li><a href="estimation-and-significant-figures.html">Unit 1D - Arithmetic - Estimation, Significant Figures, Decimal Places and Standard Form</a></li>
+                <li><a href="mensuration-plane-figures.html">Unit 2A - Mensuration - Rectangle, Square, Triangle, Parallelogram, Trapezium and Circle, Arc Length and Area of Sector</a></li>
+                <li><a href="mensuration-solid-figures.html">Unit 2B - Mensuration - Solid Figures i.e. Cuboid, Cylinder, Sphere, Pyramid, Cone and Prism</a></li>
+                <li><a href="algebraic-formulae-and-symbols.html">Unit 3A - Algebra and Graphs - Evaluation and Change of Subjects of a Formula, Algebraic Symbols</a></li>
+                <li><a href="indices.html">Unit 3B - Algebra and Graphs - Indices</a></li>
+                <li><a href="expansion-and-factorisation.html">Unit 3C - Algebra and Graphs - Expansion and Factorisation of Algebraic Expressions</a></li>
+                <li><a href="algebraic-fractions-and-equations.html">Unit 3D - Algebra and Graphs - Simple Algebraic Fractions, Simple Equations and Identities, Solutions of Simultaneous Linear Equations and Quadratic Equations</a></li>
+                <li><a href="algebra-graphs.html">Unit 3E - Algebra and Graphs - Graphs</a></li>
+                <li><a href="variations.html">Unit 3F - Algebra and Graphs - Direct, Inverse and Joint Variations</a></li>
+                <li><a href="straight-line-graphs.html">Unit 3G - Algebra and Graphs - Gradients and Equations of Straight Lines</a></li>
+                <li><a href="inequalities-and-linear-programming.html">Unit 3H - Algebra and Graphs - Inequality and Linear Programming</a></li>
+                <li><a href="distance-speed-time-graphs.html">Unit 3I - Algebra and Graphs - Distance-Time Graphs and Speed-Time Graphs</a></li>
+                <li><a href="angle-properties.html">Unit 4A - Geometry - Properties of Angles; Angle Properties of Polygons</a></li>
+                <li><a href="similarity-congruency-symmetry.html">Unit 4B - Geometry - Similarity, Congruency and Symmetry</a></li>
+                <li><a href="circle-theorems.html">Unit 4C - Geometry - Circle Theorems</a></li>
+                <li><a href="loci-and-construction.html">Unit 4D - Geometry - Loci and Simple Construction</a></li>
+                <li><a href="trigonometrical-ratios.html">Unit 5A - Trigonometry - Trigonometrical Ratios, Solutions of Triangles</a></li>
+                <li><a href="bearing-problems.html">Unit 5B - Trigonometry - Bearing Problems, Angle of Elevation and Depression, 3 Dimensional Problems</a></li>
+                <li><a href="statistics-charts-and-mean.html">Unit 6A - Statistics - Bar Charts, Pie Charts, Frequency Polygons, Histograms, Mean, Median and Mode</a></li>
+                <li><a href="cumulative-frequency.html">Unit 6B - Statistics - Cumulative Frequency</a></li>
+                <li><a href="vectors.html">Unit 7 - Vectors</a></li>
+                <li><a href="problem-solving.html">Unit 8 - Problem Solving</a></li>
+                <li><a href="probability.html"> Unit 9 - Probability</a></li>
+                <li><a href="transformations.html">Unit 10A - Transformations</a></li>
+                <li><a href="matrices-in-transformation.html">Unit 10B - Use of Matrices in Transformation</a></li>
+                <li><a href="matrices.html">Unit 11 - Matrices</a></li>
+                <li><a href="sets-and-venn-diagrams.html">Unit 12 - Sets and Venn Diagrams</a></li>
+                <li><a href="functions.html">Unit 13 - Functions</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="mainContent">
+
+            <div class="question-paper">
+
+                <!-- ============================================================ -->
+                <!-- Unit 1A - Arithmetic - Number Operations, Squares and Square Roots -->
+                <!-- ============================================================ -->
+                <section class="topic-section" id="unit1a">
+                    <h2 class="">Unit 1A - Arithmetic - Number Operations, Squares and Square Roots</h2>
+
+                    <!-- Question 1 -->
+                    <div class="question-block">
+                        
+                        <div class="question-text">
+                            <p><span>1.</span> Evaluate</p>
+                            <p class="indent-p">(a) 156 &divide; 1.2,</p>
+                            <p class="indent-p">
+                                (b) 1 <sup>2</sup>&frasl;<sub>3</sub> 
+                                &times; 
+                                1 <sup>2</sup>&frasl;<sub>7</sub>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>2.</span>Write down the positive square roots of each of the following</p>
+                            <p class="indent-p">
+                                (a) 6 400,
+                            </p>
+                            <p class="indent-p">
+                                (b) 6 <sup>1</sup>&frasl;<sub>4</sub>,
+                            </p>
+                            <p class="indent-p">
+                                (c) 9<em>a</em><sup>16</sup>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>3.</span>
+                                Evaluate <sup>6</sup>&frasl;<sub>7</sub> &times; <sup>2</sup>&frasl;<sub>3</sub> &divide; <sup>9</sup>&frasl;<sub>14</sub>,
+                                giving your answer as a fraction in its simplest form.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>4.</span>
+                                Using as much of the information below as necessary, write down the value of 
+                                <math display="inline">
+                                    <msqrt>
+                                        <mi>0.013</mi>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                            <p class="indent-p">[
+                                <math display="inline">
+                                    <msqrt>
+                                        <mi>13</mi>
+                                    </msqrt>
+                                </math> = 3.61,
+                                <math display="inline">
+                                    <msqrt>
+                                        <mi>1.3</mi>
+                                    </msqrt> = 1.14
+                                </math>
+                            ]</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>5.</span>
+                                Calculate the exact value of
+                            </p>
+                            <p class="indent-p">(a) 0.6 &times; 2.3</p>
+                            <p class="indent-p">(b) 1.71 &divide; 0.3 </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>6.</span>
+                                Giving each answer as a fraction in its lowest terms, find the exact value of 
+                            </p>
+                            <p class="indent-p">
+                                (a) <sup>1</sup> &frasl; <sub>5</sub> &divide;  4,
+                            </p>
+                            <p class="indent-p">
+                                (b) 1 <sup>1</sup> &frasl; <sub>3</sub> &times;  (4<sup>1</sup> &frasl; <sub>2</sub> - 1 <sup>3</sup> &frasl; <sub>4</sub>)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>7.</span>
+                                (a) Evaluate 
+                                <math display="inline">
+                                    <msqrt>
+                                        <mn>1</mn>
+                                        <mfrac>
+                                            <mn>9</mn>
+                                            <mn>16</mn>
+                                        </mfrac>
+                                    </msqrt>
+                                </math>
+                            </p>
+                            <p class="indent-p">
+                                (b) Using as much of the information below as necessary, evaluate 
+                                <math display="inline">
+                                    <msqrt>
+                                        <mi>3270</mi>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                            <p class="indent">[
+                                <math display="inline">
+                                    <msqrt>
+                                        <mi>3.27</mi>
+                                    </msqrt>
+                                </math> = 1.808, 
+
+                                <math display="inline">
+                                    <msqrt>
+                                        <mi>32.7</mi>
+                                    </msqrt>
+                                </math> = 5.718
+                            ]</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>8.</span>
+                                (a) Express 0.64 as a fraction in its simplest form.
+                            </p>
+                            <p class="indent-p">(b) Express <sup>3</sup> &frasl; <sub>8</sub> as a decimal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>9.</span>
+                                Evaluate giving your answer as a single fraction in its simplest form,
+                            </p>
+                            <p class="indent-p">
+                                (a) 3 <sup>1</sup> &frasl; <sub>4</sub> - 2 <sup>5</sup> &frasl; <sub>9</sub>,
+                            </p>
+                            <p class="indent-p">
+                                (b) <sup>3</sup> &frasl; <sub>4</sub> &divide; (1 <sup>1</sup> &frasl; <sub>2</sub>)<sup>2</sup>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>10.</span>
+                                Express as a single fraction in its simplest form (<sup>2</sup> &frasl; <sub>5</sub> + <sup>1</sup> &frasl; <sub>3</sub>) &times; 1<sup>1</sup> &frasl; <sub>4</sub>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 53 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>53.</span> Given that 333 &times; 37 = 12 321, write down the value of</p>
+                            <p class="indent-p">(a) 3330 &times; 0.37,</p>
+                            <p class="indent-p">(b) 666 &times; 37,</p>
+                            <p class="indent-p">(c) 123.21 &divide; 37.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 54 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>54.</span> Evaluate, giving each of your answers as a fraction in its lowest terms,</p>
+                            <p class="indent-p">(a) <sup>3</sup>&frasl;<sub>4</sub> + <sup>1</sup>&frasl;<sub>6</sub>,</p>
+                            <p class="indent-p">(b) 1 <sup>2</sup>&frasl;<sub>3</sub> &divide; 5,</p>
+                            <p class="indent-p">(c) 1 <sup>1</sup>&frasl;<sub>3</sub> &times; (4 - 3 <sup>1</sup>&frasl;<sub>2</sub>).</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 55 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>55.</span> Given that 253 &times; 44 = 11 132, write down the exact value of</p>
+                            <p class="indent-p">(a) 2.53 &times; 440,</p>
+                            <p class="indent-p">(b) 253 &times; 88,</p>
+                            <p class="indent-p">(c) 11.132 &divide; 253.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 56 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>56.</span> Calculate the exact value of</p>
+                            <p class="indent-p">(a) <sup>2</sup>&frasl;<sub>3</sub> + <sup>1</sup>&frasl;<sub>7</sub>,</p>
+                            <p class="indent-p">(b) 0.86 &divide; 0.2,</p>
+                            <p class="indent-p">
+                                (c) 
+                                <math display="inline">
+                                    <msqrt>
+                                        <mn>0.0009</mn>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 57 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>57.</span> Calculate the exact value of</p>
+                            <p class="indent-p">(a) 4.2 - 0.67,</p>
+                            <p class="indent-p">(b) 3.2 &times; 0.15,</p>
+                            <p class="indent-p">(c) 0.8 &divide; 16.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 58 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>58.</span> Calculate the exact value of</p>
+                            <p class="indent-p">(a) 2.4 &times; 0.35,</p>
+                            <p class="indent-p">(b) 0.7 &divide; 140,</p>
+                            <p class="indent-p">(c) 5.3 - 0.76.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 59 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>59.</span> Calculate the exact value of</p>
+                            <p class="indent-p">(a) 0.86 &times; 0.03,</p>
+                            <p class="indent-p">(b) <sup>1</sup>&frasl;<sub>0.04</sub>,</p>
+                            <p class="indent-p">
+                                (c) 
+                                <math display="inline">
+                                    <msqrt>
+                                        <mn>36 000 000</mn>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 60 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>60.</span> (a) Express 0.45 as a fraction in its lowest terms.</p>
+                            <p class="indent-p">(b) Express <sup>1</sup>&frasl;<sub>7</sub> as a decimal, giving your answer correct to 3 decimal places.</p>
+                            <p class="indent-p">(c) Express 31.6824 correct to 3 significant figures.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 61 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>61.</span> Find the value of the following, expressing each answer as simply as possible,</p>
+                            <p class="indent-p">(a) 3 <sup>1</sup>&frasl;<sub>4</sub> - 1 <sup>2</sup>&frasl;<sub>3</sub>,</p>
+                            <p class="indent-p">(b) <sup>3</sup>&frasl;<sub>8</sub> of 3 <sup>1</sup>&frasl;<sub>5</sub>,</p>
+                            <p class="indent-p">(c) <sup>3</sup>&frasl;<sub>10</sub> &divide; <sup>2</sup>&frasl;<sub>3</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 62 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>62.</span> Calculate the exact value of</p>
+                            <p class="indent-p">(a) 6 - 2.55,</p>
+                            <p class="indent-p">(b) 35 &divide; 0.07,</p>
+                            <p class="indent-p">(c) (0.3)<sup>3</sup>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 63 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>63.</span> (a) Write down the next term in the sequence 0, 3, 8, 15, 24, 35, ...</p>
+                            <p class="indent-p">(b) Express 28% as a fraction in its lowest terms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 64 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>64.</span> (a) Find the value of</p>
+                            <p class="indent-p" style="padding-left: 20px;">(i) 1 <sup>1</sup>&frasl;<sub>2</sub> - <sup>5</sup>&frasl;<sub>8</sub>,</p>
+                            <p class="indent-p" style="padding-left: 20px;">(ii) 174 &divide; 0.03.</p>
+                            <p class="indent-p">(b) Three numbers are given below. Write <strong>L</strong> opposite the largest, <strong>M</strong> opposite the next largest, and <strong>S</strong> opposite the smallest.</p>
+                            <p class="indent-p" style="padding-left: 20px;">0.3 million, 87 555, four hundred and two thousand</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 65 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>65.</span> Find the value of</p>
+                            <p class="indent-p">(a) <sup>1</sup>&frasl;<sub>4</sub> + <sup>2</sup>&frasl;<sub>3</sub>,</p>
+                            <p class="indent-p">(b) 3 <sup>1</sup>&frasl;<sub>3</sub> &divide; <sup>5</sup>&frasl;<sub>6</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 66 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>66.</span> Find the value of</p>
+                            <p class="indent-p">(a) 1 <sup>1</sup>&frasl;<sub>5</sub> - <sup>3</sup>&frasl;<sub>7</sub>,</p>
+                            <p class="indent-p">(b) <sup>8</sup>&frasl;<sub>9</sub> &times; <sup>3</sup>&frasl;<sub>4</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 67 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>67.</span> Calculate the exact value of</p>
+                            <p class="indent-p">(a) 69.2 &divide; 0.04,</p>
+                            <p class="indent-p">
+                                (b) 
+                                <math display="inline">
+                                    <mroot>
+                                        <mn>8000</mn>
+                                        <mn>3</mn>
+                                    </mroot>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 68 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>68.</span> Use the fact that 372 &times; 52 = 19 344 to write down the exact value of</p>
+                            <p class="indent-p">(a) 3.72 &times; 520,</p>
+                            <p class="indent-p">(b) 193.44 &divide; 0.52.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 69 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>69.</span> A sum of money was divided between three people. Angela received <sup>1</sup>&frasl;<sub>2</sub> of the money. 
+                                Ben received <sup>3</sup>&frasl;<sub>10</sub> of the money. Charles received the remainder.
+                            </p>
+                            <p class="indent-p">(a) Ben received $10. How much did Angela receive?</p>
+                            <p class="indent-p">(b) What fraction of the money did Charles receive?</p>
+                        </div>
+                    </div>
+
+
+                                        <!-- Question 70 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>70.</span> 100 g of beans contain 4.7 g of protein. Calculate the mass of protein in 3.3 kg of beans.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 71 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>71.</span> Arrange the following three numbers in order, starting with the smallest.</p>
+                            <p class="indent-p"><sup>1</sup>&frasl;<sub>5</sub>, &nbsp; 0.22, &nbsp; 0.033</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 72 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>72.</span> Evaluate</p>
+                            <p class="indent-p">(a) 16 - 2 &times; 3,</p>
+                            <p class="indent-p">(b) <sup>1</sup>&frasl;<sub>4</sub> &times; 2 <sup>1</sup>&frasl;<sub>2</sub>,</p>
+                            <p class="indent-p">(c) <sup>7</sup>&frasl;<sub>8</sub> &divide; <sup>1</sup>&frasl;<sub>16</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 73 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>73.</span> Express as a single fraction 
+                                <sup>4</sup>&frasl;<sub>2x-1</sub> - <sup>3</sup>&frasl;<sub>5x+6</sub>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 74 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>74.</span> Find the value of</p>
+                            <p class="indent-p">(a) 2 <sup>1</sup>&frasl;<sub>4</sub> &divide; <sup>3</sup>&frasl;<sub>5</sub>,</p>
+                            <p class="indent-p">(b) 1.3 &divide; 0.2.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 75 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>75.</span> (a) Find, in its simplest form, the fraction which is exactly half-way between <sup>3</sup>&frasl;<sub>4</sub> and 1.</p>
+                            <p class="indent-p">(b) Write down the value of this fraction as a decimal, giving your answer correct to one significant figure.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 76 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>76.</span> (a) Write down the value of 
+                                <math display="inline">
+                                    <msqrt>
+                                        <mn>0.04</mn>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                            <p class="indent-p">(b) Write down the following in order of size, starting with the smallest.</p>
+                            <p class="indent-p" style="padding-left: 20px;"><sup>1</sup>&frasl;<sub>3</sub>, &nbsp; 0.3<sup>2</sup>, &nbsp; 0.32</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 77 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>77.</span> Find the value of 3 <sup>1</sup>&frasl;<sub>5</sub> - 1 <sup>1</sup>&frasl;<sub>2</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 78 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>78.</span> (a) Find the value of 
+                                <math display="inline">
+                                    <msqrt>
+                                        <mn>0.000025</mn>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                            <p class="indent-p">(b) Write down the following, in order of size, starting with the smallest.</p>
+                            <p class="indent-p" style="padding-left: 20px;"><sup>33</sup>&frasl;<sub>100</sub>, &nbsp; 0.3, &nbsp; <sup>3</sup>&frasl;<sub>10</sub></p>
+                        </div>
+                    </div>
+
+                    <!-- Question 79 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>79.</span> Calculate the exact value of 21.08 &divide; 8.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 80 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>80.</span> Find the value of</p>
+                            <p class="indent-p">(a) <sup>2</sup>&frasl;<sub>3</sub> - <sup>4</sup>&frasl;<sub>7</sub>,</p>
+                            <p class="indent-p">(b) <sup>2</sup>&frasl;<sub>5</sub> &divide; <sup>3</sup>&frasl;<sub>4</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 81 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>81.</span> One milligram, 1 mg, is one thousandth of a gram.</p>
+                            <p class="indent-p">One microgram, 1 &mu;g, is one millionth of a gram.</p>
+                            <p class="indent-p">(a) Express 3 mg in grams, as a decimal.</p>
+                            <p class="indent-p">(b) How many micrograms are equivalent to 1 mg?</p>
+                            <p class="indent-p">(c) Every 100 g of a certain cereal contains 300 &mu;g of Folic Acid. What fraction of the cereal is Folic Acid?</p>
+                        </div>
+                    </div>
+
+                
+                                        <!-- Question 82 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>82.</span> Find the value of</p>
+                            <p class="indent-p">(a) 21.6 - 2.47,</p>
+                            <p class="indent-p">(b) <sup>4</sup>&frasl;<sub>5</sub> &divide; 1 <sup>1</sup>&frasl;<sub>2</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 83 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>83.</span> Find the value of</p>
+                            <p class="indent-p">(a) 1.2 &times; 0.35,</p>
+                            <p class="indent-p">(b) <sup>3</sup>&frasl;<sub>5</sub> &divide; 1 <sup>1</sup>&frasl;<sub>9</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 84 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>84.</span> Evaluate</p>
+                            <p class="indent-p">(a) 6 + 4 &divide; 2,</p>
+                            <p class="indent-p">(b) <sup>3</sup>&frasl;<sub>4</sub> &divide; <sup>1</sup>&frasl;<sub>10</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 85 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>85.</span> Consider the nine numbers 0.4, <sup>2</sup>&frasl;<sub>3</sub>, 
+                                <math display="inline"><msqrt><mn>2</mn></msqrt></math>, &pi;, 5, 9, 17, 40, 121. Write down
+                            </p>
+                            <p class="indent-p">(a) the two prime numbers,</p>
+                            <p class="indent-p">(b) the square numbers,</p>
+                            <p class="indent-p">(c) the irrational numbers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 86 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>86.</span> (a) Express 0.85 as a fraction in its lowest terms.</p>
+                            <p class="indent-p">(b) Giving your answer as a fraction, find the value of 3 <sup>1</sup>&frasl;<sub>2</sub> - 2 <sup>2</sup>&frasl;<sub>3</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 87 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>87.</span> Find the value of</p>
+                            <p class="indent-p">(a) 4.5 &times; 0.4,</p>
+                            <p class="indent-p">(b) 12 &divide; 0.8.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 88 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>88.</span> (a) Write down the positive square root of 2 <sup>1</sup>&frasl;<sub>4</sub>.
+                            </p>
+                            <p class="indent-p">(b) Express 1.65 hours in minutes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 89 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>89.</span> (a) Express each of the numbers 10, 15 and 25 as a product of prime factors.</p>
+                            <p class="indent-p">(b) Three bus services operate from the same depot. The first service leaves at 10 minute intervals, the second at 15 minute intervals and the third at 25 minute intervals. All three services leave the depot together at 08 00. Find the time when the three services next leave the depot together.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 90 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>90.</span> Find the value of</p>
+                            <p class="indent-p">(a) 0.02 &times; 0.7,</p>
+                            <p class="indent-p">(b) 0.96 &divide; 1.2.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 91 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>91.</span> (a) Express <sup>13</sup>&frasl;<sub>25</sub> as an exact decimal.</p>
+                            <p class="indent-p">(b) Find the value of 1 <sup>4</sup>&frasl;<sub>5</sub> + 2 <sup>1</sup>&frasl;<sub>4</sub>, leaving your answer as a fraction.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 92 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>92.</span> Find</p>
+                            <p class="indent-p">(a) the square of 3 <sup>1</sup>&frasl;<sub>2</sub>,</p>
+                            <p class="indent-p">
+                                (b) the positive square root of 1 <sup>7</sup>&frasl;<sub>9</sub>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 93 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>93.</span> (a) Express each of the numbers 35 and 63 as a product of their prime factors.</p>
+                            <p class="indent-p">(b) Find the <strong>largest</strong> number which will divide exactly into both 35 and 63.</p>
+                            <p class="indent-p">(c) Find the <strong>smallest</strong> number which is exactly divisible by both 35 and 63.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 94 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>94.</span> Find the value of</p>
+                            <p class="indent-p">(a) 28 &divide; 3 <sup>1</sup>&frasl;<sub>2</sub>,</p>
+                            <p class="indent-p">(b) 0.3 &times; 0.02.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 95 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>95.</span> Express <sup>13</sup>&frasl;<sub>40</sub> as a decimal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 96 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>96.</span> (a) Express 0.052 square metres in square centimetres.</p>
+                            <p class="indent-p">(b) (i) Express 90 as the product of its prime factors.</p>
+                            <p class="indent-p" style="padding-left: 20px;">(ii) The lowest common multiple of 6, 15 and <i>x</i> is 90. Find the two possible values of <i>x</i> which are odd numbers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 97 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>97.</span> Find the value of 35 &divide; 2 <sup>1</sup>&frasl;<sub>7</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 98 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>98.</span> Express <sup>11</sup>&frasl;<sub>25</sub> as a decimal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 99 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>99.</span> Find the value of 0.06 &divide; 0.002.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 100 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>100.</span> (a) Evaluate 6 + 27 &divide; 3.</p>
+                            <p class="indent-p">(b) Express 0.4 as a fraction in its lowest terms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 101 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>101.</span> (a) Add together 2 kilograms and 2 grams. Give your answer in grams.</p>
+                            <p class="indent-p">(b) On a particular day, the lowest temperature was -12 &deg;C. The difference between the lowest and highest temperatures was 7 &deg;C. Find the highest temperature on that day.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 102 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>102.</span> Giving your answer as simply as possible, evaluate</p>
+                            <p class="indent-p">(a) <sup>3</sup>&frasl;<sub>7</sub> + <sup>1</sup>&frasl;<sub>2</sub>,</p>
+                            <p class="indent-p">(b) 1 <sup>2</sup>&frasl;<sub>5</sub> &divide; 2 <sup>1</sup>&frasl;<sub>3</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 103 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>103.</span> Find the value of</p>
+                            <p class="indent-p">(a) 0.2 &times; 0.45,</p>
+                            <p class="indent-p">(b) 1 <sup>3</sup>&frasl;<sub>5</sub> &divide; 2 <sup>1</sup>&frasl;<sub>3</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 104 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>104.</span> Find the value of 
+                                <math display="inline">
+                                    <msqrt>
+                                        <mn>0.0081</mn>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 105 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>105.</span> The numbers 168 and 324, written as the products of their prime factors, are</p>
+                            <p class="indent-p" style="text-align: center;">168 = 2<sup>3</sup> &times; 3 &times; 7, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 324 = 2<sup>2</sup> &times; 3<sup>4</sup>.</p>
+                            <p class="indent-p">Find</p>
+                            <p class="indent-p">(a) <math display="inline"><msqrt><mn>324</mn></msqrt></math>,</p>
+                            <p class="indent-p">(b) the largest integer which is a factor of both 168 and 324,</p>
+                            <p class="indent-p">(c) the smallest positive integer value of <i>n</i> for which 168<i>n</i> is a multiple of 324.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 106 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>106.</span> Find the value of</p>
+                            <p class="indent-p">(a) <sup>0.64</sup>&frasl;<sub>0.008</sub>,</p>
+                            <p class="indent-p">(b) 2 <sup>2</sup>&frasl;<sub>3</sub> &times; 1 <sup>1</sup>&frasl;<sub>5</sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 107 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>107.</span> Find the value of 
+                                <math display="inline">
+                                    <msqrt>
+                                        <mn>0.0025</mn>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 108 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>108.</span> The numbers 480 and 576, written as the products of their prime factors, are</p>
+                            <p class="indent-p" style="text-align: center;">480 = 2<sup>5</sup> &times; 3 &times; 5, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 576 = 2<sup>6</sup> &times; 3<sup>2</sup>.</p>
+                            <p class="indent-p">Find</p>
+                            <p class="indent-p">
+                                (a) <math display="inline"><msqrt><mn>576</mn></msqrt></math>,
+                            </p>
+                            <p class="indent-p">(b) the largest integer which is a factor of both 480 and 576,</p>
+                            <p class="indent-p">(c) the smallest positive integer value of <i>n</i> for which 480<i>n</i> is a multiple of 576.</p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../js/contentScript.js"></script>
+
+</body>
+</html>

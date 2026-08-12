@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Question Bank | Unit 1A - Arithmetic - Number Operations, Squares and Square Roots</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/contentStyles.css" />
+    <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../assets/css/question-bank.css" />
+
+    
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        <a href="../../../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="../../conversions.html">Study Guide</a>
+            <a href="../../tracker.html">Revision Tracker</a>
+            <a href="../../tracker.html#past-papers">Past Papers</a>
+            <a href="../../questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="#">Lesotho</a><span class="bc-sep">›</span>
+            <a href="../../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../question-bank.html">Question Bank</a><span class="bc-sep">›</span>
+            <a href="practice-questions.html">Practice Questions</a><span class="bc-sep">›</span>
+            <span>Unit 1B </span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="page-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar" id="leftSidebar">
+            <div class="filter-wrap">
+                <span class="filter-icon">🔍</span>
+                <input class="filter-input" type="text" placeholder="Filter topics..." />
+            </div>
+
+            <ul class="sidebar-nav" id="topicNav">
+                <li><a href="number-operations.html">Unit 1A - Arithmetic - Number Operations, Squares and Square Roots</a></li>
+                <li class="active"><a href="financial-transactions.html">Unit 1B - Arithmetic - Arithmetic Problems, Simple Financial Transactions, Profit and Loss, Simple Interest</a></li>
+                <li><a href="ratio-proportions-percentages.html">Unit 1C - Arithmetic - Ratio, Proportions and Percentages, Scales and Simple Map Problems</a></li>
+                <li><a href="estimation-and-significant-figures.html">Unit 1D - Arithmetic - Estimation, Significant Figures, Decimal Places and Standard Form</a></li>
+                <li><a href="mensuration-plane-figures.html">Unit 2A - Mensuration - Rectangle, Square, Triangle, Parallelogram, Trapezium and Circle, Arc Length and Area of Sector</a></li>
+                <li><a href="mensuration-solid-figures.html">Unit 2B - Mensuration - Solid Figures i.e. Cuboid, Cylinder, Sphere, Pyramid, Cone and Prism</a></li>
+                <li><a href="algebraic-formulae-and-symbols.html">Unit 3A - Algebra and Graphs - Evaluation and Change of Subjects of a Formula, Algebraic Symbols</a></li>
+                <li><a href="indices.html">Unit 3B - Algebra and Graphs - Indices</a></li>
+                <li><a href="expansion-and-factorisation.html">Unit 3C - Algebra and Graphs - Expansion and Factorisation of Algebraic Expressions</a></li>
+                <li><a href="algebraic-fractions-and-equations.html">Unit 3D - Algebra and Graphs - Simple Algebraic Fractions, Simple Equations and Identities, Solutions of Simultaneous Linear Equations and Quadratic Equations</a></li>
+                <li><a href="algebra-graphs.html">Unit 3E - Algebra and Graphs - Graphs</a></li>
+                <li><a href="variations.html">Unit 3F - Algebra and Graphs - Direct, Inverse and Joint Variations</a></li>
+                <li><a href="straight-line-graphs.html">Unit 3G - Algebra and Graphs - Gradients and Equations of Straight Lines</a></li>
+                <li><a href="inequalities-and-linear-programming.html">Unit 3H - Algebra and Graphs - Inequality and Linear Programming</a></li>
+                <li><a href="distance-speed-time-graphs.html">Unit 3I - Algebra and Graphs - Distance-Time Graphs and Speed-Time Graphs</a></li>
+                <li><a href="angle-properties.html">Unit 4A - Geometry - Properties of Angles; Angle Properties of Polygons</a></li>
+                <li><a href="similarity-congruency-symmetry.html">Unit 4B - Geometry - Similarity, Congruency and Symmetry</a></li>
+                <li><a href="circle-theorems.html">Unit 4C - Geometry - Circle Theorems</a></li>
+                <li><a href="loci-and-construction.html">Unit 4D - Geometry - Loci and Simple Construction</a></li>
+                <li><a href="trigonometrical-ratios.html">Unit 5A - Trigonometry - Trigonometrical Ratios, Solutions of Triangles</a></li>
+                <li><a href="bearing-problems.html">Unit 5B - Trigonometry - Bearing Problems, Angle of Elevation and Depression, 3 Dimensional Problems</a></li>
+                <li><a href="statistics-charts-and-mean.html">Unit 6A - Statistics - Bar Charts, Pie Charts, Frequency Polygons, Histograms, Mean, Median and Mode</a></li>
+                <li><a href="cumulative-frequency.html">Unit 6B - Statistics - Cumulative Frequency</a></li>
+                <li><a href="vectors.html">Unit 7 - Vectors</a></li>
+                <li><a href="problem-solving.html">Unit 8 - Problem Solving</a></li>
+                <li><a href="probability.html"> Unit 9 - Probability</a></li>
+                <li><a href="transformations.html">Unit 10A - Transformations</a></li>
+                <li><a href="matrices-in-transformation.html">Unit 10B - Use of Matrices in Transformation</a></li>
+                <li><a href="matrices.html">Unit 11 - Matrices</a></li>
+                <li><a href="sets-and-venn-diagrams.html">Unit 12 - Sets and Venn Diagrams</a></li>
+                <li><a href="functions.html">Unit 13 - Functions</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="mainContent">
+            <div class="question-paper">
+
+                <!-- ============================================================ -->
+                <!-- Unit 1A - Arithmetic - Number Operations, Squares and Square Roots -->
+                <!-- ============================================================ -->
+                <section class="topic-section" id="unit1b">
+                    <h2>Unit 1B - Arithmetic - Arithmetic Problems, Simple Financial Transactions, Profit and Loss, Simple Interest</h2>
+
+                                        <!-- Question 32 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>32.</span> A bank exchanges United States currency for British currency at the rate of 1.60 dollars to the &pound;.</p>
+                            <p class="indent-p">(a) Calculate, in dollars, the amount received for &pound;150.</p>
+                            <p class="indent-p">(b) Calculate, in &pound;, the amount paid for $800 by a customer who also had to pay an extra 2% commission for this transaction.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 33 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>33.</span> The owner of a toyshop made a profit of 40% on every toy which he sold.</p>
+                            <p class="indent-p">(a) Find the selling price of a football which cost the shopkeeper $11.</p>
+                            <p class="indent-p">(b) Find the cost price of a doll which the shopkeeper sold for $28.</p>
+                            <p class="indent-p">(c) The shopkeeper made a profit of $10 when he sold a kite. Calculate the selling price of the kite.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 34 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>34.</span> (a) A motorcyclist travels 98 km in 1 hour 10 minutes. Calculate his average speed, giving your answer in kilometres per hour.</p>
+                            <p class="indent-p">(b) A girl finds it takes 4 minutes 10 seconds to walk to school. She can run 2 <sup>1</sup>&frasl;<sub>2</sub> times faster than she can walk. Calculate the time it will take her if she runs to school, giving your answer in minutes and seconds.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 35 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>35.</span> An athlete walks a distance of 1 km at an average speed of 6 km/h and then, without stopping, runs a further distance of 800 metres in 2 minutes. Calculate</p>
+                            <p class="indent-p">(a) the time, in minutes, it takes to walk the 1 km,</p>
+                            <p class="indent-p">(b) his running speed in km/h,</p>
+                            <p class="indent-p">(c) his average speed for the whole journey in km/h.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 36 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>36.</span> Three companies, Alpha, Better and Compact, offer cars for hire. Their charges, based on the number of days for which a car is hired and the number of kilometres for which the car is driven are shown in the following table.</p>
+                            <table class="question-table" style="border-collapse: collapse; text-align: center; margin: 10px 0;">
+                                <thead>
+                                    <tr style="border-top: 1px solid #ffff; border-bottom: 1px solid #ffff;">
+                                        <th style="padding: 5px; border-right: 1px solid #ffff;"></th>
+                                        <th style="padding: 5px; border-right: 1px solid #ffff;">Cost per day</th>
+                                        <th style="padding: 5px;">Cost per kilometre</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 5px; border-right: 1px solid #ffff; text-align: left;">Alpha</td>
+                                        <td style="padding: 5px; border-right: 1px solid #ffff;">$66</td>
+                                        <td style="padding: 5px;">Nil</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 5px; border-right: 1px solid #ffff; text-align: left;">Better</td>
+                                        <td style="padding: 5px; border-right: 1px solid #ffff;">Nil</td>
+                                        <td style="padding: 5px;">45&cent;</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #ffff;">
+                                        <td style="padding: 5px; border-right: 1px solid #ffff; text-align: left;">Compact</td>
+                                        <td style="padding: 5px; border-right: 1px solid #ffff;">$30</td>
+                                        <td style="padding: 5px;">25&cent;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="indent-p">(a) Jean wishes to hire a car for 2 days to drive 400 km.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) Show that the cost of hiring a car from Compact Cars would be $160.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) Find the difference between the largest and smallest charges she might pay.</p>
+                            <p class="indent-p">(b) Linda hires a car for 3 days. She finds that Alpha Cars and Better Cars would make equal charges. How far does she intend to drive?</p>
+                            <p class="indent-p">(c) Maureen wishes to hire a car for 6 days and finds that Better Cars and Compact Cars would make equal charges. How far does she intend to drive?</p>
+                            <p class="indent-p">(d) Norman hired a car for 4 days from Alpha Cars in 1988. He calculates that the cost now is 20% more than it was in 1988. What was the cost of hiring a car for 4 days from Alpha Cars in 1988?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 37 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>37.</span> A boy runs a distance of 2 km in 12 minutes and then, without stopping, walks a further distance of 400 m at an average speed of 3 km/h. Calculate</p>
+                            <p class="indent-p">(a) his running speed in km/h,</p>
+                            <p class="indent-p">(b) the time, in minutes, it takes to walk the 400 m,</p>
+                            <p class="indent-p">(c) his average speed for the whole journey in km/h.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 38 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>38.</span> The cost of a colour film for 12 photographs is normally $1.08. Additionally, the cost of printing the 12 photographs is normally $1.92.</p>
+                            <p class="indent-p">(a) Show that the total cost of each photograph is normally 25 cents.</p>
+                            <p class="indent-p">(b) One shop decides to sell 3 films for the price of 2 films. The cost of printing remains at $1.92 for each film. Calculate the total cost of each photograph at this shop.</p>
+                            <p class="indent-p">(c) A second shop keeps the price of the film at $1.08, and offers a reduction of 25% off the cost of printing. Calculate the total cost of each photograph at this shop.</p>
+                            <p class="indent-p">(d) Calculate the percentage reduction in the total cost, compared to the normal cost, of a photograph obtained from the second shop.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 39 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>39.</span> (a) A late night radio programme began at 2245 one evening and finished at 0320 on the following morning. For how many minutes did the programme last?</p>
+                            <p class="indent-p">(b) A small bird enters its nest on average every 40 seconds, when it is feeding its young. How many visits to the nest does the bird make, on average, each hour?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 40 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>40.</span> (a) A baker uses 325 g of flour in making a loaf of bread. How many kilograms of flour are required for 120 loaves?</p>
+                            <p class="indent-p">(b) When making 800 loaves he uses 300 litres of water. How many millilitres of water are required for one loaf? [1 litre = 1000 ml].</p>
+                            <p class="indent-p">(c) For Frooto loaves, the ratio (by mass) of flour : fruit : other ingredients is 8 : 7 : 5. What mass of fruit is required for a mixture of total mass 160 kg?</p>
+                            <p class="indent-p">(d) The baker bakes a large cake and Mrs Jones buys one quarter of it. The remainder is divided into five equal pieces. Mrs Smith buys one of these pieces and divides it equally between her three children. Expressing your answer as a fraction in its lowest terms, calculate what fraction of the original cake each child receives.</p>
+                            <p class="indent-p">(e) 45% of the baker's total expenses are for the cost of fuel and the remainder is for the cost of materials.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) In 1989, the baker's total expenses were $7000. Calculate the cost of his materials in 1989.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) In 1990, the cost of fuel increased by 4% and the cost of materials increased by 10%. Calculate,</p>
+                            <p class="indent-p" style="padding-left: 60px;">(I) the increase, in dollars, in the cost of the baker's materials,</p>
+                            <p class="indent-p" style="padding-left: 60px;">(II) the percentage increase in his total expenses.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 41 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>41.</span> During 1991, in a country with a population of 8 million, the amount spent on building roads was $2.4 billion. Calculate the average amount spent per head of population. [1 billion = 1 thousand million].</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 42 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>42.</span> A man plants 25 trees in a straight line. The trees are 6 m apart. How far is it from the first tree to the last tree?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 43 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>43.</span> (a) An overnight train left Singapore at 2240 and reached Kuala Lumpur at 0515 on the following day. How long did the journey take? Give your answer in hours and minutes.</p>
+                            <p class="indent-p">(b) A worker in an electronics factory can complete one circuit panel in 3 minutes 25 seconds. Assuming that he continues to work at the same rate, calculate how long it will take him to complete ten identical circuit panels. Give your answer in minutes and seconds.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 44 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>44.</span> James has a job for which the basic rate of pay is $25 per hour and the overtime rate of pay is $36 per hour. This week James earned $1377. He worked 7 hours overtime.</p>
+                            <p class="indent-p">(a) Calculate the amount he earned at the basic rate.</p>
+                            <p class="indent-p">(b) Calculate the number of hours that he worked at the basic rate.</p>
+                            <p class="indent-p">(c) James noticed that his earnings of $1377 showed a decrease of 10% of his last week's earnings. Calculate his earnings last week.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 45 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>45.</span> (a) Calculate the simple interest on $200 at 4% per annum for 5 years.</p>
+                            <p class="indent-p">(b) The exchange rate between the English pound (&pound;) and the American dollar ($) during one summer was &pound;1 to $1.60.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) How many dollars would an Englishman get for &pound;400?</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) How many pounds would an American get for $800?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 46 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>46.</span> (a) Calculate the simple interest on $400 at 5% per annum for 2 years.</p>
+                            <p class="indent-p">(b) The exchange rate between the English pound (&pound;) and the Australian dollar ($) during one summer was &pound;1 to $2.40.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) How many dollars would an Englishman get for &pound;400?</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) How many pounds would an Australian get for $1200?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 47 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>47.</span> (a) Calculate the number of minutes there are in a day.</p>
+                            <p class="indent-p">(b) (i) An aircraft was due to take off from Hong Kong at 16 45. Because of bad weather it did not take off until 21 10. For how long, in hours and minutes, was it delayed?</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) The aircraft developed a fault and returned to Hong Kong after a flight lasting 5 hours 25 minutes. At what time the next morning did it land?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 48 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>48.</span> (a) On a certain day in 1990 the exchange rate between the English pound (&pound;) and the American dollar ($) was &pound;1 = $1.80. Calculate</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the number of dollars that could be bought for &pound;200,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the number of pounds that could be bought for $900.</p>
+                            <p class="indent-p">(b) A builder has 1.5 cubic metres of sand delivered to a building site. He moves the sand in a wheelbarrow which holds 25 litres. How many times must he fill the wheelbarrow with sand? [1 cubic metre = 1000 litres.]</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 49 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>49.</span> (a) A shopkeeper sold a pair of shoes for $176. He made a profit of 10%. Calculate the cost price of the shoes.</p>
+                            <p class="indent-p">(b) Calculate the simple interest when $280 is invested for 9 months at 8% per annum.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 50 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>50.</span> (a) In the Sureway lock factory, 8 employees each work 8 <sup>3</sup>&frasl;<sub>4</sub> hours per day and 5 employees each work 7 <sup>1</sup>&frasl;<sub>2</sub> hours per day. Calculate the total time, in hours, worked by these 13 employees in a 5 day week.</p>
+                            <p class="indent-p">(b) In 1991 the factory produced 1400 Bettaloks. In 1992 the factory produced 1610 Bettaloks. What was the percentage increase?</p>
+                            <p class="indent-p">(c) The owner of the factory divides his time between Production, Sales and Administration in the ratio 4 : 3 : 2. How long does he spend on Production in a 54 hour week?</p>
+                            <p class="indent-p">(d) Superlocks are made by Alan, an apprentice, and Mr. Ball, his instructor.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) In January, Alan made a Superlock every 12 minutes. Mr Ball made a Superlock four times as quickly. How many Superlocks did they make altogether in 3 hours?</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) In March, Alan made a Superlock every <em>k</em> minutes. Mr Ball worked at the same speed as in January. They made 55 Superlocks altogether in 2 hours. Calculate the value of <em>k</em>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 51 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>51.</span> (a) Calculate the number of minutes between noon and midnight.</p>
+                            <p class="indent-p">(b) (i) An aircraft was due to take off from Singapore at 17 40. Because of bad weather it did not take off until 22 15. For how long, in hours and minutes, was it delayed?</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) The aircraft developed a fault and returned to Singapore after a flight lasting 4 hours 10 minutes. At what time the next morning did it land?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 52 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>52.</span> (a) A man has to fill a tank with water from a pond. The volume of the tank is 1.8 m<sup>3</sup> and he carries the water in a 24 litre container. How many times must he fill the container? [1 cubic metre = 1000 litres]</p>
+                            <p class="indent-p">(b) On a certain day in 1992 the exchange rate between the English pound (&pound;) and the French franc was &pound;1 = 9.50 francs. Calculate</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the number of francs that could be bought for &pound;300,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the number of pounds that could be bought for 3800 francs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 53 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>53.</span> (a) Calculate the simple interest when Rs330 is invested for 8 months at 7% per annum.</p>
+                            <p class="indent-p">(b) A shopkeeper sold a book for Rs180. He made a profit of 20%. Calculate the cost price of the book.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 54 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>54.</span> (a) (i) A television programme lasted for 1 hour 25 minutes. The programme started at 09 40. At what time did it finish?</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) This programme was one of a series of 5 programmes each of which lasted for 1 hour 25 minutes. How long did the 5 programmes last altogether?</p>
+                            <p class="indent-p">(b) Another television programme lasted for 2 hours 12 minutes and finished at 01 45. At what time did the programme start?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 55 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>55.</span> (a) A bank exchange French Francs (F) and British Pounds (&pound;) at a rate of 9.50 F = &pound;1.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) Calculate, in francs, the amount received for &pound;120.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) Calculate, in pounds, the amount received for 3800 F.</p>
+                            <p class="indent-p">(b) Another bank charged a commission of 2% of the value of the money exchanged. The commission charged for one particular exchange was &pound;14.20. Calculate, in pounds, the sum of money that was exchanged.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 56 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>56.</span> (a) The cost of making a small ornament is $6.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) Calculate the cost of making 24 ornaments.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) The cost of making an ornament is divided between materials, wages and overheads in the ratio 3 : 4 : 5. Calculate the cost of materials used in making each ornament.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(iii) A person is paid $2 for making an ornament. Calculate how much he earns in one hour when he makes 3 ornaments every 10 minutes.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(iv) The ornaments are sold at a profit of 15%. Calculate how much each one is sold for.</p>
+                            <p class="indent-p">(b) A second manufacturer sells each of his large ornaments $9, showing a profit of 20% on the cost of manufacture. Calculate how much each one costs to make.</p>
+                            <p class="indent-p">(c) In 1992, a third manufacturer found that the cost of making an ornament was divided between materials, wages and overheads in the ratio 1 : 2 : 3.</p>
+                            <p class="indent-p">In 1993 the cost of materials doubled, wages increased by 50%, and overheads remained the same. Calculate the total percentage increase in cost.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 57 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>57.</span> (a) When an aircraft was flying from Singapore to London the temperature outside the aircraft was -66&deg;C. When the aircraft landed at London airport the temperature was 15&deg;C. Calculate the difference between these temperatures.</p>
+                            <p class="indent-p">(b) Mr Roy, one of the passengers on the aircraft, travelled from the airport to Cambridge. His journey took 2 hours 50 minutes and he arrived at Cambridge at 1.15 a.m. At what time did he leave the airport? Express your answer in terms of the 24-hour clock.</p>
+                            <p class="indent-p">(c) In the United Kingdom distances are measured in miles, where 5 miles is approximately equal to 8 kilometres. The distance the aircraft had flown from Singapore to London was approximately 11 000 km. Express this distance in miles, giving your answer to a reasonable degree of accuracy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 58 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>58.</span> (a) A train travels 145 km at average speed of 100 km/h. How many minutes does this journey take?</p>
+                            <p class="indent-p">(b) On part of the journey the train takes 25 minutes to travel 40 km. Find the average speed in kilometres per hour.</p>
+                            <p class="indent-p">(c) Each of the 400 passengers on the train is given a drink. The drinks are in packs of 12. Find the least possible number of packs required and the number of drinks left over.</p>
+                            <p class="indent-p">(d) On each of the 365 days of 1991, the train made two journeys. The average number of passengers on each journey was 400. How many passengers did the train carry in the year? Give your answer in standard form.</p>
+                            <p class="indent-p">(e) The number of passengers in 1993 was 5% higher than in 1992. The number in 1994 was 5% higher than in 1993. What was the total percentage increase in the number of passengers from 1992 to 1994?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 59 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>59.</span> (a) A shop sells two types of radio, <em>Hiblast</em> and <em>Megadef</em>. In a sale all prices are reduced by 15%.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) A <em>Hiblast</em> radio normally sells for $41. Find its price in the sale.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) A <em>Megadef</em> radio costs $51 in the sale. Find its normal price.</p>
+                            <p class="indent-p">(b) (i) Harry assembles <em>Hiblasts</em> and produces one every <em>x</em> minutes. Write down an expression, in terms of <em>x</em>, for the number he produces in an hour.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) Marion assembles <em>Megadefs</em> and takes two minutes longer than Harry to produce each one. Write down an expression, in terms of <em>x</em>, for the number of <em>Megadefs</em> she produces in an hour.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(iii) Harry and Marion together produce a total of 11 radios in an hour. Form an equation and show that it reduces to 11<em>x</em><sup>2</sup> - 98<em>x</em> - 120 = 0.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(iv) Solve this equation and hence find how many <em>Megadefs</em> Marion produces in an hour.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 60 -->
+                    <div class="question-block incomplete">
+                        <div class="question-text">
+                            <p><span>60.</span> The diagram shows a timetable, part of which has been torn away, for trains from Manchester to London.</p>
+                            
+                            <!-- Timetable SVG visual placeholder instead of a missing image -->
+                            <div class="timetable-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 450 240" width="100%" height="auto">
+                                    <style>
+                                        .bg-box { fill: none; }
+                                        .frame { stroke: #ffffff; stroke-width: 2; fill: none; }
+                                        .text-label { font-family: 'Courier New', Courier, monospace, sans-serif; font-size: 15px; fill: #ffffff; font-weight: bold; }
+                                        .time-val { font-family: 'Courier New', Courier, monospace, sans-serif; font-size: 15px; fill: #ffffff; }
+                                        .torn-edge { stroke: #ffffff; stroke-width: 2; fill: none; stroke-dasharray: 4,4; }
+                                    </style>
+                                    <rect width="450" height="240" class="bg-box"/>
+                                    
+                                    <!-- Main Header Table Outline -->
+                                    <path d="M 40,20 L 410,20 L 410,220 L 40,220 Z" class="frame"/>
+                                    <line x1="210" y1="20" x2="210" y2="220" stroke="#ffffff" stroke-width="2"/>
+                                    <line x1="40" y1="65" x2="410" y2="65" stroke="#ffffff" stroke-width="2"/>
+                                    
+                                    <!-- Headers -->
+                                    <text x="50" y="45" class="text-label">Manchester (depart)</text>
+                                    <text x="220" y="45" class="text-label">London (arrive)</text>
+                                    
+                                    <!-- Row 1 -->
+                                    <text x="90" y="95" class="time-val">08 35</text>
+                                    <text x="260" y="95" class="time-val">11 25</text>
+                                    
+                                    <!-- Row 2 -->
+                                    <text x="90" y="130" class="time-val">12 31</text>
+                                    <text x="260" y="130" class="time-val">15 19</text>
+                                    
+                                    <!-- Row 3 -->
+                                    <text x="90" y="165" class="time-val">17 15</text>
+                                    <text x="260" y="165" class="time-val">20</text>
+                                    
+                                    <!-- Row 4 -->
+                                    <text x="90" y="200" class="time-val">22 37</text>
+                                    
+                                    <!-- Torn Section Representation -->
+                                    <path d="M 285,155 Q 310,150 340,165 T 390,158 T 410,165" class="torn-edge"/>
+                                    <path d="M 145,190 Q 200,185 250,200 T 350,190 T 410,200" class="torn-edge"/>
+                                </svg>
+                            </div>
+
+                            <p class="indent-p">(a) How many minutes does the train which departs at 12 31 take to reach London?</p>
+                            <p class="indent-p">(b) The 22 37 train takes 2 hours 45 minutes to reach London. At what time does it arrive?</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 61 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>61.</span> At noon on a particular day, the temperature at the bottom of a mountain was 12&deg;C and the temperature at the top of the mountain was -8&deg;C.</p>
+                            <p class="indent-p">(a) Calculate the difference between these temperatures.</p>
+                            <p class="indent-p">(b) The height of the mountain is 3200 m. Given that the temperature changed uniformly with height, calculate the height above the bottom of the mountain at which the temperature was 0&deg;C.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 62 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>62.</span> (a) The cost of posting a letter in 1993 was 18 cents. A company posted 1500 letters and was allowed a 5% discount on the cost. Calculate the cost to the company of posting the 1500 letters.</p>
+                            <p class="indent-p">(b) The cost of posting a letter was increased in 1994 from 18 cents to 20 cents. Calculate the percentage increase in the cost of posting a letter.</p>
+                            <p class="indent-p">(c) After the price increase to 20 cents in 1994, the cost to the company of posting 1500 letters became $288. Calculate the percentage discount that the company was allowed in 1994.</p>
+                            <p class="indent-p">(d) At the same time the cost of posting a parcel was increased by 20%. It cost $4.20 to post a particular parcel in 1994. What would have been the cost of posting this parcel in 1993?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 63 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>63.</span> (a) An aeroplane left Delhi at 22 48 and was scheduled to arrive at its destination at 04 22 on the following day. How many minutes was the flight expected to take?</p>
+                            <p class="indent-p">(b) Another plane arrived in Delhi at 11 12 after a flight lasting 3 hours 45 minutes. Find the plane's take-off time.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 64 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>64.</span> The temperature at the top of a mountain was -18&deg;C. At the same time the temperature at sea level was 6&deg;C.</p>
+                            <p class="indent-p">(a) Calculate the difference between these temperatures.</p>
+                            <p class="indent-p">(b) The height of the mountain is 2600 m. Given that the temperature changed uniformly with the height, calculate the height above sea level at which the temperature was 0&deg;C.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 65 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>65.</span> Apples cost 12 cents each. John has a $5 note and wishes to buy as many apples as possible. Calculate</p>
+                            <p class="indent-p">(a) the number of apples that he can buy,</p>
+                            <p class="indent-p">(b) the change that he will receive.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 66 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>66.</span> The temperature in John's garden at noon was 8&deg;C. At midnight the temperature was -6&deg;C. Both temperatures are given correct to the nearest degree.</p>
+                            <p class="indent-p">(a) What is the largest possible value for the temperature at noon?</p>
+                            <p class="indent-p">(b) Calculate the smallest possible value for the difference between the temperatures at noon and midnight.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 67 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>67.</span> When it is 12 00 in London the time in Singapore is 20 00.</p>
+                            <p class="indent-p">(a) What is the time in London when it is 12 30 in Singapore?</p>
+                            <p class="indent-p">(b) A plane leaves Singapore at 12 30 to fly to London. The flight takes 13 hours 42 minutes. Calculate the time in London when it arrives.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 68 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>68.</span> The times taken by an athlete to run 800 metres in three successive races were 2 minutes 0.8 seconds, 1 minute 59.1 seconds and 2 minutes 1.6 seconds.</p>
+                            <p class="indent-p">(a) Calculate the average of these times.</p>
+                            <p class="indent-p">(b) In order to qualify for a 'Gold Star Award', his average time for four races must be not more than 2 minutes. Calculate the time that he took in his fourth race if he just qualified for the Award.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 69 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>69.</span> To convert a recurring decimal into a fraction the following method may be used.</p>
+                            
+                            <table style="border-collapse: collapse; border: none; background: transparent; margin: 10px 0; font-family: monospace, sans-serif; line-height: 1.6;">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: right; padding: 2px 15px 2px 0; border: none; background: transparent;">Given that</td>
+                                        <td style="text-align: center; padding: 2px 0; border: none; background: transparent;"><em>x</em> = 0.131313 ...,</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; padding: 2px 15px 2px 0; border: none; background: transparent;">STEP 1 Multiply by 100</td>
+                                        <td style="text-align: center; padding: 2px 0; border: none; background: transparent;">100<em>x</em> = 13.131313 ...,</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; padding: 2px 15px 2px 0; border: none; background: transparent;">STEP 2 Subtract</td>
+                                        <td style="text-align: center; padding: 2px 0; border: none; background: transparent;">99<em>x</em> = 13.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; padding: 2px 15px 2px 0; border: none; background: transparent;">STEP 3 Divide</td>
+                                        <td style="text-align: center; padding: 2px 0; border: none; background: transparent;"><em>x</em> = <sup>13</sup>&frasl;<sub>99</sub></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p style="margin: 10px 0; font-family: monospace, sans-serif;">So the recurring decimal 0.131313 ... = <sup>13</sup>&frasl;<sub>99</sub></p>
+                            
+                            <p class="indent-p">(a) Use the above method to convert the recurring decimal <em>x</em> = 0.292929 ... into a fraction.</p>
+                            <p class="indent-p">(b) Use a similar method to convert the recurring decimal 0.517 517 517 ... into a fraction.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Question 70 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>70.</span> A car uses 1 litre of petrol when travelling 8 km on dirt tracks and 1 litre when travelling 14 km on ordinary roads.</p>
+                            <p>On a particular journey of 180 km, 40 km was on dirt tracks and the remainder was on ordinary roads. Calculate</p>
+                            <p class="indent-p">(a) the number of litres of petrol used on this journey,</p>
+                            <p class="indent-p">(b) the average number of kilometres travelled per litre of petrol,</p>
+                            <p class="indent-p">(c) the average speed in kilometres per hour for this journey, given that it took 3 hours 20 minutes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 71 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>71.</span> (a) Write down the next two terms in the sequence 12, 11, 9, 6, ...</p>
+                            <p class="indent-p">(b) Write down an expression, in terms of <em>n</em>, for the <em>n</em>th term in the sequence 4, 9, 16, 25, ...</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 72 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>72.</span> The table shows the temperature in a number of cities at noon on a particular day.</p>
+                            <table class="question-table" style="border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 500px;">
+                                <tbody>
+                                    <tr style="border-top: 1px solid #ffff; border-bottom: 1px solid #ffff;">
+                                        <td style="padding: 6px; border-left: 1px solid #ffff; border-right: 1px solid #ffff; width: 25%;">Singapore</td>
+                                        <td style="padding: 6px; border-right: 1px solid #ffff; width: 25%;">Moscow</td>
+                                        <td style="padding: 6px; border-right: 1px solid #ffff; width: 25%;">Cambridge</td>
+                                        <td style="padding: 6px; border-right: 1px solid #ffff; width: 25%;">London</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #ffff;">
+                                        <td style="padding: 6px; border-left: 1px solid #ffff; border-right: 1px solid #ffff;">32&deg;C</td>
+                                        <td style="padding: 6px; border-right: 1px solid #ffff;">-7&deg;C</td>
+                                        <td style="padding: 6px; border-right: 1px solid #ffff;">-4.5&deg;C</td>
+                                        <td style="padding: 6px; border-right: 1px solid #ffff;">0&deg;C</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="indent-p">(a) Which was the coldest city?</p>
+                            <p class="indent-p">(b) Find the difference in temperature between Singapore and Cambridge.</p>
+                            <p class="indent-p">(c) The temperature in Karachi was exactly midway between the temperatures in Singapore and Moscow. What was the temperature in Karachi?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 73 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>73.</span> A motorist travelled 75 km at 30 km/h. She then travelled at 42 km/h for the next 3 <sup>1</sup>&frasl;<sub>2</sub> hours. Calculate</p>
+                            <p class="indent-p">(a) the time taken for the first part of the journey,</p>
+                            <p class="indent-p">(b) the distance travelled in the second part of the journey,</p>
+                            <p class="indent-p">(c) her average speed for the whole journey.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 74 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>74.</span> On a particular day the temperature varied by 28&deg;C. The highest temperature recorded was 22&deg;C. What was the lowest temperature recorded on that day?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 75 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>75.</span> When it is 07 00 in New York, the time in London is 12 00.</p>
+                            <p class="indent-p">(a) What is the time in London when it is 22 00 in New York?</p>
+                            <p class="indent-p">(b) A flight from London departs at 4.30 p.m. The flying time is 6 hours. What is the time in New York when it arrives?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 76 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>76.</span> In a shop, a bicycle is priced at $451. The price includes Government Tax at 10%. How much is the tax?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 77 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>77.</span> The table gives the temperatures in Cambridge at 2 hourly intervals one day.</p>
+                            <table class="question-table" style="border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 550px; background: transparent;">
+                                <tbody>
+                                    <tr style="border-top: 1px solid white; border-bottom: 1px solid white;">
+                                        <td style="padding: 6px; border-left: 1px solid white; border-right: 1px solid white; text-align: left;">Time</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">10 00</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">12 00</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">14 00</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">16 00</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">18 00</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">20 00</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid white;">
+                                        <td style="padding: 6px; border-left: 1px solid white; border-right: 1px solid white; text-align: left;">Temperature (&deg;C)</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">4</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">4</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">3</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">0</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">-3</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">-2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="indent-p">(a) Find the difference between the temperatures at 12 00 and 18 00.</p>
+                            <p class="indent-p">(b) Between which two times did it get warmer?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 78 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>78.</span> Trains take 3 hours 42 minutes to travel between Aston and Barford.</p>
+                            <p class="indent-p">(a) One train left Aston at 07 30. When did it arrive at Barford?</p>
+                            <p class="indent-p">(b) On the return journey it reached Aston at 18 30. When did it leave Barford?</p>
+                            <p class="indent-p">(c) (i) Express the journey time (3 hours 42 minutes) in hours, giving your answer as a decimal.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) The distance from Aston to Barford is 370 kilometres. Calculate the average speed of the train, giving your answer in kilometres per hour.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 79 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>79.</span> The table gives the lowest temperatures recorded in New York on each day of a week.</p>
+                            <table class="question-table" style="border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 650px; background: transparent;">
+                                <tbody>
+                                    <tr style="border-top: 1px solid white; border-bottom: 1px solid white;">
+                                        <td style="padding: 6px; border-left: 1px solid white; border-right: 1px solid white; text-align: left;">Day</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">Sunday</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">Monday</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">Tuesday</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">Wednesday</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">Thursday</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">Friday</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">Saturday</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid white;">
+                                        <td style="padding: 6px; border-left: 1px solid white; border-right: 1px solid white; text-align: left;">Temperature in &deg;C</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">1</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">3</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">-3</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">0</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">-4</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">5</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">-1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="indent-p">(a) What was the difference between the lowest temperatures on Monday and Tuesday?</p>
+                            <p class="indent-p">(b) Between which two days was the change in temperature greatest?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 80 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>80.</span> It takes 2 hours 24 minutes for a bus to travel from Oxford to Cambridge.</p>
+                            <p class="indent-p">(a) A bus left Oxford at 08 39. At what time did it arrive in Cambridge?</p>
+                            <p class="indent-p">(b) On its return journey the bus arrived in Oxford at 16 10. At what time did it leave Cambridge?</p>
+                            <p class="indent-p">(c) Express the journey time (2 hours 24 minutes) in hours, giving your answer as a decimal.</p>
+                            <p class="indent-p">(d) The average speed of the bus on its journey was 65 kilometres per hour. Calculate the distance from Oxford to Cambridge.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 81 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>81.</span> One day, the high tide was 2.3 m above and the low tide 2.0 m below a mark on a harbour wall. Both measurements are correct to one decimal place. Calculate, in metres, a lower bound for the difference between the high and low tides.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 82 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>82.</span> Two towns, <em>A</em> and <em>B</em>, are 198 km apart.</p>
+                            <p class="indent-p">(a) Ken travelled by car from <em>A</em> to <em>B</em> at an average speed of 66 km/h. How long did the journey take?</p>
+                            <p class="indent-p">(b) He travelled back by car from <em>B</em> to <em>A</em> in 5 hours 30 minutes. Find his average speed, in kilometres per hour, on the return journey.</p>
+                            <p class="indent-p">(c) Ken left <em>A</em> at 07 30. He stayed in <em>B</em> for <sup>3</sup>&frasl;<sub>4</sub> of an hour. At what time did he arrive back in <em>A</em>?</p>
+                            <p class="indent-p">(d) The car travelled 13 km on each litre of petrol. Find the least whole number of litres he needs to complete the journey from <em>A</em> to <em>B</em> and back again to <em>A</em>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 83 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>83.</span> A bus journey from <em>A</em> to <em>B</em> took 3 <sup>3</sup>&frasl;<sub>4</sub> hours.</p>
+                            <p class="indent-p">(a) The bus travelled at an average speed of 48 km/h. Calculate the length of the journey.</p>
+                            <p class="indent-p">(b) The bus left <em>A</em> at 14 27. At what time did it arrive at <em>B</em>?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 84 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>84.</span> The temperature of a small pudding was -4&deg;C when taken out of a freezer. The pudding was immediately warmed in a saucepan, and after 8 minutes its temperature was 16&deg;C.</p>
+                            <p class="indent-p">(a) By how many &deg;C had the temperature risen during the 8 minutes?</p>
+                            <p class="indent-p">(b) Given that the temperature of the pudding increased at a constant rate, calculate</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the number of minutes it had been warmed when its temperature reached 0&deg;C,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) its temperature when it had been warmed for a total of 24 minutes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 85 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>85.</span> (a) One day the rate of exchange between American dollars ($) and British pounds (&pound;) was $1.50 = &pound;1.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) Pat changed &pound;240 into dollars. Calculate how many dollars she received.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) On the same day, the rate of exchange between French francs (F) and pounds was 7.65F = &pound;1.</p>
+                            <p class="indent-p" style="padding-left: 60px;">Calculate the rate of exchange between francs and dollars, giving the number of francs to the dollar.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(iii) Robert was planning a trip to America and received $900 in exchange for British pounds. Calculate how many pounds (&pound;) he changed.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(iv) Robert was unable to make the trip so he changed the $900 back into pounds at a different rate of exchange.</p>
+                            <p class="indent-p" style="padding-left: 60px;">(a) Given that he received &pound;552, calculate the new rate of exchange, in dollars to the pound, giving your answer correct to the nearest cent.</p>
+                            <p class="indent-p" style="padding-left: 60px;">(b) Calculate the resultant percentage loss that he made by changing his money twice (from pounds to dollars and back to pounds again).</p>
+                            <p class="indent-p">(b) Adam bought a camera for &pound;275. This price included a Sales Tax of 10%. Calculate the tax that was paid.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 86 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>86.</span> A train travelled from <em>P</em> to <em>Q</em>. The journey took 2 <sup>1</sup>&frasl;<sub>4</sub> hours.</p>
+                            <p class="indent-p">(a) Write down, in minutes, the time taken for the journey.</p>
+                            <p class="indent-p">(b) The train left <em>P</em> at 11 48. At what time did it arrive at <em>Q</em>?</p>
+                            <p class="indent-p">(c) The train travelled at an average speed of 56 km/h. Calculate the distance between <em>P</em> and <em>Q</em>.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 87 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>87.</span> Initially the temperature of a liquid was 82&deg;C. It was then cooled at a constant rate, its temperature falling by 7&deg;C every minute.</p>
+                            <p class="indent-p">(a) How long did it take for the liquid to cool to 19&deg;C?</p>
+                            <p class="indent-p">(b) What was the temperature of the liquid after it had been cooled for</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) 2 <sup>1</sup>&frasl;<sub>2</sub> minutes,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) 15 minutes?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 88 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>88.</span> The temperature on the surface of the moon in the middle of the day was 126&deg;C. The temperature on the surface of the moon in the middle of the night was -154&deg;C.</p>
+                            <p class="indent-p">(a) By how much did the temperature decrease during this period?</p>
+                            <p class="indent-p">(b) Find the average of the temperatures in the middle of the day and the middle of the night.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 89 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>89.</span> (a) In a chocolate, the ratio of the masses of cocoa : milk : other ingredients is 3 : 2 : 5.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) What fraction of the chocolate is cocoa?</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) The mass of a chocolate is 28 g. Calculate the mass of milk in a chocolate.</p>
+                            <p class="indent-p">(b) The chocolates were sold in boxes. In 1996 each box cost $4.80. Fiona had $29 and bought as many boxes as possible.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) How many boxes did she buy?</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) How much money did she have left?</p>
+                            <p class="indent-p">(c) The price in 1998 was 10% more than the 1996 price of $4.80. Calculate the price in 1998.</p>
+                            <p class="indent-p">(d) The price of $4.80 was an increase of 20% on the price in 1990. Calculate the price in 1990.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 90 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>90.</span> Express</p>
+                            <p class="indent-p">(a) 1.32 kilograms in grams,</p>
+                            <p class="indent-p">(b) 345 square centimetres in square metres.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 91 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>91.</span> A group of men and women go to a party. There are 55 in the group and there are 9 more women than men. Find the number of women who attend.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 92 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>92.</span> (a) Write down the remainder when 365 is divided by 7.</p>
+                            <p class="indent-p">(b) There were 365 days in the year 1993.</p>
+                            <p class="indent-p" style="padding-left: 40px;">The first day of the year was a Friday.</p>
+                            <p class="indent-p" style="padding-left: 40px;">On what day of the week did 1994 begin?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 93 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>93.</span> The rate of exchange between Swedish krona (K) and British pounds (&pound;) was 12.90K = &pound;1.</p>
+                            <p>Calculate</p>
+                            <p class="indent-p">(a) the number of krona received in exchange for &pound;50,</p>
+                            <p class="indent-p">(b) the number of pounds received in exchange for 12900 K.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 94 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>94.</span> (a) Kim pays a bill for $52.45 with a $100 note. How much change should she receive?</p>
+                            <p class="indent-p">(b) Ali invests $2500 at an annual rate of 6% simple interest. After 8 months he withdraws all the money. How much does he receive?</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 95 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>95.</span> In 1997 a salesman was paid a basic salary of $33 000.</p>
+                            <p class="indent-p">(a) He was paid in 12 equal monthly instalments. Calculate the sum that he received each month.</p>
+                            <p class="indent-p">(b) At the end of the year he was also paid a bonus of 1 <sup>1</sup>&frasl;<sub>2</sub>% of the value of the sales that he had made during the year. In 1997 the value of his sales was $196 000. Calculate the total income (basic salary plus bonus) that he received in 1997.</p>
+                            <p class="indent-p">(c) In 1998 his basic salary was increased to $36 000.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) Calculate the percentage increase in his basic salary from 1997 to 1998.</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) In 1998 he was again paid a bonus of 1 <sup>1</sup>&frasl;<sub>2</sub>% of the value of his sales. His total income was $39 660. Calculate the value of the sales that he made that year.</p>
+                            <p class="indent-p">(d) In 1999 his basic salary was unchanged at $36 000, but the percentage used to calculate his bonus was changed. The value of his sales was $284 000 and his total income was $42 390. Calculate the percentage used to find his bonus in 1999.</p>
+                            <p class="indent-p">(e) His basic salary of $33 000 in 1997 was an increase of 10% on his basic salary in 1996. Calculate his basic salary in 1996.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 96 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>96.</span> Marie pays a bill for Rs47.45 with a Rs100 note. How much change should she receive?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 97 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>97.</span> Jean-Luc invests Rs15000 at an annual rate of 8% simple interest. After 9 months he withdraws all the money. How much does he receive?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 98 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>98.</span> In a restaurant, prices were reduced by 30%. After the reduction, a meal of braised whole sharksfin with crabmeat cost $28.00.</p>
+                            <p class="indent-p">(a) Calculate the cost of the meal before the reduction.</p>
+                            <p class="indent-p">(b) The rate of exchange is &pound;1 = $2.50. Calculate the cost, in pounds, of this $28.00 meal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 99 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>99.</span> (a) A survey of a TV Channel showed that there were 50 minutes of advertisements during a 5 hour period. Calculate, in the form 1 : <em>n</em>, the ratio of the time spent on advertisements to the total time.</p>
+                            <p class="indent-p">(b) A film started at 23 40 and finished 1 <sup>3</sup>&frasl;<sub>4</sub> hours later. At what time did the film finish?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 100 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>100.</span> On four occasions a bus takes the following times to complete a journey.</p>
+                            <p style="text-align: center; margin: 10px 0;">1 <sup>2</sup>&frasl;<sub>3</sub> hours, 1.7 hours, 1 hour 39 minutes, 1 <sup>3</sup>&frasl;<sub>4</sub> hours.</p>
+                            <p>By first expressing these times in minutes, write them in order of size, starting with the smallest.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 101 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>101.</span> A mark, M, on a cliff is 1.96 m below sea level at high tide. At low tide the sea level is 4.18 m lower than at high tide.</p>
+                            
+                            <!-- Cliff and Tide SVG diagram -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 400 240" width="100%" height="auto">
+                                    <style>
+                                        .bg-box { fill: none; }
+                                        .line-main { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .line-dashed { stroke: #ffffff; stroke-width: 1; stroke-dasharray: 4,4; fill: none; }
+                                        .text-label { font-family: sans-serif; font-size: 13px; fill: #ffffff; }
+                                        .text-sub { font-family: sans-serif; font-size: 12px; fill: #ffffff; }
+                                    </style>
+                                    <rect width="400" height="240" class="bg-box"/>
+                                    
+                                    <!-- Cliff Line -->
+                                    <path d="M 280,10 L 280,230" class="line-main"/>
+                                    
+                                    <!-- High Tide Level -->
+                                    <path d="M 120,60 Q 140,58 160,60 T 200,60 T 240,60 T 280,60" class="line-main"/>
+                                    <text x="120" y="50" class="text-label">High tide</text>
+                                    
+                                    <!-- Low Tide Level -->
+                                    <path d="M 120,190 Q 140,188 160,190 T 200,190 T 240,190 T 280,190" class="line-dashed"/>
+                                    <text x="120" y="180" class="text-label">Low tide</text>
+                                    
+                                    <!-- Mark M -->
+                                    <line x1="275" y1="120" x2="285" y2="120" stroke="#ffffff" stroke-width="2"/>
+                                    <text x="255" y="125" class="text-label">M</text>
+                                    
+                                    <!-- Dimension Arrow 1.96m (Explicitly connecting High Tide line to Mark M) -->
+                                    <line x1="300" y1="60" x2="300" y2="120" class="line-main"/>
+                                    <polygon points="300,60 296,70 304,70" fill="#ffffff"/>
+                                    <polygon points="300,120 296,110 304,110" fill="#ffffff"/>
+                                    <text x="310" y="95" class="text-sub">1.96 m</text>
+                                    
+                                    <!-- Reference indicator dashed lines -->
+                                    <line x1="280" y1="60" x2="305" y2="60" class="line-dashed"/>
+                                    <line x1="280" y1="120" x2="305" y2="120" class="line-dashed"/>
+                                </svg>
+                            </div>
+
+                            <p class="indent-p">(a) How far is M above sea level at low tide?</p>
+                            <p class="indent-p">(b) At a certain time the sea level is exactly half way between high tide and low tide. How far is the sea level below M at this time?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 102 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>102.</span> Using the information given in the advertisement shown, find the <strong>sale price</strong> of the table.</p>
+                            
+                            <!-- Table Advertisement SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 350 140" width="100%" height="auto">
+                                    <style>
+                                        .ad-box { fill: none; stroke: #ffffff; stroke-width: 1.5; }
+                                        .text-main { font-family: sans-serif; font-size: 14px; fill: #ffffff; font-weight: bold; text-anchor: middle; }
+                                        .text-sub { font-family: sans-serif; font-size: 12px; fill: #ffffff; text-anchor: middle; }
+                                        .text-italic { font-family: sans-serif; font-size: 12px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .drawing { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+                                    </style>
+                                    <rect x="10" y="10" width="330" height="120" class="ad-box"/>
+                                    
+                                    <!-- Header -->
+                                    <text x="175" y="32" class="text-main">SALE</text>
+                                    <text x="175" y="52" class="text-sub">All prices reduced by 30%</text>
+                                    
+                                    <!-- Table Drawing -->
+                                    <g class="drawing">
+                                        <!-- Top surface perspective -->
+                                        <polygon points="35,80 115,80 140,65 60,65"/>
+                                        <!-- Table edge thickness -->
+                                        <line x1="35" y1="80" x2="35" y2="85"/>
+                                        <line x1="115" y1="80" x2="115" y2="85"/>
+                                        <line x1="140" y1="65" x2="140" y2="70"/>
+                                        <path d="M 35,85 L 115,85 L 140,70"/>
+                                        <!-- Legs -->
+                                        <line x1="40" y1="85" x2="40" y2="115"/>
+                                        <line x1="110" y1="85" x2="110" y2="115"/>
+                                        <line x1="135" y1="70" x2="135" y2="98"/>
+                                        <line x1="62" y1="70" x2="62" y2="92"/>
+                                    </g>
+                                    
+                                    <!-- Ad Text Copy -->
+                                    <text x="245" y="85" class="text-main" style="font-size: 13px;">Save $180 on</text>
+                                    <text x="245" y="102" class="text-main" style="font-size: 13px;">this table</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 103 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>103.</span> Four walkers take the following times to complete a journey.</p>
+                            <p style="text-align: center; margin: 10px 0;">1 <sup>2</sup>&frasl;<sub>5</sub> hours, 1.6 hours, 1 hour 41 minutes, 1 <sup>2</sup>&frasl;<sub>3</sub> hours.</p>
+                            <p>By first expressing these times in minutes, write them in order of size, starting with the smallest.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 104 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>104.</span> A room is 2.46 m high.<br>A picture hook, <em>H</em>, is 0.69 m below the ceiling of the room.</p>
+                            <p class="indent-p">(a) How far is <em>H</em> above the floor of the room?</p>
+                            <p class="indent-p">(b) The picture hook is exactly half way between the ceiling and the top of a bookcase. How high is the bookcase?</p>
+                            
+                            <!-- Room and Bookcase Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 400 240" width="100%" height="auto">
+                                    <style>
+                                        .frame { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .dim-line { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                        .lbl { font-family: sans-serif; font-size: 12px; fill: #ffffff; }
+                                        .lbl-center { font-family: sans-serif; font-size: 12px; fill: #ffffff; text-anchor: middle; }
+                                        .bookcase { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .shelf { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                    </style>
+                                    
+                                    <!-- Room Boundary Outline -->
+                                    <rect x="50" y="20" width="220" height="200" class="frame"/>
+                                    
+                                    <!-- Picture hook H -->
+                                    <circle cx="160" cy="76" r="2" fill="#ffffff"/>
+                                    <text x="145" y="80" class="lbl">H</text>
+                                    
+                                    <!-- Bookcase drawing -->
+                                    <rect x="120" y="132" width="80" height="88" class="bookcase"/>
+                                    <!-- Shelves inside bookcase -->
+                                    <line x1="120" y1="150" x2="200" y2="150" class="shelf"/>
+                                    <line x1="120" y1="168" x2="200" y2="168" class="shelf"/>
+                                    <line x1="120" y1="186" x2="200" y2="186" class="shelf"/>
+                                    <line x1="120" y1="204" x2="200" y2="204" class="shelf"/>
+                                    
+                                    <!-- Total Room Height Dimension 2.46m -->
+                                    <line x1="290" y1="20" x2="290" y2="220" class="dim-line"/>
+                                    <polygon points="290,20 286,30 294,30" fill="#ffffff"/>
+                                    <polygon points="290,220 286,210 294,210" fill="#ffffff"/>
+                                    <text x="300" y="124" class="lbl">2.46 m</text>
+                                    
+                                    <!-- Ceiling alignment ticks for room total height -->
+                                    <line x1="270" y1="20" x2="295" y2="20" class="dim-line" style="stroke-dasharray: 4,4;"/>
+                                    <line x1="270" y1="220" x2="295" y2="220" class="dim-line" style="stroke-dasharray: 4,4;"/>
+                                    
+                                    <!-- Dimension line from ceiling to H (0.69m) -->
+                                    <line x1="220" y1="20" x2="220" y2="76" class="dim-line"/>
+                                    <polygon points="220,20 217,28 223,28" fill="#ffffff"/>
+                                    <polygon points="220,76 217,68 223,68" fill="#ffffff"/>
+                                    <text x="228" y="53" class="lbl">0.69 m</text>
+                                    
+                                    <!-- Reference tick for H line -->
+                                    <line x1="163" y1="76" x2="225" y2="76" class="dim-line" style="stroke-dasharray: 4,4;"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 105 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>105.</span> Using the information given in the advertisement shown, find the sale price of the coat.</p>
+                            
+                            <!-- Coat Advertisement SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 350 140" width="100%" height="auto">
+                                    <style>
+                                        .ad-box { fill: none; stroke: #ffffff; stroke-width: 1.5; }
+                                        .text-main { font-family: sans-serif; font-size: 14px; fill: #ffffff; font-weight: bold; text-anchor: middle; }
+                                        .text-sub { font-family: sans-serif; font-size: 12px; fill: #ffffff; text-anchor: middle; }
+                                        .drawing { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+                                    </style>
+                                    <rect x="10" y="10" width="330" height="120" class="ad-box"/>
+                                    
+                                    <!-- Header -->
+                                    <text x="175" y="32" class="text-main">SALE</text>
+                                    <text x="175" y="52" class="text-sub">All prices reduced by 40%</text>
+                                    
+                                    <!-- Stylized Coat Line-art Drawing -->
+                                    <g class="drawing" transform="translate(25, 0)">
+                                        <!-- Hanger/Collar area -->
+                                        <path d="M 65,60 Q 65,56 62,56 Q 59,56 60,60" stroke-width="1"/>
+                                        <path d="M 45,67 L 60,61 L 75,67"/>
+                                        <!-- Left Side Coat Outline -->
+                                        <path d="M 45,67 L 35,82 L 42,105 L 45,105 L 48,82 L 48,122 L 65,122"/>
+                                        <!-- Right Side Coat Outline -->
+                                        <path d="M 75,67 L 85,82 L 78,105 L 75,105 L 72,82 L 72,122 L 65,122"/>
+                                        <!-- Lapels & Center Seam -->
+                                        <path d="M 48,67 L 55,80 L 65,80 L 75,67"/>
+                                        <line x1="65" y1="80" x2="65" y2="122"/>
+                                        <!-- Pockets -->
+                                        <line x1="50" y1="98" x2="56" y2="98"/>
+                                        <line x1="69" y1="98" x2="75" y2="98"/>
+                                    </g>
+                                    
+                                    <!-- Ad Text Copy -->
+                                    <text x="245" y="85" class="text-main" style="font-size: 13px;">Save Rs 340 on</text>
+                                    <text x="245" y="102" class="text-main" style="font-size: 13px;">this coat</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../js/contentScript.js"></script>
+
+</body>
+</html>

@@ -540,6 +540,7 @@ ul { margin-left: 2rem; }
 
 .circled-number { border: 2px solid #ff8888; padding: 5px 10px;  border-radius: 50%;}
 .indent { margin-left: 2rem; }
+.indent-p { margin-left: 1.3rem; }
 /* ── RESPONSIVE ── */
 
 /* At 1100px: right TOC disappears AND left sidebar becomes mobile-style */
