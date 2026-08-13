@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Question Bank | Unit 1D - Arithmetic - Estimation, Significant Figures, Decimal Places and Standard Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/contentStyles.css" />
+    <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../assets/css/question-bank.css" />
+
+    
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        <a href="../../../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="../../conversions.html">Study Guide</a>
+            <a href="../../tracker.html">Revision Tracker</a>
+            <a href="../../tracker.html#past-papers">Past Papers</a>
+            <a href="../../questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="#">Lesotho</a><span class="bc-sep">›</span>
+            <a href="../../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../question-bank.html">Question Bank</a><span class="bc-sep">›</span>
+            <a href="practice-questions.html">Practice Questions</a><span class="bc-sep">›</span>
+            <span>Unit 1D </span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="page-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar" id="leftSidebar">
+            <div class="filter-wrap">
+                <span class="filter-icon">🔍</span>
+                <input class="filter-input" type="text" placeholder="Filter topics..." />
+            </div>
+
+            <ul class="sidebar-nav" id="topicNav">
+                <li><a href="number-operations.html">Unit 1A - Arithmetic - Number Operations, Squares and Square Roots</a></li>
+                <li><a href="financial-transactions.html">Unit 1B - Arithmetic - Arithmetic Problems, Simple Financial Transactions, Profit and Loss, Simple Interest</a></li>
+                <li><a href="ratio-proportions-percentages.html">Unit 1C - Arithmetic - Ratio, Proportions and Percentages, Scales and Simple Map Problems</a></li>
+                <li class="active"><a href="estimation-and-significant-figures.html">Unit 1D - Arithmetic - Estimation, Significant Figures, Decimal Places and Standard Form</a></li>
+                <li><a href="mensuration-plane-figures.html">Unit 2A - Mensuration - Rectangle, Square, Triangle, Parallelogram, Trapezium and Circle, Arc Length and Area of Sector</a></li>
+                <li><a href="mensuration-solid-figures.html">Unit 2B - Mensuration - Solid Figures i.e. Cuboid, Cylinder, Sphere, Pyramid, Cone and Prism</a></li>
+                <li><a href="algebraic-formulae-and-symbols.html">Unit 3A - Algebra and Graphs - Evaluation and Change of Subjects of a Formula, Algebraic Symbols</a></li>
+                <li><a href="indices.html">Unit 3B - Algebra and Graphs - Indices</a></li>
+                <li><a href="expansion-and-factorisation.html">Unit 3C - Algebra and Graphs - Expansion and Factorisation of Algebraic Expressions</a></li>
+                <li><a href="algebraic-fractions-and-equations.html">Unit 3D - Algebra and Graphs - Simple Algebraic Fractions, Simple Equations and Identities, Solutions of Simultaneous Linear Equations and Quadratic Equations</a></li>
+                <li><a href="algebra-graphs.html">Unit 3E - Algebra and Graphs - Graphs</a></li>
+                <li><a href="variations.html">Unit 3F - Algebra and Graphs - Direct, Inverse and Joint Variations</a></li>
+                <li><a href="straight-line-graphs.html">Unit 3G - Algebra and Graphs - Gradients and Equations of Straight Lines</a></li>
+                <li><a href="inequalities-and-linear-programming.html">Unit 3H - Algebra and Graphs - Inequality and Linear Programming</a></li>
+                <li><a href="distance-speed-time-graphs.html">Unit 3I - Algebra and Graphs - Distance-Time Graphs and Speed-Time Graphs</a></li>
+                <li><a href="angle-properties.html">Unit 4A - Geometry - Properties of Angles; Angle Properties of Polygons</a></li>
+                <li><a href="similarity-congruency-symmetry.html">Unit 4B - Geometry - Similarity, Congruency and Symmetry</a></li>
+                <li><a href="circle-theorems.html">Unit 4C - Geometry - Circle Theorems</a></li>
+                <li><a href="loci-and-construction.html">Unit 4D - Geometry - Loci and Simple Construction</a></li>
+                <li><a href="trigonometrical-ratios.html">Unit 5A - Trigonometry - Trigonometrical Ratios, Solutions of Triangles</a></li>
+                <li><a href="bearing-problems.html">Unit 5B - Trigonometry - Bearing Problems, Angle of Elevation and Depression, 3 Dimensional Problems</a></li>
+                <li><a href="statistics-charts-and-mean.html">Unit 6A - Statistics - Bar Charts, Pie Charts, Frequency Polygons, Histograms, Mean, Median and Mode</a></li>
+                <li><a href="cumulative-frequency.html">Unit 6B - Statistics - Cumulative Frequency</a></li>
+                <li><a href="vectors.html">Unit 7 - Vectors</a></li>
+                <li><a href="problem-solving.html">Unit 8 - Problem Solving</a></li>
+                <li><a href="probability.html"> Unit 9 - Probability</a></li>
+                <li><a href="transformations.html">Unit 10A - Transformations</a></li>
+                <li><a href="matrices-in-transformation.html">Unit 10B - Use of Matrices in Transformation</a></li>
+                <li><a href="matrices.html">Unit 11 - Matrices</a></li>
+                <li><a href="sets-and-venn-diagrams.html">Unit 12 - Sets and Venn Diagrams</a></li>
+                <li><a href="functions.html">Unit 13 - Functions</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="mainContent">
+            <div class="question-paper">
+
+                <!-- ============================================================ -->
+                <!-- Unit 1A - Arithmetic - Number Operations, Squares and Square Roots -->
+                <!-- ============================================================ -->
+                <section class="topic-section" id="unit1d">
+                    <h2>Unit 1D - Arithmetic - Estimation, Significant Figures, Decimal Places and Standard Form</h2>
+
+                    <!-- Question 1 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>1.</span> (a) Express 9 &times; 10<sup>3</sup> + 3 &times; 10 + 5 as a single number.</p>
+                            <p class="indent-p">
+                                (b) Find the value of 
+                                <math xmlns="http://w3.org">
+                                    <mfrac>
+                                        <mrow>
+                                            <mn>1.26</mn>
+                                            <mo>&times;</mo>
+                                            <msup>
+                                                <mn>10</mn>
+                                                <mn>3</mn>
+                                            </msup>
+                                        </mrow>
+                                        <mrow>
+                                            <mn>7</mn>
+                                            <mo>&times;</mo>
+                                            <msup>
+                                                <mn>10</mn>
+                                                <mrow>
+                                                    <mo>&minus;</mo>
+                                                    <mn>1</mn>
+                                                </mrow>
+                                            </msup>
+                                        </mrow>
+                                    </mfrac>
+                                </math> 
+                                expressing your answer in standard form.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>2.</span> (a) Express in standard form (i) 480, (ii) 0.016.</p>
+                            <p class="indent-p">(b) Evaluate 480 &divide; 0.016, giving your answer in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>3.</span> (a) Express <sup>7</sup>&frasl;<sub>40</sub> as a decimal.</p>
+                            <p class="indent-p">(b) Express <sup>9</sup>&frasl;<sub>25</sub> as a percentage.</p>
+                            <p class="indent-p">(c) Express 3.086 correct to 2 significant figures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>4.</span> Given that <em>p</em> = 2.4 &times; 10<sup>3</sup> and that <em>q</em> = 6 &times; 10<sup>-2</sup>, calculate, expressing each answer in standard form,</p>
+                            <p class="indent-p">(a) <em>pq</em>,</p>
+                            <p class="indent-p">(b) <sup><em>p</em></sup>&frasl;<sub><em>q</em></sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>5.</span> (a) Express 1.48247 correct to three decimal places.</p>
+                            <p class="indent-p">(b) Taking the value of &pi; to be 3.14159, find the value of (7&pi; - 21.9), giving your answer correct to three significant figures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>6.</span> Given that <em>a</em> = 5 &times; 10<sup>4</sup> and <em>b</em> = 3 &times; 10<sup>2</sup> find, expressing each of your answers in standard form, the value of</p>
+                            <p class="indent-p">(a) <em>ab</em>,</p>
+                            <p class="indent-p">(b) <em>a</em> + <em>b</em>,</p>
+                            <p class="indent-p">(c) <sup><em>b</em></sup>&frasl;<sub><em>a</em></sub>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                <span>7.</span> (a) Estimate, correct to 1 significant figure, the value of 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <msqrt>
+                                            <mrow>
+                                                <mn>8.01</mn>
+                                                <mo>&times;</mo>
+                                                <mn>25.01</mn>
+                                            </mrow>
+                                        </msqrt>
+                                        <mn>1.999</mn>
+                                    </mfrac>
+                                </math>.
+                            </p>
+                            <p class="indent-p">(b) Evaluate 0.57 &times; 0.3, giving your answer in standard form.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Question 8 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>8.</span> (a) Write down the value of 16.048 correct to</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) one significant figure,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) one decimal place.</p>
+                            <p class="indent-p">(b) Express 0.00345 in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>9.</span> (a) Express 0.003186 correct to 3 significant figures.</p>
+                            <p class="indent-p">(b) Express 52 300 in standard form.</p>
+                            <p class="indent-p">(c) Express <sup>33</sup>&frasl;<sub>80</sub> as a decimal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>10.</span> Express</p>
+                            <p class="indent-p">(a) 2.149 correct to one decimal place.</p>
+                            <p class="indent-p">(b) 408 correct to two significant figures.</p>
+                            <p class="indent-p">(c) 0.0054 in standard form.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 11 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>11.</span> (a) Express 486 mm in cm, giving your answer correct to the nearest cm.</p>
+                            <p class="indent-p">(b) Express 5.126 correct to two significant figures.</p>
+                            <p class="indent-p">
+                                (c) Write down, correct to the nearest whole number, the value of 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <msqrt>
+                                        <mn>898</mn>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 12 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>12.</span> Given that <em>y</em> = 1.7 &times; 10<sup>2</sup>, evaluate</p>
+                            <p class="indent-p">
+                                (a) 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <msqrt>
+                                        <mrow>
+                                            <mi>y</mi>
+                                            <mo>&minus;</mo>
+                                            <mn>1</mn>
+                                        </mrow>
+                                    </msqrt>
+                                </math>,
+                            </p>
+                            <p class="indent-p">(b) 12<em>y</em>, expressing your answer in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 13 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                <span>13.</span> Express 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>2</mn>
+                                        <mn>7</mn>
+                                    </mfrac>
+                                </math> 
+                                as a decimal, giving your answer correct to 2 decimal places.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 14 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>14.</span> Estimate, correct to 2 significant figures, the value of 30.02 &times; 19.99 &minus; 78.23.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 15 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>15.</span> Given that <em>m</em> = 5 &times; 10<sup>4</sup> and that <em>n</em> = 4 &times; 10<sup>3</sup> calculate, giving each answer in standard form,</p>
+                            <p class="indent-p">(a) <em>mn</em>,</p>
+                            <p class="indent-p">(b) <em>m</em><sup>2</sup>,</p>
+                            <p class="indent-p" style="display: flex; align-items: center; gap: 4px;">
+                                (c) 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>1</mn>
+                                        <mrow>
+                                            <mi>m</mi>
+                                        </mrow>
+                                    </mfrac>
+                                </math> + <em>n</em>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 16 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>16.</span> Given that <em>t</em> = 4 &times; 10<sup>-3</sup>, express 3<em>t</em> in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 17 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>17.</span> (a) Measured correct to the nearest centimetre, the sides of a rectangle are 9 cm and 6 cm. Find the smallest possible perimeter of the rectangle.</p>
+                            <p class="indent-p" style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                (b) Estimate, correct to one significant figure, the value of 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>84.3</mn>
+                                        <mn>0.0418</mn>
+                                    </mfrac>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 18 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>18.</span> Evaluate 6 &times; 0.00475, giving your answer in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 19 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>19.</span> It is given that <em>x</em> = 3 &times; 10<sup>6</sup>. Find the value of each of the following expressing your answers in standard form:</p>
+                            <p class="indent-p">(a) 4<em>x</em>,</p>
+                            <p class="indent-p">(b) <em>x</em><sup>2</sup>,</p>
+                            <p class="indent-p" style="display: flex; align-items: center; gap: 4px;">
+                                (c) 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>6</mn>
+                                        <mi>x</mi>
+                                    </mfrac>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 20 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                <span>20.</span> Find the approximate value of the expression 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mrow>
+                                            <mn>5.02</mn>
+                                            <mo>&times;</mo>
+                                            <msqrt>
+                                                <mn>15.98</mn>
+                                            </msqrt>
+                                        </mrow>
+                                        <mn>9.97</mn>
+                                    </mfrac>
+                                </math> 
+                                giving your answer correct to the nearest whole number.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 21 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>21.</span> Express 0.0002 in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 22 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>22.</span> Estimate, correct to 1 significant figure, the value of 43.95812 &minus; 28.34075.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 23 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>23.</span> Express</p>
+                            <p class="indent-p">(a) $235.80 correct to the nearest $10,</p>
+                            <p class="indent-p">(b) 0.0354 correct to two significant figures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 24 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>24.</span> (a) Express 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>3</mn>
+                                        <mn>7</mn>
+                                    </mfrac>
+                                </math> 
+                                as a decimal, correct to 2 decimal places,
+                            </p>
+                            <p class="indent-p">(b) Express 576 000 in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 25 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>25.</span> (a) Estimate the value of 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>75.21</mn>
+                                        <mn>1.53</mn>
+                                    </mfrac>
+                                </math>, 
+                                giving your answer correct to one significant figure.
+                            </p>
+                            <p class="indent-p">(b) A box contains three cans. Each can has a mass of 230 g, correct to the nearest gram. The box has a mass of 40 g, correct to the nearest gram. Find the smallest possible value of</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the mass of 1 can,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the total mass of the 3 cans and the box.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 26 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>26.</span> Given that <em>m</em> = 8.4 &times; 10<sup>5</sup> and <em>n</em> = 2 &times; 10<sup>2</sup>. Expressing your answers in standard form, find the value of</p>
+                            <p class="indent-p">(a) 2<em>m</em>,</p>
+                            <p class="indent-p" style="display: flex; align-items: center; gap: 4px;">
+                                (b) 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mi>m</mi>
+                                        <mi>n</mi>
+                                    </mfrac>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 27 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>27.</span> It is given that <em>t</em> = 4 &times; 10<sup>4</sup>. Find the value of each of the following, giving your answers in standard form,</p>
+                            <p class="indent-p">(a) 5<em>t</em>,</p>
+                            <p class="indent-p" style="display: flex; align-items: center; gap: 4px;">
+                                (b) 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <msqrt>
+                                        <mi>t</mi>
+                                    </msqrt>
+                                </math>,
+                            </p>
+                            <p class="indent-p">(c) <em>t</em><sup>2</sup>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 28 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>28.</span> Express</p>
+                            <p class="indent-p">(a) 0.00052 in standard form,</p>
+                            <p class="indent-p">(b) 35.2609 correct to 3 significant figures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 29 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>29.</span> Estimate, correct to 1 significant figure, the value of 0.0123 &times; 5040.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 30 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>30.</span> Express</p>
+                            <p class="indent-p">(a) 0.0062 in standard form,</p>
+                            <p class="indent-p">(b) 45% as a fraction in its lowest terms,</p>
+                            <p class="indent-p" style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                (c) 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>4</mn>
+                                        <mn>7</mn>
+                                    </mfrac>
+                                </math> 
+                                as a decimal, giving your answer correct to 2 decimal places.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 31 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>31.</span> (a) Express, correct to 2 significant figures,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) 249.526,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) 0.040375.</p>
+                            <p class="indent-p">(b) Hence estimate, correct to 1 significant figure, the value of 249.526 &times; 0.040375.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 32 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>32.</span> Express</p>
+                            <p class="indent-p">(a) 0.07 in standard form,</p>
+                            <p class="indent-p">(b) 0.375 as a fraction in its lowest terms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 33 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>33.</span> (a) Express, correct to 2 significant figures,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) 819.345,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) 5.032.</p>
+                            <p class="indent-p">(b) Hence estimate, correct to 1 significant figure, the value of 819.345 &times; 5.032.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 34 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>34.</span> Find the value of each of the following, expressing each answer in standard form.</p>
+                            <p class="indent-p">(a) 3 &times; (6.1 &times; 10<sup>5</sup>)</p>
+                            <p class="indent-p" style="display: flex; align-items: center; gap: 4px;">
+                                (b) 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>4</mn>
+                                        <mrow>
+                                            <mn>8</mn>
+                                            <mo>&times;</mo>
+                                            <msup>
+                                                <mn>10</mn>
+                                                <mn>6</mn>
+                                            </msup>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 35 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                <span>35.</span> (a) Estimate the value of 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>34.123</mn>
+                                        <mn>79.7</mn>
+                                    </mfrac>
+                                </math>, 
+                                giving your answer correct to one significant figure.
+                            </p>
+                            <p class="indent-p">(b) Each side of a square has length 130 mm correct to the nearest millimetre. Find the smallest possible value of the perimeter of the square.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 36 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                <span>36.</span> Estimate the value of 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>30</mn>
+                                        <mn>0.049</mn>
+                                    </mfrac>
+                                </math>, 
+                                giving your answer correct to 1 significant figure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 37 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>37.</span> (a) The Sun is approximately 150 000 000 kilometres from the Earth. Write this distance in standard form.</p>
+                            <p class="indent-p">(b) Beta and Gamma are stars. Beta is 3 &times; 10<sup>14</sup> kilometres from the Earth and Gamma is 6 &times; 10<sup>11</sup> kilometres from the Earth. How many times further from the Earth is Beta than Gamma?</p>
+                        </div>
+                    </div>
+
+                                        <!-- Question 61 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                <span>61.</span> (a) Calculate the exact value of 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mroot>
+                                        <mrow>
+                                            <mn>8</mn>
+                                            <mo>&times;</mo>
+                                            <msup>
+                                                <mn>10</mn>
+                                                <mn>6</mn>
+                                            </msup>
+                                        </mrow>
+                                        <mn>3</mn>
+                                    </mroot>
+                                </math>.
+                            </p>
+                            <p class="indent-p">(b) The population of Nigeria was recently estimated to be 103 940 000. Express 103 940 000 in standard form, correct to 3 significant figures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 62 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>62.</span> The length of a rectangle is 12 cm, correct to the nearest centimetre.</p>
+                            <p class="indent-p">(a) What is the upper bound for the length of the rectangle?</p>
+                            <p class="indent-p">(b) The width of the rectangle is 7 cm, correct to the nearest centimetre. Calculate the smallest possible perimeter of the rectangle.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 63 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>63.</span> Given that <em>p</em> = 8 &times; 10<sup>9</sup> and <em>q</em> = 4 &times; 10<sup>7</sup>, find the value of each of the following, expressing your answers in standard form.</p>
+                            <p class="indent-p">(a) <em>p</em> &times; <em>q</em>,</p>
+                            <p class="indent-p" style="display: flex; align-items: center; gap: 4px;">
+                                (b) 
+                                q &divide; p,
+                            </p>
+                            <p class="indent-p">(c) <em>p</em> + <em>q</em>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 64 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>64.</span> The inside radius of a cylindrical pot is 10 cm. It contains 2100 cm<sup>3</sup> of water. 
+                                <strong>Estimate, correct to the nearest centimetre, the depth of water in this pot.</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Question 65 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>65.</span> It is given that <em>s</em> = 4 &times; 10<sup>6</sup> and <em>t</em> = 3 &times; 10<sup>4</sup>. Find the value of each of the following, expressing your answers in standard form.</p>
+                            <p class="indent-p">(a) <em>s</em><sup>2</sup>,</p>
+                            <p class="indent-p">(b) <em>t</em> &divide; <em>s</em>,</p>
+                            <p class="indent-p">(c) <em>s</em> &minus; <em>t</em>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 66 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>66.</span> The area of Pakistan is 803 944 km<sup>2</sup>. Express this area in standard form, correct to 3 significant figures,</p>
+                            <p class="indent-p">(a) in square kilometres,</p>
+                            <p class="indent-p">(b) in square metres.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 67 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>67.</span> The distance from the Earth to the sun is 1.5 &times; 10<sup>8</sup> km. The distance from Pluto to the sun is 6.0 &times; 10<sup>9</sup> km.</p>
+                            <p class="indent-p">(a) Find the ratio of the shorter distance to the longer. Give your answer in its simplest form.</p>
+                            <p class="indent-p">(b) How much further is Pluto from the sun than the Earth from the sun? Give your answer in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 68 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>68.</span> The number of listeners to a radio station in 1995 was 350 000.</p>
+                            <p class="indent-p">(a) In 1996, there were 392 000 listeners. Calculate the percentage increase in the number of listeners from 1995 to 1996.</p>
+                            <p class="indent-p">Each year the radio station invites its listeners to vote for their favourite pieces of music.</p>
+                            <p class="indent-p" style="padding-left: 20px;">(b) In 1995, 18% of the listeners voted. Calculate the number who voted.</p>
+                            <p class="indent-p" style="padding-left: 20px;">(c) In 1997, the number of listeners was 460 000 and 91 000 of these voted.</p>
+                            <p class="indent-p" style="padding-left: 45px;">(i) Calculate the percentage of listeners who voted in 1997, giving your answer correct to the nearest whole number.</p>
+                            <p class="indent-p" style="padding-left: 45px;">(ii) The number who voted in 1997 was 40% more than in 1996. Calculate the number who voted in 1996.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 69 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>69.</span> (a) A cube has side 6 cm. Find, correct to the nearest 10 square centimetres, the total surface area of the cube.</p>
+                            <p class="indent-p">(b) Express 456 minutes in hours and minutes, giving your answer correct to the nearest 5 minutes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 70 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>70.</span> The distance of the planet Pluto from the sun is 6.0 &times; 10<sup>9</sup> km. The distance of the Earth from the sun is 1.5 &times; 10<sup>8</sup> km.</p>
+                            <p class="indent-p">(a) How many million kilometers is Pluto from the sun.</p>
+                            <p class="indent-p">(b) Find, in its simplest form, the ratio, <br>distance of Pluto from the sun : distance of the Earth from the sun.</p>
+                            <p class="indent-p">(c) Find the difference between the distance of Pluto from the sun and the distance of the Earth from the sun. Give your answer in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 71 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>71.</span> (a) Express 6700 in standard form.</p>
+                            <p class="indent-p">(b) 3 &times; 10<sup>3</sup> + 2 &times; 10<sup>1</sup> + 4 &times; 10<sup><em>x</em></sup> + 5 &times; 10<sup><em>y</em></sup> 
+                                = 3024.05, where <em>x</em> and <em>y</em> are integers. 
+                                <br><span class="indent-p">Write down the value of <em>x</em> and the value of <em>y</em>.</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Question 72 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>72.</span> The length and breadth of a rectangle, both measured correct to the nearest centimetre, are 11 cm and 9 cm respectively.</p>
+                            <p class="indent-p">Calculate the lower bound of the area of the rectangle.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 73 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                <span>73.</span> (a) Write down, correct to the nearest integer, the value of 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <msqrt>
+                                        <mn>896</mn>
+                                    </msqrt>
+                                </math>.
+                            </p>
+                            <p class="indent-p">(b) In 1998 there were 4.9 &times; 10<sup>7</sup> people living in England and of these 9.3 &times; 10<sup>6</sup> were under 16 years of age. Find the number of people who were 16 or over. Give your answer in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 74 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                                <span>74.</span> (a) Write down, correct to the nearest integer, the value of 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mroot>
+                                        <mn>397</mn>
+                                        <mn></mn>
+                                    </mroot>
+                                </math>.
+                            </p>
+                            <p class="indent-p">(b) Find the value of 3.6 &times; 10<sup>7</sup> &minus; 6.4 &times; 10<sup>6</sup>. Give your answer in standard form.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 75 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>75.</span> (a) Express Rs 15471 correct to</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the nearest thousand rupees,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) 3 significant figures.</p>
+                            <p class="indent-p">(b) The length of each side of an equilateral triangle is 8 cm, correct to the nearest centimetre. Complete the sentence in the answer space to show the smallest and largest possible values of the perimeter of the triangle.</p>
+                            <p style="text-align: center; margin: 15px 0; font-family: sans-serif;">
+                                <span style="border-bottom: 1px dashed white; display: inline-block; width: 60px;"></span> cm &le; perimeter &lt; <span style="border-bottom: 1px dashed white; display: inline-block; width: 60px;"></span> cm
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 76 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>76.</span> It is given that <em>m</em> = 8 &times; 10<sup>6</sup> and <em>n</em> = 4 &times; 10<sup>-3</sup>. Expressing your answers in standard form, find</p>
+                            <p class="indent-p">(a) <em>m</em> &times; <em>n</em>,</p>
+                            <p class="indent-p" style="display: flex; align-items: center; gap: 4px;">
+                                (b) 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mi>m</mi>
+                                        <mi>n</mi>
+                                    </mfrac>
+                                </math>.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Question 77 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>77.</span> A Football Club paid $15 million for a player. A newspaper reported that the Club would "have to sell 75174 tickets to cover the cost."</p>
+                            <p class="indent-p">(a) Write down 75174 correct to two significant figures.</p>
+                            <p class="indent-p">(b) Use your answer to (a) and the information above to estimate the cost, in dollars, of a ticket.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 78 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>78.</span> A man travelled by car from home to the library, and later from the library to the dentist. The kilometre readings in the car were</p>
+                            
+                            <svg xmlns="http://w3.org" viewBox="0 0 520 220" width="100%" height="auto">
+                                <style>
+                                    .bg-transparent { fill: none; }
+                                    .counter-box { stroke: #ffffff; stroke-width: 2; fill: none; }
+                                    .inner-divider { stroke: #ffffff; stroke-width: 1.5; }
+                                    .tenth-divider { stroke: #ffffff; stroke-width: 3; }
+                                    .shaded-wheel { fill: #ffffff; fill-opacity: 0.25; }
+                                    .text-digit { font-family: 'Courier New', Courier, monospace, sans-serif; font-size: 26px; fill: #ffffff; font-weight: bold; text-anchor: middle; }
+                                    .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; }
+                                </style>
+                                
+                                <!-- Transparent Background -->
+                                <rect width="520" height="220" class="bg-transparent"/>
+                                
+                                <!-- ODOMETER 1: At Home (088.8) -->
+                                <g transform="translate(20, 20)">
+                                    <!-- Main Frame -->
+                                    <rect x="0" y="0" width="160" height="45" class="counter-box"/>
+                                    <!-- Shaded Tenths Wheel Background -->
+                                    <rect x="120" y="0" width="40" height="45" class="shaded-wheel"/>
+                                    
+                                    <!-- Internal Box Dividers -->
+                                    <line x1="40" y1="0" x2="40" y2="45" class="inner-divider"/>
+                                    <line x1="80" y1="0" x2="80" y2="45" class="inner-divider"/>
+                                    <line x1="120" y1="0" x2="120" y2="45" class="tenth-divider"/>
+                                    
+                                    <!-- Digits -->
+                                    <text x="20" y="32" class="text-digit">0</text>
+                                    <text x="60" y="32" class="text-digit">8</text>
+                                    <text x="100" y="32" class="text-digit">8</text>
+                                    <text x="140" y="32" class="text-digit">8</text>
+                                    
+                                    <!-- Label -->
+                                    <text x="185" y="30" class="text-label">at home,</text>
+                                </g>
+
+                                <!-- ODOMETER 2: At The Library (094.4) -->
+                                <g transform="translate(20, 85)">
+                                    <!-- Main Frame -->
+                                    <rect x="0" y="0" width="160" height="45" class="counter-box"/>
+                                    <!-- Shaded Tenths Wheel Background -->
+                                    <rect x="120" y="0" width="40" height="45" class="shaded-wheel"/>
+                                    
+                                    <!-- Internal Box Dividers -->
+                                    <line x1="40" y1="0" x2="40" y2="45" class="inner-divider"/>
+                                    <line x1="80" y1="0" x2="80" y2="45" class="inner-divider"/>
+                                    <line x1="120" y1="0" x2="120" y2="45" class="tenth-divider"/>
+                                    
+                                    <!-- Digits -->
+                                    <text x="20" y="32" class="text-digit">0</text>
+                                    <text x="60" y="32" class="text-digit">9</text>
+                                    <text x="100" y="32" class="text-digit">4</text>
+                                    <text x="140" y="32" class="text-digit">4</text>
+                                    
+                                    <!-- Label -->
+                                    <text x="200" y="30" class="text-label">at the library,</text>
+                                </g>
+
+                                <!-- ODOMETER 3: At The Dentist (099.6) -->
+                                <g transform="translate(20, 150)">
+                                    <!-- Main Frame -->
+                                    <rect x="0" y="0" width="160" height="45" class="counter-box"/>
+                                    <!-- Shaded Tenths Wheel Background -->
+                                    <rect x="120" y="0" width="40" height="45" class="shaded-wheel"/>
+                                    
+                                    <!-- Internal Box Dividers -->
+                                    <line x1="40" y1="0" x2="40" y2="45" class="inner-divider"/>
+                                    <line x1="80" y1="0" x2="80" y2="45" class="inner-divider"/>
+                                    <line x1="120" y1="0" x2="120" y2="45" class="tenth-divider"/>
+                                    
+                                    <!-- Digits -->
+                                    <text x="20" y="32" class="text-digit">0</text>
+                                    <text x="60" y="32" class="text-digit">9</text>
+                                    <text x="100" y="32" class="text-digit">9</text>
+                                    <text x="140" y="32" class="text-digit">6</text>
+                                    
+                                    <!-- Label -->
+                                    <text x="200" y="30" class="text-label">at the dentist.</text>
+                                </g>
+                            </svg>
+
+                            <p class="indent-p">(a) The man passed a cinema between home and the dentist. At the cinema, the man had travelled half the distance between home and the dentist. Calculate the distance travelled between the cinema and the library.</p>
+                            <p class="indent-p">(b) The given readings are accurate to the nearest tenth of a kilometre. Calculate the upper bound for the distance travelled between home and the dentist.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 79 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>79.</span> (a) Express, correct to <strong>two</strong> significant figures,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) 386.71,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) 0.02049.</p>
+                            <p class="indent-p">(b) <strong>Hence</strong> estimate, correct to one significant figure, the value of 386.71 &times; 0.02049.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 80 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>80.</span> (a) A pile of 1500 sheets of paper is 6 cm high. Find the thickness of one sheet of paper</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) in centimetres, giving your answer as a decimal,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) in metres, giving your answer in standard form.</p>
+                            <p class="indent-p">(b) Each sheet of paper is 30 cm long and 20 cm wide. Find the total surface area of both sides of one sheet of paper, giving your answer in square metres.</p>
+                            
+                            <!-- Isometric Paper Stack SVG Diagram -->
+                            <svg xmlns="http://w3.org" viewBox="0 0 320 180" width="100%" height="auto">
+                                <style>
+                                    .bg-transparent { fill: none; }
+                                    .line-white { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+                                    .line-dashed { stroke: #ffffff; stroke-width: 1; stroke-dasharray: 4,4; fill: none; }
+                                    .line-texture { stroke: #ffffff; stroke-width: 0.5; fill: none; opacity: 0.5; }
+                                    .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 14px; fill: #ffffff; text-anchor: middle; font-style: italic; }
+                                    .arrow-head { fill: #ffffff; }
+                                </style>
+                                
+                                <!-- Transparent Background -->
+                                <rect width="320" height="180" class="bg-transparent"/>
+                                
+                                <!-- Isometric Paper Stack Structure -->
+                                <g transform="translate(45, 15)">
+                                    <!-- Top sheet surface perspective -->
+                                    <polygon points="50,45 150,45 195,15 95,15" class="line-white"/>
+                                    
+                                    <!-- Front side block surface -->
+                                    <polygon points="50,45 150,45 150,115 50,115" class="line-white"/>
+                                    
+                                    <!-- Right side block surface -->
+                                    <polygon points="150,45 195,15 195,85 150,115" class="line-white"/>
+                                    
+                                    <!-- Stack Layer / Page Lines Texture -->
+                                    <line x1="50" y1="55" x2="150" y2="55" class="line-texture"/>
+                                    <line x1="150" y1="55" x2="195" y2="25" class="line-texture"/>
+                                    
+                                    <line x1="50" y1="65" x2="150" y2="65" class="line-texture"/>
+                                    <line x1="150" y1="65" x2="195" y2="35" class="line-texture"/>
+                                    
+                                    <line x1="50" y1="75" x2="150" y2="75" class="line-texture"/>
+                                    <line x1="150" y1="75" x2="195" y2="45" class="line-texture"/>
+                                    
+                                    <line x1="50" y1="85" x2="150" y2="85" class="line-texture"/>
+                                    <line x1="150" y1="85" x2="195" y2="55" class="line-texture"/>
+                                    
+                                    <line x1="50" y1="95" x2="150" y2="95" class="line-texture"/>
+                                    <line x1="150" y1="95" x2="195" y2="65" class="line-texture"/>
+                                    
+                                    <line x1="50" y1="105" x2="150" y2="105" class="line-texture"/>
+                                    <line x1="150" y1="105" x2="195" y2="75" class="line-texture"/>
+
+                                    <!-- Height Measurement Dimension Line (6 cm) -->
+                                    <line x1="20" y1="45" x2="20" y2="115" class="line-white"/>
+                                    
+                                    <!-- Dimension Arrowheads -->
+                                    <polygon points="20,45 16,55 24,55" class="arrow-head"/>
+                                    <polygon points="20,115 16,105 24,105" class="arrow-head"/>
+                                    
+                                    <!-- Horizontal reference extension dashes -->
+                                    <line x1="45" y1="45" x2="15" y2="45" class="line-dashed"/>
+                                    <line x1="45" y1="115" x2="15" y2="115" class="line-dashed"/>
+                                    
+                                    <!-- Measurement text indicator centered above the arrow line -->
+                                    <text x="20" y="35" class="text-label" style="font-style: normal;">6 cm</text>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Question 81 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>81.</span> (a) Express, correct to <strong>two</strong> significant figures,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) 288.54,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) 0.03026.</p>
+                            <p class="indent-p">(b) <strong>Hence</strong> estimate, correct to <strong>one</strong> significant figure, the value of 288.54 &times; 0.03026.</p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../js/contentScript.js"></script>
+
+</body>
+</html>
