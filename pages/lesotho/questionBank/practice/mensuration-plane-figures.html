@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Question Bank | Unit 2A - Mensuration - Rectangle, Square, Triangle, Parallelogram, Trapezium and Circle, Arc Length and Area of Sector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/contentStyles.css" />
+    <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../assets/css/question-bank.css" />
+
+    
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        <a href="../../../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="../../conversions.html">Study Guide</a>
+            <a href="../../tracker.html">Revision Tracker</a>
+            <a href="../../tracker.html#past-papers">Past Papers</a>
+            <a href="../../questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="#">Lesotho</a><span class="bc-sep">›</span>
+            <a href="../../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../question-bank.html">Question Bank</a><span class="bc-sep">›</span>
+            <a href="practice-questions.html">Practice Questions</a><span class="bc-sep">›</span>
+            <span>Unit 2A </span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="page-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar" id="leftSidebar">
+            <div class="filter-wrap">
+                <span class="filter-icon">🔍</span>
+                <input class="filter-input" type="text" placeholder="Filter topics..." />
+            </div>
+
+            <ul class="sidebar-nav" id="topicNav">
+                <li><a href="number-operations.html">Unit 1A - Arithmetic - Number Operations, Squares and Square Roots</a></li>
+                <li><a href="financial-transactions.html">Unit 1B - Arithmetic - Arithmetic Problems, Simple Financial Transactions, Profit and Loss, Simple Interest</a></li>
+                <li><a href="ratio-proportions-percentages.html">Unit 1C - Arithmetic - Ratio, Proportions and Percentages, Scales and Simple Map Problems</a></li>
+                <li><a href="estimation-and-significant-figures.html">Unit 1D - Arithmetic - Estimation, Significant Figures, Decimal Places and Standard Form</a></li>
+                <li class="active"><a href="mensuration-plane-figures.html">Unit 2A - Mensuration - Rectangle, Square, Triangle, Parallelogram, Trapezium and Circle, Arc Length and Area of Sector</a></li>
+                <li><a href="mensuration-solid-figures.html">Unit 2B - Mensuration - Solid Figures i.e. Cuboid, Cylinder, Sphere, Pyramid, Cone and Prism</a></li>
+                <li><a href="algebraic-formulae-and-symbols.html">Unit 3A - Algebra and Graphs - Evaluation and Change of Subjects of a Formula, Algebraic Symbols</a></li>
+                <li><a href="indices.html">Unit 3B - Algebra and Graphs - Indices</a></li>
+                <li><a href="expansion-and-factorisation.html">Unit 3C - Algebra and Graphs - Expansion and Factorisation of Algebraic Expressions</a></li>
+                <li><a href="algebraic-fractions-and-equations.html">Unit 3D - Algebra and Graphs - Simple Algebraic Fractions, Simple Equations and Identities, Solutions of Simultaneous Linear Equations and Quadratic Equations</a></li>
+                <li><a href="algebra-graphs.html">Unit 3E - Algebra and Graphs - Graphs</a></li>
+                <li><a href="variations.html">Unit 3F - Algebra and Graphs - Direct, Inverse and Joint Variations</a></li>
+                <li><a href="straight-line-graphs.html">Unit 3G - Algebra and Graphs - Gradients and Equations of Straight Lines</a></li>
+                <li><a href="inequalities-and-linear-programming.html">Unit 3H - Algebra and Graphs - Inequality and Linear Programming</a></li>
+                <li><a href="distance-speed-time-graphs.html">Unit 3I - Algebra and Graphs - Distance-Time Graphs and Speed-Time Graphs</a></li>
+                <li><a href="angle-properties.html">Unit 4A - Geometry - Properties of Angles; Angle Properties of Polygons</a></li>
+                <li><a href="similarity-congruency-symmetry.html">Unit 4B - Geometry - Similarity, Congruency and Symmetry</a></li>
+                <li><a href="circle-theorems.html">Unit 4C - Geometry - Circle Theorems</a></li>
+                <li><a href="loci-and-construction.html">Unit 4D - Geometry - Loci and Simple Construction</a></li>
+                <li><a href="trigonometrical-ratios.html">Unit 5A - Trigonometry - Trigonometrical Ratios, Solutions of Triangles</a></li>
+                <li><a href="bearing-problems.html">Unit 5B - Trigonometry - Bearing Problems, Angle of Elevation and Depression, 3 Dimensional Problems</a></li>
+                <li><a href="statistics-charts-and-mean.html">Unit 6A - Statistics - Bar Charts, Pie Charts, Frequency Polygons, Histograms, Mean, Median and Mode</a></li>
+                <li><a href="cumulative-frequency.html">Unit 6B - Statistics - Cumulative Frequency</a></li>
+                <li><a href="vectors.html">Unit 7 - Vectors</a></li>
+                <li><a href="problem-solving.html">Unit 8 - Problem Solving</a></li>
+                <li><a href="probability.html"> Unit 9 - Probability</a></li>
+                <li><a href="transformations.html">Unit 10A - Transformations</a></li>
+                <li><a href="matrices-in-transformation.html">Unit 10B - Use of Matrices in Transformation</a></li>
+                <li><a href="matrices.html">Unit 11 - Matrices</a></li>
+                <li><a href="sets-and-venn-diagrams.html">Unit 12 - Sets and Venn Diagrams</a></li>
+                <li><a href="functions.html">Unit 13 - Functions</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="mainContent">
+            <div class="question-paper">
+
+                <!-- ============================================================ -->
+                <!-- Unit 2A - Mensuration - Rectangle, Square, Triangle, Parallelogram, Trapezium and Circle, Arc Length and Area of Sector -->
+                <!-- ============================================================ -->
+                <section class="topic-section" id="unit2A">
+                    <h2>Unit 2A - Mensuration - Rectangle, Square, Triangle, Parallelogram, Trapezium and Circle, Arc Length and Area of Sector</h2>
+
+                    <!-- Question 1 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>1.</span> A circular pond of radius 3 m is surrounded by a path 1 m wide. Find, in terms of &pi;, in their simplest form, expressions for</p>
+                            <p class="indent-p">(a) the circumference of the circle forming the outer edge of the path,</p>
+                            <p class="indent-p">(b) the area of the path.</p>
+
+                            <!-- Circular Pond SVG Diagram -->
+                            <div class="diagram-visual">
+                                <svg xmlns="http://w3.org" viewBox="0 0 240 240" width="240" height="240">
+                                    <style>
+                                        .bg-trans { fill: none; }
+                                        .circle-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .indicator-line { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 18px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    <!-- Transparent Background -->
+                                    <rect width="240" height="240" class="bg-trans"/>
+                                    
+                                    <!-- Concentric Circles for Pond and Path -->
+                                    <circle cx="120" cy="120" r="50" class="circle-line"/>
+                                    <circle cx="120" cy="120" r="82" class="circle-line"/>
+                                    
+                                    <!-- Radius Dimension Line (3 m) inside the pond -->
+                                    <line x1="120" y1="112" x2="170" y2="112" class="indicator-line"/>
+                                    
+                                    <!-- Path Width Dimension Line (1 m) between circles -->
+                                    <line x1="120" y1="38" x2="120" y2="70" class="indicator-line"/>
+                                    
+                                    <!-- Labels matching the authentic typography layout -->
+                                    <text x="115" y="100" class="text-label">pond</text>
+                                    <text x="140" y="132" class="text-label">3 m</text>
+                                    <text x="138" y="60" class="text-label">1 m</text>
+                                    <text x="115" y="190" class="text-label">path</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>2.</span> The circumference of a circle, centre <em>O</em>, is 99 cm.</p>
+                            <p class="indent-p">(a) Taking &pi; to be 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>22</mn>
+                                        <mn>7</mn>
+                                    </mfrac>
+                                </math>, calculate the diameter of the circle.
+                            </p>
+                            <p class="indent-p">(b) Given that <em>A</em> and <em>B</em> are points on the circumference of the circle such that <em>A&Ocirc;B</em> = 80&deg;, calculate the length of the minor arc <em>AB</em>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>3.</span> A quadrant of a circle of radius 7 cm is removed from a rectangle 15 cm long and 10 cm wide, as shown in the diagram.</p>
+                            <p class="indent-p">(a) Taking &pi; to be 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mfrac>
+                                        <mn>22</mn>
+                                        <mn>7</mn>
+                                    </mfrac>
+                                </math>, calculate
+                            </p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the length of the arc <em>PQ</em>,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the area of the shaded portion <em>APQCB</em>.</p>
+                            <p class="indent-p">(b) Given that the shape <em>APQCB</em>, shaded in the diagram is cut from a sheet of metal 3 mm thick, calculate, in cm<sup>3</sup>, the volume of metal used.</p>
+
+                            <!-- Rectangle with Quadrant Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 280 180" width="100%" height="auto" style="max-width: 280px; display: block; margin: 0 auto;">
+                                    <style>
+                                        .bg-trans { fill: none; }
+                                        .outline { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .shaded { fill: #ffffff; fill-opacity: 0.25; stroke: #ffffff; stroke-width: 1.5; }
+                                        .dashed { stroke: #ffffff; stroke-width: 1; stroke-dasharray: 4,4; fill: none; }
+                                        .txt { font-family: sans-serif; font-size: 12px; fill: #ffffff; }
+                                        .txt-c { font-family: sans-serif; font-size: 12px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    <rect width="280" height="180" class="bg-trans"/>
+                                    
+                                    <!-- Main Shaded Shape Boundary -->
+                                    <path d="M 50,130 L 230,130 L 230,30 L 130,30 A 80,80 0 0,1 50,110 Z" class="shaded"/>
+                                    
+                                    <!-- Removed Corner Construction Lines -->
+                                    <line x1="50" y1="110" x2="50" y2="30" class="dashed"/>
+                                    <line x1="130" y1="30" x2="50" y2="30" class="dashed"/>
+                                    
+                                    <!-- Labels -->
+                                    <text x="35" y="35" class="txt">O</text>
+                                    <text x="125" y="25" class="txt">Q</text>
+                                    <text x="235" y="25" class="txt">C</text>
+                                    <text x="235" y="135" class="txt">B</text>
+                                    <text x="35" y="135" class="txt">A</text>
+                                    <text x="35" y="112" class="txt">P</text>
+                                    
+                                    <!-- Dimension Labels -->
+                                    <text x="85" y="25" class="txt-c">7</text>
+                                    <text x="38" y="75" class="txt-c">7</text>
+                                    <text x="140" y="145" class="txt-c">15</text>
+                                    <text x="248" y="85" class="txt-c">10</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>4.</span> A man is paving the rectangular area <em>ABCD</em> with 24 concrete slabs each of which is 50 cm square. By the end of the first day he has completed the shaded portion.</p>
+                            <p class="indent-p">(a) Expressing your answers as fractions in their lowest terms, calculate the ratio of</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the shaded area to the area of <em>ABCD</em>,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the perimeter of the shaded area to the perimeter of the area <em>ABCD</em>.</p>
+                            <p class="indent-p">(b) The volume of each slab is 0.02 m<sup>3</sup>. Calculate the thickness of a slab, giving your answer in cm.</p>
+                            <p class="indent-p">(c) The mass of each slab is 30 kg. Calculate the density of the concrete, expressing your answer in g/cm<sup>3</sup>.</p>
+                            <p class="indent-p">(d) The man buys the 24 slabs from a builder at a total cost of &pound;55.44. Given that the builder makes a profit of 32% when selling these 24 slabs. Calculate the price paid by the builder for each slab.</p>
+
+                            <!-- Grid Paving Slab Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 250 180" width="250" height="180">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .shaded-area { fill: #ffffff; fill-opacity: 0.25; }
+                                        .text-vertex { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; font-style: italic; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background -->
+                                    <rect width="250" height="180" class="bg-transparent"/>
+                                    
+                                    <!-- Shaded Composite Region Fill -->
+                                    <path d="M 35,145 
+                                            L 35,115 
+                                            L 65,115 
+                                            L 65,55 
+                                            L 95,55 
+                                            L 95,25 
+                                            L 155,25 
+                                            L 155,55 
+                                            L 185,55 
+                                            L 185,145 
+                                            Z" class="shaded-area"/>
+                                            
+                                    <!-- Inner Solid Grid Line Texturing (Separating the squares inside the shaded area) -->
+                                    <g class="solid-line">
+                                        <!-- Horizontal segments inside shaded zone -->
+                                        <line x1="65" y1="55" x2="155" y2="55"/>
+                                        <line x1="65" y1="85" x2="185" y2="85"/>
+                                        <line x1="65" y1="115" x2="185" y2="115"/>
+                                        
+                                        <!-- Vertical segments inside shaded zone -->
+                                        <line x1="65" y1="55" x2="65" y2="145"/>
+                                        <line x1="95" y1="25" x2="95" y2="145"/>
+                                        <line x1="125" y1="25" x2="125" y2="145"/>
+                                        <line x1="155" y1="25" x2="155" y2="145"/>
+                                        <line x1="185" y1="55" x2="185" y2="145"/>
+                                    </g>
+
+                                    <!-- Dashed Grid Lines (Uncompleted/Empty portions of the main ABCD boundary) -->
+                                    <g class="dashed-line">
+                                        <!-- Horizontal uncompleted segments -->
+                                        <line x1="35" y1="25" x2="95" y2="25"/>
+                                        <line x1="155" y1="25" x2="215" y2="25"/>
+                                        <line x1="35" y1="55" x2="65" y2="55"/>
+                                        <line x1="185" y1="55" x2="215" y2="55"/>
+                                        <line x1="35" y1="85" x2="65" y2="85"/>
+                                        <line x1="185" y1="85" x2="215" y2="85"/>
+                                        <line x1="35" y1="115" x2="65" y2="115"/>
+                                        <line x1="185" y1="115" x2="215" y2="115"/>
+                                        <line x1="185" y1="145" x2="215" y2="145"/>
+                                        
+                                        <!-- Vertical uncompleted segments -->
+                                        <line x1="35" y1="25" x2="35" y2="115"/>
+                                        <line x1="65" y1="25" x2="65" y2="55"/>
+                                        <line x1="185" y1="25" x2="185" y2="55"/>
+                                        <line x1="215" y1="25" x2="215" y2="145"/>
+                                    </g>
+
+                                    <!-- Perimeter Outline of Shaded Region & Solid Base Baseboard -->
+                                    <path d="M 35,145 L 35,115 L 65,115 L 65,55 L 95,55 L 95,25 L 155,25 L 155,55 L 185,55 L 185,145 L 35,145" class="solid-line"/>
+
+                                    <!-- Vertex Typography Labels -->
+                                    <text x="15" y="30" class="text-vertex">A</text>
+                                    <text x="220" y="30" class="text-vertex">B</text>
+                                    <text x="222" y="152" class="text-vertex">C</text>
+                                    <text x="12" y="152" class="text-vertex">D</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>5.</span> In the diagram, <em>O</em> is the centre of a circle of radius 3 cm and <em>A&Ocirc;B</em> = 70&deg;. Taking &pi; to be <math xmlns="http://w3.org" display="inline"><mfrac><mn>22</mn><mn>7</mn></mfrac></math>, calculate</p>
+                            <p class="indent-p">(a) the circumference of the circle,</p>
+                            <p class="indent-p">(b) the area of the shaded sector <em>AOB</em>.</p>
+
+                            <!-- Sector AOB Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 240 240" width="240" height="240">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .circle-outline { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .sector-shading { fill: #ffffff; fill-opacity: 0.25; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: round; }
+                                        .arc-measure { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                        .text-main { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; font-style: italic; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 19px; fill: #ffffff; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background -->
+                                    <rect width="240" height="240" class="bg-transparent"/>
+                                    
+                                    <!-- Main Outer Circle Frame -->
+                                    <circle cx="110" cy="120" r="85" class="circle-outline"/>
+                                    
+                                    <!-- Shaded Sector AOB Boundary -->
+                                    <!-- Center (110,120), OA at -25 degrees, OB at +45 degrees (Separation = 70 deg) -->
+                                    <path d="M 110,120 L 187,84 A 85,85 0 0,1 170,180 Z" class="sector-shading"/>
+                                    
+                                    <!-- Inner Angle Arc indicator -->
+                                    <path d="M 135,111 A 27,27 0 0,1 129,139" class="arc-measure"/>
+                                    
+                                    <!-- Labels matching the authentic textbook positions and typography style -->
+                                    <text x="85" y="125" class="text-main">O</text>
+                                    <text x="195" y="76" class="text-main">A</text>
+                                    <text x="178" y="200" class="text-main">B</text>
+                                    
+                                    <!-- Numeric Value Markers -->
+                                    <text x="138" y="130" class="text-numeric">70&deg;</text>
+                                    <circle cx="143" cy="119" r="0.5" fill="#ffffff"/> <!-- Degree small dot alignment correction if needed -->
+                                    <text x="135" y="78" class="text-numeric">3</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>6.</span> Lawn covers one third of the area of a garden and two fifths of the area is used for growing flowers. Vegetables are grown on the remainder. Find the area of the vegetable plot, given that the area of the whole garden is 420 m<sup>2</sup>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>7.</span> <em>OABC</em> is quadrant of a circle of radius 10 cm. Calculate</p>
+                            <p class="indent-p">(a) the area of the triangle <em>OAC</em>,</p>
+                            <p class="indent-p">(b) the shaded area, taking &pi; to be 3.142.</p>
+
+                            <!-- Quadrant Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 240 200" width="240" height="200">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .shaded-segment { fill: #ffffff; fill-opacity: 0.25; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: round; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background -->
+                                    <rect width="240" height="200" class="bg-transparent"/>
+                                    
+                                    <!-- Shaded Segment Region (Between Chord AC and Arc ABC) -->
+                                    <path d="M 50,40 A 100,100 0 0,1 150,140 L 50,40 Z" class="shaded-segment"/>
+                                    
+                                    <!-- Radii lines forming the quadrant corner at O -->
+                                    <line x1="50" y1="140" x2="50" y2="40" class="solid-line"/>
+                                    <line x1="50" y1="140" x2="150" y2="140" class="solid-line"/>
+                                    
+                                    <!-- Alphabetical Vertex/Curve Labels matching the textbook -->
+                                    <text x="30" y="148" class="text-label">O</text>
+                                    <text x="42" y="32" class="text-label">A</text>
+                                    <text x="122" y="60" class="text-label">B</text>
+                                    <text x="158" y="148" class="text-label">C</text>
+                                    
+                                    <!-- Radius Length Indicator underneath the base line -->
+                                    <text x="100" y="168" class="text-numeric">10</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>8.</span> <em>ABCD</em> is a rectangle and <em>O</em> is the mid-point of <em>AD</em>. A semicircle of radius 7 cm is drawn on <em>AD</em> as diameter. The semicircle cuts the side <em>BC</em> at <em>P</em> and <em>R</em> such that <em>P&Ocirc;A</em> = 30&deg;. Calculate</p>
+                            <p class="indent-p">(a) <em>AD</em>,</p>
+                            <p class="indent-p">(b) <em>AB</em>,</p>
+                            <p class="indent-p">(c) <em>BP</em>.</p>
+                            <p>Taking &pi; to be <math xmlns="http://w3.org" display="inline"><mfrac><mn>22</mn><mn>7</mn></mfrac></math>, calculate</p>
+                            <p class="indent-p">(d) the length of the arc <em>PQR</em>,</p>
+                            <p class="indent-p">(e) the area of the shaded segment <em>PQR</em>.</p>
+
+                            <!-- Semicircle Intersecting Rectangle SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 320 200" width="320" height="200">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; }
+                                        .shaded-segment { fill: #ffffff; fill-opacity: 0.25; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: round; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; font-style: italic; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 18px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background -->
+                                    <rect width="320" height="200" class="bg-transparent"/>
+                                    
+                                    <!-- Shaded Circular Segment PQR -->
+                                    <!-- Semi-circle diameter on base line AD, arc spans from 40,140 to 280,140 with radius 120 -->
+                                    <path d="M 70,80 A 120,120 0 0,1 250,80 Z" class="shaded-segment"/>
+                                    
+                                    <!-- Semicircle lower arc boundaries connecting base line diameter endpoints to P and R -->
+                                    <path d="M 40,140 A 120,120 0 0,1 70,80" class="solid-line"/>
+                                    <path d="M 250,80 A 120,120 0 0,1 280,140" class="solid-line"/>
+                                    
+                                    <!-- Rectangle ABCD Outer Frame Box Upper Bounds -->
+                                    <path d="M 40,140 L 40,80 L 280,80 L 280,140" class="solid-line"/>
+                                    <!-- Rectangle Horizontal baseline AD -->
+                                    <line x1="40" y1="140" x2="280" y2="140" class="solid-line"/>
+                                    
+                                    <!-- Radii lines from Centre O to points P and R on the semi-circle circumference -->
+                                    <line x1="160" y1="140" x2="70" y2="80" class="solid-line"/>
+                                    <line x1="160" y1="140" x2="250" y2="80" class="solid-line"/>
+                                    
+                                    <!-- Perpendicular line PX from curve point P down to baseline axis X -->
+                                    <line x1="70" y1="80" x2="70" y2="140" class="dashed-line"/>
+                                    
+                                    <!-- Right Angle Symbol Box at coordinate position X -->
+                                    <path d="M 70,130 L 80,130 L 80,140" class="solid-line" style="stroke-width: 1;"/>
+                                    
+                                    <!-- Dynamic Arc Track for 30 Degree Inner Angle Marker -->
+                                    <path d="M 125,140 A 35,35 0 0,0 134,122" class="solid-line" style="stroke-width: 1;"/>
+                                    
+                                    <!-- Labels matching the authentic text arrangement and layout -->
+                                    <text x="22" y="145" class="text-label">A</text>
+                                    <text x="22" y="75" class="text-label">B</text>
+                                    <text x="288" y="75" class="text-label">C</text>
+                                    <text x="288" y="145" class="text-label">D</text>
+                                    <text x="155" y="162" class="text-label">O</text>
+                                    <text x="65" y="162" class="text-label">X</text>
+                                    <text x="50" y="72" class="text-label">P</text>
+                                    <text x="153" y="32" class="text-label">Q</text>
+                                    <text x="255" y="72" class="text-label">R</text>
+                                    
+                                    <!-- Numeric Value Markers -->
+                                    <text x="106" y="125" class="text-numeric">30&deg;</text>
+                                    <text x="220" y="160" class="text-numeric">7</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>9.</span> (a) The area of the shaded sector <em>AOB</em> is <math xmlns="http://w3.org" display="inline"><mfrac><mn>2</mn><mn>24</mn></mfrac></math> of the area of the whole circle. Calculate <em>A&Ocirc;B</em>.</p>
+                            <p class="indent-p">(b) Given that the area of the circle is 154 cm<sup>2</sup>, calculate the radius of the circle. [Take &pi; to be <math xmlns="http://w3.org" display="inline"><mfrac><mn>22</mn><mn>7</mn></mfrac></math>.]</p>
+
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 240 240" width="240" height="240">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .circle-outline { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .sector-shading { fill: #ffffff; fill-opacity: 0.25; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: round; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background -->
+                                    <rect width="240" height="240" class="bg-transparent"/>
+                                    
+                                    <!-- Full Circle Outline Frame -->
+                                    <circle cx="120" cy="115" r="85" class="circle-outline"/>
+                                    
+                                    <!-- Shaded Sector AOB (Pointing downwards matching the image) -->
+                                    <!-- Center (120, 115), Radius 85, Arc from ~125 deg to ~55 deg -->
+                                    <path d="M 120,115 L 65,180 A 85,85 0 0,0 171,185 Z" class="sector-shading"/>
+                                    
+                                    <!-- Center and Radius perimeter line definitions -->
+                                    <line x1="120" y1="115" x2="65" y2="180" class="circle-outline" style="stroke-width: 1.5;"/>
+                                    <line x1="120" y1="115" x2="171" y2="185" class="circle-outline" style="stroke-width: 1.5;"/>
+                                    
+                                    <!-- Typography Labels positioned exactly to mirror the user image -->
+                                    <text x="112" y="100" class="text-label">O</text>
+                                    <text x="42" y="200" class="text-label">A</text>
+                                    <text x="178" y="210" class="text-label">B</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>10.</span> The diagonals of a rhombus are of lengths 14 cm and 6 cm. Calculate the area of the rhombus.</p>
+
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 260 180" width="260" height="180">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 18px; fill: #ffffff; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background -->
+                                    <rect width="260" height="180" class="bg-transparent"/>
+                                    
+                                    <!-- Rhombus Outer Boundary Box (ABCD) -->
+                                    <polygon points="30,135 105,45 235,35 160,125" class="solid-line"/>
+                                    
+                                    <!-- Interior Diagonals AC and BD intersecting at O -->
+                                    <line x1="30" y1="135" x2="235" y2="35" class="solid-line"/>
+                                    <line x1="105" y1="45" x2="160" y2="125" class="solid-line"/>
+                                    
+                                    <!-- Alphabetical Vertex and Intersection Labels matching the textbook positioning -->
+                                    <text x="12" y="142" class="text-label">A</text>
+                                    <text x="95" y="32" class="text-label">B</text>
+                                    <text x="242" y="38" class="text-label">C</text>
+                                    <text x="165" y="145" class="text-label">D</text>
+                                    <text x="120" y="112" class="text-label">O</text>
+                                    
+                                    <!-- Tilted Dimension Value Markers placed inside the quadrants -->
+                                    <text x="122" y="80" class="text-numeric" transform="rotate(-23, 92, 80)">14 cm</text>
+                                    <text x="162" y="98" class="text-numeric" transform="rotate(-23, 138, 98)">6 cm</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 11 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>11.</span> (a) A rectangular courtyard 17 m long by 9<math xmlns="http://w3.org" display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> m wide is to be covered by square paving slabs each of side <math xmlns="http://w3.org" display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> m. Calculate the number of paving slabs which will be required.</p>
+                            <p class="indent-p">(b) A different area to be paved needs 390 slabs. Given that one-third of these cost $1.20 each and the remainder cost $1.40 each, calculate the total cost of the slabs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 12 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>12.</span> The diagram shows a sector <em>OAB</em> of a circle, centre <em>O</em>, radius 7 cm, in which <em>A&Ocirc;B</em> = 30&deg;. Taking &pi; to be <math xmlns="http://w3.org" display="inline"><mfrac><mn>22</mn><mn>7</mn></mfrac></math>, calculate</p>
+                            <p class="indent-p">(a) the perimeter of the sector,</p>
+                            <p class="indent-p">(b) the area of the sector.</p>
+
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 250 180" width="250" height="180">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background -->
+                                    <rect width="250" height="180" class="bg-transparent"/>
+                                    
+                                    <!-- Sector Outer Boundary Line Paths -->
+                                    <!-- Center O at (40, 140), Vertex B at (210, 140), Vertex A at (187, 54) -->
+                                    <!-- Angle is 30 degrees, radius length is 170 pixels -->
+                                    <line x1="40" y1="140" x2="210" y2="140" class="solid-line"/>
+                                    <line x1="40" y1="140" x2="187" y2="54" class="solid-line"/>
+                                    <path d="M 210,140 A 170,170 0 0,0 187,54" class="solid-line"/>
+                                    
+                                    <!-- Internal Sector Arc Angle Indicator -->
+                                    <path d="M 80,140 A 40,40 0 0,0 75,120" class="solid-line" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Alphabetical Vertex Markers exactly matching textbook positions -->
+                                    <text x="18" y="145" class="text-label">O</text>
+                                    <text x="182" y="38" class="text-label">A</text>
+                                    <text x="215" y="152" class="text-label">B</text>
+                                    
+                                    <!-- Dimension values -->
+                                    <text x="95" y="135" class="text-numeric">30&deg;</text>
+                                    <text x="125" y="160" class="text-numeric">7</text>
+                                    <text x="106" y="85" class="text-numeric">7</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 13 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>13.</span> (a) A brand of paint contains 0.021 grams of colouring per litre. Calculate the mass of colouring in 400 litres of the paint.</p>
+                            <p class="indent-p">(b) A rectangular flower bed has an area of 7.6 m<sup>2</sup>. Given that its width is 0.8 m, calculate its length.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 14 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p>
+                                <span>14.</span> The sides of a rectangle are given as <em>x</em> cm and <em>y</em> cm, where 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mn>17.5</mn>
+                                    <mo>&le;</mo>
+                                    <mi>x</mi>
+                                    <mo>&le;</mo>
+                                    <mn>18.5</mn>
+                                </math> 
+                                and 
+                                <math xmlns="http://w3.org" display="inline">
+                                    <mn>11</mn>
+                                    <mo>&le;</mo>
+                                    <mi>y</mi>
+                                    <mo>&le;</mo>
+                                    <mn>12</mn>
+                                </math>.
+                            </p>
+                            <p>Calculate</p>
+                            <p class="indent-p">(a) the smallest possible value of the perimeter of the rectangle,</p>
+                            <p class="indent-p">(b) the largest possible value of the area of the rectangle.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 15 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>15.</span> <em>ABCD</em> is a parallelogram in which <math xmlns="http://w3.org" display="inline"><mover><mi>A</mi><mo>^</mo></mover></math> is obtuse and <em>AB</em> &gt; <em>AD</em>. Given that <em>AB</em> = 9 cm and that the area of the parallelogram = 30.6 cm<sup>2</sup>, calculate the length of the perpendicular from <em>A</em> to <em>DC</em>.</p>
+                            
+                            <!-- Parallelogram SVG Diagram -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 300 150" width="300" height="150">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background -->
+                                    <rect width="300" height="150" class="bg-transparent"/>
+                                    
+                                    <!-- Parallelogram Outer Boundary Wireframe -->
+                                    <!-- Vertices: D(20,40), C(190,40), B(280,115), A(110,115) -->
+                                    <polygon points="20,40 190,40 280,115 110,115" class="solid-line"/>
+                                    
+                                    <!-- Perpendicular Height Line from A(110,115) up to P(110,40) -->
+                                    <line x1="110" y1="115" x2="110" y2="40" class="dashed-line"/>
+                                    
+                                    <!-- Right Angle Indicator Box at P (hanging down under the line DC) -->
+                                    <path d="M 110,50 L 120,50 L 120,40" class="solid-line" style="stroke-width: 1;"/>
+                                    
+                                    <!-- Properly Marked Obtuse Angle Arc Indicator at Vertex A spanning from side AD to side AB -->
+                                    <path d="M 83.1,92.6 A 35,35 0 0,1 145,115" class="solid-line" style="stroke-width: 1;"/>
+                                    
+                                    <!-- Alphabetical Labels matching textbook coordinates precisely -->
+                                    <text x="5" y="45" class="text-label">D</text>
+                                    <text x="102" y="32" class="text-label">P</text>
+                                    <text x="195" y="35" class="text-label">C</text>
+                                    <text x="100" y="138" class="text-label">A</text>
+                                    <text x="285" y="122" class="text-label">B</text>
+                                    
+                                    <!-- Distance Value Label underneath the bottom edge AB -->
+                                    <text x="195" y="142" class="text-numeric">9 cm</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 16 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>16.</span> The diagram shows the plan of a sports ground. The shaded part is made up of a rectangular area 120 m by 80 m and two semi-circular areas of radius 40 m. The shaded area is surrounded by a running track 6 m wide.</p>
+                            <p class="indent-p">(a) Taking &pi; to be 3.142, calculate</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the total shaded area,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the outer perimeter of the running track.</p>
+                            <p class="indent-p">(b) <em>S</em>, <em>M</em> and <em>F</em> are three points on the inner perimeter of the track, as shown in the diagram.</p>
+                            <p>An athlete ran from <em>S</em> to <em>F</em> via <em>M</em>, along the inner perimeter of the track, at a speed of 5.6 m/s. Starting at the same time as the athlete, a man walked directly from <em>S</em> to <em>F</em>. Given that they both arrived at <em>F</em> at the same time, calculate the speed, in m/s at which the man walked.</p>
+                            
+                            <!-- Sports Ground Shaded Track SVG Diagram -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 380 200" width="380" height="200">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .shaded-field { fill: #ffffff; fill-opacity: 0.25; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: round; }
+                                        .outer-track { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background -->
+                                    <rect width="380" height="200" class="bg-transparent"/>
+                                    
+                                    <!-- Inner Shaded Core Field Shape (Stadium Layout) -->
+                                    <!-- Left vertical line at X=90, Right vertical line at X=250. Width=160. Height=80 (from Y=60 to Y=140). Midpoint Y=100. -->
+                                    <path d="M 90,60 L 250,60 A 40,40 0 0,1 250,140 L 90,140 A 40,40 0 0,1 90,60 Z" class="shaded-field"/>
+                                    
+                                    <!-- Outer Running Track Boundary (Uniform offset of 14px for clear visual scaling) -->
+                                    <path d="M 90,46 L 250,46 A 54,54 0 0,1 250,154 L 90,154 A 54,54 0 0,1 90,46 Z" class="outer-track"/>
+                                    
+                                    <!-- Vertical Internal Dividing Lines (Both are solid in the source diagram) -->
+                                    <line x1="90" y1="60" x2="90" y2="140" class="solid-line"/>
+                                    <line x1="250" y1="60" x2="250" y2="140" class="solid-line"/>
+                                    
+                                    <!-- Dimension Indicator: 40 (Radius from the center of the right dividing line to the inner arc) -->
+                                    <line x1="250" y1="100" x2="284.6" y2="120" class="solid-line" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Dimension Indicator: 6 (Track width extension continuing from the radius to the outer track boundary) -->
+                                    <line x1="284.6" y1="120" x2="296.8" y2="127" class="solid-line" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Correctly Positioned Alphabetical Labels matching the textbook context exactly -->
+                                    <!-- M is on the leftmost apex vertex of the inner semicircle -->
+                                    <text x="38" y="107" class="text-label">M</text>
+                                    
+                                    <!-- S is at the top-right intersection corner of the rectangle and the right loop -->
+                                    <text x="250" y="38" class="text-label">S</text>
+                                    
+                                    <!-- F is at the bottom-right intersection corner of the rectangle and the right loop -->
+                                    <text x="252" y="162" class="text-label">F</text>
+                                    
+                                    <!-- Core Numerical Value Markers -->
+                                    <text x="170" y="78" class="text-numeric">120</text>
+                                    <text x="112" y="106" class="text-numeric">80</text>
+                                    <text x="272" y="96" class="text-numeric" style="font-size: 18px;">40</text>
+                                    <text x="306" y="125" class="text-numeric" style="font-size: 18px;">6</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 17 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>17.</span> A piece of card is cut to the shape shown in the diagram. The perimeter of the card consists of three semicircular arcs <em>AEB</em>, <em>BDO</em> and <em>OCA</em>. Given that <em>AO</em> = <em>OB</em> = 10 cm and taking &pi; to be 3.14, calculate</p>
+                            <p class="indent-p">(a) the length of the semicircular arc <em>ACO</em>,</p>
+                            <p class="indent-p">(b) the perimeter of the card,</p>
+                            <p class="indent-p">(c) the area of the card.</p>
+                            
+                            <!-- Three Semicircles Composite Card Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 320 280" width="320" height="280">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .arc-profile { stroke: #ffffff; stroke-width: 2; fill: none; stroke-linecap: round; }
+                                        .shaded-region { fill: #ffffff; fill-opacity: 0.25; stroke: none; }
+                                        .baseline { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+                                        .indicator-arrow { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+                                        .arrow-head { fill: #ffffff; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Canvas Background -->
+                                    <rect width="320" height="280" class="bg-transparent"/>
+                                    
+                                    <!-- Seamless Yin-Yang Styled Shaded Area (3 Connected Arcs) -->
+                                    <path d="M 60,150 
+                                            A 100,100 0 0,1 260,150 
+                                            A 50,50 0 0,1 160,150 
+                                            A 50,50 0 0,0 60,150 Z" class="shaded-region"/>
+                                            
+                                    <!-- Distinct Individual Arc Strokes for Perfect Rendering -->
+                                    <!-- Arc 1: Large Upper Semi-circle (AEB) -->
+                                    <path d="M 60,150 A 100,100 0 0,1 260,150" class="arc-profile"/>
+                                    
+                                    <!-- Arc 2: Inner Upper-Left Semi-circle (ACO) -->
+                                    <path d="M 60,150 A 50,50 0 0,1 160,150" class="arc-profile"/>
+                                    
+                                    <!-- Arc 3: Inner Lower-Right Semi-circle (BDO) -->
+                                    <path d="M 160,150 A 50,50 0 0,0 260,150" class="arc-profile"/>
+                                    
+                                    <!-- Horizontal Center Baseline Measurement Line -->
+                                    <line x1="60" y1="150" x2="260" y2="150" class="baseline"/>
+                                    
+                                    <!-- Center Point O Crossed-Tick Markers -->
+                                    <line x1="155" y1="142" x2="165" y2="158" class="baseline" style="stroke-width: 1.2;"/>
+                                    <line x1="155" y1="158" x2="165" y2="142" class="baseline" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Left Indicator Dimension Arrow pointing to A -->
+                                    <line x1="130" y1="150" x2="68" y2="150" class="indicator-arrow"/>
+                                    <polygon points="60,150 72,146 72,154" class="arrow-head"/>
+                                    
+                                    <!-- Right Indicator Dimension Arrow pointing to B -->
+                                    <line x1="160" y1="150" x2="252" y2="150" class="indicator-arrow"/>
+                                    <polygon points="260,150 248,146 248,154" class="arrow-head"/>
+                                    
+                                    <!-- Position Labels matched cleanly to the textbook layout -->
+                                    <text x="44" y="160" class="text-label">A</text>
+                                    <text x="150" y="200" class="text-label">O</text>
+                                    <text x="275" y="150" class="text-label">B</text>
+                                    <text x="95" y="125" class="text-label">C</text>
+                                    <text x="150" y="42" class="text-label">E</text>
+                                    <text x="220" y="222" class="text-label">D</text>
+                                    
+                                    <!-- Distance measurement numbers -->
+                                    <text x="100" y="152" class="text-numeric">10</text>
+                                    <text x="210" y="132" class="text-numeric">10</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 18 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>18.</span> In this question, take &pi; to be <math xmlns="http://w3.org" display="inline"><mfrac><mn>22</mn><mn>7</mn></mfrac></math>.</p>
+                            <p class="indent-p">(a) Find the area of a circle of radius 7 cm.</p>
+                            <p class="indent-p">(b) A solid circular cylinder of radius 7 cm and length 8 cm is made of metal alloy. Given that 1 cm<sup>3</sup> of the alloy has a mass of 5 g, find the mass, in grams, of the cylinder.</p>
+                            <p class="indent-p">(c) The alloy of this cylinder is used, without waste, to make a length of thin wire. Given that the wire is a circular cylinder of radius 0.007 cm, find its length in metres.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 19 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>19.</span> One end of a piece of string of length 1.6 m is fixed to a point <em>P</em>. A ball is attached to the other end and
+                                 its centre moves along a circular arc between <em>A</em> and <em>B</em>, the two extreme positions of its path.
+                                  <em>X</em> is the mid-point of the horizontal line joining <em>A</em> and <em>B</em>. The point <em>C</em> is the lowest 
+                                  position of the path of the centre of the ball. Given that, in the extreme positions <em>A</em> and <em>B</em>, the string makes 
+                                  an angle of 40&deg; with the vertical, calculate</p>
+                            <p class="indent-p">(a) <em>PX</em>,</p>
+                            <p class="indent-p">(b) the height of <em>C</em> above the ground,</p>
+                            <p class="indent-p">(c) the length of the arc <em>ACB</em>. [Take &pi; to be 3.142].</p>
+
+                            <!-- Pendulum String Arc Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 320 280" width="320" height="280">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 5,5; fill: none; }
+                                        .indicator-arrow { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+                                        .arrow-head { fill: #ffffff; }
+                                        .node-ball { fill: #ffffff; stroke: #ffffff; stroke-width: 1; }
+                                        .ground-hatch { stroke: #ffffff; stroke-width: 1; opacity: 0.7; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="320" height="280" class="bg-transparent"/>
+                                    
+                                    <!-- Slanted Shading Lines for Horizontal Ground -->
+                                    <g class="ground-hatch">
+                                        <line x1="30" y1="240" x2="20" y2="250" />
+                                        <line x1="50" y1="240" x2="40" y2="250" />
+                                        <line x1="70" y1="240" x2="60" y2="250" />
+                                        <line x1="90" y1="240" x2="80" y2="250" />
+                                        <line x1="110" y1="240" x2="100" y2="250" />
+                                        <line x1="130" y1="240" x2="120" y2="250" />
+                                        <line x1="150" y1="240" x2="140" y2="250" />
+                                        <line x1="170" y1="240" x2="160" y2="250" />
+                                        <line x1="190" y1="240" x2="180" y2="250" />
+                                        <line x1="210" y1="240" x2="200" y2="250" />
+                                        <line x1="230" y1="240" x2="220" y2="250" />
+                                        <line x1="250" y1="240" x2="240" y2="250" />
+                                        <line x1="270" y1="240" x2="260" y2="250" />
+                                        <line x1="290" y1="240" x2="280" y2="250" />
+                                    </g>
+                                    <!-- Solid Ground Baseboard Line -->
+                                    <line x1="25" y1="240" x2="295" y2="240" class="solid-line" />
+
+                                    <!-- Central Vertical Symmetry Axis Line (Dashed) -->
+                                    <line x1="165" y1="60" x2="165" y2="195" class="dashed-line"/>
+                                    
+                                    <!-- Horizontal Chord Line Linking Extremes A and B (Dashed) -->
+                                    <line x1="90" y1="165" x2="240" y2="165" class="dashed-line"/>
+                                    
+                                    <!-- Main Pendulum String Core Solid Rigid Ray Arms -->
+                                    <line x1="165" y1="60" x2="90" y2="165" class="solid-line"/>
+                                    <line x1="165" y1="60" x2="240" y2="165" class="solid-line"/>
+                                    
+                                    <!-- Circular Path Track Loop Arc ACB -->
+                                    <!-- Center of rotation is P(165,60), radius length is 125 pixels -->
+                                    <path d="M 90,165 A 125,125 0 0,0 240,165" class="solid-line"/>
+                                    
+                                    <!-- Angular Measurement Curves Below Pivot P -->
+                                    <path d="M 148,84 A 25,25 0 0,0 165,87" class="solid-line" style="stroke-width: 1;"/>
+                                    <path d="M 165,80 A 25,25 0 0,0 176,77" class="solid-line" style="stroke-width: 1;"/>
+                                    
+                                    <!-- Left Margin Double-Headed Dimension Clearance Line (0.5) -->
+                                    <line x1="50" y1="165" x2="50" y2="240" class="indicator-arrow"/>
+                                    <polygon points="50,165 46,177 54,177" class="arrow-head"/>
+                                    <polygon points="50,240 46,228 54,228" class="arrow-head"/>
+                                    
+                                    <!-- Horizontal Guidance Reference Dashes for Dimension Arrows -->
+                                    <line x1="32" y1="165" x2="82" y2="165" class="dashed-line" style="stroke-dasharray: 3,3;"/>
+                                    <line x1="32" y1="240" x2="45" y2="240" class="dashed-line" style="stroke-dasharray: 3,3;"/>
+
+                                    <!-- Solid Ball Circular Masses (Solid White Fill Nodes) -->
+                                    <circle cx="165" cy="60" r="8" class="node-ball"/>   <!-- Fixed Point P -->
+                                    <circle cx="90" cy="165" r="8" class="node-ball"/>   <!-- Extreme Position A -->
+                                    <circle cx="240" cy="165" r="8" class="node-ball"/>  <!-- Extreme Position B -->
+                                    <circle cx="165" cy="190" r="8" class="node-ball"/>  <!-- Bottom Position C -->
+
+                                    <!-- Alphabetical Character Markers (Positioned exactly matching the text book) -->
+                                    <text x="165" y="36" class="text-label">P</text>
+                                    <text x="70" y="150" class="text-label">A</text>
+                                    <text x="260" y="172" class="text-label">B</text>
+                                    <text x="156" y="146" class="text-label">X</text>
+                                    <text x="145" y="235" class="text-label">C</text>
+                                    
+                                    <!-- Numerical Parameter Metrics -->
+                                    <text x="150" y="112" class="text-numeric" style="font-size: 20px;">40&deg;</text>
+                                    <text x="180" y="112" class="text-numeric" style="font-size: 20px;">40&deg;</text>
+                                    <text x="105" y="105" class="text-numeric">1&middot;6</text>
+                                    <text x="18" y="208" class="text-numeric">0&middot;5</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 20 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>20.</span> The diagram, which is not drawn to scale, represents the floor of a room. All dimensions are in metres and all the angles are right angles.</p>
+                            <p>Calculate</p>
+                            <p class="indent-p">(a) the perimeter of the room,</p>
+                            <p class="indent-p">(b) the area of the floor,</p>
+                            <p class="indent-p">(c) the volume of the room, giving that it is 3 metres high.</p>
+
+                            <!-- Rectangular Polygon Floor Plan Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 320 260" width="320" height="260">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .floor-outline { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="320" height="260" class="bg-transparent"/>
+                                    
+                                    <!-- Symmetric notched polygonal floor plan perimeter line path -->
+                                    <!-- Proportions derived from the text inputs: Left height = 6. Top left width = 2. Notch down = 2. Bottom center width = 3. -->
+                                    <path d="M 40,40 
+                                            L 105,40 
+                                            L 105,110 
+                                            L 215,110 
+                                            L 215,40 
+                                            L 280,40 
+                                            L 280,220 
+                                            L 40,220 Z" class="floor-outline"/>
+                                    
+                                    <!-- Numerical Parameter Labels positioned exactly matching the user image -->
+                                    <text x="24" y="136" class="text-numeric">6</text>
+                                    <text x="72.5" y="26" class="text-numeric">2</text>
+                                    <text x="115" y="72" class="text-numeric">2</text>
+                                    <text x="160" y="100" class="text-numeric">3</text>
+                                    <text x="247.5" y="26" class="text-numeric">2</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Question 21 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>21.</span> A circle, centre <em>O</em>, has a radius of 7 cm. <em>PQ</em> is a diameter and <em>R</em> is a point on the circumference of the circle. Given that <em>P&Ocirc;R</em> = 108&deg;, and taking &pi; to be <math xmlns="http://w3.org" display="inline"><mfrac><mn>22</mn><mn>7</mn></mfrac></math>, calculate</p>
+                            <p class="indent-p">(a) the length of the minor arc <em>PR</em>,</p>
+                            <p class="indent-p">(b) the perimeter of the sector <em>POR</em>,</p>
+                            <p class="indent-p">(c) the area of the sector <em>QOR</em>.</p>
+
+                            <!-- Diameter and Sector Circle SVG Diagram -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 260 260" width="260" height="260">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .circle-contour { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .arc-measure { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="260" height="260" class="bg-transparent"/>
+                                    
+                                    <!-- Outer Circle Frame -->
+                                    <circle cx="130" cy="135" r="90" class="circle-contour"/>
+                                    
+                                    <!-- Tilted Diameter Line PQ (Angle around 135 degrees from horizontal) -->
+                                    <!-- Center (130, 135), P at top-left, Q at bottom-right -->
+                                    <line x1="66.4" y1="71.4" x2="193.6" y2="198.6" class="solid-line"/>
+                                    
+                                    <!-- Radius Line OR (Angle forming 108 degrees obtuse opening relative to OP) -->
+                                    <!-- OP is at 225 deg, so OR is at 225 - 108 = 117 deg (or roughly pointing top-right) -->
+                                    <line x1="130" y1="135" x2="210.2" y2="94.1" class="solid-line"/>
+                                    
+                                    <!-- Inner Angle Sector Arc Indicator for 108 degrees -->
+                                    <path d="M 108.8,113.8 A 30,30 0 0,1 156.7,121.4" class="arc-measure"/>
+                                    
+                                    <!-- Alphabetical Vertex and Reference Labels placed precisely to match the text book -->
+                                    <text x="50" y="52" class="text-label">P</text>
+                                    <text x="210" y="218" class="text-label">Q</text>
+                                    <text x="228" y="85" class="text-label">R</text>
+                                    <text x="110" y="150" class="text-label">O</text>
+                                    
+                                    <!-- Numeric Value Markers -->
+                                    <text x="145" y="85" class="text-numeric">108&deg;</text>
+                                    <text x="185" y="132" class="text-numeric">7</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 22 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>22.</span> (a) The area of a piece of land is 4.08 km<sup>2</sup>.</p>
+                            <p class="indent-p">(i) It is bought at a price of $56 000 per square kilometre. Calculate the total cost of the land, giving your answer to the nearest $100.</p>
+                            <p class="indent-p">(ii) The piece of land is rectangular, with its shorter side of length 1.2 km. Calculate its perimeter.</p>
+                            <p class="indent-p">(iii) If the piece of land is divided into three parts in the ratio 8 : 7 : 3, calculate the area of the smallest part.</p>
+                            <p class="indent-p">(iv) Given that 1 hectare = 10<sup>4</sup> square metres, express the area of the whole piece of land in hectares.</p>
+                            <p>(b) Calculate the area of the trapezium <em>PQRS</em> in which <math xmlns="http://w3.org" display="inline"><mover><mi>P</mi><mo>^</mo></mover></math> = <math xmlns="http://w3.org" display="inline"><mover><mi>Q</mi><mo>^</mo></mover></math> = 90&deg;, <math xmlns="http://w3.org" display="inline"><mover><mi>R</mi><mo>^</mo></mover></math> = 45&deg;, <em>PS</em> = 17 cm and <em>QR</em> = 23 cm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 23 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>23.</span> (a) The cross-section of a railway tunnel is the major segment <em>APB</em> of a circle, centre <em>O</em>, as shown in the diagram. Given that <em>OA</em> = <em>OB</em> = 3 m, <em>A&Ocirc;B</em> = 80&deg; and taking &pi; to be 3.142, calculate</p>
+                            <p class="indent-p">(i) <em>AB</em>,</p>
+                            <p class="indent-p">(ii) the length of the arc <em>APB</em>,</p>
+                            <p class="indent-p">(iii) the area of the triangle <em>AOB</em>,</p>
+                            <p class="indent-p">(iv) the area of the segment <em>APB</em>.</p>
+                            <p class="indent-p">(b) The tunnel is 382 m long. Calculate the number of seconds it will take a train, 118 m long, travelling at 200 km/h, to pass completely through the tunnel.</p>
+
+                            <!-- Railway Tunnel Circular Segment Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 320 260" width="320" height="260">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; }
+                                        .arc-measure { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                        .hatch-mark { stroke: #ffffff; stroke-width: 1.2; fill: none; stroke-linecap: round; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="320" height="260" class="bg-transparent"/>
+                                    
+                                    <!-- Ground Hatching underneath the baseline -->
+                                    <g class="hatch-mark" style="opacity: 0.7;">
+                                        <line x1="110" y1="210" x2="100" y2="222" />
+                                        <line x1="125" y1="210" x2="115" y2="222" />
+                                        <line x1="140" y1="210" x2="130" y2="222" />
+                                        <line x1="155" y1="210" x2="145" y2="222" />
+                                        <line x1="170" y1="210" x2="160" y2="222" />
+                                        <line x1="185" y1="210" x2="175" y2="222" />
+                                        <line x1="200" y1="210" x2="190" y2="222" />
+                                        <line x1="215" y1="210" x2="205" y2="222" />
+                                    </g>
+
+                                    <!-- Solid Ground Horizontal Baseline -->
+                                    <line x1="20" y1="210" x2="300" y2="210" class="solid-line"/>
+                                    
+                                    <!-- Major Arch Tunnel Profile Path (Center O at 160,141, Radius = 90) -->
+                                    <path d="M 102,210 A 90,90 0 1,1 218,210" class="solid-line"/>
+                                    
+                                    <!-- Heavily Outward-Tilted Ticks/Spikes -->
+                                    <g class="hatch-mark">
+                                        <line x1="102" y1="210" x2="90" y2="225" />
+                                        <line x1="77" y1="185" x2="60" y2="195" />
+                                        <line x1="70" y1="151" x2="52" y2="155" />
+                                        <line x1="76" y1="115" x2="58" y2="110" />
+                                        <line x1="93" y1="83" x2="78" y2="72" />
+                                        <line x1="119" y1="59" x2="109" y2="44" />
+                                        <line x1="152" y1="51" x2="149" y2="33" />
+                                        <line x1="187" y1="56" x2="193" y2="39" />
+                                        <line x1="220" y1="71" x2="233" y2="59" />
+                                        <line x1="243" y1="99" x2="261" y2="92" />
+                                        <line x1="250" y1="135" x2="268" y2="137" />
+                                        <line x1="245" y1="172" x2="261" y2="181" />
+                                        <line x1="231" y1="200" x2="242" y2="214" />
+                                    </g>
+
+                                    <!-- Dashed Interior Radius Lines from O(160, 141) to A and B -->
+                                    <line x1="160" y1="141" x2="102" y2="210" class="dashed-line"/>
+                                    <line x1="160" y1="141" x2="218" y2="210" class="dashed-line"/>
+                                    
+                                    <!-- Central Angle Indicator Arc -->
+                                    <path d="M 137.5,167.7 A 30,30 0 0,0 182.5,167.7" class="arc-measure" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Character Typography Labels -->
+                                    <text x="160" y="115" class="text-label">O</text>
+                                    <text x="92" y="235" class="text-label">A</text>
+                                    <text x="228" y="235" class="text-label">B</text>
+                                    <text x="80" y="65" class="text-label">P</text>
+                                    
+                                    <!-- Parameter values annotations -->
+                                    <text x="160" y="195" class="text-numeric">80&deg;</text>
+                                    <text x="122" y="165" class="text-numeric">3</text>
+                                    <text x="198" y="165" class="text-numeric">3</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 24 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>24.</span> [You do not need a numerical value of &pi; in this question.]</p>
+                            <p>The circle, centre <em>B</em>, has radius 3 cm and <em>A&Bcirc;C</em> = 120&deg;. The circle, centre <em>Q</em>, has radius 1 cm and <em>P&Qcirc;R</em> = 30&deg;. Find, in the form <em>r</em> : 1, the ratio</p>
+                            <p class="indent-p">(a) the area of the circle centre <em>B</em> : the area of the circle centre <em>Q</em>,</p>
+                            <p class="indent-p">(b) the arc length <em>AXC</em> : the arc length <em>PYR</em>.</p>
+
+                            <!-- Question 24 Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 380 200" width="380" height="200">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .circle-rim { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .arc-measure { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="380" height="200" class="bg-transparent"/>
+                                    
+                                    <!-- Left Circle: Centre B -->
+                                    <g transform="translate(10, 0)">
+                                        <!-- Outer Full Rim (Center 100,85, Radius 75) -->
+                                        <circle cx="100" cy="85" r="75" class="circle-rim"/>
+                                        
+                                        <!-- Sector Rays from B extending downwards towards A and C -->
+                                        <!-- Symmetric 120° Angle opening (from 150° to 270° or similar) -->
+                                        <line x1="100" y1="85" x2="42.5" y2="133.2" class="solid-line"/>
+                                        <line x1="100" y1="85" x2="157.5" y2="133.2" class="solid-line"/>
+                                        
+                                        <!-- Internal Central Angle Arc Tracker -->
+                                        <path d="M 82.7,99.5 A 20,20 0 0,0 117.3,99.5" class="arc-measure"/>
+                                        
+                                        <!-- Alphabetical Position Identifiers -->
+                                        <text x="100" y="65" class="text-label">B</text>
+                                        <text x="28" y="162" class="text-label">A</text>
+                                        <text x="172" y="162" class="text-label">C</text>
+                                        <text x="100" y="185" class="text-label">X</text>
+                                        
+                                        <!-- Core Numeric Value Indicators -->
+                                        <text x="130" y="100" class="text-numeric">3</text>
+                                        <text x="100" y="128" class="text-numeric">120&deg;</text>
+                                    </g>
+
+                                    <!-- Right Circle: Centre Q -->
+                                    <g transform="translate(220, 10)">
+                                        <!-- Outer Full Rim (Center 60,75, Radius 65) -->
+                                        <circle cx="60" cy="75" r="65" class="circle-rim"/>
+                                        
+                                        <!-- Sector Rays from Q extending downwards towards P and R -->
+                                        <!-- Symmetric 30° Angle opening (from 240° to 270°) -->
+                                        <line x1="60" y1="75" x2="27.5" y2="131.3" class="solid-line"/>
+                                        <line x1="60" y1="75" x2="92.5" y2="131.3" class="solid-line"/>
+                                        
+                                        <!-- Internal Central Angle Arc Tracker -->
+                                        <path d="M 50,92.3 A 20,20 0 0,0 70,92.3" class="arc-measure"/>
+                                        
+                                        <!-- Alphabetical Position Identifiers -->
+                                        <text x="60" y="55" class="text-label">Q</text>
+                                        <text x="15" y="152" class="text-label">P</text>
+                                        <text x="105" y="152" class="text-label">R</text>
+                                        <text x="60" y="172" class="text-label">Y</text>
+                                        
+                                        <!-- Core Numeric Value Indicators -->
+                                        <text x="80" y="95" class="text-numeric">1</text>
+                                        <text x="60" y="120" class="text-numeric" style="font-size: 20px;">30&deg;</text>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 25 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>25.</span> The diagram shows some of the marking on the ground in an athletics stadium. <em>ABC</em> is a circle, centre <em>O</em> and radius 1 m. <em>ST</em> is an arc of a circle, centre <em>O</em> and radius 11 m. <em>XY</em> is an arc of a circle, centre <em>O</em> and radius 21 m. <em>OASX</em> and <em>OBTY</em> are straight lines and <em>X&Ocirc;Y</em> = 45&deg;.</p>
+                            <p class="indent-p">(a) An athlete throws a heavy object from the circle <em>ABC</em> and it lands at <em>P</em>. The length of his throw is taken as the shortest distance from <em>P</em> to the circumference of the circle <em>ABC</em>. If <em>OP</em> = 15.23 m, what is the length of the throw?</p>
+                            <p class="indent-p">(b) Most of the throws made by the athletes land in the region <em>XYTS</em>. Taking &pi; to be 3.142, calculate</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the length of the arc <em>XY</em>,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the perimeter of the region <em>XYTS</em>,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(iii) the area of the region <em>XYTS</em>.</p>
+                            <p class="indent-p">(c) A man walked in a straight line from <em>X</em> to <em>Y</em>. Calculate the distance that he walked.</p>
+
+                            <!-- Question 25 Athletics Stadium SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 340 280" width="340" height="280">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; }
+                                        .dim-arrow { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                        .arrow-tip { fill: #ffffff; }
+                                        .arc-measure { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="340" height="280" class="bg-transparent"/>
+                                    
+                                    <!-- Core Structural Boundaries (OASX and OBTY Rays from O) -->
+                                    <!-- Top Ray: O(40, 180) -> A(68.7, 159.9) -> S(150.6, 102.6) -> X(232.5, 45.2) -->
+                                    <line x1="40" y1="180" x2="250" y2="33" class="solid-line"/>
+                                    <!-- Bottom Ray: O(40, 180) -> B -> T -> Y -->
+                                    <line x1="40" y1="180" x2="290" y2="224" class="solid-line"/>
+                                    
+                                    <!-- Inner High-Tide Circle Boundary (Radius = 35) -->
+                                    <circle cx="40" cy="180" r="35" class="solid-line"/>
+                                    
+                                    <!-- Mid Stadium Arc Track (Radius = 135) -->
+                                    <path d="M 150.6,102.6 A 135,135 0 0,1 173.0,203.4" class="solid-line"/>
+                                    
+                                    <!-- Outer Stadium Boundary Arc (Radius = 235) -->
+                                    <path d="M 250,33 A 235,235 0 0,1 290,224" class="solid-line"/>
+                                    
+                                    <!-- Distance measurement tracking vector to landing point P -->
+                                    <line x1="40" y1="180" x2="255" y2="168" class="dashed-line"/>
+                                    
+                                    <!-- Dynamic Sector Angle Indicator Arc Loop (45 degrees) -->
+                                    <!-- <path d="M 81.0,151.3 A 50,50 0 0,1 89.2,188.7" class="arc-measure"/> -->
+                                    
+                                    
+                                    <!-- Alphabetical Identification Markers -->
+                                    <text x="40" y="195" class="text-label">O</text>
+                                    <text x="76" y="160" class="text-label">A</text>
+                                    <text x="80" y="206" class="text-label">B</text>
+                                    <text x="5" y="186" class="text-label">C</text>
+                                    <text x="166" y="116" class="text-label">S</text>
+                                    <text x="180" y="226" class="text-label">T</text>
+                                    <text x="244" y="26" class="text-label">X</text>
+                                    <text x="286" y="240" class="text-label">Y</text>
+                                    <text x="258" y="175" class="text-label">P</text>
+                                    
+                                    <!-- Numeric Parametric Annotations -->
+                                    <text x="66" y="180" class="text-numeric">45&deg;</text>
+                                    <text x="45" y="170" class="text-numeric">1</text>
+                                    <text x="106" y="124" class="text-numeric">10</text>
+                                    <text x="188" y="68" class="text-numeric">10</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 26 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>26.</span> <em>ABCD</em> is a trapezium in which <em>AB</em> is parallel to <em>DC</em>. <em>N</em> is the point on <em>AB</em> such that <em>D&Ncirc;A</em> = 90&deg;. <em>AD</em> = <em>BC</em> = 15 cm, <em>DN</em> = 12 cm and <em>DC</em> = 10 cm. Calculate</p>
+                            <p class="indent-p">(a) <em>AN</em>,</p>
+                            <p class="indent-p">(b) the area of <em>ABCD</em>.</p>
+
+                            <!-- Question 26 Trapezium SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 320 220" width="320" height="220">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 5,5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .arrow-marker { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Canvas Background -->
+                                    <rect width="320" height="220" class="bg-transparent"/>
+                                    
+                                    <!-- Main Trapezium Framework Profile Box -->
+                                    <!-- Vertices: A(40,180), B(280,180), C(200,60), D(100,60) -->
+                                    <polygon points="40,180 280,180 200,60 100,60" class="solid-line"/>
+                                    
+                                    <!-- Parallel Line Segment Arrows (Midway on DC and AB) -->
+                                    <!-- Top edge arrow pointing right -->
+                                    <path d="M 142,60 L 152,55 M 142,60 L 152,65" class="arrow-marker"/>
+                                    <!-- Bottom edge arrow pointing right -->
+                                    <path d="M 152,180 L 162,175 M 152,180 L 162,185" class="arrow-marker"/>
+                                    
+                                    <!-- Perpendicular Height Altitude Segment Line (DN) from D(100,60) straight down to N(100,180) -->
+                                    <line x1="100" y1="60" x2="100" y2="180" class="dashed-line"/>
+                                    
+                                    <!-- Right Angle Indicator Box square at N -->
+                                    <path d="M 92,180 L 92,172 L 100,172" class="solid-line" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Alphabetical Position Labels matching the textbook exactly -->
+                                    <text x="28" y="186" class="text-label">A</text>
+                                    <text x="104" y="208" class="text-label">N</text>
+                                    <text x="295" y="184" class="text-label">B</text>
+                                    <text x="215" y="52" class="text-label">C</text>
+                                    <text x="85" y="54" class="text-label">D</text>
+                                    
+                                    <!-- Core Numerical Parameter Metrics -->
+                                    <text x="56" y="125" class="text-numeric">15</text>
+                                    <text x="254" y="120" class="text-numeric">15</text>
+                                    <text x="122" y="130" class="text-numeric">12</text>
+                                    <text x="150" y="44" class="text-numeric">10</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 27 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>27.</span> In the diagram, <em>O</em> is the centre of a wheel of circumference 135 cm. The points <em>X</em> and <em>Y</em> are on the circumference of the wheel and the length of the minor arc <em>XY</em> is 18 cm.</p>
+                            <p class="indent-p">(a) Calculate the acute angle <em>X&Ocirc;Y</em>.</p>
+                            <p class="indent-p">(b) Calculate the number of revolutions which the wheel would make in travelling a distance of 1 kilometre, giving your answer correct to the nearest whole number.</p>
+                            <p class="indent-p">(c) Calculate the radius of the wheel, giving your answer correct to three significant figures. [Take &pi; to be 3.142].</p>
+
+                            <!-- Question 27 Wheel Vector Layout Diagram -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 240 240" width="240" height="240">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .circle-rim { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .spoke-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 26px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="240" height="240" class="bg-transparent"/>
+                                    
+                                    <!-- Outer Wheel Rim Circle (Center 120, 110, Radius 85) -->
+                                    <circle cx="120" cy="110" r="85" class="circle-rim"/>
+                                    
+                                    <!-- Radial Spoke Lines extending down to positions X and Y -->
+                                    <!-- Positioned to match the acute angle orientation of the textbook diagram -->
+                                    <line x1="120" y1="110" x2="62.5" y2="172.5" class="spoke-line"/>
+                                    <line x1="120" y1="110" x2="177.5" y2="172.5" class="spoke-line"/>
+                                    
+                                    <!-- Alphabetical Position Labels positioned precisely to mirror the source book -->
+                                    <text x="120" y="85" class="text-label">O</text>
+                                    <text x="50" y="198" class="text-label">X</text>
+                                    <text x="190" y="198" class="text-label">Y</text>
+                                    
+                                    <!-- Minor Arc Length Measurement (18) centered underneath the circle path -->
+                                    <text x="120" y="222" class="text-numeric">18</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 28 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>28.</span> (a) A farmer has 1500 tomato plants. He estimates that each plant will produce 6.5 kg of tomatoes. Calculate the total mass, in tonnes, that he expects to be produced. [1 tonne = 1000 kg]</p>
+                            <p class="indent-p">(b) He proposes to apply 220 ml of liquid fertiliser to each plant. The fertiliser is sold in containers each holding 50 litres and costing $235. Calculate</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the number of containers he must buy,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the total cost of the containers he must buy.</p>
+                            <p class="indent-p">(c) The farmer has 0.3 hectares of land available for the 1500 plants. Calculate the average area, in square metres, available for each plant. [1 hectare = 10 000 m<sup>2</sup>]</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 29 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>29.</span> A piece of card is cut to the shape shown in the diagram. <em>BCD</em> is a semicircular arc, centre <em>O</em>, of radius 3 cm. <em>AB</em> = <em>AD</em> = 5 cm.</p>
+                            <p class="indent-p">(a) Find the length of <em>OA</em>.</p>
+                            <p class="indent-p">(b) Taking &pi; to be 3.14, calculate</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the perimeter of the card,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the area of the card.</p>
+
+                            <!-- Question 29 Diagram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 260 220" width="260" height="220">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; }
+                                        .shaded-area { fill: #ffffff; fill-opacity: 0.25; }
+                                        .center-node { fill: #ffffff; stroke: #ffffff; stroke-width: 1; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="260" height="220" class="bg-transparent"/>
+                                    
+                                    <!-- Unified Shaded Profile Area -->
+                                    <path d="M 120,40 A 70,70 0 0,0 120,180 L 213.3,110 Z" class="shaded-area"/>
+                                    
+                                    <!-- Outer Solid Boundaries & Internal Diameter BD -->
+                                    <path d="M 120,40 A 70,70 0 0,0 120,180 L 213.3,110 Z" class="solid-line"/>
+                                    <line x1="120" y1="40" x2="120" y2="180" class="solid-line"/>
+                                    
+                                    <!-- Horizontal Axial Dashed Reference Segment OA -->
+                                    <line x1="120" y1="110" x2="213.3" y2="110" class="dashed-line"/>
+                                    
+                                    <!-- Center Node Circle for Point O -->
+                                    <circle cx="120" cy="110" r="7" class="center-node"/>
+                                    
+                                    <!-- Alphabetical Identification Markers matching textbook context perfectly -->
+                                    <text x="120" y="28" class="text-label">B</text>
+                                    <text x="120" y="206" class="text-label">D</text>
+                                    <text x="35" y="118" class="text-label">C</text>
+                                    <text x="228" y="118" class="text-label">A</text>
+                                    <text x="100" y="118" class="text-label">O</text>
+                                    
+                                    <!-- Numeric Value Markers -->
+                                    <text x="113" y="78" class="text-numeric">3</text>
+                                    <text x="113" y="156" class="text-numeric">3</text>
+                                    <text x="174" y="68" class="text-numeric">5</text>
+                                    <text x="174" y="166" class="text-numeric">5</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 30 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>30.</span> A piece of card is cut to the shape shown in the diagram. <em>BCD</em> is a semicircular arc, centre <em>O</em>, of radius 5 cm. <em>AB</em> = <em>AD</em> = 13 cm.</p>
+                            <p class="indent-p">(a) Find the length of <em>OA</em>.</p>
+                            <p class="indent-p">(b) Taking &pi; to be 3.14, calculate</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the perimeter of the card,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the area of the card.</p>
+
+                           
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 260 220" width="260" height="220">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; }
+                                        .shaded-area { fill: #ffffff; fill-opacity: 0.25; }
+                                        .center-node { fill: #ffffff; stroke: #ffffff; stroke-width: 1; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="260" height="220" class="bg-transparent"/>
+                                    
+                                    <!-- Unified Shaded Profile Area -->
+                                    <path d="M 120,40 A 70,70 0 0,0 120,180 L 213.3,110 Z" class="shaded-area"/>
+                                    
+                                    <!-- Outer Solid Boundaries & Internal Diameter BD -->
+                                    <path d="M 120,40 A 70,70 0 0,0 120,180 L 213.3,110 Z" class="solid-line"/>
+                                    <line x1="120" y1="40" x2="120" y2="180" class="solid-line"/>
+                                    
+                                    <!-- Horizontal Axial Dashed Reference Segment OA -->
+                                    <line x1="120" y1="110" x2="213.3" y2="110" class="dashed-line"/>
+                                    
+                                    <!-- Center Node Circle for Point O -->
+                                    <circle cx="120" cy="110" r="7" class="center-node"/>
+                                    
+                                    <!-- Alphabetical Identification Markers matching textbook context perfectly -->
+                                    <text x="120" y="28" class="text-label">B</text>
+                                    <text x="120" y="206" class="text-label">D</text>
+                                    <text x="35" y="118" class="text-label">C</text>
+                                    <text x="228" y="118" class="text-label">A</text>
+                                    <text x="100" y="118" class="text-label">O</text>
+                                    
+                                    <!-- Numeric Value Markers -->
+                                    <text x="113" y="78" class="text-numeric">5</text>
+                                    <text x="113" y="156" class="text-numeric">5</text>
+                                    <text x="174" y="68" class="text-numeric">13</text>
+                                    <text x="174" y="166" class="text-numeric">13</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 31 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>31.</span> In this question take &pi; to be 3.142. Diagram I shows a cylindrical tank of diameter 60 cm and length 80 cm. The tank is partially filled with water and placed with its curved surface on a horizontal floor. Diagram II shows a circular end of the cylinder. <em>O</em> is the centre of the circle and <em>D</em> is vertically below <em>O</em>. The chord <em>AB</em> represents the level of the water surfaces and <em>A&Ocirc;B</em> = 120&deg;. Calculate</p>
+                            <p class="indent-p">(a) the length of the arc <em>ADB</em>,</p>
+                            <p class="indent-p">(b) the area of triangle <em>OAB</em>,</p>
+                            <p class="indent-p">(c) the area of the segment <em>ADB</em> (the shaded part in Diagram II),</p>
+                            <p class="indent-p">(d) the area of the inside surface of the tank which is in contact with the water.</p>
+
+
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
+    <style>
+        .bg-transparent { fill: none; }
+        .solid-white { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .dashed-white { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .water-fill { fill: #ffffff; fill-opacity: 0.25; }
+        .cylinder-body { fill: #ffffff; fill-opacity: 0.1; stroke: #ffffff; stroke-width: 1.5; }
+        .ellipse-face { fill: #ffffff; fill-opacity: 0.15; stroke: #ffffff; stroke-width: 1.5; }
+        .ellipse-back { fill: #ffffff; fill-opacity: 0.05; stroke: none; }
+        .dim-arrow { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+        .arrow-head { fill: #ffffff; }
+        .text-lbl { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+        .text-num { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; text-anchor: middle; font-weight: bold; }
+        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 18px; fill: #ffffff; text-anchor: middle; font-weight: bold; }
+        
+        /* Circle diagram theme */
+        .circle-solid { stroke: #ffffff; stroke-width: 2; fill: none; }
+        .circle-water { fill: #ffffff; opacity: 0.25; }
+        .circle-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .circle-text { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; }
+        .circle-text-small { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 16px; fill: #ffffff; text-anchor: middle; }
+        .circle-text-bold { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 18px; fill: #ffffff; font-weight: bold; text-anchor: middle; }
+        .circle-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; }
+        .circle-angle { stroke: #ffffff; stroke-width: 1; fill: none; }
+    </style>
+    
+    <!-- Transparent Background Canvas -->
+    <rect width="620" height="280" class="bg-transparent"/>
+    
+    <!-- ==================== CYLINDER DIAGRAM ==================== -->
+    <g transform="translate(45, 35)">
+        <!-- Back ellipse (hidden face) -->
+        <ellipse cx="215.956" cy="64.2979" rx="39.4932" ry="63.7863" class="ellipse-back"/>
+        
+        <!-- Cylinder body -->
+        <path d="m 37.9907,0.346857 v 0.137 A 39.4932,63.7863 0 0 0 0.732656,64.1399 39.4932,63.7863 0 0 0 37.9907,127.745 v 0.19 H 215.018 A 39.4932,63.7863 0 0 1 176.348,64.2159 39.4932,63.7863 0 0 1 215.841,0.428857 39.4932,63.7863 0 0 1 255.335,64.2159 39.4932,63.7863 0 0 1 223.464,126.743 39.4932,63.7863 0 0 0 255.768,64.1439 39.4932,63.7863 0 0 0 217.405,0.449857 v -0.09 z" class="cylinder-body"/>
+        
+        <!-- Front ellipse face -->
+        <ellipse cx="39.8318" cy="64.1249" rx="39.4932" ry="63.7863" class="ellipse-face"/>
+        
+        <!-- Water shading (white fill in bottom portion) -->
+        <path d="M 78.9098,73.3419 3.67371,89.7829 A 39.4932,63.7863 0 0 0 42.6183,127.678 l 0.2379,0.233 H 217.405 l 0.04,-0.07 a 39.4932,63.7863 0 0 0 3.724,-0.51 39.4932,63.7863 0 0 0 33.784,-53.9921 z" class="water-fill"/>
+        
+        <!-- Water surface line (front chord AB) -->
+        <path d="M 3.67371,89.7829 L 78.9098,73.3419" class="solid-white"/>
+        
+        <!-- Longitudinal Water surface lines -->
+        <path d="M 78.9098,73.3419 L 254.954,73.3419" class="solid-white"/>
+        <path d="M 3.67371,89.7829 L 180,89" class="dashed-white"/>
+        
+        <!-- Rear Water chord line -->
+        <path d="M 180,89 L 254.954,73.3419" class="solid-white"/>
+        
+        <!-- Dimension Line: 80 (Length along slanted upper boundary) -->
+        <line x1="39.8" y1="-14" x2="215.8" y2="-14" class="dim-arrow"/>
+        <polygon points="39.8,-14 51.8,-18 51.8,-10" class="arrow-head"/>
+        <polygon points="215.8,-14 203.8,-18 203.8,-10" class="arrow-head"/>
+        <text x="127.8" y="-20" class="text-num">80</text>
+        
+        <!-- Dimension Line: 60 (Total vertical diameter on the left margin) -->
+        <line x1="-13" y1="0.3" x2="-13" y2="127.7" class="dim-arrow"/>
+        <polygon points="-13,0.3 -19,12.3 -9,12.3" class="arrow-head"/>
+        <polygon points="-13,127.7 -19,115.7 -9,115.7" class="arrow-head"/>
+        <text x="-30" y="69" class="text-num">60</text>
+        
+        <!-- Extension lines for the 60 dimension to cleanly link layout targets -->
+        <line x1="-5" y1="0.3" x2="-20" y2="0.3" class="dim-arrow" stroke-width="0.8"/>
+        <line x1="-5" y1="127.7" x2="-20" y2="127.7" class="dim-arrow" stroke-width="0.8"/>
+        
+        <!-- Alphabetical / Architectural Label Layouts -->
+        <text x="72" y="70" class="text-lbl">A</text>
+        <text x="12" y="86" class="text-lbl">B</text>
+        <text x="40" y="148" class="text-lbl">D</text>
+        
+        <!-- Water text callout arrow lines -->
+        <text x="315" y="140" class="text-lbl" style="font-style: normal;">water</text>
+        <path d="M 288,132 L 244,112" class="solid-white" stroke-width="1.5"/>
+        <polygon points="244,112 254,107 252,116" class="arrow-head"/>
+        
+        <!-- Diagram Title -->
+        <text x="140" y="230" class="text-label">Diagram I</text>
+    </g>
+    
+    <!-- ==================== CIRCLE DIAGRAM ==================== -->
+    <g transform="translate(315, -85)">
+        <!-- Ground reference line -->
+        <line x1="70" y1="270" x2="290" y2="270" class="solid-white" stroke-width="1.5" />
+
+        <!-- Water segment cross-section shading -->
+        <path d="M 119.4 235 A 70 70 0 0 0 240.6 235 Z" class="circle-water" />
+        
+        <!-- Cross-section main circle -->
+        <circle cx="180" cy="200" r="70" class="circle-solid" />
+        
+        <!-- Center Point O -->
+        <circle cx="180" cy="200" r="3" class="circle-center" />
+        <text x="180" y="190" class="circle-text" font-style="italic">O</text>
+        
+        <!-- Radial lines OA and OB -->
+        <line x1="180" y1="200" x2="119.4" y2="235" class="circle-line" />
+        <line x1="180" y1="200" x2="240.6" y2="235" class="circle-line" />
+        
+        <!-- Central Angle 120° Indicator -->
+        <path d="M 167 210 A 15 15 0 0 0 193 210" class="circle-angle" />
+        <text x="180" y="225" class="circle-text-small">120°</text>
+        
+        <!-- Radius value label -->
+        <text x="205" y="210" class="circle-text" font-style="italic">30</text>
+        
+        <!-- Geometry Labels -->
+        <text x="100" y="242" class="circle-label">A</text>
+        <text x="250" y="242" class="circle-label">B</text>
+        <text x="175" y="295" class="circle-label">D</text>
+        
+        <!-- Title Label -->
+        <text x="180" y="345" class="circle-text-bold">Diagram II</text>
+        
+        <!-- Connection arrow between diagrams -->
+        <path d="M 70,258 L 130,250" class="solid-white" stroke-width="1.5"/>
+        <polygon points="127,245 130,255 140,245" class="arrow-head"/>
+    </g>
+</svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 32 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>32.</span> (a) A side of a square is 1.5 cm long. Calculate</p>
+                            <p class="indent-p" style="padding-left: 40px;">(i) the perimeter of the square,</p>
+                            <p class="indent-p" style="padding-left: 40px;">(ii) the area of the square.</p>
+                            <p class="indent-p">(b) Find the smallest positive integer which can be divided exactly by 2, 3, 4 and 5.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 33 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>33.</span> A sequence of rectangles was drawn. In each case the length and the width were exact numbers of centimetres and the length was always one centimetre more than the width. The area and the perimeter of each of the first four rectangles were calculated and the results were recorded in the table, as shown.</p>
+                            
+                            <table style="border-collapse: collapse; border: 1px solid white; background: transparent; margin: 15px auto; font-family: sans-serif; text-align: center; width: 100%; max-width: 450px;">
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid white;">
+                                        <td style="padding: 6px; border-right: 1px solid white; text-align: left; width: 40%;">Width (in cm)</td>
+                                        <td style="padding: 6px; border-right: 1px solid white; width: 15%;">1</td>
+                                        <td style="padding: 6px; border-right: 1px solid white; width: 15%;">2</td>
+                                        <td style="padding: 6px; border-right: 1px solid white; width: 15%;">3</td>
+                                        <td style="padding: 6px; width: 15%;">4</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid white;">
+                                        <td style="padding: 6px; border-right: 1px solid white; text-align: left;">Length (in cm)</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">2</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">3</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">4</td>
+                                        <td style="padding: 6px;">5</td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid white;">
+                                        <td style="padding: 6px; border-right: 1px solid white; text-align: left;">Area (in cm<sup>2</sup>)</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">2</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">6</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">12</td>
+                                        <td style="padding: 6px;">20</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 6px; border-right: 1px solid white; text-align: left;">Perimeter (in cm)</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">6</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">10</td>
+                                        <td style="padding: 6px; border-right: 1px solid white;">14</td>
+                                        <td style="padding: 6px;">18</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <p class="indent-p">(a) Calculate the width and length of a rectangle in the sequence which has an area of 132 cm<sup>2</sup>.</p>
+                            <p class="indent-p">(b) Write down an expression, in terms of <em>w</em>, for the perimeter of a rectangle in the sequence which has a width of <em>w</em> cm.</p>
+                            <p class="indent-p">(c) Calculate the width of a rectangle in the sequence which has a perimeter of 142 cm.</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                                    
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../js/contentScript.js"></script>
+
+</body>
+</html>
