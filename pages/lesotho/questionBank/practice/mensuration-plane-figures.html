@@ -1493,128 +1493,127 @@
 
                             <div class="diagram-visual" style="margin: 15px 0;">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 280" width="620" height="280">
-    <style>
-        .bg-transparent { fill: none; }
-        .solid-white { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-        .dashed-white { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-        .water-fill { fill: #ffffff; fill-opacity: 0.25; }
-        .cylinder-body { fill: #ffffff; fill-opacity: 0.1; stroke: #ffffff; stroke-width: 1.5; }
-        .ellipse-face { fill: #ffffff; fill-opacity: 0.15; stroke: #ffffff; stroke-width: 1.5; }
-        .ellipse-back { fill: #ffffff; fill-opacity: 0.05; stroke: none; }
-        .dim-arrow { stroke: #ffffff; stroke-width: 1.2; fill: none; }
-        .arrow-head { fill: #ffffff; }
-        .text-lbl { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; text-anchor: middle; }
-        .text-num { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; text-anchor: middle; font-weight: bold; }
-        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 18px; fill: #ffffff; text-anchor: middle; font-weight: bold; }
-        
-        /* Circle diagram theme */
-        .circle-solid { stroke: #ffffff; stroke-width: 2; fill: none; }
-        .circle-water { fill: #ffffff; opacity: 0.25; }
-        .circle-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
-        .circle-text { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; }
-        .circle-text-small { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 16px; fill: #ffffff; text-anchor: middle; }
-        .circle-text-bold { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 18px; fill: #ffffff; font-weight: bold; text-anchor: middle; }
-        .circle-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; }
-        .circle-angle { stroke: #ffffff; stroke-width: 1; fill: none; }
-    </style>
-    
-    <!-- Transparent Background Canvas -->
-    <rect width="620" height="280" class="bg-transparent"/>
-    
-    <!-- ==================== CYLINDER DIAGRAM ==================== -->
-    <g transform="translate(45, 35)">
-        <!-- Back ellipse (hidden face) -->
-        <ellipse cx="215.956" cy="64.2979" rx="39.4932" ry="63.7863" class="ellipse-back"/>
-        
-        <!-- Cylinder body -->
-        <path d="m 37.9907,0.346857 v 0.137 A 39.4932,63.7863 0 0 0 0.732656,64.1399 39.4932,63.7863 0 0 0 37.9907,127.745 v 0.19 H 215.018 A 39.4932,63.7863 0 0 1 176.348,64.2159 39.4932,63.7863 0 0 1 215.841,0.428857 39.4932,63.7863 0 0 1 255.335,64.2159 39.4932,63.7863 0 0 1 223.464,126.743 39.4932,63.7863 0 0 0 255.768,64.1439 39.4932,63.7863 0 0 0 217.405,0.449857 v -0.09 z" class="cylinder-body"/>
-        
-        <!-- Front ellipse face -->
-        <ellipse cx="39.8318" cy="64.1249" rx="39.4932" ry="63.7863" class="ellipse-face"/>
-        
-        <!-- Water shading (white fill in bottom portion) -->
-        <path d="M 78.9098,73.3419 3.67371,89.7829 A 39.4932,63.7863 0 0 0 42.6183,127.678 l 0.2379,0.233 H 217.405 l 0.04,-0.07 a 39.4932,63.7863 0 0 0 3.724,-0.51 39.4932,63.7863 0 0 0 33.784,-53.9921 z" class="water-fill"/>
-        
-        <!-- Water surface line (front chord AB) -->
-        <path d="M 3.67371,89.7829 L 78.9098,73.3419" class="solid-white"/>
-        
-        <!-- Longitudinal Water surface lines -->
-        <path d="M 78.9098,73.3419 L 254.954,73.3419" class="solid-white"/>
-        <path d="M 3.67371,89.7829 L 180,89" class="dashed-white"/>
-        
-        <!-- Rear Water chord line -->
-        <path d="M 180,89 L 254.954,73.3419" class="solid-white"/>
-        
-        <!-- Dimension Line: 80 (Length along slanted upper boundary) -->
-        <line x1="39.8" y1="-14" x2="215.8" y2="-14" class="dim-arrow"/>
-        <polygon points="39.8,-14 51.8,-18 51.8,-10" class="arrow-head"/>
-        <polygon points="215.8,-14 203.8,-18 203.8,-10" class="arrow-head"/>
-        <text x="127.8" y="-20" class="text-num">80</text>
-        
-        <!-- Dimension Line: 60 (Total vertical diameter on the left margin) -->
-        <line x1="-13" y1="0.3" x2="-13" y2="127.7" class="dim-arrow"/>
-        <polygon points="-13,0.3 -19,12.3 -9,12.3" class="arrow-head"/>
-        <polygon points="-13,127.7 -19,115.7 -9,115.7" class="arrow-head"/>
-        <text x="-30" y="69" class="text-num">60</text>
-        
-        <!-- Extension lines for the 60 dimension to cleanly link layout targets -->
-        <line x1="-5" y1="0.3" x2="-20" y2="0.3" class="dim-arrow" stroke-width="0.8"/>
-        <line x1="-5" y1="127.7" x2="-20" y2="127.7" class="dim-arrow" stroke-width="0.8"/>
-        
-        <!-- Alphabetical / Architectural Label Layouts -->
-        <text x="72" y="70" class="text-lbl">A</text>
-        <text x="12" y="86" class="text-lbl">B</text>
-        <text x="40" y="148" class="text-lbl">D</text>
-        
-        <!-- Water text callout arrow lines -->
-        <text x="315" y="140" class="text-lbl" style="font-style: normal;">water</text>
-        <path d="M 288,132 L 244,112" class="solid-white" stroke-width="1.5"/>
-        <polygon points="244,112 254,107 252,116" class="arrow-head"/>
-        
-        <!-- Diagram Title -->
-        <text x="140" y="230" class="text-label">Diagram I</text>
-    </g>
-    
-    <!-- ==================== CIRCLE DIAGRAM ==================== -->
-    <g transform="translate(315, -85)">
-        <!-- Ground reference line -->
-        <line x1="70" y1="270" x2="290" y2="270" class="solid-white" stroke-width="1.5" />
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-white { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-white { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .water-fill { fill: #ffffff; fill-opacity: 0.25; }
+                                        .cylinder-body { fill: #ffffff; fill-opacity: 0.1; stroke: #ffffff; stroke-width: 1.5; }
+                                        .ellipse-face { fill: #ffffff; fill-opacity: 0.15; stroke: #ffffff; stroke-width: 1.5; }
+                                        .ellipse-back { fill: #ffffff; fill-opacity: 0.05; stroke: none; }
+                                        .dim-arrow { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+                                        .arrow-head { fill: #ffffff; }
+                                        .text-lbl { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-num { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; text-anchor: middle; font-weight: bold; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 18px; fill: #ffffff; text-anchor: middle; font-weight: bold; }
+                                        
+                                        /* Circle diagram theme */
+                                        .circle-solid { stroke: #ffffff; stroke-width: 2; fill: none; }
+                                        .circle-water { fill: #ffffff; opacity: 0.25; }
+                                        .circle-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                        .circle-text { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 20px; fill: #ffffff; }
+                                        .circle-text-small { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 16px; fill: #ffffff; text-anchor: middle; }
+                                        .circle-text-bold { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 18px; fill: #ffffff; font-weight: bold; text-anchor: middle; }
+                                        .circle-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; }
+                                        .circle-angle { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                    </style>
+                                    
+                                    <!-- Transparent Background Canvas -->
+                                    <rect width="620" height="280" class="bg-transparent"/>
+                                    
+                                    <!-- ==================== CYLINDER DIAGRAM ==================== -->
+                                    <g transform="translate(45, 35)">
+                                        <!-- Back ellipse (hidden face) -->
+                                        <ellipse cx="215.956" cy="64.2979" rx="39.4932" ry="63.7863" class="ellipse-back"/>
+                                        
+                                        <!-- Cylinder body -->
+                                        <path d="m 37.9907,0.346857 v 0.137 A 39.4932,63.7863 0 0 0 0.732656,64.1399 39.4932,63.7863 0 0 0 37.9907,127.745 v 0.19 H 215.018 A 39.4932,63.7863 0 0 1 176.348,64.2159 39.4932,63.7863 0 0 1 215.841,0.428857 39.4932,63.7863 0 0 1 255.335,64.2159 39.4932,63.7863 0 0 1 223.464,126.743 39.4932,63.7863 0 0 0 255.768,64.1439 39.4932,63.7863 0 0 0 217.405,0.449857 v -0.09 z" class="cylinder-body"/>
+                                        
+                                        <!-- Front ellipse face -->
+                                        <ellipse cx="39.8318" cy="64.1249" rx="39.4932" ry="63.7863" class="ellipse-face"/>
+                                        
+                                        <!-- Water shading (white fill in bottom portion) -->
+                                        <path d="M 78.9098,73.3419 3.67371,89.7829 A 39.4932,63.7863 0 0 0 42.6183,127.678 l 0.2379,0.233 H 217.405 l 0.04,-0.07 a 39.4932,63.7863 0 0 0 3.724,-0.51 39.4932,63.7863 0 0 0 33.784,-53.9921 z" class="water-fill"/>
+                                        
+                                        <!-- Water surface line (front chord AB) -->
+                                        <path d="M 3.67371,89.7829 L 78.9098,73.3419" class="solid-white"/>
+                                        
+                                        <!-- Longitudinal Water surface lines -->
+                                        <path d="M 78.9098,73.3419 L 254.954,73.3419" class="solid-white"/>
+                                        <path d="M 3.67371,89.7829 L 180,89" class="dashed-white"/>
+                                        
+                                        <!-- Rear Water chord line -->
+                                        <path d="M 180,89 L 254.954,73.3419" class="solid-white"/>
+                                        
+                                        <!-- Dimension Line: 80 (Length along slanted upper boundary) -->
+                                        <line x1="39.8" y1="-14" x2="215.8" y2="-14" class="dim-arrow"/>
+                                        <polygon points="39.8,-14 51.8,-18 51.8,-10" class="arrow-head"/>
+                                        <polygon points="215.8,-14 203.8,-18 203.8,-10" class="arrow-head"/>
+                                        <text x="127.8" y="-20" class="text-num">80</text>
+                                        
+                                        <!-- Dimension Line: 60 (Total vertical diameter on the left margin) -->
+                                        <line x1="-13" y1="0.3" x2="-13" y2="127.7" class="dim-arrow"/>
+                                        <polygon points="-13,0.3 -19,12.3 -9,12.3" class="arrow-head"/>
+                                        <polygon points="-13,127.7 -19,115.7 -9,115.7" class="arrow-head"/>
+                                        <text x="-30" y="69" class="text-num">60</text>
+                                        
+                                        <!-- Extension lines for the 60 dimension to cleanly link layout targets -->
+                                        <line x1="-5" y1="0.3" x2="-20" y2="0.3" class="dim-arrow" stroke-width="0.8"/>
+                                        <line x1="-5" y1="127.7" x2="-20" y2="127.7" class="dim-arrow" stroke-width="0.8"/>
+                                        
+                                        <!-- Alphabetical / Architectural Label Layouts -->
+                                        <text x="72" y="70" class="text-lbl">A</text>
+                                        <text x="12" y="86" class="text-lbl">B</text>
+                                        <text x="40" y="148" class="text-lbl">D</text>
+                                        
+                                        <!-- Water text callout arrow lines -->
+                                        <text x="315" y="140" class="text-lbl" style="font-style: normal;">water</text>
+                                        <path d="M 288,132 L 244,112" class="solid-white" stroke-width="1.5"/>
+                                        <polygon points="244,112 254,107 252,116" class="arrow-head"/>
+                                        
+                                        <!-- Diagram Title -->
+                                        <text x="140" y="230" class="text-label">Diagram I</text>
+                                    </g>
+                                    
+                                    <!-- ==================== CIRCLE DIAGRAM ==================== -->
+                                    <g transform="translate(315, -85)">
+                                        <!-- Ground reference line -->
+                                        <line x1="70" y1="270" x2="290" y2="270" class="solid-white" stroke-width="1.5" />
 
-        <!-- Water segment cross-section shading -->
-        <path d="M 119.4 235 A 70 70 0 0 0 240.6 235 Z" class="circle-water" />
-        
-        <!-- Cross-section main circle -->
-        <circle cx="180" cy="200" r="70" class="circle-solid" />
-        
-        <!-- Center Point O -->
-        <circle cx="180" cy="200" r="3" class="circle-center" />
-        <text x="180" y="190" class="circle-text" font-style="italic">O</text>
-        
-        <!-- Radial lines OA and OB -->
-        <line x1="180" y1="200" x2="119.4" y2="235" class="circle-line" />
-        <line x1="180" y1="200" x2="240.6" y2="235" class="circle-line" />
-        
-        <!-- Central Angle 120° Indicator -->
-        <path d="M 167 210 A 15 15 0 0 0 193 210" class="circle-angle" />
-        <text x="180" y="225" class="circle-text-small">120°</text>
-        
-        <!-- Radius value label -->
-        <text x="205" y="210" class="circle-text" font-style="italic">30</text>
-        
-        <!-- Geometry Labels -->
-        <text x="100" y="242" class="circle-label">A</text>
-        <text x="250" y="242" class="circle-label">B</text>
-        <text x="175" y="295" class="circle-label">D</text>
-        
-        <!-- Title Label -->
-        <text x="180" y="345" class="circle-text-bold">Diagram II</text>
-        
-        <!-- Connection arrow between diagrams -->
-        <path d="M 70,258 L 130,250" class="solid-white" stroke-width="1.5"/>
-        <polygon points="127,245 130,255 140,245" class="arrow-head"/>
-    </g>
-</svg>
-
+                                        <!-- Water segment cross-section shading -->
+                                        <path d="M 119.4 235 A 70 70 0 0 0 240.6 235 Z" class="circle-water" />
+                                        
+                                        <!-- Cross-section main circle -->
+                                        <circle cx="180" cy="200" r="70" class="circle-solid" />
+                                        
+                                        <!-- Center Point O -->
+                                        <circle cx="180" cy="200" r="3" class="circle-center" />
+                                        <text x="180" y="190" class="circle-text" font-style="italic">O</text>
+                                        
+                                        <!-- Radial lines OA and OB -->
+                                        <line x1="180" y1="200" x2="119.4" y2="235" class="circle-line" />
+                                        <line x1="180" y1="200" x2="240.6" y2="235" class="circle-line" />
+                                        
+                                        <!-- Central Angle 120° Indicator -->
+                                        <path d="M 167 210 A 15 15 0 0 0 193 210" class="circle-angle" />
+                                        <text x="180" y="225" class="circle-text-small">120°</text>
+                                        
+                                        <!-- Radius value label -->
+                                        <text x="205" y="210" class="circle-text" font-style="italic">30</text>
+                                        
+                                        <!-- Geometry Labels -->
+                                        <text x="100" y="242" class="circle-label">A</text>
+                                        <text x="250" y="242" class="circle-label">B</text>
+                                        <text x="175" y="295" class="circle-label">D</text>
+                                        
+                                        <!-- Title Label -->
+                                        <text x="180" y="345" class="circle-text-bold">Diagram II</text>
+                                        
+                                        <!-- Connection arrow between diagrams -->
+                                        <path d="M 70,258 L 130,250" class="solid-white" stroke-width="1.5"/>
+                                        <polygon points="127,245 130,255 140,245" class="arrow-head"/>
+                                    </g>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -1634,44 +1633,545 @@
                         <div class="question-text">
                             <p><span>33.</span> A sequence of rectangles was drawn. In each case the length and the width were exact numbers of centimetres and the length was always one centimetre more than the width. The area and the perimeter of each of the first four rectangles were calculated and the results were recorded in the table, as shown.</p>
                             
-                            <table style="border-collapse: collapse; border: 1px solid white; background: transparent; margin: 15px auto; font-family: sans-serif; text-align: center; width: 100%; max-width: 450px;">
+                            <table style="border-collapse: collapse; background: transparent; margin: 15px auto; font-family: sans-serif; text-align: center; width: 100%; max-width: 450px;">
                                 <tbody>
-                                    <tr style="border-bottom: 1px solid white;">
-                                        <td style="padding: 6px; border-right: 1px solid white; text-align: left; width: 40%;">Width (in cm)</td>
-                                        <td style="padding: 6px; border-right: 1px solid white; width: 15%;">1</td>
-                                        <td style="padding: 6px; border-right: 1px solid white; width: 15%;">2</td>
-                                        <td style="padding: 6px; border-right: 1px solid white; width: 15%;">3</td>
-                                        <td style="padding: 6px; width: 15%;">4</td>
-                                    </tr>
-                                    <tr style="border-bottom: 1px solid white;">
-                                        <td style="padding: 6px; border-right: 1px solid white; text-align: left;">Length (in cm)</td>
-                                        <td style="padding: 6px; border-right: 1px solid white;">2</td>
-                                        <td style="padding: 6px; border-right: 1px solid white;">3</td>
-                                        <td style="padding: 6px; border-right: 1px solid white;">4</td>
-                                        <td style="padding: 6px;">5</td>
-                                    </tr>
-                                    <tr style="border-bottom: 1px solid white;">
-                                        <td style="padding: 6px; border-right: 1px solid white; text-align: left;">Area (in cm<sup>2</sup>)</td>
-                                        <td style="padding: 6px; border-right: 1px solid white;">2</td>
-                                        <td style="padding: 6px; border-right: 1px solid white;">6</td>
-                                        <td style="padding: 6px; border-right: 1px solid white;">12</td>
-                                        <td style="padding: 6px;">20</td>
-                                    </tr>
+                                    <!-- Row 1 -->
                                     <tr>
-                                        <td style="padding: 6px; border-right: 1px solid white; text-align: left;">Perimeter (in cm)</td>
-                                        <td style="padding: 6px; border-right: 1px solid white;">6</td>
-                                        <td style="padding: 6px; border-right: 1px solid white;">10</td>
-                                        <td style="padding: 6px; border-right: 1px solid white;">14</td>
-                                        <td style="padding: 6px;">18</td>
+                                        <td style="padding: 6px; border: 1px solid white; text-align: left; width: 40%;">Width (in cm)</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">1</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">2</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">3</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">4</td>
+                                    </tr>
+                                    <!-- Row 2 -->
+                                    <tr>
+                                        <td style="padding: 6px; border: 1px solid white; text-align: left; width: 40%;">Length (in cm)</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">2</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">3</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">4</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">5</td>
+                                    </tr>
+                                    <!-- Row 3 -->
+                                    <tr>
+                                        <td style="padding: 6px; border: 1px solid white; text-align: left; width: 40%;">Area (in cm<sup>2</sup>)</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">2</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">6</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">12</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">20</td>
+                                    </tr>
+                                    <!-- Row 4 -->
+                                    <tr>
+                                        <td style="padding: 6px; border: 1px solid white; text-align: left; width: 40%;">Perimeter (in cm)</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">6</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">10</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">14</td>
+                                        <td style="padding: 6px; border: 1px solid white; width: 15%;">18</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            
+
                             <p class="indent-p">(a) Calculate the width and length of a rectangle in the sequence which has an area of 132 cm<sup>2</sup>.</p>
-                            <p class="indent-p">(b) Write down an expression, in terms of <em>w</em>, for the perimeter of a rectangle in the sequence which has a width of <em>w</em> cm.</p>
-                            <p class="indent-p">(c) Calculate the width of a rectangle in the sequence which has a perimeter of 142 cm.</p>
+                            <p class="indent-p">(b) Calculate the width and length of a rectangle in the sequence which has an perimeter of 50cm. </p>
                         </div>
                     </div>
+
+                    <!-- Question 34 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>34.</span> <em>ABCD</em> is a parallelogram in which <em>AB</em> = 5 cm and <em>BC</em> = 6 cm. <em>M</em> is the midpoint of <em>AD</em> and <em>AM̂B</em> = 90&deg;.</p>
+                            <p>Calculate</p>
+                            <p class="indent-p">(a) <em>BM</em>,</p>
+                            <p class="indent-p">(b) the area of the parallelogram.</p>
+
+                            <!-- Question 34 Parallelogram SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 320 230" width="320" height="230">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .arrow-marker { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    <rect width="320" height="230" class="bg-transparent"/>
+                                    
+                                    <!-- Main Parallelogram Framework: A(50,180), B(200,180), C(260,60), D(110,60) -->
+                                    <polygon points="50,180 200,180 260,60 110,60" class="solid-line"/>
+                                    
+                                    <!-- Internal Lines AM and BM meeting at Midpoint M(80,120) -->
+                                    <line x1="50" y1="180" x2="80" y2="120" class="solid-line"/>
+                                    <line x1="110" y1="60" x2="80" y2="120" class="solid-line"/>
+                                    <line x1="200" y1="180" x2="80" y2="120" class="solid-line"/>
+                                    
+                                    <!-- Right Angle Indicator Box inside triangle AMB at vertex M -->
+                                    <path d="M 89,124 L 85,133 L 76,129" class="solid-line" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Double Congruence Ticks on segment AM -->
+                                    <line x1="57" y1="151" x2="69" y2="157" class="solid-line" style="stroke-width: 1.2;"/>
+                                    <line x1="61" y1="147" x2="73" y2="153" class="solid-line" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Double Congruence Ticks on segment MD -->
+                                    <line x1="87" y1="91" x2="99" y2="97" class="solid-line" style="stroke-width: 1.2;"/>
+                                    <line x1="91" y1="87" x2="103" y2="93" class="solid-line" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Single Arrow on segment MD pointing up-right -->
+                                    <path d="M 94,85 L 100,75 L 104,83" class="arrow-marker"/>
+                                    
+                                    <!-- Single Arrow on segment BC pointing up-right -->
+                                    <path d="M 224,125 L 230,115 L 234,123" class="arrow-marker"/>
+                                    
+                                    <!-- Double Arrows on bottom line AB pointing right -->
+                                    <path d="M 114,174 L 122,180 L 114,186" class="arrow-marker"/>
+                                    <path d="M 124,174 L 132,180 L 124,186" class="arrow-marker"/>
+                                    
+                                    <!-- Double Arrows on top line DC pointing right -->
+                                    <path d="M 174,54 L 182,60 L 174,66" class="arrow-marker"/>
+                                    <path d="M 184,54 L 192,60 L 184,66" class="arrow-marker"/>
+                                    
+                                    <!-- Alphabetical Position Labels -->
+                                    <text x="35" y="195" class="text-label">A</text>
+                                    <text x="215" y="195" class="text-label">B</text>
+                                    <text x="275" y="55" class="text-label">C</text>
+                                    <text x="95" y="55" class="text-label">D</text>
+                                    <text x="60" y="115" class="text-label">M</text>
+                                    
+                                    <!-- Parameter Value Labels -->
+                                    <text x="125" y="210" class="text-numeric">5</text>
+                                    <text x="245" y="135" class="text-numeric">6</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 35 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>35.</span> Seven small circles, each with the same radius, are enclosed within a large circle. The small circle, centre <em>O</em>, touches the other six small circles. These six small circles each touch three small circles and the large circle, the centre of which is also <em>O</em>.</p>
+                            <p class="indent-p">(a) The radius of each of the small circles is <em>r</em> cm. Show that the area of the large circle is 9&pi;<em>r</em><sup>2</sup> cm<sup>2</sup>.</p>
+                            <p class="indent-p">(b) Express the total area of the seven small circles as a percentage of the area of the large circle. Give your answer correct to 1 decimal place.</p>
+                            <p class="indent-p">(c) Express the circumference of the large circle as a fraction of the total of the circumferences of the seven small circles, giving your answer in its simplest form.</p>
+                            <p class="indent-p">(d) In the diagram <em>O</em>, <em>A</em> and <em>B</em> are the centres of three of the small circles. Given that the radius of each of these circles is 3 cm, calculate</p>
+                            <p class="indent-p" style="padding-left: 25px;">(i) the area of &Delta;<em>OAB</em>,</p>
+                            <p class="indent-p" style="padding-left: 25px;">(ii) the area inside &Delta;<em>OAB</em> which is shaded on the diagram. [Take &pi; to be 3.142.]</p>
+
+                            <!-- Question 35 Circles SVG -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+
+                                <svg xmlns="http://w3.org" viewBox="0 0 260 260" width="260" height="260">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .shaded-region { fill: #ffffff; fill-opacity: 0.7; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                    </style>
+                                    <rect width="260" height="260" class="bg-transparent"/>
+                                    
+                                    <!-- Outer Large Boundary Circle: R = 102, Center = (130, 130) -->
+                                    <circle cx="130" cy="130" r="102" class="solid-line" stroke-width="2"/>
+                                    
+                                    <!-- Shaded Region: The exact interstitial gap between circles O, A, and B (outside their curves) -->
+                                    <path d="M 147,100.56 A 34,34 0 0,1 130,71.12 A 34,34 0 0,1 113,100.56 A 34,34 0 0,1 147,100.56 Z" class="shaded-region"/>
+                                    
+                                    <!-- Inner Central Circle: R = 34 -->
+                                    <circle cx="130" cy="130" r="34" class="solid-line"/>
+                                    
+                                    <!-- 6 Surrounding Connected Circles: R = 34 -->
+                                    <circle cx="198" cy="130" r="34" class="solid-line"/>
+                                    <circle cx="164" cy="188.88" r="34" class="solid-line"/>
+                                    <circle cx="96" cy="188.88" r="34" class="solid-line"/>
+                                    <circle cx="62" cy="130" r="34" class="solid-line"/>
+                                    
+                                    <!-- Circle B center: (96, 71.12) -->
+                                    <circle cx="96" cy="71.12" r="34" class="solid-line"/>
+                                    <!-- Circle A center: (164, 71.12) -->
+                                    <circle cx="164" cy="71.12" r="34" class="solid-line"/>
+                                    
+                                    <!-- Dashed Triangle Connectors between O(130,130), A(164,71.12), B(96,71.12) -->
+                                    <polygon points="130,130 164,71.12 96,71.12" class="dashed-line"/>
+                                    
+                                    <!-- Center point indicators -->
+                                    <circle cx="130" cy="130" r="2.5" fill="#ffffff"/>
+                                    <circle cx="164" cy="71.12" r="2.5" fill="#ffffff"/>
+                                    <circle cx="96" cy="71.12" r="2.5" fill="#ffffff"/>
+                                    
+                                    <!-- Labels -->
+                                    <text x="130" y="152" class="text-label">O</text>
+                                    <text x="176" y="62" class="text-label">A</text>
+                                    <text x="84" y="62" class="text-label">B</text>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 36 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>36.</span> (a) How many minutes does it take for the minute hand of a clock to turn through 216&deg;?</p>
+                            <p class="indent-p">(b) The tip of a minute hand moves in a circle of radius 14 cm. Taking &pi; to be <sup>22</sup>&frasl;<sub>7</sub>, calculate the distance moved by the tip of the hand in 15 minutes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 37 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>37.</span> The diagram shows the cross-section of a swimming pool. The pool is 25 m long, 1 m deep at one end and 2 m deep at the other end. The bottom slopes uniformly from one end to the other. Water enters the pool at a constant rate and, from empty, the time taken to fill the pool completely is 3 hours.</p>
+                            <p class="indent-p">(a) Find the area of the cross-section of the pool.</p>
+                            <p class="indent-p">(b) Find the time taken to fill the pool to a depth of one metre at the deep end.</p>
+                            <p class="indent-p">(c) Find the depth of the water at the deep end after 2 hours.</p>
+                            <p class="indent-p">(d) On the axes in the answer space, draw a sketch graph to represent how the depth of water at the deep end of the pool changes with time.</p>
+
+                            <!-- Question 37 Flexbox Panel for side-by-side diagrams -->
+                            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin: 20px 0;">
+                                <!-- Pool Profile Diagram -->
+                                <div class="diagram-visual">
+                                    <svg xmlns="http://w3.org" viewBox="0 0 300 160" width="300" height="160">
+                                        <style>
+                                            .bg-transparent { fill: none; }
+                                            .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                            .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                        </style>
+                                        <rect width="300" height="160" class="bg-transparent"/>
+                                        
+                                        <!-- Pool cross section outline -->
+                                        <polygon points="40,30 260,30 260,75 40,120" class="solid-line"/>
+                                        
+                                        <!-- Labels and Dimensions -->
+                                        <text x="150" y="22" class="text-numeric">25 m</text>
+                                        <text x="16" y="82" class="text-numeric">2 m</text>
+                                        <text x="282" y="58" class="text-numeric">1 m</text>
+                                    </svg>
+                                </div>
+
+                                <!-- Coordinate Axes Grid Diagram -->
+                                <div class="diagram-visual">
+                                    <svg xmlns="http://w3.org" viewBox="0 0 240 180" width="240" height="180">
+                                        <style>
+                                            .bg-transparent { fill: none; }
+                                            .axis-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                            .grid-line { stroke: #ffffff; stroke-width: 0.8; opacity: 0.5; fill: none; }
+                                            .text-axis { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 14px; fill: #ffffff; }
+                                            .text-ticks { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 16px; fill: #ffffff; text-anchor: middle; }
+                                        </style>
+                                        <rect width="240" height="180" class="bg-transparent"/>
+                                        
+                                        <!-- Dotted Layout Grid Lines -->
+                                        <rect x="70" y="30" width="120" height="90" class="grid-line" style="stroke-dasharray: 2,2;"/>
+                                        <line x1="70" y1="75" x2="190" y2="75" class="grid-line" style="stroke-dasharray: 2,2;"/>
+                                        <line x1="110" y1="30" x2="110" y2="120" class="grid-line" style="stroke-dasharray: 2,2;"/>
+                                        <line x1="150" y1="30" x2="150" y2="120" class="grid-line" style="stroke-dasharray: 2,2;"/>
+                                        
+                                        <!-- Solid Axis Lines -->
+                                        <line x1="70" y1="15" x2="70" y2="120" class="axis-line"/>
+                                        <line x1="70" y1="120" x2="210" y2="120" class="axis-line"/>
+                                        
+                                        <!-- Axis Arrowtips -->
+                                        <path d="M 66,22 L 70,14 L 74,22" class="axis-line"/>
+                                        <path d="M 202,116 L 210,120 L 202,124" class="axis-line"/>
+                                        
+                                        <!-- Vertical Text Indicators -->
+                                        <text x="5" y="44" class="text-axis">Depth of</text>
+                                        <text x="5" y="59" class="text-axis">water in</text>
+                                        <text x="5" y="74" class="text-axis">metres</text>
+                                        
+                                        <!-- Horizontal Axis Label -->
+                                        <text x="96" y="165" class="text-axis" style="font-size: 15px;">Time in hours</text>
+                                        
+                                        <!-- Numerical Calibration Ticks -->
+                                        <text x="58" y="125" class="text-ticks">0</text>
+                                        <text x="58" y="80" class="text-ticks">1</text>
+                                        <text x="58" y="35" class="text-ticks">2</text>
+                                        
+                                        <text x="110" y="136" class="text-ticks">1</text>
+                                        <text x="150" y="136" class="text-ticks">2</text>
+                                        <text x="190" y="136" class="text-ticks">3</text>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 38 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>38.</span> (a) Through what angle does the minute hand of a clock turn in 27 minutes?</p>
+                            <p class="indent-p">(b) The tip of a minute hand moves in a circle of radius 21 cm. Taking &pi; to be <sup>22</sup>&frasl;<sub>7</sub>, calculate the distance moved by the tip of the hand in 20 minutes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 39 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>39.</span> The diagram shows the cross-section of a swimming pool. The pool is 20 m long, 1 m deep at one end and 3 m deep at the other end. The bottom slopes uniformly from one end to the other. The pool is initially full of water. At 14 00 a tap is opened and water escapes at a constant rate. It takes 4 hours to empty it completely.</p>
+                            <p class="indent-p">(a) Find the area of the cross-section of the pool.</p>
+                            <p class="indent-p">(b) How far will the water level have fallen by 15 00?</p>
+                            <p class="indent-p">(c) At what time will the depth of water at the deep end be 2 m?</p>
+                            <p class="indent-p">(d) On the axes in the answer space, draw a sketch graph to represent how the depth of water at the deep end of the pool changes with time.</p>
+
+                            <!-- Question 39 Diagrams Container -->
+                            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin: 20px 0;">
+                                <!-- Pool Structural Cross-Section -->
+                                <div class="diagram-visual">
+                                    <svg xmlns="http://w3.org" viewBox="0 0 320 160" width="320" height="160">
+                                        <style>
+                                            .bg-transparent { fill: none; }
+                                            .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                            .dimension-line { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                            .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                        </style>
+                                        <rect width="320" height="160" class="bg-transparent"/>
+                                        
+                                        <!-- Pool Profile Path Box -->
+                                        <polygon points="50,40 250,40 250,80 50,130" class="solid-line"/>
+                                        
+                                        <!-- Dimension Line Indicators with Arrow Heads -->
+                                        <!-- Top Dimension Line (20 m) -->
+                                        <line x1="50" y1="20" x2="250" y2="20" class="dimension-line"/>
+                                        <path d="M 58,16 L 50,20 L 58,24 M 242,16 L 250,20 L 242,24" class="solid-line" style="stroke-width: 1;"/>
+                                        
+                                        <!-- Left Deep Dimension Line (3 m) -->
+                                        <line x1="30" y1="40" x2="30" y2="130" class="dimension-line"/>
+                                        <path d="M 26,48 L 30,40 L 34,48 M 26,122 L 30,130 L 34,122" class="solid-line" style="stroke-width: 1;"/>
+                                        
+                                        <!-- Right Shallow Dimension Line (1 m) -->
+                                        <line x1="270" y1="40" x2="270" y2="80" class="dimension-line"/>
+                                        <path d="M 266,48 L 270,40 L 274,48 M 266,72 L 270,80 L 274,72" class="solid-line" style="stroke-width: 1;"/>
+                                        
+                                        <!-- Values Labeling -->
+                                        <text x="150" y="14" class="text-numeric">20 m</text>
+                                        <text x="14" y="90" class="text-numeric">3 m</text>
+                                        <text x="292" y="66" class="text-numeric">1 m</text>
+                                    </svg>
+                                </div>
+
+                                <!-- Graph Grid Response Area -->
+                                <div class="diagram-visual">
+                                    <svg xmlns="http://w3.org" viewBox="0 0 260 180" width="260" height="180">
+                                        <style>
+                                            .bg-transparent { fill: none; }
+                                            .axis-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+                                            .grid-line { stroke: #ffffff; stroke-width: 0.8; opacity: 0.4; fill: none; }
+                                            .text-axis { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 13px; fill: #ffffff; }
+                                            .text-ticks { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 15px; fill: #ffffff; text-anchor: middle; }
+                                        </style>
+                                        <rect width="260" height="180" class="bg-transparent"/>
+                                        
+                                        <!-- Horizontal internal grid divisions -->
+                                        <line x1="70" y1="90" x2="210" y2="90" class="grid-line"/>
+                                        <line x1="70" y1="60" x2="210" y2="60" class="grid-line"/>
+                                        <line x1="70" y1="30" x2="210" y2="30" class="grid-line"/>
+                                        
+                                        <!-- Vertical internal grid divisions -->
+                                        <line x1="105" y1="30" x2="105" y2="120" class="grid-line"/>
+                                        <line x1="140" y1="30" x2="140" y2="120" class="grid-line"/>
+                                        <line x1="175" y1="30" x2="175" y2="120" class="grid-line"/>
+                                        <line x1="210" y1="30" x2="210" y2="120" class="grid-line"/>
+                                        
+                                        <!-- Main Axis Edges with Arrows -->
+                                        <line x1="70" y1="15" x2="70" y2="120" class="axis-line"/>
+                                        <line x1="70" y1="120" x2="225" y2="120" class="axis-line"/>
+                                        <path d="M 66,23 L 70,15 L 74,23" class="axis-line"/>
+                                        <path d="M 217,116 L 225,120 L 217,124" class="axis-line"/>
+                                        
+                                        <!-- Vertical descriptive parameter markers -->
+                                        <text x="5" y="40" class="text-axis">Depth of</text>
+                                        <text x="5" y="55" class="text-axis">water in</text>
+                                        <text x="5" y="70" class="text-axis">metres</text>
+                                        
+                                        <!-- Horizontal scale descriptive marker -->
+                                        <text x="110" y="165" class="text-axis" style="font-size: 14px;">Time of day</text>
+                                        
+                                        <!-- Y Axis Step Indicators -->
+                                        <text x="58" y="124" class="text-ticks">0</text>
+                                        <text x="58" y="94" class="text-ticks">1</text>
+                                        <text x="58" y="64" class="text-ticks">2</text>
+                                        <text x="58" y="34" class="text-ticks">3</text>
+                                        
+                                        <!-- X Axis Timeline Steps -->
+                                        <text x="70" y="136" class="text-ticks" style="font-size: 13px;">1400</text>
+                                        <text x="105" y="136" class="text-ticks" style="font-size: 13px;">1500</text>
+                                        <text x="140" y="136" class="text-ticks" style="font-size: 13px;">1600</text>
+                                        <text x="175" y="136" class="text-ticks" style="font-size: 13px;">1700</text>
+                                        <text x="210" y="136" class="text-ticks" style="font-size: 13px;">1800</text>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 40 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>40.</span> <em>A</em>, <em>B</em>, <em>C</em> and <em>D</em> lie on a circle, centre <em>O</em> of radius 14 cm. <em>AO</em> is a diameter of the circle through <em>A</em>, <em>P</em>, <em>O</em> and <em>Q</em>.</p>
+                            <p class="indent-p">(a) Write down the radius of circle <em>APOQ</em>.</p>
+                            <p class="indent-p">(b) Taking &pi; to be <sup>22</sup>&frasl;<sub>7</sub>, calculate</p>
+                            <p class="indent-p" style="padding-left: 25px;">(i) the area of the shaded region,</p>
+                            <p class="indent-p" style="padding-left: 25px;">(ii) the total length of the boundary of the shaded region.</p>
+
+                            <!-- Question 40 SVG Diagram -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 280 260" width="280" height="260">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .tick-line { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+                                        .shaded-region { fill: #ffffff; fill-opacity: 0.25; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 24px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                    </style>
+                                    <rect width="280" height="260" class="bg-transparent"/>
+                                    
+                                    <!-- Shaded Region: Entire large circle minus the inner small circle using evenodd fill rule -->
+                                    <path d="M 150,130 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0 M 105,130 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" class="shaded-region" fill-rule="evenodd"/>
+                                    
+                                    <!-- Large Circle Outline (Center: 150,130; Radius: 90) -->
+                                    <circle cx="150" cy="130" r="90" class="solid-line"/>
+                                    
+                                    <!-- Small Inner Circle Outline (Center: 105,130; Radius: 45) -->
+                                    <circle cx="105" cy="130" r="45" class="solid-line"/>
+                                    
+                                    <!-- Four Quadrant Tick Marks on the small circle -->
+                                    <!-- Tick at A (60, 130) -->
+                                    <line x1="53" y1="130" x2="67" y2="130" class="tick-line"/>
+                                    <!-- Tick at P (105, 85) -->
+                                    <line x1="105" y1="78" x2="105" y2="92" class="tick-line"/>
+                                    <!-- Tick at O (150, 130) -->
+                                    <line x1="143" y1="130" x2="157" y2="130" class="tick-line"/>
+                                    <!-- Tick at Q (105, 175) -->
+                                    <line x1="105" y1="168" x2="105" y2="182" class="tick-line"/>
+                                    
+                                    <!-- Alphabetical Geometry Labels -->
+                                    <text x="40" y="136" class="text-label">A</text>
+                                    <text x="150" y="32" class="text-label">B</text>
+                                    <text x="256" y="136" class="text-label">C</text>
+                                    <text x="150" y="244" class="text-label">D</text>
+                                    <text x="170" y="134" class="text-label">O</text>
+                                    <text x="118" y="74" class="text-label">P</text>
+                                    <text x="120" y="202" class="text-label">Q</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 41 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>41.</span> A teacher has a rectangular piece of paper which is 48 cm long and 37 cm wide.</p>
+                            <p class="indent-p">(a) Calculate the perimeter of the piece of paper, giving your answer in metres and centimetres.</p>
+                            <p class="indent-p">(b) The teacher wishes to cut the paper up into squares each of which measures 5 cm by 5 cm. What is the largest number of whole squares she can cut out?</p>
+
+                            <!-- Question 41 SVG Diagram -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 280 180" width="280" height="180">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    <rect width="280" height="180" class="bg-transparent"/>
+                                    
+                                    <!-- Rectangular paper sheet outline -->
+                                    <rect x="60" y="30" width="180" height="110" class="solid-line"/>
+                                    
+                                    <!-- Dimensional labels placement -->
+                                    <text x="36" y="92" class="text-numeric">37</text>
+                                    <text x="150" y="165" class="text-numeric">48</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 42 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>42.</span> In this question take &pi; to be 3.142. The diagram shows a window in a large church. <em>AXB</em> is an arc of a circle centre <em>C</em>. The lines <em>OA</em> and <em>OB</em> are tangents to this circle. The other four panels are each identical to <em>OAXB</em>. <em>O</em> is centre of the larger circle which touches arc <em>AXB</em> at <em>X</em>. <em>OC</em> = 6 m and <em>OĈB</em> = 60&deg;.</p>
+                            <p class="indent-p">(a) Show that <em>BC</em> = 3 m</p>
+                            <p class="indent-p">(b) Calculate</p>
+                            <p class="indent-p" style="padding-left: 25px;">(i) the area of triangle <em>OBC</em>,</p>
+                            <p class="indent-p" style="padding-left: 25px;">(ii) the area of the sector <em>AXB</em>,</p>
+                            <p class="indent-p" style="padding-left: 25px;">(iii) the total area of the panel <em>OAXB</em>.</p>
+                            <p class="indent-p">(c) Calculate the area of the large circle.</p>
+                            <p class="indent-p">(d) Given that the window has rotational symmetry about <em>O</em> of order 5, calculate the area, labelled <em>S</em>, between two of the panels.</p>
+
+                            <!-- Question 42 SVG Diagram -->
+                            <div class="diagram-visual" style="margin: 15px 0;">
+                                <svg xmlns="http://w3.org" viewBox="0 0 420 450" width="420" height="450">
+                                    <style>
+                                        .bg-transparent { fill: none; }
+                                        .solid-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+                                        .angle-arc { stroke: #ffffff; stroke-width: 1; fill: none; }
+                                        .text-label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 22px; fill: #ffffff; font-style: italic; text-anchor: middle; }
+                                        .text-numeric { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 16px; fill: #ffffff; text-anchor: middle; }
+                                    </style>
+                                    <rect width="420" height="450" class="bg-transparent"/>
+                                    
+                                    <!-- Outer Main Circle Frame (Center: 160, 170; Radius: 155) -->
+                                    <circle cx="160" cy="170" r="155" class="solid-line"/>
+                                    
+                                    <!-- 5 Symmetric Semicircle Petal Panels (Perfectly Identical Sizes) -->
+                                    <g transform="translate(160,170) rotate(0)">
+                                        <line x1="0" y1="0" x2="56.29" y2="-97.5" class="solid-line"/>
+                                        <line x1="0" y1="0" x2="-56.29" y2="-97.5" class="solid-line"/>
+                                        <path d="M 56.29,-97.5 A 56.29,56.29 0 0,0 -56.29,-97.5" class="solid-line"/>
+                                    </g>
+                                    <g transform="translate(160,170) rotate(72)">
+                                        <line x1="0" y1="0" x2="56.29" y2="-97.5" class="solid-line"/>
+                                        <line x1="0" y1="0" x2="-56.29" y2="-97.5" class="solid-line"/>
+                                        <path d="M 56.29,-97.5 A 56.29,56.29 0 0,0 -56.29,-97.5" class="solid-line"/>
+                                    </g>
+                                    <g transform="translate(160,170) rotate(144)">
+                                        <line x1="0" y1="0" x2="56.29" y2="-97.5" class="solid-line"/>
+                                        <line x1="0" y1="0" x2="-56.29" y2="-97.5" class="solid-line"/>
+                                        <path d="M 56.29,-97.5 A 56.29,56.29 0 0,0 -56.29,-97.5" class="solid-line"/>
+                                    </g>
+                                    <g transform="translate(160,170) rotate(216)">
+                                        <line x1="0" y1="0" x2="56.29" y2="-97.5" class="solid-line"/>
+                                        <line x1="0" y1="0" x2="-56.29" y2="-97.5" class="solid-line"/>
+                                        <path d="M 56.29,-97.5 A 56.29,56.29 0 0,0 -56.29,-97.5" class="solid-line"/>
+                                    </g>
+                                    <g transform="translate(160,170) rotate(288)">
+                                        <line x1="0" y1="0" x2="56.29" y2="-97.5" class="solid-line"/>
+                                        <line x1="0" y1="0" x2="-56.29" y2="-97.5" class="solid-line"/>
+                                        <path d="M 56.29,-97.5 A 56.29,56.29 0 0,0 -56.29,-97.5" class="solid-line"/>
+                                    </g>
+
+                                    <!-- Top Petal Internal Construction lines -->
+                                    <!-- Line OC (Vertical from 170 to 55) -->
+                                    <line x1="160" y1="170" x2="160" y2="55" class="dashed-line"/>
+                                    <!-- Radius CB (from C(160,55) to B(216.29,72.5)) -->
+                                    <line x1="160" y1="55" x2="216.29" y2="72.5" class="dashed-line"/>
+                                    <!-- Radius CA (from C(160,55) to A(103.71,72.5)) -->
+                                    <line x1="160" y1="55" x2="103.71" y2="72.5" class="dashed-line"/>
+                                    
+                                    <!-- Right Angle Indicator Box square at point B -->
+                                    <!-- Perpendicular orientation to tangent OB and radius CB -->
+                                    <path d="M 210,83 L 195,78 L 201,68" class="solid-line" style="stroke-width: 1.2;"/>
+                                    
+                                    <!-- Angle Arc at C for 60 degrees -->
+                                    <path d="M 160,70 A 20,20 0 0,0 180,62" class="angle-arc"/>
+                                    
+                                    <!-- Geometric Position Labels -->
+                                    <text x="142" y="192" class="text-label">O</text>
+                                    <text x="165" y="50" class="text-label">C</text>
+                                    <text x="232" y="74" class="text-label">B</text>
+                                    <text x="88" y="74" class="text-label">A</text>
+                                    <text x="160" y="10" class="text-label">X</text>
+                                    <text x="160" y="275" class="text-label" style="font-style: normal; font-weight: bold;">S</text>
+                                    
+                                    <!-- Text Parameter Metrics -->
+                                    <text x="180" y="83" class="text-numeric">60&deg;</text>
+                                    <text x="150" y="122" class="text-numeric">6</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
 
 
 
