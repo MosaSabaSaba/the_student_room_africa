@@ -542,6 +542,8 @@ ul { margin-left: 2rem; }
 .indent { margin-left: 2rem; }
 .indent-p { margin-left: 1.3rem; }
 .indent-p2 { margin-left: 2.6rem; }
+.indent-p3 { margin-left: 3.9rem; }
+.indent-p4 { margin-left: 4.2rem; }
 /* ── RESPONSIVE ── */
 
 /* At 1100px: right TOC disappears AND left sidebar becomes mobile-style */
