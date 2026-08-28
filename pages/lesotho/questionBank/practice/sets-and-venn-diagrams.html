@@ -1,0 +1,1991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Question Bank | Unit 12 - Sets and Venn Diagrams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/contentStyles.css" />
+    <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../assets/css/question-bank.css" />
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        <a href="../../../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="../../conversions.html">Study Guide</a>
+            <a href="../../tracker.html">Revision Tracker</a>
+            <a href="../../tracker.html#past-papers">Past Papers</a>
+            <a href="../../questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="#">Lesotho</a><span class="bc-sep">›</span>
+            <a href="../../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../question-bank.html">Question Bank</a><span class="bc-sep">›</span>
+            <a href="practice-questions.html">Practice Questions</a><span class="bc-sep">›</span>
+            <span>Unit 12 </span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="page-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar" id="leftSidebar">
+            <div class="filter-wrap">
+                <span class="filter-icon">🔍</span>
+                <input class="filter-input" type="text" placeholder="Filter topics..." />
+            </div>
+
+            <ul class="sidebar-nav" id="topicNav">
+                <li><a href="number-operations.html">Unit 1A - Arithmetic - Number Operations, Squares and Square Roots</a></li>
+                <li><a href="financial-transactions.html">Unit 1B - Arithmetic - Arithmetic Problems, Simple Financial Transactions, Profit and Loss, Simple Interest</a></li>
+                <li><a href="ratio-proportions-percentages.html">Unit 1C - Arithmetic - Ratio, Proportions and Percentages, Scales and Simple Map Problems</a></li>
+                <li><a href="estimation-and-significant-figures.html">Unit 1D - Arithmetic - Estimation, Significant Figures, Decimal Places and Standard Form</a></li>
+                <li><a href="mensuration-plane-figures.html">Unit 2A - Mensuration - Rectangle, Square, Triangle, Parallelogram, Trapezium and Circle, Arc Length and Area of Sector</a></li>
+                <li><a href="mensuration-solid-figures.html">Unit 2B - Mensuration - Solid Figures i.e. Cuboid, Cylinder, Sphere, Pyramid, Cone and Prism</a></li>
+                <!-- <li><a href="algebraic-formulae-and-symb\.html">Unit 3C - Algebra and Graphs - Expansion and Factorisation of Algebraic Expressions</a></li> -->
+                <li><a href="algebraic-fractions-and-equations.html">Unit 3D - Algebra and Graphs - Simple Algebraic Fractions, Simple Equations and Identities, Solutions of Simultaneous Linear Equations and Quadratic Equations</a></li>
+                <li><a href="algebra-graphs.html">Unit 3E - Algebra and Graphs - Graphs</a></li>
+                <!-- <li><a href="variations.html">Unit 3F - Algebra and Graphs - Direct, Inverse and Joint Variations</a></li>
+                <li><a href="straight-line-graphs.html">Unit 3G - Algebra and Graphs - Gradients and Equations of Straight Lines</a></li>
+                <li><a href="inequalities-and-linear-programming.html">Unit 3H - Algebra and Graphs - Inequality and Linear Programming</a></li>
+                <li><a href="distance-speed-time-graphs.html">Unit 3I - Algebra and Graphs - Distance-Time Graphs and Speed-Time Graphs</a></li>
+                <li><a href="angle-properties.html">Unit 4A - Geometry - Properties of Angles; Angle Properties of Polygons</a></li>
+                <li><a href="similarity-congruency-symmetry.html">Unit 4B - Geometry - Similarity, Congruency and Symmetry</a></li>
+                <li><a href="circle-theorems.html">Unit 4C - Geometry - Circle Theorems</a></li>
+                <li><a href="loci-and-construction.html">Unit 4D - Geometry - Loci and Simple Construction</a></li> -->
+                <li><a href="trigonometrical-ratios.html">Unit 5A - Trigonometry - Trigonometrical Ratios, Solutions of Triangles</a></li>
+                <li><a href="bearing-problems.html">Unit 5B - Trigonometry - Bearing Problems, Angle of Elevation and Depression, 3 Dimensional Problems</a></li>
+                <li><a href="statistics-charts-and-mean.html">Unit 6A - Statistics - Bar Charts, Pie Charts, Frequency Polygons, Histograms, Mean, Median and Mode</a></li>
+                <li><a href="cumulative-frequency.html">Unit 6B - Statistics - Cumulative Frequency</a></li>
+                <li><a href="vectors.html">Unit 7 - Vectors</a></li>
+                <!-- <li><a href="problem-solving.html">Unit 8 - Problem Solving</a></li> -->
+                <li><a href="probability.html"> Unit 9 - Probability</a></li>
+                <li><a href="transformations.html">Unit 10A - Transformations</a></li>
+                <li><a href="matrices-in-transformation.html">Unit 10B - Use of Matrices in Transformation</a></li>
+                <!-- <li><a href="matrices.html">Unit 11 - Matrices</a></li> -->
+                <li class="active"><a href="sets-and-venn-diagrams.html">Unit 12 - Sets and Venn Diagrams</a></li>
+                <li><a href="functions.html">Unit 13 - Functions</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="mainContent">
+            <div class="question-paper">
+
+                <!-- ============================================================ -->
+                <!-- Unit 12  - Sets and Venn Diagrams -->
+                <!-- ============================================================ -->
+                <section class="topic-section" id="unit12">
+                                        <!-- Unit 12  Header -->
+                    <div class="unit-header" style="text-align: center; margin: 30px 0 20px 0; border-bottom: 2px solid white; padding-bottom: 10px;">
+                        <h1 style="font-family: sans-serif; font-size: 26px; margin: 0; color: #ffffff;">Unit 12 </h1>
+                        <h3 style="font-family: 'Times New Roman', Times, serif, sans-serif; font-style: italic; font-size: 22px; margin: 5px 0 0 0; color: #ffffff;">
+                            Sets and Venn Diagrams
+                        </h3>
+                    </div>
+
+                    <!-- Question 1 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>1.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="false bag">}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>Q</mi><mo>=</mo><mo stretchy="false">{</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false bag">}</mo></math> and <math xmlns="http://w3.org" display="inline"><mi>R</mi><mo>=</mo><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="false bag">}</mo></math>, mark the members of these sets clearly on the Venn diagram given. Using your diagram, or otherwise, list the members of <math xmlns="http://w3.org" display="inline"><mo stretchy="false">(</mo><mi>P</mi><mo>&cup;</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>&cap;</mo><mi>R</mi></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://w3.org">
+                                    <!-- Circle P (Top Left) -->
+                                    <circle cx="165" cy="165" r="85" fill="none" stroke="white" stroke-width="2.5" />
+                                    
+                                    <!-- Circle Q (Top Right) -->
+                                    <circle cx="275" cy="165" r="85" fill="none" stroke="white" stroke-width="2.5" />
+                                    
+                                    <!-- Circle R (Bottom Center) -->
+                                    <circle cx="220" cy="260" r="85" fill="none" stroke="white" stroke-width="2.5" />
+                                    
+                                    <!-- Labels -->
+                                    <text x="110" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">P</text>
+                                    <text x="290" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">Q</text>
+                                    <text x="200" y="370" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">R</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>2.</span> (a) <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>11</mn><mo stretchy="false bag">}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>X</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>9</mn><mo stretchy="false bag">}</mo></math> and <math xmlns="http://w3.org" display="inline"><mi>Y</mi><mo>=</mo><mo stretchy="false">{</mo><mn>3</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>11</mn><mo stretchy="false bag">}</mo></math>. List the elements of</p>
+                            <p class="indent-p2">(i) <math xmlns="http://w3.org" display="inline"><msup><mi>X&prime;</mi><mo></mo></msup><mo>&cap;</mo><mi>Y</mi></math>,</p>
+                            <p class="indent-p2">(ii) <math xmlns="http://w3.org" display="inline"><mo stretchy="false">(</mo><mi>X</mi><mo>&cap;</mo><mi>Y</mi><msup><mo stretchy="false">)&prime;</mo><mo></mo></msup></math>.</p>
+                            <p class="indent-p">(b) In the Venn diagram <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi></math> is the set of all children in a certain chosen group, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mtext>children in Youth Club </mtext><mi>A</mi><mo stretchy="false bag">}</mo></math> and <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo stretchy="false">{</mo><mtext>children in Youth Club </mtext><mi>B</mi><mo stretchy="false bag">}</mo></math>. The letters <math xmlns="http://w3.org" display="inline"><mi>p</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>q</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>x</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>y</mi></math> in the diagram represent the number of children in each subset. Given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo stretchy="false">(</mo><mi>&#x2130;</mi><mo stretchy="false">)</mo><mo>=</mo><mn>200</mn></math>, <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>75</mn></math> and <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mn>35</mn></math>,</p>
+                            <div class="diagram-visual">
+                                <svg width="450" height="280" viewBox="0 0 450 280" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="50" y="40" width="360" height="200" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle A (Left Ellipse) -->
+                                    <ellipse cx="180" cy="140" rx="80" ry="45" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Right Ellipse) -->
+                                    <ellipse cx="250" cy="140" rx="80" ry="45" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Outer Label E -->
+                                    <text x="35" y="45" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                    
+                                    <!-- Set Labels A and B -->
+                                    <text x="95" y="95" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="335" y="95" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">B</text>
+                                    
+                                    <!-- Region Elements/Counts -->
+                                    <text x="145" y="146" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">p</text>
+                                    <text x="215" y="146" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">x</text>
+                                    <text x="285" y="146" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">q</text>
+                                    <text x="380" y="210" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">y</text>
+                                </svg>
+
+                            </div>
+                            <p class="indent-p2">(i) express <math xmlns="http://w3.org" display="inline"><mi>p</mi></math> in terms of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>,</p>
+                            <p class="indent-p2">(ii) find the smallest possible value of <math xmlns="http://w3.org" display="inline"><mi>y</mi></math>,</p>
+                            <p class="indent-p2">(iii) find the largest possible value of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>,</p>
+                            <p class="indent-p2">(iv) find the value of <math xmlns="http://w3.org" display="inline"><mi>q</mi></math> if <math xmlns="http://w3.org" display="inline"><mi>p</mi><mo>=</mo><mn>45</mn></math>.</p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>3.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext> is an integer</mtext><mo>,</mo><mn>2</mn><mo>&le;</mo><mi>x</mi><mo>&le;</mo><mn>10</mn><mo stretchy="false bag">}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext> is a prime number</mtext><mo stretchy="false bag">}</mo></math> and <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext> is a multiple of </mtext><mn>3</mn><mo stretchy="false bag">}</mo></math>,</p>
+                            <p class="indent-p">(a) find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mo>&cup;</mo><mi>B</mi><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p">(b) list the elements of the set <math xmlns="http://w3.org" display="inline"><msup><mi>A&prime;</mi><mo></mo></msup><mo>&cap;</mo><msup><mi>B&prime;</mi><mo></mo></msup></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>4.</span> In the Venn diagram (a) shade <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&cap;</mo><msup><mi>C&prime;</mi></msup></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="40" width="310" height="310" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Top-Left Circle -->
+                                    <circle cx="165" cy="155" r="85" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Bottom-Right Circle -->
+                                    <circle cx="230" cy="215" r="85" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Labels -->
+                                    <text x="80" y="90" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="140" y="295" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">C</text>
+                                    <text x="375" y="355" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">ℰ</text>
+                                </svg>
+
+                            </div>
+
+                            <p class="indent-p">In the Venn diagram (b) shade <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>&cup;</mo><mo stretchy="false">(</mo><mi>A</mi><mo>&cap;</mo><mi>C&prime;</mi><msup><mo stretchy="false">)</mo></msup></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="450" height="320" viewBox="0 0 450 320" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="30" width="370" height="250" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle A (Top Left) -->
+                                    <circle cx="180" cy="115" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Top Right) -->
+                                    <circle cx="250" cy="115" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Bottom Center) -->
+                                    <circle cx="215" cy="175" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Labels -->
+                                    <text x="100" y="65" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="320" y="65" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="275" y="240" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">C</text>
+                                    <text x="430" y="275" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>5.</span> At an international college, students have to be proficient in at least one of the languages, English, French or German. In a particular group of <math xmlns="http://w3.org" display="inline"><mn>33</mn></math> students, <math xmlns="http://w3.org" display="inline"><mn>2</mn></math> are proficient in all three languages, <math xmlns="http://w3.org" display="inline"><mn>3</mn></math> in English and French only, <math xmlns="http://w3.org" display="inline"><mn>4</mn></math> in French and German only and <math xmlns="http://w3.org" display="inline"><mn>5</mn></math> in German and English only. The number of students proficient in English only is <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>, in French only is <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>, and in German only is <math xmlns="http://w3.org" display="inline"><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</max><mo stretchy="false">)</mo></math>. Illustrate this information on a clearly labelled Venn diagram, showing the number in each separate region. Find <math xmlns="http://w3.org" display="inline"><mi>x</mi></math> and hence find the total number proficient in English.</p>
+                            
+                            <!-- Diagram Visual Placement Hook -->
+                            <div class="diagram-visual"></div>
+                        </div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>6.</span> In the Venn diagram (a), shade <math xmlns="http://w3.org" display="inline"><mo stretchy="false">(</mo><mi>A</mi><mo>&cap;</mo><mi>B</mi><mo stretchy="false">)</mo><mo>&cup;</mo><mi>C</mi></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="40" width="310" height="310" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle A (Top Left) -->
+                                    <circle cx="155" cy="145" r="65" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Bottom Center-Left) -->
+                                    <circle cx="170" cy="220" r="65" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Top Right) -->
+                                    <circle cx="240" cy="165" r="65" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Labels -->
+                                    <text x="80" y="85" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="90" y="305" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="315" y="100" fill="white" font-family="Georgia, serif" font-style="italic" text-anchor="middle">C</text>
+                                    <text x="375" y="355" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">ℰ</text>
+                                </svg>
+                            </div>
+
+                            <p class="indent-p">In the Venn diagram (b), shade <math xmlns="http://w3.org" display="inline"><mo stretchy="false">(</mo><mi>A</mi><mo>&cap;</mo><mi>C</mi><mo stretchy="false">)</mo><mo>&cup;</mo><mo stretchy="false">(</mo><mi>B</mi><mo>&cap;</mo><msup><mi>C&prime;</mi></msup><mo stretchy="false">)</mo></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="40" width="310" height="310" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle A (Top Left) -->
+                                    <circle cx="155" cy="145" r="65" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Bottom Center-Left) -->
+                                    <circle cx="170" cy="220" r="65" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Top Right) -->
+                                    <circle cx="240" cy="165" r="65" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Labels -->
+                                    <text x="80" y="85" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="90" y="305" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="315" y="100" fill="white" font-family="Georgia, serif" font-style="italic" text-anchor="middle">C</text>
+                                    <text x="375" y="355" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">ℰ</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>7.</span> Two sets <math xmlns="http://w3.org" display="inline"><mi>A</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>B</mi></math> are such that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>11</mn></math> and <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></math>. Given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo stretchy="false">(</mo><mi>&#x2130;</mi><mo stretchy="false">)</mo><mo>=</mo><mn>15</mn></math>, find</p>
+                            <p class="indent-p2">(a) the smallest possible value of <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mo>&cap;</mo><mi>B</mi><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) the largest possible value of <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mo>&cup;</mo><mi>B</mi><mo stretchy="false">)&prime;</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>8.</span> A number of travellers were questioned about the transport they used on a particular day. Each of them used one or more of the methods shown in the Venn diagram. Of those questioned, <math xmlns="http://w3.org" display="inline"><mn>6</mn></math> said that they travelled by bus and train only, <math xmlns="http://w3.org" display="inline"><mn>2</mn></math> by train and car only and <math xmlns="http://w3.org" display="inline"><mn>7</mn></math> by bus, train and car. The number <math xmlns="http://w3.org" display="inline"><mi>x</mi></math> who travelled by bus only was equal to the number who travelled by bus and car only.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://w3.org">
+                                    <!-- Circle 1: Bus (Top Left) -->
+                                    <circle cx="160" cy="155" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle 2: Train (Top Right) -->
+                                    <circle cx="240" cy="155" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle 3: Car (Bottom Center) -->
+                                    <circle cx="200" cy="220" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Category Labels -->
+                                    <text x="100" y="75" fill="white" font-family="Georgia, serif" font-size="26" font-weight="normal" text-anchor="middle">Bus</text>
+                                    <text x="305" y="65" fill="white" font-family="Georgia, serif" font-size="26" font-weight="normal" text-anchor="middle">Train</text>
+                                    <text x="200" y="325" fill="white" font-family="Georgia, serif" font-size="26" font-weight="normal" text-anchor="middle">Car</text>
+                                    
+                                    <!-- Region Values / Variables -->
+                                    <!-- Only Bus -->
+                                    <text x="135" y="130" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">x</text>
+                                    
+                                    <!-- Bus and Train intersection (Top center) -->
+                                    <text x="200" y="125" fill="white" font-family="Georgia, serif" font-size="22" text-anchor="middle">6</text>
+                                    
+                                    <!-- Bus and Car intersection (Bottom left) -->
+                                    <text x="160" y="195" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">x</text>
+                                    
+                                    <!-- Center intersection (All three) -->
+                                    <text x="200" y="175" fill="white" font-family="Georgia, serif" font-size="22" text-anchor="middle">7</text>
+                                    
+                                    <!-- Train and Car intersection (Bottom right) -->
+                                    <text x="240" y="195" fill="white" font-family="Georgia, serif" font-size="22" text-anchor="middle">2</text>
+                                </svg>
+                            </div>
+
+                            <p class="indent-p2">(a) Given that <math xmlns="http://w3.org" display="inline"><mn>35</mn></math> people used buses and <math xmlns="http://w3.org" display="inline"><mn>25</mn></math> people used trains, find</p>
+                            <p class="indent-p3">(i) the value of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>,</p>
+                            <p class="indent-p3">(ii) the number who travelled by train only,</p>
+                            <p class="indent-p3">(iii) the number who travelled by at least two methods of transport.</p>
+                            <p class="indent-p2">(b) Given also that <math xmlns="http://w3.org" display="inline"><mn>85</mn></math> people were questioned altogether, calculate the number who travelled by car only.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>9.</span> <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo stretchy="false">{</mo><mtext>Parallelograms</mtext><mo stretchy="false bag">}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>R</mi><mo>=</mo><mo stretchy="false">{</mo><mtext>Rectangles</mtext><source data-lang="math" display="inline" /></math> and <math xmlns="http://w3.org" display="inline"><mi>H</mi><mo>=</mo><mo stretchy="false">{</mo><mtext>Rhombuses</mtext><mo stretchy="false bag">}</mo></math>. Draw, in the answer space, a clearly labelled Venn diagram to show the relation between the sets <math xmlns="http://w3.org" display="inline"><mi>P</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>R</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>H</mi></math>.</p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>10.</span> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math> are three sets and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ℰ</mi><mo>=</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo>∪</mo><mi>C</mi></math>. The number of elements in each subset is shown in the Venn diagram.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://w3.org">
+                                <!-- Circle A (Top Left) -->
+                                <circle cx="160" cy="155" r="75" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Circle B (Top Right) -->
+                                <circle cx="240" cy="155" r="75" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Circle C (Bottom Center) -->
+                                <circle cx="200" cy="225" r="75" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Set Labels -->
+                                <text x="85" y="85" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">A</text>
+                                <text x="315" y="85" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">B</text>
+                                <text x="200" y="335" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">C</text>
+                                
+                                <!-- Region Values / Expressions -->
+                                <!-- Only A -->
+                                <text x="125" y="125" fill="white" font-family="Georgia, serif" font-size="22" text-anchor="middle">29</text>
+                                
+                                <!-- Only B -->
+                                <text x="275" y="125" fill="white" font-family="Georgia, serif" font-size="22" text-anchor="middle">23</text>
+                                
+                                <!-- Intersection A and B (Top Center) -->
+                                <text x="200" y="140" fill="white" font-family="Georgia, serif" font-size="20" font-style="italic" text-anchor="middle">9 − x</text>
+                                
+                                <!-- Center Intersection (All Three) -->
+                                <text x="200" y="185" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">x</text>
+                                
+                                <!-- Intersection A and C (Bottom Left) -->
+                                <text x="152" y="215" fill="white" font-family="Georgia, serif" font-size="20" font-style="italic" text-anchor="middle">7 − x</text>
+                                
+                                <!-- Intersection B and C (Bottom Right) -->
+                                <text x="250" y="215" fill="white" font-family="Georgia, serif" font-size="22" text-anchor="middle">16</text>
+                                
+                                <!-- Only C -->
+                                <text x="200" y="265" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">13 + x</text>
+                                </svg>
+                            </div>
+
+                            <p class="indent-p2">(a) Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>B</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) Given that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><mn>41</mn></math>, find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>.</p>
+                            <p class="indent-p2">(c) Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>A&prime;</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo>)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 11 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>11.</span> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ℰ</mi><mo>=</mo><mo>{</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo>,</mo><mi>r</mi><mo>,</mo><mi>s</mi><mo>,</mo><mi>t</mi><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>q</mi><mo>,</mo><mi>r</mi><mo>,</mo><mi>s</mi><mo>}</mo></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi><mo>=</mo><mo>{</mo><mi>q</mi><mo>,</mo><mi>s</mi><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(a) State the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) List the members of (i) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>∩</mo><mi>B</mi></math> and (ii) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A&prime;</mi><mo>∩</mo><mo>(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo>)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 12 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>12.</span> It is given that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ℰ</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>}</mo></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>9</mn><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(a) Find the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) List the members of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo>)</mo><mo>&prime;</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 13 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>13.</span> (a) Three sets, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math>, satisfy the following conditions: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo><mo>&ne;</mo><mn>0</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi><mo>⊆</mo><mi>B</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>∩</mo><mi>C</mi><mo>=</mo><mi>∅</mi></math>.</p>
+                            <p class="indent-p2">Draw and label a Venn diagram to illustrate these three sets.</p>
+                            <p class="indent-p">(b) Two sets, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>G</mi></math>, satisfy the following conditions: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi><mo>=</mo><mo>{</mo><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>:</mo><mi>y</mi><mo>=</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>7</mn><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>G</mi><mo>=</mo><mo>{</mo><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>:</mo><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi><mo>∩</mo><mi>G</mi><mo>=</mo><mi>∅</mi></math>. Write down the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math> and a possible value for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 14 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>14.</span> In a comprehensive school all 200 children in the first year study either Physics, or Chemistry, or both Physics and Chemistry. Given that 80% study Physics and 30% study Chemistry, find the number of children who study</p>
+                            <p class="indent-p2">(a) both Physics and Chemistry,</p>
+                            <p class="indent-p2">(b) Physics only.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 15 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>15.</span> (a) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ℰ</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mtext>prime numbers</mtext><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mtext>even numbers</mtext><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi><mo>=</mo><mo>{</mo><mtext>multiples of 3</mtext><mo>}</mo></math>. List the elements of the sets (i) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>∩</mo><mi>B</mi></math>, (ii) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>(</mo><mi>A</mi><mo>∩</mo><mi>C&prime;</mi><mo>)</mo><mo>∪</mo><mi>B&prime;</mi></math>.</p>
+                            <p class="indent-p">(b) The sets <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Q</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>R</mi></math> satisfy the conditions <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Q</mi><mo>⊂</mo><mi>P</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>Q</mi><mo>∩</mo><mi>R</mi><mo>)</mo><mo>=</mo><mn>0</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>∩</mo><mi>R</mi><mo>)</mo><mo>=</mo><mi>n</mi><mo>(</mo><mi>R</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">Draw one clearly labelled Venn diagram to illustrate the sets <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Q</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>R</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 16 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>16.</span> It is given that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ℰ</mi><mo>=</mo><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi><mo>=</mo><mo>{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>e</mi><mo>}</mo></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Q</mi><mo>=</mo><mo>{</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(a) Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>∩</mo><mi>Q</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) List the members of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>(</mo><mi>P</mi><mo>∪</mo><mi>Q</mi><mo>)</mo><mo>&prime;</mo></math>.</p>
+                            <p class="indent-p2">(c) List the members of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P&prime;</mi><mo>∩</mo><mi>Q</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 17 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>17.</span> All the pupils in a class have four choices in their study of languages. They may study French only, or French and German, or French and Latin, or all three of these languages. Draw a single clearly labelled Venn diagram to illustrate this information.</p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Question 18 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>18.</span> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math> are three sets and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#x2130;</mi><mo>=</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi></math>. The numbers of elements in some of the subsets are shown in the Venn diagram and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo><mo>=</mo><mn>66</mn></math>. Find</p>
+                            <div class="diagram-visual">
+                                <svg width="450" height="240" viewBox="0 0 450 240" xmlns="http://w3.org">
+                                    <!-- Circle A (Left Side) -->
+                                    <circle cx="120" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set B (Middle Horizontal Oval) -->
+                                    <rect x="140" y="95" width="170" height="70" rx="35" ry="35" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Right Side) -->
+                                    <circle cx="310" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels -->
+                                    <text x="50" y="55" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="225" y="75" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="380" y="55" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">C</text>
+                                    
+                                    <!-- Region Values / Counts -->
+                                    <!-- Only A -->
+                                    <text x="100" y="138" fill="white" font-family="Georgia, serif" font-size="24" text-anchor="middle">32</text>
+                                    
+                                    <!-- Intersection A and B -->
+                                    <text x="155" y="138" fill="white" font-family="Georgia, serif" font-size="24" text-anchor="middle">7</text>
+                                    
+                                    <!-- Only B -->
+                                    <text x="215" y="138" fill="white" font-family="Georgia, serif" font-size="24" text-anchor="middle">15</text>
+                                    
+                                    <!-- Intersection B and C -->
+                                    <text x="295" y="138" fill="white" font-family="Georgia, serif" font-size="24" text-anchor="middle">3</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p">(a) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>)</mo></math>,</p>
+                            <p class="indent-p">(b) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>C</mi><mo>)</mo></math>,</p>
+                            <p class="indent-p">(c) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B&prime;</mi><mo>)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 19 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>19.</span> (a) In a survey carried out for a television company, the viewing choices of 100 families, on a particular evening, were recorded. 46 families said they had watched "The Syndicate", 62 families said they had watched "Casualty Ward". 13 families said they had not watched either programme. By drawing a Venn diagram, or otherwise, calculate (i) the number of families who had watched both programmes, (ii) the number of families who had watched "The Syndicate" only.</p>
+                            <p class="">(b) It is given that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is an integer,&nbsp;</mtext><mn>1</mn><mo>&#x2264;</mo><mi>x</mi><mo>&#x2264;</mo><mn>16</mn><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a perfect square</mtext><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 3</mtext><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a prime number</mtext><mo>}</mo></math>,</p>
+                            <p class="indent-p">(i) List the elements of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>.</p>
+                            <p class="indent-p">(ii) Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo>&#x2229;</mo><mi>C</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p">(iii) List the elements of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi><mo>)</mo><mo>&prime;</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 20 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>20.</span> (a) In the Venn Diagram in the answer space, shade <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>&#x222A;</mo><mo>(</mo><mi>B</mi><mo>&#x2229;</mo><mi>C</mi><mo>)</mo></math>.</p>
+                            <div class="diagram-visual">
+                                <svg width="450" height="320" viewBox="0 0 450 320" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="30" width="370" height="250" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle A (Top Left) -->
+                                    <circle cx="180" cy="115" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Top Right) -->
+                                    <circle cx="250" cy="115" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Bottom Center) -->
+                                    <circle cx="215" cy="175" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Labels -->
+                                    <text x="110" y="65" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="320" y="65" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="295" y="235" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">C</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p">(b) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Q</mi></math> are two sets and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi><mo>&#x222A;</mo><mi>Q</mi><mo>=</mo><mi>&#x2130;</mi></math>. Given that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&#x2229;</mo><mi>Q</mi><mo>)</mo><mo>=</mo><mn>9</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>)</mo><mo>=</mo><mn>16</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&prime;</mo><mo>)</mo><mo>=</mo><mn>12</mn></math>, find (i) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&#x222A;</mo><mi>Q</mi><mo>)</mo></math>, (ii) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>Q</mi><mo>&prime;</mo><mo>)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 21 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>21.</span> Given that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>12</mn><mo>}</mo></math>, list the elements of the following sets:</p>
+                            <p class="indent-p2">(a) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mtext>factors of 66</mtext><mo>}</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mi>x</mi><mo>:</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>&#x2265;</mo><mn>5</mn><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>}</mo></math>,</p>
+                            <p class="indent-p2">(c) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mi>y</mi><mo>:</mo><msup><mi>y</mi><mn>3</mn></msup><mo>&#x2264;</mo><mn>150</mn><mo>}</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 22 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>22.</span> There are 25 children in a class. Of these, 12 are in the School Play and 18 are in the School Choir. It is given that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mtext>children in the class</mtext><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>P</mo><mo>=</mo><mo>{</mo><mtext>children in the School Play</mtext><mo>}</mo></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi><mo>=</mo><mo>{</mo><mtext>children in the School Choir</mtext><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(a) Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&prime;</mo><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) Find the smallest possible value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&#x2229;</mo><mi>C</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(c) Express in set notation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mtext>children who are neither in the School Play nor the School Choir</mtext><mo>}</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 23 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>23.</span> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is an integer,&nbsp;</mtext><mn>1</mn><mo>&#x2264;</mo><mi>x</mi><mo>&#x2264;</mo><mn>10</mn><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>-</mo><mn>1</mn><mo>&#x2265;</mo><mn>3</mn><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mn>8</mn><mo>&lt;</mo><mn>4</mn><mi>x</mi><mo>&lt;</mo><mn>30</mn><mo>}</mo></math>. List the elements of the sets (a) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, (b) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>, (c) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>)</mo><mo>&prime;</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 24 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>24.</span> In a school, some of the subjects that it is possible to take are Mathematics, Additional Mathematics and Physics. The Venn Diagram shows the combinations of these subjects that are possible and the numbers and letters represent the numbers of students in each subject.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="420" height="320" viewBox="0 0 420 320" xmlns="http://w3.org">
+                                    <!-- Physics Circle (Left) -->
+                                    <circle cx="160" cy="155" r="80" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Maths Circle (Right) -->
+                                    <circle cx="245" cy="155" r="80" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Add Maths Circle (Small Center-Bottom) -->
+                                    <circle cx="237" cy="185" r="38" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels Outside -->
+                                    <text x="10" y="65" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="start">Physics</text>
+                                    <text x="280" y="70" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="start">Maths</text>
+                                    <text x="280" y="150" fill="white" font-family="Georgia, serif" font-size="16" text-anchor="start">Add</text>
+                                    <text x="275" y="174" fill="white" font-family="Georgia, serif" font-size="16" text-anchor="start">Maths</text>
+                                    
+                                    <!-- Region Values / Expressions -->
+                                    <!-- Only Physics -->
+                                    <text x="135" y="140" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">x</text>
+                                    
+                                    <!-- Physics & Maths Intersection (Top) -->
+                                    <text x="202" y="125" fill="white" font-family="Georgia, serif" font-size="24" text-anchor="middle">85</text>
+                                    
+                                    <!-- Inside Add Maths Circle (Left side, inside main intersection) -->
+                                    <text x="215" y="193" fill="white" font-family="Georgia, serif" font-size="22" text-anchor="middle">20</text>
+                                    
+                                    <!-- Inside Add Maths Circle (Right side, inside Maths only) -->
+                                    <text x="248" y="200" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">y</text>
+                                    
+                                    <!-- Only Maths (Top-Right of main intersection) -->
+                                    <text x="260" y="112" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">8y</text>
+                                </svg>
+                            </div>
+
+                            <p class="indent-p2">(a) Given that the numbers of students taking Physics is 123, calculate the value of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>.</p>
+                            <p class="indent-p2">(b) Given that one sixth of those taking Mathematics also take Additional Mathematics, calculate the value of <math xmlns="http://w3.org" display="inline"><mi>y</mi></math> and hence find the total number of students taking Mathematics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 25 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>25.</span> (a) <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>14</mn><mo>,</mo><mn>15</mn><mo>,</mo><mn>16</mn><mo>,</mo><mn>17</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 3</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 5</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>C</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 7</mtext><mo>}</mo></math>.</p>
+                            <p class="indent-p4">(i) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>)</mo></math>,</p>
+                            <p class="indent-p4">(ii) List the elements of the set <math xmlns="http://w3.org" display="inline"><mo>(</mo><mi>A</mi><mo>&prime;</mo><mo>&#x2229;</mo><mi>B&prime;</mi><mo>&#x2229;</mo><mi>C</mi><mo>&prime;</mo><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) In the Venn diagram in the answer space, shade <math xmlns="http://w3.org" display="inline"><mo>(</mo><mi>P</mi><mo>&#x2229;</mo><mi>Q</mi><mo>)</mo><mo>&#x222A;</mo><mi>R</mi><mo>&prime;</mo></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="450" height="320" viewBox="0 0 450 320" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="30" width="370" height="250" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle P (Top Left) -->
+                                    <circle cx="180" cy="115" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle Q (Top Right) -->
+                                    <circle cx="250" cy="115" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle R (Bottom Center) -->
+                                    <circle cx="215" cy="175" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Labels -->
+                                    <text x="120" y="65" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">P</text>
+                                    <text x="300" y="65" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">Q</text>
+                                    <text x="275" y="235" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">R</text>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 26 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>26.</span> In a school, 120 boys play cricket. <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi></math> is the set of all boys who play cricket, <math xmlns="http://w3.org" display="inline"><mi>X</mi></math> is the set of batsmen, <math xmlns="http://w3.org" display="inline"><mi>Y</mi></math> is the set of bowlers. The letters <math xmlns="http://w3.org" display="inline"><mi>a</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>b</mi></math>, and <math xmlns="http://w3.org" display="inline"><mi>c</mi></math> in the Venn diagram represent the number of boys in each subset of <math xmlns="http://w3.org" display="inline"><mi>X</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>Y</mi></math>. The letter <math xmlns="http://w3.org" display="inline"><mi>d</mi></math> represents the number of boys who are neither batsmen nor bowlers. Given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo><mo>=</mo><mn>120</mn></math>, <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mn>80</mn></math> and <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>Y</mi><mo>)</mo><mo>=</mo><mn>48</mn></math>, find</p>
+                            <p class="indent-p2">(a) the value of <math xmlns="http://w3.org" display="inline"><mi>b</mi></math> if <math xmlns="http://w3.org" display="inline"><mi>d</mi><mo>=</mo><mn>0</mn></math>,</p>
+                            <p class="indent-p2">(b) the value of <math xmlns="http://w3.org" display="inline"><mi>d</mi></math> if <math xmlns="http://w3.org" display="inline"><mi>b</mi><mo>=</mo><mi>c</mi></math>,</p>
+                            <p class="indent-p2">(c) the largest possible number of boys who are neither batsmen nor bowlers.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="450" height="260" viewBox="0 0 450 260" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="30" width="370" height="200" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Ellipse X (Left side) -->
+                                    <ellipse cx="170" cy="125" rx="90" ry="50" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Ellipse Y (Right side) -->
+                                    <ellipse cx="260" cy="125" rx="90" ry="50" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Outer Universal Set Label -->
+                                    <text x="30" y="40" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                    
+                                    <!-- Set Labels X and Y -->
+                                    <text x="90" y="60" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">X</text>
+                                    <text x="360" y="60" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">Y</text>
+                                    
+                                    <!-- Region Elements / Counts -->
+                                    <!-- Only X -->
+                                    <text x="145" y="132" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">a</text>
+                                    
+                                    <!-- Intersection X and Y -->
+                                    <text x="215" y="132" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">b</text>
+                                    
+                                    <!-- Only Y -->
+                                    <text x="285" y="132" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">c</text>
+                                    
+                                    <!-- Outside X and Y (Bottom Right Corner) -->
+                                    <text x="390" y="210" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">d</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 27 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>27.</span> <math xmlns="http://w3.org" display="inline"><mi>A</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>C</mi></math> are three sets and <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi></math>. The numbers in the diagram represent the number of elements in each subset.</p>
+                            <p class="indent-p2">(a) Given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>B</mi><mo>)</mo><mo>=</mo><mi>n</mi><mo>(</mo><mi>C</mi><mo>)</mo></math>, find the value of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>.</p>
+                            <p class="indent-p2">(b) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi><mo>)</mo><mo>&prime;</mo></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="450" height="240" viewBox="0 0 450 240" xmlns="http://w3.org">
+                                    <!-- Circle A (Left Side) -->
+                                    <circle cx="110" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Middle) -->
+                                    <circle cx="210" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Right Side) -->
+                                    <circle cx="310" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels -->
+                                    <text x="110" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="210" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="310" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">C</text>
+                                    
+                                    <!-- Region Values / Counts -->
+                                    <!-- Only A -->
+                                    <text x="105" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">7</text>
+                                    
+                                    <!-- Intersection A and B -->
+                                    <text x="160" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">3</text>
+                                    
+                                    <!-- Only B -->
+                                    <text x="210" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">5</text>
+                                    
+                                    <!-- Intersection B and C -->
+                                    <text x="260" y="138" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">x</text>
+                                    
+                                    <!-- Only C -->
+                                    <text x="315" y="138" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">2x</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 28 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>28.</span> Each of the 56 pupils in the Fourth Year of a small school studies at least one of the subjects History, English and Agriculture. Of the 14 pupils who study Agriculture, 4 also study History and English, 3 study neither History nor English and 5 study English but not History. Of the 42 pupils who do not study Agriculture, 6 study both History and English, <math xmlns="http://w3.org" display="inline"><mi>x</mi></math> study only History and <math xmlns="http://w3.org" display="inline"><mn>2</mn><mi>x</mi></math> study only English. Copy the given Venn Diagram and on your copy show the number of pupils in each subset. Hence find</p>
+                            <p class="indent-p2">(a) the value of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>,</p>
+                            <p class="indent-p2">(b) the total number of pupils studying English.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="450" height="320" viewBox="0 0 450 320" xmlns="http://w3.org">
+                                    <!-- History Circle (Top Left) -->
+                                    <circle cx="180" cy="115" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- English Circle (Top Right) -->
+                                    <circle cx="250" cy="115" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Agriculture Circle (Bottom Center) -->
+                                    <circle cx="215" cy="175" r="60" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Subject Labels Outside Rings -->
+                                    <text x="140" y="55" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="end">History</text>
+                                    <text x="290" y="60" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="start">English</text>
+                                    <text x="260" y="265" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="start">Agriculture</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 29 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>29.</span> <math xmlns="http://w3.org" display="inline"><mi>A</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>C</mi></math> are three sets and <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi></math>. The numbers in the diagram represent the number of elements in each subset.</p>
+                            <p class="indent-p2">(a) Given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><mi>n</mi><mo>(</mo><mi>B</mi><mo>)</mo></math>, find the value of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>.</p>
+                            <p class="indent-p2">(b) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>)</mo><mo>&prime;</mo></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://w3.org">
+                                    <!-- Circle A (Top Center) -->
+                                    <circle cx="200" cy="155" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Bottom Left) -->
+                                    <circle cx="155" cy="225" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Bottom Right) -->
+                                    <circle cx="245" cy="225" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels -->
+                                    <text x="135" y="65" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="65" y="315" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="335" y="315" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">C</text>
+                                    
+                                    <!-- Region Values / Expressions -->
+                                    <!-- Only A -->
+                                    <text x="200" y="115" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">7</text>
+                                    
+                                    <!-- Only B -->
+                                    <text x="120" y="260" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">2x</text>
+                                    
+                                    <!-- Only C -->
+                                    <text x="280" y="240" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">6</text>
+                                    
+                                    <!-- Intersection A and B, outside C -->
+                                    <text x="155" y="180" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">1</text>
+                                    
+                                    <!-- Intersection A and C, outside B -->
+                                    <text x="245" y="180" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">5</text>
+                                    
+                                    <!-- Center Intersection (All Three) -->
+                                    <text x="200" y="200" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">3</text>
+                                    
+                                    <!-- Intersection B and C, outside A -->
+                                    <text x="200" y="265" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">x</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 30 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>30.</span> <math xmlns="http://w3.org" display="inline"><mi>L</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>M</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>N</mi></math> are three sets and <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mi>L</mi><mo>&#x222A;</mo><mi>M</mi><mo>&#x222A;</mo><mi>N</mi></math>. It is given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo><mo>=</mo><mn>85</mn></math>, <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>L</mi><mo>&#x2229;</mo><mi>M</mi><mo>)</mo><mo>=</mo><mn>12</mn></math>, <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>M</mi><mo>&#x2229;</mo><mi>N</mi><mo>)</mo><mo>=</mo><mn>15</mn></math> and <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>L</mi><mo>)</mo><mo>=</mo><mi>n</mi><mo>(</mo><mi>M</mi><mo>)</mo><mo>=</mo><mn>30</mn></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="450" height="240" viewBox="0 0 450 240" xmlns="http://w3.org">
+                                <!-- Circle L (Left Side) -->
+                                <circle cx="110" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Circle M (Middle) -->
+                                <circle cx="210" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Circle N (Right Side) -->
+                                <circle cx="310" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Set Labels -->
+                                <text x="110" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">L</text>
+                                <text x="210" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">M</text>
+                                <text x="310" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">N</text>
+                                </svg>
+                            </div>
+
+                            <p class="indent-p2">(a) Copy the Venn diagram onto your answer paper and use the given information to write the number of elements in each subset.</p>
+                            <p class="indent-p2">(b) Find the value of <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>M</mi><mo>&prime;</mo><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(c) Find the value of <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mo>(</mo><mi>L</mi><mo>&#x2229;</mo><mi>M</mi><mo>)</mo><mo>&#x222A;</mo><mi>N</mi><mo>)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 31 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>31.</span> <math xmlns="http://w3.org" display="inline"><mi>P</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>Q</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>R</mi></math> are sets such that <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mi>P</mi><mo>&#x222A;</mo><mi>Q</mi><mo>&#x222A;</mo><mi>R</mi></math>. The number of elements in each subset is shown in the Venn diagram.</p>
+                            <p class="indent-p2">(a) Find <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>, given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>)</mo><mo>=</mo><mi>n</mi><mo>(</mo><mi>Q</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) Find <math xmlns="http://w3.org" display="inline"><mi>y</mi></math>, given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mo>(</mo><mi>P</mi><mo>&#x222A;</mo><mi>Q</mi><mo>)</mo><mo>&prime;</mo><mo>)</mo><mo>=</mo><mi>n</mi><mo>(</mo><mi>P</mi><mo>&#x2229;</mo><mi>Q</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(c) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="450" height="240" viewBox="0 0 450 240" xmlns="http://w3.org">
+                                    <!-- Circle P (Left Side) -->
+                                    <circle cx="110" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle Q (Middle) -->
+                                    <circle cx="210" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle R (Right Side) -->
+                                    <circle cx="310" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels -->
+                                    <text x="110" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">P</text>
+                                    <text x="210" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">Q</text>
+                                    <text x="310" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">R</text>
+                                    
+                                    <!-- Region Values / Counts -->
+                                    <!-- Only P -->
+                                    <text x="105" y="138" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">x</text>
+                                    
+                                    <!-- Intersection P and Q -->
+                                    <text x="160" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">14</text>
+                                    
+                                    <!-- Only Q -->
+                                    <text x="210" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">7</text>
+                                    
+                                    <!-- Intersection Q and R -->
+                                    <text x="260" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">3</text>
+                                    
+                                    <!-- Only R -->
+                                    <text x="315" y="138" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">y</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 32 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>32.</span> <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is an integer,&nbsp;</mtext><mn>2</mn><mo>&#x2264;</mo><mi>x</mi><mo>&#x2264;</mo><mn>15</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mn>4</mn><mo>&lt;</mo><mi>x</mi><mo>&#x2264;</mo><mn>13</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>&#x2282;</mo><mi>A</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a prime number</mtext><mo>}</mo></math>. List the elements of the following sets:</p>
+                            <p class="indent-p">(a) <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&prime;</mo></math>,</p>
+                            <p class="indent-p">(b) <math xmlns="http://w3.org" display="inline"><mi>P</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 33 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>33.</span> <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo>,</mo><mi>r</mi><mo>,</mo><mi>s</mi><mo>,</mo><mi>t</mi><mo>,</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo>,</mo><mi>r</mi><mo>,</mo><mi>s</mi><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo>,</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>C</mi><mo>=</mo><mo>{</mo><mi>r</mi><mo>,</mo><mi>s</mi><mo>,</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(a) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>C</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) List the elements of (i) <math xmlns="http://w3.org" display="inline"><mo>(</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi><mo>)</mo><mo>&prime;</mo></math>, (ii) <math xmlns="http://w3.org" display="inline"><mo>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>C</mi><mo>)</mo><mo>&#x2229;</mo><mi>B</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 34 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>34.</span> <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a factor of 12</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>5</mn><mo>&lt;</mo><mn>3</mn><mo>}</mo></math>. List the elements of the set</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>A</mi></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><mi>B</mi></math>,</p>
+                            <p class="indent-p2">(c) <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo>&prime;</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 35 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>35.</span> (a) It is given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo><mo>=</mo><mn>50</mn></math> and that <math xmlns="http://w3.org" display="inline"><mi>P</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>Q</mi></math> are two sets for which <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&#x2229;</mo><mi>Q</mi><mo>)</mo><mo>=</mo><mn>6</mn></math>, <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>)</mo><mo>=</mo><mn>18</mn></math>, <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>Q</mi><mo>)</mo><mo>=</mo><mn>14</mn></math>.</p>
+                            <p class="indent-p4">(i) Draw a Venn diagram to illustrate this information.</p>
+                            <p class="indent-p4">(ii) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&prime;</mo><mo>&#x2229;</mo><mi>Q</mi><mo>&prime;</mo><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) Copy this Venn diagram and add to your diagram a set <math xmlns="http://w3.org" display="inline"><mi>N</mi></math> which is such that <math xmlns="http://w3.org" display="inline"><mi>N</mi><mo>&#x2282;</mo><mi>L</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>N</mi><mo>&#x2229;</mo><mi>M</mi><mo>=</mo><mo>&#x2205;</mo></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="450" height="280" viewBox="0 0 450 280" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="35" width="370" height="210" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle L (Left) -->
+                                    <circle cx="180" cy="140" r="65" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle M (Right) -->
+                                    <circle cx="255" cy="140" r="65" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Universal Set Label (Top Right Outside Corner) -->
+                                    <text x="425" y="45" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                    
+                                    <!-- Set Labels Inside Box -->
+                                    <text x="130" y="70" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">L</text>
+                                    <text x="300" y="65" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">M</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 36 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>36.</span> <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a factor of 18</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>1</mn><mo>&gt;</mo><mn>20</mn><mo>}</mo></math>. List the elements of the sets (a) <math xmlns="http://w3.org" display="inline"><mi>A</mi></math>, (b) <math xmlns="http://w3.org" display="inline"><mi>B</mi></math>, (c) <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&prime;</mo><mo>&#x2229;</mo><mi>B</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 37 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>37.</span> (a) On the Venn diagram in the answer space shade <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>&#x222A;</mo><mo>(</mo><mi>Q</mi><mo>&#x2229;</mo><mi>R</mi><mo>)</mo></math>.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="360" viewBox="0 0 400 360" xmlns="http://w3.org">
+                                    <!-- Circle P (Top Left) -->
+                                    <circle cx="165" cy="145" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle Q (Top Right) -->
+                                    <circle cx="235" cy="145" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle R (Bottom Center) -->
+                                    <circle cx="200" cy="210" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels Outside Rings -->
+                                    <text x="85" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">P</text>
+                                    <text x="315" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">Q</text>
+                                    <text x="290" y="300" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">R</text>
+                                </svg>
+                            </div>
+
+                            <p class="indent-p2">(b) There are 30 boys in a class. Of these, 22 play football, 17 play cricket and 3 play neither football nor cricket. It is given that <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mtext>boys in the class</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>F</mi><mo>=</mo><mo>{</mo><mtext>boys who play football</mtext><mo>}</mo></math>, and <math xmlns="http://w3.org" display="inline"><mi>C</mi><mo>=</mo><mo>{</mo><mtext>boys who play cricket</mtext><mo>}</mo></math>.</p>
+                            <p class="indent-p4">(i) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>F</mi><mo>&#x2229;</mo><mi>C</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p4">(ii) Express in set notation <math xmlns="http://w3.org" display="inline"><mo>{</mo><mtext>boys who play cricket but not football</mtext><mo>}</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 38 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>38.</span> It is given that <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>12</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>11</mn><mo>}</mo></math>, and <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi></math>.</p>
+                            <p class="indent-p2">(a) List the elements of the set <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&#x2229;</mo><mi>B</mi></math>.</p>
+                            <p class="indent-p2">(b) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(c) If one element of <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi></math> is chosen at random, what is the probability that it is a member of both <math xmlns="http://w3.org" display="inline"><mi>A</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>B</mi></math>?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 39 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>39.</span> <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>14</mn><mo>,</mo><mn>15</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 2</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>Q</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 3</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>R</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 5</mtext><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(a) List the elements of (i) <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>&#x2229;</mo><mi>R</mi></math>, (ii) <math xmlns="http://w3.org" display="inline"><mi>Q</mi><mo>&#x2229;</mo><mo>(</mo><mi>P</mi><mo>&#x222A;</mo><mi>R</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>Q</mi><mo>&prime;</mo><mo>&#x2229;</mo><mi>R</mi><mo>)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 40 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>40.</span> Some people were interviewed to find out whether they spoke French, Spanish, French and Spanish, or neither French nor Spanish. In the Venn diagram, <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi></math> is the set of people who were interviewed, <math xmlns="http://w3.org" display="inline"><mi>F</mi></math> is the set of people who spoke French, and <math xmlns="http://w3.org" display="inline"><mi>S</mi></math> is the set of people who spoke Spanish. The letters <math xmlns="http://w3.org" display="inline"><mi>w</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>y</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>z</mi></math> represent the number of people in each of the subsets shown.</p>
+                            <div class="diagram-visual">
+                                <svg width="450" height="260" viewBox="0 0 450 260" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="30" width="370" height="200" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Ellipse F (Left side) -->
+                                    <ellipse cx="170" cy="125" rx="95" ry="52" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Ellipse S (Right side) -->
+                                    <ellipse cx="265" cy="125" rx="95" ry="52" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Outer Universal Set Label (Top Left outside corner) -->
+                                    <text x="25" y="42" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                    
+                                    <!-- Set Labels F and S inside the frame -->
+                                    <text x="85" y="62" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">F</text>
+                                    <text x="365" y="62" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">S</text>
+                                    
+                                    <!-- Region Values / Counts inside sets -->
+                                    <!-- Only F -->
+                                    <text x="145" y="132" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">w</text>
+                                    
+                                    <!-- Intersection F and S -->
+                                    <text x="218" y="132" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">x</text>
+                                    
+                                    <!-- Only S -->
+                                    <text x="290" y="132" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">y</text>
+                                    
+                                    <!-- Outside F and S (Bottom Right Corner) -->
+                                    <text x="385" y="210" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">z</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p2">Given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo><mo>=</mo><mn>250</mn></math>, <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>F</mi><mo>)</mo><mo>=</mo><mn>80</mn></math> and <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>S</mi><mo>)</mo><mo>=</mo><mn>220</mn></math>, find</p>
+                            <p class="indent-p2">(a) the maximum possible value of <math xmlns="http://w3.org" display="inline"><mi>w</mi></math>,</p>
+                            <p class="indent-p2">(b) the maximum possible value of <math xmlns="http://w3.org" display="inline"><mi>z</mi></math>,</p>
+                            <p class="indent-p2">(c) the maximum possible number of people who spoke both French and Spanish.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 41 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>41.</span> <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>14</mn><mo>,</mo><mn>15</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 3</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is an odd number</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>C</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mn>10</mn><mo>&#x2264;</mo><mi>x</mi><mo>&#x2264;</mo><mn>13</mn><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(a) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) List the elements of the set <math xmlns="http://w3.org" display="inline"><mi>C</mi><mo>&prime;</mo></math>.</p>
+                            <p class="indent-p2">(c) Find the element <math xmlns="http://w3.org" display="inline"><mi>x</mi></math> such that <math xmlns="http://w3.org" display="inline"><mi>x</mi><mo>&#x2208;</mo><mo>(</mo><mi>B</mi><mo>&#x2229;</mo><mi>C</mi><mo>&prime;</mo><mo>)</mo></math> and <math xmlns="http://w3.org" display="inline"><mi>x</mi><mo>&#x2209;</mo><mi>A</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 42 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>42.</span> <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>12</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 3</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>Q</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is even</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>R</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mn>6</mn><mo>&lt;</mo><mi>x</mi><mo>&#x2264;</mo><mn>11</mn><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(a) List the elements of set <math xmlns="http://w3.org" display="inline"><mi>R</mi><mo>&prime;</mo></math>.</p>
+                            <p class="indent-p2">(b) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&#x2229;</mo><mi>Q</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(c) Find the element <math xmlns="http://w3.org" display="inline"><mi>x</mi></math> such that <math xmlns="http://w3.org" display="inline"><mi>x</mi><mo>&#x2208;</mo><mi>Q</mi><mo>&#x2229;</mo><mi>R</mi><mo>&prime;</mo></math> and <math xmlns="http://w3.org" display="inline"><mi>x</mi><mo>&#x2209;</mo><mi>P</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 43 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>43.</span> (a) On the Venn Diagram in the answer space shade the set <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&#x222A;</mo><mo>(</mo><mi>B</mi><mo>&#x2229;</mo><mi>C</mi><mo>)</mo></math>.</p>
+                            <div class="diagram-visual">
+                                <svg width="400" height="360" viewBox="0 0 400 360" xmlns="http://w3.org">
+                                    <!-- Circle A (Top Left) -->
+                                    <circle cx="165" cy="145" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Top Right) -->
+                                    <circle cx="265" cy="145" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Bottom Center) -->
+                                    <circle cx="200" cy="240" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels Outside Rings -->
+                                    <text x="85" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="315" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="290" y="300" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">C</text>
+                                </svg>
+
+                            </div>
+                            <p class="indent-p">(b) There are 28 girls in a class. Of these 17 sing in the choir and 15 play the piano. It is given that <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mtext>girls in the class</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>S</mi><mo>=</mo><mo>{</mo><mtext>girls who sing in the choir</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo>{</mo><mtext>girls who play the piano</mtext><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(i) Find the smallest possible value of <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>S</mi><mo>&#x2229;</mo><mi>P</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(ii) Express in set notation <math xmlns="http://w3.org" display="inline"><mo>{</mo><mtext>Girls who neither sing in the choir nor play the piano</mtext><mo>}</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 44 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>44.</span> (a) <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a factor of 12</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>Q</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is an odd integer</mtext><mo>}</mo></math>.</p>
+                            <p class="indent-p2">List the elements of the set (i) <math xmlns="http://w3.org" display="inline"><mi>P</mi></math>, (ii) <math xmlns="http://w3.org" display="inline"><mo>(</mo><mi>P</mi><mo>&#x222A;</mo><mi>Q</mi><mo>)</mo><mo>&prime;</mo></math>.</p>
+                            
+                            <p class="indent-p">(b) Express in set notation, as simply as possible, the subset shaded in the Venn Diagram.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="360" viewBox="0 0 400 360" xmlns="http://w3.org">
+                                    <defs>
+                                        <!-- Clip path to isolate regions inside Circle A -->
+                                        <clipPath id="clipA">
+                                        <circle cx="165" cy="145" r="75" />
+                                        </clipPath>
+                                    </defs>
+
+                                    <!-- Shaded Region: Overlap of A & B, plus A & C (semi-transparent white) -->
+                                    <circle cx="235" cy="145" r="75" fill="white" fill-opacity="0.35" clip-path="url(#clipA)" />
+                                    <circle cx="200" cy="210" r="75" fill="white" fill-opacity="0.35" clip-path="url(#clipA)" />
+
+                                    <!-- Circle A (Top Left) -->
+                                    <circle cx="165" cy="145" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Top Right) -->
+                                    <circle cx="235" cy="145" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Bottom Center) -->
+                                    <circle cx="200" cy="210" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels Outside Rings -->
+                                    <text x="85" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="315" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="290" y="300" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">C</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 45 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>45.</span> 
+                                <math xmlns="http://w3.org" display="inline"><mi>P</mi></math>, 
+                                <math xmlns="http://w3.org" display="inline"><mi>Q</mi></math> 
+                                and 
+                                <math xmlns="http://w3.org" display="inline"><mi>R</mi></math> 
+                                are sets such that 
+                                <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>P</mo><mn>&#x222A;</mn><mo>Q</mo><mo>&#x222A;</mo><mo>R</mo></math>.
+                                The numbers of elements in some of the subsets are shown in the Venn Diagram. Given that 
+                                <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo><mo>=</mo><mn>40</mn></math>, 
+                                find
+                            </p>
+                            <div class="diagram-visual">
+                                <svg width="450" height="240" viewBox="0 0 450 240" xmlns="http://w3.org">
+                                    <!-- Circle P (Left Side) -->
+                                    <circle cx="110" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle Q (Middle) -->
+                                    <circle cx="210" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle R (Right Side) -->
+                                    <circle cx="310" cy="130" r="70" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels -->
+                                    <text x="110" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">P</text>
+                                    <text x="210" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">Q</text>
+                                    <text x="310" y="45" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">R</text>
+                                    
+                                    <!-- Region Values / Counts -->
+                                    <!-- Only P -->
+                                    <text x="105" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">8</text>
+                                    
+                                    <!-- Intersection P and Q -->
+                                    <text x="160" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">3</text>
+                                    
+                                    <!-- Only Q -->
+                                    <text x="210" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">15</text>
+                                    
+                                    <!-- Only R -->
+                                    <text x="315" y="138" fill="white" font-family="Georgia, serif" font-size="26" text-anchor="middle">9</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>Q</mi><mo>&#x2229;</mo><mi>R</mi><mo>)</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&#x222A;</mo><mi>Q</mi><mo>)</mo></math>,</p>
+                            <p class="indent-p2">(c) <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>P</mi><mo>&prime;</mo><mo>&#x2229;</mo><mi>R</mi><mo>)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 46 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>46.</span> (a) <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>L</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a factor of 20</mtext><mo>}</mo></math> and <math xmlns="http://w3.org" display="inline"><mi>M</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is an even integer</mtext><mo>}</mo></math>.</p>
+                            <p class="indent-p4">List the elements of the set (i) <math xmlns="http://w3.org" display="inline"><mi>L</mi></math>, (ii) <math xmlns="http://w3.org" display="inline"><mo>(</mo><mi>L</mi><mo>&#x222A;</mo><mi>M</mi><mo>)</mo><mo>&prime;</mo></math>.</p>
+                            <p class="indent-p2">(b) Express in set notation, as simply as possible, the subset shaded in the Venn Diagram.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="400" height="360" viewBox="0 0 400 360" xmlns="http://w3.org">
+                                    <defs>
+                                        <!-- Clip path to isolate regions inside Circle R -->
+                                        <clipPath id="clipR">
+                                        <circle cx="200" cy="210" r="75" />
+                                        </clipPath>
+                                    </defs>
+
+                                    <!-- Shaded Region: Overlap of P & R, plus Q & R (semi-transparent white) -->
+                                    <circle cx="165" cy="145" r="75" fill="white" fill-opacity="0.35" clip-path="url(#clipR)" />
+                                    <circle cx="235" cy="145" r="75" fill="white" fill-opacity="0.35" clip-path="url(#clipR)" />
+
+                                    <!-- Circle P (Top Left) -->
+                                    <circle cx="165" cy="145" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle Q (Top Right) -->
+                                    <circle cx="235" cy="145" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle R (Bottom Center) -->
+                                    <circle cx="200" cy="210" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set Labels Outside Rings -->
+                                    <text x="85" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">P</text>
+                                    <text x="315" y="70" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">Q</text>
+                                    <text x="290" y="300" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">R</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 47 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>47.</span> Each of a group of 20 students studies at least one of the three subjects Chemistry, Physics and Biology.</p>
+                            <p class="indent-p2">All those who study Physics also study Chemistry.</p>
+                            <p class="indent-p2">3 students study all three subjects.</p>
+                            <p class="indent-p2">4 students study only Chemistry.</p>
+                            <p class="indent-p2">8 students study Physics.</p>
+                            <p class="indent-p2">14 students study Chemistry.</p>
+                            <p class="indent-p2">(a) Draw a Venn diagram to illustrate this information.</p>
+                            <p class="indent-p2">(b) How many students study only Biology?</p>
+                            <p class="indent-p2">(c) How many students study Chemistry and Biology but not Physics?</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 48 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>48.</span> People staying at a holiday hotel are able to take part in Sailing, Swimming and Golf.</p>
+                            <p class="indent-p2">4 people take part in all three activities.</p>
+                            <p class="indent-p2">17 people take part in Sailing and Swimming but not Golf.</p>
+                            <p class="indent-p2">21 people take part in Swimming and Golf but not Sailing.</p>
+                            <p class="indent-p2">12 people take part in Sailing and Golf but not Swimming.</p>
+                            <p class="indent-p2"><math xmlns="http://w3.org" display="inline"><mi>x</mi></math> people take part in Swimming only.</p>
+                            <p class="indent-p2">42 people take part in Sailing only.</p>
+                            <p class="indent-p2"><math xmlns="http://w3.org" display="inline"><mo>(</mo><mi>x</mi><mo>-</mo><mn>2</mn><mo>)</mo></math> people take part in Golf only.</p>
+                            <p class="indent-p2">16 people do not take part in any of these activities.</p>
+                            <p class="indent-p2">(a) Copy the given Venn diagram and on your copy show the number of people in each subset.</p>
+                            
+                            <div class="diagram-visual">
+                                <svg width="480" height="300" viewBox="0 0 480 300" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="50" y="35" width="400" height="240" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle 1: Sailing (Top Left) -->
+                                    <circle cx="210" cy="130" r="55" fill="none" stroke="white" stroke-width="1.8" />
+                                    
+                                    <!-- Circle 2: Swimming (Top Right) -->
+                                    <circle cx="280" cy="130" r="55" fill="none" stroke="white" stroke-width="1.8" />
+                                    
+                                    <!-- Circle 3: Golf (Bottom Center) -->
+                                    <circle cx="245" cy="185" r="55" fill="none" stroke="white" stroke-width="1.8" />
+                                    
+                                    <!-- Outer Universal Set Label -->
+                                    <text x="35" y="42" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                    
+                                    <!-- Set Labels Inside Box -->
+                                    <text x="120" y="70" fill="white" font-family="Georgia, serif" font-size="24" text-anchor="middle">Sailing</text>
+                                    <text x="390" y="70" fill="white" font-family="Georgia, serif" font-size="24" text-anchor="middle">Swimming</text>
+                                    <text x="325" y="240" fill="white" font-family="Georgia, serif" font-size="24" text-anchor="middle">Golf</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p2">(b) Given that 250 people are staying at the hotel, calculate</p>
+                            <p class="indent-p4">(i) <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>,</p>
+                            <p class="indent-p4">(ii) the number of people who do not take part in Swimming.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 49 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>49.</span> (a) On the Venn diagram in the answer space, shade the set <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>&prime;</mo></math>.</p>
+                            
+                            <!-- Diagram Visual Placement -->
+                            <div class="diagram-visual">
+                                <svg width="450" height="260" viewBox="0 0 450 260" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="30" width="370" height="200" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Ellipse A (Left side) -->
+                                    <ellipse cx="170" cy="125" rx="95" ry="52" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Ellipse B (Right side) -->
+                                    <ellipse cx="265" cy="125" rx="95" ry="52" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Outer Universal Set Label (Top Left outside corner) -->
+                                    <text x="25" y="42" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                    
+                                    <!-- Set Labels A and B inside the frame -->
+                                    <text x="85" y="82" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="365" y="82" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">B</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a positive integer</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>&lt;</mo><mn>9</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>Q</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>&#x2265;</mo><mn>4</mn><mo>}</mo></math>.</p>
+                            <p class="indent-p4">(i) List the elements of <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>&#x2229;</mo><mi>Q</mi></math>.</p>
+                            <p class="indent-p4">(ii) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>Q</mi><mo>&prime;</mo><mo>)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 50 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>50.</span> By drawing a Venn diagram, or otherwise, answer the following questions.</p>
+                            <p class="indent-p2">(a) Given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo><mo>=</mo><mn>60</mn></math>, <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>S</mi><mo>)</mo><mo>=</mo><mn>33</mn></math>, and <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>F</mi><mo>)</mo><mo>=</mo><mn>36</mn></math>, find the least possible value of <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>S</mi><mo>&#x2229;</mo><mi>F</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) In a group of 60 people, 33 can speak Spanish and 36 can speak French. Find the greatest possible number of people who can speak Spanish, but not French.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 51 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>51.</span> By drawing a Venn diagram, or otherwise, answer the following questions.</p>
+                            <p class="indent-p2">(a) Given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>&#x2130;</mi><mo>)</mo><mo>=</mo><mn>50</mn></math>, <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>C</mi><mo>)</mo><mo>=</mo><mn>33</mn></math> and <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>M</mi><mo>)</mo><mo>=</mo><mn>28</mn></math>, find the least possible value of <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>C</mi><mo>&#x2229;</mo><mi>M</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(b) In a group of 50 people, 33 can speak Chinese and 28 can speak Malay. Find the greatest possible number of people who can speak Chinese but not Malay.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 52 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>52.</span> <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mn>1</mn><mo>&#x2264;</mo><mi>x</mi><mo>&#x2264;</mo><mn>30</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 4</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 3</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>C</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 12</mtext><mo>}</mo></math>.</p>
+                            <p class="indent-p2">(a) List the elements of the set <math xmlns="http://w3.org" display="inline"><mi>A</mi></math>.</p>
+                            <p class="indent-p2">(b) Find <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B&prime;</mi><mo>)</mo></math>.</p>
+                            <p class="indent-p2">(c) Write down in set notation an equation involving the three sets, <math xmlns="http://w3.org" display="inline"><mi>A</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>C</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 53 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>53.</span> In the Venn Diagram shown in the answer space, <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi></math> represents the set of all triangles, <math xmlns="http://w3.org" display="inline"><mi>I</mi></math> represents the set of Isosceles triangles and <math xmlns="http://w3.org" display="inline"><mi>R</mi></math> represents the set of Right-angled triangles.</p>
+                            <p class="indent-p2">(a) Add the set <math xmlns="http://w3.org" display="inline"><mi>E</mi></math> to the Venn Diagram where <math xmlns="http://w3.org" display="inline"><mi>E</mi></math> represents the set of Equilateral triangles.</p>
+                            <p class="indent-p2">(b) A triangle has sides 3 m, 4 m and 5 m. On the diagram mark and label a point <math xmlns="http://w3.org" display="inline"><mi>T</mi></math>, to represent this triangle.</p>
+                            
+                            <!-- Diagram Visual Placement -->
+                            <div class="diagram-visual">
+                                <svg width="450" height="260" viewBox="0 0 450 260" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="35" y="30" width="375" height="205" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set R (Smaller Left Circle/Ellipse) -->
+                                    <ellipse cx="155" cy="125" rx="85" ry="58" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Set I (Larger Right Ellipse) -->
+                                    <ellipse cx="270" cy="125" rx="115" ry="78" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Universal Set Label (Top Right Outside Corner) -->
+                                    <text x="425" y="40" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                    
+                                    <!-- Set Labels Inside Box -->
+                                    <text x="70" y="75" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">R</text>
+                                    <text x="365" y="65" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">I</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 54 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>54.</span> In this question <math xmlns="http://w3.org" display="inline"><msub><mi>F</mi><mi>p</mi></msub></math> stands for the set of factors of the number <math xmlns="http://w3.org" display="inline"><mi>p</mi></math>. For example, <math xmlns="http://w3.org" display="inline"><msub><mi>F</mi><mn>12</mn></msub><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>12</mn><mo>}</mo></math>, and the number of elements in <math xmlns="http://w3.org" display="inline"><msub><mi>F</mi><mn>12</mn></msub></math> is <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><msub><mi>F</mi><mn>12</mn></msub><mo>)</mo><mo>=</mo><mn>6</mn></math>.</p>
+                            <p class="indent-p2">(a) List the elements of <math xmlns="http://w3.org" display="inline"><msub><mi>F</mi><mn>18</mn></msub></math>.</p>
+                            <p class="indent-p2">(b) Show that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><msub><mi>F</mi><mn>30</mn></msub><mo>)</mo><mo>=</mo><mn>8</mn></math>.</p>
+                            <p class="indent-p2">(c) Given that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><msub><mi>F</mi><mi>p</mi></msub><mo>)</mo><mo>=</mo><mn>2</mn></math>, what kind of number is <math xmlns="http://w3.org" display="inline"><mi>p</mi></math>?</p>
+                            <p class="indent-p2">In the remaining parts of the question there are many possible answers but you only need to give one for each.</p>
+                            <p class="indent-p2">(d) Find a value of <math xmlns="http://w3.org" display="inline"><mi>p</mi></math> such that <math xmlns="http://w3.org" display="inline"><msub><mi>F</mi><mi>p</mi></msub><mo>&#x2282;</mo><msub><mi>F</mi><mn>12</mn></msub></math>.</p>
+                            <p class="indent-p2">(e) Find a value of <math xmlns="http://w3.org" display="inline"><mi>p</mi></math> such that <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>(</mo><msub><mi>F</mi><mi>p</mi></msub><mo>)</mo><mo>=</mo><mn>3</mn></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 55 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>55.</span> All members of a Sports Club were asked whether they played cricket or tennis. The survey produced the following three pieces of information: 35 members played cricket, 27 members played tennis, three times as many members played both cricket and tennis as played neither.</p>
+                            <p class="indent-p2">(a) Take <math xmlns="http://w3.org" display="inline"><mi>x</mi></math> to be the number of members who played neither sport. Using a Venn diagram, or otherwise, find in terms of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>, in their simplest form, expressions for the number of members who played</p>
+                            <p class="indent-p4">(i) both sports,</p>
+                            <p class="indent-p4">(ii) one or other of the two sports but not both.</p>
+                            <p class="indent-p2">(b) Given that there are 52 members in the Club, find how many played neither sport.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 56 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>56.</span> There are 30 students in a class. 22 study Mathematics, 16 study Science and 2 study neither Mathematics nor Science. By drawing a Venn diagram, or otherwise, find the number of students who study both Mathematics and Science.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 57 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>57.</span> There are 120 students in the third form of a school. 40 of them study Woodwork, 28 of them study Metalwork and 6 of them study both subjects. By drawing a Venn diagram, or otherwise, find the number of students who study neither Woodwork nor Metalwork.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 58 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>58.</span> Example 1</p>
+                            <div class="diagram-visual">
+                                <svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://w3.org">
+                                <!-- Base Number Line Axis -->
+                                <line x1="20" y1="60" x2="575" y2="60" stroke="white" stroke-width="2" />
+
+                                <!-- Ticks and Labels -->
+                                <!-- -4 -->
+                                <line x1="50" y1="50" x2="50" y2="70" stroke="white" stroke-width="2" />
+                                <text x="50" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-4</text>
+
+                                <!-- -3 -->
+                                <line x1="95" y1="50" x2="95" y2="70" stroke="white" stroke-width="2" />
+                                <text x="95" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-3</text>
+
+                                <!-- -2 -->
+                                <line x1="140" y1="50" x2="140" y2="70" stroke="white" stroke-width="2" />
+                                <text x="140" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-2</text>
+
+                                <!-- -1 -->
+                                <line x1="185" y1="50" x2="185" y2="70" stroke="white" stroke-width="2" />
+                                <text x="185" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-1</text>
+
+                                <!-- 0 -->
+                                <line x1="230" y1="50" x2="230" y2="70" stroke="white" stroke-width="2" />
+                                <text x="230" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">0</text>
+
+                                <!-- 1 -->
+                                <line x1="275" y1="50" x2="275" y2="70" stroke="white" stroke-width="2" />
+                                <text x="275" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">1</text>
+
+                                <!-- 2 -->
+                                <line x1="320" y1="50" x2="320" y2="70" stroke="white" stroke-width="2" />
+                                <text x="320" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">2</text>
+
+                                <!-- 3 -->
+                                <line x1="365" y1="50" x2="365" y2="70" stroke="white" stroke-width="2" />
+                                <text x="365" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">3</text>
+
+                                <!-- 4 -->
+                                <line x1="410" y1="50" x2="410" y2="70" stroke="white" stroke-width="2" />
+                                <text x="410" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">4</text>
+
+                                <!-- 5 -->
+                                <line x1="455" y1="50" x2="455" y2="70" stroke="white" stroke-width="2" />
+                                <text x="455" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">5</text>
+
+                                <!-- 6 -->
+                                <line x1="500" y1="50" x2="500" y2="70" stroke="white" stroke-width="2" />
+                                <text x="500" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">6</text>
+
+                                <!-- 7 -->
+                                <line x1="545" y1="50" x2="545" y2="70" stroke="white" stroke-width="2" />
+                                <text x="545" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">7</text>
+
+                                <!-- Thickened Set Line Ray (x >= 4) -->
+                                <line x1="410" y1="60" x2="575" y2="60" stroke="white" stroke-width="5" />
+
+                                <!-- Closed/Solid Circle Marker at 4 -->
+                                <circle cx="410" cy="60" r="9" fill="white" />
+
+                                <!-- Set Label P -->
+                                <text x="500" y="32" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">P</text>
+                                </svg>
+                            </div>
+                            <p>The number line above shows the set <math xmlns="http://w3.org" display="inline"><mi>P</mi></math> of real numbers <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>, where <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>&#x2265;</mo><mn>4</mn><mo>}</mo></math>.</p>
+                            <p>Example 2</p>
+                            <div class="diagram-visual">
+                                <svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://w3.org">
+                                <!-- Base Number Line Axis -->
+                                <line x1="20" y1="60" x2="575" y2="60" stroke="white" stroke-width="2" />
+
+                                <!-- Ticks and Labels -->
+                                <!-- -4 -->
+                                <line x1="50" y1="50" x2="50" y2="70" stroke="white" stroke-width="2" />
+                                <text x="50" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-4</text>
+
+                                <!-- -3 -->
+                                <line x1="95" y1="50" x2="95" y2="70" stroke="white" stroke-width="2" />
+                                <text x="95" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-3</text>
+
+                                <!-- -2 -->
+                                <line x1="140" y1="50" x2="140" y2="70" stroke="white" stroke-width="2" />
+                                <text x="140" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-2</text>
+
+                                <!-- -1 -->
+                                <line x1="185" y1="50" x2="185" y2="70" stroke="white" stroke-width="2" />
+                                <text x="185" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-1</text>
+
+                                <!-- 0 -->
+                                <line x1="230" y1="50" x2="230" y2="70" stroke="white" stroke-width="2" />
+                                <text x="230" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">0</text>
+
+                                <!-- 1 -->
+                                <line x1="275" y1="50" x2="275" y2="70" stroke="white" stroke-width="2" />
+                                <text x="275" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">1</text>
+
+                                <!-- 2 -->
+                                <line x1="320" y1="50" x2="320" y2="70" stroke="white" stroke-width="2" />
+                                <text x="320" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">2</text>
+
+                                <!-- 3 -->
+                                <line x1="365" y1="50" x2="365" y2="70" stroke="white" stroke-width="2" />
+                                <text x="365" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">3</text>
+
+                                <!-- 4 -->
+                                <line x1="410" y1="50" x2="410" y2="70" stroke="white" stroke-width="2" />
+                                <text x="410" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">4</text>
+
+                                <!-- 5 -->
+                                <line x1="455" y1="50" x2="455" y2="70" stroke="white" stroke-width="2" />
+                                <text x="455" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">5</text>
+
+                                <!-- 6 -->
+                                <line x1="500" y1="50" x2="500" y2="70" stroke="white" stroke-width="2" />
+                                <text x="500" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">6</text>
+
+                                <!-- 7 -->
+                                <line x1="545" y1="50" x2="545" y2="70" stroke="white" stroke-width="2" />
+                                <text x="545" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">7</text>
+
+                                <!-- Thickened Interval Line Segment (2 <= x < 5) -->
+                                <line x1="320" y1="60" x2="455" y2="60" stroke="white" stroke-width="5" />
+
+                                <!-- Closed/Solid Circle Marker at 2 -->
+                                <circle cx="320" cy="60" r="9" fill="white" />
+
+                                <!-- Open Circle Marker at 5 -->
+                                <circle cx="455" cy="60" r="9" fill="none" stroke="white" stroke-width="2" />
+
+                                <!-- Set Label Q -->
+                                <text x="387" y="32" fill="white" font-family="Georgia, serif" font-size="22" font-style="italic" text-anchor="middle">Q</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p">The number line above shows the set <math xmlns="http://w3.org" display="inline"><mi>Q</mi></math> of real numbers <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>, where <math xmlns="http://w3.org" display="inline"><mi>Q</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mn>2</mn><mo>&#x2264;</mo><mi>x</mi><mo>&lt;</mo><mn>5</mn><mo>}</mo></math>.</p>
+                            <p class="indent-p">On the number lines given in the answer spaces below, illustrate the following sets of real numbers <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>:</p>
+                            <p class="indent-p">(a) <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>&#x2264;</mo><mn>3</mn><mo>}</mo></math>,</p>
+                            <div class="diagram-visual">
+                                <svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://w3.org">
+                                    <!-- Base Number Line Axis -->
+                                    <line x1="20" y1="60" x2="575" y2="60" stroke="white" stroke-width="2" />
+
+                                    <!-- Ticks and Labels -->
+                                    <!-- -4 -->
+                                    <line x1="50" y1="50" x2="50" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="50" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-4</text>
+
+                                    <!-- -3 -->
+                                    <line x1="95" y1="50" x2="95" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="95" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-3</text>
+
+                                    <!-- -2 -->
+                                    <line x1="140" y1="50" x2="140" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="140" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-2</text>
+
+                                    <!-- -1 -->
+                                    <line x1="185" y1="50" x2="185" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="185" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-1</text>
+
+                                    <!-- 0 -->
+                                    <line x1="230" y1="50" x2="230" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="230" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">0</text>
+
+                                    <!-- 1 -->
+                                    <line x1="275" y1="50" x2="275" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="275" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">1</text>
+
+                                    <!-- 2 -->
+                                    <line x1="320" y1="50" x2="320" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="320" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">2</text>
+
+                                    <!-- 3 -->
+                                    <line x1="365" y1="50" x2="365" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="365" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">3</text>
+
+                                    <!-- 4 -->
+                                    <line x1="410" y1="50" x2="410" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="410" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">4</text>
+
+                                    <!-- 5 -->
+                                    <line x1="455" y1="50" x2="455" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="455" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">5</text>
+
+                                    <!-- 6 -->
+                                    <line x1="500" y1="50" x2="500" y2="70" stroke="white" stroke-width="2" stroke-dasharray="none" />
+                                    <text x="500" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">6</text>
+
+                                    <!-- 7 -->
+                                    <line x1="545" y1="50" x2="545" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="545" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">7</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p">(b) <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mo>-</mo><mn>2</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>6</mn><mo>}</mo></math>,</p>
+                            <div class="diagram-visual">
+                                <svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://w3.org">
+                                    <!-- Base Number Line Axis -->
+                                    <line x1="20" y1="60" x2="575" y2="60" stroke="white" stroke-width="2" />
+
+                                    <!-- Ticks and Labels -->
+                                    <!-- -4 -->
+                                    <line x1="50" y1="50" x2="50" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="50" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-4</text>
+
+                                    <!-- -3 -->
+                                    <line x1="95" y1="50" x2="95" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="95" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-3</text>
+
+                                    <!-- -2 -->
+                                    <line x1="140" y1="50" x2="140" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="140" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-2</text>
+
+                                    <!-- -1 -->
+                                    <line x1="185" y1="50" x2="185" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="185" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-1</text>
+
+                                    <!-- 0 -->
+                                    <line x1="230" y1="50" x2="230" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="230" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">0</text>
+
+                                    <!-- 1 -->
+                                    <line x1="275" y1="50" x2="275" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="275" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">1</text>
+
+                                    <!-- 2 -->
+                                    <line x1="320" y1="50" x2="320" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="320" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">2</text>
+
+                                    <!-- 3 -->
+                                    <line x1="365" y1="50" x2="365" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="365" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">3</text>
+
+                                    <!-- 4 -->
+                                    <line x1="410" y1="50" x2="410" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="410" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">4</text>
+
+                                    <!-- 5 -->
+                                    <line x1="455" y1="50" x2="455" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="455" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">5</text>
+
+                                    <!-- 6 -->
+                                    <line x1="500" y1="50" x2="500" y2="70" stroke="white" stroke-width="2" stroke-dasharray="none" />
+                                    <text x="500" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">6</text>
+
+                                    <!-- 7 -->
+                                    <line x1="545" y1="50" x2="545" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="545" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">7</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p">(c) <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&#x2229;</mo><mi>B</mi></math>.</p>
+                            <div class="diagram-visual">
+                                <svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://w3.org">
+                                    <!-- Base Number Line Axis -->
+                                    <line x1="20" y1="60" x2="575" y2="60" stroke="white" stroke-width="2" />
+
+                                    <!-- Ticks and Labels -->
+                                    <!-- -4 -->
+                                    <line x1="50" y1="50" x2="50" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="50" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-4</text>
+
+                                    <!-- -3 -->
+                                    <line x1="95" y1="50" x2="95" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="95" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-3</text>
+
+                                    <!-- -2 -->
+                                    <line x1="140" y1="50" x2="140" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="140" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-2</text>
+
+                                    <!-- -1 -->
+                                    <line x1="185" y1="50" x2="185" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="185" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">-1</text>
+
+                                    <!-- 0 -->
+                                    <line x1="230" y1="50" x2="230" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="230" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">0</text>
+
+                                    <!-- 1 -->
+                                    <line x1="275" y1="50" x2="275" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="275" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">1</text>
+
+                                    <!-- 2 -->
+                                    <line x1="320" y1="50" x2="320" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="320" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">2</text>
+
+                                    <!-- 3 -->
+                                    <line x1="365" y1="50" x2="365" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="365" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">3</text>
+
+                                    <!-- 4 -->
+                                    <line x1="410" y1="50" x2="410" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="410" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">4</text>
+
+                                    <!-- 5 -->
+                                    <line x1="455" y1="50" x2="455" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="455" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">5</text>
+
+                                    <!-- 6 -->
+                                    <line x1="500" y1="50" x2="500" y2="70" stroke="white" stroke-width="2" stroke-dasharray="none" />
+                                    <text x="500" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">6</text>
+
+                                    <!-- 7 -->
+                                    <line x1="545" y1="50" x2="545" y2="70" stroke="white" stroke-width="2" />
+                                    <text x="545" y="95" fill="white" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">7</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 59 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>59.</span> There are 24 children on a school outing.</p>
+                            <p class="indent-p2">At lunchtime 11 of them ate a sandwich,</p>
+                            <p class="indent-p4">9 of them ate a banana,</p>
+                            <p class="indent-p4"><math xmlns="http://w3.org" display="inline"><mi>n</mi></math> of them ate neither a sandwich nor a banana.</p>
+                            <p class="indent-p2">By drawing Venn diagrams, or otherwise, find</p>
+                            <p class="indent-p2">(a) the smallest possible value of <math xmlns="http://w3.org" display="inline"><mi>n</mi></math>,</p>
+                            <p class="indent-p2">(b) the largest possible value of <math xmlns="http://w3.org" display="inline"><mi>n</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 60 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>60.</span> There are 26 boys in a class at school. 14 of them play football, 10 of them play cricket and <math xmlns="http://w3.org" display="inline"><mi>n</mi></math> of them play neither football nor cricket. By drawing a Venn diagram, or otherwise, find</p>
+                            <p class="indent-p2">(a) the smallest possible value of <math xmlns="http://w3.org" display="inline"><mi>n</mi></math>,</p>
+                            <p class="indent-p2">(b) the largest possible value of <math xmlns="http://w3.org" display="inline"><mi>n</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 61 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>61.</span> <math xmlns="http://w3.org" display="inline"><mi>A</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>C</mi></math> are subsets of the universal set <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi></math> where <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&#x2282;</mo><mi>B</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>&#x2229;</mo><mi>C</mi><mo>=</mo><mo>&#x2205;</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>&#x2229;</mo><mi>C</mi><mo>&#x2260;</mo><mo>&#x2205;</mo></math> and <math xmlns="http://w3.org" display="inline"><mi>C</mi></math> is not a subset of <math xmlns="http://w3.org" display="inline"><mi>B</mi></math>. Show one way in which the sets <math xmlns="http://w3.org" display="inline"><mi>A</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>C</mi></math> can be added to the Venn Diagram.</p>
+                            
+                            <!-- Diagram Visual Placement -->
+                            <div class="diagram-visual">
+                                <svg width="450" height="260" viewBox="0 0 450 260" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="30" width="370" height="200" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Ellipse B (Centered inside the frame) -->
+                                    <ellipse cx="225" cy="125" rx="150" ry="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Outer Universal Set Label (Top Right outside corner) -->
+                                    <text x="425" y="42" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                    
+                                    <!-- Set Label B inside the frame -->
+                                    <text x="105" y="65" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">B</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 62 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>62.</span> (a) On the Venn diagram, shade the set <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>&prime;</mo><mo>&#x2229;</mo><mi>T</mi></math>.</p>
+                            
+                            <!-- Diagram Visual Placement -->
+                            <div class="diagram-visual">
+                                <svg width="450" height="260" viewBox="0 0 450 260" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="30" width="370" height="200" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Ellipse B (Left side) -->
+                                    <ellipse cx="165" cy="125" rx="98" ry="54" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Ellipse T (Right side) -->
+                                    <ellipse cx="265" cy="125" rx="98" ry="54" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Universal Set Label ℰ (Top Right Outside Corner) -->
+                                    <text x="422" y="38" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                    
+                                    <!-- Set Labels B and T (Bottom Left and Bottom Right) -->
+                                    <text x="75" y="195" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="365" y="192" fill="white" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">T</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p">(b) Members of a sports club can play either badminton or table tennis. There are 30 members in the club. It is known that 24 members play badminton, 16 play table tennis and 4 do not play either sport. Find how many play table tennis but not badminton.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 63 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>63.</span> (a) On the Venn diagram in the answer space, shade the set <math xmlns="http://w3.org" display="inline"><mo>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo>)</mo><mo>&#x222A;</mo><mi>C</mi></math>.</p>
+                            
+                            <!-- Diagram Visual Placement -->
+                            <div class="diagram-visual">
+                                <svg width="400" height="360" viewBox="0 0 400 360" xmlns="http://w3.org">
+                                    <!-- Circle A (Left) -->
+                                    <circle cx="150" cy="170" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle B (Top Right) -->
+                                    <circle cx="230" cy="130" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Circle C (Bottom Right) -->
+                                    <circle cx="225" cy="220" r="75" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Labels Outside Rings -->
+                                    <text x="50" y="180" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="320" y="75" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">B</text>
+                                    <text x="325" y="275" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">C</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p2">(b) The Universal set is the set of all positive integers and <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>&lt;</mo><mn>10</mn><mo>}</mo></math>. Complete the statement: <math xmlns="http://w3.org" display="inline"><mi>P</mi><mo>&prime;</mo><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mtext>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mtext><mo>}</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 64 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>64.</span> (a) <math xmlns="http://w3.org" display="inline"><mi>A</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>C</mi></math> are subsets of the universal set <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>&#x222A;</mo><mi>A</mi><mo>=</mo><mi>B</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>&#x2229;</mo><mi>C</mi><mo>=</mo><mo>&#x2205;</mo></math>. Illustrate this on the Venn diagram in the answer space.</p>
+                            
+                            <!-- Diagram Visual Placement -->
+                            <div class="diagram-visual">
+                                <svg width="450" height="260" viewBox="0 0 450 260" xmlns="http://w3.org">
+                                    <!-- Universal Set Boundary Rectangle -->
+                                    <rect x="40" y="30" width="370" height="200" fill="none" stroke="white" stroke-width="2" />
+                                    
+                                    <!-- Universal Set Label ℰ (Top Right Outside Corner) -->
+                                    <text x="422" y="38" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p">(b) In a group of people, 15 drink tea, 28 drink coffee, 12 drink both tea and coffee and 6 drink neither tea nor coffee. By drawing a Venn diagram, or otherwise, find the total number of people in the group.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 65 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>65.</span> <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is an even number</mtext><mo>}</mo></math>, <math xmlns="http://w3.org" display="inline"><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mtext>&nbsp;is a multiple of 3</mtext><mo>}</mo></math>.</p>
+                            <p class="indent-p">(a) Draw a Venn Diagram to illustrate these sets, indicating the members of each subset.</p>
+                            <p class="indent-p">(b) (i) A number <math xmlns="http://w3.org" display="inline"><mi>n</mi></math> is chosen at random from <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi></math>. Find the probability that</p>
+                            <p class="indent-p3">(a) <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>&#x2208;</mo><mi>A</mi></math>,</p>
+                            <p class="indent-p3">(b) <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>&#x2208;</mo><mi>A</mi><mo>&prime;</mo></math>,</p>
+                            <p class="indent-p3">(c) <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>&#x2208;</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi></math>,</p>
+                            <p class="indent-p3">(d) <math xmlns="http://w3.org" display="inline"><mi>n</mi><mo>=</mo><mn>14</mn></math>.</p>
+                            <p class="indent-p2">(ii) A second number <math xmlns="http://w3.org" display="inline"><mi>m</mi></math> is chosen at random from the complete set <math xmlns="http://w3.org" display="inline"><mi>&#x2130;</mi></math>. Find the probability that the sum of <math xmlns="http://w3.org" display="inline"><mi>n</mi></math> and <math xmlns="http://w3.org" display="inline"><mi>m</mi></math> is 18.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 66 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>66.</span> (a) On the Venn Diagram, shade the set <math xmlns="http://w3.org" display="inline"><mo>(</mo><mi>P</mi><mo>&#x222A;</mo><mi>R</mi><mo>)</mo><mo>&#x2229;</mo><mi>Q</mi></math>.</p>
+                            
+                            <!-- Diagram Visual Placement -->
+                            <div class="diagram-visual">
+                                <svg width="450" height="340" viewBox="0 0 450 340" xmlns="http://w3.org">
+                                <!-- Universal Set Boundary Rectangle -->
+                                <rect x="35" y="30" width="375" height="280" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Circle P (Top Left) -->
+                                <circle cx="160" cy="125" r="75" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Circle Q (Top Right) -->
+                                <circle cx="250" cy="130" r="75" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Circle R (Bottom Center) -->
+                                <circle cx="210" cy="215" r="75" fill="none" stroke="white" stroke-width="2" />
+                                
+                                <!-- Universal Set Label ℰ (Top Right Outside Corner) -->
+                                <text x="425" y="42" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+                                
+                                <!-- Set Labels Outside Rings -->
+                                <text x="85" y="65" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">P</text>
+                                <text x="325" y="65" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">Q</text>
+                                <text x="280" y="290" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">R</text>
+                                </svg>
+                            </div>
+                            <p class="indent-p2">(b) Express in set notation, as simply as possible, the set shaded in the Venn Diagram.</p>
+                            
+                            <!-- Diagram Visual Placement -->
+                            <div class="diagram-visual">
+                                <svg width="450" height="320" viewBox="0 0 450 320" xmlns="http://w3.org">
+                                    <!-- Define standard shading pattern for concentric ring region -->
+                                    <defs>
+                                        <mask id="donut-hole">
+                                        <!-- Everything white stays visible -->
+                                        <rect x="0" y="0" width="450" height="320" fill="white" />
+                                        <!-- Inner ellipse blacked out to create a hole -->
+                                        <ellipse cx="210" cy="170" rx="55" ry="38" fill="black" />
+                                        </mask>
+                                    </defs>
+
+                                    <!-- Universal Set Outer Boundary Frame -->
+                                    <rect x="35" y="30" width="375" height="260" fill="none" stroke="white" stroke-width="2" />
+
+                                    <!-- Shaded Donut Ring Area (Outer Ellipse A minus Inner Ellipse B) -->
+                                    <ellipse cx="210" cy="170" rx="130" ry="95" fill="white" fill-opacity="0.3" mask="url(#donut-hole)" />
+
+                                    <!-- Outer Set Ellipse A Outline -->
+                                    <ellipse cx="210" cy="170" rx="130" ry="95" fill="none" stroke="white" stroke-width="2" />
+
+                                    <!-- Inner Set Ellipse B Outline -->
+                                    <ellipse cx="210" cy="170" rx="55" ry="38" fill="none" stroke="white" stroke-width="2" />
+
+                                    <!-- Universal Set Notation Label ℰ (Top Right Outside Corner) -->
+                                    <text x="425" y="42" fill="white" font-family="Georgia, serif" font-size="24" font-style="italic" text-anchor="middle">ℰ</text>
+
+                                    <!-- Subset Custom Variable Placement Labels (A and B) -->
+                                    <text x="105" y="85" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">A</text>
+                                    <text x="172" y="130" fill="white" font-family="Georgia, serif" font-size="28" font-style="italic" text-anchor="middle">B</text>
+                                </svg> 
+                            </div>
+                            <p class="indent-p2">(c) There are 27 people in a restaurant. Of these, 10 eat fish, 15 eat meat and 9 eat neither fish nor meat. Using a Venn Diagram, or otherwise, find the number of people in the restaurant who eat fish but not meat.</p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../js/contentScript.js"></script>
+
+</body>
+</html>
