@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Question Bank | Unit 13 - Functions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/contentStyles.css" />
+    <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../assets/css/question-bank.css" />
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+        <a href="../../../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+            <a href="../../conversions.html">Study Guide</a>
+            <a href="../../tracker.html">Revision Tracker</a>
+            <a href="../../tracker.html#past-papers">Past Papers</a>
+            <a href="../../questionBank/question-bank.html">Question Bank</a>
+        </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="#">Lesotho</a><span class="bc-sep">›</span>
+            <a href="../../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../question-bank.html">Question Bank</a><span class="bc-sep">›</span>
+            <a href="practice-questions.html">Practice Questions</a><span class="bc-sep">›</span>
+            <span>Unit 13 </span>
+        </div>
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="page-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar" id="leftSidebar">
+            <div class="filter-wrap">
+                <span class="filter-icon">🔍</span>
+                <input class="filter-input" type="text" placeholder="Filter topics..." />
+            </div>
+
+            <ul class="sidebar-nav" id="topicNav">
+                <li><a href="number-operations.html">Unit 1A - Arithmetic - Number Operations, Squares and Square Roots</a></li>
+                <li><a href="financial-transactions.html">Unit 1B - Arithmetic - Arithmetic Problems, Simple Financial Transactions, Profit and Loss, Simple Interest</a></li>
+                <li><a href="ratio-proportions-percentages.html">Unit 1C - Arithmetic - Ratio, Proportions and Percentages, Scales and Simple Map Problems</a></li>
+                <li><a href="estimation-and-significant-figures.html">Unit 1D - Arithmetic - Estimation, Significant Figures, Decimal Places and Standard Form</a></li>
+                <li><a href="mensuration-plane-figures.html">Unit 2A - Mensuration - Rectangle, Square, Triangle, Parallelogram, Trapezium and Circle, Arc Length and Area of Sector</a></li>
+                <li><a href="mensuration-solid-figures.html">Unit 2B - Mensuration - Solid Figures i.e. Cuboid, Cylinder, Sphere, Pyramid, Cone and Prism</a></li>
+                <!-- <li><a href="algebraic-formulae-and-symb\.html">Unit 3C - Algebra and Graphs - Expansion and Factorisation of Algebraic Expressions</a></li> -->
+                <li><a href="algebraic-fractions-and-equations.html">Unit 3D - Algebra and Graphs - Simple Algebraic Fractions, Simple Equations and Identities, Solutions of Simultaneous Linear Equations and Quadratic Equations</a></li>
+                <li><a href="algebra-graphs.html">Unit 3E - Algebra and Graphs - Graphs</a></li>
+                <!-- <li><a href="variations.html">Unit 3F - Algebra and Graphs - Direct, Inverse and Joint Variations</a></li>
+                <li><a href="straight-line-graphs.html">Unit 3G - Algebra and Graphs - Gradients and Equations of Straight Lines</a></li>
+                <li><a href="inequalities-and-linear-programming.html">Unit 3H - Algebra and Graphs - Inequality and Linear Programming</a></li>
+                <li><a href="distance-speed-time-graphs.html">Unit 3I - Algebra and Graphs - Distance-Time Graphs and Speed-Time Graphs</a></li>
+                <li><a href="angle-properties.html">Unit 4A - Geometry - Properties of Angles; Angle Properties of Polygons</a></li>
+                <li><a href="similarity-congruency-symmetry.html">Unit 4B - Geometry - Similarity, Congruency and Symmetry</a></li>
+                <li><a href="circle-theorems.html">Unit 4C - Geometry - Circle Theorems</a></li>
+                <li><a href="loci-and-construction.html">Unit 4D - Geometry - Loci and Simple Construction</a></li> -->
+                <li><a href="trigonometrical-ratios.html">Unit 5A - Trigonometry - Trigonometrical Ratios, Solutions of Triangles</a></li>
+                <li><a href="bearing-problems.html">Unit 5B - Trigonometry - Bearing Problems, Angle of Elevation and Depression, 3 Dimensional Problems</a></li>
+                <li><a href="statistics-charts-and-mean.html">Unit 6A - Statistics - Bar Charts, Pie Charts, Frequency Polygons, Histograms, Mean, Median and Mode</a></li>
+                <li><a href="cumulative-frequency.html">Unit 6B - Statistics - Cumulative Frequency</a></li>
+                <li><a href="vectors.html">Unit 7 - Vectors</a></li>
+                <!-- <li><a href="problem-solving.html">Unit 8 - Problem Solving</a></li> -->
+                <li><a href="probability.html"> Unit 9 - Probability</a></li>
+                <li><a href="transformations.html">Unit 10A - Transformations</a></li>
+                <li><a href="matrices-in-transformation.html">Unit 10B - Use of Matrices in Transformation</a></li>
+                <!-- <li><a href="matrices.html">Unit 11 - Matrices</a></li> -->
+                <li><a href="sets-and-venn-diagrams.html">Unit 12 - Sets and Venn Diagrams</a></li>
+                <li class="active"><a href="functions.html">Unit 13 - Functions</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="mainContent">
+            <div class="question-paper">
+
+                <!-- ============================================================ -->
+                <!-- Unit 13  - Functions -->
+                <!-- ============================================================ -->
+                <section class="topic-section" id="unit13">
+                                        <!-- Unit 13  Header -->
+                    <div class="unit-header" style="text-align: center; margin: 30px 0 20px 0; border-bottom: 2px solid white; padding-bottom: 10px;">
+                        <h1 style="font-family: sans-serif; font-size: 26px; margin: 0; color: #ffffff;">Unit 13 </h1>
+                        <h3 style="font-family: 'Times New Roman', Times, serif, sans-serif; font-style: italic; font-size: 22px; margin: 5px 0 0 0; color: #ffffff;">
+                            Functions
+                        </h3>
+                    </div>
+
+                                        <!-- Question 1 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>1.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(c) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>2.</span> If <math xmlns="http://w3.org" display="inline"><mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>-</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup></math>, find <math xmlns="http://w3.org" display="inline"><mi>k</mi></math> such that <math xmlns="http://w3.org" display="inline"><mi>h</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mo>-</mo><mn>3</mn></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>3.</span> A function <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math> is defined by <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac></math>.</p>
+                            <p class="indent-p2">(a) Evaluate <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></math>.</p>
+                            <p class="indent-p2">(b) Find an expression for <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math> in terms of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>4.</span> Given <math xmlns="http://w3.org" display="inline"><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi></math>. Find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>g</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>5.</span> A function <math xmlns="http://w3.org" display="inline"><mi>k</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math> is defined by <math xmlns="http://w3.org" display="inline"><mi>k</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac></math>, <math xmlns="http://w3.org" display="inline"><mi>x</mi><mo>&ne;</mo><mo>-</mo><mn>2</mn></math>.</p>
+                            <p class="indent-p">Find the function <math xmlns="http://w3.org" display="inline"><msup><mi>k</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>6.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo>:</mo><mi>x</mi><mo>&mapsto;</mo><mn>17</mn><mo>-</mo><mn>4</mn><mi>x</mi></math>, find</p>
+                            <p class="indent-p2">(a) the value of <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) an expression for <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>7.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>3</mn></math>, evaluate</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mo>-</mo><mn>2</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>31</mn><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>8.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>5</mn></math>, evaluate</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mo>-</mo><mn>4</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>9.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo>:</mo><mi>x</mi><mo>&mapsto;</mo><mfrac><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>7</mn></mrow><mn>3</mn></mfrac></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) an expression for <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>10.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>-</mo><mn>2</mn><mi>x</mi></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mo>-</mo><mn>2</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 11 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>11.</span> It is given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>7</mn></math> and <math xmlns="http://w3.org" display="inline"><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>6</mn><mo stretchy="false">)</mo></math>.</p>
+                            <p class="indent-p2">(a) Find the value of <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mo>-</mo><mn>5</mn><mo stretchy="false">)</mo></math>.</p>
+                            <p class="indent-p2">(b) (i) Obtain an expression for <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math>.</p>
+                            <p class="indent-p4">(ii) Find the value of <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>15</mn><mo stretchy="false">)</mo></math>.</p>
+                            <p class="indent-p2">(c) Find the values of <math xmlns="http://w3.org" display="inline"><mi>x</mi></math> for which</p>
+                            <p class="indent-p4">(i) <math xmlns="http://w3.org" display="inline"><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></math>,</p>
+                            <p class="indent-p4">(ii) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 12 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>12.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mn>5</mn></mfrac></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 13 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>13.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mn>5</mn></mfrac></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 14 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>14.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo>:</mo><mi>x</mi><mo>&mapsto;</mo><mfrac><mrow><mn>3</mn><mi>x</mi><mo>-</mo><mn>5</mn></mrow><mn>2</mn></mfrac></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mrow><mo maxsize="1.2em" minsize="1.2em">(</mo></mrow><mn>3</mn><mfrac><mn>1</mn><mn>3</mn></mfrac><mrow><mo maxsize="1.2em" minsize="1.2em">)</mo></mrow></math>,</p>
+                            <p class="indent-p2">(b) an expression for <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 15 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>15.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mn>2</mn></mfrac></math>, find <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 16 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>16.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mn>2</mn></mrow><mn>3</mn></mfrac></math>, find <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 17 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>17.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo>:</mo><mi>x</mi><mo>&mapsto;</mo><mfrac><mrow><mn>7</mn><mo>-</mo><mn>3</mn><mi>x</mi></mrow><mn>4</mn></mfrac></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mo>-</mo><mn>3</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) an expression for <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 18 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>18.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mi>x</mi></mfrac></math>,</p>
+                            <p class="indent-p2">(a) find <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mo>-</mo><mn>4</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) find <math xmlns="http://w3.org" display="inline"><mi>x</mi></math> when <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></math>,</p>
+                            <p class="indent-p2">(c) write down the value of <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 19 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>19.</span> It is given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>5</mn><mo>-</mo><mn>2</mn><mi>x</mi></mrow><mn>3</mn></mfrac></math>. Find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mrow><mo maxsize="1.2em" minsize="1.2em">(</mo></mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo maxsize="1.2em" minsize="1.2em">)</mo></mrow></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mo>-</mo><mn>12</mn><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 20 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>20.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo>:</mo><mi>x</mi><mo>&mapsto;</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></math>, find an expression for <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 21 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>21.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 22 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>22.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo>:</mo><mi>x</mi><mo>&mapsto;</mo><mfrac><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mrow><mn>5</mn></mfrac></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) an expression for <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 23 -->
+                    <div class="question-block">
+                        <div class="question-text">
+                            <p><span>23.</span> Given that <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo>:</mo><mi>x</mi><mo>&mapsto;</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>6</mrow><mn>2x</mn></mfrac></math>, find</p>
+                            <p class="indent-p2">(a) <math xmlns="http://w3.org" display="inline"><mi>f</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></math>,</p>
+                            <p class="indent-p2">(b) an expression for <math xmlns="http://w3.org" display="inline"><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math>.</p>
+                        </div>
+                    </div>
+
+
+                    
+
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LGCSE SYLLABUS</h4>
+                <ul>
+                    <li><a href="#">Physics</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="conversions.html">Study Guide</a></li>
+                    <li><a href="tracker.html">Revision Tracker</a></li>
+                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                    <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                    <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                    <li><a href="../lesotho/functions.html">Functions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy</a> &middot;
+                <a href="#">Terms</a> &middot;
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../js/contentScript.js"></script>
+
+</body>
+</html>
