@@ -785,3 +785,134 @@ table {
         padding: 1.5rem 1rem 1rem;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE APP NAVIGATION (WhatsApp-style)
+   Added by Claude. This section adds:
+     1. A fixed bottom tab bar with the 4 main features
+     2. A search bar row under the top nav on mobile
+   Both are injected into the page automatically by contentScript.js
+   — you do not need to add any markup to your HTML pages.
+   Everything here is scoped to small screens; desktop layout is
+   completely untouched.
+═══════════════════════════════════════════════════════════════ */
+
+:root {
+    --bottomnav-height: 60px;
+    --bottomnav-bg: var(--nav-bg);
+    --bottomnav-border: var(--border);
+    --bottomnav-inactive: var(--text-muted);
+    --bottomnav-active: #75b5fd;
+}
+
+/* ── Mobile search row (sits directly under the top bar, WhatsApp-style) ── */
+.mobile-search-row {
+    display: none; /* shown only on mobile, see media query below */
+    position: sticky;
+    top: 60px; /* height of .top-nav */
+    z-index: 99;
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 12px;
+}
+.mobile-search-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 8px 14px;
+}
+.mobile-search-wrap svg {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    color: var(--text-muted);
+}
+.mobile-search-input {
+    flex: 1;
+    min-width: 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 0.95rem;
+}
+.mobile-search-input::placeholder {
+    color: var(--text-muted);
+}
+
+/* ── Bottom tab bar ── */
+.bottom-nav {
+    display: none; /* shown only on mobile, see media query below */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--bottomnav-height);
+    background: var(--bottomnav-bg);
+    border-top: 1px solid var(--bottomnav-border);
+    z-index: 300;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+}
+.bottom-nav-inner {
+    display: flex;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.bottom-nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 6px 2px 4px;
+    color: var(--bottomnav-inactive);
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 0.68rem;
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+.bottom-nav-item:hover {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+.bottom-nav-item svg {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 1px;
+}
+.bottom-nav-item .nav-label {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bottom-nav-item.active {
+    color: var(--bottomnav-active);
+}
+
+/* ── Enable the mobile nav only on small screens ── */
+@media (max-width: 768px) {
+    .mobile-search-row {
+        display: block;
+    }
+    .bottom-nav {
+        display: block;
+    }
+    /* Old desktop search button/kbd hint in the top bar is
+       replaced by the new mobile search row, so hide it here. */
+    .top-nav .nav-right .search-btn {
+        display: none;
+    }
+    /* Leave room at the bottom of the page so content never
+       hides behind the fixed tab bar. */
+    body.has-bottom-nav {
+        padding-bottom: calc(var(--bottomnav-height) + env(safe-area-inset-bottom, 0));
+    }
+}
