@@ -4,6 +4,20 @@ const leftSidebar = document.getElementById('leftSidebar');
 const sidebarOverlay = document.getElementById('sidebarOverlay');
 
 if (hamburgerBtn && leftSidebar && sidebarOverlay) {
+    // Swap the plain ☰ for a "sidebar" icon — a panel with a topics
+    // column — so it reads as "open the list of topics/sections"
+    // rather than a generic, unclear menu icon.
+    hamburgerBtn.innerHTML =
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
+        'stroke-linecap="round" stroke-linejoin="round">' +
+            '<rect x="3" y="4" width="18" height="16" rx="2"/>' +
+            '<line x1="9" y1="4" x2="9" y2="20"/>' +
+            '<line x1="5.5" y1="8" x2="6.5" y2="8"/>' +
+            '<line x1="5.5" y1="11.5" x2="6.5" y2="11.5"/>' +
+            '<line x1="5.5" y1="15" x2="6.5" y2="15"/>' +
+        '</svg>';
+    hamburgerBtn.setAttribute('aria-label', 'Open topics menu');
+
     hamburgerBtn.addEventListener('click', () => {
         leftSidebar.classList.toggle('open');
         sidebarOverlay.classList.toggle('active');
@@ -94,7 +108,7 @@ updateNav();
         },
         {
             label: 'Tracker',
-            href: ROOT + 'pages/lesotho/tracker.html',
+            href: ROOT + 'the-student-room-africa/pages/lesotho/tracker.html',
             match: ['tracker'],
             icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>'
         },
