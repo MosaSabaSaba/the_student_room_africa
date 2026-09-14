@@ -36,51 +36,75 @@
 (function () {
     const ROOT = document.body.getAttribute('data-root') || '';
 
-    // Edit hrefs/labels/match keywords here if your file names change,
-    // or if you add more pages under a given feature.
+    // Primary signal: a class on <body> (see list below). If a page
+    // doesn't have one yet, we fall back to guessing from the URL,
+    // so nothing breaks while you're still rolling classes out —
+    // but the class always wins when it's present, since it's
+    // unambiguous and the URL guess isn't.
+    //
+    //   nav-study-guides   → any Study Guide topic page
+    //   nav-tracker        → the Revision Tracker page
+    //   nav-question-bank  → the Question Bank + any Core/Extended
+    //                        practice-question pages under it
+    //
+    // Past Papers is a special case since it's an anchor on the
+    // Tracker page (#past-papers), not its own page — that's always
+    // detected from the URL hash, no class needed for it.
+    //
+    // Example: <body class="nav-question-bank" data-root="../../../">
     const NAV_ITEMS = [
         {
             label: 'Study Guides',
             href: ROOT + 'pages/lesotho/conversions.html',
+            bodyClass: 'nav-study-guides',
             match: ['conversions', 'interest', 'linear-equations', 'functions', 'lgcse'],
             icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 5c-1.11-.64-2.58-1-4-1-2.52 0-5.1.8-7 2-1.9-1.2-4.48-2-7-2-1.42 0-2.89.36-4 1v15c1.11-.64 2.58-1 4-1 2.52 0 5.1.8 7 2 1.9-1.2 4.48-2 7-2 1.42 0 2.89.36 4 1V5zm-2 13c-1.2-.5-2.61-.7-4-.7-2.52 0-5.1.8-7 2V7c1.9-1.2 4.48-2 7-2 1.39 0 2.8.2 4 .7v12z"/></svg>'
         },
         {
             label: 'Tracker',
             href: ROOT + 'pages/lesotho/tracker.html',
+            bodyClass: 'nav-tracker',
             match: ['tracker'],
             icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>'
         },
         {
             label: 'Question Bank',
             href: ROOT + 'pages/lesotho/questionBank/question-bank.html',
+            bodyClass: 'nav-question-bank',
             match: ['question-bank', 'questionbank'],
             icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 11h-2v-2h2v2zm1.07-5.75c-.32.46-.77.71-1.16 1.05-.44.38-.91.83-.91 1.7h-2c0-1.44.62-1.97 1.16-2.42.36-.31.68-.58.89-.92.22-.34.35-.78.35-1.16 0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5H7c0-2.48 2.02-4.5 4.5-4.5S16 4.02 16 6.5c0 .73-.25 1.35-.93 1.75z"/></svg>'
         },
         {
             label: 'Past Papers',
             href: ROOT + 'pages/lesotho/tracker.html#past-papers',
+            bodyClass: null, // always detected via URL hash — see detectActiveIndex()
             match: ['past-paper'],
             icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>'
         }
     ];
 
     function detectActiveIndex() {
+        // Past Papers lives on the same page as Tracker (an anchor,
+        // not a separate document), so the hash is checked before
+        // anything else — no class can override this one.
+        if (window.location.hash.toLowerCase() === '#past-papers') return 3;
+
+        // 1) Class on <body> — authoritative when present.
+        for (let i = 0; i < NAV_ITEMS.length; i++) {
+            const cls = NAV_ITEMS[i].bodyClass;
+            if (cls && document.body.classList.contains(cls)) return i;
+        }
+
+        // 2) Fallback: guess from the URL for pages without a class
+        // yet. Question Bank and Tracker are checked before Study
+        // Guides here, since a Core/Extended practice-question page
+        // can legitimately contain a topic word like "functions" in
+        // its filename while actually belonging to Question Bank —
+        // checking the more specific folder-based signals first
+        // avoids that false positive.
         const path = window.location.pathname.toLowerCase();
-        const hash = window.location.hash.toLowerCase();
-
-        if (hash === '#past-papers') return 3;
-
-        // Check the most specific, least collision-prone signals first.
-        // Folder-based matches (Question Bank, Tracker) are checked
-        // before generic topic keywords (Study Guides' subject names),
-        // because a Core/Extended practice-question page can legitimately
-        // have "functions" or "linear-equations" in its filename while
-        // actually living inside the Question Bank section. Checking
-        // Study Guides last means a page only lands there if nothing
-        // more specific claimed it first.
-        const priorityOrder = [2, 1, 0]; // Question Bank, Tracker, Study Guides
-        for (const i of priorityOrder) {
+        const fallbackOrder = [2, 1, 0]; // Question Bank, Tracker, Study Guides
+        for (const i of fallbackOrder) {
             for (const key of NAV_ITEMS[i].match) {
                 if (path.indexOf(key) !== -1) return i;
             }
