@@ -1,0 +1,63 @@
+<svg xmlns="http://w3.org" viewBox="0 0 500 540" style="background:transparent; font-family:'Times New Roman', serif;">
+  <defs>
+    <!-- Aligned to start exactly at the rect's x=60, y=30 coordinates -->
+    <pattern id="examGrid" width="50" height="50" patternUnits="userSpaceOnUse" patternTransform="translate(60,30)">
+      <!-- 9 minor vertical lines creating exactly 10 subdivisions per block -->
+      <line x1="5" y1="0" x2="5" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="10" y1="0" x2="10" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="15" y1="0" x2="15" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="20" y1="0" x2="20" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="25" y1="0" x2="25" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="30" y1="0" x2="30" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="35" y1="0" x2="35" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="40" y1="0" x2="40" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="45" y1="0" x2="45" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+
+      <!-- 9 minor horizontal lines creating exactly 10 subdivisions per block -->
+      <line x1="0" y1="5" x2="50" y2="5" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="0" y1="10" x2="50" y2="10" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="0" y1="15" x2="50" y2="15" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="0" y1="20" x2="50" y2="20" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="0" y1="25" x2="50" y2="25" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="0" y1="30" x2="50" y2="30" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="0" y1="35" x2="50" y2="35" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="0" y1="40" x2="50" y2="40" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+      <line x1="0" y1="45" x2="50" y2="45" stroke="#ffffff" stroke-width="0.3" opacity="0.35"/>
+
+      <!-- Bold major grid boundary lines outlining the 10x10 squares -->
+      <line x1="50" y1="0" x2="50" y2="50" stroke="#ffffff" stroke-width="1.3" opacity="0.85"/>
+      <line x1="0" y1="50" x2="50" y2="50" stroke="#ffffff" stroke-width="1.3" opacity="0.85"/>
+    </pattern>
+  </defs>
+
+  <!-- GRAPH GRID CONTAINER BOUNDS (Fits precisely 7 major wide by 8 major high blocks) -->
+  <rect x="60" y="30" width="350" height="400" fill="url(#examGrid)" stroke="#ffffff" stroke-width="2.5" />
+
+  <!-- WHITE TEXT LABELS & ARRAYS -->
+  <g font-size="15" fill="#ffffff" font-weight="normal">
+    <!-- X-Axis Major Divisions (0 to 70 Marks) -->
+    <text x="60" y="452" text-anchor="middle">0</text>
+    <text x="110" y="452" text-anchor="middle">10</text>
+    <text x="160" y="452" text-anchor="middle">20</text>
+    <text x="210" y="452" text-anchor="middle">30</text>
+    <text x="260" y="452" text-anchor="middle">40</text>
+    <text x="310" y="452" text-anchor="middle">50</text>
+    <text x="360" y="452" text-anchor="middle">60</text>
+    <text x="410" y="452" text-anchor="middle">70</text>
+    
+    <!-- Y-Axis Major Divisions (0 to 160 Frequency) -->
+    <text x="50" y="435" text-anchor="end">0</text>
+    <text x="50" y="385" text-anchor="end">20</text>
+    <text x="50" y="335" text-anchor="end">40</text>
+    <text x="50" y="285" text-anchor="end">60</text>
+    <text x="50" y="235" text-anchor="end">80</text>
+    <text x="50" y="185" text-anchor="end">100</text>
+    <text x="50" y="135" text-anchor="end">120</text>
+    <text x="50" y="85" text-anchor="end">140</text>
+    <text x="50" y="35" text-anchor="end">160</text>
+
+    <!-- Core Text Annotations -->
+    <text x="235" y="490" text-anchor="middle" font-size="18">Marks</text>
+    <text x="18" y="230" text-anchor="middle" font-size="18" transform="rotate(-90 18 230)">Cumulative frequency</text>
+  </g>
+</svg>
