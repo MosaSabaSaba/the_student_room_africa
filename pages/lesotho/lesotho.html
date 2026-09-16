@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>The Student Room | Mathematics Curricula in Lesotho</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <title>The Student Room | LGCSE Subjects in Lesotho</title>
     <link rel="stylesheet" href="../css/contentStyles.css"/>
 
     <style>
-        /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
+        /* ----- CONTAINER BEHAVIOR ----- */
         .custom-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -17,15 +15,11 @@
         }
 
         @media (min-width: 992px) {
-            .custom-container {
-                max-width: 960px;
-            }
+            .custom-container { max-width: 960px; }
         }
 
         @media (min-width: 1200px) {
-            .custom-container {
-                max-width: 1140px;
-            }
+            .custom-container { max-width: 1140px; }
         }
 
         @media (max-width: 576px) {
@@ -39,290 +33,186 @@
             padding: 2rem 0;
         }
 
-        /* hero section */
-        .hero-section {
-            padding: 1.5rem 2rem;
-            border-radius: 24px;
-            margin: 0 0 2rem 0;
-            background: rgba(244, 185, 66, 0.05);
+        /* tracker header */
+        .tracker-header {
+            margin: 0 0 1rem 0;
         }
 
-        .hero-section h1 {
-            font-family: 'Zilla Slab', serif;
+        .tracker-header h1 {
             font-weight: 700;
             font-size: 2.2rem;
-            margin: 0 0 0.5rem 0;
+            margin: 0 0 0.4rem 0;
             letter-spacing: -0.01em;
-            color: #ffda9e;
         }
 
-        .hero-section p {
+        .tracker-header p {
             margin: 0;
-            color: #bbb;
+            color: var(--text-body);
             font-size: 1rem;
             line-height: 1.5;
         }
 
-        /* section titles */
-        .section-title {
-            font-family: 'Zilla Slab', serif;
-            font-weight: 700;
-            font-size: 1.6rem;
-            margin: 1.5rem 0 0.5rem 0;
-            color: #ffda9e;
-            border-left: 4px solid #f4b942;
-            padding-left: 1rem;
-        }
-
-        .section-sub {
-            color: #888;
-            font-size: 0.85rem;
-            margin-top: -0.25rem;
-            margin-bottom: 1.5rem;
-        }
-
-        /* curricula cards grid */
-        .curricula-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
+        /* ══════════════════════════════════════════════════════
+           COMING SOON BANNER
+           ══════════════════════════════════════════════════════ */
+        .coming-soon-banner {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--accent-bg);
+            border: 1px solid var(--accent);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
             margin: 1.5rem 0 2rem 0;
         }
 
-        .curriculum-card {
-            background: rgba(255,255,255,0.03);
-            border-radius: 20px;
-            padding: 1.5rem;
-            border: 1px solid #2a2a2a;
-            transition: all 0.2s ease;
-            position: relative;
+        .coming-soon-banner .icon {
+            font-size: 1.5rem;
+            line-height: 1;
+            flex-shrink: 0;
         }
 
-        .curriculum-card.active {
-            border-color: #f4b942;
-            background: rgba(244, 185, 66, 0.05);
-            box-shadow: 0 0 0 1px rgba(244, 185, 66, 0.2);
-        }
-
-        .curriculum-card.inactive {
-            opacity: 0.6;
-            filter: grayscale(0.2);
-        }
-
-        .curriculum-card h3 {
-            font-family: 'Zilla Slab', serif;
-            font-size: 1.4rem;
-            margin: 0 0 0.5rem 0;
-            color: #ffcf8a;
-        }
-
-        .curriculum-card p {
-            margin: 0.5rem 0;
-            color: #aaa;
-            font-size: 0.85rem;
-            line-height: 1.4;
-        }
-
-        .curriculum-badge {
-            display: inline-block;
-            background: #1e3a2f;
-            padding: 0.2rem 0.6rem;
-            border-radius: 20px;
-            font-size: 0.65rem;
-            font-weight: 500;
-            color: #ffda9e;
-            margin-top: 0.5rem;
-        }
-
-        .curriculum-badge.active-badge {
-            background: #4a7c2e;
-            color: #fff;
-        }
-
-        .curriculum-badge.inactive-badge {
-            background: #5a3a2a;
-            color: #ccaa88;
-        }
-
-        .status-label {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            font-size: 0.7rem;
-            padding: 0.2rem 0.6rem;
-            border-radius: 20px;
-            background: #2a2a2a;
-            color: #888;
-        }
-
-        .status-label.active {
-            background: #4a7c2e;
-            color: #fff;
-        }
-
-        .status-label.inactive {
-            background: #5a3a2a;
-            color: #ccaa88;
-        }
-
-        .action-button {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.5rem 1.2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 500;
-            transition: all 0.2s;
-            border: 1px solid #f4b942;
-            color: #f4b942;
-            background: transparent;
-            cursor: pointer;
-        }
-
-        .action-button:hover {
-            background: #f4b942;
-            color: #1a1a1a;
-        }
-
-        .action-button.disabled {
-            opacity: 0.4;
-            cursor: not-allowed;
-            border-color: #666;
-            color: #666;
-            pointer-events: none;
-        }
-
-        /* note box */
-        .note-box {
-            background: rgba(36, 56, 48, 0.3);
-            border-radius: 16px;
-            padding: 1rem 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .note-box p {
+        .coming-soon-banner .text {
             margin: 0;
-            font-size: 0.85rem;
-            color: #bbb;
+            color: var(--text-body);
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
 
-        hr {
-            margin: 2rem 0;
-            border: none;
-            height: 1px;
-            background: linear-gradient(to right, #2e2a24, transparent);
-        }
-
-        /* -- FOOTER -- */
-        .site-footer {
-            background: var(--bg-secondary);
-            border-top: 1px solid var(--border);
-            padding: 2rem 0 1.5rem;
-            margin-top: 2rem;
-            width: 100%;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 2rem;
-        }
-
-        .footer-section h4 {
-            font-size: 0.85rem;
+        .coming-soon-banner .text strong {
+            color: var(--text-primary);
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--text-muted);
-            margin-bottom: 0.75rem;
-        }
-
-        .footer-section ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 0.4rem;
-        }
-
-        .footer-section ul li a {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            text-decoration: none;
-            transition: color 0.15s;
-        }
-
-        .footer-section ul li a:hover {
-            color: var(--text-primary);
-            text-decoration: none;
-        }
-
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 1.5rem auto 0;
-            padding: 1rem 24px 0;
-            border-top: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .footer-bottom p {
-            margin: 0;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-        }
-
-        .footer-bottom a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.75rem;
-        }
-
-        .footer-bottom a:hover {
-            color: var(--text-primary);
-            text-decoration: underline;
         }
 
         @media (max-width: 640px) {
-            .page-body {
-                padding: 1rem 0;
+            .coming-soon-banner {
+                padding: 1rem 1.15rem;
+                gap: 0.75rem;
             }
-            .hero-section {
-                padding: 1rem 1.2rem;
+            .coming-soon-banner .icon {
+                font-size: 1.25rem;
             }
-            .hero-section h1 {
-                font-size: 1.6rem;
-            }
-            .curriculum-card {
-                padding: 1rem;
-            }
-            .footer-content {
-                grid-template-columns: 1fr 1fr;
-                gap: 1.5rem;
-            }
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
+            .coming-soon-banner .text {
+                font-size: 0.875rem;
             }
         }
 
-        @media (max-width: 480px) {
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 1rem;
+        /* ══════════════════════════════════════════════════════
+           COLUMN HEADER ROW
+           ══════════════════════════════════════════════════════ */
+        .subjects-header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 0.75rem;
+            padding: 0 1rem 0.5rem 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .subjects-header span {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+
+        .subjects-header .col-status {
+            text-align: right;
+            min-width: 140px;
+        }
+
+        /* ══════════════════════════════════════════════════════
+           SUBJECT CARDS
+           ══════════════════════════════════════════════════════ */
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.6rem;
+        }
+
+        .subject-card {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.85rem 1rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 0.75rem;
+            transition: border-color 0.15s ease, background-color 0.15s ease;
+            text-decoration: none;
+        }
+
+        .subject-card.available:hover {
+            border-color: var(--accent);
+            background: var(--bg-secondary);
+        }
+
+        .subject-card.available .subject-name {
+            color: var(--text-body);
+        }
+
+        .subject-card.available:hover .subject-name {
+            color: var(--text-primary);
+        }
+
+        .subject-card.unavailable {
+            opacity: 0.7;
+            cursor: default;
+        }
+
+        .subject-card.unavailable .subject-name {
+            color: var(--text-muted);
+        }
+
+        .subject-name {
+            font-size: 0.9rem;
+            line-height: 1.35;
+            word-break: break-word;
+        }
+
+        .subject-status {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-weight: 600;
+            white-space: nowrap;
+            text-align: right;
+            min-width: 140px;
+        }
+
+        .subject-status.available {
+            color: #75b5fd;
+        }
+
+        @media (max-width: 640px) {
+            .subjects-header {
+                padding: 0 0.85rem 0.4rem 0.85rem;
+                gap: 0.6rem;
             }
-            .site-footer {
-                padding: 1.5rem 0 1rem;
+            .subjects-header .col-status {
+                min-width: 100px;
             }
+            .subject-card {
+                padding: 0.75rem 0.85rem;
+                gap: 0.6rem;
+            }
+            .subject-name {
+                font-size: 0.85rem;
+            }
+            .subject-status {
+                font-size: 0.6rem;
+                min-width: 100px;
+            }
+
+            .page-body {
+                padding: 1rem 0;
+            }
+            .tracker-header h1 {
+                font-size: 1.6rem;
+            }
+        
         }
     </style>
 </head>
@@ -345,7 +235,7 @@
 
     <!-- SCRIMBA BANNER -->
     <div class="scrimba-banner">
-        Learn frontend, backend, and AI from our course partner 
+        Learn frontend, backend, and AI from our course partner
         <a href="#">Scrimba</a>
     </div>
 
@@ -360,82 +250,124 @@
         </div>
     </div>
 
-    <!-- PAGE LAYOUT with container behavior -->
+    <!-- PAGE LAYOUT -->
     <div class="custom-container">
         <div class="page-body">
-            
-            <!-- Hero Section -->
-            <div class="hero-section">
-                <h1>Mathematics Curricula in Lesotho</h1>
-                <p>Explore the different mathematics qualifications available in Lesotho. Select the curriculum that matches your educational pathway.</p>
+
+            <div class="tracker-header">
+                <h1>LGCSE Subjects</h1>
+                <p>All subjects offered at the Lesotho General Certificate of Secondary Education. Select a subject to access its resources.</p>
             </div>
 
-            <!-- Curricula Cards -->
-            <div class="curricula-grid">
-                
-                <!-- PSLE - Primary School -->
-                <div class="curriculum-card inactive">
-                    <div class="status-label inactive">Coming Soon</div>
-                    <h3>PSLE Mathematics</h3>
-                    <p>Primary School Leaving Examination</p>
-                    <p>National examination taken at the end of Standard 7 (Grade 7). Covers foundational arithmetic, basic geometry, measurement, and simple problem-solving. This is the stepping stone to secondary school mathematics.</p>
-                    <div class="curriculum-badge inactive-badge">Standard 7</div>
-                    <div class="curriculum-badge inactive-badge">Primary Level</div>
-                    <span class="action-button disabled">Coming Soon</span>
-                </div>
-
-                <!-- JC - Junior Certificate -->
-                <!-- <div class="curriculum-card inactive">
-                    <div class="status-label inactive">Coming Soon</div>
-                    <h3>JC Mathematics</h3>
-                    <p>Junior Certificate</p>
-                    <p>National examination taken at the end of Form 3 (Grade 9). Bridges primary mathematics and LGCSE. Covers more advanced arithmetic, introductory algebra, geometry, trigonometry basics, and statistics.</p>
-                    <div class="curriculum-badge inactive-badge">Form 3</div>
-                    <div class="curriculum-badge inactive-badge">Junior Secondary</div>
-                    <span class="action-button disabled">Coming Soon</span>
-                </div> -->
-
-                <!-- LGCSE - Senior Secondary -->
-                <div class="curriculum-card active">
-                    <div class="status-label active">Available Now</div>
-                    <h3>LGCSE Mathematics</h3>
-                    <p>Lesotho General Certificate of Secondary Education</p>
-                    <p>National examination taken at the end of Form 4 and Form 5 (Grades 10-11). Core and Extended pathways available. This is the main secondary school leaving qualification recognized across Southern Africa.</p>
-                    <div class="curriculum-badge active-badge">Core + Extended</div>
-                    <div class="curriculum-badge">Forms 4 &amp; 5</div>
-                    <a href="lgcse.html" class="action-button">Access LGCSE Resources</a>
-                </div>
-
-                <!-- IGCSE - International -->
-                <div class="curriculum-card inactive">
-                    <div class="status-label inactive">Coming Soon</div>
-                    <h3>IGCSE Mathematics</h3>
-                    <p>International General Certificate of Secondary Education</p>
-                    <p>Cambridge International qualification offered by some international schools in Lesotho. Covers number, algebra, shape and space, probability, and statistics. Available at Core and Extended levels.</p>
-                    <div class="curriculum-badge inactive-badge">Core + Extended</div>
-                    <div class="curriculum-badge inactive-badge">International</div>
-                    <span class="action-button disabled">Coming Soon</span>
-                </div>
+            <!-- Coming Soon Banner -->
+            <div class="coming-soon-banner">
+                <span class="icon">📬</span>
+                <p class="text">
+                    <strong>More subjects coming soon.</strong> We're currently building resources for Mathematics. Check back regularly to see when your subject is added.
+                </p>
             </div>
 
-            <!-- Educational Pathway Note -->
-            <div class="note-box">
-                <p><strong>Understanding the Lesotho Education Pathway</strong><br>
-                Students in Lesotho typically follow this mathematics progression:<br>
-                <strong>PSLE</strong> (Grade 7) → <strong>LGCSE</strong> (Grade 8 - 11) → Post-Secondary<br>
-                <!-- <strong>PSLE</strong> (Grade 7) → <strong>JC</strong> (Form 3) → <strong>LGCSE</strong> (Forms 4-5) → Post-Secondary<br> -->
-                Most Lesotho secondary schools follow the LGCSE pathway, which is the national curriculum aligned with local educational policies. The Examinations Council of Lesotho (ECoL) administers all national examinations.</p>
+            <!-- Column Headers -->
+            <div class="subjects-header">
+                <span class="col-subject">Subject</span>
+                <span class="col-status">Status</span>
             </div>
 
-            <div style="text-align: center; font-size: 0.75rem; color: #555; margin-top: 1rem;">
-                <p>Lesotho mathematics curricula information is updated regularly to reflect current educational policies.<br>
-                For official curriculum documents, please refer to the <a href="https://www.examscouncil.org.ls" target="_blank" style="color: #ffcf8a;">Examinations Council of Lesotho (ECoL)</a> or Cambridge International (for IGCSE).</p>
+            <!-- Subjects List -->
+            <div class="subjects-grid">
+
+                <!-- === Languages === -->
+                <div class="subject-card unavailable">
+                    <span class="subject-name">English Language</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Sesotho</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+
+                <!-- === Mathematics === -->
+                <a href="lgcse.html" class="subject-card available">
+                    <span class="subject-name">Mathematics</span>
+                    <span class="subject-status available">Available</span>
+                </a>
+
+                <!-- === Sciences === -->
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Physical Science</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Biology</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+
+                <!-- === Social Sciences === -->
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Literature in English</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Religious Studies</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">History</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Geography</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Development Studies</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Economics (IGCSE)</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+
+                <!-- === Creative, Technical & Vocational === -->
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Agriculture</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Design and Technology</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Fashion and Textiles</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Food and Nutrition</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Accounting</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Travel and Tourism</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">Business Studies (IGCSE)</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+                <div class="subject-card unavailable">
+                    <span class="subject-name">ICT (IGCSE)</span>
+                    <span class="subject-status">Coming Soon</span>
+                </div>
+
             </div>
 
         </div>
     </div>
 
-    <!-- -- FOOTER -- -->
+    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
