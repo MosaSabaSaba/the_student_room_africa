@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limits Of Accuracy - Mathematics | Student Room Africa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/contentStyles.css" />
     <link rel="stylesheet" href="../css/mobileNav.css" />
     <link rel="stylesheet" href="../css/svg.css" />
-
-
+    <link rel="stylesheet" href="../css/globalFonts.css" />
 </head>
 <body class="nav-study-guides">
 
@@ -26,7 +23,7 @@
         <a href="tracker.html#past-papers">Past Papers</a>
         <a href="questionBank/question-bank.html">Question Bank</a>
     </div>
-    
+
     <div class="nav-right">
         <button class="search-btn">
         <span class="search-icon">🔍</span>
@@ -49,7 +46,7 @@
         <a href="#">Guide</a><span class="bc-sep">›</span>
         <span>Limits Of Accuracy</span>
     </div>
-    
+
     <div class="breadcrumb-right">
         <button>🌐 Theme</button>
         <button>🌐 English (US)</button>
@@ -88,36 +85,19 @@
             <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
             <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
             <li><a href="../lesotho/variation.html">Variation</a></li>
-            
-            <!-- <li>
-                <button class="sidebar-section-btn">Advanced</button>
-            </li> -->
-        </ul> 
-        
-        <!-- <div class="sidebar-divider"></div>
-        <div class="sidebar-label">References</div>
-
-        <ul class="sidebar-nav">
-            <li><button class="sidebar-section-btn">Built-in objects</button></li>
-            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
-            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
-            <li><button class="sidebar-section-btn">Functions</button></li>
-            <li><button class="sidebar-section-btn">Classes</button></li>
-            <li><button class="sidebar-section-btn">Regular expressions</button></li>
-            <li><button class="sidebar-section-btn">Errors</button></li>
-        </ul> -->
+        </ul>
     </aside>
 
     <!-- MAIN -->
     <main class="main-content">
         <div class="limits-of-accuracy">
             <h1 id="limits-of-accuracy">Limits of Accuracy</h1>
-            
+
             <p>
-                When a measurement is <strong>rounded</strong> to a certain degree of accuracy 
-                (such as to the nearest cm, nearest 0.1 cm, or to 2 significant figures), 
-                the true value lies within a <strong>range</strong>. The smallest and largest 
-                possible true values are called the <strong>lower bound</strong> and 
+                When a measurement is <strong>rounded</strong> to a certain degree of accuracy
+                (such as to the nearest cm, nearest 0.1 cm, or to 2 significant figures),
+                the true value lies within a <strong>range</strong>. The smallest and largest
+                possible true values are called the <strong>lower bound</strong> and
                 <strong>upper bound</strong>.
             </p>
 
@@ -136,7 +116,7 @@
 
             <div class="bounds-for-rounded-measurements">
                 <h2 id="bounds-for-rounded-measurements">Finding Bounds for Rounded Measurements</h2>
-                
+
                 <p>
                     When a measurement is rounded, the actual value could be slightly less or slightly more.
                     The <strong>lower bound</strong> is the smallest value that would round up to the given measurement.
@@ -144,20 +124,20 @@
                 </p>
 
                 <p><strong>Rule:</strong> To find the bounds, <strong>halve the degree of accuracy</strong>, then subtract from and add to the rounded value.</p>
-                
+
                 <p>Lower Bound = Rounded value − ½ × degree of accuracy</p>
                 <p>Upper Bound = Rounded value + ½ × degree of accuracy</p>
-                    
+
                 <br>
-                <h3 style="color: #00ffcc;">
+                <h3 class="sg-example">
                     Example 1: Cement Bag Weight
                 </h3>
                 <p>
                     A bag of cement is marked as 50 kg, rounded to
                     the nearest 10 kg. Degree of accuracy = 10 kg. Half of this = 5 kg.
                 </p>
-                <p style="color: #00ffcc;">Lower bound = 50 − 5 = 45 kg</p>
-                <p style="color: #00ffcc;">Upper bound = 50 + 5 = 55 kg</p> 
+                <p class="sg-formula">Lower bound = 50 − 5 = 45 kg</p>
+                <p class="sg-formula">Upper bound = 50 + 5 = 55 kg</p>
                 <p> True weight: 45 ≤ weight < 55</p>
                 <br>
 
@@ -185,7 +165,7 @@
                             font-size: clamp(14px, 4vw, 18px);
                             box-sizing: border-box;
                         }
-                        
+
                         @media screen and (max-width: 600px) {
                             .math-table th, .math-table td {
                                 font-size: 13px !important;
@@ -193,7 +173,7 @@
                             }
                         }
                     </style>
-                    
+
                     <table class="math-table" style="width: 100%; border-collapse: collapse; margin:1.5rem 0;">
                         <thead>
                             <tr style="border: 1px solid #00ffcc;">
@@ -248,17 +228,17 @@
 
             <div class="bounds-with-significant-figures">
                 <h2 id="bounds-with-significant-figures">Bounds with Significant Figures</h2>
-                
+
                 <p>
-                    For measurements given to a certain number of <strong>significant figures</strong>, 
-                    the same principle applies: find the smallest and largest possible values that 
+                    For measurements given to a certain number of <strong>significant figures</strong>,
+                    the same principle applies: find the smallest and largest possible values that
                     would round to the given number.
                 </p>
 
                 <p><strong>Rule:</strong> Identify the place value of the <strong>last significant figure</strong>. This becomes your degree of accuracy.</p>
-                
+
                 <br>
-                <h3 style="color: #00ffcc;">
+                <h3 class="sg-example">
                     Example 2: Distance to 2 Significant Figures
                 </h3>
                 <p>
@@ -269,12 +249,12 @@
                     The 5 is in the <strong>hundreds</strong> place (4500).
                     So the degree of accuracy = 100. Half of this = 50.
                 </p>
-                <p style="color: #00ffcc;">Lower bound = 4500 − 50 = 4450 m</p>
-                <p style="color: #00ffcc;">Upper bound = 4500 + 50 = 4550 m</p>
+                <p class="sg-formula">Lower bound = 4500 − 50 = 4450 m</p>
+                <p class="sg-formula">Upper bound = 4500 + 50 = 4550 m</p>
                 <p>True distance: 4450 ≤ distance &lt; 4550</p>
                 <br>
 
-                <h3 style="color: #00ffcc;">
+                <h3 class="sg-example">
                     Example 3: Decimal to 3 Significant Figures
                 </h3>
                 <p>
@@ -285,20 +265,20 @@
                     The last significant figure (9) is in the <strong>hundred-millionths</strong> place (0.00000009).
                     So the degree of accuracy = 0.0000001. Half of this = 0.00000005.
                 </p>
-                <p style="color: #00ffcc;">Lower bound = 0.0000639 − 0.00000005 = 0.00006385 m</p>
-                <p style="color: #00ffcc;">Upper bound = 0.0000639 + 0.00000005 = 0.00006395 m</p>
+                <p class="sg-formula">Lower bound = 0.0000639 − 0.00000005 = 0.00006385 m</p>
+                <p class="sg-formula">Upper bound = 0.0000639 + 0.00000005 = 0.00006395 m</p>
                 <p>True length: 0.00006385 ≤ length &lt; 0.00006395</p>
                 <br>
 
-                <p>
-                    <strong>NB:</strong> For decimals, the same rule applies: halve the degree of accuracy 
+                <p class="sg-note">
+                    <strong>NB:</strong> For decimals, the same rule applies: halve the degree of accuracy
                     (the place value of the last significant figure) and add/subtract from the rounded value.
                 </p>
             </div>
 
             <div class="calculations-with-bounds">
                 <h2 id="calculations-with-bounds">Calculations with Bounds</h2>
-                
+
                 <p>
                     When we use rounded numbers in calculations, the answer will also have a range of possible values.
                     To find the <strong>maximum</strong> or <strong>minimum</strong> possible result, we use the upper and lower bounds
@@ -312,45 +292,43 @@
                 <p><strong>Division:</strong> Max = UB ÷ LB, Min = LB ÷ UB</p>
                 <br>
 
-                <h3 style="color: #00ffcc;">
+                <h3 class="sg-example">
                     Example 4: Maximum and Minimum Area of a Rectangle
                 </h3>
                 <p>
                     A rectangle has length 12 cm (to nearest cm) and width 5 cm (to nearest cm).
                 </p>
-                <p style="color: #ffcc00; font-weight: bold;">Step 1: Find bounds for each measurement</p>
+                <p class="sg-step">Step 1: Find bounds for each measurement</p>
                 <p>Degree of accuracy = 1 cm. Half = 0.5 cm.</p>
-                <p style="color: #00ffcc;">Length: 11.5 ≤ L &lt; 12.5</p>
-                <p style="color: #00ffcc;">Width: 4.5 ≤ W &lt; 5.5</p>
-                
-                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 2: Maximum area (UB × UB)</p>
-                <p style="color: #00ffcc;">Max area = 12.5 × 5.5 = 68.75 cm²</p>
-                
-                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 3: Minimum area (LB × LB)</p>
-                <p style="color: #00ffcc;">Min area = 11.5 × 4.5 = 51.75 cm²</p>
+                <p class="sg-formula">Length: 11.5 ≤ L &lt; 12.5</p>
+                <p class="sg-formula">Width: 4.5 ≤ W &lt; 5.5</p>
+
+                <p class="sg-step">Step 2: Maximum area (UB × UB)</p>
+                <p class="sg-formula">Max area = 12.5 × 5.5 = 68.75 cm²</p>
+
+                <p class="sg-step">Step 3: Minimum area (LB × LB)</p>
+                <p class="sg-formula">Min area = 11.5 × 4.5 = 51.75 cm²</p>
                 <br>
 
-
-
-                <h3 style="color: #00ffcc;">
+                <h3 class="sg-example">
                     Example 5: Multiple Items (Multiplication)
                 </h3>
                 <p>
                     A bag of cement is marked 50 kg (to nearest 10 kg). Find the total mass of 5 bags.
                 </p>
-                <p style="color: #ffcc00; font-weight: bold;">Step 1: Find bounds for one bag</p>
+                <p class="sg-step">Step 1: Find bounds for one bag</p>
                 <p>Degree of accuracy = 10 kg. Half = 5 kg.</p>
-                <p style="color: #00ffcc;">Lower bound = 45 kg, Upper bound = 55 kg</p>
-                
-                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 2: Total mass for 5 bags</p>
+                <p class="sg-formula">Lower bound = 45 kg, Upper bound = 55 kg</p>
+
+                <p class="sg-step">Step 2: Total mass for 5 bags</p>
                 <p>Minimum total = 5 × 45 = <strong>225 kg</strong></p>
                 <p>Maximum total = 5 × 55 = <strong>275 kg</strong></p>
-                
-                <p style="color: #00ffcc; margin-top: 0.5rem;">Answer: 225 ≤ total &lt; 275 kg</p>
+
+                <p class="sg-answer">Answer: 225 ≤ total &lt; 275 kg</p>
                 <br>
 
-                <p>
-                    <strong>NB:</strong> For multiplication, maximum uses the largest possible values (UB × UB), 
+                <p class="sg-note">
+                    <strong>NB:</strong> For multiplication, maximum uses the largest possible values (UB × UB),
                     while minimum uses the smallest possible values (LB × LB).
                 </p>
             </div>
@@ -367,33 +345,33 @@
                 </p>
 
                 <br>
-                <h3 style="color: #00ffcc;">
+                <h3 class="sg-example">
                     Example 6: Maximum and Minimum Speed
                 </h3>
                 <p>
                     A car travels 150 km (to nearest km) in 2 hours (to nearest hour).
                 </p>
-                <p style="color: #ffcc00; font-weight: bold;">Step 1: Find bounds for each measurement</p>
+                <p class="sg-step">Step 1: Find bounds for each measurement</p>
                 <p>Distance: nearest km → half of 1 = 0.5</p>
-                <p style="color: #00ffcc;">149.5 ≤ D &lt; 150.5</p>
+                <p class="sg-formula">149.5 ≤ D &lt; 150.5</p>
                 <p>Time: nearest hour → half of 1 = 0.5</p>
-                <p style="color: #00ffcc;">1.5 ≤ T &lt; 2.5</p>
-                
-                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 2: Maximum speed (UB ÷ LB)</p>
-                <p style="color: #00ffcc;">Max speed = 150.5 ÷ 1.5 = 100.33 km/h</p>
-                
-                <p style="color: #ffcc00; font-weight: bold; margin-top: 1rem;">Step 3: Minimum speed (LB ÷ UB)</p>
-                <p style="color: #00ffcc;">Min speed = 149.5 ÷ 2.5 = 59.8 km/h</p>
-                
-                <p style="margin-top: 0.5rem;">Error interval: 59.8 ≤ speed &lt; 100.33 km/h</p>
+                <p class="sg-formula">1.5 ≤ T &lt; 2.5</p>
+
+                <p class="sg-step">Step 2: Maximum speed (UB ÷ LB)</p>
+                <p class="sg-formula">Max speed = 150.5 ÷ 1.5 = 100.33 km/h</p>
+
+                <p class="sg-step">Step 3: Minimum speed (LB ÷ UB)</p>
+                <p class="sg-formula">Min speed = 149.5 ÷ 2.5 = 59.8 km/h</p>
+
+                <p class="sg-answer">Error interval: 59.8 ≤ speed &lt; 100.33 km/h</p>
                 <br>
 
-                <p>
+                <p class="sg-note">
                     <strong>NB:</strong> For division, maximum uses UB ÷ LB, while minimum uses LB ÷ UB.
                 </p>
             </div>
         </div>
-        
+
     </main>
 
     <!-- RIGHT TOC -->

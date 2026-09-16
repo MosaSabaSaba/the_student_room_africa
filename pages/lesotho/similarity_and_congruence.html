@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Similarity and Congruence - Mathematics | Student Room Africa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/contentStyles.css" />
     <link rel="stylesheet" href="../css/mobileNav.css" />
     <link rel="stylesheet" href="../css/svg.css" />
+    <link rel="stylesheet" href="../css/globalFonts.css" />
 
     <script type="application/ld+json">
         {
@@ -51,7 +50,7 @@
         <a href="tracker.html#past-papers">Past Papers</a>
         <a href="questionBank/question-bank.html">Question Bank</a>
     </div>
-    
+
     <div class="nav-right">
         <button class="search-btn">
             <span class="search-icon">🔍</span>
@@ -112,42 +111,25 @@
             <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
             <li class="active"><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shapes</a></li>
             <li><a href="../lesotho/variation.html">Variation</a></li>
-            
-            <!-- <li>
-                <button class="sidebar-section-btn">Advanced</button>
-            </li> -->
-        </ul> 
-        
-        <!-- <div class="sidebar-divider"></div>
-        <div class="sidebar-label">References</div>
-
-        <ul class="sidebar-nav">
-            <li><button class="sidebar-section-btn">Built-in objects</button></li>
-            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
-            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
-            <li><button class="sidebar-section-btn">Functions</button></li>
-            <li><button class="sidebar-section-btn">Classes</button></li>
-            <li><button class="sidebar-section-btn">Regular expressions</button></li>
-            <li><button class="sidebar-section-btn">Errors</button></li>
-        </ul> -->
+        </ul>
     </aside>
 
     <!-- MAIN -->
     <main class="main-content">
         <div class="similarity-congruence">
             <h1 id="similarity-congruence">Similarity and Congruence of Shapes</h1>
-            
+
             <p>
-                <strong>Congruence</strong> and <strong>similarity</strong> are two fundamental concepts in geometry. 
-                Congruent shapes are exactly the same size and shape. Similar shapes have the same shape but may 
-                be different sizes. Understanding these concepts allows you to prove geometric relationships and 
+                <strong>Congruence</strong> and <strong>similarity</strong> are two fundamental concepts in geometry.
+                Congruent shapes are exactly the same size and shape. Similar shapes have the same shape but may
+                be different sizes. Understanding these concepts allows you to prove geometric relationships and
                 solve problems involving unknown lengths, areas, and volumes.
             </p>
 
             <p>
-                <strong>Before You Begin:</strong> Make sure you have reviewed our 
-                <a href="../lesotho/transformations.html">Transformations</a> page. 
-                Congruence is closely related to isometric transformations (translations, rotations, and reflections), 
+                <strong>Before You Begin:</strong> Make sure you have reviewed our
+                <a href="../lesotho/transformations.html">Transformations</a> page.
+                Congruence is closely related to isometric transformations (translations, rotations, and reflections),
                 while similarity relates to enlargements and stretches.
             </p>
 
@@ -172,20 +154,20 @@
             <!-- ==================== CONGRUENCE ==================== -->
             <div class="congruence">
                 <h2 id="congruence">Congruence</h2>
-                
+
                 <p>
                     Two shapes are <strong>congruent</strong> if they are exactly the same shape <em>and</em> the same size.
-                    One shape can be mapped onto the other through a combination of <strong>translations, rotations, 
+                    One shape can be mapped onto the other through a combination of <strong>translations, rotations,
                     and reflections</strong> (isometric transformations).
                 </p>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                    <p style="margin-bottom: 0;"><strong>Key Properties of Congruent Figures:</strong></p>
-                    <p style="margin-bottom: 0;">• All <strong>corresponding sides</strong> are equal in length.</p>
-                    <p style="margin-bottom: 0;">• All <strong>corresponding angles</strong> are equal in measure.</p>
-                    <p style="margin-bottom: 0;">• One shape can be transformed to exactly cover the other.</p>
-                    <p style="margin-bottom: 0;">• Same area and same perimeter.</p>
-                    <p style="margin-bottom: 0;">• Symbol: <strong>≅</strong> (e.g., ΔABC ≅ ΔDEF).</p>
+                <div class="highlight-box">
+                    <p><strong>Key Properties of Congruent Figures:</strong></p>
+                    <p>• All <strong>corresponding sides</strong> are equal in length.</p>
+                    <p>• All <strong>corresponding angles</strong> are equal in measure.</p>
+                    <p>• One shape can be transformed to exactly cover the other.</p>
+                    <p>• Same area and same perimeter.</p>
+                    <p>• Symbol: <strong>≅</strong> (e.g., ΔABC ≅ ΔDEF).</p>
                 </div>
 
                 <div class="responsive-svg-container">
@@ -196,65 +178,65 @@
             <!-- CONGRUENCE POSTULATES -->
             <div class="congruence-postulates">
                 <h2 id="congruence-postulates">Congruence Postulates</h2>
-                
+
                 <p>
-                    To prove two triangles are congruent, you only need to show that three specific parts 
+                    To prove two triangles are congruent, you only need to show that three specific parts
                     (sides and/or angles) match. The following postulates are the standard tests for triangle congruence:
                 </p>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
-                    
+                <div class="postulate-cards-grid">
+
                     <!-- SSS Card -->
-                    <div style="background-color: #1a1e2e; border: 1px solid #00ffcc; border-radius: 12px; padding: 1.2rem; display: flex; flex-direction: column;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem; font-size: 1.2rem;">SSS (Side-Side-Side)</h4>
-                        <p style="margin-bottom: 1rem; color: #ffffff;">If <strong>three sides</strong> of one triangle are equal to three sides of another triangle, the triangles are congruent.</p>
-                        <div style="text-align: center; background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin-top: auto;">
-                            <img src="../assets/img/similarity-and-congruence/congruence-sss.svg" alt="SSS congruence proof" style="width: 100%; height: auto;" />
+                    <div class="postulate-card">
+                        <h4>SSS (Side-Side-Side)</h4>
+                        <p>If <strong>three sides</strong> of one triangle are equal to three sides of another triangle, the triangles are congruent.</p>
+                        <div class="postulate-card-image">
+                            <img src="../assets/img/similarity-and-congruence/congruence-sss.svg" alt="SSS congruence proof" />
                         </div>
                     </div>
 
                     <!-- SAS Card -->
-                    <div style="background-color: #1a1e2e; border: 1px solid #00ffcc; border-radius: 12px; padding: 1.2rem; display: flex; flex-direction: column;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem; font-size: 1.2rem;">SAS (Side-Angle-Side)</h4>
-                        <p style="margin-bottom: 1rem; color: #ffffff;">If <strong>two sides and the included angle</strong> of one triangle are equal to two sides and the included angle of another, the triangles are congruent.</p>
-                        <div style="text-align: center; background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin-top: auto;">
-                            <img src="../assets/img/similarity-and-congruence/congruence-sas.svg" alt="SAS congruence proof" style="width: 100%; height: auto;" />
+                    <div class="postulate-card">
+                        <h4>SAS (Side-Angle-Side)</h4>
+                        <p>If <strong>two sides and the included angle</strong> of one triangle are equal to two sides and the included angle of another, the triangles are congruent.</p>
+                        <div class="postulate-card-image">
+                            <img src="../assets/img/similarity-and-congruence/congruence-sas.svg" alt="SAS congruence proof" />
                         </div>
                     </div>
 
                     <!-- AAS Card -->
-                    <div style="background-color: #1a1e2e; border: 1px solid #00ffcc; border-radius: 12px; padding: 1.2rem; display: flex; flex-direction: column;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem; font-size: 1.2rem;">AAS (Angle-Angle-Side)</h4>
-                        <p style="margin-bottom: 1rem; color: #ffffff;">If <strong>two angles and a non-included side</strong> of one triangle are equal to two angles and the corresponding non-included side of another, the triangles are congruent.</p>
-                        <div style="text-align: center; background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin-top: auto;">
-                            <img src="../assets/img/similarity-and-congruence/congruence-aas.svg" alt="AAS congruence proof" style="width:100%; height:auto;" />
+                    <div class="postulate-card">
+                        <h4>AAS (Angle-Angle-Side)</h4>
+                        <p>If <strong>two angles and a non-included side</strong> of one triangle are equal to two angles and the corresponding non-included side of another, the triangles are congruent.</p>
+                        <div class="postulate-card-image">
+                            <img src="../assets/img/similarity-and-congruence/congruence-aas.svg" alt="AAS congruence proof" />
                         </div>
                     </div>
 
                     <!-- RHS Card -->
-                    <div style="background-color: #1a1e2e; border: 1px solid #00ffcc; border-radius: 12px; padding: 1.2rem; display: flex; flex-direction: column;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem; font-size: 1.2rem;">RHS (Right-angle-Hypotenuse-Side)</h4>
-                        <p style="margin-bottom: 1rem; color: #ffffff;">If the <strong>hypotenuse and one side</strong> of a right-angled triangle are equal to the hypotenuse and one side of another right-angled triangle, the triangles are congruent.</p>
-                        <div style="text-align: center; background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin-top: auto;">
-                            <img src="../assets/img/similarity-and-congruence/congruence-rhs.svg" alt="RHS congruence proof" style="width: 100%; height: auto;" />
+                    <div class="postulate-card">
+                        <h4>RHS (Right-angle-Hypotenuse-Side)</h4>
+                        <p>If the <strong>hypotenuse and one side</strong> of a right-angled triangle are equal to the hypotenuse and one side of another right-angled triangle, the triangles are congruent.</p>
+                        <div class="postulate-card-image">
+                            <img src="../assets/img/similarity-and-congruence/congruence-rhs.svg" alt="RHS congruence proof" />
                         </div>
                     </div>
 
                 </div>
 
-                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
-                    <p style="margin-bottom: 0;"><strong>Note:</strong> AAA (Angle-Angle-Angle) is <strong>not</strong> a congruence postulate. It proves similarity, not congruence.</p>
+                <div class="highlight-box highlight-box-warning">
+                    <p><strong>Note:</strong> AAA (Angle-Angle-Angle) is <strong>not</strong> a congruence postulate. It proves similarity, not congruence.</p>
                 </div>
             </div>
 
             <!-- PROVING CONGRUENCE -->
             <div class="proving-congruence">
                 <h2 id="proving-congruence">Proving Congruence</h2>
-                
+
                 <p>
                     To prove that two triangles are congruent, follow these steps:
                 </p>
-                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                <ol>
                     <li>Identify the corresponding sides and angles in both triangles.</li>
                     <li>State which sides are equal (mark them on the diagram).</li>
                     <li>State which angles are equal (mark them on the diagram).</li>
@@ -262,7 +244,7 @@
                     <li>Write the congruence statement (e.g., ΔABC ≅ ΔDEF).</li>
                 </ol>
 
-                <h3 style="color: #00ffcc;">Example 1: Proving Congruence (SAS)</h3>
+                <h3 class="sg-example">Example 1: Proving Congruence (SAS)</h3>
 
                 <p>
                     In the diagram below, AB = DE, AC = DF, and ∠BAC = ∠EDF. Prove that ΔABC ≅ ΔDEF.
@@ -272,59 +254,59 @@
                     <img src="../assets/img/similarity-and-congruence/congruence-proof-sas.svg" alt="Proving congruence sas" />
                 </div>
 
-                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
-                    <p style="margin-bottom: 0.5rem;"><strong>Proof using a table:</strong></p>
-                    <table style="width: 100%; border-collapse: collapse;">
+                <div class="example-box">
+                    <p class="example-label">Proof using a table:</p>
+                    <table>
                         <thead>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <th style="border: 1px solid #00ffcc; padding: 8px;">Statement</th>
-                                <th style="border: 1px solid #00ffcc; padding: 8px;">Reason</th>
-                            </td>
+                            <tr>
+                                <th>Statement</th>
+                                <th>Reason</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">AB = DE</td>
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">Given</td>
+                            <tr>
+                                <td>AB = DE</td>
+                                <td>Given</td>
                             </tr>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">AC = DF</td>
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">Given</td>
+                            <tr>
+                                <td>AC = DF</td>
+                                <td>Given</td>
                             </tr>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">∠BAC = ∠EDF</td>
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">Given</td>
+                            <tr>
+                                <td>∠BAC = ∠EDF</td>
+                                <td>Given</td>
                             </tr>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <td style="border: 1px solid #00ffcc; padding: 8px; color: #00ffcc;">∴ ΔABC ≅ ΔDEF</td>
-                                <td style="border: 1px solid #00ffcc; padding: 8px; color: #00ffcc;">SAS (Side-Angle-Side)</td>
+                            <tr>
+                                <td class="sg-accent">∴ ΔABC ≅ ΔDEF</td>
+                                <td class="sg-accent">SAS (Side-Angle-Side)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                    <p style="margin-bottom: 0;"><strong>Important:</strong> When writing a proof, always include a conclusion statement. The final line should state that the triangles are congruent and give the postulate used.</p>
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> When writing a proof, always include a conclusion statement. The final line should state that the triangles are congruent and give the postulate used.</p>
                 </div>
             </div>
 
             <!-- ==================== SIMILARITY ==================== -->
             <div class="similarity">
                 <h2 id="similarity">Similarity</h2>
-                
+
                 <p>
                     Two shapes are <strong>similar</strong> if they have the same shape but may be different sizes.
                     One shape can be mapped onto the other through an <strong>enlargement</strong> (or stretch).
                     Corresponding angles are equal, and corresponding sides are in the same ratio.
                 </p>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                    <p style="margin-bottom: 0;"><strong>Key Properties of Similar Figures:</strong></p>
-                    <p style="margin-bottom: 0;">• All <strong>corresponding angles</strong> are equal.</p>
-                    <p style="margin-bottom: 0;">• All <strong>corresponding sides</strong> are in the same ratio (common scale factor).</p>
-                    <p style="margin-bottom: 0;">• One shape is an enlargement or reduction of the other.</p>
-                    <p style="margin-bottom: 0;">• Area ratio = (scale factor)²</p>
-                    <p style="margin-bottom: 0;">• Volume ratio = (scale factor)³ (for 3D shapes)</p>
-                    <p style="margin-bottom: 0;">• Symbol: <strong>∼</strong> (e.g., ΔABC ∼ ΔDEF).</p>
+                <div class="highlight-box">
+                    <p><strong>Key Properties of Similar Figures:</strong></p>
+                    <p>• All <strong>corresponding angles</strong> are equal.</p>
+                    <p>• All <strong>corresponding sides</strong> are in the same ratio (common scale factor).</p>
+                    <p>• One shape is an enlargement or reduction of the other.</p>
+                    <p>• Area ratio = (scale factor)²</p>
+                    <p>• Volume ratio = (scale factor)³ (for 3D shapes)</p>
+                    <p>• Symbol: <strong>∼</strong> (e.g., ΔABC ∼ ΔDEF).</p>
                 </div>
 
                 <div class="responsive-svg-container">
@@ -335,48 +317,48 @@
             <!-- SIMILARITY POSTULATES -->
             <div class="similarity-postulates">
                 <h2 id="similarity-postulates">Similarity Postulates</h2>
-                
+
                 <p>
                     To prove two triangles are similar, you only need to show that two conditions are met.
                     The following postulates are the standard tests for triangle similarity:
                 </p>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
-                    
+                <div class="postulate-cards-grid">
+
                     <!-- AAA Card -->
-                    <div style="background-color: #1a1e2e; border: 1px solid #00ffcc; border-radius: 12px; padding: 1.2rem; display: flex; flex-direction: column;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem; font-size: 1.2rem;">AAA (Angle-Angle-Angle)</h4>
-                        <p style="margin-bottom: 0; color: #ffffff;">If <strong>three angles</strong> of one triangle are equal to three angles of another triangle, the triangles are similar.</p>
-                        <p style="margin-top: 0.5rem; margin-bottom: 1rem; color: #aaaaaa; font-size: 0.85rem;">Note: If two angles are equal, the third is automatically equal (angle sum of a triangle).</p>
-                        <div style="text-align: center; background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin-top: auto;">
-                            <img src="../assets/img/similarity-and-congruence/similarity-aaa.svg" alt="Similary AAA PROOF" style="width: 100%; height: auto;" />
+                    <div class="postulate-card">
+                        <h4>AAA (Angle-Angle-Angle)</h4>
+                        <p>If <strong>three angles</strong> of one triangle are equal to three angles of another triangle, the triangles are similar.</p>
+                        <p class="postulate-card-note">Note: If two angles are equal, the third is automatically equal (angle sum of a triangle).</p>
+                        <div class="postulate-card-image">
+                            <img src="../assets/img/similarity-and-congruence/similarity-aaa.svg" alt="Similarity AAA proof" />
                         </div>
                     </div>
 
                     <!-- SSS Card -->
-                    <div style="background-color: #1a1e2e; border: 1px solid #00ffcc; border-radius: 12px; padding: 1.2rem; display: flex; flex-direction: column;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem; font-size: 1.2rem;">SSS (Side-Side-Side)</h4>
-                        <p style="margin-bottom: 1rem; color: #ffffff;">If <strong>three sides</strong> of one triangle are in the same ratio as three sides of another triangle, the triangles are similar.</p>
-                        <div style="text-align: center; background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin-top: auto;">
-                            <img src="../assets/img/similarity-and-congruence/similarity-aaa.svg" alt="Similarity AAA proof" style="width: 100%; height: auto;" />
+                    <div class="postulate-card">
+                        <h4>SSS (Side-Side-Side)</h4>
+                        <p>If <strong>three sides</strong> of one triangle are in the same ratio as three sides of another triangle, the triangles are similar.</p>
+                        <div class="postulate-card-image">
+                            <img src="../assets/img/similarity-and-congruence/similarity-aaa.svg" alt="Similarity SSS proof" />
                         </div>
                     </div>
 
                     <!-- SAS Card -->
-                    <div style="background-color: #1a1e2e; border: 1px solid #00ffcc; border-radius: 12px; padding: 1.2rem; display: flex; flex-direction: column;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem; font-size: 1.2rem;">SAS (Side-Angle-Side)</h4>
-                        <p style="margin-bottom: 1rem; color: #ffffff;">If <strong>two sides</strong> are in the same ratio and the <strong>included angle</strong> is equal, the triangles are similar.</p>
-                        <div style="text-align: center; background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin-top: auto;">
-                            <img src="../assets/img/similarity-and-congruence/similarity-sas.svg" alt="Similarity sas proof" style="width: 100%; height: auto;" />
+                    <div class="postulate-card">
+                        <h4>SAS (Side-Angle-Side)</h4>
+                        <p>If <strong>two sides</strong> are in the same ratio and the <strong>included angle</strong> is equal, the triangles are similar.</p>
+                        <div class="postulate-card-image">
+                            <img src="../assets/img/similarity-and-congruence/similarity-sas.svg" alt="Similarity SAS proof" />
                         </div>
                     </div>
 
                     <!-- RHS Card -->
-                    <div style="background-color: #1a1e2e; border: 1px solid #00ffcc; border-radius: 12px; padding: 1.2rem; display: flex; flex-direction: column;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem; font-size: 1.2rem;">RHS (Right-angle-Hypotenuse-Side)</h4>
-                        <p style="margin-bottom: 1rem; color: #ffffff;">If the <strong>hypotenuse and one side</strong> of a right-angled triangle are in the same ratio as the hypotenuse and one side of another right-angled triangle, the triangles are similar.</p>
-                        <div style="text-align: center; background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin-top: auto;">
-                            <img src="../assets/img/similarity-and-congruence/similarity-rhs.svg" alt="Similarity rhs proof" style="width: 100%; height: auto;"/>
+                    <div class="postulate-card">
+                        <h4>RHS (Right-angle-Hypotenuse-Side)</h4>
+                        <p>If the <strong>hypotenuse and one side</strong> of a right-angled triangle are in the same ratio as the hypotenuse and one side of another right-angled triangle, the triangles are similar.</p>
+                        <div class="postulate-card-image">
+                            <img src="../assets/img/similarity-and-congruence/similarity-rhs.svg" alt="Similarity RHS proof" />
                         </div>
                     </div>
 
@@ -386,11 +368,11 @@
             <!-- PROVING SIMILARITY -->
             <div class="proving-similarity">
                 <h2 id="proving-similarity">Proving Similarity</h2>
-                
+
                 <p>
                     To prove that two triangles are similar, follow these steps:
                 </p>
-                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                <ol>
                     <li>Identify the corresponding sides and angles in both triangles.</li>
                     <li>State which angles are equal (mark them on the diagram).</li>
                     <li>Show that the ratios of corresponding sides are equal, or state which angles are equal.</li>
@@ -398,41 +380,41 @@
                     <li>Write the similarity statement (e.g., ΔABC ∼ ΔDEF).</li>
                 </ol>
 
-                <h3 style="color: #00ffcc;">Example 2: Proving Similarity (AAA)</h3>
+                <h3 class="sg-example">Example 2: Proving Similarity (AAA)</h3>
 
                 <p>
                     In the diagram below, DE is parallel to BC. Prove that ΔADE ∼ ΔABC.
                 </p>
 
-                <div class="responsive-svg-container" style="text-align: center; margin: 1.5rem 0;">
+                <div class="responsive-svg-container">
                     <img src="../assets/img/similarity-and-congruence/similarity-proof-aaa.svg" alt="Proof of similarity aaa" />
                 </div>
 
-                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
-                    <p style="margin-bottom: 0.5rem;"><strong>Proof using a table:</strong></p>
-                    <table style="width: 100%; border-collapse: collapse;">
+                <div class="example-box">
+                    <p class="example-label">Proof using a table:</p>
+                    <table>
                         <thead>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <th style="border: 1px solid #00ffcc; padding: 8px; text-align: left;">Statement</th>
-                                <th style="border: 1px solid #00ffcc; padding: 8px; text-align: left;">Reason</th>
+                            <tr>
+                                <th>Statement</th>
+                                <th>Reason</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">∠ADE = ∠ABC</td>
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">Corresponding angles (DE ∥ BC)</td>
+                            <tr>
+                                <td>∠ADE = ∠ABC</td>
+                                <td>Corresponding angles (DE ∥ BC)</td>
                             </tr>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">∠AED = ∠ACB</td>
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">Corresponding angles (DE ∥ BC)</td>
+                            <tr>
+                                <td>∠AED = ∠ACB</td>
+                                <td>Corresponding angles (DE ∥ BC)</td>
                             </tr>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">∠DAE = ∠BAC</td>
-                                <td style="border: 1px solid #00ffcc; padding: 8px;">Common angle</td>
+                            <tr>
+                                <td>∠DAE = ∠BAC</td>
+                                <td>Common angle</td>
                             </tr>
-                            <tr style="border: 1px solid #00ffcc;">
-                                <td style="border: 1px solid #00ffcc; padding: 8px; color: #00ffcc; font-weight: bold;">∴ ΔADE ∼ ΔABC</td>
-                                <td style="border: 1px solid #00ffcc; padding: 8px; color: #00ffcc; font-weight: bold;">AAA (Angle-Angle-Angle)</td>
+                            <tr>
+                                <td class="sg-accent"><strong>∴ ΔADE ∼ ΔABC</strong></td>
+                                <td class="sg-accent"><strong>AAA (Angle-Angle-Angle)</strong></td>
                             </tr>
                         </tbody>
                     </table>
@@ -441,130 +423,133 @@
 
             <!-- LINEAR SCALE FACTOR -->
             <div class="linear-scale-factor">
-                <h3 style="color: #00ffcc;">Example 3: Finding the Linear Scale Factor</h3>
+                <h3 class="sg-example">Example 3: Finding the Linear Scale Factor</h3>
 
-                <div class="responsive-svg-container" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin: 1rem 0;">
-                    <div style="text-align: center;">
-                        <img src="../assets/img/similarity-and-congruence/scale-factor1.svg" alt="Linear scale factor" />
-                        <p style="color: #aaaaaa; font-size: 12px; margin-top: 0.25rem;">Triangle ABC</p>
-                    </div>
+                <div class="responsive-svg-container">
+                    <div class="scale-factor-row">
+                        <div class="scale-factor-item">
+                            <img src="../assets/img/similarity-and-congruence/scale-factor1.svg" alt="Linear scale factor" />
+                            <p class="scale-factor-caption">Triangle ABC</p>
+                        </div>
 
-                    <div style="display: flex; align-items: center;">
-                        <img src="../assets/img/similarity-and-congruence/scale-factor2.svg" alt="" />
-                    
-                    </div>
+                        <div class="scale-factor-arrow">
+                            <img src="../assets/img/similarity-and-congruence/scale-factor2.svg" alt="" />
+                        </div>
 
-                    <div style="text-align: center;">
-                        <img src="../assets/img/similarity-and-congruence/scale-factor3.svg" alt="" />
-                        <p style="color: #aaaaaa; font-size: 12px; margin-top: 0.25rem;">Triangle DEF</p>
+                        <div class="scale-factor-item">
+                            <img src="../assets/img/similarity-and-congruence/scale-factor3.svg" alt="" />
+                            <p class="scale-factor-caption">Triangle DEF</p>
+                        </div>
                     </div>
                 </div>
 
                 <p>Triangle ABC has sides of length 3 cm, 4 cm, and 5 cm. Triangle DEF is similar to ABC and has a longest side of 15 cm. Find the scale factor.</p>
 
-                <p><strong>Step 1:</strong> Identify corresponding sides.</p>
+                <p class="sg-step">Step 1: Identify corresponding sides.</p>
                 <p style="padding-left: 20px;">
                     Longest side of ABC = 5 cm<br>
                     Longest side of DEF = 15 cm
                 </p>
 
-                <p><strong>Step 2:</strong> Calculate the scale factor.</p>
+                <p class="sg-step">Step 2: Calculate the scale factor.</p>
                 <p style="padding-left: 20px;">
                     k = 15 ÷ 5 = 3
                 </p>
 
-                <p><strong>Answer: The scale factor is 3 (enlargement).</strong></p>
+                <p class="sg-answer">Answer: The scale factor is 3 (enlargement).</p>
 
-                <h3 style="color: #00ffcc;">Example 4: Finding Unknown Lengths</h3>
+                <h3 class="sg-example">Example 4: Finding Unknown Lengths</h3>
 
-                <div class="responsive-svg-container" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin: 1rem 0;">
-                    <div style="text-align: center;">
-                        <img src="../assets/img/similarity-and-congruence/unknown-length1.svg" alt="" />
-                        <p style="color: #aaaaaa; font-size: 12px; margin-top: 0.25rem;">Smaller Rectangle</p>
-                    </div>
+                <div class="responsive-svg-container">
+                    <div class="scale-factor-row">
+                        <div class="scale-factor-item">
+                            <img src="../assets/img/similarity-and-congruence/unknown-length1.svg" alt="" />
+                            <p class="scale-factor-caption">Smaller Rectangle</p>
+                        </div>
 
-                    <div style="display: flex; align-items: center;">
-                        <img src="../assets/img/similarity-and-congruence/unknown-length2.svg" alt="" />
-                    </div>
+                        <div class="scale-factor-arrow">
+                            <img src="../assets/img/similarity-and-congruence/unknown-length2.svg" alt="" />
+                        </div>
 
-                    <div style="text-align: center;">
-                        <img src="../assets/img/similarity-and-congruence/unknown-length3.svg" alt="" />
-                        <p style="color: #aaaaaa; font-size: 12px; margin-top: 0.25rem;">Larger Rectangle</p>
+                        <div class="scale-factor-item">
+                            <img src="../assets/img/similarity-and-congruence/unknown-length3.svg" alt="" />
+                            <p class="scale-factor-caption">Larger Rectangle</p>
+                        </div>
                     </div>
                 </div>
 
                 <p>Two similar rectangles have a scale factor of 2.5. If the smaller rectangle has a width of 8 cm, what is the width of the larger rectangle?</p>
 
-                <p><strong>Step 1:</strong> Use the scale factor formula.</p>
+                <p class="sg-step">Step 1: Use the scale factor formula.</p>
                 <p style="padding-left: 20px;">
                     Larger width = k × smaller width = 2.5 × 8 cm = 20 cm
                 </p>
 
-                <p><strong>Answer: The larger rectangle has a width of 20 cm.</strong></p>
+                <p class="sg-answer">Answer: The larger rectangle has a width of 20 cm.</p>
             </div>
 
             <!-- AREA AND VOLUME OF SIMILAR FIGURES -->
             <div class="area-and-volume">
                 <h2 id="area-and-volume">Area and Volume of Similar Figures</h2>
-                
+
                 <p>
                     When two figures are similar with linear scale factor <strong>k</strong>, the following relationships apply:
                 </p>
 
-                <div class="grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0;">
-                    <div class="card" style="background-color: #1a1a1a; border-radius: 12px; padding: 1.2rem;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem;">Area Ratio</h4>
-                        <p style="text-align: center; font-size: 1.2rem; margin: 0.5rem 0;"><strong>Area ratio = k²</strong></p>
-                        <p style="margin-bottom: 0;">The area of the image is k² times the area of the object.</p>
+                <div class="ratio-cards-grid">
+                    <div class="ratio-card">
+                        <h4>Area Ratio</h4>
+                        <p class="ratio-card-formula"><strong>Area ratio = k²</strong></p>
+                        <p>The area of the image is k² times the area of the object.</p>
                     </div>
-                    <div class="card" style="background-color: #1a1a1a; border-radius: 12px; padding: 1.2rem;">
-                        <h4 style="color: #00ffcc; margin-bottom: 0.8rem;">Volume Ratio (3D)</h4>
-                        <p style="text-align: center; font-size: 1.2rem; margin: 0.5rem 0;"><strong>Volume ratio = k³</strong></p>
-                        <p style="margin-bottom: 0;">The volume of the image is k³ times the volume of the object.</p>
+                    <div class="ratio-card">
+                        <h4>Volume Ratio (3D)</h4>
+                        <p class="ratio-card-formula"><strong>Volume ratio = k³</strong></p>
+                        <p>The volume of the image is k³ times the volume of the object.</p>
                     </div>
                 </div>
 
-                <h3 style="color: #00ffcc;">Example 5: Area of Similar Shapes</h3>
+                <h3 class="sg-example">Example 5: Area of Similar Shapes</h3>
 
                 <p>
                     Two similar triangles have a linear scale factor of 2. If the smaller triangle has an area of 10 cm², find the area of the larger triangle.
                 </p>
 
-                <p><strong>Step 1:</strong> Recall the area ratio formula.</p>
+                <p class="sg-step">Step 1: Recall the area ratio formula.</p>
                 <p style="padding-left: 20px;">
                     Area ratio = k² = 2² = 4
                 </p>
 
-                <p><strong>Step 2:</strong> Multiply the smaller area by the area ratio.</p>
+                <p class="sg-step">Step 2: Multiply the smaller area by the area ratio.</p>
                 <p style="padding-left: 20px;">
                     Larger area = 4 × 10 cm² = 40 cm²
                 </p>
 
-                <p><strong>Answer: The larger triangle has an area of 40 cm².</strong></p>
+                <p class="sg-answer">Answer: The larger triangle has an area of 40 cm².</p>
 
-                <h3 style="color: #00ffcc;">Example 6: Volume of Similar Shapes</h3>
+                <h3 class="sg-example">Example 6: Volume of Similar Shapes</h3>
 
                 <p>
                     Two similar cylinders have a linear scale factor of 3. If the smaller cylinder has a volume of 20 cm³, find the volume of the larger cylinder.
                 </p>
 
-                <p><strong>Step 1:</strong> Recall the volume ratio formula.</p>
+                <p class="sg-step">Step 1: Recall the volume ratio formula.</p>
                 <p style="padding-left: 20px;">
                     Volume ratio = k³ = 3³ = 27
                 </p>
 
-                <p><strong>Step 2:</strong> Multiply the smaller volume by the volume ratio.</p>
+                <p class="sg-step">Step 2: Multiply the smaller volume by the volume ratio.</p>
                 <p style="padding-left: 20px;">
                     Larger volume = 27 × 20 cm³ = 540 cm³
                 </p>
 
-                <p><strong>Answer: The larger cylinder has a volume of 540 cm³.</strong></p>
+                <p class="sg-answer">Answer: The larger cylinder has a volume of 540 cm³.</p>
 
-                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
-                    <p style="margin-bottom: 0;"><strong>Important:</strong></p>
-                    <p style="margin-bottom: 0;">• Area scales by k² (square of the linear scale factor).</p>
-                    <p style="margin-bottom: 0;">• Volume scales by k³ (cube of the linear scale factor).</p>
-                    <p style="margin-bottom: 0;">• Always identify the linear scale factor first before calculating area or volume ratios.</p>
+                <div class="highlight-box highlight-box-warning">
+                    <p><strong>Important:</strong></p>
+                    <p>• Area scales by k² (square of the linear scale factor).</p>
+                    <p>• Volume scales by k³ (cube of the linear scale factor).</p>
+                    <p>• Always identify the linear scale factor first before calculating area or volume ratios.</p>
                 </div>
             </div>
 
@@ -572,66 +557,66 @@
             <div class="summary-table">
                 <h2 id="summary-table">Summary Table: Congruence vs Similarity</h2>
 
-                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                <table>
                     <thead>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Property</th>
-                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Congruence (≅)</th>
-                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Similarity (∼)</th>
+                        <tr>
+                            <th>Property</th>
+                            <th>Congruence (≅)</th>
+                            <th>Similarity (∼)</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Corresponding angles</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Equal</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Equal</td>
+                        <tr>
+                            <td>Corresponding angles</td>
+                            <td>Equal</td>
+                            <td>Equal</td>
                         </tr>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Corresponding sides</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Equal in length</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Same ratio (scale factor k)</td>
+                        <tr>
+                            <td>Corresponding sides</td>
+                            <td>Equal in length</td>
+                            <td>Same ratio (scale factor k)</td>
                         </tr>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Shape</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Exactly the same</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Same shape, possibly different size</td>
+                        <tr>
+                            <td>Shape</td>
+                            <td>Exactly the same</td>
+                            <td>Same shape, possibly different size</td>
                         </tr>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Area relationship</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Equal areas</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Area ratio = k²</td>
+                        <tr>
+                            <td>Area relationship</td>
+                            <td>Equal areas</td>
+                            <td>Area ratio = k²</td>
                         </tr>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Volume relationship (3D)</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Equal volumes</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Volume ratio = k³</td>
+                        <tr>
+                            <td>Volume relationship (3D)</td>
+                            <td>Equal volumes</td>
+                            <td>Volume ratio = k³</td>
                         </tr>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Postulates for triangles</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">SSS, SAS, AAS, RHS</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">AAA, SSS, SAS</td>
+                        <tr>
+                            <td>Postulates for triangles</td>
+                            <td>SSS, SAS, AAS, RHS</td>
+                            <td>AAA, SSS, SAS</td>
                         </tr>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Transformation</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Translation, rotation, reflection</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px;">Enlargement or reduction</td>
+                        <tr>
+                            <td>Transformation</td>
+                            <td>Translation, rotation, reflection</td>
+                            <td>Enlargement or reduction</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1.5rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                <p style="margin-bottom: 0;"><strong>Key Takeaways:</strong></p>
-                <p style="margin-bottom: 0;">• Congruent shapes: same shape <strong>and</strong> size. Corresponding sides and angles are equal.</p>
-                <p style="margin-bottom: 0;">• Similar shapes: same shape, different size. Corresponding angles are equal; sides are in the same ratio.</p>
-                <p style="margin-bottom: 0;">• Use SSS, SAS, AAS, or RHS to prove congruence.</p>
-                <p style="margin-bottom: 0;">• Use AAA, SSS, or SAS to prove similarity.</p>
-                <p style="margin-bottom: 0;">• Linear scale factor k: image length ÷ object length.</p>
-                <p style="margin-bottom: 0;">• Area ratio = k², Volume ratio = k³.</p>
-                <p style="margin-bottom: 0;">• Always end a proof with a conclusion statement.</p>
+            <div class="highlight-box">
+                <p><strong>Key Takeaways:</strong></p>
+                <p>• Congruent shapes: same shape <strong>and</strong> size. Corresponding sides and angles are equal.</p>
+                <p>• Similar shapes: same shape, different size. Corresponding angles are equal; sides are in the same ratio.</p>
+                <p>• Use SSS, SAS, AAS, or RHS to prove congruence.</p>
+                <p>• Use AAA, SSS, or SAS to prove similarity.</p>
+                <p>• Linear scale factor k: image length ÷ object length.</p>
+                <p>• Area ratio = k², Volume ratio = k³.</p>
+                <p>• Always end a proof with a conclusion statement.</p>
             </div>
 
-            <p>
+            <p class="sg-note">
                 <strong>NB:</strong> Congruence and similarity are powerful tools in geometry. They allow you to find unknown lengths, areas, and volumes without measuring directly. Practice identifying corresponding sides and angles, and always justify your steps when writing proofs.
             </p>
         </div>

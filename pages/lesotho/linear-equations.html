@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear Equations and Graphs - Mathematics | Student Room Africa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/contentStyles.css" />
     <link rel="stylesheet" href="../css/mobileNav.css" />
     <link rel="stylesheet" href="../css/svg.css" />
+    <link rel="stylesheet" href="../css/globalFonts.css" />
 
     <script type="application/ld+json">
 {
@@ -51,7 +50,7 @@
         <a href="tracker.html#past-papers">Past Papers</a>
         <a href="questionBank/question-bank.html">Question Bank</a>
     </div>
-    
+
     <div class="nav-right">
         <button class="search-btn">
         <span class="search-icon">🔍</span>
@@ -112,41 +111,24 @@
             <li><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
             <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
             <li><a href="../lesotho/variation.html">Variation</a></li>
-            
-            <!-- <li>
-                <button class="sidebar-section-btn">Advanced</button>
-            </li> -->
-        </ul> 
-        
-        <!-- <div class="sidebar-divider"></div>
-        <div class="sidebar-label">References</div>
-
-        <ul class="sidebar-nav">
-            <li><button class="sidebar-section-btn">Built-in objects</button></li>
-            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
-            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
-            <li><button class="sidebar-section-btn">Functions</button></li>
-            <li><button class="sidebar-section-btn">Classes</button></li>
-            <li><button class="sidebar-section-btn">Regular expressions</button></li>
-            <li><button class="sidebar-section-btn">Errors</button></li>
-        </ul> -->
+        </ul>
     </aside>
 
     <!-- MAIN -->
     <main class="main-content">
         <div class="linear-graphs">
             <h1 id="linear-graphs">Linear Equations and Graphs</h1>
-            
+
             <p>
-                A <strong>linear equation</strong> is an equation whose graph is a straight line. 
-                Linear equations are used to model relationships where one quantity changes at a 
-                constant rate relative to another, such as distance over time, cost of items, 
+                A <strong>linear equation</strong> is an equation whose graph is a straight line.
+                Linear equations are used to model relationships where one quantity changes at a
+                constant rate relative to another, such as distance over time, cost of items,
                 or temperature conversion.
             </p>
 
             <p>
-                <strong>Before You Begin:</strong> Make sure you have reviewed our 
-                <a href="../lesotho/rate.html">Rates of Change</a> page, especially the section on 
+                <strong>Before You Begin:</strong> Make sure you have reviewed our
+                <a href="../lesotho/rate.html">Rates of Change</a> page, especially the section on
                 direct proportion. Understanding how to plot points on a coordinate plane is also essential.
             </p>
 
@@ -169,13 +151,13 @@
             <!-- THE COORDINATE PLANE -->
             <div class="coordinate-plane">
                 <h2 id="coordinate-plane">The Coordinate Plane</h2>
-                
+
                 <p>
-                    The <strong>coordinate plane</strong> (also called the Cartesian plane) has two perpendicular 
-                    axes: the <strong>x-axis</strong> (horizontal) and the <strong>y-axis</strong> (vertical). 
+                    The <strong>coordinate plane</strong> (also called the Cartesian plane) has two perpendicular
+                    axes: the <strong>x-axis</strong> (horizontal) and the <strong>y-axis</strong> (vertical).
                     Any point on the plane can be described using an ordered pair (x, y), where:
                 </p>
-                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <ul>
                     <li><strong>x</strong> is the horizontal distance from the origin (0,0)</li>
                     <li><strong>y</strong> is the vertical distance from the origin</li>
                 </ul>
@@ -188,20 +170,20 @@
             <!-- HORIZONTAL AND VERTICAL LINES -->
             <div class="horizontal-vertical-lines">
                 <h2 id="horizontal-vertical-lines">Horizontal and Vertical Lines</h2>
-                
+
                 <p>
                     The simplest types of lines are those that are <strong>parallel to the axes</strong>.
                 </p>
 
-                <h3>Horizontal Lines (Parallel to the x-axis)</h3>
+                <h3 class="sg-example">Horizontal Lines (Parallel to the x-axis)</h3>
                 <p>
-                    A horizontal line has the <strong>same y-coordinate</strong> for every point. Its equation is <strong>y = c</strong>, 
+                    A horizontal line has the <strong>same y-coordinate</strong> for every point. Its equation is <strong>y = c</strong>,
                     where c is the y-intercept.
                 </p>
 
-                <h3>Vertical Lines (Parallel to the y-axis)</h3>
+                <h3 class="sg-example">Vertical Lines (Parallel to the y-axis)</h3>
                 <p>
-                    A vertical line has the <strong>same x-coordinate</strong> for every point. Its equation is <strong>x = k</strong>, 
+                    A vertical line has the <strong>same x-coordinate</strong> for every point. Its equation is <strong>x = k</strong>,
                     where k is the x-intercept.
                 </p>
 
@@ -212,21 +194,17 @@
                 <p>Consider the lines, y = 3 and and x = -1.</p>
                 <p>To draw the lines y = 3 and x = -1 on the same coordinate plane, follow these steps.</p>
 
-                <p>
-                    <strong>Step 1:</strong> For y = 3, draw a horizontal line 
-                    through all points where y = 3.
-                </p>
+                <p class="sg-step">Step 1: For y = 3, draw a horizontal line
+                    through all points where y = 3.</p>
                 <p style="padding-left: 20px;">
-                    This line is parallel to the x-axis and crosses the y-axis 
+                    This line is parallel to the x-axis and crosses the y-axis
                     at (0, 3).
                 </p>
 
-                <p>
-                    <strong>Step 2:</strong> For x = -1, draw a vertical line 
-                    through all points where x = -1.
-                </p>
+                <p class="sg-step">Step 2: For x = -1, draw a vertical line
+                    through all points where x = -1.</p>
                 <p style="padding-left: 20px;">
-                    This line is parallel to the y-axis and crosses the 
+                    This line is parallel to the y-axis and crosses the
                     x-axis at (-1, 0).
                 </p>
             </div>
@@ -234,129 +212,109 @@
             <!-- EQUATIONS OF LINES PARALLEL TO AXES -->
             <div class="equations-parallel-to-axes">
                 <h2 id="equations-parallel-to-axes">Equations of Lines Parallel to Axes</h2>
-                
-                <h3>Writing Equations from Graphs</h3>
+
+                <h3 class="sg-example">Writing Equations from Graphs</h3>
 
                 <p>Write the equations of the lines shown on the graph.</p>
 
-                <p><strong>Step 1:</strong> Identify the horizontal line. It passes through y = -1 at all points.</p>
+                <p class="sg-step">Step 1: Identify the horizontal line. It passes through y = -1 at all points.</p>
                 <p style="padding-left: 20px;">
                     Equation: y = -1
                 </p>
 
-                <p><strong>Step 2:</strong> Identify the vertical line. It passes through x = 4 at all points.</p>
+                <p class="sg-step">Step 2: Identify the vertical line. It passes through x = 4 at all points.</p>
                 <p style="padding-left: 20px;">
                     Equation: x = 4
                 </p>
 
-                <p><strong>Answer: The equations are y = -1 and x = 4.</strong></p>
+                <p class="sg-answer">Answer: The equations are y = -1 and x = 4.</p>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                    <p style="margin-bottom: 0;"><strong>Key Rules:</strong></p>
-                    <p style="margin-bottom: 0;">• Any horizontal line has equation y = c</p>
-                    <p style="margin-bottom: 0;">• Any vertical line has equation x = k</p>
-                    <p style="margin-bottom: 0;">• The line y = 0 is the x-axis</p>
-                    <p style="margin-bottom: 0;">• The line x = 0 is the y-axis</p>
+                <div class="highlight-box">
+                    <p><strong>Key Rules:</strong></p>
+                    <p>• Any horizontal line has equation y = c</p>
+                    <p>• Any vertical line has equation x = k</p>
+                    <p>• The line y = 0 is the x-axis</p>
+                    <p>• The line x = 0 is the y-axis</p>
                 </div>
             </div>
 
             <!-- CALCULATING COORDINATES FROM EQUATIONS -->
             <div class="calculating-coordinates">
                 <h2 id="calculating-coordinates">Calculating Coordinates from Equations</h2>
-                
+
                 <p>
-                    To draw the graph of a linear equation, you need to find points (coordinates) 
-                    that satisfy the equation. Choose x-values, substitute them into the equation, 
+                    To draw the graph of a linear equation, you need to find points (coordinates)
+                    that satisfy the equation. Choose x-values, substitute them into the equation,
                     and calculate the corresponding y-values.
                 </p>
 
-                <h3>Finding Coordinates from y = 2x + 1</h3>
+                <h3 class="sg-example">Finding Coordinates from y = 2x + 1</h3>
 
                 <p>For the equation y = 2x + 1, find the y-values when x = -2, 0, and 3.</p>
 
-                <p><strong>Step 1:</strong> When x = -2</p>
+                <p class="sg-step">Step 1: When x = -2</p>
                 <p style="padding-left: 20px;">
                     y = 2(-2) + 1 = -4 + 1 = -3<br>
                     Coordinate: (-2, -3)
                 </p>
 
-                <p><strong>Step 2:</strong> When x = 0</p>
+                <p class="sg-step">Step 2: When x = 0</p>
                 <p style="padding-left: 20px;">
                     y = 2(0) + 1 = 0 + 1 = 1<br>
                     Coordinate: (0, 1)
                 </p>
 
-                <p><strong>Step 3:</strong> When x = 3</p>
+                <p class="sg-step">Step 3: When x = 3</p>
                 <p style="padding-left: 20px;">
                     y = 2(3) + 1 = 6 + 1 = 7<br>
                     Coordinate: (3, 7)
                 </p>
 
-                <p><strong>Answer: The coordinates are (-2, -3), (0, 1), and (3, 7).</strong></p>
+                <p class="sg-answer">Answer: The coordinates are (-2, -3), (0, 1), and (3, 7).</p>
 
-                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding-left: 1.5rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
-                    <p style="margin-bottom: 0;"><strong>Tip:</strong> Choose x-values that are easy to work with, such as -2, -1, 0, 1, 2. This makes calculations simpler.</p>
+                <div class="highlight-box highlight-box-warning">
+                    <p><strong>Tip:</strong> Choose x-values that are easy to work with, such as -2, -1, 0, 1, 2. This makes calculations simpler.</p>
                 </div>
             </div>
 
             <!-- DRAWING LINEAR GRAPHS -->
             <div class="drawing-linear-graphs">
                 <h2 id="drawing-linear-graphs">Drawing Linear Graphs</h2>
-                
+
                 <p>
                     To draw the graph of a linear equation, follow these steps:
                 </p>
-                <ol style="margin-left: 2rem; margin-bottom: 1rem;">
+                <ol>
                     <li>Choose at least three x-values</li>
                     <li>Calculate the corresponding y-values</li>
                     <li>Plot the points on the coordinate plane</li>
                     <li>Join the points with a straight line</li>
                 </ol>
 
-                <h3>Drawing the Graph of y = 2x + 1</h3>
+                <h3 class="sg-example">Drawing the Graph of y = 2x + 1</h3>
 
                 <p>Draw the graph of y = 2x + 1 for x-values from -2 to 3.</p>
 
-                <p><strong>Step 1:</strong> Create a table of values.</p>
-                <table style="width: 70%; border-collapse: collapse; margin: 1rem 0;">
-                    <tr style="border: 1px solid #00ffcc;">
-                        <th style="border: 1px solid #00ffcc; padding: 8px; color: #00ffcc;">x</th>
-                        <th style="border: 1px solid #00ffcc; padding: 8px; color: #00ffcc;">y = 2x + 1</th>
-                        <th style="border: 1px solid #00ffcc; padding: 8px; color: #00ffcc;">Point</th>
-                    </tr>
-                    <tr style="border: 1px solid #00ffcc;">
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">-2</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">-3</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">(-2, -3)</td>
-                    </tr>
-                    <tr style="border: 1px solid #00ffcc;">
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">-1</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">-1</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">(-1, -1)</td>
-                    </tr>
-                    <tr style="border: 1px solid #00ffcc;">
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">0</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">1</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">(0, 1)</td>
-                    </tr>
-                    <tr style="border: 1px solid #00ffcc;">
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">1</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">3</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">(1, 3)</td>
-                    </tr>
-                    <tr style="border: 1px solid #00ffcc;">
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">2</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">5</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">(2, 5)</td>
-                    </tr>
-                    <tr style="border: 1px solid #00ffcc;">
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">3</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">7</td>
-                        <td style="border: 1px solid #00ffcc; padding: 8px; color: #ffffff;">(3, 7)</td>
-                    </tr>
+                <p class="sg-step">Step 1: Create a table of values.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>x</th>
+                            <th>y = 2x + 1</th>
+                            <th>Point</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>-2</td><td>-3</td><td>(-2, -3)</td></tr>
+                        <tr><td>-1</td><td>-1</td><td>(-1, -1)</td></tr>
+                        <tr><td>0</td><td>1</td><td>(0, 1)</td></tr>
+                        <tr><td>1</td><td>3</td><td>(1, 3)</td></tr>
+                        <tr><td>2</td><td>5</td><td>(2, 5)</td></tr>
+                        <tr><td>3</td><td>7</td><td>(3, 7)</td></tr>
+                    </tbody>
                 </table>
 
-                <p><strong>Step 2:</strong> Plot the points and join them with a straight line.</p>
+                <p class="sg-step">Step 2: Plot the points and join them with a straight line.</p>
 
                 <div class="responsive-svg-container">
                     <img src="../assets/img/linear-graphs/y=2x+1.svg" alt="Graph of y=2x+1" />
@@ -366,130 +324,128 @@
             <!-- GRADIENT AND Y-INTERCEPT -->
             <div class="gradient-and-y-intercept">
                 <h2 id="gradient-and-y-intercept">Gradient and y-intercept</h2>
-                
+
                 <p>
-                    Every straight line (except vertical lines) has two important 
+                    Every straight line (except vertical lines) has two important
                     features:
                 </p>
 
-                <h3>The Gradient (Slope)</h3>
+                <h3 class="sg-example">The Gradient (Slope)</h3>
                 <p>
-                    The <strong>gradient</strong> tells you how steep the line is. 
-                    It is the rate at which y changes as x increases. A positive 
-                    gradient means the line 
-                    slopes upward. A negative gradient means the line slopes 
+                    The <strong>gradient</strong> tells you how steep the line is.
+                    It is the rate at which y changes as x increases. A positive
+                    gradient means the line
+                    slopes upward. A negative gradient means the line slopes
                     downward.
                 </p>
                 <p>The formula for gradient is:</p>
-                <div style="display: flex; justify-content: center; padding: 10px;">
+                <div class="centered-image">
                     <img src="../assets/img/linear-graphs/gradient-formula.svg" alt="Gradient Formula" />
                 </div>
 
                 <p>
-                    <strong>"Rise over Run"</strong> is the easiest way to remember that the vertical change 
-                    (<em>y</em>) goes on top and the horizontal change (<em>x</em>) goes on the bottom. 
-                    <span style="color: #00ffcc; font-weight: bold;">Rise</span> means how far up or down along the y-axis, 
-                    while <span style="color: #ffcc00; font-weight: bold;">Run</span> means how far left or right along the x-axis.
+                    <strong>"Rise over Run"</strong> is the easiest way to remember that the vertical change
+                    (<em>y</em>) goes on top and the horizontal change (<em>x</em>) goes on the bottom.
+                    <span class="sg-accent">Rise</span> means how far up or down along the y-axis,
+                    while <span class="sg-warning">Run</span> means how far left or right along the x-axis.
                 </p>
 
-                <div class="responsive-svg-container" style="display: flex; flex-direction: column; align-items: center;">
+                <div class="responsive-svg-container">
                     <img src="../assets/img/linear-graphs/rise-over-run.svg" alt="Rise over run" />
                 </div>
-            
+
                 <h2 id="gradient-and-y-intercept">Gradient and y-intercept</h2>
 
                 <p>
                     Every straight line (except vertical lines) has two important features:
-                    the <strong>gradient</strong> (how steep the line is) and the <strong>y-intercept</strong> 
+                    the <strong>gradient</strong> (how steep the line is) and the <strong>y-intercept</strong>
                     (where the line crosses the y-axis).
                 </p>
 
-                <h3>The y-intercept</h3>
+                <h3 class="sg-example">The y-intercept</h3>
                 <p>
-                    The <strong>y-intercept</strong> is the point where the line crosses the y-axis. 
+                    The <strong>y-intercept</strong> is the point where the line crosses the y-axis.
                     This occurs when <strong>x = 0</strong>. In the equation y = mx + c, the y-intercept is represented by <strong>c</strong>.
                 </p>
 
-                <h3>The Gradient (Slope)</h3>
+                <h3 class="sg-example">The Gradient (Slope)</h3>
                 <p>
-                    The <strong>gradient</strong> tells you how steep the line is. It is the rate at which 
-                    y changes as x increases. 
+                    The <strong>gradient</strong> tells you how steep the line is. It is the rate at which
+                    y changes as x increases.
                 </p>
 
                 <p>
-                    <strong>"Rise over Run"</strong> is the easiest way to remember the gradient formula. 
+                    <strong>"Rise over Run"</strong> is the easiest way to remember the gradient formula.
                     The vertical change (<em>y</em>) goes on top, and the horizontal change (<em>x</em>) goes on the bottom.
                 </p>
 
                 <!-- Formula SVG -->
-                <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
+                <div class="centered-image">
                     <img src="../assets/img/linear-graphs/slope.svg" alt="Slope"/>
                 </div>
 
-                <h3 style="color: #00ffcc;">Finding Gradient and y-intercept from a Graph</h3>
+                <h3 class="sg-example">Finding Gradient and y-intercept from a Graph</h3>
                 <p>Use the graph below to find the gradient and y-intercept of the line.</p>
 
                 <div class="responsive-svg-container">
                     <img src="../assets/img/linear-graphs/find-formula.svg" alt="Find formula of the graph" />
                 </div>
 
-                <p><strong>Step 1: Find the y-intercept.</strong></p>
+                <p class="sg-step">Step 1: Find the y-intercept.</p>
                 <p style="padding-left: 20px;">
                     The line crosses the vertical axis at <strong>(0, 1)</strong>. Therefore, <strong>c = 1</strong>.
                 </p>
 
-                
-
-                <p><strong>Step 2: Identify two points.</strong></p>
+                <p class="sg-step">Step 2: Identify two points.</p>
                 <p style="padding-left: 20px;">
                     We will use <strong>A(1, 3)</strong> and <strong>B(2, 5)</strong>.
                 </p>
 
-                <p><strong>Step 3: Calculate the Gradient (m).</strong></p>
+                <p class="sg-step">Step 3: Calculate the Gradient (m).</p>
                 <div style="padding-left: 20px; margin: 10px 0;">
                     <img src="../assets/img/linear-graphs/calculate-gradient.svg" alt="Example to find gradient" />
                 </div>
 
-                <p><strong>Step 4: Write the equation.</strong></p>
+                <p class="sg-step">Step 4: Write the equation.</p>
                 <p style="padding-left: 20px;">
                     Plugging <strong>m = 2</strong> and <strong>c = 1</strong> into y = mx + c gives:<br>
-                    <strong style="font-size: 1.2rem; color: #00ffcc;">y = 2x + 1</strong>
+                    <strong class="sg-accent sg-large">y = 2x + 1</strong>
                 </p>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; background: rgba(0,255,204,0.05);">
+                <div class="highlight-box">
                     <strong>Summary:</strong> The gradient is 2 (for every 1 unit right, go 2 units up) and it starts on the y-axis at 1.
                 </div>
 
-                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1.0rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
-                    <p style="margin-bottom: 0;"><strong>Key Rules for Gradient:</strong></p>
-                    <p style="margin-bottom: 0;">• A line sloping upward to the right has a <strong>positive</strong> gradient</p>
-                    <p style="margin-bottom: 0;">• A line sloping downward to the right has a <strong>negative</strong> gradient</p>
-                    <p style="margin-bottom: 0;">• A <strong>horizontal</strong> line (flat) has a gradient of <strong>0</strong></p>
-                    <p style="margin-bottom: 0;">• A <strong>vertical</strong> line has an <strong>undefined</strong> gradient (cannot be calculated)</p>
-                    <p style="margin-bottom: 0;">• The steeper the line, the larger the absolute value of the gradient</p>
+                <div class="highlight-box highlight-box-warning">
+                    <p><strong>Key Rules for Gradient:</strong></p>
+                    <p>• A line sloping upward to the right has a <strong>positive</strong> gradient</p>
+                    <p>• A line sloping downward to the right has a <strong>negative</strong> gradient</p>
+                    <p>• A <strong>horizontal</strong> line (flat) has a gradient of <strong>0</strong></p>
+                    <p>• A <strong>vertical</strong> line has an <strong>undefined</strong> gradient (cannot be calculated)</p>
+                    <p>• The steeper the line, the larger the absolute value of the gradient</p>
                 </div>
-            
+
             </div>
 
             <!-- EQUATION OF A STRAIGHT LINE y = mx + c -->
             <div class="equation-of-a-straight-line">
                 <h2 id="equation-of-a-straight-line">Equation of a Straight Line (y = mx + c)</h2>
-                
+
                 <p>
                     The equation of any non-vertical straight line can be written in the form:
                 </p>
 
-                <p style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
+                <p class="sg-formula" style="text-align: center; font-size: 1.3rem; margin: 1rem 0;">
                     <strong>y = mx + c</strong>
                 </p>
 
                 <p>Where:</p>
-                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <ul>
                     <li><strong>m</strong> is the gradient</li>
                     <li><strong>c</strong> is the y-intercept</li>
                 </ul>
 
-                <h3>Finding the Equation from a Graph</h3>
+                <h3 class="sg-example">Finding the Equation from a Graph</h3>
 
                 <p>A straight line passes through (0, 2) and (4, 12). Find its equation.</p>
 
@@ -497,34 +453,32 @@
                     <img src="../assets/img/linear-graphs/y=2x+2.svg" alt="graph of y=2x+1" />
                 </div>
 
-                <p><strong>Step 1: Find the gradient.</strong></p>
+                <p class="sg-step">Step 1: Find the gradient.</p>
                 <div style="padding-left: 20px; margin: 10px 0;">
                     <img src="../assets/img/linear-graphs/y=2x+2-workings.svg" />
                 </div>
 
-                <p><strong>Step 2: Identify the y-intercept.</strong></p>
+                <p class="sg-step">Step 2: Identify the y-intercept.</p>
                 <p style="padding-left: 20px;">
                     The line passes through (0, 2), so <strong>c = 2</strong>.
                 </p>
 
-                <p><strong>Step 3: Write the equation.</strong></p>
+                <p class="sg-step">Step 3: Write the equation.</p>
                 <p style="padding-left: 20px;">
                     Substitute m = 3 and c = 2 into y = mx + c
                 </p>
                 <div style="padding-left: 20px; margin: 10px 0;">
-                    
-                    <p style="color: #00ffcc; font-weight: bold;">y = 2x + 2</p>
-                    
+                    <p class="sg-accent"><strong>y = 2x + 2</strong></p>
                 </div>
 
-                <p><strong>Answer: y = 3x + 2</strong></p>
+                <p class="sg-answer">Answer: y = 3x + 2</p>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; background: rgba(0,255,204,0.05); margin-top: 1rem;margin-bottom: 1rem;">
+                <div class="highlight-box">
                     <strong>Summary:</strong> The gradient is 2 (rise of 8 over run of 4 simplifies to 2) and the y-intercept is 2, so the equation is y = 2x + 2.
                 </div>
-                <p>
-                    <strong>NB:</strong> When drawing linear graphs, always use at least three points to ensure accuracy. 
-                    The gradient m tells you how steep the line is. A positive m means the line slopes upward. 
+                <p class="sg-note">
+                    <strong>NB:</strong> When drawing linear graphs, always use at least three points to ensure accuracy.
+                    The gradient m tells you how steep the line is. A positive m means the line slopes upward.
                     A negative m means the line slopes downward. The y-intercept c tells you where the line crosses the y-axis.
                 </p>
             </div>
@@ -533,33 +487,33 @@
             <div class="summary-table">
                 <h2 id="summary-table">Summary Table: Linear Equations</h2>
 
-                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                <table>
                     <thead>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Type of Line</th>
-                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Equation</th>
-                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Gradient</th>
-                            <th style="border: 1px solid #00ffcc; padding: 12px; color: #00ffcc;">Example</th>
+                        <tr>
+                            <th>Type of Line</th>
+                            <th>Equation</th>
+                            <th>Gradient</th>
+                            <th>Example</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Horizontal line</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">y = c</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">0</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">y = 3</td>
+                        <tr>
+                            <td>Horizontal line</td>
+                            <td>y = c</td>
+                            <td>0</td>
+                            <td>y = 3</td>
                         </tr>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Vertical line</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">x = k</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Undefined</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">x = -2</td>
+                        <tr>
+                            <td>Vertical line</td>
+                            <td>x = k</td>
+                            <td>Undefined</td>
+                            <td>x = -2</td>
                         </tr>
-                        <tr style="border: 1px solid #00ffcc;">
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">Sloping line</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">y = mx + c</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">m</td>
-                            <td style="border: 1px solid #00ffcc; padding: 10px; color: #ffffff;">y = 2x + 1</td>
+                        <tr>
+                            <td>Sloping line</td>
+                            <td>y = mx + c</td>
+                            <td>m</td>
+                            <td>y = 2x + 1</td>
                         </tr>
                     </tbody>
                 </table>

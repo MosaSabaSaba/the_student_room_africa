@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trigonometry in 3D - Mathematics | Student Room Africa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/contentStyles.css" />
     <link rel="stylesheet" href="../css/mobileNav.css" />
     <link rel="stylesheet" href="../css/svg.css" />
+    <link rel="stylesheet" href="../css/globalFonts.css" />
 
     <script type="application/ld+json">
         {
@@ -36,12 +35,6 @@
             }
         }
     </script>
-
-    <style>
-        .responsive-svg-container {
-            width:auto;
-        }
-    </style>
 </head>
 <body class="nav-study-guides">
 
@@ -117,24 +110,7 @@
             <li class="active"><a href="../lesotho/trig_in_3D.html">Trigonometry in 3D</a></li>
             <li><a href="../lesotho/similarity_and_congruence.html">Similarity and Congruence Of Shpes</a></li>
             <li><a href="../lesotho/variation.html">Variation</a></li>
-            
-            <!-- <li>
-                <button class="sidebar-section-btn">Advanced</button>
-            </li> -->
         </ul>
-
-        <!-- <div class="sidebar-divider"></div>
-        <div class="sidebar-label">References</div>
-
-        <ul class="sidebar-nav">
-            <li><button class="sidebar-section-btn">Built-in objects</button></li>
-            <li><button class="sidebar-section-btn">Expressions &amp; operators</button></li>
-            <li><button class="sidebar-section-btn">Statements &amp; declarations</button></li>
-            <li><button class="sidebar-section-btn">Functions</button></li>
-            <li><button class="sidebar-section-btn">Classes</button></li>
-            <li><button class="sidebar-section-btn">Regular expressions</button></li>
-            <li><button class="sidebar-section-btn">Errors</button></li>
-        </ul> -->
     </aside>
 
     <!-- MAIN -->
@@ -164,41 +140,41 @@
                 <h2 id="review">Review: Trigonometric Ratios, Sine Rule and Cosine Rule</h2>
 
                 <p>
-                    Before working in three dimensions, it is essential to be confident 
+                    Before working in three dimensions, it is essential to be confident
                     with the <a href="trigonometry.html">trigonometric tools</a>
-                    used in two dimensions. These same tools, applied carefully to the 
+                    used in two dimensions. These same tools, applied carefully to the
                     right triangles extracted
                     from a 3D figure, are all that is needed to solve problems in 3D.
                 </p>
 
-                <h3>Trigonometric Ratios (Right-Angled Triangles)</h3>
+                <h3 class="sg-example">Trigonometric Ratios (Right-Angled Triangles)</h3>
 
                 <p>
                     In any right-angled triangle, for an acute angle θ:
                 </p>
 
-                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin: 1.2rem 0;">
-                    <div style="background-color: rgba(0,255,204,0.05); border: 1px solid rgba(0,255,204,0.2); border-radius: 8px; padding: 1rem 1.4rem; text-align: center; min-width: 160px;">
-                        <p style="margin-bottom: 0.3rem; font-size: 1.1rem;">
+                <div class="formula-cards-row">
+                    <div class="formula-card">
+                        <p class="formula-card-body">
                             <strong>sin θ = </strong>
                             <math display="inline"><mfrac><mtext>opposite</mtext><mtext>hypotenuse</mtext></mfrac></math>
                         </p>
                     </div>
-                    <div style="background-color: rgba(0,255,204,0.05); border: 1px solid rgba(0,255,204,0.2); border-radius: 8px; padding: 1rem 1.4rem; text-align: center; min-width: 160px;">
-                        <p style="margin-bottom: 0.3rem; font-size: 1.1rem;">
+                    <div class="formula-card">
+                        <p class="formula-card-body">
                             <strong>cos θ = </strong>
                             <math display="inline"><mfrac><mtext>adjacent</mtext><mtext>hypotenuse</mtext></mfrac></math>
                         </p>
                     </div>
-                    <div style="background-color: rgba(0,255,204,0.05); border: 1px solid rgba(0,255,204,0.2); border-radius: 8px; padding: 1rem 1.4rem; text-align: center; min-width: 160px;">
-                        <p style="margin-bottom: 0.3rem; font-size: 1.1rem;">
+                    <div class="formula-card">
+                        <p class="formula-card-body">
                             <strong>tan θ = </strong>
                             <math display="inline"><mfrac><mtext>opposite</mtext><mtext>adjacent</mtext></mfrac></math>
                         </p>
                     </div>
                 </div>
 
-                <h3>
+                <h3 class="sg-example">
                     <a href="../lesotho/trigonometry.html#sine-ratio">
                         The Sine Rule
                     </a>
@@ -209,8 +185,8 @@
                     two angles and one side, or two sides and a non-included angle.
                 </p>
 
-                <div style="display: flex; justify-content: center; align-items: center; margin: 1rem 0; flex-wrap: wrap; gap: 1rem;">
-                    <div style="background-color: rgba(0,255,204,0.05); border-left: 4px solid #00ffcc; padding: 0.8rem 1.4rem; border-radius: 0 8px 8px 0;">
+                <div class="centered-image">
+                    <div class="highlight-box" style="display: inline-block;">
                         <p style="margin: 0; font-size: 1.05rem; text-align: center;">
                             <math display="block">
                                 <mrow>
@@ -229,7 +205,7 @@
                     where a, b, c are the sides opposite to angles A, B, C respectively.
                 </p>
 
-                <h3>
+                <h3 class="sg-example">
                     <a href="../lesotho/trigonometry.html#cosine-ratio">
                         The Cosine Rule
                     </a>
@@ -239,7 +215,7 @@
                     Used when you know: two sides and the <strong>included</strong> angle, or all three sides.
                 </p>
 
-                <div style="background-color: rgba(0,255,204,0.05); border-left: 4px solid #00ffcc; padding: 0.8rem 1.4rem; border-radius: 0 8px 8px 0; margin: 1rem 0;">
+                <div class="highlight-box">
                     <p style="margin: 0 0 0.4rem; text-align: center;">
                         <math display="block">
                             <mrow>
@@ -253,7 +229,7 @@
                             </mrow>
                         </math>
                     </p>
-                    <p style="margin: 0.4rem 0 0; text-align: center; color: #aaaaaa; font-size: 0.9rem;">
+                    <p style="margin: 0.4rem 0 0; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
                         Rearranged to find angle A:
                         <math display="inline">
                             <mrow>
@@ -268,13 +244,13 @@
                     </p>
                 </div>
 
-                <h3>Complementary and Supplementary Angles</h3>
+                <h3 class="sg-example">Complementary and Supplementary Angles</h3>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                    <p style="margin-bottom: 0;"><strong>Complementary angles</strong> add up to 90°. If two angles are complementary, sin of one equals cos of the other:</p>
-                    <p style="margin-bottom: 0; padding-left: 20px; margin-top: 0.4rem;">sin θ = cos(90° − θ) &nbsp;&nbsp; and &nbsp;&nbsp; cos θ = sin(90° − θ)</p>
-                    <p style="margin-bottom: 0; margin-top: 0.6rem;"><strong>Supplementary angles</strong> add up to 180°. If two angles are supplementary:</p>
-                    <p style="margin-bottom: 0; padding-left: 20px; margin-top: 0.4rem;">sin θ = sin(180° − θ) &nbsp;&nbsp; and &nbsp;&nbsp; cos θ = −cos(180° − θ)</p>
+                <div class="highlight-box">
+                    <p><strong>Complementary angles</strong> add up to 90°. If two angles are complementary, sin of one equals cos of the other:</p>
+                    <p style="padding-left: 20px; margin-top: 0.4rem;">sin θ = cos(90° − θ) &nbsp;&nbsp; and &nbsp;&nbsp; cos θ = sin(90° − θ)</p>
+                    <p style="margin-top: 0.6rem;"><strong>Supplementary angles</strong> add up to 180°. If two angles are supplementary:</p>
+                    <p style="padding-left: 20px; margin-top: 0.4rem;">sin θ = sin(180° − θ) &nbsp;&nbsp; and &nbsp;&nbsp; cos θ = −cos(180° − θ)</p>
                 </div>
             </div>
 
@@ -288,16 +264,16 @@
                     Once you have the right triangle, all the familiar 2D tools apply directly.
                 </p>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                    <p style="margin-bottom: 0;"><strong>Strategy for 3D Trigonometry:</strong></p>
-                    <p style="margin-bottom: 0; margin-top: 0.5rem;">1. <strong>Sketch</strong> the 3D figure clearly, labelling all known lengths and angles.</p>
-                    <p style="margin-bottom: 0;">2. <strong>Identify</strong> the right-angled triangle(s) that contain the unknown length or angle.</p>
-                    <p style="margin-bottom: 0;">3. <strong>Extract</strong> that triangle and redraw it as a separate 2D diagram.</p>
-                    <p style="margin-bottom: 0;">4. <strong>Apply</strong> Pythagoras' theorem, trigonometric ratios, sine rule or cosine rule.</p>
-                    <p style="margin-bottom: 0;">5. <strong>Interpret</strong> the result in the context of the original 3D figure.</p>
+                <div class="highlight-box">
+                    <p><strong>Strategy for 3D Trigonometry:</strong></p>
+                    <p>1. <strong>Sketch</strong> the 3D figure clearly, labelling all known lengths and angles.</p>
+                    <p>2. <strong>Identify</strong> the right-angled triangle(s) that contain the unknown length or angle.</p>
+                    <p>3. <strong>Extract</strong> that triangle and redraw it as a separate 2D diagram.</p>
+                    <p>4. <strong>Apply</strong> Pythagoras' theorem, trigonometric ratios, sine rule or cosine rule.</p>
+                    <p>5. <strong>Interpret</strong> the result in the context of the original 3D figure.</p>
                 </div>
 
-                <h3>Common 3D Figures and Their Hidden Triangles</h3>
+                <h3 class="sg-example">Common 3D Figures and Their Hidden Triangles</h3>
 
                 <p>
                     The most common 3D figures in examination questions are the <strong>cuboid</strong>,
@@ -314,14 +290,14 @@
                     opposite corner through the interior) is found in two steps, each using Pythagoras:
                 </p>
 
-                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <ul>
                     <li><strong>Step 1:</strong> Find the base diagonal BF using the base dimensions: BF² = l² + w².</li>
                     <li><strong>Step 2:</strong> Use BF as the base of a right-angled triangle with the height h: AG² = BF² + h² = l² + w² + h².</li>
                 </ul>
 
-                <div style="text-align: center; margin: 0.8rem 0; font-size: 1.05rem;">
+                <p class="sg-formula" style="text-align: center; margin: 0.8rem 0; font-size: 1.05rem;">
                     <strong>Space diagonal = √(l² + w² + h²)</strong>
-                </div>
+                </p>
             </div>
 
             <!-- ═══════════════════════════════════════════════════ -->
@@ -329,55 +305,53 @@
                 <h2 id="lengths-angles">Calculating Lengths and Angles in 3D Figures</h2>
 
                 <p>
-                    The approach is always the same: identify the right-angled triangle 
+                    The approach is always the same: identify the right-angled triangle
                     that contains the unknown,
-                    extract it, label it, and solve. Many problems require two or three 
+                    extract it, label it, and solve. Many problems require two or three
                     consecutive applications of
-                    Pythagoras or trigonometry. Use the result of the first triangle as 
+                    Pythagoras or trigonometry. Use the result of the first triangle as
                     input for the next.
                 </p>
 
-                <h3>Example 1: Angle of Elevation in a Cuboid</h3>
+                <h3 class="sg-example">Example 1: Angle of Elevation in a Cuboid</h3>
 
                 <p>
-                    A cuboid has length 8 cm, width 6 cm and height 5 cm. Find the angle 
+                    A cuboid has length 8 cm, width 6 cm and height 5 cm. Find the angle
                     that the space diagonal makes with the base of the cuboid.
                 </p>
 
-                <div style="text-align: center; margin: 1.5rem 0;">
+                <div class="centered-image">
                     <img src="../assets/img/trig-in-3D/elevation-in-a-cuboid.svg" alt="" />
                 </div>
 
-                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
-                    <p style="margin-bottom: 0.5rem;"><strong>Step 1: Find the base diagonal:</strong></p>
+                <div class="example-box">
+                    <p class="example-label">Step 1: Find the base diagonal:</p>
                     <p style="padding-left: 20px;">
-                        Look directly at the flat base rectangle ABCF. The base diagonal $BF$ splits it into a right-angled triangle.
+                        Look directly at the flat base rectangle ABCF. The base diagonal BF splits it into a right-angled triangle.
                     </p>
 
-                    <!-- 2D Base Diagram for Step 1 Workings -->
-                    <div style="text-align: center; margin: 1rem 0;">
+                    <div class="centered-image">
                         <img src="../assets/img/trig-in-3D/elevation-in-a-cuboid-rectangle.svg" alt="" />
                     </div>
 
                     <p style="padding-left: 20px;">BF² = 8² + 6² = 64 + 36 = 100 &nbsp;→&nbsp; BF = 10 cm</p>
 
-                    <p style="margin-bottom: 0.5rem; margin-top: 0.6rem;"><strong>Step 2: Extract the right-angled triangle containing the space diagonal:</strong></p>
+                    <p class="example-label">Step 2: Extract the right-angled triangle containing the space diagonal:</p>
                     <p style="padding-left: 20px;">
                         The internal triangle has a horizontal base BF = 10 cm and a vertical height FG = 5 cm.
                         The space diagonal BG forms the hypotenuse.
                     </p>
-                    
-                    <!-- 2D Vertical Slice Diagram for Step 2 Workings -->
-                    <div style="text-align: center; margin: 1rem 0;">
+
+                    <div class="centered-image">
                        <img src="../assets/img/trig-in-3D/elevation-in-a-cube-triangle.svg" alt="" />
                     </div>
 
-                    <p style="margin-bottom: 0.5rem; margin-top: 0.6rem;"><strong>Step 3: Apply trigonometry:</strong></p>
+                    <p class="example-label">Step 3: Apply trigonometry:</p>
                     <p style="padding-left: 20px;">
                         The side opposite to angle θ is 5 cm, and the adjacent side is 10 cm.
                     </p>
                     <p style="padding-left: 20px;">
-                        tan θ = 
+                        tan θ =
                         <math display="inline"><mfrac><mrow><mtext>Opposite</mtext></mrow><mrow><mtext>Adjacent</mtext></mrow></mfrac></math>
                         =
                         <math display="inline"><mfrac><mn>5</mn><mn>10</mn></mfrac></math>
@@ -388,27 +362,25 @@
                     <p style="margin-top: 0.5rem;"><strong>Answer:</strong> The space diagonal makes an angle of <strong>26.6°</strong> with the base.</p>
                 </div>
 
-                <h3>Example 2: Height of a Right Pyramid</h3>
+                <h3 class="sg-example">Example 2: Height of a Right Pyramid</h3>
 
                 <p>
                     A right pyramid has a square base of side 10 cm and slant edges of length 13 cm.
                     Find the vertical height of the pyramid.
                 </p>
 
-                <!-- Isometric Pyramid Diagram with Labeled Vertices -->
-                <div style="text-align: center; margin: 1.5rem 0;">
+                <div class="centered-image">
                     <img src="../assets/img/trig-in-3D/height-of-pyramid.svg" alt="Pyramid Diagram" />
                 </div>
 
-                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
-                    <p style="margin-bottom: 0.5rem;"><strong>Step 1: Find the distance from the centre of the base to a corner:</strong></p>
+                <div class="example-box">
+                    <p class="example-label">Step 1: Find the distance from the centre of the base to a corner:</p>
                     <p style="padding-left: 20px;">
-                        Look at the flat square base <var>ABCD</var>. The diagonal <var>BD</var> passes through center point <var>M</var>. 
+                        Look at the flat square base <var>ABCD</var>. The diagonal <var>BD</var> passes through center point <var>M</var>.
                         We isolate right-angled triangle <var>BCD</var> to compute its total length.
                     </p>
 
-                    <!-- 2D Plain Layout: Base Square Diagonal Split -->
-                    <div style="text-align: center; margin: 1rem 0;">
+                    <div class="centered-image">
                         <img src="../assets/img/trig-in-3D/height-of-pyramid-square.svg" alt="Base Square Diagram" />
                     </div>
 
@@ -423,15 +395,13 @@
                         = 5&radic;2 cm &asymp; 7.07 cm
                     </p>
 
-                    <p style="margin-bottom: 0.5rem; margin-top: 0.6rem;"><strong>Step 2: Right-angled triangle: apex, centre of base, corner of base:</strong></p>
+                    <p class="example-label">Step 2: Right-angled triangle: apex, centre of base, corner of base:</p>
                     <p style="padding-left: 20px;">
                         Isolate the internal vertical cross-section triangle <var>VMB</var>. The vertical side represents the target height (<em>h</em>).
                     </p>
 
-                    <!-- 2D Plain Layout: Vertical Right Triangle Slice -->
-                    <div style="text-align: center; margin: 1rem 0;">
+                    <div class="centered-image">
                         <img src="../assets/img/trig-in-3D/height-of-pyramid-triangle.svg" alt="Vertical Triangle Diagram" />
-                    
                     </div>
 
                     <p style="padding-left: 20px;">Hypotenuse (<var>VB</var>) = 13 cm, base (<var>MB</var>) = 5&radic;2 cm, vertical side (<var>VM</var>) = <em>h</em>.</p>
@@ -441,45 +411,42 @@
                     <p style="margin-top: 0.5rem;"><strong>Answer:</strong> The vertical height of the pyramid is <strong>10.9 cm</strong>.</p>
                 </div>
 
-                <h3>Example 3: Angle in a Triangular Prism</h3>
+                <h3 class="sg-example">Example 3: Angle in a Triangular Prism</h3>
 
                 <p>
-                    The cross-section of a triangular prism is a right-angled triangle with a base of 6 cm and a vertical height of 8 cm. 
+                    The cross-section of a triangular prism is a right-angled triangle with a base of 6 cm and a vertical height of 8 cm.
                     The total length of the prism is 12 cm. Calculate the angle between the diagonal of the longest rectangular face and the 12 cm base edge.
                 </p>
 
-                <!-- Corrected Geometric Prism Diagram -->
-                <div style="text-align: center; margin: 1.5rem 0;">
+                <div class="centered-image">
                     <img src="../assets/img/trig-in-3D/angle-in-triangular-prism.svg" alt="" />
                 </div>
 
-                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
-                    <p style="margin-bottom: 0.5rem;"><strong>Step 1: Find the hypotenuse of the triangular face:</strong></p>
+                <div class="example-box">
+                    <p class="example-label">Step 1: Find the hypotenuse of the triangular face:</p>
                     <p style="padding-left: 20px;">
                         Look at the front vertical triangular cross-section face. It forms a right-angled triangle with a base of 6 cm and a height of 8 cm.
                     </p>
 
-                    <!-- 2D Plain Layout: Front Cross-Section Triangle -->
-                    <div style="text-align: center; margin: 1rem 0;">
+                    <div class="centered-image">
                         <img src="../assets/img/trig-in-3D/angle-in-triangular-prism-triangle1.svg" alt="Front Cross-Section Triangle" />
                     </div>
 
                     <p style="padding-left: 20px;">Hypotenuse = &radic;(6&sup2; + 8&sup2;) = &radic;(36 + 64) = &radic;100 = 10 cm</p>
 
-                    <p style="margin-bottom: 0.5rem; margin-top: 0.6rem;"><strong>Step 2: Isolate the right-angled triangle on the slant face:</strong></p>
+                    <p class="example-label">Step 2: Isolate the right-angled triangle on the slant face:</p>
                     <p style="padding-left: 20px;">
-                        The slant rectangular face has a base width of 12 cm (length of the prism) and an orthogonal height of 10 cm (the hypotenuse we found in Step 1). 
+                        The slant rectangular face has a base width of 12 cm (length of the prism) and an orthogonal height of 10 cm (the hypotenuse we found in Step 1).
                         The required angle <var>&theta;</var> sits at the base corner.
                     </p>
 
-                    <!-- 2D Plain Layout: Slant Face Right Triangle Split -->
-                    <div style="text-align: center; margin: 1rem 0;">
+                    <div class="centered-image">
                         <img src="../assets/img/trig-in-3D/angle-in-triangular-prism-triangle2.svg" alt="Slant Face Right Triangle" />
                     </div>
 
                     <p style="padding-left: 20px;">Face diagonal = &radic;(12&sup2; + 10&sup2;) = &radic;(144 + 100) = &radic;244 &asymp; 15.6 cm</p>
 
-                    <p style="margin-bottom: 0.5rem; margin-top: 0.6rem;"><strong>Step 3: Find the required angle:</strong></p>
+                    <p class="example-label">Step 3: Find the required angle:</p>
                     <p style="padding-left: 20px;">
                         The side opposite to angle <var>&theta;</var> is 10 cm, and the adjacent side is 12 cm.
                     </p>
@@ -494,12 +461,12 @@
                     <p style="margin-top: 0.5rem;"><strong>Answer:</strong> The face diagonal makes an angle of <strong>39.8&deg;</strong> with the base edge.</p>
                 </div>
 
-                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
-                    <p style="margin-bottom: 0;"><strong>Exam Tips For Working in 3D:</strong></p>
-                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• Always draw and label the 3D figure first, even if a diagram is given.</p>
-                    <p style="margin-bottom: 0;">• Extract each right-angled triangle as a separate, clearly labelled 2D diagram.</p>
-                    <p style="margin-bottom: 0;">• Do not round intermediate answers; carry full calculator values through to the final step, then round.</p>
-                    <p style="margin-bottom: 0;">• If two sides and a non-right angle are involved, check whether sine rule or cosine rule applies.</p>
+                <div class="highlight-box highlight-box-warning">
+                    <p><strong>Exam Tips For Working in 3D:</strong></p>
+                    <p>• Always draw and label the 3D figure first, even if a diagram is given.</p>
+                    <p>• Extract each right-angled triangle as a separate, clearly labelled 2D diagram.</p>
+                    <p>• Do not round intermediate answers; carry full calculator values through to the final step, then round.</p>
+                    <p>• If two sides and a non-right angle are involved, check whether sine rule or cosine rule applies.</p>
                 </div>
             </div>
 
@@ -513,9 +480,9 @@
                     A point P on the unit circle at angle θ (measured anticlockwise from the positive x-axis) has coordinates:
                 </p>
 
-                <div style="text-align: center; margin: 1rem 0; font-size: 1.05rem;">
+                <p class="sg-formula" style="text-align: center; margin: 1rem 0; font-size: 1.05rem;">
                     <strong>P = (cos θ, sin θ)</strong>
-                </div>
+                </p>
 
                 <p>
                     This means the <strong>x-coordinate of any point on the unit circle gives cos θ</strong>,
@@ -526,19 +493,17 @@
                     <img src="../assets/img/trig-in-3D/unit-circle.svg" alt="Unit circle" />
                 </div>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                    <p style="margin-bottom: 0.8rem;"><strong>Signs of trig functions by quadrant (CAST rule):</strong></p>
+                <div class="highlight-box">
+                    <p><strong>Signs of trig functions by quadrant (CAST rule):</strong></p>
 
-                    <!-- Larger, Ultra-Legible 4-Quadrant CAST Diagram -->
                     <div class="responsive-svg-container" style="text-align: center; margin: 1.5rem 0;">
                         <img src="../assets/img/trig-in-3D/quadrants.svg" alt="Quadrants" />
                     </div>
 
-                    <!-- Clear Explanations -->
-                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• <strong>Q1 (0&deg;&ndash;90&deg;):</strong> All ratios are positive (<strong>A</strong>ll).</p>
-                    <p style="margin-bottom: 0;">• <strong>Q2 (90&deg;&ndash;180&deg;):</strong> Only sine is positive (<strong>S</strong>ine).</p>
-                    <p style="margin-bottom: 0;">• <strong>Q3 (180&deg;&ndash;270&deg;):</strong> Only tangent is positive (<strong>T</strong>angent).</p>
-                    <p style="margin-bottom: 0;">• <strong>Q4 (270&deg;&ndash;360&deg;):</strong> Only cosine is positive (<strong>C</strong>osine).</p>
+                    <p>• <strong>Q1 (0&deg;&ndash;90&deg;):</strong> All ratios are positive (<strong>A</strong>ll).</p>
+                    <p>• <strong>Q2 (90&deg;&ndash;180&deg;):</strong> Only sine is positive (<strong>S</strong>ine).</p>
+                    <p>• <strong>Q3 (180&deg;&ndash;270&deg;):</strong> Only tangent is positive (<strong>T</strong>angent).</p>
+                    <p>• <strong>Q4 (270&deg;&ndash;360&deg;):</strong> Only cosine is positive (<strong>C</strong>osine).</p>
                 </div>
 
             </div>
@@ -554,104 +519,100 @@
                     with the sign determined by the quadrant.
                 </p>
 
-                <div style="overflow-x: auto; margin: 1rem 0;">
-                    <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; color: #e4e8f5;">
-                        <thead>
-                            <tr style="background: rgba(0,255,204,0.08); border-bottom: 1px solid #2e3450;">
-                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Quadrant</th>
-                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Angle θ range</th>
-                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Reference angle α</th>
-                                <th style="padding: 10px 14px; text-align: left; color: #00ffcc; font-weight: 600;">Example</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="border-bottom: 1px solid #2e3450;">
-                                <td style="padding: 10px 14px;">Q1</td>
-                                <td style="padding: 10px 14px;">0° – 90°</td>
-                                <td style="padding: 10px 14px;">α = θ</td>
-                                <td style="padding: 10px 14px;">θ = 40° → α = 40°</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #2e3450; background: rgba(255,255,255,0.02);">
-                                <td style="padding: 10px 14px;">Q2</td>
-                                <td style="padding: 10px 14px;">90° – 180°</td>
-                                <td style="padding: 10px 14px;">α = 180° − θ</td>
-                                <td style="padding: 10px 14px;">θ = 130° → α = 50°</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #2e3450;">
-                                <td style="padding: 10px 14px;">Q3</td>
-                                <td style="padding: 10px 14px;">180° – 270°</td>
-                                <td style="padding: 10px 14px;">α = θ − 180°</td>
-                                <td style="padding: 10px 14px;">θ = 210° → α = 30°</td>
-                            </tr>
-                            <tr style="background: rgba(255,255,255,0.02);">
-                                <td style="padding: 10px 14px;">Q4</td>
-                                <td style="padding: 10px 14px;">270° – 360°</td>
-                                <td style="padding: 10px 14px;">α = 360° − θ</td>
-                                <td style="padding: 10px 14px;">θ = 310° → α = 50°</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Quadrant</th>
+                            <th>Angle θ range</th>
+                            <th>Reference angle α</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Q1</td>
+                            <td>0° – 90°</td>
+                            <td>α = θ</td>
+                            <td>θ = 40° → α = 40°</td>
+                        </tr>
+                        <tr>
+                            <td>Q2</td>
+                            <td>90° – 180°</td>
+                            <td>α = 180° − θ</td>
+                            <td>θ = 130° → α = 50°</td>
+                        </tr>
+                        <tr>
+                            <td>Q3</td>
+                            <td>180° – 270°</td>
+                            <td>α = θ − 180°</td>
+                            <td>θ = 210° → α = 30°</td>
+                        </tr>
+                        <tr>
+                            <td>Q4</td>
+                            <td>270° – 360°</td>
+                            <td>α = 360° − θ</td>
+                            <td>θ = 310° → α = 50°</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="sg-example">Using Reference Angles for Complementary, Supplementary and Reflex Angles</h3>
+
+                <div class="example-box">
+                    <p><strong>Complementary (add to 90°):</strong></p>
+                    <p style="padding-left: 20px;">sin 70° = cos 20° &nbsp;→&nbsp; reference angle is 20° for both.</p>
+                    <p><strong>Supplementary (add to 180°):</strong></p>
+                    <p style="padding-left: 20px;">sin 150° = sin 30° = 0.5 &nbsp;(same sine, different quadrant)</p>
+                    <p style="padding-left: 20px;">cos 150° = −cos 30° = −√3/2 &nbsp;(cosine changes sign in Q2)</p>
+                    <p><strong>Reflex angles (180°–360°):</strong></p>
+                    <p style="padding-left: 20px;">sin 210° = −sin 30° = −0.5 &nbsp;(Q3: sine is negative)</p>
+                    <p style="padding-left: 20px;">cos 330° = cos 30° = √3/2 &nbsp;(Q4: cosine is positive)</p>
                 </div>
 
-                <h3>Using Reference Angles for Complementary, Supplementary and Reflex Angles</h3>
+                <h3 class="sg-example">Common Angles</h3>
 
-                <div style="background-color: rgba(0, 255, 204, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
-                    <p style="margin-bottom: 0.4rem;"><strong>Complementary (add to 90°):</strong></p>
-                    <p style="padding-left: 20px; margin-bottom: 0.4rem;">sin 70° = cos 20° &nbsp;→&nbsp; reference angle is 20° for both.</p>
-                    <p style="margin-bottom: 0.4rem;"><strong>Supplementary (add to 180°):</strong></p>
-                    <p style="padding-left: 20px; margin-bottom: 0.4rem;">sin 150° = sin 30° = 0.5 &nbsp;(same sine, different quadrant)</p>
-                    <p style="padding-left: 20px; margin-bottom: 0.4rem;">cos 150° = −cos 30° = −√3/2 &nbsp;(cosine changes sign in Q2)</p>
-                    <p style="margin-bottom: 0.4rem;"><strong>Reflex angles (180°–360°):</strong></p>
-                    <p style="padding-left: 20px; margin-bottom: 0;">sin 210° = −sin 30° = −0.5 &nbsp;(Q3: sine is negative)</p>
-                    <p style="padding-left: 20px; margin-bottom: 0;">cos 330° = cos 30° = √3/2 &nbsp;(Q4: cosine is positive)</p>
-                </div>
-
-                <h3>Common Angles</h3>
-
-                <div style="overflow-x: auto; margin: 1rem 0;">
-                    <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; color: #e4e8f5;">
-                        <thead>
-                            <tr style="background: rgba(0,255,204,0.08); border-bottom: 1px solid #2e3450;">
-                                <th style="padding: 10px 14px; text-align: center; color: #00ffcc; font-weight: 600;">θ</th>
-                                <th style="padding: 10px 14px; text-align: center; color: #00ffcc; font-weight: 600;">sin θ</th>
-                                <th style="padding: 10px 14px; text-align: center; color: #00ffcc; font-weight: 600;">cos θ</th>
-                                <th style="padding: 10px 14px; text-align: center; color: #00ffcc; font-weight: 600;">tan θ</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="border-bottom: 1px solid #2e3450; text-align: center;">
-                                <td style="padding: 10px 14px;">0°</td>
-                                <td style="padding: 10px 14px;">0</td>
-                                <td style="padding: 10px 14px;">1</td>
-                                <td style="padding: 10px 14px;">0</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #2e3450; text-align: center; background: rgba(255,255,255,0.02);">
-                                <td style="padding: 10px 14px;">30°</td>
-                                <td style="padding: 10px 14px;"><math display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></td>
-                                <td style="padding: 10px 14px;"><math display="inline"><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></math></td>
-                                <td style="padding: 10px 14px;"><math display="inline"><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></math></td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #2e3450; text-align: center;">
-                                <td style="padding: 10px 14px;">45°</td>
-                                <td style="padding: 10px 14px;"><math display="inline"><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></math></td>
-                                <td style="padding: 10px 14px;"><math display="inline"><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></math></td>
-                                <td style="padding: 10px 14px;">1</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #2e3450; text-align: center; background: rgba(255,255,255,0.02);">
-                                <td style="padding: 10px 14px;">60°</td>
-                                <td style="padding: 10px 14px;"><math display="inline"><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></math></td>
-                                <td style="padding: 10px 14px;"><math display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></td>
-                                <td style="padding: 10px 14px;"><math display="inline"><msqrt><mn>3</mn></msqrt></math></td>
-                            </tr>
-                            <tr style="text-align: center;">
-                                <td style="padding: 10px 14px;">90°</td>
-                                <td style="padding: 10px 14px;">1</td>
-                                <td style="padding: 10px 14px;">0</td>
-                                <td style="padding: 10px 14px;">undefined</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>θ</th>
+                            <th>sin θ</th>
+                            <th>cos θ</th>
+                            <th>tan θ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0°</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>30°</td>
+                            <td><math display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></td>
+                            <td><math display="inline"><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></math></td>
+                            <td><math display="inline"><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></math></td>
+                        </tr>
+                        <tr>
+                            <td>45°</td>
+                            <td><math display="inline"><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></math></td>
+                            <td><math display="inline"><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></math></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>60°</td>
+                            <td><math display="inline"><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></math></td>
+                            <td><math display="inline"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></td>
+                            <td><math display="inline"><msqrt><mn>3</mn></msqrt></math></td>
+                        </tr>
+                        <tr>
+                            <td>90°</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>undefined</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- ═══════════════════════════════════════════════════ -->
@@ -663,56 +624,53 @@
                     then plot and join them with a smooth curve.
                 </p>
 
-                <div style="overflow-x: auto; margin: 1rem 0;">
-                    <table style="width: 100%; min-width: 500px; border-collapse: collapse; font-size: 0.88rem; color: #e4e8f5;">
-                        <thead>
-                            <tr style="background: rgba(0,255,204,0.08); border-bottom: 1px solid #2e3450;">
-                                <th style="padding: 8px 10px; text-align: center; color: #00ffcc;">&theta;</th>
-                                <td style="padding: 8px 10px; text-align: center;">0&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">30&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">60&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">90&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">120&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">150&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">180&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">210&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">270&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">330&deg;</td>
-                                <td style="padding: 8px 10px; text-align: center;">360&deg;</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="text-align: center; border-bottom: 1px solid #2e3450;">
-                                <th style="padding: 8px 10px; color: #00ffcc; background: rgba(0,255,204,0.08);">sin &theta;</th>
-                                <td style="padding: 8px 10px;">0</td>
-                                <td style="padding: 8px 10px;">0.50</td>
-                                <td style="padding: 8px 10px;">0.87</td>
-                                <td style="padding: 8px 10px; font-weight: bold; color: #00ffcc;">1</td>
-                                <td style="padding: 8px 10px;">0.87</td>
-                                <td style="padding: 8px 10px;">0.50</td>
-                                <td style="padding: 8px 10px;">0</td>
-                                <td style="padding: 8px 10px;">&minus;0.50</td>
-                                <td style="padding: 8px 10px; font-weight: bold; color: #ff8888;">&minus;1</td>
-                                <td style="padding: 8px 10px;">&minus;0.50</td>
-                                <td style="padding: 8px 10px;">0</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>&theta;</th>
+                            <th>0&deg;</th>
+                            <th>30&deg;</th>
+                            <th>60&deg;</th>
+                            <th>90&deg;</th>
+                            <th>120&deg;</th>
+                            <th>150&deg;</th>
+                            <th>180&deg;</th>
+                            <th>210&deg;</th>
+                            <th>270&deg;</th>
+                            <th>330&deg;</th>
+                            <th>360&deg;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>sin &theta;</th>
+                            <td>0</td>
+                            <td>0.50</td>
+                            <td>0.87</td>
+                            <td>1</td>
+                            <td>0.87</td>
+                            <td>0.50</td>
+                            <td>0</td>
+                            <td>&minus;0.50</td>
+                            <td>&minus;1</td>
+                            <td>&minus;0.50</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="responsive-svg-container">
+                    <img src="../assets/img/trig-in-3D/sine-graph.svg" alt="Sine Chart" />
                 </div>
 
-                <!-- Fluid -360° to 360° Sine Chart -->
-                <div class="responsive-svg-container" style="text-align: center; margin: 1.5rem 0;">
-                    <img src="../assets/img/trig-in-3D/sine-graph.svg" alt="Sine Chart" />  
-                </div>
-
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                    <p style="margin-bottom: 0;"><strong>Key features of y = sin θ:</strong></p>
-                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• <strong>Amplitude:</strong> 1 (maximum value 1, minimum value −1).</p>
-                    <p style="margin-bottom: 0;">• <strong>Period:</strong> 360° (the pattern repeats every 360°).</p>
-                    <p style="margin-bottom: 0;">• <strong>Zeros:</strong> at θ = 0°, 180°, 360°.</p>
-                    <p style="margin-bottom: 0;">• <strong>Maximum:</strong> y = 1 at θ = 90°.</p>
-                    <p style="margin-bottom: 0;">• <strong>Minimum:</strong> y = −1 at θ = 270°.</p>
-                    <p style="margin-bottom: 0;">• Angles with the same sine: sin θ = sin(180° − θ). So sin 30° = sin 150° = 0.5.</p>
+                <div class="highlight-box">
+                    <p><strong>Key features of y = sin θ:</strong></p>
+                    <p>• <strong>Amplitude:</strong> 1 (maximum value 1, minimum value −1).</p>
+                    <p>• <strong>Period:</strong> 360° (the pattern repeats every 360°).</p>
+                    <p>• <strong>Zeros:</strong> at θ = 0°, 180°, 360°.</p>
+                    <p>• <strong>Maximum:</strong> y = 1 at θ = 90°.</p>
+                    <p>• <strong>Minimum:</strong> y = −1 at θ = 270°.</p>
+                    <p>• Angles with the same sine: sin θ = sin(180° − θ). So sin 30° = sin 150° = 0.5.</p>
                 </div>
             </div>
 
@@ -724,53 +682,50 @@
                     The cosine graph is generated the same way — plot coordinate pairs (θ, cos θ) and join smoothly.
                 </p>
 
-                <div style="overflow-x: auto; margin: 1rem 0;">
-                    <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; color: #e4e8f5;">
-                        <thead>
-                            <tr style="background: rgba(0,255,204,0.08); border-bottom: 1px solid #2e3450;">
-                                <th style="padding: 8px 10px; text-align: center; color: #00ffcc;">θ</th>
-                                <td style="padding: 8px 10px; text-align: center;">0°</td>
-                                <td style="padding: 8px 10px; text-align: center;">60°</td>
-                                <td style="padding: 8px 10px; text-align: center;">90°</td>
-                                <td style="padding: 8px 10px; text-align: center;">120°</td>
-                                <td style="padding: 8px 10px; text-align: center;">180°</td>
-                                <td style="padding: 8px 10px; text-align: center;">240°</td>
-                                <td style="padding: 8px 10px; text-align: center;">270°</td>
-                                <td style="padding: 8px 10px; text-align: center;">300°</td>
-                                <td style="padding: 8px 10px; text-align: center;">360°</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="text-align: center;">
-                                <th style="padding: 8px 10px; color: #00ffcc; background: rgba(0,255,204,0.08);">cos θ</th>
-                                <td style="padding: 8px 10px;">1</td>
-                                <td style="padding: 8px 10px;">0.50</td>
-                                <td style="padding: 8px 10px;">0</td>
-                                <td style="padding: 8px 10px;">−0.50</td>
-                                <td style="padding: 8px 10px;">−1</td>
-                                <td style="padding: 8px 10px;">−0.50</td>
-                                <td style="padding: 8px 10px;">0</td>
-                                <td style="padding: 8px 10px;">0.50</td>
-                                <td style="padding: 8px 10px;">1</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>θ</th>
+                            <th>0°</th>
+                            <th>60°</th>
+                            <th>90°</th>
+                            <th>120°</th>
+                            <th>180°</th>
+                            <th>240°</th>
+                            <th>270°</th>
+                            <th>300°</th>
+                            <th>360°</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>cos θ</th>
+                            <td>1</td>
+                            <td>0.50</td>
+                            <td>0</td>
+                            <td>−0.50</td>
+                            <td>−1</td>
+                            <td>−0.50</td>
+                            <td>0</td>
+                            <td>0.50</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <!-- SVG: Graph of y = cos θ -->
-                <div class="responsive-svg-container" style="text-align: center; margin: 1.5rem 0;">
+                <div class="responsive-svg-container">
                     <img src="../assets/img/trig-in-3D/cosine-graph.svg" alt="Cosine Chart" />
                 </div>
 
-                <div class="highlight-box" style="border-left: 4px solid #00ffcc; padding: 1rem; margin: 1rem 0; background-color: rgba(0, 255, 204, 0.05);">
-                    <p style="margin-bottom: 0;"><strong>Key features of y = cos θ:</strong></p>
-                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• <strong>Amplitude:</strong> 1 (maximum 1, minimum −1).</p>
-                    <p style="margin-bottom: 0;">• <strong>Period:</strong> 360°.</p>
-                    <p style="margin-bottom: 0;">• <strong>Zeros:</strong> at θ = 90°, 270°.</p>
-                    <p style="margin-bottom: 0;">• <strong>Maximum:</strong> y = 1 at θ = 0° and 360°.</p>
-                    <p style="margin-bottom: 0;">• <strong>Minimum:</strong> y = −1 at θ = 180°.</p>
-                    <p style="margin-bottom: 0;">• The cosine graph is the sine graph shifted <strong>90° to the left</strong>: cos θ = sin(θ + 90°).</p>
-                    <p style="margin-bottom: 0;">• Angles with the same cosine: cos θ = cos(360° − θ). So cos 60° = cos 300° = 0.5.</p>
+                <div class="highlight-box">
+                    <p><strong>Key features of y = cos θ:</strong></p>
+                    <p>• <strong>Amplitude:</strong> 1 (maximum 1, minimum −1).</p>
+                    <p>• <strong>Period:</strong> 360°.</p>
+                    <p>• <strong>Zeros:</strong> at θ = 90°, 270°.</p>
+                    <p>• <strong>Maximum:</strong> y = 1 at θ = 0° and 360°.</p>
+                    <p>• <strong>Minimum:</strong> y = −1 at θ = 180°.</p>
+                    <p>• The cosine graph is the sine graph shifted <strong>90° to the left</strong>: cos θ = sin(θ + 90°).</p>
+                    <p>• Angles with the same cosine: cos θ = cos(360° − θ). So cos 60° = cos 300° = 0.5.</p>
                 </div>
             </div>
 
@@ -780,115 +735,110 @@
 
                 <p>
                     The tangent function is defined as
-                    <math display="inline"><mrow><mi>tan</mi><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>sin</mi><mi>θ</mi></mrow><mrow><mi>cos</mi><mi>θ</mi></mrow></mfrac></math>.
+                    <math display="inline"><mrow><mi>tan</mi><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>sin</mi><mi>θ</mi></mrow><mrow><mi>cos</mi><mi>θ</mi></mrow></mfrac></mrow></math>.
                     It is <strong>undefined</strong> wherever cos θ = 0 (at 90°, 270°, …),
                     producing vertical <strong>asymptotes</strong> at those angles.
                 </p>
 
-                <div style="overflow-x: auto; margin: 1rem 0;">
-                    <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; color: #e4e8f5;">
-                        <thead>
-                            <tr style="background: rgba(0,255,204,0.08); border-bottom: 1px solid #2e3450;">
-                                <th style="padding: 8px 10px; text-align: center; color: #00ffcc;">θ</th>
-                                <td style="padding: 8px 10px; text-align: center;">0°</td>
-                                <td style="padding: 8px 10px; text-align: center;">30°</td>
-                                <td style="padding: 8px 10px; text-align: center;">45°</td>
-                                <td style="padding: 8px 10px; text-align: center;">60°</td>
-                                <td style="padding: 8px 10px; text-align: center;">90°</td>
-                                <td style="padding: 8px 10px; text-align: center;">135°</td>
-                                <td style="padding: 8px 10px; text-align: center;">180°</td>
-                                <td style="padding: 8px 10px; text-align: center;">225°</td>
-                                <td style="padding: 8px 10px; text-align: center;">270°</td>
-                                <td style="padding: 8px 10px; text-align: center;">315°</td>
-                                <td style="padding: 8px 10px; text-align: center;">360°</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="text-align: center;">
-                                <th style="padding: 8px 10px; color: #00ffcc; background: rgba(0,255,204,0.08);">tan θ</th>
-                                <td style="padding: 8px 10px;">0</td>
-                                <td style="padding: 8px 10px;">0.58</td>
-                                <td style="padding: 8px 10px;">1</td>
-                                <td style="padding: 8px 10px;">1.73</td>
-                                <td style="padding: 8px 10px; color: #ff8888;">undef.</td>
-                                <td style="padding: 8px 10px;">−1</td>
-                                <td style="padding: 8px 10px;">0</td>
-                                <td style="padding: 8px 10px;">1</td>
-                                <td style="padding: 8px 10px; color: #ff8888;">undef.</td>
-                                <td style="padding: 8px 10px;">−1</td>
-                                <td style="padding: 8px 10px;">0</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>θ</th>
+                            <th>0°</th>
+                            <th>30°</th>
+                            <th>45°</th>
+                            <th>60°</th>
+                            <th>90°</th>
+                            <th>135°</th>
+                            <th>180°</th>
+                            <th>225°</th>
+                            <th>270°</th>
+                            <th>315°</th>
+                            <th>360°</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>tan θ</th>
+                            <td>0</td>
+                            <td>0.58</td>
+                            <td>1</td>
+                            <td>1.73</td>
+                            <td>undef.</td>
+                            <td>−1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>undef.</td>
+                            <td>−1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <!-- SVG: Graph of y = tan θ -->
                 <div class="responsive-svg-container">
                     <img src="../assets/img/trig-in-3D/tangent-graph.svg" alt="Tangent Graph" />
                 </div>
 
-                <div class="highlight-box" style="border-left: 4px solid #ffcc00; padding: 1rem; margin: 1rem 0; background-color: rgba(255, 204, 0, 0.1);">
-                    <p style="margin-bottom: 0;"><strong>Key features of y = tan θ:</strong></p>
-                    <p style="margin-bottom: 0; margin-top: 0.5rem;">• <strong>Period:</strong> 180° (repeats every 180°, not 360°).</p>
-                    <p style="margin-bottom: 0;">• <strong>No amplitude</strong>  the graph is unbounded (goes to +∞ and −∞).</p>
-                    <p style="margin-bottom: 0;">• <strong>Asymptotes</strong> (undefined) at θ = 90°, 270°, and every 180° thereafter.</p>
-                    <p style="margin-bottom: 0;">• <strong>Zeros:</strong> at θ = 0°, 180°, 360°.</p>
-                    <p style="margin-bottom: 0;">• tan 45° = 1, &nbsp; tan 135° = −1, &nbsp; tan 225° = 1, &nbsp; tan 315° = −1.</p>
-                    <p style="margin-bottom: 0;">• Angles with the same tangent: tan θ = tan(θ + 180°). So tan 30° = tan 210°.</p>
+                <div class="highlight-box highlight-box-warning">
+                    <p><strong>Key features of y = tan θ:</strong></p>
+                    <p>• <strong>Period:</strong> 180° (repeats every 180°, not 360°).</p>
+                    <p>• <strong>No amplitude</strong> — the graph is unbounded (goes to +∞ and −∞).</p>
+                    <p>• <strong>Asymptotes</strong> (undefined) at θ = 90°, 270°, and every 180° thereafter.</p>
+                    <p>• <strong>Zeros:</strong> at θ = 0°, 180°, 360°.</p>
+                    <p>• tan 45° = 1, &nbsp; tan 135° = −1, &nbsp; tan 225° = 1, &nbsp; tan 315° = −1.</p>
+                    <p>• Angles with the same tangent: tan θ = tan(θ + 180°). So tan 30° = tan 210°.</p>
                 </div>
 
-                <h3>Comparing the Three Graphs</h3>
+                <h3 class="sg-example">Comparing the Three Graphs</h3>
 
-                <div style="overflow-x: auto; margin: 1rem 0;">
-                    <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; color: #e4e8f5;">
-                        <thead>
-                            <tr style="background: rgba(0,255,204,0.08); border-bottom: 1px solid #2e3450;">
-                                <th style="padding: 10px 14px; text-align: left; font-weight: 600;">Property</th>
-                                <th style="padding: 10px 14px; text-align: center; font-weight: 600;">y = sin θ</th>
-                                <th style="padding: 10px 14px; text-align: center; font-weight: 600;">y = cos θ</th>
-                                <th style="padding: 10px 14px; text-align: center; font-weight: 600;">y = tan θ</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="border-bottom: 1px solid #2e3450;">
-                                <td style="padding: 10px 14px;">Period</td>
-                                <td style="padding: 10px 14px; text-align: center;">360°</td>
-                                <td style="padding: 10px 14px; text-align: center;">360°</td>
-                                <td style="padding: 10px 14px; text-align: center;">180°</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #2e3450; background: rgba(255,255,255,0.02);">
-                                <td style="padding: 10px 14px;">Amplitude</td>
-                                <td style="padding: 10px 14px; text-align: center;">1</td>
-                                <td style="padding: 10px 14px; text-align: center;">1</td>
-                                <td style="padding: 10px 14px; text-align: center;">Unbounded</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #2e3450;">
-                                <td style="padding: 10px 14px;">Maximum value</td>
-                                <td style="padding: 10px 14px; text-align: center;">1 at 90°</td>
-                                <td style="padding: 10px 14px; text-align: center;">1 at 0°, 360°</td>
-                                <td style="padding: 10px 14px; text-align: center;">—</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #2e3450; background: rgba(255,255,255,0.02);">
-                                <td style="padding: 10px 14px;">Minimum value</td>
-                                <td style="padding: 10px 14px; text-align: center;">−1 at 270°</td>
-                                <td style="padding: 10px 14px; text-align: center;">−1 at 180°</td>
-                                <td style="padding: 10px 14px; text-align: center;">—</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #2e3450;">
-                                <td style="padding: 10px 14px;">Zeros</td>
-                                <td style="padding: 10px 14px; text-align: center;">0°, 180°, 360°</td>
-                                <td style="padding: 10px 14px; text-align: center;">90°, 270°</td>
-                                <td style="padding: 10px 14px; text-align: center;">0°, 180°, 360°</td>
-                            </tr>
-                            <tr style="background: rgba(255,255,255,0.02);">
-                                <td style="padding: 10px 14px;">Asymptotes</td>
-                                <td style="padding: 10px 14px; text-align: center;">None</td>
-                                <td style="padding: 10px 14px; text-align: center;">None</td>
-                                <td style="padding: 10px 14px; text-align: center;">90°, 270°, …</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>y = sin θ</th>
+                            <th>y = cos θ</th>
+                            <th>y = tan θ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Period</td>
+                            <td>360°</td>
+                            <td>360°</td>
+                            <td>180°</td>
+                        </tr>
+                        <tr>
+                            <td>Amplitude</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Unbounded</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum value</td>
+                            <td>1 at 90°</td>
+                            <td>1 at 0°, 360°</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Minimum value</td>
+                            <td>−1 at 270°</td>
+                            <td>−1 at 180°</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Zeros</td>
+                            <td>0°, 180°, 360°</td>
+                            <td>90°, 270°</td>
+                            <td>0°, 180°, 360°</td>
+                        </tr>
+                        <tr>
+                            <td>Asymptotes</td>
+                            <td>None</td>
+                            <td>None</td>
+                            <td>90°, 270°, …</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>
