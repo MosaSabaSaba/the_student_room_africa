@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>The Student Room | LGCSE Mathematics Past Papers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contentStyles.css"/>
+    <link rel="stylesheet" href="../css/mobileNav.css"/>
+
+    <style>
+        /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
+        .custom-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            .custom-container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .custom-container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .custom-container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+
+        .page-body {
+            padding: 2rem 0;
+        }
+
+        /* tracker header */
+        .tracker-header {
+            /* border-left: 6px solid #f4b942; */
+            padding: 1rem 1.5rem;
+            /* border-radius: 20px; */
+            margin: 0 0 2rem 0;
+        }
+
+        .tracker-header h1 {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 2rem;
+            margin: 0 0 0.4rem 0;
+            letter-spacing: -0.01em;
+        }
+
+        .tracker-header p {
+            margin: 0;
+            color: #bbb;
+        }
+
+        /* section tip box */
+        .section-tip {
+            background: rgba(244, 185, 66, 0.08);
+            /* border-radius: 16px; */
+            padding: 1rem 1.5rem;
+            margin: 0.5rem 0 1.5rem 0;
+            border-left: 4px solid #f4b942;
+        }
+
+        .section-tip p {
+            margin: 0 0 0.5rem 0;
+            color: #ddd;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .section-tip .tip-highlight {
+            color: #ffcf8a;
+            font-weight: 600;
+        }
+
+        .section-tip .guide-link {
+            color: #f4b942;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .section-tip .guide-link:hover {
+            color: #ffcf8a;
+        }
+
+        /* table styles */
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0 2.5rem 0;
+            border-radius: 16px;
+            border: 1px solid #2a2a2a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            min-width: 700px;
+        }
+
+        th {
+            background: rgba(244, 185, 66, 0.15);
+            padding: 0.9rem 0.8rem;
+            text-align: left;
+            font-weight: 600;
+            color: #ffcf8a;
+            border-bottom: 1px solid #3a3530;
+        }
+
+        td {
+            padding: 0.7rem 0.8rem;
+            border-bottom: 1px solid #2a2a2a;
+            color: #ddd;
+            vertical-align: middle;
+        }
+
+        tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+
+        .section-badge {
+            background: #1e3a2f;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #ffda9e;
+            display: inline-block;
+        }
+
+        /* .topic-link {
+            color: #ffcf8a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .topic-link:hover {
+            text-decoration: underline;
+            color: #f4b942;
+        }
+
+        .checkbox-col {
+            text-align: center;
+            width: 35px;
+        } */
+
+        .questions-col {
+            width: 145px;
+            text-align: center;
+        }
+
+        .questions-link {
+            color: #ffcf8a;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .questions-link:hover {
+            color: #f4b942;
+            text-decoration: underline;
+        }
+
+        .checkbox-col input {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #f4b942;
+        }
+
+        .notes-col {
+            width: 100px;
+            text-align: center;
+        }
+
+        .notes-link {
+            color: #ffcf8a;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .notes-link:hover {
+            color: #f4b942;
+            text-decoration: underline;
+        }
+
+        .mark-input {
+            width: 60px;
+            padding: 0.3rem;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin: 1rem 0 0 0;
+            color: #ffda9e;
+            border-left: 4px solid #f4b942;
+            padding-left: 1rem;
+        }
+
+        .subnote {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 0.25rem;
+            margin-bottom: 0rem;
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #2e2a24, transparent);
+        }
+
+        @media (max-width: 640px) {
+            .page-body {
+                padding: 1rem 0;
+            }
+            .tracker-header {
+                padding: 0.8rem 1rem;
+            }
+            .notes-link {
+                font-size: 0.75rem;
+            }
+            .section-tip {
+                padding: 0.8rem 1rem;
+            }
+        }
+ 
+        .pagination-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 0;
+            margin-top: 1rem;
+            border-top: 1px solid #2a2a2a;
+        }
+        
+        .pagination-controls button {
+            background: rgba(244, 185, 66, 0.15);
+            border: 1px solid #f4b942;
+            color: #ffcf8a;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        
+        .pagination-controls button:hover:not(:disabled) {
+            background: #f4b942;
+            color: #1a1a1a;
+        }
+        
+        .pagination-controls button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            border-color: #555;
+            color: #888;
+        }
+        
+        #pageInfo {
+            color: #aaa;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body class="nav-tracker">
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <a href="../../index.html" class="logo">
+            <span class="logo-m">Student Room Africa</span>
+        </a>
+        <div class="nav-links">
+        <a href="conversions.html">Study Guide</a>
+        <a href="tracker.html">Revision Tracker</a>
+        <a href="tracker.html#past-papers">Past Papers</a>
+        <a href="questionBank/question-bank.html">Question Bank</a>
+    </div>
+        
+        <div class="nav-right">
+            <button class="search-btn">
+                <span class="search-icon">🔍</span>
+                <span style="display:none" class="search-label">Search ...</span>
+                <kbd class="kbd">/</kbd>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SCRIMBA BANNER -->
+    <div class="scrimba-banner">
+        Learn frontend, backend, and AI from our course partner 
+        <a href="#">Scrimba</a>
+    </div>
+
+    <!-- BREADCRUMB BAR -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumbs">
+            <a href="lesotho.html">Lesotho</a><span class="bc-sep">›</span>
+            <a href="lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="past-papers.html">Past Papers</a>
+        </div>
+
+        <div class="breadcrumb-right">
+            <button>Theme</button>
+            <button>English (US)</button>
+        </div>
+    </div>
+
+    <!-- PAGE LAYOUT with Bootstrap-like container behavior -->
+    <div class="custom-container">
+        <div class="page-body">
+
+            <!-- ========== SECTION 2: PAST PAPERS with TIPS ========== -->
+            <div id="past-papers">
+                <div class="section-title">Past Examination Papers</div>
+                <div class="subnote">Core and Extended papers — click links to download question papers and mark schemes</div>
+                
+                <!-- Tip box for past papers section -->
+                <div class="section-tip">
+                    <p><span class="tip-highlight">Exam practice tip:</span> For each past paper, follow this proven cycle:</p>
+                    <p>✓ <strong>Take the exam paper</strong> under timed conditions (no peeking at answers!)<br>
+                    ✓ <strong>Check your answers</strong> using the Answer Booklet and Mark Scheme<br>
+                    ✓ <strong>Record your average mark</strong> in the "Mark" column (add up your scores and divide by total marks)<br>
+                    ✓ <strong>Review mistakes</strong> and revisit weak topics in the <a href="conversions.html" class="guide-link">LGCSE Mathematics Guide</a></p>
+                    <p>Only check "Completed" when you have honestly attempted the paper AND reviewed your errors. Repeat papers after 2 weeks to measure improvement.</p>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Papers</th>
+                                <th>Answer Booklet</th>
+                                <th>Mark Scheme</th>
+                                <th>Notes / Paper Type</th>
+                                <th style="width: 50px;">Completed</th>
+                                <th style="width: 80px;">Mark</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Core Pure papers -->
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2019 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">June 2019 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2019 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2022 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">June 2022 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2022 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2023 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">June 2023 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2023 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">November 2020 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">November 2020 AB</a></td>
+                                <td><a href="#" class="topic-link">November 2020 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">November 2021 QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">November 2021 AB</a></td>
+                                <td><a href="#" class="topic-link">November 2021 MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">Sample QP (Core)</a></td>
+                                <td><a href="#" class="topic-link">Sample AB</a></td>
+                                <td><a href="#" class="topic-link">Sample MS</a></td>
+                                <td><span class="section-badge">Core Pure</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <!-- Extended / Mechanics Minor papers -->
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2019 QP (Extended)</a></td>
+                                <td><a href="#" class="topic-link">June 2019 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2019 MS</a></td>
+                                <td><span class="section-badge">Mech Minor</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="topic-link">June 2022 QP (Extended)</a></td>
+                                <td><a href="#" class="topic-link">June 2022 AB</a></td>
+                                <td><a href="#" class="topic-link">June 2022 MS</a></td>
+                                <td><span class="section-badge">Mech Minor</span></td>
+                                <td class="checkbox-col"><input type="checkbox" class="paper-completed"></td>
+                                <td><input type="text" class="mark-input" placeholder="—"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Additional note about local storage -->
+                <div style="background: rgba(36, 56, 48, 0.3); border-radius: 16px; padding: 1rem; margin-top: 1.5rem; border-left: 3px solid #f4b942;">
+                    <p style="margin: 0; font-size: 0.85rem;"><strong>Tracker saves automatically</strong> — Your checkboxes and marks are saved to your browser's local storage. Return to this page anytime on the same device to continue tracking your progress.</p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p style="color: #888; font-size: 0.8rem;">
+                Need to reset your progress? Clear your browser cache or 
+                use the "Reset" option in your browser settings. All 
+                topic notes pages can be accessed by clicking the 
+                video name or the "View Notes" link. For detailed 
+                study strategies, visit the <a href="conversions.html" style="color: #ffcf8a;">LGCSE Mathematics Guide</a>.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- -- FOOTER -- -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>LGCSE SYLLABUS</h4>
+            <ul>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Physical Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="conversions.html">Study Guide</a></li>
+                <li><a href="tracker.html">Revision Tracker</a></li>
+                <li><a href="questionBank/question-bank.html">Question Bank</a></li>
+                <li><a href="tracker.html#past-papers">Past Papers</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../lesotho/conversions.html">Conversions</a></li>
+                <li><a href="../lesotho/interest.html">Simple &amp; Compound Interest</a></li>
+                <li><a href="../lesotho/linear-equations.html">Linear Equations</a></li>
+                <li><a href="../lesotho/functions.html">Functions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Student Room Africa. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy</a> &middot;
+            <a href="#">Terms</a> &middot;
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</footer>
+
+    <script>
+        // Pagination and checkbox logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const rows = document.querySelectorAll('.page-row');
+            const prevBtn = document.getElementById('prevPageBtn');
+            const nextBtn = document.getElementById('nextPageBtn');
+            const pageInfo = document.getElementById('pageInfo');
+            let currentPage = 1;
+            const rowsPerPage = 9;
+            const totalPages = Math.ceil(rows.length / rowsPerPage);
+            
+            function showPage(page) {
+                let visibleCount = 0;
+                const start = (page - 1) * rowsPerPage;
+                const end = start + rowsPerPage;
+                
+                rows.forEach((row, index) => {
+                    if (index >= start && index < end) {
+                        row.style.display = '';
+                        visibleCount++;
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+                
+                currentPage = page;
+                pageInfo.innerText = `Page ${currentPage} of ${totalPages}`;
+                prevBtn.disabled = currentPage === 1;
+                nextBtn.disabled = currentPage === totalPages;
+            }
+            
+            prevBtn.addEventListener('click', () => {
+                if (currentPage > 1) showPage(currentPage - 1);
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                if (currentPage < totalPages) showPage(currentPage + 1);
+            });
+            
+            // Mutual exclusivity for checkboxes
+            const watchedChecks = document.querySelectorAll('.watched-check');
+            const notWatchedChecks = document.querySelectorAll('.not-watched-check');
+            
+            function makeMutuallyExclusive(watchedCb, notWatchedCb) {
+                watchedCb.addEventListener('change', function() {
+                    if (watchedCb.checked) {
+                        notWatchedCb.checked = false;
+                    } else {
+                        if (!notWatchedCb.checked) {
+                            watchedCb.checked = true;
+                        }
+                    }
+                    saveStates();
+                });
+                
+                notWatchedCb.addEventListener('change', function() {
+                    if (notWatchedCb.checked) {
+                        watchedCb.checked = false;
+                    } else {
+                        if (!watchedCb.checked) {
+                            notWatchedCb.checked = true;
+                        }
+                    }
+                    saveStates();
+                });
+            }
+            
+            // Pair by data-group
+            const watchedMap = new Map();
+            const notWatchedMap = new Map();
+            
+            watchedChecks.forEach(cb => {
+                const group = cb.getAttribute('data-group');
+                if (group) watchedMap.set(group, cb);
+            });
+            
+            notWatchedChecks.forEach(cb => {
+                const group = cb.getAttribute('data-group');
+                if (group) notWatchedMap.set(group, cb);
+            });
+            
+            for (const [group, watchedCb] of watchedMap) {
+                const notWatchedCb = notWatchedMap.get(group);
+                if (notWatchedCb) {
+                    makeMutuallyExclusive(watchedCb, notWatchedCb);
+                }
+            }
+            
+            // Load and save states to localStorage
+            function saveStates() {
+                const states = {};
+                watchedChecks.forEach(cb => {
+                    const group = cb.getAttribute('data-group');
+                    if (group) states[`${group}_watched`] = cb.checked;
+                });
+                notWatchedChecks.forEach(cb => {
+                    const group = cb.getAttribute('data-group');
+                    if (group) states[`${group}_notWatched`] = cb.checked;
+                });
+                localStorage.setItem('trackerStates', JSON.stringify(states));
+            }
+            
+            function loadStates() {
+                const saved = localStorage.getItem('trackerStates');
+                if (saved) {
+                    const states = JSON.parse(saved);
+                    watchedChecks.forEach(cb => {
+                        const group = cb.getAttribute('data-group');
+                        if (group && states[`${group}_watched`] !== undefined) {
+                            cb.checked = states[`${group}_watched`];
+                        }
+                    });
+                    notWatchedChecks.forEach(cb => {
+                        const group = cb.getAttribute('data-group');
+                        if (group && states[`${group}_notWatched`] !== undefined) {
+                            cb.checked = states[`${group}_notWatched`];
+                        }
+                    });
+                }
+            }
+            
+            loadStates();
+            showPage(1);
+        });
+    </script>
+    <script src="../js/contentScript.js"></script>
+    <script src="../js/mobileNav.js"></script>
+
+</body>
+</html>

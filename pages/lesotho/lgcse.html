@@ -6,270 +6,270 @@
     <title>The Student Room | LGCSE Mathematics — Subject Hub</title>
     <link rel="stylesheet" href="../css/contentStyles.css"/>
 
-<style>
-    /* Local accent tokens — matches the site's blue accent
-       instead of this page's old one-off gold palette. */
-    :root {
-        --page-accent: #5b9dfb;      /* readable blue for text/links */
-        --page-accent-line: #1f6feb; /* slightly deeper, for borders */
-        --page-accent-bg: rgba(31, 111, 235, 0.08);
-        --page-accent-bg-hover: rgba(31, 111, 235, 0.12);
-    }
-
-    /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
-    .custom-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        width: 100%;
-        padding: 1rem;
-    }
-
-    @media (min-width: 992px) {
-        .custom-container {
-            max-width: 960px;
+    <style>
+        /* Local accent tokens — matches the site's blue accent
+        instead of this page's old one-off gold palette. */
+        :root {
+            --page-accent: #5b9dfb;      /* readable blue for text/links */
+            --page-accent-line: #1f6feb; /* slightly deeper, for borders */
+            --page-accent-bg: rgba(31, 111, 235, 0.08);
+            --page-accent-bg-hover: rgba(31, 111, 235, 0.12);
         }
-    }
 
-    @media (min-width: 1200px) {
+        /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
         .custom-container {
-            max-width: 1140px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 1rem;
         }
-    }
 
-    @media (max-width: 576px) {
-        .custom-container {
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
+        @media (min-width: 992px) {
+            .custom-container {
+                max-width: 960px;
+            }
         }
-    }
 
-    .page-body {
-        padding: 2rem 0;
-    }
+        @media (min-width: 1200px) {
+            .custom-container {
+                max-width: 1140px;
+            }
+        }
 
-    /* hero / header section */
-    .hero-section {
-        padding: 1.5rem 2rem;
-        border-radius: 24px;
-        margin: 0 0 2rem 0;
-    }
+        @media (max-width: 576px) {
+            .custom-container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
 
-    .hero-section h1 {
-        font-family: var(--font-heading, 'Lora', 'Georgia', serif);
-        font-weight: 800;
-        font-size: 2.2rem;
-        margin: 0 0 0.5rem 0;
-        letter-spacing: -0.01em;
-        color: var(--text-primary, #fff);
-    }
-
-    .hero-section p {
-        margin: 0;
-        color: #bbb;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
-    /* section titles */
-    .section-title {
-        font-family: var(--font-heading, 'Lora', 'Georgia', serif);
-        font-weight: 700;
-        font-size: 1.6rem;
-        margin: 1.5rem 0 0.5rem 0;
-        color: var(--text-primary, #fff);
-        border-left: 4px solid var(--page-accent-line);
-        padding-left: 1rem;
-    }
-
-    .section-sub {
-        color: #888;
-        font-size: 0.85rem;
-        margin-top: -0.25rem;
-        margin-bottom: 1.5rem;
-    }
-
-    /* topics grid */
-    .topics-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 0.8rem;
-        margin: 1rem 0 2rem 0;
-    }
-
-    .topic-link-card {
-        background: rgba(255,255,255,0.02);
-        border-radius: 40px;
-        padding: 0.6rem 1.2rem;
-        border: 1px solid #333a44;
-        text-decoration: none;
-        color: #ddd;
-        font-size: 0.85rem;
-        font-weight: 500;
-        transition: all 0.2s;
-        display: inline-block;
-        text-align: center;
-    }
-
-    .topic-link-card:hover {
-        border-color: var(--page-accent-line);
-        background: var(--page-accent-bg);
-        color: var(--page-accent);
-    }
-
-    .topic-category-group {
-        margin-bottom: 2rem;
-    }
-
-    .topic-category-group h4 {
-        font-family: 'Manrope', 'Inter', sans-serif;
-        font-weight: 600;
-        font-size: 1.1rem;
-        margin: 0 0 0.8rem 0;
-        color: var(--text-primary, #fff);
-        letter-spacing: -0.2px;
-    }
-
-    .badge {
-        display: inline-block;
-        background: var(--page-accent-bg-hover);
-        padding: 0.2rem 0.6rem;
-        border-radius: 20px;
-        font-size: 0.65rem;
-        font-weight: 500;
-        color: var(--page-accent);
-        margin-left: 0.5rem;
-        vertical-align: middle;
-    }
-
-    .extended-note {
-        background: var(--page-accent-bg);
-        border-radius: 16px;
-        padding: 1rem 1.5rem;
-        margin: 1.5rem 0;
-        font-size: 0.9rem;
-        line-height: 1.5;
-        color: #ccc;
-        border-left: 3px solid var(--page-accent-line);
-    }
-
-    .extended-note strong {
-        color: var(--page-accent);
-    }
-
-    hr {
-        margin: 2rem 0;
-        border: none;
-        height: 1px;
-        background: linear-gradient(to right, var(--border, #2e2a24), transparent);
-    }
-
-    .footer-note {
-        background: var(--page-accent-bg);
-        border-radius: 16px;
-        padding: 1rem 1.5rem;
-        border-left: 3px solid var(--page-accent-line);
-        margin-top: 2rem;
-    }
-
-    .footer-note p {
-        margin: 0;
-        font-size: 0.85rem;
-        color: #bbb;
-    }
-
-    /* ═══════════════════════════════════════════════════════
-       RESOURCE CARDS — single source of truth
-       ═══════════════════════════════════════════════════════ */
-    .resource-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1.5rem;
-        margin: 0;
-    }
-
-    .resource-card {
-        background: rgba(255,255,255,0.03);
-        border-radius: 20px;
-        padding: 1.5rem;
-        border: 1px solid #2a2a2a;
-        transition: all 0.2s ease;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .resource-card:hover {
-        border-color: var(--page-accent-line);
-        background: var(--page-accent-bg);
-        transform: translateY(-2px);
-    }
-
-    /* icon — white */
-    .resource-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 36px;
-        height: 36px;
-        margin-bottom: 0.75rem;
-        color: var(--text-primary);
-    }
-
-    .resource-icon svg {
-        width: 100%;
-        height: 100%;
-    }
-
-    /* title — h4, font-size NOT set (inherits from contentStyles) */
-    .resource-card h4 {
-        font-family: var(--font-heading, 'Manrope', sans-serif);
-        font-weight: 700;
-        letter-spacing: -0.005em;
-        text-transform: none;
-        margin: 0;
-        color: #bbb;
-        line-height: 1.3;
-    }
-
-    /* description — hidden on small screens */
-    .resource-card p {
-        margin: 0.6rem 0 0 0;
-        color: var(--text-muted, #8a8a8a);
-        font-size: 0.85rem;
-        line-height: 1.4;
-    }
-
-    /* Small screens: 2 per row + hide descriptions */
-    @media (max-width: 640px) {
         .page-body {
-            padding: 1rem 0;
+            padding: 2rem 0;
         }
+
+        /* hero / header section */
         .hero-section {
-            padding: 1rem 1.2rem;
+            padding: 1.5rem 2rem;
+            border-radius: 24px;
+            margin: 0 0 2rem 0;
         }
+
         .hero-section h1 {
+            font-family: var(--font-heading, 'Lora', 'Georgia', serif);
+            font-weight: 800;
+            font-size: 2.2rem;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.01em;
+            color: var(--text-primary, #fff);
+        }
+
+        .hero-section p {
+            margin: 0;
+            color: #bbb;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* section titles */
+        .section-title {
+            font-family: var(--font-heading, 'Lora', 'Georgia', serif);
+            font-weight: 700;
             font-size: 1.6rem;
+            margin: 1.5rem 0 0.5rem 0;
+            color: var(--text-primary, #fff);
+            border-left: 4px solid var(--page-accent-line);
+            padding-left: 1rem;
         }
+
+        .section-sub {
+            color: #888;
+            font-size: 0.85rem;
+            margin-top: -0.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* topics grid */
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem;
+            margin: 1rem 0 2rem 0;
+        }
+
+        .topic-link-card {
+            background: rgba(255,255,255,0.02);
+            border-radius: 40px;
+            padding: 0.6rem 1.2rem;
+            border: 1px solid #333a44;
+            text-decoration: none;
+            color: #ddd;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .topic-link-card:hover {
+            border-color: var(--page-accent-line);
+            background: var(--page-accent-bg);
+            color: var(--page-accent);
+        }
+
+        .topic-category-group {
+            margin-bottom: 2rem;
+        }
+
+        .topic-category-group h4 {
+            font-family: 'Manrope', 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0 0 0.8rem 0;
+            color: var(--text-primary, #fff);
+            letter-spacing: -0.2px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--page-accent-bg-hover);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 500;
+            color: var(--page-accent);
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .extended-note {
+            background: var(--page-accent-bg);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #ccc;
+            border-left: 3px solid var(--page-accent-line);
+        }
+
+        .extended-note strong {
+            color: var(--page-accent);
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, var(--border, #2e2a24), transparent);
+        }
+
+        .footer-note {
+            background: var(--page-accent-bg);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            border-left: 3px solid var(--page-accent-line);
+            margin-top: 2rem;
+        }
+
+        .footer-note p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #bbb;
+        }
+
+        /* ═══════════════════════════════════════════════════════
+        RESOURCE CARDS — single source of truth
+        ═══════════════════════════════════════════════════════ */
         .resource-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 0;
         }
+
         .resource-card {
-            padding: 1rem 0.75rem;
-            border-radius: 14px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 1.5rem;
+            border: 1px solid #2a2a2a;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
+
+        .resource-card:hover {
+            border-color: var(--page-accent-line);
+            background: var(--page-accent-bg);
+            transform: translateY(-2px);
+        }
+
+        /* icon — white */
         .resource-icon {
-            width: 28px;
-            height: 28px;
-            margin-bottom: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
         }
+
+        .resource-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* title — h4, font-size NOT set (inherits from contentStyles) */
+        .resource-card h4 {
+            font-family: var(--font-heading, 'Manrope', sans-serif);
+            font-weight: 700;
+            letter-spacing: -0.005em;
+            text-transform: none;
+            margin: 0;
+            color: #bbb;
+            line-height: 1.3;
+        }
+
+        /* description — hidden on small screens */
         .resource-card p {
-            display: none;
+            margin: 0.6rem 0 0 0;
+            color: var(--text-muted, #8a8a8a);
+            font-size: 0.85rem;
+            line-height: 1.4;
         }
-    }
-</style>
+
+        /* Small screens: 2 per row + hide descriptions */
+        @media (max-width: 640px) {
+            .page-body {
+                padding: 1rem 0;
+            }
+            .hero-section {
+                padding: 1rem 1.2rem;
+            }
+            .hero-section h1 {
+                font-size: 1.6rem;
+            }
+            .resource-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
+            }
+            .resource-card {
+                padding: 1rem 0.75rem;
+                border-radius: 14px;
+            }
+            .resource-icon {
+                width: 28px;
+                height: 28px;
+                margin-bottom: 0.5rem;
+            }
+            .resource-card p {
+                display: none;
+            }
+        }
+    </style>
 
 </head>
 
@@ -283,7 +283,7 @@
         <div class="nav-links">
             <a href="conversions.html">Study Guide</a>
             <a href="tracker.html">Revision Tracker</a>
-            <a href="tracker.html#past-papers">Past Papers</a>
+            <a href="past-papers.html">Past Papers</a>
             <a href="questionBank/question-bank.html">Question Bank</a>
         </div>
 
@@ -326,37 +326,36 @@
             </div>
 
             <!-- Resource Cards -->
-            <!-- Resource Cards -->
-<div class="resource-grid">
-    <a href="conversions.html" class="resource-card">
-        <span class="resource-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 5c-1.11-.64-2.58-1-4-1-2.52 0-5.1.8-7 2-1.9-1.2-4.48-2-7-2-1.42 0-2.89.36-4 1v15c1.11-.64 2.58-1 4-1 2.52 0 5.1.8 7 2 1.9-1.2 4.48-2 7-2 1.42 0 2.89.36 4 1V5zm-2 13c-1.2-.5-2.61-.7-4-.7-2.52 0-5.1.8-7 2V7c1.9-1.2 4.48-2 7-2 1.39 0 2.8.2 4 .7v12z"/></svg>
-        </span>
-        <h4>Study Guide</h4>
-        <p>Topic-by-topic breakdown with worked examples and exam technique.</p>
-    </a>
-    <a href="tracker.html" class="resource-card">
-        <span class="resource-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-        </span>
-        <h4>Revision Tracker</h4>
-        <p>Mark topics as watched and track your progress — saved automatically, no login needed.</p>
-    </a>
-    <a href="tracker.html#past-papers" class="resource-card">
-        <span class="resource-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-        </span>
-        <h4>Past Papers</h4>
-        <p>Official question papers and mark schemes, 2019–2023, Core and Extended.</p>
-    </a>
-    <a href="questionBank/question-bank.html" class="resource-card">
-        <span class="resource-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 11h-2v-2h2v2zm1.07-5.75c-.32.46-.77.71-1.16 1.05-.44.38-.91.83-.91 1.7h-2c0-1.44.62-1.97 1.16-2.42.36-.31.68-.58.89-.92.22-.34.35-.78.35-1.16 0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5H7c0-2.48 2.02-4.5 4.5-4.5S16 4.02 16 6.5c0 .73-.25 1.35-.93 1.75z"/></svg>
-        </span>
-        <h4>Question Bank</h4>
-        <p>Practice questions from past ECoL papers, grouped by topic.</p>
-    </a>
-</div>
+            <div class="resource-grid">
+                <a href="conversions.html" class="resource-card">
+                    <span class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 5c-1.11-.64-2.58-1-4-1-2.52 0-5.1.8-7 2-1.9-1.2-4.48-2-7-2-1.42 0-2.89.36-4 1v15c1.11-.64 2.58-1 4-1 2.52 0 5.1.8 7 2 1.9-1.2 4.48-2 7-2 1.42 0 2.89.36 4 1V5zm-2 13c-1.2-.5-2.61-.7-4-.7-2.52 0-5.1.8-7 2V7c1.9-1.2 4.48-2 7-2 1.39 0 2.8.2 4 .7v12z"/></svg>
+                    </span>
+                    <h4>Study Guide</h4>
+                    <p>Topic-by-topic breakdown with worked examples and exam technique.</p>
+                </a>
+                <a href="tracker.html" class="resource-card">
+                    <span class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    </span>
+                    <h4>Revision Tracker</h4>
+                    <p>Mark topics as watched and track your progress — saved automatically, no login needed.</p>
+                </a>
+                <a href="past-papers.html" class="resource-card">
+                    <span class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    </span>
+                    <h4>Past Papers</h4>
+                    <p>Official question papers and mark schemes, 2019–2023, Core and Extended.</p>
+                </a>
+                <a href="questionBank/question-bank.html" class="resource-card">
+                    <span class="resource-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 11h-2v-2h2v2zm1.07-5.75c-.32.46-.77.71-1.16 1.05-.44.38-.91.83-.91 1.7h-2c0-1.44.62-1.97 1.16-2.42.36-.31.68-.58.89-.92.22-.34.35-.78.35-1.16 0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5H7c0-2.48 2.02-4.5 4.5-4.5S16 4.02 16 6.5c0 .73-.25 1.35-.93 1.75z"/></svg>
+                    </span>
+                    <h4>Question Bank</h4>
+                    <p>Practice questions from past ECoL papers, grouped by topic.</p>
+                </a>
+            </div>
 
         </div>
     </div>
