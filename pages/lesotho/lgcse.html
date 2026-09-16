@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>The Student Room | LGCSE Mathematics — Subject Hub</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/contentStyles.css"/>
 
     <style>
+        /* Local accent tokens — matches the site's blue accent
+           instead of this page's old one-off gold palette. */
+        :root {
+            --page-accent: #5b9dfb;      /* readable blue for text/links */
+            --page-accent-line: #1f6feb; /* slightly deeper, for borders */
+            --page-accent-bg: rgba(31, 111, 235, 0.08);
+            --page-accent-bg-hover: rgba(31, 111, 235, 0.12);
+        }
+
         /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
         .custom-container {
             max-width: 1200px;
@@ -42,20 +49,19 @@
 
         /* hero / header section */
         .hero-section {
-            /* border-left: 6px solid #f4b942; */
             padding: 1.5rem 2rem;
             border-radius: 24px;
             margin: 0 0 2rem 0;
-            /* background: rgba(244, 185, 66, 0.05); */
         }
 
         .hero-section h1 {
-            font-family: 'Zilla Slab', serif;
+            font-family: var(--font-heading, 'Lora', 'Georgia', serif);
             font-weight: 700;
             font-size: 2.2rem;
             margin: 0 0 0.5rem 0;
             letter-spacing: -0.01em;
-            color: #ffda9e;
+            color: var(--text-primary, #fff);
+            font-weight:800;
         }
 
         .hero-section p {
@@ -84,16 +90,18 @@
         }
 
         .resource-card:hover {
-            border-color: #f4b942;
-            background: rgba(244, 185, 66, 0.05);
+            border-color: var(--page-accent-line);
+            background: var(--page-accent-bg);
             transform: translateY(-2px);
         }
 
         .resource-card h3 {
-            font-family: 'Zilla Slab', serif;
+            font-family: var(--font-heading, 'Lora', 'Georgia', serif);
             font-size: 1.4rem;
             margin: 0 0 0.5rem 0;
-            color: #ffcf8a;
+            color: var(--text-primary, #fff);
+            font-weight:800;
+            text-transform:capitalize;
         }
 
         .resource-card p {
@@ -103,20 +111,14 @@
             line-height: 1.4;
         }
 
-        .resource-card .card-note {
-            margin-top: 0.75rem;
-            font-size: 0.75rem;
-            color: #777;
-        }
-
         /* section titles */
         .section-title {
-            font-family: 'Zilla Slab', serif;
+            font-family: var(--font-heading, 'Lora', 'Georgia', serif);
             font-weight: 700;
             font-size: 1.6rem;
             margin: 1.5rem 0 0.5rem 0;
-            color: #ffda9e;
-            border-left: 4px solid #f4b942;
+            color: var(--text-primary, #fff);
+            border-left: 4px solid var(--page-accent-line);
             padding-left: 1rem;
         }
 
@@ -150,9 +152,9 @@
         }
 
         .topic-link-card:hover {
-            border-color: #f4b942;
-            background: rgba(244, 185, 66, 0.1);
-            color: #ffcf8a;
+            border-color: var(--page-accent-line);
+            background: var(--page-accent-bg);
+            color: var(--page-accent);
         }
 
         .topic-category-group {
@@ -160,53 +162,53 @@
         }
 
         .topic-category-group h4 {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Manrope', 'Inter', sans-serif;
             font-weight: 600;
             font-size: 1.1rem;
             margin: 0 0 0.8rem 0;
-            color: #ffcf8a;
+            color: var(--text-primary, #fff);
             letter-spacing: -0.2px;
         }
 
         .badge {
             display: inline-block;
-            background: #1e3a2f;
+            background: var(--page-accent-bg-hover);
             padding: 0.2rem 0.6rem;
             border-radius: 20px;
             font-size: 0.65rem;
             font-weight: 500;
-            color: #ffda9e;
+            color: var(--page-accent);
             margin-left: 0.5rem;
             vertical-align: middle;
         }
 
         .extended-note {
-            background: rgba(36, 56, 48, 0.25);
+            background: var(--page-accent-bg);
             border-radius: 16px;
             padding: 1rem 1.5rem;
             margin: 1.5rem 0;
             font-size: 0.9rem;
             line-height: 1.5;
             color: #ccc;
-            border-left: 3px solid #4a7c6b;
+            border-left: 3px solid var(--page-accent-line);
         }
 
         .extended-note strong {
-            color: #ffcf8a;
+            color: var(--page-accent);
         }
 
         hr {
             margin: 2rem 0;
             border: none;
             height: 1px;
-            background: linear-gradient(to right, #2e2a24, transparent);
+            background: linear-gradient(to right, var(--border, #2e2a24), transparent);
         }
 
         .footer-note {
-            background: rgba(36, 56, 48, 0.3);
+            background: var(--page-accent-bg);
             border-radius: 16px;
             padding: 1rem 1.5rem;
-            border-left: 3px solid #f4b942;
+            border-left: 3px solid var(--page-accent-line);
             margin-top: 2rem;
         }
 
@@ -246,7 +248,7 @@
             <a href="tracker.html#past-papers">Past Papers</a>
             <a href="questionBank/question-bank.html">Question Bank</a>
         </div>
-        
+
         <div class="nav-right">
             <button class="search-btn">
                 <span class="search-icon">🔍</span>
@@ -258,7 +260,7 @@
 
     <!-- SCRIMBA BANNER -->
     <div class="scrimba-banner">
-        Learn frontend, backend, and AI from our course partner 
+        Learn frontend, backend, and AI from our course partner
         <a href="#">Scrimba</a>
     </div>
 
@@ -278,40 +280,31 @@
     <!-- PAGE LAYOUT with Bootstrap-like container behavior -->
     <div class="custom-container">
         <div class="page-body">
-            
+
             <!-- Hero Section -->
             <div class="hero-section">
                 <h1>LGCSE Mathematics</h1>
-                <p>Your complete revision hub for the Lesotho General Certificate of Secondary Education Mathematics examination. Access study guides, track your progress, and master every topic across both Core and Extended levels.</p>
+                <p>Everything you need for the LGCSE Mathematics exam — study guides, progress tracking, and practice questions for Core and Extended level.</p>
             </div>
 
             <!-- Resource Cards -->
             <div class="resource-grid">
                 <a href="conversions.html" class="resource-card">
                     <h3>Study Guide</h3>
-                    <p>Complete syllabus breakdown, exam structure, and proven study strategies for Core and Extended levels.</p>
-                    <div class="card-note">Includes topic explanations, worked examples, and exam techniques</div>
+                    <p>Topic-by-topic breakdown with worked examples and exam technique.</p>
                 </a>
                 <a href="tracker.html" class="resource-card">
                     <h3>Revision Tracker</h3>
-                    <p>Track video lessons, mark topics as watched, and monitor past paper progress. Your data saves automatically to your device.</p>
-                    <div class="card-note">No login required. Works offline. Persistent storage across sessions.</div>
+                    <p>Mark topics as watched and track your progress — saved automatically, no login needed.</p>
                 </a>
                 <a href="tracker.html#past-papers" class="resource-card">
                     <h3>Past Papers</h3>
-                    <p>Download official question papers, answer booklets, and detailed mark schemes for Core and Extended examinations.</p>
-                    <div class="card-note">Includes June and November series from 2019 to 2023</div>
+                    <p>Official question papers and mark schemes, 2019–2023, Core and Extended.</p>
                 </a>
                 <a href="questionBank/question-bank.html" class="resource-card">
                     <h3>Question Bank</h3>
-                    <p>Practice with topic-specific questions from past ECoL examination papers. Each question is labeled with its original paper and mark allocation.</p>
-                    <div class="card-note">Questions grouped by topic for focused revision. Updated every two days.</div>
+                    <p>Practice questions from past ECoL papers, grouped by topic.</p>
                 </a>
-            </div>
-
-            <div style="margin-top: 1.5rem; font-size: 0.8rem; color: #666; text-align: center;">
-                <p>LGCSE Mathematics: Lesotho General Certificate of Secondary Education<br>
-                Syllabus content aligns with the official Lesotho Examinations Council framework. Updates are published termly to reflect any syllabus changes.</p>
             </div>
 
         </div>
@@ -320,24 +313,6 @@
     <!-- -- FOOTER -- -->
     <footer class="site-footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>LGCSE SYLLABUS</h4>
-                <ul>
-                    <li><a href="#">Physics</a></li>
-                    <li><a href="#">Mathematics</a></li>
-                    <li><a href="#">Chemistry</a></li>
-                    <li><a href="#">Physical Science</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href="conversions.html">Study Guide</a></li>
-                    <li><a href="tracker.html">Revision Tracker</a></li>
-                    <li><a href="questionBank/question-bank.html">Question Bank</a></li>
-                    <li><a href="tracker.html#past-papers">Past Papers</a></li>
-                </ul>
-            </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>

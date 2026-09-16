@@ -1,46 +1,31 @@
-/* ============================================================
-   FONT LOADING — all font work lives here.
-   ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
-/* ============================================================
-   RESET
-   ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ============================================================
-   ROOT — premium black (Vercel/Linear cool neutral)
-   Swap the block below to try different vibes.
-   ============================================================ */
+/* Manrope: body text — clean, warm, highly readable at small sizes.
+   Fraunces: headings — an editorial serif for a "premium study guide" feel.
+   JetBrains Mono: numbers/code/formulas — precise, easy to scan in columns. */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 :root {
-    /* ── Premium black palette: cool neutral ── */
-    --bg: #0a0a0a;
-    --bg-secondary: #111111;
-    --bg-tertiary: #171717;
-    --border: #262626;
-    --nav-bg: #0a0a0a;
-
-    /* ── Text ladder ── */
-    --text-primary:   #f5f5f5;      /* headings, emphasized text */
-    --text-body:      #d4d4d4;      /* NEW: regular body copy */
-    --text-secondary: #a3a3a3;      /* labels, secondary UI */
-    --text-muted:     #8a8a8a;      /* was #737373 — lifted for readability */
-
+    --bg: #1b1b1b;
+    --bg-secondary: #232323;
+    --bg-tertiary: #2a2a2a;
+    --border: #393939;
+    --text-primary: #fff;
+    --text-secondary: #b3b3b3;
+    --text-muted: #858585;
     --accent: #1f6feb;
     --accent-bg: #0d2137;
-    --code-bg: #171717;
+    --code-bg: #303030;
+    --nav-bg: #1b1b1b;
     --sidebar-width: 260px;
     --toc-width: 248px;
-
-    --font: 'Sora', 'Outfit', system-ui, sans-serif;
-    --font-heading: 'Manrope', 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font: 'Manrope', system-ui, sans-serif;
+    --font-heading: 'Fraunces', Georgia, serif;
     --font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', 'Courier New', monospace;
+    /* dropdown transition speed */
     --drop-speed: 0.22s;
 }
 
-/* ============================================================
-   BASE
-   ============================================================ */
 html { font-size: 16px; scroll-behavior: smooth; }
 body {
     background: var(--bg);
@@ -49,11 +34,9 @@ body {
     font-size: 1.2rem;
     line-height: 1.7;
     min-height: 100vh;
-    font-optical-sizing: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
 }
+
+h3 { color: #00ffcc; text-transform: uppercase; }
 
 a { color: #75b5fd; text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -81,13 +64,14 @@ a:hover { text-decoration: underline; }
     color: var(--text-primary);
     white-space: nowrap;
     text-decoration: none;
-    letter-spacing: 0;
 }
 .logo-m { font-size: 1.3rem; color: #fff; }
 .logo-mdn { color: #fff; }
 .logo-cursor { color: #75b5fd; }
 
-.scrimba-banner { display: none !important; }
+.scrimba-banner {
+    display: none !important;
+}
 
 .nav-links {
     display: flex;
@@ -111,11 +95,7 @@ a:hover { text-decoration: underline; }
     white-space: nowrap;
     text-decoration: none;
 }
-.nav-links a:hover, .nav-links button:hover {
-    background: var(--bg-tertiary);
-    color: var(--text-primary);
-    text-decoration: none;
-}
+.nav-links a:hover, .nav-links button:hover { background: var(--bg-tertiary); color: var(--text-primary); text-decoration: none; }
 .nav-links .chevron { font-size: 0.65rem; opacity: 0.7; }
 
 .nav-right {
@@ -138,7 +118,7 @@ a:hover { text-decoration: underline; }
     cursor: pointer;
     white-space: nowrap;
 }
-.search-btn:hover { border-color: #444; color: var(--text-secondary); }
+.search-btn:hover { border-color: #555; color: var(--text-secondary); }
 .search-icon { font-size: 0.85rem; }
 .kbd { background: var(--bg); border: 1px solid var(--border); border-radius: 3px; padding: 1px 5px; font-size: 0.7rem; }
 .nav-icon-btn {
@@ -225,6 +205,8 @@ a:hover { text-decoration: underline; }
 /* ── LAYOUT ── */
 .page-layout {
     display: flex;
+    /* max-width: 1440px; */
+    /* margin: 0 auto; */
 }
 
 /* ── LEFT SIDEBAR ── */
@@ -268,6 +250,7 @@ a:hover { text-decoration: underline; }
 /* ── SIDEBAR NAV BASE ── */
 .sidebar-nav { list-style: none; }
 
+/* Every direct child <a> or plain <button> in sidebar-nav */
 .sidebar-nav > li > a,
 .sidebar-nav > li > button:not(.sidebar-drop-btn) {
     display: block;
@@ -291,6 +274,7 @@ a:hover { text-decoration: underline; }
     text-decoration: none;
 }
 
+/* Active page highlight */
 .sidebar-nav li.active > a,
 .sidebar-nav li.active > .sidebar-drop-btn {
     color: #75b5fd;
@@ -300,7 +284,7 @@ a:hover { text-decoration: underline; }
     font-weight: 500;
 }
 
-/* ── SIDEBAR SECTION LABEL ── */
+/* ── SIDEBAR SECTION LABEL (e.g. "Advanced") ── */
 .sidebar-section-btn {
     display: flex;
     align-items: center;
@@ -332,7 +316,20 @@ a:hover { text-decoration: underline; }
 
 /* ══════════════════════════════════════════════
    ── SIDEBAR DROPDOWN ──
+   Usage in HTML:
+   <li class="sidebar-drop-item">
+       <button class="sidebar-drop-btn">Topic Name</button>
+       <ul class="sidebar-drop-menu">
+           <li><a href="page.html#section">Sub-section</a></li>
+           ...
+       </ul>
+   </li>
+   Add class "open" to .sidebar-drop-item to expand.
+   Add class "active" to .sidebar-drop-item when
+   the current page belongs to this topic.
 ══════════════════════════════════════════════ */
+
+/* The toggle button that acts as the topic row */
 .sidebar-drop-btn {
     display: flex;
     align-items: center;
@@ -350,6 +347,7 @@ a:hover { text-decoration: underline; }
     text-align: left;
     border-radius: 0;
     transition: color var(--drop-speed), background var(--drop-speed);
+    /* reserve left edge for active indicator */
     border-left: 2px solid transparent;
 }
 .sidebar-drop-btn:hover {
@@ -357,19 +355,23 @@ a:hover { text-decoration: underline; }
     background: var(--bg-tertiary);
 }
 
+/* The chevron arrow inside the button */
 .sidebar-drop-btn .drop-arrow {
     font-size: 0.65rem;
     color: var(--text-muted);
     flex-shrink: 0;
     transition: transform var(--drop-speed) ease;
     display: inline-block;
+    /* start pointing right (▶) */
     transform: rotate(0deg);
 }
 
+/* When open: arrow rotates down */
 .sidebar-drop-item.open > .sidebar-drop-btn .drop-arrow {
     transform: rotate(90deg);
 }
 
+/* Active topic: button gets accent highlight */
 .sidebar-drop-item.active > .sidebar-drop-btn {
     color: #75b5fd;
     background: var(--accent-bg);
@@ -377,18 +379,25 @@ a:hover { text-decoration: underline; }
     padding-left: 14px;
 }
 
+/* The collapsible sub-menu */
 .sidebar-drop-menu {
     list-style: none;
+    /* collapsed by default */
     max-height: 0;
     overflow: hidden;
     transition: max-height var(--drop-speed) ease;
+    /* background: var(--bg-secondary); */
+    /* border-left: 2px solid var(--border); */
     margin-left: 16px;
 }
 
+/* Expanded state — JS sets this by adding .open to parent li */
 .sidebar-drop-item.open > .sidebar-drop-menu {
+    /* large enough to never clip; adjust if a topic has many items */
     max-height: 600px;
 }
 
+/* Sub-menu links */
 .sidebar-drop-menu li a {
     display: block;
     padding: 5px 14px;
@@ -404,6 +413,7 @@ a:hover { text-decoration: underline; }
     text-decoration: none;
 }
 
+/* Highlight the exact sub-page that is active */
 .sidebar-drop-menu li.active > a {
     color: #75b5fd;
     font-weight: 500;
@@ -450,39 +460,23 @@ a:hover { text-decoration: underline; }
 .toc-list li a:hover { color: var(--text-primary); text-decoration: none; }
 .toc-list li.active a { color: #75b5fd; border-left-color: var(--accent); font-weight: 500; }
 
-/* ══════════════════════════════════════════════
-   ── ARTICLE / HEADINGS ──
-══════════════════════════════════════════════ */
+/* ── ARTICLE ── */
 h1 {
     font-family: var(--font-heading);
-    font-size: 2.75rem;
-    font-weight: 800;
-    letter-spacing: -0.01em;
-    line-height: 1.2;
+    font-size: 2.4rem;
+    font-weight: 700;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
-
 h2 {
     font-family: var(--font-heading);
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 1.35;
+    font-size: 1.4rem;
+    font-weight: 600;
     margin: 40px 0 16px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--border);
 }
-
-h3 {
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 0.005em;
-    line-height: 1.4;
-    margin: 28px 0 12px;
-    color: #00ffcc;
-    text-transform: uppercase;
-}
+h3 { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 600; margin: 28px 0 12px; }
 
 p { margin-bottom: 16px; }
 p strong { font-weight: 700; }
@@ -495,7 +489,7 @@ code {
     font-size: 0.875em;
     font-family: var(--font-mono);
     color: #d4d4d4;
-    border: 1px solid #444;
+    border: 1px solid #fff;
 }
 
 .code-block {
@@ -558,10 +552,16 @@ ul { margin-left: 2rem; }
 .indent-p2 { margin-left: 2.6rem; }
 .indent-p3 { margin-left: 3.9rem; }
 .indent-p4 { margin-left: 4.2rem; }
-
 /* ── RESPONSIVE ── */
+
+/* At 1100px: right TOC disappears AND left sidebar becomes mobile-style */
 @media (max-width: 1100px) {
-    .right-toc { display: none; }
+    /* Hide right TOC */
+    .right-toc {
+        display: none;
+    }
+    
+    /* Make left sidebar behave like mobile (hidden by default, appears via hamburger) */
     .left-sidebar {
         position: fixed;
         left: -270px;
@@ -574,27 +574,72 @@ ul { margin-left: 2rem; }
         background: var(--nav-bg);
         padding-top: 60px;
     }
-    .left-sidebar.open { left: 0; }
-    .hamburger { display: flex; }
-    .nav-links { display: none; }
-    .main-content { padding: 32px 24px; }
-    .inline-toc { display: block; }
-    .breadcrumb-bar { font-size: 0.875rem; }
-    .scrimba-banner { display: none; }
+    
+    .left-sidebar.open {
+        left: 0;
+    }
+    
+    /* Show hamburger button */
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Hide main nav links on tablet */
+    .nav-links {
+        display: none;
+    }
+    
+    /* Adjust main content padding for tablet */
+    .main-content {
+        padding: 32px 24px;
+    }
+    
+    /* Show inline TOC for tablet */
+    .inline-toc {
+        display: block;
+    }
+    
+    /* Adjust breadcrumb for tablet */
+    .breadcrumb-bar {
+        font-size: 0.875rem;
+    }
+    
+    .scrimba-banner {
+        display: none;
+    }
 }
 
+/* At 768px: finer adjustments for mobile phones */
 @media (max-width: 768px) {
-    .main-content { padding: 24px 16px; }
-    h1 { font-size: 2.1rem; }
-    h2 { font-size: 1.35rem; }
-    .breadcrumb-right { display: none; }
-    .breadcrumb-bar { font-size: 0.8125rem; }
+    .main-content {
+        padding: 24px 16px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .breadcrumb-right {
+        display: none;
+    }
+    
+    .breadcrumb-bar {
+        font-size: 0.8125rem;
+    }
 }
 
+/* For screens between 1100px and 769px, hide inline TOC on desktop */
 @media (min-width: 1101px) {
-    .inline-toc { display: none; }
+    .inline-toc {
+        display: none;
+    }
 }
 
+/* For screens below 1100px, inline TOC is visible */
 @media (max-width: 1100px) {
     .inline-toc {
         display: block;
@@ -604,11 +649,13 @@ ul { margin-left: 2rem; }
         margin: 0 0 32px;
         background: var(--bg-secondary);
     }
+    
     .inline-toc .toc-heading {
         font-size: 0.85rem;
         color: var(--text-primary);
         margin-bottom: 10px;
     }
+    
     .inline-toc .toc-list li a {
         padding: 5px 0 5px 12px;
         font-size: 0.875rem;
@@ -618,9 +665,10 @@ ul { margin-left: 2rem; }
 table {
     display: block;
     overflow-x: auto;
-    white-space: nowrap;
+    white-space: nowrap; 
     margin: 1.5rem 0;
 }
+
 
 .math-table th, .math-table td {
     font-size: clamp(14px, 4vw, 18px);
@@ -638,7 +686,16 @@ table {
     margin: 1.5rem 0; width: 100%; box-sizing: border-box;
 }
 
-.version { color: #fff !important; }
+.version {
+    color: #fff !important;
+}
+
+
+
+
+
+
+
 
 /* ── FOOTER ── */
 .site-footer {
@@ -665,15 +722,27 @@ table {
     margin-bottom: 0.75rem;
 }
 
-.footer-section ul { list-style: none; margin: 0; padding: 0; }
-.footer-section ul li { margin-bottom: 0.4rem; }
+.footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.4rem;
+}
+
 .footer-section ul li a {
     color: var(--text-secondary);
     font-size: 0.85rem;
     text-decoration: none;
     transition: color 0.15s;
 }
-.footer-section ul li a:hover { color: var(--text-primary); text-decoration: none; }
+
+.footer-section ul li a:hover {
+    color: var(--text-primary);
+    text-decoration: none;
+}
 
 .footer-bottom {
     max-width: 1200px;
@@ -686,18 +755,41 @@ table {
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-.footer-bottom p { margin: 0; font-size: 0.75rem; color: var(--text-muted); }
-.footer-bottom a { color: var(--text-muted); text-decoration: none; font-size: 0.75rem; }
-.footer-bottom a:hover { color: var(--text-primary); text-decoration: underline; }
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.footer-bottom a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.footer-bottom a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
 
 @media (max-width: 640px) {
-    .footer-content { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-    .footer-bottom { flex-direction: column; text-align: center; }
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
 }
+
 @media (max-width: 480px) {
-    .footer-content { grid-template-columns: 1fr; gap: 1rem; }
-    .site-footer { padding: 1.5rem 1rem 1rem; }
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .site-footer {
+        padding: 1.5rem 1rem 1rem;
+    }
 }
-
-
-
