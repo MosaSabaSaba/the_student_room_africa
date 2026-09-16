@@ -484,6 +484,10 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 { 
+   color: var(--text-primary);
+}
+
 p { margin-bottom: 16px; }
 p strong { font-weight: 700; }
 p em { font-style: italic; }
