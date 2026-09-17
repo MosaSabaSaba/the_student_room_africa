@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 350" width="100%" height="100%">
+    <defs>
+        <!-- Dark theme styles for an ultra-sharp, high-contrast matrix graphic -->
+        <style>
+        /* Heavy 3.5px white borders to ensure grids stand out sharply */
+        .geometry-line { stroke: #ffffff; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        /* Solid white markers representing the sequence dots */
+        .sequence-dot { fill: #ffffff; }
+        /* Large, bold typography for the pattern labels */
+        .annotation-text { font-family: Arial, sans-serif; font-size: 26px; font-weight: bold; fill: #ffffff; text-anchor: middle; letter-spacing: 0.5px; }
+        </style>
+    </defs>
+
+    <!-- Dark high-contrast background -->
+    <rect width="100%" height="100%" fill="none"></rect>
+
+    <!-- ==================== PATTERN 1 ==================== -->
+    <!-- 2x2 grid with 1 dot in the bottom-left corner -->
+    <g id="pattern-1" transform="translate(40, 20)">
+        <!-- Grid Structure (Each square is 50x50px) -->
+        <rect x="50" y="130" width="100" height="100" class="geometry-line"></rect>
+        <line x1="100" y1="130" x2="100" y2="230" class="geometry-line"></line>
+        <line x1="50" y1="180" x2="150" y2="180" class="geometry-line"></line>
+        
+        <!-- Pattern Dots -->
+        <circle cx="75" cy="205" r="8" class="sequence-dot"></circle>
+
+        <!-- Label -->
+        <text x="100" y="280" class="annotation-text">pattern 1</text>
+    </g>
+
+    <!-- ==================== PATTERN 2 ==================== -->
+    <!-- 3x3 grid with dots filling the bottom-left corner L-shape (length 2) -->
+    <g id="pattern-2" transform="translate(190, 20)">
+        <!-- Grid Structure -->
+        <rect x="50" y="80" width="150" height="150" class="geometry-line"></rect>
+        <line x1="100" y1="80" x2="100" y2="230" class="geometry-line"></line>
+        <line x1="150" y1="80" x2="150" y2="230" class="geometry-line"></line>
+        <line x1="50" y1="130" x2="200" y2="130" class="geometry-line"></line>
+        <line x1="50" y1="180" x2="200" y2="180" class="geometry-line"></line>
+
+        <!-- Pattern Dots -->
+        <circle cx="75" cy="205" r="8" class="sequence-dot"></circle>
+        <circle cx="75" cy="155" r="8" class="sequence-dot"></circle>
+        <circle cx="125" cy="205" r="8" class="sequence-dot"></circle>
+
+        <!-- Label -->
+        <text x="125" y="280" class="annotation-text">pattern 2</text>
+    </g>
+
+    <!-- ==================== PATTERN 3 ==================== -->
+    <!-- 4x4 grid with dots filling the bottom-left corner L-shape (length 3) -->
+    <g id="pattern-3" transform="translate(390, 20)">
+        <!-- Grid Structure -->
+        <rect x="50" y="30" width="200" height="200" class="geometry-line"></rect>
+        <line x1="100" y1="30" x2="100" y2="230" class="geometry-line"></line>
+        <line x1="150" y1="30" x2="150" y2="230" class="geometry-line"></line>
+        <line x1="200" y1="30" x2="200" y2="230" class="geometry-line"></line>
+        <line x1="50" y1="80" x2="250" y2="80" class="geometry-line"></line>
+        <line x1="50" y1="130" x2="250" y2="130" class="geometry-line"></line>
+        <line x1="50" y1="180" x2="250" y2="180" class="geometry-line"></line>
+
+        <!-- Pattern Dots -->
+        <circle cx="75" cy="205" r="8" class="sequence-dot"></circle>
+        <circle cx="75" cy="155" r="8" class="sequence-dot"></circle>
+        <circle cx="75" cy="105" r="8" class="sequence-dot"></circle>
+        <circle cx="125" cy="205" r="8" class="sequence-dot"></circle>
+        <circle cx="175" cy="205" r="8" class="sequence-dot"></circle>
+
+        <!-- Label -->
+        <text x="150" y="280" class="annotation-text">pattern 3</text>
+    </g>
+
+    <!-- ==================== PATTERN 4 ==================== -->
+    <!-- 5x5 grid left empty as a workspace question -->
+    <g id="pattern-4" transform="translate(680, 20)">
+        <!-- Grid Structure -->
+        <rect x="50" y="30" width="250" height="250" class="geometry-line"></rect>
+        <line x1="100" y1="30" x2="100" y2="280" class="geometry-line"></line>
+        <line x1="150" y1="30" x2="150" y2="280" class="geometry-line"></line>
+        <line x1="200" y1="30" x2="200" y2="280" class="geometry-line"></line>
+        <line x1="250" y1="30" x2="250" y2="280" class="geometry-line"></line>
+        <line x1="50" y1="80" x2="300" y2="80" class="geometry-line"></line>
+        <line x1="50" y1="130" x2="300" y2="130" class="geometry-line"></line>
+        <line x1="50" y1="180" x2="300" y2="180" class="geometry-line"></line>
+        <line x1="50" y1="230" x2="300" y2="230" class="geometry-line"></line>
+
+        <!-- Label -->
+        <text x="175" y="330" class="annotation-text">pattern 4</text>
+    </g>
+</svg>

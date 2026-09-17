@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 440" width="100%" height="auto" style="background: transparent; border-radius: 8px; max-width: 100%;">
+    <!-- Transparent background -->
+    <rect width="100%" height="100%" fill="transparent"></rect>
+
+    <!-- Definition block for dimension arrows -->
+    <defs>
+        <marker id="arrow-left" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 10,0 L 0,5 L 10,10 Z" fill="#ffffff"></path>
+        </marker>
+        <marker id="arrow-right" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0,0 L 10,5 L 0,10 Z" fill="#ffffff"></path>
+        </marker>
+        <!-- Flipped arrows (rotated 180°) -->
+        <marker id="arrow-left-flip" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <g transform="rotate(180 5 5)">
+                <path d="M 10,0 L 0,5 L 10,10 Z" fill="#ffffff"></path>
+            </g>
+        </marker>
+        <marker id="arrow-right-flip" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <g transform="rotate(180 5 5)">
+                <path d="M 0,0 L 10,5 L 0,10 Z" fill="#ffffff"></path>
+            </g>
+        </marker>
+    </defs>
+
+    <!-- Main Geometry Polygon Group -->
+    <g stroke="#ffffff" stroke-width="3.5" fill="none" stroke-linejoin="miter">
+        <!-- Perimeter path tracing points P -> Q -> R -> S -> T -> U -> V -> W -> Z -->
+        <path d="M 120,320 L 120,180 L 330,180 L 330,90 L 560,90 L 560,230 L 800,230 L 800,320 Z"></path>
+
+        <!-- Right Angle Squares -->
+        <g stroke-width="2">
+            <rect x="120" y="300" width="20" height="20"></rect> <!-- P -->
+            <rect x="120" y="180" width="20" height="20"></rect> <!-- Q -->
+            <rect x="330" y="90" width="20" height="20"></rect>  <!-- S -->
+            <rect x="540" y="90" width="20" height="20"></rect>  <!-- T -->
+            <rect x="780" y="230" width="20" height="20"></rect> <!-- V -->
+            <rect x="780" y="300" width="20" height="20"></rect> <!-- W -->
+        </g>
+    </g>
+
+    <!-- Dimension Lines and Arrows (USING FLIPPED ARROWS) -->
+    <g stroke="#ffffff" stroke-width="2">
+        <!-- 25 cm Vertical Dimension (Left) -->
+        <line x1="50" y1="200" x2="50" y2="180" marker-end="url(#arrow-left-flip)"></line>
+        <line x1="50" y1="300" x2="50" y2="320" marker-end="url(#arrow-left-flip)"></line>
+        
+        <!-- 15 cm Vertical Dimension (Right) -->
+        <line x1="870" y1="245" x2="870" y2="230" marker-end="url(#arrow-left-flip)"></line>
+        <line x1="870" y1="305" x2="870" y2="320" marker-end="url(#arrow-left-flip)"></line>
+
+        <!-- 35 cm Horizontal Dimension (Top) -->
+        <line x1="375" y1="55" x2="330" y2="55" marker-end="url(#arrow-left-flip)"></line>
+        <line x1="515" y1="55" x2="560" y2="55" marker-end="url(#arrow-left-flip)"></line>
+
+        <!-- 45 cm Vertical Total Height Dimension (Center) -->
+        <line x1="445" y1="125" x2="445" y2="90" marker-end="url(#arrow-left-flip)"></line>
+        <line x1="445" y1="225" x2="445" y2="320" marker-end="url(#arrow-left-flip)"></line>
+
+        <!-- 115 cm Total Horizontal Base Dimension (Bottom) -->
+        <line x1="370" y1="375" x2="120" y2="375" marker-end="url(#arrow-left-flip)"></line>
+        <line x1="510" y1="375" x2="800" y2="375" marker-end="url(#arrow-left-flip)"></line>
+    </g>
+
+    <!-- Text and Labels -->
+    <g font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff">
+        <!-- Vertex Labels -->
+        <text x="95" y="350" font-size="28">P</text>
+        <text x="95" y="165" font-size="28">Q</text>
+        <text x="340" y="210" font-size="28">R</text>
+        <text x="300" y="120" font-size="28">S</text>
+        <text x="580" y="120" font-size="28">T</text>
+        <text x="530" y="260" font-size="28">U</text>
+        <text x="815" y="220" font-size="28">V</text>
+        <text x="815" y="350" font-size="28">W</text>
+
+        <!-- Variable x Label -->
+        <text x="680" y="215" font-size="38" text-anchor="middle" font-style="italic">x</text>
+
+        <!-- Ultra-Enlarged Values Strings Inside Dimensions -->
+        <text x="50" y="258" font-size="34" text-anchor="middle">25 cm</text>
+        <text x="870" y="285" font-size="34" text-anchor="middle">15 cm</text>
+        <text x="445" y="65" font-size="34" text-anchor="middle">35 cm</text>
+        <text x="445" y="185" font-size="34" text-anchor="middle">45 cm</text>
+        <text x="440" y="386" font-size="34" text-anchor="middle">115 cm</text>
+
+        <!-- "NOT TO SCALE" Disclaimer -->
+        <g font-size="18" text-anchor="end" letter-spacing="1">
+            <text x="800" y="40">NOT TO</text>
+            <text x="800" y="65">SCALE</text>
+        </g>
+    </g>
+</svg>

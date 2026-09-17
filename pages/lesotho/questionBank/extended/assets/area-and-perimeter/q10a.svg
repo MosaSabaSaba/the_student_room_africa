@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .tick-mark { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .value-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+        .angle-text { font-family: Arial, sans-serif; font-size: 11px; fill: #ffffff; }
+    </style>
+
+    <!-- Main Triangle ABC -->
+    <!-- Base BC -->
+    <line x1="50" y1="170" x2="230" y2="170" class="geometry-line" />
+    
+    <!-- Side AC -->
+    <line x1="140" y1="30" x2="50" y2="170" class="geometry-line" />
+    
+    <!-- Side AB -->
+    <line x1="140" y1="30" x2="230" y2="170" class="geometry-line" />
+
+    <!-- Congruency Tick Marks -->
+    <!-- Tick on side AC -->
+    <line x1="88" y1="102" x2="101" y2="102" class="tick-mark" />
+    <!-- Tick on side AB -->
+    <line x1="178" y1="98" x2="191" y2="98" class="tick-mark" />
+
+    <!-- Angle Arc at B -->
+    <path d="M 205 170 A 25 25 0 0 1 216.5 149" class="geometry-line" stroke-width="1" />
+
+    <!-- Vertex Labels -->
+    <text x="135" y="22" class="label-text">A</text>
+    <text x="236" y="174" class="label-text">B</text>
+    <text x="36" y="174" class="label-text">C</text>
+
+    <!-- Technical / Measurement Labels -->
+    <text x="184" y="163" class="angle-text">65°</text>
+    <text x="192" y="112" class="value-text">12cm</text>
+    
+    <!-- Notice Text -->
+    <text x="290" y="45" class="label-text">NOT TO</text>
+    <text x="290" y="61" class="label-text">SCALE</text>
+</svg>

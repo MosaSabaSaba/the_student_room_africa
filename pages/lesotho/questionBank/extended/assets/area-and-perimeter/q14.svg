@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 240">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .value-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+        .angle-text { font-family: Arial, sans-serif; font-size: 11px; fill: #ffffff; }
+    </style>
+
+    <!-- Definitions for North Arrowhead -->
+    <defs>
+        <marker id="north-arrow" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 2 L 5 8 L 10 2 L 5 4 z" fill="#ffffff" stroke="none" />
+        </marker>
+    </defs>
+
+    <!-- Border Top Line -->
+    <line x1="10" y1="20" x2="530" y2="20" class="geometry-line" stroke-width="1" />
+
+    <!-- Main Triangle PQR -->
+    <!-- Side PQ -->
+    <line x1="70" y1="95" x2="430" y2="92" class="geometry-line" />
+    
+    <!-- Side PR -->
+    <line x1="70" y1="95" x2="220" y2="200" class="geometry-line" />
+    
+    <!-- Side RQ -->
+    <line x1="220" y1="200" x2="430" y2="92" class="geometry-line" />
+
+    <!-- North Indicator Line at P -->
+    <line x1="70" y1="95" x2="70" y2="38" class="geometry-line" marker-end="url(#north-arrow)" />
+
+    <!-- Angle Arc at R -->
+    <path d="M 197 184 A 30 30 0 0 1 241 189" class="geometry-line" stroke-width="1" />
+
+    <!-- Point Labels -->
+    <text x="52" y="100" class="label-text">P</text>
+    <text x="438" y="97" class="label-text">Q</text>
+    <text x="216" y="218" class="label-text">R</text>
+    <text x="60" y="30" class="label-text">North</text>
+
+    <!-- Measurement Values -->
+    <text x="206" y="176" class="angle-text">108°</text>
+    <text x="120" y="152" class="value-text">40 m</text>
+    <text x="325" y="160" class="value-text">50 m</text>
+    
+    <!-- Notice Text -->
+    <text x="475" y="35" class="label-text">NOT TO</text>
+    <text x="475" y="51" class="label-text">SCALE</text>
+</svg>

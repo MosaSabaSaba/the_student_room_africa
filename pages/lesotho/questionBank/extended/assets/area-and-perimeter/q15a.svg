@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .value-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+    </style>
+
+    <!-- Main Right-Angled Triangle OPQ -->
+    <!-- Base OP -->
+    <line x1="40" y1="150" x2="270" y2="150" class="geometry-line" />
+    
+    <!-- Perpendicular Height PQ -->
+    <line x1="270" y1="150" x2="270" y2="30" class="geometry-line" />
+    
+    <!-- Hypotenuse OQ -->
+    <line x1="40" y1="150" x2="270" y2="30" class="geometry-line" />
+
+    <!-- Right-Angle Indicator Square at P -->
+    <path d="M 258 150 L 258 138 L 270 138" class="geometry-line" stroke-width="1.2" />
+
+    <!-- Point Labels -->
+    <text x="24" y="154" class="label-text">O</text>
+    <text x="275" y="158" class="label-text">P</text>
+    <text x="272" y="24" class="label-text">Q</text>
+
+    <!-- Measurement Values -->
+    <text x="145" y="166" class="value-text" text-anchor="middle">5.4 cm</text>
+    <text x="282" y="94" class="value-text">4.8 cm</text>
+    
+    <!-- Notice Text -->
+    <text x="360" y="85" class="label-text">NOT TO</text>
+    <text x="360" y="101" class="label-text">SCALE</text>
+</svg>

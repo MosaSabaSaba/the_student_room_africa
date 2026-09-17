@@ -319,7 +319,7 @@
                                 <img src="../assets/img/p4q76.svg" alt="Patterns with shaded and unshaded squares" />
                             </div>
                             (a) Complete the table.
-                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 500px; margin: 1rem 0; font-size: 0.9rem; color: #ddd; border: 1px solid #3a3530;">
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 500px; margin: 1rem 0; font-size: 0.9rem; color: #ddd;">
                                 <thead>
                                     <tr style="border-bottom: 1px solid #ffffff;">
                                         <th style="padding: 6px 10px; color: #ffffff; border: 1px solid #ffffff;">Pattern number</th>
@@ -455,100 +455,8 @@
                         <div class="question-text">
                             (a) The diagram shows patterns with dotted and plain tiles.
                             <div class="question-image">
-                                <!-- <img src="assets/img/questions/paper4/q84-tiles.png" alt="Patterns with dotted and plain tiles" /> -->
+                                <img src="assets/sequences/q84.svg" alt="Patterns with dotted and plain tiles" />
                             
-                                <svg xmlns="http://w3.org" viewBox="0 0 1100 350" width="100%" height="100%">
-                                    <defs>
-                                        <!-- Dark theme styles for an ultra-sharp, high-contrast matrix graphic -->
-                                        <style>
-                                        .bg-rect { fill: #1e1e1e; }
-                                        /* Heavy 3.5px white borders to ensure grids stand out sharply */
-                                        .geometry-line { stroke: #ffffff; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-                                        /* Solid white markers representing the sequence dots */
-                                        .sequence-dot { fill: #ffffff; }
-                                        /* Large, bold typography for the pattern labels */
-                                        .annotation-text { font-family: Arial, sans-serif; font-size: 26px; font-weight: bold; fill: #ffffff; text-anchor: middle; letter-spacing: 0.5px; }
-                                        </style>
-                                    </defs>
-
-                                    <!-- Dark high-contrast background -->
-                                    <rect width="100%" height="100%" class="bg-rect"></rect>
-
-                                    <!-- ==================== PATTERN 1 ==================== -->
-                                    <!-- 2x2 grid with 1 dot in the bottom-left corner -->
-                                    <g id="pattern-1" transform="translate(40, 20)">
-                                        <!-- Grid Structure (Each square is 50x50px) -->
-                                        <rect x="50" y="130" width="100" height="100" class="geometry-line"></rect>
-                                        <line x1="100" y1="130" x2="100" y2="230" class="geometry-line"></line>
-                                        <line x1="50" y1="180" x2="150" y2="180" class="geometry-line"></line>
-                                        
-                                        <!-- Pattern Dots -->
-                                        <circle cx="75" cy="205" r="8" class="sequence-dot"></circle>
-
-                                        <!-- Label -->
-                                        <text x="100" y="280" class="annotation-text">pattern 1</text>
-                                    </g>
-
-                                    <!-- ==================== PATTERN 2 ==================== -->
-                                    <!-- 3x3 grid with dots filling the bottom-left corner L-shape (length 2) -->
-                                    <g id="pattern-2" transform="translate(190, 20)">
-                                        <!-- Grid Structure -->
-                                        <rect x="50" y="80" width="150" height="150" class="geometry-line"></rect>
-                                        <line x1="100" y1="80" x2="100" y2="230" class="geometry-line"></line>
-                                        <line x1="150" y1="80" x2="150" y2="230" class="geometry-line"></line>
-                                        <line x1="50" y1="130" x2="200" y2="130" class="geometry-line"></line>
-                                        <line x1="50" y1="180" x2="200" y2="180" class="geometry-line"></line>
-
-                                        <!-- Pattern Dots -->
-                                        <circle cx="75" cy="205" r="8" class="sequence-dot"></circle>
-                                        <circle cx="75" cy="155" r="8" class="sequence-dot"></circle>
-                                        <circle cx="125" cy="205" r="8" class="sequence-dot"></circle>
-
-                                        <!-- Label -->
-                                        <text x="125" y="280" class="annotation-text">pattern 2</text>
-                                    </g>
-
-                                    <!-- ==================== PATTERN 3 ==================== -->
-                                    <!-- 4x4 grid with dots filling the bottom-left corner L-shape (length 3) -->
-                                    <g id="pattern-3" transform="translate(390, 20)">
-                                        <!-- Grid Structure -->
-                                        <rect x="50" y="30" width="200" height="200" class="geometry-line"></rect>
-                                        <line x1="100" y1="30" x2="100" y2="230" class="geometry-line"></line>
-                                        <line x1="150" y1="30" x2="150" y2="230" class="geometry-line"></line>
-                                        <line x1="200" y1="30" x2="200" y2="230" class="geometry-line"></line>
-                                        <line x1="50" y1="80" x2="250" y2="80" class="geometry-line"></line>
-                                        <line x1="50" y1="130" x2="250" y2="130" class="geometry-line"></line>
-                                        <line x1="50" y1="180" x2="250" y2="180" class="geometry-line"></line>
-
-                                        <!-- Pattern Dots -->
-                                        <circle cx="75" cy="205" r="8" class="sequence-dot"></circle>
-                                        <circle cx="75" cy="155" r="8" class="sequence-dot"></circle>
-                                        <circle cx="75" cy="105" r="8" class="sequence-dot"></circle>
-                                        <circle cx="125" cy="205" r="8" class="sequence-dot"></circle>
-                                        <circle cx="175" cy="205" r="8" class="sequence-dot"></circle>
-
-                                        <!-- Label -->
-                                        <text x="150" y="280" class="annotation-text">pattern 3</text>
-                                    </g>
-
-                                    <!-- ==================== PATTERN 4 ==================== -->
-                                    <!-- 5x5 grid left empty as a workspace question -->
-                                    <g id="pattern-4" transform="translate(680, 20)">
-                                        <!-- Grid Structure -->
-                                        <rect x="50" y="30" width="250" height="250" class="geometry-line"></rect>
-                                        <line x1="100" y1="30" x2="100" y2="280" class="geometry-line"></line>
-                                        <line x1="150" y1="30" x2="150" y2="280" class="geometry-line"></line>
-                                        <line x1="200" y1="30" x2="200" y2="280" class="geometry-line"></line>
-                                        <line x1="250" y1="30" x2="250" y2="280" class="geometry-line"></line>
-                                        <line x1="50" y1="80" x2="300" y2="80" class="geometry-line"></line>
-                                        <line x1="50" y1="130" x2="300" y2="130" class="geometry-line"></line>
-                                        <line x1="50" y1="180" x2="300" y2="180" class="geometry-line"></line>
-                                        <line x1="50" y1="230" x2="300" y2="230" class="geometry-line"></line>
-
-                                        <!-- Label -->
-                                        <text x="175" y="330" class="annotation-text">pattern 4</text>
-                                    </g>
-                                </svg>
                             </div>
                             (i) Complete the 4th pattern.
                         </div>
@@ -559,7 +467,7 @@
                         </div>
                         <div class="question-text">
                             (ii) Complete the table below.
-                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff;">
                                 <thead>
                                     <tr style="border-bottom: 2px solid #ffffff;">
                                         <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Pattern number</th>
@@ -656,107 +564,11 @@
                             <br>
                             Each diagram is made from dots and lines in which the area of each square is 1 square unit.
                             <div class="question-image">
-                                <!-- <img src="assets/img/questions/paper4/q87-dots-lines.png" alt="Diagrams with dots and lines" /> -->
+                                <img src="assets/sequences/q87.svg" alt="Diagrams with dots and lines" />
                             
-                                <svg xmlns="http://w3.org" viewBox="0 0 540 160" width="100%" height="100%">
-                                <!-- White Background -->
-                                <rect width="100%" height="100%" fill="transparent" />
-
-                                <!-- Styles for crisp lines and text -->
-                                <style>
-                                    .grid-line { stroke: #ffffff; stroke-width: 1.5; stroke-linecap: round; }
-                                    .dot { fill: #ffffff; }
-                                    .label { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; fill: #ffffff; text-anchor: middle; }
-                                </style>
-
-                                <!-- ================= DIAGRAM 1 ================= -->
-                                <g id="diagram-1">
-                                    <!-- Grid Lines -->
-                                    <line x1="50" y1="80" x2="80" y2="80" class="grid-line" />
-                                    <line x1="50" y1="110" x2="80" y2="110" class="grid-line" />
-                                    <line x1="50" y1="80" x2="50" y2="110" class="grid-line" />
-                                    <line x1="80" y1="80" x2="80" y2="110" class="grid-line" />
-                                    
-                                    <!-- Dots (Vertices) -->
-                                    <circle cx="50" cy="80" r="2.5" class="dot" />
-                                    <circle cx="80" cy="80" r="2.5" class="dot" />
-                                    <circle cx="50" cy="110" r="2.5" class="dot" />
-                                    <circle cx="80" cy="110" r="2.5" class="dot" />
-                                    
-                                    <!-- Label -->
-                                    <text x="65" y="140" class="label">Diagram 1</text>
-                                </g>
-
-                                <!-- ================= DIAGRAM 2 ================= -->
-                                <g id="diagram-2">
-                                    <!-- Horizontal Lines -->
-                                    <line x1="180" y1="50" x2="240" y2="50" class="grid-line" />
-                                    <line x1="180" y1="80" x2="240" y2="80" class="grid-line" />
-                                    <line x1="180" y1="110" x2="240" y2="110" class="grid-line" />
-                                    
-                                    <!-- Vertical Lines -->
-                                    <line x1="180" y1="50" x2="180" y2="110" class="grid-line" />
-                                    <line x1="210" y1="50" x2="210" y2="110" class="grid-line" />
-                                    <line x1="240" y1="50" x2="240" y2="110" class="grid-line" />
-                                    
-                                    <!-- Dots (Vertices) -->
-                                    <circle cx="180" cy="50" r="2.5" class="dot" />
-                                    <circle cx="210" cy="50" r="2.5" class="dot" />
-                                    <circle cx="240" cy="50" r="2.5" class="dot" />
-                                    <circle cx="180" cy="80" r="2.5" class="dot" />
-                                    <circle cx="210" cy="80" r="2.5" class="dot" />
-                                    <circle cx="240" cy="80" r="2.5" class="dot" />
-                                    <circle cx="180" cy="110" r="2.5" class="dot" />
-                                    <circle cx="210" cy="110" r="2.5" class="dot" />
-                                    <circle cx="240" cy="110" r="2.5" class="dot" />
-                                    
-                                    <!-- Label -->
-                                    <text x="210" y="140" class="label">Diagram 2</text>
-                                </g>
-
-                                <!-- ================= DIAGRAM 3 ================= -->
-                                <g id="diagram-3">
-                                    <!-- Horizontal Lines -->
-                                    <line x1="360" y1="20" x2="450" y2="20" class="grid-line" />
-                                    <line x1="360" y1="50" x2="450" y2="50" class="grid-line" />
-                                    <line x1="360" y1="80" x2="450" y2="80" class="grid-line" />
-                                    <line x1="360" y1="110" x2="450" y2="110" class="grid-line" />
-                                    
-                                    <!-- Vertical Lines -->
-                                    <line x1="360" y1="20" x2="360" y2="110" class="grid-line" />
-                                    <line x1="390" y1="20" x2="390" y2="110" class="grid-line" />
-                                    <line x1="420" y1="20" x2="420" y2="110" class="grid-line" />
-                                    <line x1="450" y1="20" x2="450" y2="110" class="grid-line" />
-                                    
-                                    <!-- Dots (Vertices) -->
-                                    <circle cx="360" cy="20" r="2.5" class="dot" />
-                                    <circle cx="390" cy="20" r="2.5" class="dot" />
-                                    <circle cx="420" cy="20" r="2.5" class="dot" />
-                                    <circle cx="450" cy="20" r="2.5" class="dot" />
-                                    
-                                    <circle cx="360" cy="50" r="2.5" class="dot" />
-                                    <circle cx="390" cy="50" r="2.5" class="dot" />
-                                    <circle cx="420" cy="50" r="2.5" class="dot" />
-                                    <circle cx="450" cy="50" r="2.5" class="dot" />
-                                    
-                                    <circle cx="360" cy="80" r="2.5" class="dot" />
-                                    <circle cx="390" cy="80" r="2.5" class="dot" />
-                                    <circle cx="420" cy="80" r="2.5" class="dot" />
-                                    <circle cx="450" cy="80" r="2.5" class="dot" />
-                                    
-                                    <circle cx="360" cy="110" r="2.5" class="dot" />
-                                    <circle cx="390" cy="110" r="2.5" class="dot" />
-                                    <circle cx="420" cy="110" r="2.5" class="dot" />
-                                    <circle cx="450" cy="110" r="2.5" class="dot" />
-                                    
-                                    <!-- Label -->
-                                    <text x="405" y="140" class="label">Diagram 3</text>
-                                </g>
-                                </svg>
-
                             </div>
                             (a) Complete the table for diagram 4.
-                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff;">
                                 <thead>
                                     <tr style="border-bottom: 2px solid #ffffff;">
                                         <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">diagram</th>
@@ -845,95 +657,8 @@
                             <br>
                             The diagrams are made up of dots and lines. Each line is one centimetre long.
                             <div class="question-image">
-                                <!-- <img src="assets/img/questions/paper4/q88-dots-lines-2.png" alt="Diagrams with dots and lines" /> -->
+                                <img src="assets/sequences/q88.svg" alt="Diagrams with dots and lines" />
                             
-                                <svg xmlns="http://w3.org" viewBox="0 0 720 160" width="100%" height="100%">
-                                <!-- White Background -->
-                                <rect width="100%" height="100%" fill="transparent" />
-
-                                <!-- Styles for crisp lines and text -->
-                                <style>
-                                    .grid-line { stroke: #ffffff; stroke-width: 1.5; stroke-linecap: round; }
-                                    .dot { fill: #ffffff; }
-                                    .label { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; fill: #ffffff; text-anchor: middle; }
-                                </style>
-
-                                <!-- ================= DIAGRAM 1 ================= -->
-                                <g id="diagram-1">
-                                    <!-- Grid Lines -->
-                                    <line x1="50" y1="80" x2="80" y2="80" class="grid-line" />
-                                    <line x1="50" y1="110" x2="80" y2="110" class="grid-line" />
-                                    <line x1="50" y1="80" x2="50" y2="110" class="grid-line" />
-                                    <line x1="80" y1="80" x2="80" y2="110" class="grid-line" />
-                                    
-                                    <!-- Dots (Vertices) -->
-                                    <circle cx="50" cy="80" r="2.5" class="dot" />
-                                    <circle cx="80" cy="80" r="2.5" class="dot" />
-                                    <circle cx="50" cy="110" r="2.5" class="dot" />
-                                    <circle cx="80" cy="110" r="2.5" class="dot" />
-                                    
-                                    <!-- Label -->
-                                    <text x="65" y="140" class="label">Diagram 1</text>
-                                </g>
-
-                                <!-- ================= DIAGRAM 2 ================= -->
-                                <g id="diagram-2">
-                                    <!-- Horizontal Lines -->
-                                    <line x1="180" y1="50" x2="240" y2="50" class="grid-line" />
-                                    <line x1="180" y1="80" x2="240" y2="80" class="grid-line" />
-                                    <line x1="180" y1="110" x2="240" y2="110" class="grid-line" />
-                                    
-                                    <!-- Vertical Lines -->
-                                    <line x1="180" y1="50" x2="180" y2="110" class="grid-line" />
-                                    <line x1="210" y1="50" x2="210" y2="110" class="grid-line" />
-                                    <line x1="240" y1="50" x2="240" y2="110" class="grid-line" />
-                                    
-                                    <!-- Dots -->
-                                    <circle cx="180" cy="50" r="2.5" class="dot" />
-                                    <circle cx="210" cy="50" r="2.5" class="dot" />
-                                    <circle cx="240" cy="50" r="2.5" class="dot" />
-                                    <circle cx="180" cy="80" r="2.5" class="dot" />
-                                    <circle cx="210" cy="80" r="2.5" class="dot" />
-                                    <circle cx="240" cy="80" r="2.5" class="dot" />
-                                    <circle cx="180" cy="110" r="2.5" class="dot" />
-                                    <circle cx="210" cy="110" r="2.5" class="dot" />
-                                    <circle cx="240" cy="110" r="2.5" class="dot" />
-                                    
-                                    <!-- Label -->
-                                    <text x="210" y="140" class="label">Diagram 2</text>
-                                </g>
-
-                                <!-- ================= DIAGRAM 3 ================= -->
-                                <g id="diagram-3">
-                                    <!-- Horizontal Lines -->
-                                    <line x1="340" y1="20" x2="430" y2="20" class="grid-line" />
-                                    <line x1="340" y1="50" x2="430" y2="50" class="grid-line" />
-                                    <line x1="340" y1="80" x2="430" y2="80" class="grid-line" />
-                                    <line x1="340" y1="110" x2="430" y2="110" class="grid-line" />
-                                    
-                                    <!-- Vertical Lines -->
-                                    <line x1="340" y1="20" x2="340" y2="110" class="grid-line" />
-                                    <line x1="370" y1="20" x2="370" y2="110" class="grid-line" />
-                                    <line x1="400" y1="20" x2="400" y2="110" class="grid-line" />
-                                    <line x1="430" y1="20" x2="430" y2="110" class="grid-line" />
-                                    
-                                    <!-- Dots -->
-                                    <circle cx="340" cy="20" r="2.5" class="dot" /> <circle cx="370" cy="20" r="2.5" class="dot" /> <circle cx="400" cy="20" r="2.5" class="dot" /> <circle cx="430" cy="20" r="2.5" class="dot" />
-                                    <circle cx="340" cy="50" r="2.5" class="dot" /> <circle cx="370" cy="50" r="2.5" class="dot" /> <circle cx="400" cy="50" r="2.5" class="dot" /> <circle cx="430" cy="50" r="2.5" class="dot" />
-                                    <circle cx="340" cy="80" r="2.5" class="dot" /> <circle cx="370" cy="80" r="2.5" class="dot" /> <circle cx="400" cy="80" r="2.5" class="dot" /> <circle cx="430" cy="80" r="2.5" class="dot" />
-                                    <circle cx="340" cy="110" r="2.5" class="dot" /> <circle cx="370" cy="110" r="2.5" class="dot" /> <circle cx="400" cy="110" r="2.5" class="dot" /> <circle cx="430" cy="110" r="2.5" class="dot" />
-                                    
-                                    <!-- Label -->
-                                    <text x="385" y="140" class="label">Diagram 3</text>
-                                </g>
-
-                                <!-- ================= DIAGRAM 4 (Completed) ================= -->
-                                <g id="diagram-4">
-                                    
-                                    <!-- Label -->
-                                    <text x="590" y="150" class="label">Diagram 4</text>
-                                </g>
-                                </svg>
                             </div>
                             (a) Draw the next diagram in the sequence.
                         </div>
@@ -944,7 +669,7 @@
                         </div>
                         <div class="question-text">
                             (b) The table shows some information about the diagrams.
-                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff;">
                                 <thead>
                                     <tr style="border-bottom: 2px solid #ffffff;">
                                         <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Diagram</th>
@@ -1098,7 +823,7 @@
                             The table shows the first five terms of sequences A, B and C.
                             <br>
                             (a) Complete the table for the 6th term of each sequence.
-                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 500px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 500px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff;">
                                 <thead>
                                     <tr style="border-bottom: 2px solid #ffffff;">
                                         <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Term</th>
@@ -1203,7 +928,7 @@
                         </div>
                         <div class="question-text">
                             (b) Complete the table.
-                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff; border: 1px solid #3a3530;">
+                            <table style="border-collapse: collapse; text-align: center; width: 100%; max-width: 400px; margin: 1rem 0; font-size: 0.9rem; color: #ffffff;">
                                 <thead>
                                     <tr style="border-bottom: 2px solid #ffffff;">
                                         <th style="padding: 6px 10px; font-weight: 600; color: #ffffff; border: 1px solid #ffffff;">Pattern</th>
