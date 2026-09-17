@@ -204,3 +204,23 @@
         max-width: 100%;
     }
 }
+
+/* nthoena e ne tlameha hoea into globalStyles.css mara ke e tlisa ka mona because it is already linked to all practice pages */
+.unit-header {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.unit-header h1,
+.unit-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+    text-transform: capitalize;
+}
+
+.unit-header h3 {
+    font-style: normal;
+    margin-top: 5px;
+}
