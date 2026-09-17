@@ -3,29 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Question Bank |  LGCSE Mathematics</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <title>Question Bank | LGCSE Mathematics</title>
     <link rel="stylesheet" href="../../css/contentStyles.css" />
     <link rel="stylesheet" href="../../css/svg.css" />
+    <link rel="stylesheet" href="../../css/globalFonts.css" />
     <link rel="stylesheet" href="assets/css/question-bank.css" />
-
     <style>
         .main {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            padding: 0rem .5rem 0 .5rem;
         }
-
     </style>
-    
 </head>
 <body>
 
     <!-- TOP NAV -->
     <nav class="top-nav">
-        <!-- <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button> -->
         <a href="../../../index.html" class="logo">
             <span class="logo-m">Student Room Africa</span>
         </a>
@@ -35,7 +27,7 @@
             <a href="../tracker.html#past-papers">Past Papers</a>
             <a href="../questionBank/question-bank.html">Question Bank</a>
         </div>
-        
+
         <div class="nav-right">
             <button class="search-btn">
                 <span class="search-icon">🔍</span>
@@ -68,9 +60,17 @@
 
     <!-- PAGE LAYOUT -->
     <div class="main">
-        <a href="core/core.html" class="plain-link core">Core</a>
-        <a href="extended/extended.html" class="plain-link extended">Extended</a>
-        <a href="practice/practice-questions.html" class="plain-link practice">Practice Questions</a>
+        <div class="topic-cards-grid">
+            <a href="core/core.html" class="topic-card">
+                <span class="topic-card-name">Core</span>
+            </a>
+            <a href="extended/extended.html" class="topic-card">
+                <span class="topic-card-name">Extended</span>
+            </a>
+            <a href="practice/practice-questions.html" class="topic-card">
+                <span class="topic-card-name">Practice Questions</span>
+            </a>
+        </div>
     </div>
 
     <script src="../../js/contentScript.js"></script>

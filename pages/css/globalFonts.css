@@ -320,3 +320,42 @@
     margin: 2rem 0;
     text-transform: uppercase;
 }
+
+/* ──────────────────────────────────────────────────────────────
+   TOPIC CARDS GRID — Question Bank topic listing
+   Uses the same card chrome as tracker/past-papers.
+   ────────────────────────────────────────────────────────────── */
+
+.topic-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.topic-card {
+    display: block;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.topic-card:hover {
+    border-color: var(--accent);
+    background: var(--bg-secondary);
+}
+
+.topic-card-name {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--text-body);
+    word-break: break-word;
+}
+
+.topic-card:hover .topic-card-name {
+    color: var(--text-primary);
+}

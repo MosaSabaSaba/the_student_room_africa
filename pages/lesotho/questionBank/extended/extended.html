@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Question Bank |  Extended LGCSE Mathematics</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+    <title>Question Bank | Extended LGCSE Mathematics</title>
     <link rel="stylesheet" href="../../../css/contentStyles.css" />
     <link rel="stylesheet" href="../../../css/svg.css" />
+    <link rel="stylesheet" href="../../../css/globalFonts.css" />
     <link rel="stylesheet" href="../assets/css/question-bank.css" />
 
     <style>
         .main {
-            padding: 1.5rem;
-        }
-
-        ul {
-            font-size: 16px;
-            list-style-type: none;
-            margin: 0;
+            padding: .5rem .5rem 0 .5rem;
         }
     </style>
 </head>
@@ -26,7 +19,6 @@
 
     <!-- TOP NAV -->
     <nav class="top-nav">
-        <!-- <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button> -->
         <a href="../../../../index.html" class="logo">
             <span class="logo-m">Student Room Africa</span>
         </a>
@@ -36,7 +28,7 @@
             <a href="../../tracker.html#past-papers">Past Papers</a>
             <a href="../../questionBank/question-bank.html">Question Bank</a>
         </div>
-        
+
         <div class="nav-right">
             <button class="search-btn">
                 <span class="search-icon">🔍</span>
@@ -74,44 +66,102 @@
             Below is a list of content you must master before sitting for your exams.
         </p>
         <p>
-            We strongly recommend that learners go through each question carefully 
-            for maximum retention. <strong>Working through every problem systematically builds 
-            the muscle memory and sharp pattern recognition needed to instinctively 
+            We strongly recommend that learners go through each question carefully
+            for maximum retention. <strong>Working through every problem systematically builds
+            the muscle memory and sharp pattern recognition needed to instinctively
             solve even the toughest exam questions.</strong>
         </p>
 
-        <ul>
-            <li><a href="basic-operations.html">Basic Operations</a></li>
-            <li><a href="number.html">Number</a></li>
-            <li><a href="estimation.html">Estimation and Limits of Accuracy</a></li>
-            <li><a href="indices.html">Indices and Standard Form</a></li>
-            <li><a href="algebra.html">Algebraic Representation and Manipulation</a></li>
-            <li><a href="linear-equations.html">Linear and Simultaneous Equations</a></li>
-            <li><a href="quadratic-expressions.html">Quadratic Expressions And Equations</a></li>
-            <li><a href="sets.html">Set Language and Notation</a></li>
-            <li><a href="angles.html">Angles</a></li>
-            <li><a href="trigonometry.html">Trigonometry</a></li>
-            <li><a href="constructions.html">Geometrical Constructions and Loci</a></li>
-            <li><a href="bearings.html">Bearings</a></li>
-            <li><a href="geometry.html">Geometrical Terms and Relationships</a></li>
-            <li><a href="ratio.html">Ratio, Proportion, Rates and Percentages</a></li>
-            <li><a href="mensuration.html">Mensuration</a></li>
-            <li><a href="functions.html">Relations and Function Notation</a></li>
-            <li><a href="inequalities.html">Inequalities and Linear Programming</a></li>
-            <li><a href="statistics.html">Statistics and Probability</a></li>
-            <li><a href="matrices.html">Matrices</a></li>
-            <li><a href="finance.html">Personal and Household Finance</a></li>
-            <li><a href="area-and-perimeter.html">Area and Perimeter</a></li>
-            <li><a href="rates.html">Rates of Change</a></li>
-            <li><a href="similarity-and-congruence.html">Similarity and Congruence</a></li>
-            <li><a href="sequences.html">Sequences</a></li>
-            <li><a href="linear-equations-and-graphs.html">Linear Equations and Graphs</a></li>
-            <li><a href="transformation.html">Transformations</a></li>
-            <li><a href="symmetry.html">Symmetry</a></li>
-            <li><a href="vectors.html">Vectors</a></li>
-            <li><a href="proportion.html">Proportion</a></li>
-        </ul>
-        
+        <div class="topic-cards-grid">
+            <a href="basic-operations.html" class="topic-card">
+                <span class="topic-card-name">Basic Operations</span>
+            </a>
+            <a href="number.html" class="topic-card">
+                <span class="topic-card-name">Number</span>
+            </a>
+            <a href="estimation.html" class="topic-card">
+                <span class="topic-card-name">Estimation and Limits of Accuracy</span>
+            </a>
+            <a href="indices.html" class="topic-card">
+                <span class="topic-card-name">Indices and Standard Form</span>
+            </a>
+            <a href="algebra.html" class="topic-card">
+                <span class="topic-card-name">Algebraic Representation and Manipulation</span>
+            </a>
+            <a href="linear-equations.html" class="topic-card">
+                <span class="topic-card-name">Linear and Simultaneous Equations</span>
+            </a>
+            <a href="quadratic-expressions.html" class="topic-card">
+                <span class="topic-card-name">Quadratic Expressions And Equations</span>
+            </a>
+            <a href="sets.html" class="topic-card">
+                <span class="topic-card-name">Set Language and Notation</span>
+            </a>
+            <a href="angles.html" class="topic-card">
+                <span class="topic-card-name">Angles</span>
+            </a>
+            <a href="trigonometry.html" class="topic-card">
+                <span class="topic-card-name">Trigonometry</span>
+            </a>
+            <a href="constructions.html" class="topic-card">
+                <span class="topic-card-name">Geometrical Constructions and Loci</span>
+            </a>
+            <a href="bearings.html" class="topic-card">
+                <span class="topic-card-name">Bearings</span>
+            </a>
+            <a href="geometry.html" class="topic-card">
+                <span class="topic-card-name">Geometrical Terms and Relationships</span>
+            </a>
+            <a href="ratio.html" class="topic-card">
+                <span class="topic-card-name">Ratio, Proportion, Rates and Percentages</span>
+            </a>
+            <a href="mensuration.html" class="topic-card">
+                <span class="topic-card-name">Mensuration</span>
+            </a>
+            <a href="functions.html" class="topic-card">
+                <span class="topic-card-name">Relations and Function Notation</span>
+            </a>
+            <a href="inequalities.html" class="topic-card">
+                <span class="topic-card-name">Inequalities and Linear Programming</span>
+            </a>
+            <a href="statistics.html" class="topic-card">
+                <span class="topic-card-name">Statistics and Probability</span>
+            </a>
+            <a href="matrices.html" class="topic-card">
+                <span class="topic-card-name">Matrices</span>
+            </a>
+            <a href="finance.html" class="topic-card">
+                <span class="topic-card-name">Personal and Household Finance</span>
+            </a>
+            <a href="area-and-perimeter.html" class="topic-card">
+                <span class="topic-card-name">Area and Perimeter</span>
+            </a>
+            <a href="rates.html" class="topic-card">
+                <span class="topic-card-name">Rates of Change</span>
+            </a>
+            <a href="similarity-and-congruence.html" class="topic-card">
+                <span class="topic-card-name">Similarity and Congruence</span>
+            </a>
+            <a href="sequences.html" class="topic-card">
+                <span class="topic-card-name">Sequences</span>
+            </a>
+            <a href="linear-equations-and-graphs.html" class="topic-card">
+                <span class="topic-card-name">Linear Equations and Graphs</span>
+            </a>
+            <a href="transformation.html" class="topic-card">
+                <span class="topic-card-name">Transformations</span>
+            </a>
+            <a href="symmetry.html" class="topic-card">
+                <span class="topic-card-name">Symmetry</span>
+            </a>
+            <a href="vectors.html" class="topic-card">
+                <span class="topic-card-name">Vectors</span>
+            </a>
+            <a href="proportion.html" class="topic-card">
+                <span class="topic-card-name">Proportion</span>
+            </a>
+        </div>
+
     </div>
 
     <!-- -- FOOTER -- -->
