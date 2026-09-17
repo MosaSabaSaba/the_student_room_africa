@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .dashed-line { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4, 4; fill: none; }
+        .dimension-line { stroke: #ffffff; stroke-width: 1.0; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- Definitions for Absolute Oriented Arrowheads -->
+    <defs>
+        <!-- Arrowhead facing LEFT for the radius line -->
+        <marker id="arrow-left" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="180">
+            <path d="M 10 1 L 0 5 L 10 9 z" fill="#ffffff" />
+        </marker>
+        <!-- Arrowhead facing RIGHT for the radius line -->
+        <marker id="arrow-right" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="0">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffffff" />
+        </marker>
+        <!-- Arrowhead facing UP for the top of vertical line -->
+        <marker id="arrow-up" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="360">
+            <path d="M 5 0 L 0 8 L 10 8 z" fill="#ffffff" />
+        </marker>
+        <!-- Arrowhead facing DOWN for the bottom of vertical line -->
+        <marker id="arrow-down" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="6" markerHeight="6" orient="180">
+            <path d="M 5 10 L 0 2 L 10 2 z" fill="#ffffff" />
+        </marker>
+    </defs>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="245" y="65" class="note-text" text-anchor="start">NOT TO</text>
+    <text x="245" y="80" class="note-text" text-anchor="start">SCALE</text>
+
+    <!-- CONICAL GLASS GEOMETRY -->
+    <!-- Top Ellipse Rim -->
+    <ellipse cx="95" cy="45" rx="50" ry="18" class="geometry-line" />
+    
+    <!-- Main Cone Body Sides -->
+    <line x1="45" y1="45" x2="91" y2="140" class="geometry-line" />
+    <line x1="145" y1="45" x2="99" y2="140" class="geometry-line" />
+    
+    <!-- Short Stem/Neck -->
+    <line x1="91" y1="140" x2="91" y2="155" class="geometry-line" />
+    <line x1="99" y1="140" x2="99" y2="155" class="geometry-line" />
+    
+    <!-- Circular/Rectangular Base Stand -->
+    <rect x="70" y="155" width="50" height="8" class="geometry-line" />
+
+    <!-- DIMENSIONS & MEASUREMENT INDICATORS -->
+    <!-- Center Dot in the Top Ellipse Rim -->
+    <circle cx="95" cy="45" r="1.5" fill="#ffffff" />
+    
+    <!-- Radius Dimension Line (4 cm) - Corrected left arrow direction -->
+    <line x1="95" y1="45" x2="145" y2="45" class="dimension-line" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)" />
+    <text x="115" y="38" class="label-text">4 cm</text>
+
+    <!-- Ground Level Dashed Reference Line -->
+    <line x1="125" y1="163" x2="175" y2="163" class="dashed-line" />
+
+    <!-- Vertical Height Dimension Line (10 cm) - Corrected bottom arrow direction -->
+    <line x1="148" y1="45" x2="148" y2="163" class="dimension-line" marker-start="url(#arrow-up)" marker-end="url(#arrow-down)" />
+    <text x="135" y="105" class="label-text">10 cm</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 450" width="100%" height="100%">
+    <!-- Background for high contrast -->
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <!-- Tangent Lines Framework -->
+    <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Bottom horizontal tangent line SBT -->
+        <line x1="120" y1="380" x2="520" y2="380" />
+        
+        <!-- Corrected long angled tangent line tracking perfectly through vertex A (370, 140) down to point T (520, 380) -->
+        <line x1="277.5" y1="-8" x2="520" y2="380" />
+    </g>
+
+    <!-- Main Circle Geometry -->
+    <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Main circle centered at (250, 230) with radius 150 -->
+        <circle cx="250" cy="230" r="150" />
+    </g>
+
+    <!-- Chords, Cyclic Pentagram/Inscribed Lines Framework -->
+    <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <!-- 
+            Grounding Coordinates mapping accurately to image profile (A shifted slightly to link perfectly with tangent):
+            A (Top Right Tangency Point): (370, 140)
+            B (Bottom Center):            (250, 380)
+            C (Top Left):                 (145, 125)
+            P (Middle Right):             (392, 270)
+            Q (Middle Left):              (105, 270)
+            Y (Intersection):             (310, 270)
+        -->
+        <!-- Outer Cyclic Polygon Boundary Chords -->
+        <polygon points="370,140 145,125 105,270 250,380 392,270" />
+
+        <!-- Interior Cross-Chords Connectors -->
+        <line x1="370" y1="140" x2="105" y2="270" />  <!-- Chord AQ -->
+        <line x1="370" y1="140" x2="250" y2="380" />  <!-- Chord AB -->
+        <line x1="145" y1="125" x2="392" y2="270" />  <!-- Chord CP -->
+        <line x1="105" y1="270" x2="392" y2="270" />  <!-- Chord QP -->
+    </g>
+
+    <!-- Angle Arc Markers matching your layout exactly -->
+    <g fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round">
+        <!-- 27° Angle Arc at vertex A covering full angle QAB -->
+        <path d="M 330,163 A 55,55 0 0,0 351,185" />
+        
+        <!-- 40° Angle Arc at vertex Q covering full angle PQB -->
+        <path d="M 145,270 A 40,40 0 0,1 134,293" />
+
+        <!-- 56° Angle Arc at exterior point T (between tangent lines ST and AT) -->
+        <path d="M 480,380 A 40,40 0 0,1 494,342" />
+    </g>
+
+    <!-- Text and Value Annotations Layout -->
+    <g font-family="Arial, sans-serif" fill="#ffffff" font-weight="bold">
+        <!-- Mathematical Point Reference Labels -->
+        <text x="390" y="130" font-size="24" text-anchor="start">A</text>
+        <text x="250" y="415" font-size="24" text-anchor="middle">B</text>
+        <text x="135" y="115" font-size="24" text-anchor="end">C</text>
+        <text x="410" y="280" font-size="24" text-anchor="start">P</text>
+        <text x="85" y="280" font-size="24" text-anchor="end">Q</text>
+        <text x="95" y="380" font-size="24" text-anchor="end">S</text>
+        <text x="535" y="390" font-size="24" text-anchor="start">T</text>
+        <text x="315" y="295" font-size="22" text-anchor="middle" font-style="italic">Y</text>
+
+        <!-- Angle Numerical Value Text Labels -->
+        <text x="320" y="185" font-size="18" text-anchor="middle">27°</text>
+        <text x="145" y="290" font-size="18" text-anchor="start">40°</text>
+        <text x="475" y="335" font-size="18" text-anchor="middle">56°</text>
+
+        <!-- "NOT TO SCALE" Traditional Exam Paper Disclaimer text -->
+        <g font-size="20" text-anchor="start" letter-spacing="1">
+            <text x="530" y="110">NOT TO</text>
+            <text x="530" y="138">SCALE</text>
+        </g>
+    </g>
+</svg>

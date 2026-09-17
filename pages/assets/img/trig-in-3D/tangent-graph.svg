@@ -1,4 +1,4 @@
-<svg width="830" height="500" viewBox="0 0 830 500" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', system-ui, sans-serif;">
+<svg viewBox="0 0 830 500" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', system-ui, sans-serif;">
     <style>
         .gr-axis    { stroke: #ffffff; stroke-width: 1.5; fill: none; }
         .gr-grid    { stroke: #ffffff; stroke-width: 0.4; stroke-dasharray: 3,3; opacity: 0.15; }

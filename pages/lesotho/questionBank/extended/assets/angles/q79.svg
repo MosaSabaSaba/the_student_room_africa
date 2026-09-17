@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 550" width="100%" height="100%">
+    <!-- Background for high contrast -->
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <!-- Main Circle Geometry and Tangent Line -->
+    <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Main circle centered at (300, 260) with radius 160 -->
+        <circle cx="300" cy="260" r="160" />
+        
+        <!-- Angled Tangent Line QAP touching at the bottom vertex A -->
+        <line x1="100" y1="465" x2="620" y2="340" />
+    </g>
+
+    <!-- Chords, Radii, and Inscribed Vertices matching the image profile -->
+    <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <!-- 
+            Strict Coordinate Layout Grounding:
+            O (Center):          (300, 260)
+            A (Tangency Point):  (300, 420)
+            B (Top Left):        (180, 140)
+            C (Top Middle):      (390, 125)
+            D (Middle Right):    (450, 205)
+            E (Bottom Right):    (425, 335)
+        -->
+        
+        <!-- Radii lines explicitly connected from center O -->
+        <line x1="300" y1="260" x2="300" y2="420" />   <!-- OA -->
+        <line x1="300" y1="260" x2="390" y2="125" />   <!-- OC -->
+        <line x1="300" y1="260" x2="450" y2="205" />   <!-- OD -->
+
+        <!-- Inscribed Chords Framework -->
+        <line x1="300" y1="420" x2="180" y2="140" />   <!-- AB -->
+        <line x1="180" y1="140" x2="425" y2="335" />   <!-- BE -->
+        <line x1="425" y1="335" x2="450" y2="205" />   <!-- ED -->
+        <line x1="450" y1="205" x2="390" y2="125" />   <!-- DC -->
+        <line x1="390" y1="125" x2="300" y2="420" />   <!-- CA -->
+        <line x1="300" y1="420" x2="425" y2="335" />   <!-- AE -->
+    </g>
+
+    <!-- Angle Arc Indicators with exact boundary orientation -->
+    <g fill="none" stroke="#ffffff" stroke-width="2.2">
+        <!-- 40° Angle Arc at vertex C inside the triangle formed by lines CA and CD -->
+        <path d="M 373,178 A 60,60 0 0,0 422,168" />
+        
+        <!-- 25° Angle Arc at vertex A between chord AE and tangent line AP -->
+        <path d="M 355,408 A 60,60 0 0,0 375,402" />
+    </g>
+
+    <!-- Text Labels & Value Markers -->
+    <g font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff">
+        <!-- Points & Vertices Labels -->
+        <text x="290" y="445" font-size="24" text-anchor="end">A</text>
+        <text x="165" y="130" font-size="24" text-anchor="end">B</text>
+        <text x="400" y="110" font-size="24" text-anchor="start">C</text>
+        <text x="470" y="205" font-size="24" text-anchor="start">D</text>
+        <text x="445" y="350" font-size="24" text-anchor="start">E</text>
+        <text x="275" y="265" font-size="24" text-anchor="end">O</text>
+        <text x="635" y="340" font-size="24" text-anchor="start">P</text>
+        <text x="85" y="480" font-size="24" text-anchor="end">Q</text>
+
+        <!-- Angle Value Labels placement -->
+        <text x="405" y="160" font-size="18" text-anchor="middle">40°</text>
+        <text x="400" y="418" font-size="18" text-anchor="start">25°</text>
+    </g>
+</svg>

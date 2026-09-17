@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 240">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .dimension-arrow { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 14px; fill: #ffffff; }
+    </style>
+
+    <!-- Definitions for Enhanced, Highly Visible Dimension Arrowheads -->
+    <defs>
+        <marker id="enhanced-arrow" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 1 L 9 5 L 0 9 L 2 5 z" fill="#ffffff" stroke="none" />
+        </marker>
+    </defs>
+
+    <!-- Three Mutually Tangent Circles -->
+    <!-- Medium Circle A (Radius ~63.2) -->
+    <circle cx="140" cy="90" r="63.2" class="geometry-line" />
+    
+    <!-- Large Circle B (Radius ~94.9) -->
+    <circle cx="290" cy="140" r="94.9" class="geometry-line" />
+    
+    <!-- Small Circle C (Radius ~31.6) -->
+    <circle cx="170" cy="180" r="31.6" class="geometry-line" />
+
+    <!-- Central Core Triangle ABC -->
+    <line x1="140" y1="90" x2="290" y2="140" class="geometry-line" />
+    <line x1="290" y1="140" x2="170" y2="180" class="geometry-line" />
+    <line x1="170" y1="180" x2="140" y2="90" class="geometry-line" />
+
+    <!-- Right-Angle Indicator at Vertex C -->
+    <path d="M 166.2 168.6 L 177.6 164.8 L 181.4 176.2" class="geometry-line" stroke-width="1" />
+
+    <!-- Parallel Offset Dimension Arrows for Radii along Triangle Edges with Enhanced Visibility Markers -->
+    <!-- Radius of Circle A (Value 3) -->
+    <line x1="150" y1="83" x2="196.2" y2="98.6" class="dimension-arrow" marker-start="url(#enhanced-arrow)" marker-end="url(#enhanced-arrow)" />
+    
+    <!-- Radius of Circle B (Value 5) -->
+    <line x1="212" y1="104" x2="286.2" y2="128.6" class="dimension-arrow" marker-start="url(#enhanced-arrow)" marker-end="url(#enhanced-arrow)" />
+    
+    <!-- Radius of Circle C (Value x) -->
+    <line x1="158.6" y1="178" x2="155" y2="164" class="dimension-arrow" marker-start="url(#enhanced-arrow)" marker-end="url(#enhanced-arrow)" />
+
+    <!-- Vertex Letter Labels -->
+    <text x="124" y="92" class="label-text">A</text>
+    <text x="298" y="145" class="label-text">B</text>
+    <text x="166" y="198" class="label-text">C</text>
+
+    <!-- Numerical and Variable Labels -->
+    <text x="163" y="84" class="label-text">3</text>
+    <text x="238" y="109" class="label-text">5</text>
+    <text x="145" y="175" class="variable-text">x</text>
+    
+    <!-- Scale Labeling -->
+    <text x="400" y="90" class="label-text">NOT TO</text>
+    <text x="400" y="106" class="label-text">SCALE</text>
+</svg>

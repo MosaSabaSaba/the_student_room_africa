@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 180">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .degree-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="260" y="35" class="note-text">NOT TO</text>
+    <text x="260" y="50" class="note-text">SCALE</text>
+
+    <!-- Triangle Vertices: A(25,135), B(215,135), C(215,35) -->
+
+    <!-- Base Line AB -->
+    <line x1="25" y1="135" x2="215" y2="135" class="geometry-line" />
+
+    <!-- Vertical Line BC -->
+    <line x1="215" y1="35" x2="215" y2="135" class="geometry-line" />
+
+    <!-- Hypotenuse Line AC -->
+    <line x1="25" y1="135" x2="215" y2="35" class="geometry-line" />
+
+    <!-- Right Angle Indicator at Vertex B -->
+    <path d="M 205 135 L 205 125 L 215 125" class="geometry-line" />
+
+    <!-- Side Length Text Labels -->
+    <text x="110" y="150" class="degree-text">15 cm</text>
+    <text x="222" y="90" class="degree-text">8 cm</text>
+
+    <!-- Letter Labels for Vertices -->
+    <text x="12" y="140" class="label-text">A</text>
+    <text x="220" y="148" class="label-text">B</text>
+    <text x="212" y="27" class="label-text">C</text>
+</svg>

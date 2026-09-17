@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .degree-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="250" y="45" class="note-text">NOT TO</text>
+    <text x="250" y="60" class="note-text">SCALE</text>
+
+    <!-- Main Triangle Vertices: A(135,25), B(35,170), C(205,155) -->
+    <!-- Midpoints/Segment Vertices: E(95,80), F(180,112) -->
+
+    <!-- Base Line BC -->
+    <line x1="35" y1="170" x2="205" y2="155" class="geometry-line" />
+
+    <!-- Left Main Side BA -->
+    <line x1="35" y1="170" x2="135" y2="25" class="geometry-line" />
+
+    <!-- Right Main Side AC -->
+    <line x1="135" y1="25" x2="205" y2="155" class="geometry-line" />
+
+    <!-- Interior Line Segment EF -->
+    <line x1="95" y1="80" x2="180" y2="112" class="geometry-line" />
+
+    <!-- Side Length Text Labels -->
+    <text x="85" y="47" class="degree-text">3 cm</text>
+    <text x="45" y="125" class="degree-text">5 cm</text>
+    <text x="162" y="65" class="degree-text">4 cm</text>
+    <text x="195" y="132" class="degree-text">2 cm</text>
+    <text x="125" y="110" class="degree-text">3.6 cm</text>
+
+    <!-- Letter Labels for Vertices -->
+    <text x="130" y="19" class="label-text">A</text>
+    <text x="22" y="176" class="label-text">B</text>
+    <text x="210" y="160" class="label-text">C</text>
+    <text x="82" y="82" class="label-text">E</text>
+    <text x="187" y="116" class="label-text">F</text>
+</svg>

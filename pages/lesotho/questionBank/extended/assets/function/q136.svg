@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .axis-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; }
+        .math-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 13px; font-weight: bold; fill: #ffffff; }
+    </style>
+
+    <!-- Definitions for Axes Arrowheads & Shading -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 2 L 8 5 L 0 8 z" fill="#ffffff" />
+        </marker>
+        <linearGradient id="region-shading" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3" />
+        </linearGradient>
+    </defs>
+
+    <!-- SHADED REGION -->
+    <!-- Vertices: Left(-2,0) -> (72,100), Top-Right(2,6) -> (222,45), Bottom-Right(2,-2) -> (222,155) -->
+    <polygon points="72,100 222,45 222,155" fill="url(#region-shading)" />
+
+    <!-- COORDINATE AXES -->
+    <!-- X-Axis -->
+    <line x1="30" y1="100" x2="275" y2="100" class="axis-line" marker-end="url(#arrow)" />
+    <text x="282" y="104" class="math-text">x</text>
+    
+    <!-- Y-Axis -->
+    <line x1="135" y1="175" x2="135" y2="35" class="axis-line" marker-end="url(#arrow)" />
+    <text x="131" y="26" class="math-text">y</text>
+    
+    <!-- Origin Label -->
+    <text x="140" y="97" class="label-text">0</text>
+
+    <!-- GEOMETRY LINES -->
+    <!-- Line B (Vertical line at x = 2) -->
+    <line x1="222" y1="180" x2="222" y2="30" class="geometry-line" />
+    
+    <!-- Line C (Passing from bottom-left through (-2,0) to top-right) -->
+    <line x1="45" y1="110" x2="255" y2="34" class="geometry-line" />
+    
+    <!-- Line A (Passing from top-left through (-2,0) to bottom-right) -->
+    <line x1="45" y1="90" x2="255" y2="164" class="geometry-line" />
+
+    <!-- LABELS FOR LINES AND POINTS -->
+    <text x="35" y="86" class="math-text">A</text>
+    <text x="226" y="26" class="math-text">B</text>
+    <text x="260" y="38" class="math-text">C</text>
+    
+    <!-- Coordinate Point (2,6) -->
+    <text x="240" y="56" class="label-text">(2,6)</text>
+    
+    <!-- Equation for Line A -->
+    <text x="260" y="178" class="label-text">2y + 2 = −x</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .point-dot { fill: #ffffff; }
+    </style>
+
+    <!-- Slanted Line segment with endpoint P(190, 80) -->
+    <line x1="90" y1="180" x2="190" y2="80" class="geometry-line" />
+
+    <!-- Label for Endpoint P -->
+    <text x="190" y="72" class="label-text">P</text>
+
+    <!-- Point X with its Dot and Label -->
+    <circle cx="195" cy="100" r="2" class="point-dot" />
+    <text x="183" y="112" class="label-text">X</text>
+
+    <!-- Point Y with its Dot and Label -->
+    <circle cx="175" cy="190" r="2" class="point-dot" />
+    <text x="163" y="195" class="label-text">Y</text>
+</svg>

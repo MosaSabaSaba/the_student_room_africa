@@ -106,11 +106,6 @@
         <!-- MAIN CONTENT -->
         <main class="main-content" id="mainContent">
 
-            <h1>LGCSE Mathematics Question Bank</h1>
-            <p style="color: #aaa; margin-bottom: 2rem; font-size: 0.95rem;">
-                Practice questions from past ECoL examination papers, organized by topic.
-            </p>
-
             <div class="question-paper">
 
                 <!-- ============================================================ -->
@@ -136,65 +131,8 @@
                                 <mi>x</mi>
                             </math>.
                             <div class="question-image">
-                                <!-- <img src="assets/img/questions/paper2/q136-region-lines.png" alt="Region enclosed by three straight lines" /> -->
+                                <img src="assets/function/q136.svg" alt="Region enclosed by three straight lines" />
                             
-                                <svg xmlns="http://w3.org" viewBox="0 0 340 200" width="340" height="200">
-                                    <style>
-                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
-                                        .axis-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
-                                        .label-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; }
-                                        .math-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 13px; font-weight: bold; fill: #ffffff; }
-                                    </style>
-
-                                    <!-- Definitions for Axes Arrowheads & Shading -->
-                                    <defs>
-                                        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                            <path d="M 0 2 L 8 5 L 0 8 z" fill="#ffffff" />
-                                        </marker>
-                                        <linearGradient id="region-shading" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3" />
-                                            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3" />
-                                        </linearGradient>
-                                    </defs>
-
-                                    <!-- SHADED REGION -->
-                                    <!-- Vertices: Left(-2,0) -> (72,100), Top-Right(2,6) -> (222,45), Bottom-Right(2,-2) -> (222,155) -->
-                                    <polygon points="72,100 222,45 222,155" fill="url(#region-shading)" />
-
-                                    <!-- COORDINATE AXES -->
-                                    <!-- X-Axis -->
-                                    <line x1="30" y1="100" x2="275" y2="100" class="axis-line" marker-end="url(#arrow)" />
-                                    <text x="282" y="104" class="math-text">x</text>
-                                    
-                                    <!-- Y-Axis -->
-                                    <line x1="135" y1="175" x2="135" y2="35" class="axis-line" marker-end="url(#arrow)" />
-                                    <text x="131" y="26" class="math-text">y</text>
-                                    
-                                    <!-- Origin Label -->
-                                    <text x="140" y="97" class="label-text">0</text>
-
-                                    <!-- GEOMETRY LINES -->
-                                    <!-- Line B (Vertical line at x = 2) -->
-                                    <line x1="222" y1="180" x2="222" y2="30" class="geometry-line" />
-                                    
-                                    <!-- Line C (Passing from bottom-left through (-2,0) to top-right) -->
-                                    <line x1="45" y1="110" x2="255" y2="34" class="geometry-line" />
-                                    
-                                    <!-- Line A (Passing from top-left through (-2,0) to bottom-right) -->
-                                    <line x1="45" y1="90" x2="255" y2="164" class="geometry-line" />
-
-                                    <!-- LABELS FOR LINES AND POINTS -->
-                                    <text x="35" y="86" class="math-text">A</text>
-                                    <text x="226" y="26" class="math-text">B</text>
-                                    <text x="260" y="38" class="math-text">C</text>
-                                    
-                                    <!-- Coordinate Point (2,6) -->
-                                    <text x="240" y="56" class="label-text">(2,6)</text>
-                                    
-                                    <!-- Equation for Line A -->
-                                    <text x="260" y="178" class="label-text">2y + 2 = −x</text>
-                                </svg>
-
                             </div>
                             (a) Show that the equation of the line C is 
                             <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -239,67 +177,8 @@
                             <br>
                             OB is parallel to DC.
                             <div class="question-image">
-                                <!-- <img src="assets/img/questions/paper2/q137-parallel-lines.png" alt="Parallel lines OB and DC" /> -->
+                                <img src="assets/function/q137.svg" alt="Parallel lines OB and DC" />
                             
-                                <svg xmlns="http://w3.org" viewBox="0 0 340 240" width="340" height="240">
-                                    <style>
-                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
-                                        .axis-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
-                                        .label-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; }
-                                        .math-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 13px; font-weight: bold; fill: #ffffff; }
-                                        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
-                                    </style>
-
-                                    <!-- Definitions for Arrowheads -->
-                                    <defs>
-                                        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                            <path d="M 0 2 L 8 5 L 0 8 z" fill="#ffffff" />
-                                        </marker>
-                                    </defs>
-
-                                    <!-- "NOT TO SCALE" Note -->
-                                    <text x="270" y="45" class="note-text">NOT TO</text>
-                                    <text x="270" y="60" class="note-text">SCALE</text>
-
-                                    <!-- COORDINATE AXES -->
-                                    <!-- X-Axis (y = 130) -->
-                                    <line x1="30" y1="130" x2="260" y2="130" class="axis-line" marker-end="url(#arrow)" />
-                                    <text x="267" y="134" class="math-text">x</text>
-                                    
-                                    <!-- Y-Axis (x = 70) -->
-                                    <line x1="70" y1="215" x2="70" y2="35" class="axis-line" marker-end="url(#arrow)" />
-                                    <text x="66" y="26" class="math-text">y</text>
-                                    
-                                    <!-- Origin Label -->
-                                    <text x="55" y="142" class="label-text">O</text>
-
-                                    <!-- GEOMETRY LINES -->
-                                    <!-- Main Line passing through A(70,58), B(140,106), C(175,130) -->
-                                    <line x1="45" y1="41" x2="220" y2="161" class="geometry-line" />
-                                    
-                                    <!-- Line segment OB from Origin (70,130) to B(140,106) -->
-                                    <line x1="70" y1="130" x2="140" y2="106" class="geometry-line" />
-                                    
-                                    <!-- Line segment DC from D(70,166) to C(175,130) -->
-                                    <line x1="70" y1="166" x2="175" y2="130" class="geometry-line" />
-
-                                    <!-- POINT LABELS AND COORDINATES -->
-                                    <!-- Point A & y-intercept 9 -->
-                                    <text x="78" y="54" class="math-text">A</text>
-                                    <text x="58" y="62" class="label-text">9</text>
-                                    
-                                    <!-- Point B & Coordinates (2, 3) -->
-                                    <text x="135" y="98" class="math-text">B</text>
-                                    <text x="162" y="98" class="label-text">(2, 3)</text>
-                                    
-                                    <!-- Point C -->
-                                    <text x="182" y="124" class="math-text">C</text>
-                                    
-                                    <!-- Point D & Coordinates (0, −4½) -->
-                                    <text x="72" y="182" class="math-text">D</text>
-                                    <text x="110" y="182" class="label-text">(0, −4½)</text>
-                                </svg>
-
                             </div>
                             (a) Show that the point C is (3, 0).
                         </div>
@@ -346,47 +225,8 @@
                                 </mfrac>
                             </math>.
                             <div class="question-image">
-                                <!-- <img src="assets/img/questions/paper2/q141-line-ab.png" alt="Straight line AB with gradient -3/4" /> -->
+                                <img src="assets/function/q141.svg" alt="Straight line AB with gradient -3/4" />
                             
-                                <svg xmlns="http://w3.org" viewBox="0 0 340 200" width="340" height="200">
-                                    <style>
-                                        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
-                                        .axis-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
-                                        .label-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; }
-                                        .math-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 13px; font-weight: bold; fill: #ffffff; }
-                                    </style>
-
-                                    <!-- Definitions for Arrowheads -->
-                                    <defs>
-                                        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                            <path d="M 0 2 L 8 5 L 0 8 z" fill="#ffffff" />
-                                        </marker>
-                                    </defs>
-
-                                    <!-- COORDINATE AXES -->
-                                    <!-- X-Axis -->
-                                    <line x1="30" y1="160" x2="280" y2="160" class="axis-line" marker-end="url(#arrow)" />
-                                    <text x="287" y="164" class="math-text">x</text>
-                                    
-                                    <!-- Y-Axis -->
-                                    <line x1="50" y1="180" x2="50" y2="35" class="axis-line" marker-end="url(#arrow)" />
-                                    <text x="46" y="26" class="math-text">y</text>
-                                    
-                                    <!-- Origin Label -->
-                                    <text x="40" y="173" class="label-text">0</text>
-
-                                    <!-- GEOMETRY LINES -->
-                                    <!-- Straight line cutting both axes -->
-                                    <line x1="35" y1="50" x2="260" y2="175" class="geometry-line" />
-
-                                    <!-- POINT LABELS AND COORDINATES -->
-                                    <!-- Point B (y-intercept) -->
-                                    <text x="71" y="56" class="label-text">B(0,6)</text>
-                                    
-                                    <!-- Point A (x-intercept) -->
-                                    <text x="228" y="174" class="math-text">A</text>
-                                </svg>
-
                             </div>
                             Find:
                             <br>
@@ -543,73 +383,8 @@
                         <div class="question-number">146.</div>
                         <div class="question-text">
                             <div class="question-image">
-                                <!-- <img src="assets/img/questions/paper2/q146-line-graph.png" alt="Line graph on a grid" /> -->
+                                <img src="assets/function/q146.svg" alt="Line graph on a grid" />
                             
-                                <svg xmlns="http://w3.org" viewBox="0 0 280 240" width="280" height="240">
-                                    <style>
-                                        .grid-line { stroke: #ffffff; stroke-width: 0.8; stroke-dasharray: 2, 2; opacity: 0.5; fill: none; }
-                                        .axis-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
-                                        .geometry-line { stroke: #ffffff; stroke-width: 2.0; fill: none; }
-                                        .label-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
-                                        .math-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 13px; font-weight: bold; fill: #ffffff; }
-                                    </style>
-
-                                    <!-- Definitions for Axes Arrowheads -->
-                                    <defs>
-                                        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                            <path d="M 0 2 L 8 5 L 0 8 z" fill="#ffffff" />
-                                        </marker>
-                                    </defs>
-
-                                    <!-- PERFECT UNIFORM GRID (30px per square = 0.5 units on both axes) -->
-                                    <!-- Vertical Grid Lines (x = -1.0, -0.5, 0, 0.5, 1.0, 1.5, 2.0) -->
-                                    <line x1="30" y1="20" x2="30" y2="220" class="grid-line" />
-                                    <line x1="60" y1="20" x2="60" y2="220" class="grid-line" />
-                                    <line x1="90" y1="20" x2="90" y2="220" class="grid-line" />
-                                    <line x1="120" y1="20" x2="120" y2="220" class="grid-line" />
-                                    <line x1="150" y1="20" x2="150" y2="220" class="grid-line" />
-                                    <line x1="180" y1="20" x2="180" y2="220" class="grid-line" />
-                                    <line x1="210" y1="20" x2="210" y2="220" class="grid-line" />
-                                    <line x1="240" y1="20" x2="240" y2="220" class="grid-line" />
-
-                                    <!-- Horizontal Grid Lines (y = 2.0, 1.5, 1.0, 0.5, 0, -0.5, -1.0) -->
-                                    <line x1="20" y1="30" x2="250" y2="30" class="grid-line" />
-                                    <line x1="20" y1="60" x2="250" y2="60" class="grid-line" />
-                                    <line x1="20" y1="90" x2="250" y2="90" class="grid-line" />
-                                    <line x1="20" y1="120" x2="250" y2="120" class="grid-line" />
-                                    <line x1="20" y1="150" x2="250" y2="150" class="grid-line" />
-                                    <line x1="20" y1="180" x2="250" y2="180" class="grid-line" />
-                                    <line x1="20" y1="210" x2="250" y2="210" class="grid-line" />
-
-                                    <!-- COORDINATE AXES -->
-                                    <!-- X-Axis (at y = 150) -->
-                                    <line x1="15" y1="150" x2="265" y2="150" class="axis-line" marker-end="url(#arrow)" />
-                                    <text x="274" y="154" class="math-text">x</text>
-                                    
-                                    <!-- Y-Axis (at x = 90) -->
-                                    <line x1="90" y1="225" x2="90" y2="15" class="axis-line" marker-end="url(#arrow)" />
-                                    <text x="90" y="8" class="math-text">y</text>
-
-                                    <!-- GEOMETRY LINE l (y = 2x + 1) -->
-                                    <!-- Perfectly linear vector intersecting (-0.5, 0) and (0, 1) under the strict uniform grid scale -->
-                                    <line x1="18" y1="234" x2="126" y2="18" class="geometry-line" />
-                                    <text x="134" y="24" class="math-text">l</text>
-
-                                    <!-- AXIS LABELS AND TICKS (Perfectly Uniformly Placed) -->
-                                    <!-- Origin Label -->
-                                    <text x="82" y="162" class="label-text">0</text>
-                                    
-                                    <!-- X-Axis Labels -->
-                                    <text x="30" y="162" class="label-text">-1</text>
-                                    <text x="150" y="162" class="label-text">1</text>
-                                    <text x="210" y="162" class="label-text">2</text>
-                                    
-                                    <!-- Y-Axis Labels (Corrected to match the exact uniform 60px/unit scale) -->
-                                    <text x="82" y="214" class="label-text">-1</text>
-                                    <text x="82" y="94" class="label-text">1</text>
-                                    <text x="82" y="34" class="label-text">2</text>
-                                </svg>
-
                             </div>
                             (a) Find the equation of the line l.
                         </div>
@@ -841,9 +616,8 @@
                                 <mn>5</mn>
                             </math>.
                             <div class="question-image">
-                                <svg xmlns="http://w3.org" viewBox="0 0 440 680" width="440" height="680">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 680">
                                     <style>
-                                        .bg { fill: #1e1e1e; }
                                         .axis-line { stroke: #ffffff; stroke-width: 2; }
                                         .major-grid { stroke: #555555; stroke-width: 1; }
                                         .minor-grid { stroke: #333333; stroke-width: 0.5; }
@@ -852,7 +626,7 @@
                                     </style>
 
                                     <!-- Background -->
-                                    <rect width="440" height="680" class="bg" />
+                                    <rect width="440" height="680" fill="transparent" />
 
                                     <!-- Minor Grid Lines (Every 8px, 5 divisions per 40px) -->
                                     <!-- Vertical Minor Lines -->
@@ -1209,29 +983,29 @@
                             </math>.
                             <br>
                             <br>
-                            <table border="1" cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
+                            <table cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
                                 <!-- Row 1: x values -->
                                 <tbody>
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;width: 40px;">x</td>
-                                        <td style="width: 50px;">-5</td>
-                                        <td style="width: 50px;">-4</td>
-                                        <td style="width: 50px;">-3</td>
-                                        <td style="width: 50px;">-2</td>
-                                        <td style="width: 50px;">-1</td>
-                                        <td style="width: 55px;">0</td>
-                                        <td style="width: 50px;">1</td>
+                                        <td style="font-style: italic; font-weight: bold;width: 40px; border: 1px solid #fff;">x</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-4</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-3</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-2</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-1</td>
+                                        <td style="width: 55px; border: 1px solid #fff;">0</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">1</td>
                                     </tr>
                                     <!-- Row 2: y values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;">y</td>
-                                        <td>0.3</td>
-                                        <td></td>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>4</td>
-                                        <td>8</td>
-                                        <td>16</td>
+                                        <td style="font-style: italic; font-weight: bold; border: 1px solid #fff;">y</td>
+                                        <td style="border: 1px solid #fff;">0.3</td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;">1</td>
+                                        <td style="border: 1px solid #fff;">2</td>
+                                        <td style="border: 1px solid #fff;">4</td>
+                                        <td style="border: 1px solid #fff;">8</td>
+                                        <td style="border: 1px solid #fff;">16</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1249,7 +1023,6 @@
                         <div class="question-image">
                             <svg xmlns="http://w3.org" viewBox="0 0 580 910" width="580" height="910">
                                 <style>
-                                    .bg { fill: #1e1e1e; }
                                     .axis-line { stroke: #ffffff; stroke-width: 2.5; }
                                     .major-grid { stroke: #555555; stroke-width: 1.2; }
                                     .minor-grid { stroke: #333333; stroke-width: 0.6; }
@@ -1259,7 +1032,7 @@
                                 </style>
 
                                 <!-- Background -->
-                                <rect width="580" height="910" class="bg" />
+                                <rect width="580" height="910" fill="transparent" />
 
                                 <!-- Minor Grid Lines (5 divisions between each integer, every 8px) -->
                                 <!-- Vertical Minor Lines -->
@@ -1701,33 +1474,33 @@
                             </math>.
                             <br>
                             <br>
-                            <table border="1" cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
+                            <table cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
                                 <!-- Row 1: x values -->
                                 <tbody>
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;width: 40px;">x</td>
-                                        <td style="width: 50px;">-3.5</td>
-                                        <td style="width: 50px;">-2</td>
-                                        <td style="width: 50px;">-1.5</td>
-                                        <td style="width: 50px;">-1</td>
-                                        <td style="width: 50px;">0</td>
-                                        <td style="width: 55px;">0.5</td>
-                                        <td style="width: 50px;">1</td>
-                                        <td style="width: 50px;">1.5</td>
-                                        <td style="width: 50px;">2</td>
+                                        <td style="font-style: italic; font-weight: bold;width: 40px; border: 1px solid #fff;">x</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-3.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-2</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-1.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-1</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">0</td>
+                                        <td style="width: 55px; border: 1px solid #fff;">0.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">1</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">1.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">2</td>
                                     </tr>
                                     <!-- Row 2: y values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;">y</td>
-                                        <td>6.75</td>
-                                        <td>0</td>
-                                        <td>-1.25</td>
-                                        <td>-2</td>
-                                        <td>-2</td>
-                                        <td><em>p</em></td>
-                                        <td>0</td>
-                                        <td><em>q</em></td>
-                                        <td>4</td>
+                                        <td style="font-style: italic; font-weight: bold; border: 1px solid #fff;">y</td>
+                                        <td style="border: 1px solid #fff;">6.75</td>
+                                        <td style="border: 1px solid #fff;">0</td>
+                                        <td style="border: 1px solid #fff;">-1.25</td>
+                                        <td style="border: 1px solid #fff;">-2</td>
+                                        <td style="border: 1px solid #fff;">-2</td>
+                                        <td style="border: 1px solid #fff;"><em>p</em></td>
+                                        <td style="border: 1px solid #fff;">0</td>
+                                        <td style="border: 1px solid #fff;"><em>q</em></td>
+                                        <td style="border: 1px solid #fff;">4</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1766,7 +1539,6 @@
                         <div class="question-image">
                             <svg xmlns="http://w3.org" viewBox="0 0 440 680" width="440" height="680">
                                 <style>
-                                    .bg { fill: #1e1e1e; }
                                     .axis-line { stroke: #ffffff; stroke-width: 2; }
                                     .major-grid { stroke: #555555; stroke-width: 1; }
                                     .minor-grid { stroke: #333333; stroke-width: 0.5; }
@@ -1775,7 +1547,7 @@
                                 </style>
 
                                 <!-- Background -->
-                                <rect width="440" height="680" class="bg"></rect>
+                                <rect width="440" height="680" fill="none"></rect>
 
                                 <!-- Minor Grid Lines (Every 8px, 5 divisions per 40px) -->
                                 <!-- Vertical Minor Lines -->
@@ -2188,31 +1960,31 @@
                             </math>.
                             <br>
                             <br>
-                            <table border="1" cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
+                            <table cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
                                 <!-- Row 1: x values -->
                                 <tbody>
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;width: 40px;">x</td>
-                                        <td style="width: 50px;">-4</td>
-                                        <td style="width: 50px;">-3</td>
-                                        <td style="width: 50px;">-2</td>
-                                        <td style="width: 50px;">-1</td>
-                                        <td style="width: 50px;">0</td>
-                                        <td style="width: 50px;">1</td>
-                                        <td style="width: 50px;">2</td>
-                                        <td style="width: 50px;">3</td>
+                                        <td style="font-style: italic; font-weight: bold;width: 40px; border: 1px solid #fff;">x</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-4</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-3</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-2</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-1</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">0</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">1</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">2</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">3</td>
                                     </tr>
                                     <!-- Row 2: y values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;">y</td>
-                                        <td>2.7</td>
-                                        <td></td>
-                                        <td>5.3</td>
-                                        <td>2.7</td>
-                                        <td>0</td>
-                                        <td>-0.7</td>
-                                        <td></td>
-                                        <td>12</td>
+                                        <td style="font-style: italic; font-weight: bold; border: 1px solid #fff;">y</td>
+                                        <td style="border: 1px solid #fff;">2.7</td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;">5.3</td>
+                                        <td style="border: 1px solid #fff;">2.7</td>
+                                        <td style="border: 1px solid #fff;">0</td>
+                                        <td style="border: 1px solid #fff;">-0.7</td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;">12</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2251,7 +2023,6 @@
                             <div class="question-image">
                                 <svg xmlns="http://w3.org" viewBox="0 0 580 910" width="580" height="910">
                                     <style>
-                                        .bg { fill: #1e1e1e; }
                                         .axis-line { stroke: #ffffff; stroke-width: 2.5; }
                                         .major-grid { stroke: #555555; stroke-width: 1.2; }
                                         .minor-grid { stroke: #333333; stroke-width: 0.6; }
@@ -2261,7 +2032,7 @@
                                     </style>
 
                                     <!-- Background -->
-                                    <rect width="580" height="910" class="bg"></rect>
+                                    <rect width="580" height="910" fill="none"></rect>
 
                                     <!-- Minor Grid Lines (5 divisions between each integer, every 8px) -->
                                     <!-- Vertical Minor Lines -->
@@ -2462,29 +2233,29 @@
                                 <mn>1.5</mn>
                             </math>.
                             <br><br>
-                            <table border="1" cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
+                            <table cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
                                 <!-- Row 1: x values -->
                                 <tbody>
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;width: 40px;">x</td>
-                                        <td style="width: 50px;">-2.5</td>
-                                        <td style="width: 50px;">-2</td>
-                                        <td style="width: 50px;">-1.5</td>
-                                        <td style="width: 50px;">-1</td>
-                                        <td style="width: 50px;">0</td>
-                                        <td style="width: 50px;">1</td>
-                                        <td style="width: 50px;">1.5</td>
+                                        <td style="font-style: italic; font-weight: bold;width: 40px; border: 1px solid #fff;">x</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-2.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-2</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-1.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-1</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">0</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">1</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">1.5</td>
                                     </tr>
                                     <!-- Row 2: y values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;">y</td>
-                                        <td>-4</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td>2</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td></td>
+                                        <td style="font-style: italic; font-weight: bold; border: 1px solid #fff;">y</td>
+                                        <td style="border: 1px solid #fff;">-4</td>
+                                        <td style="border: 1px solid #fff;">0</td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;">2</td>
+                                        <td style="border: 1px solid #fff;">0</td>
+                                        <td style="border: 1px solid #fff;">0</td>
+                                        <td style="border: 1px solid #fff;"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2681,29 +2452,29 @@
                             <br><br>
                             (i) Complete the table for f(x).
                             <br><br>
-                            <table border="1" cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
+                            <table cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
                                 <tbody>
                                     <!-- Row 1: x values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold; width: 40px;">x</td>
-                                        <td style="width: 50px;">0</td>
-                                        <td style="width: 50px;">1</td>
-                                        <td style="width: 50px;">2</td>
-                                        <td style="width: 50px;">3</td>
-                                        <td style="width: 50px;">4</td>
-                                        <td style="width: 50px;">5</td>
-                                        <td style="width: 50px;">6</td>
+                                        <td style="font-style: italic; font-weight: bold; width: 40px; border: 1px solid #fff;">x</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">0</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">1</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">2</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">3</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">4</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">6</td>
                                     </tr>
                                     <!-- Row 2: f(x) values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;">f(x)</td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>9</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>0</td>
+                                        <td style="font-style: italic; font-weight: bold; border: 1px solid #fff;">f(x)</td>
+                                        <td style="border: 1px solid #fff;">0</td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;">9</td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;">0</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2718,13 +2489,13 @@
                         <div class="question-text">
                             (ii) On the grid, draw the graph of y = f(x) for 0 &le; x &le; 6.
                             <div class="question-image">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 580" width="100%" height="auto" style="background: #1a1a1a; border-radius: 8px; max-width: 100%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 580" width="100%" height="auto" style="background: transparent; border-radius: 8px; max-width: 100%;">
                                     <style>
                                         .axis-line { stroke: #ffffff; stroke-width: 2; fill: none; }
                                         .grid-major { stroke: rgba(255, 255, 255, 0.6); stroke-width: 0.9; fill: none; }
                                         .grid-minor { stroke: rgba(255, 255, 255, 0.2); stroke-width: 0.4; fill: none; }
                                         .label-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; }
-                                        .label-bg { fill: #121212; }
+                                        .label-bg { fill: none; }
                                         .plotted-point { fill: #ffffff; stroke: #ffffff; stroke-width: 1; }
                                         .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 15px; font-weight: bold; fill: #ffffff; }
                                     </style>
@@ -2829,25 +2600,25 @@
                             <br><br>
                             (i) Complete the table for g(x).
                             <br><br>
-                            <table border="1" cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
+                            <table cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
                                 <tbody>
                                     <!-- Row 1: x values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold; width: 40px;">x</td>
-                                        <td style="width: 50px;">0</td>
-                                        <td style="width: 50px;">1</td>
-                                        <td style="width: 50px;">2</td>
-                                        <td style="width: 50px;">3</td>
-                                        <td style="width: 50px;">3.3</td>
+                                        <td style="font-style: italic; font-weight: bold; width: 40px; border: 1px solid #fff;">x</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">0</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">1</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">2</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">3</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">3.3</td>
                                     </tr>
                                     <!-- Row 2: g(x) values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;">g(x)</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>8</td>
-                                        <td>9.8</td>
+                                        <td style="font-style: italic; font-weight: bold; border: 1px solid #fff;">g(x)</td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;"></td>
+                                        <td style="border: 1px solid #fff;">8</td>
+                                        <td style="border: 1px solid #fff;">9.8</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2903,35 +2674,35 @@
                                 <mn>4</mn>
                             </math>.
 
-                            <table border="1" cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
+                            <table cellpadding="8" cellspacing="0" style="font-family: Arial, sans-serif; text-align: center; border-collapse: collapse;">
                                 <tbody>
                                     <!-- Row 1: X values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold; width: 40px;">X</td>
-                                        <td style="width: 50px;">-3</td>
-                                        <td style="width: 50px;">-2.5</td>
-                                        <td style="width: 50px;">-2</td>
-                                        <td style="width: 50px;">-1.5</td>
-                                        <td style="width: 50px;">-1</td>
-                                        <td style="width: 50px;">0</td>
-                                        <td style="width: 50px;">1.5</td>
-                                        <td style="width: 50px;">2</td>
-                                        <td style="width: 50px;">2.5</td>
-                                        <td style="width: 50px;">3</td>
+                                        <td style="font-style: italic; font-weight: bold; width: 40px; border: 1px solid #fff;">X</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-3</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-2.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-2</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-1.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">-1</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">0</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">1.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">2</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">2.5</td>
+                                        <td style="width: 50px; border: 1px solid #fff;">3</td>
                                     </tr>
                                     <!-- Row 2: y values -->
                                     <tr>
-                                        <td style="font-style: italic; font-weight: bold;">y</td>
-                                        <td>-2</td>
-                                        <td></td>
-                                        <td>3.3</td>
-                                        <td>4.0</td>
-                                        <td>4.7</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>6.7</td>
-                                        <td>10</td>
+                                        <td style="font-style: italic; font-weight: bold; border: 1px solid #fff;">y</td>
+                                        <td style=" border: 1px solid #fff;">-2</td>
+                                        <td style=" border: 1px solid #fff;"></td>
+                                        <td style=" border: 1px solid #fff;">3.3</td>
+                                        <td style=" border: 1px solid #fff;">4.0</td>
+                                        <td style=" border: 1px solid #fff;">4.7</td>
+                                        <td style=" border: 1px solid #fff;"></td>
+                                        <td style=" border: 1px solid #fff;"></td>
+                                        <td style=" border: 1px solid #fff;"></td>
+                                        <td style=" border: 1px solid #fff;">6.7</td>
+                                        <td style=" border: 1px solid #fff;">10</td>
                                     </tr>
                                 </tbody>
                             </table>

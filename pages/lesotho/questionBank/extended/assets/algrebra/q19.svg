@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .angle-text { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+        .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 14px; fill: #ffffff; }
+        .plain-text { font-family: Arial, sans-serif; font-size: 14px; fill: #ffffff; }
+    </style>
+
+    <!-- Main Triangle PQR -->
+    <!-- Side PQ -->
+    <line x1="40" y1="170" x2="110" y2="50" class="geometry-line" />
+
+    <!-- Side QR -->
+    <line x1="110" y1="50" x2="410" y2="60" class="geometry-line" />
+
+    <!-- Side PR -->
+    <line x1="40" y1="170" x2="410" y2="60" class="geometry-line" />
+
+    <!-- Angle Arc at P (30°) -->
+    <path d="M 74.6 110 A 40 40 0 0 1 85.6 153.5" class="geometry-line" stroke-width="1" />
+
+    <!-- Vertex Labels -->
+    <text x="25" y="178" class="label-text">P</text>
+    <text x="105" y="42" class="label-text">Q</text>
+    <text x="418" y="65" class="label-text">R</text>
+
+    <!-- Measurement / Variable Expressions -->
+    <!-- Angle value at P -->
+    <text x="65" y="145" class="angle-text">30°</text>
+
+    <!-- Left side side length: (x + 1) -->
+    <text x="32" y="96" class="plain-text">(</text>
+    <text x="37" y="96" class="variable-text">x</text>
+    <text x="48" y="96" class="plain-text">+ 1)</text>
+
+    <!-- Bottom side length: (4 - x)² -->
+    <text x="210" y="148" class="plain-text">(</text>
+    <text x="215" y="148" class="plain-text">4</text>
+    <text x="226" y="148" class="plain-text">-</text>
+    <text x="234" y="148" class="variable-text">x</text>
+    <text x="242" y="148" class="plain-text">)²</text>
+
+    <!-- Scale Notice -->
+    <text x="460" y="45" class="label-text">NOT TO</text>
+    <text x="460" y="61" class="label-text">SCALE</text>
+</svg>

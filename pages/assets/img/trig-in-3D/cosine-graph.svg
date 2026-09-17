@@ -1,4 +1,4 @@
-<svg viewBox="0 0 840 360" width="840" height="360" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; max-width: 760px; font-family: 'Inter', system-ui, sans-serif;">
+<svg viewBox="0 0 840 360" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; max-width: 760px; font-family: 'Inter', system-ui, sans-serif;">
     <style>
         .gr-grid  { stroke: #ffffff; stroke-width: 0.5; stroke-dasharray: 4,4; opacity: 0.15; }
         .gr-curve { stroke: #5ba3f5; stroke-width: 3; fill: none; stroke-linecap: round; }

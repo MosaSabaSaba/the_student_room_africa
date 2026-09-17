@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="100%" height="100%">
+    <!-- Background for high contrast -->
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <!-- Main Geometry Framework Right-Angled Triangle Group -->
+    <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Right-angled triangle layout: A (120,40), B (120,260), C (580,260) -->
+        <polygon points="120,40 120,260 580,260" />
+
+        <!-- Perpendicular square right angle indicator at vertex B -->
+        <rect x="120" y="238" width="22" height="22" stroke-width="2.5"/>
+    </g>
+
+    <!-- Angle Arc Indicator at vertex A -->
+    <g fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round">
+        <!-- 60° Angle Arc near vertex A spanning between side AB and hypotenuse AC -->
+        <path d="M 120,100 A 60,60 0 0,0 171,71" />
+    </g>
+
+    <!-- Text Labels & Value Annotations Layout -->
+    <g font-family="Arial, sans-serif" fill="#ffffff" font-weight="bold">
+        <!-- Triangle Vertex Identification Labels -->
+        <text x="95" y="45" font-size="24" text-anchor="middle">A</text>
+        <text x="95" y="270" font-size="24" text-anchor="middle">B</text>
+        <text x="605" y="270" font-size="24" text-anchor="start">C</text>
+
+        <!-- Angle Value Label inside the arc at vertex A -->
+        <text x="145" y="115" font-size="20" text-anchor="middle">60°</text>
+
+        <!-- Hypotenuse Side Length Value String Constraint -->
+        <text x="365" y="135" font-size="22" text-anchor="middle">12 cm</text>
+
+        <!-- "NOT TO SCALE" Traditional Exam Paper Disclaimer text -->
+        <g font-size="20" text-anchor="start" letter-spacing="1">
+            <text x="560" y="60">NOT TO</text>
+            <text x="560" y="85">SCALE</text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 180" width="340" height="180">
+    <!-- "NOT TO SCALE" Note -->
+    <text x="270" y="105" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" letter-spacing="0.5">NOT TO</text>
+    <text x="270" y="120" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" letter-spacing="0.5">SCALE</text>
+
+    <!-- Triangle ABD Lines -->
+    <line x1="40" y1="150" x2="80" y2="100" stroke="#ffffff" stroke-width="1.5" fill="none" />
+    <line x1="40" y1="150" x2="210" y2="150" stroke="#ffffff" stroke-width="1.5" fill="none" />
+    <line x1="80" y1="100" x2="210" y2="150" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+    <!-- Triangle BCD Lines -->
+    <line x1="80" y1="100" x2="235" y2="30" stroke="#ffffff" stroke-width="1.5" fill="none" />
+    <line x1="235" y1="30" x2="210" y2="150" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+    <!-- Angle BAD Arc (theta) -->
+    <path d="M 65 150 A 25 25 0 0 0 55 129" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+    <!-- Angle BCD Arc (25 degrees) -->
+    <path d="M 215 42 A 25 25 0 0 0 231 54" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+    <!-- Dimension/Value Labels -->
+    <text x="32" y="118" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">4 cm</text>
+    <text x="120" y="163" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">8 cm</text>
+    <text x="222" y="95" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">11 cm</text>
+    <text x="53" y="146" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">&#952;</text>
+    <text x="218" y="47" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">25&#176;</text>
+
+    <!-- Letter Labels for Vertices -->
+    <text x="25" y="155" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">A</text>
+    <text x="70" y="95" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">B</text>
+    <text x="240" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">C</text>
+    <text x="215" y="162" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">D</text>
+</svg>

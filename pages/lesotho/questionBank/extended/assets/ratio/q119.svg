@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+        .sub-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="270" y="45" class="note-text">NOT TO</text>
+    <text x="270" y="60" class="note-text">SCALE</text>
+
+    <!-- CUBE A -->
+    <!-- Front Face -->
+    <rect x="40" y="80" width="60" height="60" class="geometry-line" />
+    <!-- Top Face Extension -->
+    <polygon points="40,80 65,50 125,50 100,80" class="geometry-line" />
+    <!-- Right Face Extension -->
+    <polygon points="100,80 125,50 125,110 100,140" class="geometry-line" />
+    <!-- Text Labels inside Cube A -->
+    <text x="70" y="105" class="label-text">A</text>
+    <text x="70" y="125" class="sub-text">216 cm³</text>
+
+
+    <!-- CUBE B (Slightly smaller) -->
+    <!-- Front Face -->
+    <rect x="190" y="92" width="52" height="48" class="geometry-line" />
+    <!-- Top Face Extension -->
+    <polygon points="190,92 215,68 267,68 242,92" class="geometry-line" />
+    <!-- Right Face Extension -->
+    <polygon points="242,92 267,68 267,116 242,140" class="geometry-line" />
+    <!-- Text Labels inside Cube B -->
+    <text x="216" y="112" class="label-text">B</text>
+    <text x="216" y="130" class="sub-text">64 cm³</text>
+</svg>

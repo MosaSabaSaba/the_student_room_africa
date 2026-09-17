@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450">
+    <!-- Background for high contrast -->
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <!-- Main Universal Set Rectangle Boundary -->
+    <g stroke="#ffffff" stroke-width="3.5" fill="none">
+        <rect x="50" y="40" width="600" height="370" />
+    </g>
+
+    <!-- Venn Diagram Set Ellipses (Car, Bus, Taxi) -->
+    <g stroke="#ffffff" stroke-width="3.5" fill="none">
+        <!-- Car (C): Top Left Ellipse -->
+        <ellipse cx="260" cy="190" rx="145" ry="95" />
+        
+        <!-- Bus (B): Top Right Ellipse -->
+        <ellipse cx="440" cy="190" rx="145" ry="95" />
+        
+        <!-- Taxi (T): Bottom Center Ellipse -->
+        <ellipse cx="350" cy="275" rx="145" ry="95" />
+    </g>
+
+    <!-- Text Labels & Values Descriptions -->
+    <g font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff">
+        <!-- Set Names Labels -->
+        <text x="70" y="80" font-size="32">ε</text>
+        <text x="180" y="80" font-size="26" text-anchor="middle">Car (C)</text>
+        <text x="520" y="80" font-size="26" text-anchor="middle">Bus (B)</text>
+        <text x="350" y="395" font-size="26" text-anchor="middle">Taxi (T)</text>
+
+        <!-- Region Numerical Values -->
+        <!-- Only Car (C) region -->
+        <text x="220" y="180" font-size="28" text-anchor="middle">7</text>
+        
+        <!-- Only Bus (B) region -->
+        <text x="480" y="180" font-size="28" text-anchor="middle">10</text>
+        
+        <!-- Intersection of Car and Bus, outside Taxi -->
+        <text x="350" y="160" font-size="28" text-anchor="middle">3</text>
+        
+        <!-- Intersection of Car, Bus, and Taxi (Center) -->
+        <text x="350" y="245" font-size="28" text-anchor="middle">4</text>
+        
+        <!-- Universal set remainder value (Outside all loops) -->
+        <text x="560" y="360" font-size="28" text-anchor="middle">5</text>
+    </g>
+</svg>

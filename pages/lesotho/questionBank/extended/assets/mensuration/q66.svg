@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 180">
+    <style>
+        .cube-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .cube-shade { fill: #888888; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: round; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="260" y="35" class="note-text">NOT TO</text>
+    <text x="260" y="50" class="note-text">SCALE</text>
+
+    <!-- Block 1 (Left Cube) -->
+    <!-- Front Face -->
+    <rect x="25" y="80" width="70" height="45" class="cube-line" />
+    <!-- Top Face -->
+    <polygon points="25,80 45,60 115,60 95,80" class="cube-line" />
+
+    <!-- Block 2 (Middle Cube) -->
+    <!-- Front Face -->
+    <rect x="95" y="80" width="70" height="45" class="cube-line" />
+    <!-- Top Face -->
+    <polygon points="95,80 115,60 185,60 165,80" class="cube-line" />
+
+    <!-- Block 3 (Right Cube) -->
+    <!-- Front Face -->
+    <rect x="165" y="80" width="70" height="45" class="cube-line" />
+    <!-- Top Face -->
+    <polygon points="165,80 185,60 255,60 235,80" class="cube-line" />
+    <!-- Right Shaded Side Face -->
+    <polygon points="235,80 255,60 255,105 235,125" class="cube-shade" />
+</svg>

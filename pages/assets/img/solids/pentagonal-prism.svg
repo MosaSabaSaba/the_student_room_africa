@@ -1,4 +1,4 @@
-<svg style="font-family: 'Inter', system-ui, sans-serif;" width="550" height="550" viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg">
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg">
     <!-- 3D SHAPE -->
     <!-- Bottom Pentagon -->
     <path d="M 100,220 L 180,220 L 210,180 L 140,150 L 70,180 Z" fill="none" stroke="#ffffff" stroke-width="3"/>

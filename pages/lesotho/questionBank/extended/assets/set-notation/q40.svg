@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 260">
+    <style>
+        .diagram-border { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .set-ellipse { stroke: #ffffff; stroke-width: 1.2; fill: none; }
+        .label-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 16px; font-weight: bold; fill: #ffffff; }
+        .value-text { font-family: Arial, sans-serif; font-size: 14px; fill: #ffffff; }
+    </style>
+
+    <!-- Universal Set Box Border -->
+    <rect x="25" y="25" width="330" height="210" class="diagram-border" />
+
+    <!-- Three Intersecting Set Ellipses -->
+    <!-- Set B (Top Left) -->
+    <ellipse cx="130" cy="110" rx="65" ry="45" class="set-ellipse" />
+    
+    <!-- Set I (Top Right) -->
+    <ellipse cx="215" cy="115" rx="65" ry="45" class="set-ellipse" />
+    
+    <!-- Set P (Bottom Center) -->
+    <ellipse cx="165" cy="165" rx="65" ry="45" class="set-ellipse" />
+
+    <!-- Set Identifiers (ε, B, I, P) -->
+    <text x="10" y="32" class="label-text">ε</text>
+    <text x="130" y="60" class="label-text" text-anchor="middle">B</text>
+    <text x="215" y="65" class="label-text" text-anchor="middle">I</text>
+    <text x="165" y="222" class="label-text" text-anchor="middle">P</text>
+
+    <!-- Region Values inside the Venn Diagram Regions -->
+    <!-- Only in B -->
+    <text x="105" y="100" class="value-text" text-anchor="middle">22</text>
+    
+    <!-- Outside all sets -->
+    <text x="45" y="205" class="value-text" text-anchor="middle">4</text>
+
+    <!-- Intersection Regions -->
+    <!-- B intersect I (excluding P) -->
+    <text x="175" y="102" class="value-text" text-anchor="middle">6</text>
+    
+    <!-- B intersect P (excluding I) -->
+    <text x="132" y="152" class="value-text" text-anchor="middle">18</text>
+    
+    <!-- Triple Intersection (B intersect I intersect P) -->
+    <text x="175" y="132" class="value-text" text-anchor="middle">10</text>
+</svg>

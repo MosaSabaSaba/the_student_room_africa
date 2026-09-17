@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="260" y="35" class="note-text">NOT TO</text>
+    <text x="260" y="50" class="note-text">SCALE</text>
+
+    <!-- Main Triangle ABC and extended base Line EA -->
+    <!-- Vertices: B(170,30), A(230,170), E(40,170) -->
+    <!-- Base Line EA (Passing through C at x=115) -->
+    <line x1="40" y1="170" x2="230" y2="170" class="geometry-line" />
+    
+    <!-- Side AB -->
+    <line x1="170" y1="30" x2="230" y2="170" class="geometry-line" />
+    
+    <!-- Side BC (Extended to E) -->
+    <line x1="170" y1="30" x2="115" y2="170" class="geometry-line" />
+
+    <!-- Interior Line ED (Passing through F on BC) -->
+    <!-- Points: D(202,95) on AB, F(135,125) on BC -->
+    <line x1="40" y1="170" x2="202" y2="95" class="geometry-line" />
+
+    <!-- Parallel Interior Line GD -->
+    <!-- Point G(154,95) on BC -->
+    <line x1="148" y1="95" x2="202" y2="95" class="geometry-line" />
+
+    <!-- Parallel Arrows (>) -->
+    <!-- Double arrows on GD -->
+    <line x1="175" y1="90" x2="175" y2="100" class="geometry-line" stroke-width="1.2" />
+    <path d="M 180,91 L 185,95 L 180,99" class="geometry-line" stroke-width="1.2" />
+    <!-- Single arrow on CA -->
+    <path d="M 165,166 L 170,170 L 165,174" class="geometry-line" stroke-width="1.2" />
+
+    <!-- Congruence Hash Marks (/) -->
+    <!-- On EC -->
+    <line x1="75" y1="164" x2="80" y2="176" class="geometry-line" stroke-width="1.2" />
+    <!-- On BD -->
+    <line x1="175" y1="58" x2="191" y2="67" class="geometry-line" stroke-width="1.2" />
+
+    <!-- Letter Labels for Vertices and Intersections -->
+    <text x="165" y="24" class="label-text">B</text>
+    <text x="210" y="98" class="label-text">D</text>
+    <text x="139" y="98" class="label-text">G</text>
+    <text x="122" y="126" class="label-text">F</text>
+    <text x="233" y="175" class="label-text">A</text>
+    <text x="106" y="184" class="label-text">C</text>
+    <text x="28" y="175" class="label-text">E</text>
+</svg>

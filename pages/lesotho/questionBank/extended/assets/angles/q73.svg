@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320">
+    <!-- Background for high contrast -->
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <!-- Definition block for parallel arrow markers -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0,1 L 5,5 L 0,9" stroke="#ffffff" stroke-width="2" fill="none"/>
+        </marker>
+    </defs>
+
+    <!-- Main Geometry Lines Group -->
+    <g stroke="#ffffff" stroke-width="3.5" fill="none" stroke-linecap="round">
+        <!-- Parallel Line PQ -->
+        <line x1="50" y1="60" x2="480" y2="60" />
+        <!-- Parallel Line RS -->
+        <line x1="50" y1="180" x2="480" y2="180" />
+
+        <!-- Intersecting Transversal Lines forming triangles -->
+        <!-- Line VZX -->
+        <line x1="240" y1="60" x2="110" y2="115" />
+        <line x1="110" y1="115" x2="330" y2="280" />
+        
+        <!-- Line VWX -->
+        <line x1="240" y1="60" x2="330" y2="280" />
+
+        <!-- Angle Arcs Indicators -->
+        <g stroke-width="2">
+            <!-- 24 degree angle arc at V -->
+            <path d="M 190,60 A 50,50 0 0,0 216,70" />
+            
+            <!-- 38 degree angle arc at Y -->
+            <path d="M 160,180 A 40,40 0 0,0 178,166" />
+            
+            <!-- 71 degree angle arc at W -->
+            <path d="M 285,180 A 25,25 0 0,1 298,155" />
+            
+            <!-- Reflex angle arc at Z wrapping around the OUTSIDE/LEFT side -->
+            <path d="M 124,125 A 22,22 0 1,1 129,107" />
+            
+            <!-- Target internal angle arc at X -->
+            <path d="M 318,251 A 30,30 0 0,1 324,265" />
+        </g>
+    </g>
+
+    <!-- Parallel Line Indicators (Arrows inline) -->
+    <path d="M 310,60" marker-end="url(#arrow)"/>
+    <path d="M 370,180" marker-end="url(#arrow)"/>
+
+    <!-- Text and Labels -->
+    <g font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff">
+        <!-- Line Endpoint Labels -->
+        <text x="40" y="68" font-size="22" text-anchor="end">P</text>
+        <text x="495" y="68" font-size="22" text-anchor="start">Q</text>
+        <text x="40" y="188" font-size="22" text-anchor="end">R</text>
+        <text x="495" y="188" font-size="22" text-anchor="start">S</text>
+
+        <!-- Intersection Vertex Labels -->
+        <text x="240" y="48" font-size="22" text-anchor="middle">V</text>
+        <text x="95" y="115" font-size="22" text-anchor="end">Z</text>
+        <text x="210" y="202" font-size="22" text-anchor="end">Y</text>
+        <text x="315" y="172" font-size="22" text-anchor="end">W</text>
+        <text x="340" y="302" font-size="22" text-anchor="start">X</text>
+
+        <!-- Angle Numerical Values -->
+        <text x="175" y="82" font-size="18" text-anchor="middle">24°</text>
+        <text x="145" y="170" font-size="18" text-anchor="middle">38°</text>
+        <text x="275" y="170" font-size="18" text-anchor="middle">71°</text>
+
+        <!-- "NOT TO SCALE" Disclaimer -->
+        <g font-size="20" text-anchor="start" letter-spacing="1">
+            <text x="560" y="80">NOT TO</text>
+            <text x="560" y="105">SCALE</text>
+        </g>
+    </g>
+</svg>

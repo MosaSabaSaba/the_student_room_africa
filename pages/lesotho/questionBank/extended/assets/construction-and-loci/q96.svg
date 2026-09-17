@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 180">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+    </style>
+
+    <!-- Triangle Vertices: A(60,50), C(270,50), B(210,135) -->
+
+    <!-- Top Horizontal Line AC -->
+    <line x1="60" y1="50" x2="270" y2="50" class="geometry-line" />
+
+    <!-- Slanted Line AB -->
+    <line x1="60" y1="50" x2="210" y2="135" class="geometry-line" />
+
+    <!-- Slanted Line CB -->
+    <line x1="270" y1="50" x2="210" y2="135" class="geometry-line" />
+
+    <!-- Letter Labels for Vertices -->
+    <text x="45" y="54" class="label-text">A</text>
+    <text x="212" y="149" class="label-text">B</text>
+    <text x="275" y="54" class="label-text">C</text>
+</svg>

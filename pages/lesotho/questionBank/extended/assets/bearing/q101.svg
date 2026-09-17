@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240" width="340" height="240">
+    <defs>
+        <!-- Arrowhead Marker Definition -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffffff" />
+        </marker>
+    </defs>
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .degree-text { font-family: Arial, sans-serif; font-size: 12px; font-style: italic; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; fill: #ffffff; }
+        .point-dot { fill: #ffffff; }
+    </style>
+
+    <!-- Scale Box in Top Right -->
+    <rect x="190" y="30" width="135" height="22" class="geometry-line" />
+    <text x="196" y="45" class="note-text">Scale: 1cm represents 40km</text>
+
+    <!-- POINT A -->
+    <!-- North Arrow at A -->
+    <line x1="45" y1="125" x2="45" y2="35" class="geometry-line" marker-end="url(#arrow)" />
+    <text x="41" y="27" class="label-text">N</text>
+    <!-- Point Dot A -->
+    <circle cx="45" cy="125" r="2.5" class="point-dot" />
+    <text x="35" y="140" class="label-text">A</text>
+
+    <!-- Slanted Line segment AB -->
+    <line x1="45" y1="125" x2="165" y2="215" class="geometry-line" />
+
+    <!-- POINT B -->
+    <!-- North Arrow at B -->
+    <line x1="165" y1="215" x2="165" y2="125" class="geometry-line" marker-end="url(#arrow)" />
+    <text x="161" y="117" class="label-text">N</text>
+    <!-- Point Dot B -->
+    <circle cx="165" cy="215" r="2.5" class="point-dot" />
+    <text x="162" y="230" class="label-text">B</text>
+
+    <!-- Angle x Arc (Clockwise from North to Line AB) -->
+    <!-- Start at (45, 90), Curve down and right towards the segment direction -->
+    <path d="M 45 90 A 35 35 0 0 1 73 146" class="geometry-line" />
+    <text x="58" y="112" class="degree-text">x</text>
+</svg>

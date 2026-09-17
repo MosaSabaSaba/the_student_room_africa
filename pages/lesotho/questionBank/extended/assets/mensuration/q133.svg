@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .geometry-line-dashed { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4, 4; fill: none; }
+        .dimension-line { stroke: #ffffff; stroke-width: 1.0; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- Corrected Arrowhead Configurations -->
+    <defs>
+        <!-- Arrowhead pointing UP for the top of dimension lines -->
+        <marker id="arrow-up" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="6" markerHeight="6" orient="360">
+            <path d="M 5 0 L 0 8 L 10 8 z" fill="#ffffff" />
+        </marker>
+        <!-- Arrowhead pointing DOWN for the bottom of dimension lines -->
+        <marker id="arrow-down" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="6" markerHeight="6" orient="180">
+            <path d="M 5 10 L 0 2 L 10 2 z" fill="#ffffff" />
+        </marker>
+    </defs>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="270" y="45" class="note-text">NOT TO</text>
+    <text x="270" y="60" class="note-text">SCALE</text>
+
+    <!-- LEFT CYLINDER -->
+    <!-- Top Ellipse -->
+    <ellipse cx="65" cy="50" rx="35" ry="18" class="geometry-line" />
+    <!-- Vertical Sides -->
+    <line x1="30" y1="50" x2="30" y2="150" class="geometry-line" />
+    <line x1="100" y1="50" x2="100" y2="150" class="geometry-line" />
+    <!-- Bottom Curves -->
+    <path d="M 30 150 A 35 18 0 0 0 100 150" class="geometry-line" />
+    <path d="M 30 150 A 35 18 0 0 1 100 150" class="geometry-line-dashed" />
+    <!-- Dimension Line (20 cm) with absolute explicit orientations -->
+    <line x1="110" y1="50" x2="110" y2="150" class="dimension-line" marker-start="url(#arrow-up)" marker-end="url(#arrow-down)" />
+    <text x="115" y="104" class="label-text">20 cm</text>
+
+    <!-- RIGHT CYLINDER -->
+    <!-- Top Ellipse -->
+    <ellipse cx="215" cy="55" rx="30" ry="15" class="geometry-line" />
+    <!-- Vertical Sides -->
+    <line x1="185" y1="55" x2="185" y2="135" class="geometry-line" />
+    <line x1="245" y1="55" x2="245" y2="135" class="geometry-line" />
+    <!-- Bottom Curves -->
+    <path d="M 185 135 A 30 15 0 0 0 245 135" class="geometry-line" />
+    <path d="M 185 135 A 30 15 0 0 1 245 135" class="geometry-line-dashed" />
+    <!-- Dimension Line (10 cm) with absolute explicit orientations -->
+    <line x1="255" y1="55" x2="255" y2="135" class="dimension-line" marker-start="url(#arrow-up)" marker-end="url(#arrow-down)" />
+    <text x="260" y="100" class="label-text">10 cm</text>
+</svg>

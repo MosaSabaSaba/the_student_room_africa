@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .dimension-arrow { stroke: #ffffff; stroke-width: 1; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 14px; fill: #ffffff; }
+        .unit-text { font-family: Arial, sans-serif; font-size: 13px; fill: #ffffff; }
+    </style>
+
+    <!-- Definitions for Arrowheads -->
+    <defs>
+        <marker id="dimension-arrow-head" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 2 L 7 5 L 0 8 L 2 5 z" fill="#ffffff" stroke="none" />
+        </marker>
+    </defs>
+
+    <!-- Main Rectangle Outline -->
+    <rect x="40" y="30" width="280" height="90" class="geometry-line" />
+
+    <!-- Vertical Dimension Arrows on Right Side -->
+    <line x1="335" y1="30" x2="335" y2="55" class="dimension-arrow" marker-start="url(#dimension-arrow-head)" />
+    <line x1="335" y1="120" x2="335" y2="95" class="dimension-arrow" marker-start="url(#dimension-arrow-head)" />
+
+    <!-- Horizontal Dimension Arrows at Bottom -->
+    <line x1="40" y1="135" x2="135" y2="135" class="dimension-arrow" marker-start="url(#dimension-arrow-head)" />
+    <line x1="320" y1="135" x2="225" y2="135" class="dimension-arrow" marker-start="url(#dimension-arrow-head)" />
+
+    <!-- Text & Variable Labels -->
+    <!-- Right side width label: x cm -->
+    <text x="330" y="80" class="variable-text">x</text>
+    <text x="338" y="80" class="unit-text">cm</text>
+
+    <!-- Bottom length label: (x + 9) cm -->
+    <text x="142" y="140" class="unit-text">(</text>
+    <text x="147" y="140" class="variable-text">x</text>
+    <text x="158" y="140" class="unit-text">+ 9) cm</text>
+    
+    <!-- Scale Notice -->
+    <text x="440" y="40" class="label-text">NOT TO</text>
+    <text x="440" y="56" class="label-text">SCALE</text>
+</svg>

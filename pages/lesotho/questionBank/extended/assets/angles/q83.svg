@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="100%" height="100%">
+    <!-- Background for high contrast -->
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <!-- Main Circle and Internal Chords Structure -->
+    <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Main geometric circle boundary frame -->
+        <circle cx="320" cy="250" r="180" />
+
+        <!-- Cyclic Inscribed Quadrilateral ABCD Chords -->
+        <!-- 
+            Grounding Coordinate Framework:
+            A: (250, 85)
+            B: (445, 125)
+            C: (500, 280)
+            D: (155, 345)
+            E (Intersection): (390, 205)
+        -->
+        <polygon points="250,85 445,125 500,280 155,345" />
+
+        <!-- Intersecting Diagonals AC and BD -->
+        <line x1="250" y1="85" x2="500" y2="280" />  <!-- Diagonal AC -->
+        <line x1="155" y1="345" x2="445" y2="125" />  <!-- Diagonal BD -->
+    </g>
+
+    <!-- Text Labels & Value Markers -->
+    <g font-family="Arial, sans-serif" fill="#ffffff" font-weight="bold">
+        <!-- Geometric Points / Vertices Labels -->
+        <text x="245" y="70" font-size="24" text-anchor="middle">A</text>
+        <text x="465" y="125" font-size="24" text-anchor="start">B</text>
+        <text x="520" y="290" font-size="24" text-anchor="start">C</text>
+        <text x="135" y="360" font-size="24" text-anchor="end">D</text>
+        <text x="390" y="235" font-size="24" text-anchor="middle">E</text>
+
+        <!-- Geometric Segment Dimension Metric Text Strings -->
+        <text x="180" y="225" font-size="18" text-anchor="middle">9 cm</text>
+        <text x="315" y="145" font-size="18" text-anchor="middle">4 cm</text>
+        <text x="450" y="195" font-size="18" text-anchor="middle">3 cm</text>
+
+        <!-- "NOT TO SCALE" Traditional Exam Disclaimer Placement -->
+        <g font-size="20" text-anchor="start" letter-spacing="1">
+            <text x="540" y="90">NOT TO</text>
+            <text x="540" y="118">SCALE</text>
+        </g>
+    </g>
+</svg>

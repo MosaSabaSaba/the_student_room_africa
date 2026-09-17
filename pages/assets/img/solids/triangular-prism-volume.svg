@@ -1,4 +1,4 @@
-<svg style="font-family: 'Inter', system-ui, sans-serif;" width="300" height="270" viewBox="0 0 300 270" xmlns="http://www.w3.org/2000/svg">
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 300 270" xmlns="http://www.w3.org/2000/svg">
     <!-- Triangular Prism Diagram -->
     <g transform="translate(50, 60)">
         <path d="M 0,120 L 80,120 L 0,40 Z" fill="rgba(0, 255, 204, 0.1)" stroke="#ffffff" stroke-width="2"/>

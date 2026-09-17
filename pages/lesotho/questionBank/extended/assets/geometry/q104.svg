@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .geometry-line-dashed { stroke: #ffffff; stroke-width: 1.2; stroke-dasharray: 4, 4; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .degree-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- Background rect removed to keep it fully transparent -->
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="260" y="45" class="note-text">NOT TO</text>
+    <text x="260" y="60" class="note-text">SCALE</text>
+
+    <!-- Intersecting Circles -->
+    <!-- Left Circle (Center ~110, Radius 55) -->
+    <circle cx="110" cy="100" r="55" class="geometry-line" />
+    <!-- Right Circle (Center ~180, Radius 55) -->
+    <circle cx="180" cy="100" r="55" class="geometry-line" />
+
+    <!-- Central Dashed Line Segment TB -->
+    <line x1="55" y1="100" x2="235" y2="100" class="geometry-line-dashed" />
+
+    <!-- Left Triangle / Inscribed Lines (TA and TC) -->
+    <line x1="55" y1="100" x2="145" y2="58" class="geometry-line" />
+    <line x1="55" y1="100" x2="145" y2="142" class="geometry-line" />
+
+    <!-- Right Triangle Lines (AB and CB) -->
+    <line x1="145" y1="58" x2="235" y2="100" class="geometry-line" />
+    <line x1="145" y1="142" x2="235" y2="100" class="geometry-line" />
+
+    <!-- Angle Arc at T (30 degrees) -->
+    <path d="M 80 100 A 25 25 0 0 0 77.6 89.5" class="geometry-line" />
+    <text x="83" y="94" class="degree-text">30°</text>
+
+    <!-- Congruence Hash Marks (||) on Segment TD and DB -->
+    <!-- Hash marks on TD (Midpoint around 100) -->
+    <line x1="98" y1="94" x2="98" y2="106" class="geometry-line" />
+    <line x1="102" y1="94" x2="102" y2="106" class="geometry-line" />
+
+    <!-- Hash marks on DB (Midpoint around 190) -->
+    <line x1="188" y1="94" x2="188" y2="106" class="geometry-line" />
+    <line x1="192" y1="94" x2="192" y2="106" class="geometry-line" />
+
+    <!-- Letter Labels for Vertices and Points -->
+    <text x="40" y="104" class="label-text">T</text>
+    <text x="141" y="48" class="label-text">A</text>
+    <text x="243" y="104" class="label-text">B</text>
+    <text x="141" y="158" class="label-text">C</text>
+    <text x="152" y="113" class="label-text">D</text>
+</svg>

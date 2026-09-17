@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540">
+    <style>
+        .axis-line { stroke: #ffffff; stroke-width: 2.5; fill: none; }
+        .grid-major { stroke: rgba(255, 255, 255, 0.65); stroke-width: 1.2; fill: none; }
+        .grid-minor { stroke: rgba(255, 255, 255, 0.2); stroke-width: 0.5; fill: none; }
+        .plot-line { stroke: #ffffff; stroke-width: 2; fill: none; stroke-linecap: round; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 16px; font-weight: bold; fill: #ffffff; }
+    </style>
+
+    <defs>
+        <!-- Axis Arrowhead definition -->
+        <marker id="axis-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 7 5 L 0 8.5 z" fill="#ffffff" stroke="none" />
+        </marker>
+        
+        <!-- Reusable pattern representing a 10-unit interval on both axes (50px by 50px) -->
+        <!-- Contains exactly 4 inner minor lines to create 5 equal subdivisions between each labeled number -->
+        <pattern id="grid-pattern" width="50" height="50" patternUnits="userSpaceOnUse" x="60" y="450">
+            <!-- 4 internal minor lines horizontally (spaced at 10px intervals) -->
+            <path d="M 0 10 h 50 M 0 20 h 50 M 0 30 h 50 M 0 40 h 50" class="grid-minor" />
+            <!-- 4 internal minor lines vertically (spaced at 10px intervals) -->
+            <path d="M 10 0 v 50 M 20 0 v 50 M 30 0 v 50 M 40 0 v 50" class="grid-minor" />
+            <!-- Major division boundaries every 10 units -->
+            <path d="M 50 0 v 50 M 0 50 h 50" class="grid-major" />
+        </pattern>
+    </defs>
+
+    <!-- Main Grid Canvas Area (8 major blocks * 50px = 400px total width & height) -->
+    <rect x="60" y="50" width="400" height="400" fill="url(#grid-pattern)" stroke="rgba(255, 255, 255, 0.65)" stroke-width="1.2" />
+
+    <!-- Main Coordinate Axes -->
+    <!-- X-Axis (at y=0, SVG y=450) -->
+    <line x1="60" y1="450" x2="495" y2="450" class="axis-line" marker-end="url(#axis-arrow)" />
+    <!-- Y-Axis (at x=0, SVG x=60) -->
+    <line x1="60" y1="450" x2="60" y2="25" class="axis-line" marker-end="url(#axis-arrow)" />
+
+    <!-- Plot line from (0,80) to (80,0) -->
+    <!-- SVG coordinates: (0, 80) -> (60, 50), (80, 0) -> (460, 450) -->
+    <line x1="60" y1="50" x2="460" y2="450" class="plot-line" />
+
+    <!-- X-Axis Labels (0 to 80, matched with the major grid lines) -->
+    <text x="52" y="468" class="label-text" text-anchor="middle">0</text>
+    <text x="110" y="468" class="label-text" text-anchor="middle">10</text>
+    <text x="160" y="468" class="label-text" text-anchor="middle">20</text>
+    <text x="210" y="468" class="label-text" text-anchor="middle">30</text>
+    <text x="260" y="468" class="label-text" text-anchor="middle">40</text>
+    <text x="310" y="468" class="label-text" text-anchor="middle">50</text>
+    <text x="360" y="468" class="label-text" text-anchor="middle">60</text>
+    <text x="410" y="468" class="label-text" text-anchor="middle">70</text>
+    <text x="460" y="468" class="label-text" text-anchor="middle">80</text>
+
+    <!-- Y-Axis Labels (10 to 80, matched with the major grid lines) -->
+    <text x="52" y="404" class="label-text" text-anchor="end">10</text>
+    <text x="52" y="354" class="label-text" text-anchor="end">20</text>
+    <text x="52" y="304" class="label-text" text-anchor="end">30</text>
+    <text x="52" y="254" class="label-text" text-anchor="end">40</text>
+    <text x="52" y="204" class="label-text" text-anchor="end">50</text>
+    <text x="52" y="154" class="label-text" text-anchor="end">60</text>
+    <text x="52" y="104" class="label-text" text-anchor="end">70</text>
+    <text x="52" y="54" class="label-text" text-anchor="end">80</text>
+
+    <!-- Axis Variable Identifiers -->
+    <text x="505" y="454" class="variable-text">x</text>
+    <text x="60" y="16" class="variable-text" text-anchor="middle">y</text>
+</svg>

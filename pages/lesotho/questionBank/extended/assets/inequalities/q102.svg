@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 280">
+    <style>
+        .axis-line { stroke: #ffffff; stroke-width: 2; fill: none; }
+        .geometry-line { stroke: #ffffff; stroke-width: 1.8; fill: none; stroke-linejoin: round; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; fill: #ffffff; }
+        .bold-label { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 15px; font-weight: bold; fill: #ffffff; }
+    </style>
+
+    <defs>
+        <!-- Axis Arrowhead definition -->
+        <marker id="axis-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 7 5 L 0 8.5 z" fill="#ffffff" stroke="none" />
+        </marker>
+    </defs>
+
+    <!-- Continuous Straight Line Passing Through Points A, B, C, D -->
+    <line x1="40" y1="250" x2="300" y2="40" class="geometry-line" />
+
+    <!-- Main Coordinate Axes -->
+    <!-- X-Axis -->
+    <line x1="35" y1="210" x2="495" y2="210" class="axis-line" marker-end="url(#axis-arrow)" />
+    <!-- Y-Axis -->
+    <line x1="180" y1="250" x2="180" y2="30" class="axis-line" marker-end="url(#axis-arrow)" />
+
+    <!-- Ticks / Intersecting Point Structural Labels -->
+    <!-- Point A -->
+    <text x="85" y="248" class="label-text">A (-9, -3)</text>
+    
+    <!-- Point B -->
+    <text x="96" y="200" class="label-text">B</text>
+    <text x="94" y="224" class="label-text">-6</text>
+    
+    <!-- Origin 0 -->
+    <text x="168" y="224" class="label-text">0</text>
+    
+    <!-- Point C -->
+    <text x="168" y="138" class="label-text">5</text>
+    <text x="186" y="142" class="label-text">C</text>
+    
+    <!-- Point D -->
+    <text x="306" y="36" class="label-text">D (10, 11)</text>
+
+    <!-- Axis Variables at Arrow Tips -->
+    <text x="505" y="214" class="variable-text">x</text>
+    <text x="180" y="20" class="variable-text" text-anchor="middle">y</text>
+
+    <!-- Scale Disclaimer Text -->
+    <text x="415" y="45" class="bold-label">NOT TO</text>
+    <text x="415" y="62" class="bold-label">SCALE</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="100%" height="100%">
+    <!-- Background for high contrast -->
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <!-- Main Sector Geometry -->
+    <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Apex/Center point at bottom (250, 280) -->
+        <!-- Left Radius Line -->
+        <line x1="250" y1="280" x2="160" y2="50" />
+        
+        <!-- Right Radius Line -->
+        <line x1="250" y1="280" x2="340" y2="50" />
+        
+        <!-- Outer Circular Arc linking the radii endpoints -->
+        <path d="M 160,50 A 247.4,247.4 0 0,1 340,50" />
+        
+        <!-- Sector Angle Arc (36°) near the bottom vertex -->
+        <path d="M 226,218 A 65,65 0 0,1 274,218" stroke-width="2"/>
+    </g>
+
+    <!-- Text and Labels -->
+    <g font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff">
+        <!-- Inside Interior Angle Value Label -->
+        <text x="250" y="200" font-size="20" text-anchor="middle">36°</text>
+
+        <!-- Measurement Label alongside the Right Radius edge -->
+        <text x="315" y="155" font-size="22" text-anchor="start">5 cm</text>
+
+        <!-- "NOT TO SCALE" Disclaimer Placement -->
+        <g font-size="20" text-anchor="start" letter-spacing="1">
+            <text x="560" y="120">NOT TO</text>
+            <text x="560" y="145">SCALE</text>
+        </g>
+    </g>
+</svg>

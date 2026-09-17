@@ -1,4 +1,4 @@
-<svg style="font-family: 'Inter', system-ui, sans-serif;" width="600" height="160" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
     <!-- Style to keep lines uniform and match your aesthetic -->
     <style>
         .cube-edge { fill: none; stroke: #fff; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+    <!-- Background for high contrast -->
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <!-- Main Universal Set Rectangle Boundary -->
+    <g stroke="#ffffff" stroke-width="3.5" fill="none">
+        <rect x="50" y="40" width="600" height="320" />
+    </g>
+
+    <!-- Venn Diagram Set Sets Shapes (F, S, A) -->
+    <g stroke="#ffffff" stroke-width="3.5" fill="none">
+        <!-- Set F: Left Large Ellipse -->
+        <ellipse cx="260" cy="200" rx="140" ry="100" />
+        
+        <!-- Set S: Right Large Ellipse -->
+        <ellipse cx="430" cy="200" rx="140" ry="100" />
+        
+        <!-- Set A: Small Inner Sub-Circle overlapping F and S intersection -->
+        <circle cx="310" cy="220" r="50" />
+    </g>
+
+    <!-- Text Labels & Values Descriptions -->
+    <g font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff">
+        <!-- Set Names Labels -->
+        <text x="70" y="80" font-size="32">ε</text>
+        <text x="260" y="85" font-size="28" text-anchor="middle">F</text>
+        <text x="430" y="85" font-size="28" text-anchor="middle">S</text>
+        <text x="310" y="160" font-size="24" text-anchor="middle">A</text>
+
+        <!-- Region Numerical Values -->
+        <!-- Only F region -->
+        <text x="180" y="210" font-size="28" text-anchor="middle">7</text>
+        
+        <!-- Inside A, but only in F region -->
+        <text x="285" y="235" font-size="24" text-anchor="middle">12</text>
+        
+        <!-- Intersection of F and S, but outside A -->
+        <text x="375" y="165" font-size="28" text-anchor="middle">6</text>
+        
+        <!-- Inside A, intersecting both F and S region -->
+        <text x="340" y="225" font-size="24" text-anchor="middle">8</text>
+        
+        <!-- Only S region -->
+        <text x="510" y="210" font-size="28" text-anchor="middle">8</text>
+    </g>
+</svg>

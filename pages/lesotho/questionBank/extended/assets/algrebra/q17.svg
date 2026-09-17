@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-linejoin: round; }
+        .dashed-line { stroke: #ffffff; stroke-width: 1.5; fill: none; stroke-dasharray: 4,4; stroke-linejoin: round; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 14px; fill: #ffffff; }
+    </style>
+
+    <!-- Visible Solid Perimeter Outline -->
+    <!-- Left Vertical Edge (labeled x) -->
+    <line x1="40" y1="50" x2="40" y2="170" class="geometry-line" />
+    
+    <!-- Top Horizontal Edge (labeled 3x + 2) -->
+    <line x1="40" y1="50" x2="350" y2="50" class="geometry-line" />
+    
+    <!-- Left Bottom Horizontal Edge -->
+    <line x1="40" y1="170" x2="240" y2="170" class="geometry-line" />
+    
+    <!-- Inner Vertical Step Edge -->
+    <line x1="240" y1="170" x2="240" y2="100" class="geometry-line" />
+    
+    <!-- Inner Horizontal Step Edge -->
+    <line x1="240" y1="100" x2="350" y2="100" class="geometry-line" />
+    
+    <!-- Far Right Upper Vertical Edge -->
+    <line x1="350" y1="50" x2="350" y2="100" class="geometry-line" />
+
+    <!-- Dashed Reference Projection Lines (Completing the corner) -->
+    <!-- Bottom Dashed Horizontal Extension (labeled x) -->
+    <line x1="240" y1="170" x2="350" y2="170" class="dashed-line" />
+    
+    <!-- Right Dashed Vertical Extension (labeled 3) -->
+    <line x1="350" y1="100" x2="350" y2="170" class="dashed-line" />
+
+    <!-- Text & Variable Labels -->
+    <text x="25" y="114" class="variable-text">x</text>
+    <text x="195" y="38" class="variable-text">3x + 2</text>
+    <text x="295" y="188" class="variable-text">x</text>
+    <text x="360" y="140" class="label-text">3</text>
+    
+    <!-- Scale Notice -->
+    <text x="440" y="55" class="label-text">NOT TO</text>
+    <text x="440" y="71" class="label-text">SCALE</text>
+</svg>

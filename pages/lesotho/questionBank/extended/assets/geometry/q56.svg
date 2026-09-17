@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="260" y="35" class="note-text">NOT TO</text>
+    <text x="260" y="50" class="note-text">SCALE</text>
+
+    <!-- Coordinates: P(30,110), Q(190,30), B(110,70), A(50,30), C(130,120), D(115,160), End(90,175) -->
+
+    <!-- Line PQ -->
+    <line x1="30" y1="110" x2="190" y2="30" class="geometry-line" />
+
+    <!-- Line segment AB -->
+    <line x1="50" y1="30" x2="110" y2="70" class="geometry-line" />
+
+    <!-- Path B-C-D and extension -->
+    <polyline points="110,70 130,120 115,160 90,175" class="geometry-line" />
+
+    <!-- Letter Labels for Vertices and Points -->
+    <text x="35" y="32" class="label-text">A</text>
+    <text x="102" y="85" class="label-text">B</text>
+    <text x="15" y="114" class="label-text">P</text>
+    <text x="198" y="34" class="label-text">Q</text>
+    <text x="138" y="125" class="label-text">C</text>
+    <text x="123" y="165" class="label-text">D</text>
+</svg>

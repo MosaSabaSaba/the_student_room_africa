@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 550">
+    <!-- Background for high contrast -->
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <!-- Main Universal Set Rectangle Boundary -->
+    <g stroke="#ffffff" stroke-width="3.5" fill="none">
+        <rect x="120" y="40" width="460" height="460" />
+    </g>
+
+    <!-- Venn Diagram Set Circles (A, B, C) -->
+    <g stroke="#ffffff" stroke-width="3.5" fill="none">
+        <!-- Set A: Top Left Circle -->
+        <circle cx="290" cy="220" r="120" />
+        
+        <!-- Set B: Top Right Circle -->
+        <circle cx="410" cy="220" r="120" />
+        
+        <!-- Set C: Bottom Center Circle -->
+        <circle cx="350" cy="320" r="120" />
+    </g>
+
+    <!-- Text Labels & Values Descriptions -->
+    <g font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff">
+        <!-- Set Names Labels -->
+        <text x="90" y="70" font-size="32">ε</text>
+        <text x="290" y="80" font-size="28" text-anchor="middle" font-style="italic">A</text>
+        <text x="410" y="80" font-size="28" text-anchor="middle" font-style="italic">B</text>
+        <text x="490" y="440" font-size="28" text-anchor="middle" font-style="italic">C</text>
+
+        <!-- Region Numerical Values -->
+        <!-- Only A region -->
+        <text x="270" y="175" font-size="26" text-anchor="middle">5</text>
+        <text x="230" y="225" font-size="26" text-anchor="middle">3</text>
+        
+        <!-- Only B region -->
+        <text x="430" y="160" font-size="26" text-anchor="middle">7</text>
+        <text x="470" y="200" font-size="26" text-anchor="middle">11</text>
+        <text x="510" y="240" font-size="26" text-anchor="middle">9</text>
+        
+        <!-- Only C region -->
+        <text x="350" y="395" font-size="26" text-anchor="middle">8</text>
+        <text x="400" y="425" font-size="26" text-anchor="middle">10</text>
+        
+        <!-- Intersection of A and B, outside C -->
+        <text x="350" y="175" font-size="26" text-anchor="middle">6</text>
+        
+        <!-- Intersection of A and C, outside B -->
+        <text x="275" y="315" font-size="26" text-anchor="middle">1</text>
+        
+        <!-- Intersection of B and C, outside A -->
+        <text x="425" y="315" font-size="26" text-anchor="middle">4</text>
+        
+        <!-- Intersection of A, B, and C (Center) -->
+        <text x="350" y="255" font-size="26" text-anchor="middle">2</text>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200" width="340" height="200">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .axis-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; }
+        .math-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 13px; font-weight: bold; fill: #ffffff; }
+    </style>
+
+    <!-- Definitions for Arrowheads -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 2 L 8 5 L 0 8 z" fill="#ffffff" />
+        </marker>
+    </defs>
+
+    <!-- COORDINATE AXES -->
+    <!-- X-Axis -->
+    <line x1="30" y1="160" x2="280" y2="160" class="axis-line" marker-end="url(#arrow)" />
+    <text x="287" y="164" class="math-text">x</text>
+    
+    <!-- Y-Axis -->
+    <line x1="50" y1="180" x2="50" y2="35" class="axis-line" marker-end="url(#arrow)" />
+    <text x="46" y="26" class="math-text">y</text>
+    
+    <!-- Origin Label -->
+    <text x="40" y="173" class="label-text">0</text>
+
+    <!-- GEOMETRY LINES -->
+    <!-- Straight line cutting both axes -->
+    <line x1="35" y1="50" x2="260" y2="175" class="geometry-line" />
+
+    <!-- POINT LABELS AND COORDINATES -->
+    <!-- Point B (y-intercept) -->
+    <text x="71" y="56" class="label-text">B(0,6)</text>
+    
+    <!-- Point A (x-intercept) -->
+    <text x="228" y="174" class="math-text">A</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240">
+    <defs>
+        <!-- Arrowhead Marker Definition -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffffff" />
+        </marker>
+    </defs>
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+    </style>
+
+    <!-- Base Vertex Point A(230, 210) -->
+
+    <!-- Vertical North Vector Line from A -->
+    <line x1="230" y1="210" x2="230" y2="50" class="geometry-line" marker-end="url(#arrow)" />
+
+    <!-- Slanted Vector Line AB from A -->
+    <line x1="230" y1="210" x2="105" y2="60" class="geometry-line" marker-end="url(#arrow)" />
+
+    <!-- Text Labels for Vertices and Directions -->
+    <text x="210" y="40" class="note-text">North</text>
+    <text x="225" y="224" class="label-text">A</text>
+    <text x="95" y="52" class="label-text">B</text>
+</svg>

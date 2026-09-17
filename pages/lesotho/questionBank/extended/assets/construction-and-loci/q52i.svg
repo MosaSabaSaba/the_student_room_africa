@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 345 180">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .geometry-dot { fill: #ffffff; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="300" y="35" class="note-text">NOT TO</text>
+    <text x="300" y="50" class="note-text">SCALE</text>
+
+    <!-- Line segment from C(70, 135) to D(270, 45) -->
+    <line x1="70" y1="135" x2="270" y2="45" class="geometry-line" />
+
+    <!-- Endpoint dots -->
+    <circle cx="70" cy="135" r="3" class="geometry-dot" />
+    <circle cx="270" cy="45" r="3" class="geometry-dot" />
+
+    <!-- Vertex Labels -->
+    <text x="55" y="145" class="label-text">C</text>
+    <text x="280" y="48" class="label-text">D</text>
+</svg>

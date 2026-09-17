@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 280">
+    <style>
+        .diagram-border { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .set-circle { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #ffffff; }
+        .value-text { font-family: Arial, sans-serif; font-size: 14px; fill: #ffffff; }
+        .variable-text { font-family: "Times New Roman", Times, serif; font-style: italic; font-size: 15px; font-weight: bold; fill: #ffffff; }
+    </style>
+
+    <!-- Universal Set Box Border -->
+    <rect x="15" y="15" width="320" height="250" class="diagram-border" />
+
+    <!-- Three Intersecting Set Circles -->
+    <!-- Circle A (Top Left) -->
+    <circle cx="120" cy="105" r="65" class="set-circle" />
+    
+    <!-- Circle B (Top Right) -->
+    <circle cx="215" cy="105" r="65" class="set-circle" />
+    
+    <!-- Circle C (Bottom Center) -->
+    <circle cx="167" cy="160" r="65" class="set-circle" />
+
+    <!-- Set Identifiers (A, B, C) -->
+    <text x="90" y="42" class="label-text">A</text>
+    <text x="250" y="42" class="label-text">B</text>
+    <text x="195" y="242" class="label-text">C</text>
+
+    <!-- Region Value and Variable Labels -->
+    <!-- Only in A -->
+    <text x="65" y="90" class="value-text">3</text>
+    
+    <!-- Only in B -->
+    <text x="260" y="90" class="value-text">6</text>
+    
+    <!-- Only in C -->
+    <text x="167" y="210" class="value-text" text-anchor="middle">8</text>
+    
+    <!-- Outside all sets -->
+    <text x="50" y="225" class="value-text">2</text>
+
+    <!-- Intersection Regions -->
+    <!-- A intersect B (excluding C) -->
+    <text x="167" y="85" class="value-text" text-anchor="middle">4</text>
+    
+    <!-- A intersect C (excluding B) -->
+    <text x="122" y="150" class="variable-text">V</text>
+    
+    <!-- B intersect C (excluding A) -->
+    <text x="210" y="150" class="variable-text">Z</text>
+    
+    <!-- Triple Intersection (A intersect B intersect C) -->
+    <text x="167" y="118" class="variable-text" text-anchor="middle">X</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 280">
+    <defs>
+        <!-- Arrowhead Marker Definition -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ffffff" />
+        </marker>
+    </defs>
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .degree-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+    </style>
+
+    <!-- Center Point P(160, 160) -->
+
+    <!-- Vertical North Vector Line -->
+    <line x1="160" y1="160" x2="160" y2="40" class="geometry-line" marker-end="url(#arrow)" />
+
+    <!-- Slanted Line Vector PA -->
+    <line x1="160" y1="160" x2="290" y2="105" class="geometry-line" marker-end="url(#arrow)" />
+
+    <!-- Slanted Line Vector PB -->
+    <line x1="160" y1="160" x2="60" y2="245" class="geometry-line" marker-end="url(#arrow)" />
+
+    <!-- 62 Degree Arc (North to A) -->
+    <!-- Start at (160, 120), End near (192, 146) -->
+    <path d="M 160 120 A 40 40 0 0 1 193 146" class="geometry-line" />
+
+    <!-- 133 Degree Arc (North to B) -->
+    <!-- Start at (160, 125), End near (95, 190) -->
+    <path d="M 160 125 A 35 35 0 0 0 101 190" class="geometry-line" />
+
+    <!-- Angle Text Labels -->
+    <text x="165" y="145" class="degree-text">62&#176;</text>
+    <text x="122" y="152" class="degree-text">133&#176;</text>
+
+    <!-- Letter Labels for Vertices and Directions -->
+    <text x="145" y="30" class="note-text">North</text>
+    <text x="156" y="176" class="label-text">P</text>
+    <text x="296" y="105" class="label-text">A</text>
+    <text x="46" y="252" class="label-text">B</text>
+</svg>

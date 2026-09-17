@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 680" width="440" height="680" >
+    <style>
+        .axis-line { stroke: #ffffff; stroke-width: 2; }
+        .major-grid { stroke: #555555; stroke-width: 1; }
+        .minor-grid { stroke: #333333; stroke-width: 0.5; }
+        .axis-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+        .axis-text-left { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; text-anchor: end; }
+    </style>
+
+    <!-- Background -->
+    <rect width="440" height="680" fill="transparent" />
+
+    <!-- Minor Grid Lines (Every 8px, 5 divisions per 40px) -->
+    <!-- Vertical Minor Lines -->
+    <path d="
+        M 28 20 L 28 660 M 36 20 L 36 660 M 44 20 L 44 660 M 52 20 L 52 660
+        M 68 20 L 68 660 M 76 20 L 76 660 M 84 20 L 84 660 M 92 20 L 92 660
+        M 108 20 L 108 660 M 116 20 L 116 660 M 124 20 L 124 660 M 132 20 L 132 660
+        M 148 20 L 148 660 M 156 20 L 156 660 M 164 20 L 164 660 M 172 20 L 172 660
+        M 188 20 L 188 660 M 196 20 L 196 660 M 204 20 L 204 660 M 212 20 L 212 660
+        M 228 20 L 228 660 M 236 20 L 236 660 M 244 20 L 244 660 M 252 20 L 252 660
+        M 268 20 L 268 660 M 276 20 L 276 660 M 284 20 L 284 660 M 292 20 L 292 660
+        M 308 20 L 308 660 M 316 20 L 316 660 M 324 20 L 324 660 M 332 20 L 332 660
+        M 348 20 L 348 660 M 356 20 L 356 660 M 364 20 L 364 660 M 372 20 L 372 660
+        M 388 20 L 388 660 M 396 20 L 396 660 M 404 20 L 404 660 M 412 20 L 412 660
+    " class="minor-grid" />
+
+    <!-- Horizontal Minor Lines -->
+    <path d="
+        M 20 28 L 420 28 M 20 36 L 420 36 M 20 44 L 420 44 M 20 52 L 420 52
+        M 20 68 L 420 68 M 20 76 L 420 76 M 20 84 L 420 84 M 20 92 L 420 92
+        M 20 108 L 420 108 M 20 116 L 420 116 M 20 124 L 420 124 M 20 132 L 420 132
+        M 20 148 L 420 148 M 20 156 L 420 156 M 20 164 L 420 164 M 20 172 L 420 172
+        M 20 188 L 420 188 M 20 196 L 420 196 M 20 204 L 420 204 M 20 212 L 420 212
+        M 20 228 L 420 228 M 20 236 L 420 236 M 20 244 L 420 244 M 20 252 L 420 252
+        M 20 268 L 420 268 M 20 276 L 420 276 M 20 284 L 420 284 M 20 292 L 420 292
+        M 20 308 L 420 308 M 20 316 L 420 316 M 20 324 L 420 324 M 20 332 L 420 332
+        M 20 348 L 420 348 M 20 356 L 420 356 M 20 364 L 420 364 M 20 372 L 420 372
+        M 20 388 L 420 388 M 20 396 L 420 396 M 20 404 L 420 404 M 20 412 L 420 412
+        M 20 428 L 420 428 M 20 436 L 420 436 M 20 444 L 420 444 M 20 452 L 420 452
+        M 20 468 L 420 468 M 20 476 L 420 476 M 20 484 L 420 484 M 20 492 L 420 492
+        M 20 508 L 420 508 M 20 516 L 420 516 M 20 524 L 420 524 M 20 532 L 420 532
+        M 20 548 L 420 548 M 20 556 L 420 556 M 20 564 L 420 564 M 20 572 L 420 572
+        M 20 588 L 420 588 M 20 596 L 420 596 M 20 604 L 420 604 M 20 612 L 420 612
+        M 20 628 L 420 628 M 20 636 L 420 636 M 20 644 L 420 644 M 20 652 L 420 652
+    " class="minor-grid" />
+
+    <!-- Major Grid Lines (Every 40px) -->
+    <!-- Vertical Major Lines -->
+    <path d="M 20 20 L 20 660 M 60 20 L 60 660 M 100 20 L 100 660 M 140 20 L 140 660 M 180 20 L 180 660 M 260 20 L 260 660 M 300 20 L 300 660 M 340 20 L 340 660 M 380 20 L 380 660 M 420 20 L 420 660" class="major-grid" />
+    <!-- Horizontal Major Lines -->
+    <path d="M 20 20 L 420 20 M 20 60 L 420 60 M 20 100 L 420 100 M 20 140 L 420 140 M 20 180 L 420 180 M 20 220 L 420 220 M 20 260 L 420 260 M 20 300 L 420 300 M 20 380 L 420 380 M 20 420 L 420 420 M 20 460 L 420 460 M 20 500 L 420 500 M 20 540 L 420 540 M 20 580 L 420 580 M 20 620 L 420 620 M 20 660 L 420 660" class="major-grid" />
+
+    <!-- Main X and Y Axes -->
+    <line x1="10" y1="340" x2="430" y2="340" class="axis-line" /> <!-- X Axis -->
+    <line x1="220" y1="670" x2="220" y2="10" class="axis-line" /> <!-- Y Axis -->
+
+    <!-- Axis Arrows -->
+    <polygon points="430,340 422,335 422,345" fill="#ffffff" /> <!-- X Arrow -->
+    <polygon points="220,10 215,18 225,18" fill="#ffffff" />   <!-- Y Arrow -->
+
+    <!-- X Axis Labels -->
+    <text x="20" y="355" class="axis-text">-5</text>
+    <text x="60" y="355" class="axis-text">-4</text>
+    <text x="100" y="355" class="axis-text">-3</text>
+    <text x="140" y="355" class="axis-text">-2</text>
+    <text x="180" y="355" class="axis-text">-1</text>
+    <text x="210" y="355" class="axis-text">0</text>
+    <text x="260" y="355" class="axis-text">1</text>
+    <text x="300" y="355" class="axis-text">2</text>
+    <text x="340" y="355" class="axis-text">3</text>
+    <text x="380" y="355" class="axis-text">4</text>
+    <text x="420" y="355" class="axis-text">5</text>
+
+    <!-- Y Axis Labels -->
+    <text x="212" y="24" class="axis-text-left">8</text>
+    <text x="212" y="64" class="axis-text-left">7</text>
+    <text x="212" y="104" class="axis-text-left">6</text>
+    <text x="212" y="144" class="axis-text-left">5</text>
+    <text x="212" y="104" class="axis-text-left">6</text>
+    <text x="212" y="144" class="axis-text-left">5</text>
+    <text x="212" y="184" class="axis-text-left">4</text>
+    <text x="212" y="224" class="axis-text-left">3</text>
+    <text x="212" y="264" class="axis-text-left">2</text>
+    <text x="212" y="304" class="axis-text-left">1</text>
+    <text x="212" y="384" class="axis-text-left">-1</text>
+    <text x="212" y="424" class="axis-text-left">-2</text>
+    <text x="212" y="464" class="axis-text-left">-3</text>
+    <text x="212" y="504" class="axis-text-left">-4</text>
+    <text x="212" y="544" class="axis-text-left">-5</text>
+    <text x="212" y="584" class="axis-text-left">-6</text>
+    <text x="212" y="624" class="axis-text-left">-7</text>
+    <text x="212" y="664" class="axis-text-left">-8</text>
+</svg>

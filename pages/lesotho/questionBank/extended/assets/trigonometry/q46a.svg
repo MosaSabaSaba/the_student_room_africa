@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 180">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .degree-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="270" y="35" class="note-text">NOT TO</text>
+    <text x="270" y="50" class="note-text">SCALE</text>
+
+    <!-- Coordinates: A(40,30), B(220,30), C(178,126), D(48,136) -->
+
+    <!-- Outer Quadrilateral Lines -->
+    <line x1="40" y1="30" x2="220" y2="30" class="geometry-line" /> <!-- AB -->
+    <line x1="220" y1="30" x2="178" y2="126" class="geometry-line" /> <!-- BC -->
+    <line x1="178" y1="126" x2="48" y2="136" class="geometry-line" /> <!-- CD -->
+    <line x1="48" y1="136" x2="40" y2="30" class="geometry-line" /> <!-- DA -->
+
+    <!-- Diagonal Line AC -->
+    <line x1="40" y1="30" x2="178" y2="126" class="geometry-line" />
+
+    <!-- Angle BAC Arc (35°) -->
+    <path d="M 75 30 A 35 35 0 0 1 69 50" class="geometry-line" />
+
+    <!-- Right Angle Indicator at Vertex D -->
+    <path d="M 47 126 L 57 125 L 58 135" class="geometry-line" />
+
+    <!-- Dimension/Value Labels -->
+    <text x="125" y="23" class="degree-text">6 m</text>
+    <text x="80" y="45" class="degree-text">35°</text>
+    <text x="90" y="85" class="degree-text">5.6 m</text>
+    <text x="105" y="152" class="degree-text">4.3 m</text>
+
+    <!-- Letter Labels for Vertices -->
+    <text x="23" y="28" class="label-text">A</text>
+    <text x="228" y="28" class="label-text">B</text>
+    <text x="185" y="138" class="label-text">C</text>
+    <text x="32" y="146" class="label-text">D</text>
+</svg>

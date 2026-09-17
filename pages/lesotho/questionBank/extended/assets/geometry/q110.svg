@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220">
+    <style>
+        .geometry-line { stroke: #ffffff; stroke-width: 1.5; fill: none; }
+        .label-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+        .degree-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+        .note-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+    </style>
+
+    <!-- "NOT TO SCALE" Note -->
+    <text x="260" y="35" class="note-text">NOT TO</text>
+    <text x="260" y="50" class="note-text">SCALE</text>
+
+    <!-- Main Triangle LMN Outer Shell -->
+    <!-- Vertices: L(190,25), M(40,195), N(175,195) -->
+    <line x1="40" y1="195" x2="190" y2="25" class="geometry-line" />
+    <line x1="190" y1="25" x2="175" y2="195" class="geometry-line" />
+    <line x1="40" y1="195" x2="175" y2="195" class="geometry-line" />
+
+    <!-- Interior Lines and Diagonals -->
+    <!-- Midpoint/Segment Points: R(125,100) on LM, T(183,100) on LN -->
+    <!-- Parallel Line RT -->
+    <line x1="125" y1="100" x2="183" y2="100" class="geometry-line" />
+    <!-- Line MT -->
+    <line x1="40" y1="195" x2="183" y2="100" class="geometry-line" />
+    <!-- Line RN -->
+    <line x1="125" y1="100" x2="175" y2="195" class="geometry-line" />
+
+    <!-- Parallel Arrowheads (>) on Line RT and MN -->
+    <!-- Arrow on RT -->
+    <path d="M 152,96 L 157,100 L 152,104" class="geometry-line" stroke-width="1.2" />
+    <!-- Arrow on MN -->
+    <path d="M 105,191 L 110,195 L 105,199" class="geometry-line" stroke-width="1.2" />
+
+    <!-- Length Labels -->
+    <text x="135" y="50" class="degree-text">10 cm</text>
+    <text x="193" y="60" class="degree-text">8 cm</text>
+    <text x="183" y="150" class="degree-text">16 cm</text>
+    <text x="100" y="210" class="degree-text">12 cm</text>
+
+    <!-- Letter Labels for Vertices and Intersections -->
+    <text x="187" y="18" class="label-text">L</text>
+    <text x="110" y="100" class="label-text">R</text>
+    <text x="189" y="104" class="label-text">T</text>
+    <text x="135" y="142" class="label-text">P</text>
+    <text x="24" y="200" class="label-text">M</text>
+    <text x="182" y="202" class="label-text">N</text>
+</svg>

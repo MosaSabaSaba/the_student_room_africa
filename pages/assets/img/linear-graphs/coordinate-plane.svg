@@ -1,4 +1,4 @@
-<svg style="font-family: 'Inter', system-ui, sans-serif;" width="450" height="400" viewBox="0 0 450 400" xmlns="http://www.w3.org/2000/svg">
+<svg style="font-family: 'Inter', system-ui, sans-serif;" viewBox="0 0 450 400" xmlns="http://www.w3.org/2000/svg">
     <style>
         .axis { stroke: #ffffff; stroke-width: 2; }
         .grid { stroke: #ffffff; stroke-width: 0.5; stroke-dasharray: 3,3; opacity: 0.3; }
