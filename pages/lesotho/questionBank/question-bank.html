@@ -9,32 +9,226 @@
     <link rel="stylesheet" href="../../css/globalFonts.css" />
     <link rel="stylesheet" href="assets/css/question-bank.css" />
     <style>
-        
-        .main {
-            padding: .5rem .5rem 0 .5rem;
+        /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
+        .custom-container {
             max-width: 1200px;
             margin: 0 auto;
             width: 100%;
         }
 
         @media (min-width: 992px) {
-            .main {
+            .custom-container {
                 max-width: 960px;
             }
         }
 
         @media (min-width: 1200px) {
-            .main {
+            .custom-container {
                 max-width: 1140px;
             }
         }
 
         @media (max-width: 576px) {
-            .main {
+            .custom-container {
                 padding-left: 0.5rem;
                 padding-right: 0.5rem;
             }
         }
+
+        .page-body {
+            padding: 2rem 0;
+        }
+
+        /* tracker header */
+        .tracker-header {
+            margin: 0 0 1rem 0;
+        }
+
+        .tracker-header h1 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin: 0 0 0.4rem 0;
+            letter-spacing: -0.01em;
+        }
+
+        .tracker-header p {
+            margin: 0;
+            color: var(--text-body);
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* ══════════════════════════════════════════════════════
+           COLUMN HEADER ROW
+           ══════════════════════════════════════════════════════ */
+        .tracker-header-cols {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 0.75rem;
+            padding: 0 1rem 0.5rem 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .tracker-header-cols span {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+
+        .tracker-header-cols .col-watched,
+        .tracker-header-cols .col-notwatched {
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .tracker-header-cols .col-watched {
+            min-width: 60px;
+        }
+
+        .tracker-header-cols .col-notwatched {
+            min-width: 90px;
+        }
+
+        /* ══════════════════════════════════════════════════════
+           CARDS LAYOUT — active at ALL breakpoints.
+           ══════════════════════════════════════════════════════ */
+
+        /* Kill the horizontal scroll and the table's min-width */
+        .table-container {
+            overflow: visible;
+            border: none;
+            border-radius: 0;
+            margin: 0 0 2rem 0;
+        }
+
+        table,
+        thead,
+        tbody,
+        tr,
+        td {
+            display: block;
+            width: 100%;
+            min-width: 0;
+        }
+
+        /* Hide the header row — labels are in the header bar above */
+        thead {
+            display: none;
+        }
+
+        /* Each row becomes its own card */
+        tr.page-row {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 0.6rem;
+            padding: 0.85rem 1rem;
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            grid-template-areas: "topic watched notwatched";
+            align-items: center;
+            gap: 0.75rem;
+            transition: border-color 0.15s ease, background-color 0.15s ease;
+        }
+
+        tr.page-row:hover {
+            border-color: var(--accent);
+            background: var(--bg-secondary);
+        }
+
+        /* Neutralize the table hover background for card mode */
+        tr.page-row:hover td {
+            background: transparent;
+        }
+
+        /* Topic cell */
+        td:nth-child(1) {
+            grid-area: topic;
+            padding: 0;
+            border: none;
+            font-size: 0.9rem;
+            line-height: 1.35;
+            color: var(--text-body);
+            word-break: break-word;
+        }
+
+        /* Topic link — body text color, not the global blue link */
+        td:nth-child(1) a.topic-link {
+            color: var(--text-body);
+            text-decoration: none;
+        }
+
+        td:nth-child(1) a.topic-link:hover {
+            color: var(--text-primary);
+            border-bottom: 1px solid currentColor;
+        }
+
+        /* Watched cell */
+        td:nth-child(2) {
+            grid-area: watched;
+            padding: 0;
+            border: none;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 60px;
+        }
+
+        /* Not Watched cell */
+        td:nth-child(3) {
+            grid-area: notwatched;
+            padding: 0;
+            border: none;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 90px;
+        }
+
+        /* Checkboxes */
+        .checkbox-col input {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: var(--accent);
+        }
+
+        @media (max-width: 640px) {
+            .page-body {
+                padding: 1rem 0;
+            }
+            .tracker-header h1 {
+                font-size: 1.6rem;
+            }
+            .tracker-header-cols {
+                padding: 0 0.85rem 0.4rem 0.85rem;
+                gap: 0.6rem;
+            }
+            .tracker-header-cols .col-watched {
+                min-width: 50px;
+            }
+            .tracker-header-cols .col-notwatched {
+                min-width: 75px;
+            }
+            tr.page-row {
+                padding: 0.75rem 0.85rem;
+                gap: 0.6rem;
+            }
+            td:nth-child(1) {
+                font-size: 0.85rem;
+            }
+            td:nth-child(2) {
+                min-width: 50px;
+            }
+            td:nth-child(3) {
+                min-width: 75px;
+            }
+        }
+
     </style>
     
 </head>
@@ -48,7 +242,7 @@
         <div class="nav-links">
             <a href="../conversions.html">Study Guide</a>
             <a href="../tracker.html">Revision Tracker</a>
-            <a href="../tracker.html#past-papers">Past Papers</a>
+            <a href="../past-papers.html">Past Papers</a>
             <a href="../questionBank/question-bank.html">Question Bank</a>
         </div>
 
@@ -70,7 +264,7 @@
     <div class="breadcrumb-bar">
         <div class="breadcrumbs">
             <a href="#">Lesotho</a><span class="bc-sep">›</span>
-            <a href="../lgcse.html">L.G.C.S.E</a><span class="bc-sep">›</span>
+            <a href="../lgcse.html">Maths</a><span class="bc-sep">›</span>
             <a href="question-bank.html">Question Bank</a>
         </div>
         <div class="breadcrumb-right">
@@ -83,17 +277,24 @@
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <!-- PAGE LAYOUT -->
-    <div class="main">
-        <div class="topic-cards-grid">
-            <a href="core/core.html" class="topic-card">
-                <span class="topic-card-name">Core</span>
-            </a>
-            <a href="extended/extended.html" class="topic-card">
-                <span class="topic-card-name">Extended</span>
-            </a>
-            <a href="practice/practice-questions.html" class="topic-card">
-                <span class="topic-card-name">Practice Questions</span>
-            </a>
+    <div class="custom-container">
+        <div class="page-body">
+            <div class="tracker-header">
+                <h1>Questions Bank</h1>
+                <p>Track your video lessons, mark topics as watched, and keep notes. Your progress saves automatically to this device.</p>
+            </div>
+
+            <div class="topic-cards-grid">
+                <a href="core/core.html" class="topic-card">
+                    <span class="topic-card-name">Core</span>
+                </a>
+                <a href="extended/extended.html" class="topic-card">
+                    <span class="topic-card-name">Extended</span>
+                </a>
+                <a href="practice/practice-questions.html" class="topic-card">
+                    <span class="topic-card-name">Practice Questions</span>
+                </a>
+            </div>
         </div>
     </div>
 
