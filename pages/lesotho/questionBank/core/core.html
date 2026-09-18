@@ -8,9 +8,32 @@
     <link rel="stylesheet" href="../../../css/svg.css" />
     <link rel="stylesheet" href="../../../css/globalFonts.css" />
     <link rel="stylesheet" href="../assets/css/question-bank.css" />
-    <style>
+     <style>
+        
         .main {
-            padding: .5rem .5rem 0 .5rem;
+            padding: 1rem .5rem 0 .5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            .main {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .main {
+                max-width: 1140px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .main {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
         }
     </style>
 </head>
