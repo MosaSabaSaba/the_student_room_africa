@@ -1,26 +1,7 @@
-
 /* ═══════════════════════════════════════════════════════════════
    mobileNav.css
    WhatsApp-style mobile navigation for CONTENT PAGES ONLY.
-
-   Attach this file (alongside mobileNav.js) only on pages where
-   reducing nav clutter matters — topic/lesson pages, tracker,
-   question bank, etc. Do NOT attach it to the homepage or other
-   landing pages; those should keep their full nav at every width.
-
-   Requires contentStyles.css to already be loaded on the page
-   (uses its CSS variables: --nav-bg, --border, --text-muted, etc).
-
-   Adds:
-     1. A fixed bottom tab bar with the 4 main features
-     2. A search bar row under the top nav on mobile
-     3. A condensed footer (only the last column + copyright)
-     4. A clearer "sidebar" hamburger icon (via mobileNav.js)
-     5. Hamburger repositioned to the right to balance the top bar
-
-   Everything here is scoped to small screens; desktop layout is
-   completely untouched.
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 
 :root {
     --bottomnav-height: 60px;
@@ -30,48 +11,40 @@
     --bottomnav-active: #75b5fd;
 }
 
-/* ── Mobile search row (sits directly under the top bar, WhatsApp-style) ── */
+/* ── Mobile search row (sits directly under the top bar) ── */
 .mobile-search-row {
-    display: none; /* shown only on mobile, see media query below */
+    display: none;
     position: sticky;
-    top: 60px; /* height of .top-nav */
+    top: 60px;
     z-index: 99;
     background: var(--nav-bg);
     border-bottom: 1px solid var(--border);
     padding: 8px 12px;
 }
-.mobile-search-wrap {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border);
+
+/* Pagefind trigger on mobile — full width, pill-shaped */
+.mobile-search-row pagefind-modal-trigger {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
     border-radius: 20px;
     padding: 8px 14px;
 }
-.mobile-search-wrap svg {
-    flex-shrink: 0;
+
+.mobile-search-row pagefind-modal-trigger::before {
+    left: 14px;
     width: 18px;
     height: 18px;
-    color: var(--text-muted);
 }
-.mobile-search-input {
-    flex: 1;
-    min-width: 0;
-    background: none;
-    border: none;
-    outline: none;
-    color: var(--text-primary);
-    font-family: var(--font);
+
+.mobile-search-row pagefind-modal-trigger::after {
+    left: 42px;
     font-size: 0.95rem;
-}
-.mobile-search-input::placeholder {
-    color: var(--text-muted);
 }
 
 /* ── Bottom tab bar ── */
 .bottom-nav {
-    display: none; /* shown only on mobile, see media query below */
+    display: none;
     position: fixed;
     left: 0;
     right: 0;
@@ -130,7 +103,7 @@
     color: var(--bottomnav-active);
 }
 .bottom-nav-item.active .nav-icon {
-    background: rgba(117, 181, 253, 0.18); /* fallback for older browsers */
+    background: rgba(117, 181, 253, 0.18);
     background: color-mix(in srgb, var(--bottomnav-active) 18%, transparent);
 }
 
@@ -142,46 +115,20 @@
     .bottom-nav {
         display: block;
     }
-    /* Old desktop search button/kbd hint in the top bar is
-       replaced by the new mobile search row, so hide it here. */
-    .top-nav .nav-right .search-btn {
-        display: none;
-    }
-    /* Leave room at the bottom of the page so content never
-       hides behind the fixed tab bar. */
     body.has-bottom-nav {
         padding-bottom: calc(var(--bottomnav-height) + env(safe-area-inset-bottom, 0));
     }
-    /* The topic sidebar is a fixed, full-height (100vh) drawer, so
-       it doesn't know the bottom tab bar exists — its last items
-       (e.g. Core/Extended Questions) end up hidden underneath it.
-       Trim the drawer's height to stop just above the tab bar, with
-       a little extra breathing room at the end of the list. */
     body.has-bottom-nav .left-sidebar {
         height: calc(100vh - var(--bottomnav-height) - env(safe-area-inset-bottom, 0));
         padding-bottom: 20px;
     }
 }
 
-/* ── Condensed footer on mobile ──
-   The bottom tab bar already covers Study Guides / Tracker /
-   Question Bank / Past Papers, so the "Resources" and "Quick Links"
-   footer columns (and any other nav-duplicate column) become
-   redundant clutter under it. On mobile we keep only the LAST
-   footer column ("About" — Contact, Privacy, Terms) plus the
-   copyright/footer-bottom row, which are not covered anywhere else.
-
-   Assumption: "About" is the last .footer-section in your footer
-   markup on every page (this matches the footer on index.html).
-   If any page has a different column order, either reorder that
-   page's footer so About/legal links come last, or swap the
-   selector below for explicit nth-child rules for that page. */
+/* ── Condensed footer on mobile ── */
 @media (max-width: 768px) {
     .footer-content .footer-section:not(:last-child) {
         display: none;
     }
-    /* Center the one remaining column instead of leaving it
-       pinned to the left where the grid originally placed it. */
     .footer-content {
         display: flex;
         justify-content: center;
@@ -192,24 +139,14 @@
     }
 }
 
-/* ── Clearer hamburger icon ──
-   contentScript.js swaps the button's contents for a "sidebar"
-   icon (a panel with a topics column) instead of a plain ☰, so
-   it visibly reads as "open a list of topics" rather than a
-   generic menu. This just sizes whatever icon ends up inside it. */
+/* ── Clearer hamburger icon ── */
 .hamburger svg {
     width: 22px;
     height: 22px;
     display: block;
 }
 
-/* ── Balance the top bar on small screens ──
-   With the mobile search button hidden below 768px (replaced by
-   the search row underneath), the top bar was left lopsided:
-   hamburger on the far left, nothing on the right. Moving the
-   hamburger to the end mirrors the common "logo left, menu right"
-   mobile pattern. Uses the same 768px breakpoint as the rest of
-   the mobile layout so the two changes land together. */
+/* ── Balance the top bar on small screens ── */
 @media (max-width: 768px) {
     .top-nav {
         justify-content: space-between;

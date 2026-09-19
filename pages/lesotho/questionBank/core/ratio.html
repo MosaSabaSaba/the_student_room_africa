@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-pf-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../../../css/mobileNav.css" />
     <link rel="stylesheet" href="../../../css/svg.css" />
     <link rel="stylesheet" href="../assets/css/question-bank.css" />
+    <link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-component-ui.js" type="module"></script>
+    <link rel="stylesheet" href="../../../css/pagefind-theme.css" />
 </head>
 <body class="nav-question-bank" data-root="../../../../">
 
@@ -27,14 +30,8 @@
         </div>
         
         <div class="nav-right">
-            <div class="search-wrap">
-                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <circle cx="11" cy="11" r="7"/>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                </svg>
-                <input type="text" class="search-input" placeholder="Search topics..." aria-label="Search">
-                <kbd class="kbd">/</kbd>
-            </div>
+            <pagefind-modal-trigger></pagefind-modal-trigger>
+            <pagefind-modal></pagefind-modal>
         </div>
     </nav>
 

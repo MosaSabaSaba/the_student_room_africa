@@ -11,21 +11,18 @@
 
 /* ============================================================
    ROOT — premium black (Vercel/Linear cool neutral)
-   Swap the block below to try different vibes.
    ============================================================ */
 :root {
-    /* ── Premium black palette: cool neutral ── */
     --bg: #0a0a0a;
     --bg-secondary: #111111;
     --bg-tertiary: #171717;
     --border: #262626;
     --nav-bg: #0a0a0a;
 
-    /* ── Text ladder ── */
-    --text-primary:   #f5f5f5;      /* headings, emphasized text */
-    --text-body:      #d4d4d4;      /* NEW: regular body copy */
-    --text-secondary: #a3a3a3;      /* labels, secondary UI */
-    --text-muted:     #8a8a8a;      /* was #737373 — lifted for readability */
+    --text-primary:   #f5f5f5;
+    --text-body:      #d4d4d4;
+    --text-secondary: #a3a3a3;
+    --text-muted:     #8a8a8a;
 
     --accent: #1f6feb;
     --accent-bg: #0d2137;
@@ -144,89 +141,20 @@ a:hover { text-decoration: underline; }
 .blog-link { color: var(--text-secondary); font-size: 0.875rem; font-weight: 500; }
 .blog-link:hover { color: var(--text-primary); text-decoration: none; }
 
-/* ══════════════════════════════════════════════════════════════
-   SEARCH — desktop nav search bar
-   Mirrors the mobile search row injected by mobileNav.js
-   ══════════════════════════════════════════════════════════════ */
-.search-wrap {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 6px 12px;
-    min-width: 220px;
-    max-width: 340px;
-    flex: 1;
-    transition: border-color 0.15s ease, background 0.15s ease;
-}
 
-.search-wrap:hover {
-    border-color: #444;
-}
-
-.search-wrap:focus-within {
-    border-color: var(--accent);
-    background: var(--bg-secondary);
-}
-
-.search-icon {
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    color: var(--text-muted);
-    transition: color 0.15s ease;
-}
-
-.search-wrap:focus-within .search-icon {
-    color: var(--accent);
-}
-
-.search-input {
-    flex: 1;
-    min-width: 0;
-    background: none;
-    border: none;
-    outline: none;
-    color: var(--text-primary);
-    font-family: var(--font);
-    font-size: 0.875rem;
-}
-
-.search-input::placeholder {
-    color: var(--text-muted);
-}
-
-.search-wrap .kbd {
-    flex-shrink: 0;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    padding: 1px 5px;
-    font-size: 0.7rem;
-    color: var(--text-muted);
-    font-family: var(--font-mono);
-}
-
-/* ── Tablet: shrink the bar, hide the kbd hint ── */
+/* ── Tablet: shrink the trigger ── */
 @media (max-width: 1100px) {
-    .search-wrap {
+    pagefind-modal-trigger {
         min-width: 0;
         max-width: 240px;
         padding: 6px 10px;
     }
-
-    .search-wrap .kbd {
-        display: none;
-    }
 }
 
-/* ── Mobile: hide the desktop bar entirely ──
-   mobileNav.js injects a full-width search row under the
-   top nav at ≤768px, so this desktop one is redundant. */
+/* ── Mobile: hide the desktop trigger entirely ──
+   mobileNav.js injects its own trigger under the top nav at ≤768px. */
 @media (max-width: 768px) {
-    .top-nav .nav-right .search-wrap {
+    .top-nav .nav-right pagefind-modal-trigger {
         display: none;
     }
 }

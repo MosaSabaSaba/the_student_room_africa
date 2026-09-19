@@ -1,38 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
    mobileNav.js
-       // Primary signal: a class on <body> (see list below). If a page
-    // doesn't have one yet, we fall back to guessing from the URL,
-    // so nothing breaks while you're still rolling classes out —
-    // but the class always wins when it's present, since it's
-    // unambiguous and the URL guess isn't.
-    //
-    //   nav-study-guides   → any Study Guide topic page
-    //   nav-tracker        → the Revision Tracker page
-    //   nav-question-bank  → the Question Bank + any Core/Extended
-    //                        practice-question pages under it
-    //   nav-past-papers    → the Past Papers page
-    //
-    // Example: <body class="nav-question-bank" data-root="../../../">
-═══════════════════════════════════════════════════════════════ */
+   WhatsApp-style mobile navigation for CONTENT PAGES ONLY.
+   ═══════════════════════════════════════════════════════════════ */
 (function () {
     const ROOT = document.body.getAttribute('data-root') || '';
 
-    // Primary signal: a class on <body> (see list below). If a page
-    // doesn't have one yet, we fall back to guessing from the URL,
-    // so nothing breaks while you're still rolling classes out —
-    // but the class always wins when it's present, since it's
-    // unambiguous and the URL guess isn't.
-    //
-    //   nav-study-guides   → any Study Guide topic page
-    //   nav-tracker        → the Revision Tracker page
-    //   nav-question-bank  → the Question Bank + any Core/Extended
-    //                        practice-question pages under it
-    //
-    // Past Papers is a special case since it's an anchor on the
-    // Tracker page (#past-papers), not its own page — that's always
-    // detected from the URL hash, no class needed for it.
-    //
-    // Example: <body class="nav-question-bank" data-root="../../../">
     const NAV_ITEMS = [
         {
             label: 'Study Guides',
@@ -58,32 +30,20 @@
         {
             label: 'Past Papers',
             href: ROOT + 'pages/lesotho/past-papers.html',
-            bodyClass: 'nav-past-papers', 
+            bodyClass: 'nav-past-papers',
             match: ['past-paper'],
             icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>'
         }
     ];
 
     function detectActiveIndex() {
-        // 1) Class on <body> — authoritative when present.
-        //    Every section (Study Guides, Tracker, Question Bank,
-        //    Past Papers) now has its own nav-* class, so this is the
-        //    primary signal everywhere.
         for (let i = 0; i < NAV_ITEMS.length; i++) {
             const cls = NAV_ITEMS[i].bodyClass;
             if (cls && document.body.classList.contains(cls)) return i;
         }
 
-        // 2) Fallback: guess from the URL for pages that don't have a
-        //    nav-* class yet. Question Bank is checked before Study
-        //    Guides because a Core/Extended practice-question page can
-        //    legitimately contain a topic word like "functions" in its
-        //    filename while actually belonging to Question Bank —
-        //    checking the more specific folder-based signals first
-        //    avoids that false positive. Past Papers is checked early
-        //    too, since its filename ("past-papers") is unambiguous.
         const path = window.location.pathname.toLowerCase();
-        const fallbackOrder = [2, 1, 3, 0]; // Question Bank, Tracker, Past Papers, Study Guides
+        const fallbackOrder = [2, 1, 3, 0];
         for (const i of fallbackOrder) {
             for (const key of NAV_ITEMS[i].match) {
                 if (path.indexOf(key) !== -1) return i;
@@ -125,34 +85,16 @@
 
         const row = document.createElement('div');
         row.className = 'mobile-search-row';
-        row.innerHTML =
-            '<div class="mobile-search-wrap">' +
-                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' +
-                '<input type="text" class="mobile-search-input" placeholder="Search topics..." aria-label="Search">' +
-            '</div>';
+        // Use Pagefind's trigger on mobile too — same modal as desktop
+        row.innerHTML = '<pagefind-modal-trigger aria-label="Search"></pagefind-modal-trigger>';
 
         topNav.insertAdjacentElement('afterend', row);
-
-        // Hook: listen for this event anywhere else in your app to wire
-        // up real search results, or swap this for a redirect to a
-        // dedicated search page.
-        const input = row.querySelector('.mobile-search-input');
-        input.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' && input.value.trim()) {
-                document.dispatchEvent(new CustomEvent('site:search', {
-                    detail: { query: input.value.trim() }
-                }));
-            }
-        });
     }
 
     function restyleHamburgerIcon() {
         const hamburgerBtn = document.getElementById('hamburgerBtn');
         if (!hamburgerBtn) return;
 
-        // Swap the plain ☰ for a "sidebar" icon — a panel with a topics
-        // column — so it reads as "open the list of topics/sections"
-        // rather than a generic, unclear menu icon.
         hamburgerBtn.innerHTML =
             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
             'stroke-linecap="round" stroke-linejoin="round">' +
