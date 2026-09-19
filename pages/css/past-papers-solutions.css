@@ -1,0 +1,89 @@
+
+/* ══════════════════════════════════════════════════════════════
+SOLUTIONS — expandable step-by-step answer blocks
+══════════════════════════════════════════════════════════════ */
+
+.solution {
+    margin: 0.75rem 0 1rem 0;
+    padding: 0.85rem 1.1rem;
+    background: var(--bg-tertiary);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    font-family: var(--font);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--text-body);
+}
+
+.solution > summary {
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    list-style: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.solution > summary::-webkit-details-marker { display: none; }
+
+.solution > summary::before {
+    content: '▸';
+    display: inline-block;
+    color: var(--accent);
+    font-size: 0.9rem;
+    transition: transform 0.15s ease;
+}
+
+.solution[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.solution[open] > summary {
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.solution p {
+    margin: 0.5rem 0;
+}
+
+.solution strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.solution ol,
+.solution ul {
+    margin: 0.5rem 0 0.5rem 1.25rem;
+    padding-left: 0;
+}
+
+.solution li {
+    margin-bottom: 0.35rem;
+}
+
+.solution .final-answer {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.6rem;
+    background: var(--accent-bg);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.solution .working {
+    margin: 0.4rem 0 0.4rem 1rem;
+    color: var(--text-secondary);
+}
+
+.solution math {
+    font-size: 1.05em;
+}
