@@ -1,37 +1,18 @@
 /* ═══════════════════════════════════════════════════════════════
    mobileNav.js
-   WhatsApp-style mobile navigation for CONTENT PAGES ONLY.
-
-   Attach this file (alongside mobileNav.css) only on pages where
-   reducing nav clutter matters — topic/lesson pages, tracker,
-   question bank, etc. Do NOT attach it to the homepage or other
-   landing pages; those should keep their full nav at every width.
-
-   Requires:
-     - contentScript.js already loaded on the page (this file relies
-       on hamburgerBtn/leftSidebar/sidebarOverlay already existing,
-       and just re-skins the icon — it doesn't create the toggle).
-     - contentStyles.css AND mobileNav.css both loaded (for the CSS
-       variables and the hidden/shown rules at the 768px breakpoint).
-
-   This builds and inserts:
-     1. A bottom tab bar with your 4 main features
-     2. A search bar row under the top nav (mobile only)
-     3. A restyled "sidebar" icon on the hamburger button
-
-   All three are hidden on desktop via mobileNav.css, so including
-   this file doesn't change anything above the 768px breakpoint.
-
-   IMPORTANT — path depth:
-   Your site uses relative links (e.g. "pages/lesotho/tracker.html"),
-   so a page's distance from the site root changes what the links
-   need to look like. Tell this script how deep the current page is
-   by adding a `data-root` attribute to <body>:
-
-     <body data-root="../../">       → for pages/lesotho/tracker.html
-     <body data-root="../../../">    → for pages/lesotho/questionBank/question-bank.html
-
-   If you don't add the attribute, ROOT defaults to "" (root-level).
+       // Primary signal: a class on <body> (see list below). If a page
+    // doesn't have one yet, we fall back to guessing from the URL,
+    // so nothing breaks while you're still rolling classes out —
+    // but the class always wins when it's present, since it's
+    // unambiguous and the URL guess isn't.
+    //
+    //   nav-study-guides   → any Study Guide topic page
+    //   nav-tracker        → the Revision Tracker page
+    //   nav-question-bank  → the Question Bank + any Core/Extended
+    //                        practice-question pages under it
+    //   nav-past-papers    → the Past Papers page
+    //
+    // Example: <body class="nav-question-bank" data-root="../../../">
 ═══════════════════════════════════════════════════════════════ */
 (function () {
     const ROOT = document.body.getAttribute('data-root') || '';
@@ -76,34 +57,33 @@
         },
         {
             label: 'Past Papers',
-            href: ROOT + 'pages/lesotho/tracker.html#past-papers',
-            bodyClass: null, // always detected via URL hash — see detectActiveIndex()
+            href: ROOT + 'pages/lesotho/past-papers.html',
+            bodyClass: 'nav-past-paers', 
             match: ['past-paper'],
             icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>'
         }
     ];
 
     function detectActiveIndex() {
-        // Past Papers lives on the same page as Tracker (an anchor,
-        // not a separate document), so the hash is checked before
-        // anything else — no class can override this one.
-        if (window.location.hash.toLowerCase() === '#past-papers') return 3;
-
         // 1) Class on <body> — authoritative when present.
+        //    Every section (Study Guides, Tracker, Question Bank,
+        //    Past Papers) now has its own nav-* class, so this is the
+        //    primary signal everywhere.
         for (let i = 0; i < NAV_ITEMS.length; i++) {
             const cls = NAV_ITEMS[i].bodyClass;
             if (cls && document.body.classList.contains(cls)) return i;
         }
 
-        // 2) Fallback: guess from the URL for pages without a class
-        // yet. Question Bank and Tracker are checked before Study
-        // Guides here, since a Core/Extended practice-question page
-        // can legitimately contain a topic word like "functions" in
-        // its filename while actually belonging to Question Bank —
-        // checking the more specific folder-based signals first
-        // avoids that false positive.
+        // 2) Fallback: guess from the URL for pages that don't have a
+        //    nav-* class yet. Question Bank is checked before Study
+        //    Guides because a Core/Extended practice-question page can
+        //    legitimately contain a topic word like "functions" in its
+        //    filename while actually belonging to Question Bank —
+        //    checking the more specific folder-based signals first
+        //    avoids that false positive. Past Papers is checked early
+        //    too, since its filename ("past-papers") is unambiguous.
         const path = window.location.pathname.toLowerCase();
-        const fallbackOrder = [2, 1, 0]; // Question Bank, Tracker, Study Guides
+        const fallbackOrder = [2, 1, 3, 0]; // Question Bank, Tracker, Past Papers, Study Guides
         for (const i of fallbackOrder) {
             for (const key of NAV_ITEMS[i].match) {
                 if (path.indexOf(key) !== -1) return i;
