@@ -125,23 +125,7 @@ a:hover { text-decoration: underline; }
     gap: 8px;
     margin-left: auto;
 }
-.search-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 6px 12px;
-    color: var(--text-muted);
-    font-family: var(--font);
-    font-size: 0.8125rem;
-    cursor: pointer;
-    white-space: nowrap;
-}
-.search-btn:hover { border-color: #444; color: var(--text-secondary); }
-.search-icon { font-size: 0.85rem; }
-.kbd { background: var(--bg); border: 1px solid var(--border); border-radius: 3px; padding: 1px 5px; font-size: 0.7rem; }
+
 .nav-icon-btn {
     background: none;
     border: none;
@@ -159,6 +143,93 @@ a:hover { text-decoration: underline; }
 
 .blog-link { color: var(--text-secondary); font-size: 0.875rem; font-weight: 500; }
 .blog-link:hover { color: var(--text-primary); text-decoration: none; }
+
+/* ══════════════════════════════════════════════════════════════
+   SEARCH — desktop nav search bar
+   Mirrors the mobile search row injected by mobileNav.js
+   ══════════════════════════════════════════════════════════════ */
+.search-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 12px;
+    min-width: 220px;
+    max-width: 340px;
+    flex: 1;
+    transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.search-wrap:hover {
+    border-color: #444;
+}
+
+.search-wrap:focus-within {
+    border-color: var(--accent);
+    background: var(--bg-secondary);
+}
+
+.search-icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+}
+
+.search-wrap:focus-within .search-icon {
+    color: var(--accent);
+}
+
+.search-input {
+    flex: 1;
+    min-width: 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 0.875rem;
+}
+
+.search-input::placeholder {
+    color: var(--text-muted);
+}
+
+.search-wrap .kbd {
+    flex-shrink: 0;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1px 5px;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+/* ── Tablet: shrink the bar, hide the kbd hint ── */
+@media (max-width: 1100px) {
+    .search-wrap {
+        min-width: 0;
+        max-width: 240px;
+        padding: 6px 10px;
+    }
+
+    .search-wrap .kbd {
+        display: none;
+    }
+}
+
+/* ── Mobile: hide the desktop bar entirely ──
+   mobileNav.js injects a full-width search row under the
+   top nav at ≤768px, so this desktop one is redundant. */
+@media (max-width: 768px) {
+    .top-nav .nav-right .search-wrap {
+        display: none;
+    }
+}
 
 /* ── SCRIMBA BANNER ── */
 .scrimba-banner {
@@ -456,11 +527,11 @@ a:hover { text-decoration: underline; }
 ══════════════════════════════════════════════ */
 h1 {
     font-family: var(--font-heading);
-    /* font-size: 2.75rem; */
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 2.2rem;
     letter-spacing: -0.01em;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin: 0 0 0.4rem 0;
 }
 
 h2 {
@@ -485,10 +556,6 @@ h3 {
     text-transform: uppercase;
 }
 
-h4 { 
-   color: var(--text-primary);
-}
-
 h4 {
     font-family: var(--font-heading);
     font-weight: 600;
@@ -498,23 +565,16 @@ h4 {
     letter-spacing: -0.2px;
 }
 
-p strong { font-weight: 700; }
-p em { font-style: italic; }
-
-h1 {
-    font-weight: 700;
-    font-size: 2.2rem;
-    margin: 0 0 0.4rem 0;
-    letter-spacing: -0.01em;
-}
-
 p {
     margin: 0;
     color: var(--text-body);
     font-size: 1rem;
     line-height: 1.5;
 }
-       
+
+p strong { font-weight: 700; }
+p em { font-style: italic; }
+
 @media (max-width: 640px) {
     .page-body {
         padding: 1rem 0;
@@ -734,6 +794,3 @@ table {
     .footer-content { grid-template-columns: 1fr; gap: 1rem; }
     .site-footer { padding: 1.5rem 1rem 1rem; }
 }
-
-
-
