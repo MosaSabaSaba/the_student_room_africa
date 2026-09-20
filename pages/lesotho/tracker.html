@@ -10,7 +10,7 @@
     <script src="/pagefind/pagefind-component-ui.js" type="module"></script>
     <link rel="stylesheet" href="../../../css/pagefind-theme.css" />
 
-    <style>
+        <style>
         /* ----- CONTAINER BEHAVIOR: centered on large screens, full width on small ----- */
         .custom-container {
             max-width: 1200px;
@@ -65,7 +65,7 @@
            ══════════════════════════════════════════════════════ */
         .tracker-header-cols {
             display: grid;
-            grid-template-columns: 1fr auto auto;
+            grid-template-columns: minmax(0, 1fr) auto auto;
             gap: 0.75rem;
             padding: 0 1rem 0.5rem 1rem;
             margin-top: 1.5rem;
@@ -128,10 +128,11 @@
             margin-bottom: 0.6rem;
             padding: 0.85rem 1rem;
             display: grid;
-            grid-template-columns: 1fr auto auto;
+            grid-template-columns: minmax(0, 1fr) auto auto;
             grid-template-areas: "topic watched notwatched";
             align-items: center;
             gap: 0.75rem;
+            min-width: 0;
             transition: border-color 0.15s ease, background-color 0.15s ease;
         }
 
@@ -154,6 +155,8 @@
             line-height: 1.35;
             color: var(--text-body);
             word-break: break-word;
+            min-width: 0;
+            overflow-wrap: anywhere;
         }
 
         /* Topic link — body text color, not the global blue link */
@@ -208,26 +211,28 @@
             }
             .tracker-header-cols {
                 padding: 0 0.85rem 0.4rem 0.85rem;
-                gap: 0.6rem;
+                gap: 0.5rem;
             }
             .tracker-header-cols .col-watched {
-                min-width: 50px;
+                min-width: 40px;
             }
             .tracker-header-cols .col-notwatched {
-                min-width: 75px;
+                min-width: 60px;
             }
             tr.page-row {
                 padding: 0.75rem 0.85rem;
-                gap: 0.6rem;
+                gap: 0.5rem;
             }
             td:nth-child(1) {
                 font-size: 0.85rem;
+                min-width: 0;
+                overflow-wrap: anywhere;
             }
             td:nth-child(2) {
-                min-width: 50px;
+                min-width: 40px;
             }
             td:nth-child(3) {
-                min-width: 75px;
+                min-width: 60px;
             }
         }
 
