@@ -299,7 +299,7 @@
             border-bottom: 1px solid var(--line);
         }
 
-        .dot { width: 10px; height: 10px; border-radius: 50%; }
+        .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
         .dot-r { background: #f87171; }
         .dot-y { background: #fbbf24; }
         .dot-g { background: #4ade80; }
@@ -309,6 +309,10 @@
             font-size: 11px;
             color: var(--grey);
             margin-left: auto;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         .demo-body { padding: 24px; }
@@ -358,6 +362,7 @@
             color: var(--electric);
             padding: 3px 8px;
             border-radius: 4px;
+            white-space: nowrap;
         }
 
         .demo-output-block {
@@ -393,6 +398,7 @@
             border-radius: 50%;
             background: var(--electric);
             box-shadow: 0 0 8px var(--electric);
+            flex-shrink: 0;
         }
 
         /* ─── SECTION WRAPPER ─── */
@@ -1056,6 +1062,60 @@
             .footer-section:nth-child(1),
             .footer-section:nth-child(2) { display: none; }
             .footer-bottom { flex-direction: column; align-items: flex-start; }
+        }
+
+        /* ══════════════════════════════════════════════════════
+           FINER MOBILE BREAKPOINTS
+           Fixes real overflow (nav bar, demo card titlebar,
+           hero stats) and trims decorative-only elements on
+           the smallest phones (Samsung J4 Core territory).
+           ══════════════════════════════════════════════════════ */
+
+        /* ≤480px — Small phones */
+        @media (max-width: 480px) {
+            nav { padding: 14px 16px; gap: 8px; }
+            .nav-logo {
+                font-size: 16px;
+                min-width: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .hero { padding: 110px 16px 48px; }
+            .hero-stats { flex-wrap: wrap; row-gap: 20px; }
+            .quote-marks { font-size: 56px; margin-bottom: 20px; }
+            .step-num { font-size: 38px; margin-bottom: 16px; }
+        }
+
+        /* ≤400px — Very small phones */
+        @media (max-width: 400px) {
+            nav { padding: 12px 14px; }
+            .nav-logo { font-size: 14px; gap: 6px; }
+            /* Decorative badge only — first thing to go once
+               the nav genuinely can't fit both items. */
+            .nav-pill { display: none; }
+            h1 { font-size: 30px; letter-spacing: -1px; }
+            .hero-sub { font-size: 15px; }
+            .demo-titlebar-label { font-size: 10px; }
+        }
+
+        /* ≤360px — J4 Core territory, the floor for common devices still in use */
+        @media (max-width: 360px) {
+            .hero { padding: 100px 14px 40px; }
+            .stat-n { font-size: 19px; }
+            .stat-l { font-size: 9px; }
+            .demo-body { padding: 16px; }
+            .demo-titlebar { padding: 10px 14px; }
+            .quote-marks { font-size: 44px; margin-bottom: 16px; }
+            .quote-text { line-height: 1.4; }
+        }
+
+        /* ≤320px — iPhone 5 / SE 1st gen, nearly extinct but exists */
+        @media (max-width: 320px) {
+            .nav-logo { font-size: 13px; }
+            h1 { font-size: 26px; }
+            .btn-primary, .btn-ghost { font-size: 13px; padding: 12px 20px; }
+            .feat { padding: 24px 20px; }
         }
 
         /* ─── SCROLL REVEALS ─── */

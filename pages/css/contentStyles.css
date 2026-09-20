@@ -34,6 +34,7 @@
     --font-heading: 'Manrope', 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', 'Courier New', monospace;
     --drop-speed: 0.22s;
+    --topnav-height: 60px;
 }
 
 /* ============================================================
@@ -63,7 +64,7 @@ a:hover { text-decoration: underline; }
     position: sticky;
     top: 0;
     z-index: 100;
-    height: 60px;
+    height: var(--topnav-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,6 +81,9 @@ a:hover { text-decoration: underline; }
     white-space: nowrap;
     text-decoration: none;
     letter-spacing: 0;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .logo-m { font-size: 1.3rem; color: #fff; }
 .logo-mdn { color: #fff; }
@@ -596,7 +600,7 @@ ul { margin-left: 2rem; }
         width: 270px;
         border-right: 1px solid var(--border);
         background: var(--nav-bg);
-        padding-top: 60px;
+        padding-top: var(--topnav-height);
     }
     .left-sidebar.open { left: 0; }
     .hamburger { display: flex; }
@@ -721,4 +725,54 @@ table {
 @media (max-width: 480px) {
     .footer-content { grid-template-columns: 1fr; gap: 1rem; }
     .site-footer { padding: 1.5rem 1rem 1rem; }
+}
+
+/* ══════════════════════════════════════════════════════
+   FINER MOBILE BREAKPOINTS
+   Real low-end devices (Samsung J4 Core, older/small
+   Androids, iPhone SE) sit well below the 480px cutoff
+   above. Each step shrinks the top nav and logo further
+   so nothing overflows or wraps onto a second line.
+   ══════════════════════════════════════════════════════ */
+
+/* ≤480px — Small phones (iPhone SE, older Androids) */
+@media (max-width: 480px) {
+    :root { --topnav-height: 54px; }
+    .top-nav { padding: 0 12px; gap: 8px; }
+    .logo { gap: 3px; }
+    .logo-m { font-size: 1.05rem; }
+    .breadcrumb-bar { font-size: 0.8rem; padding: 8px 16px; }
+}
+
+/* ≤400px — Very small phones */
+@media (max-width: 400px) {
+    :root { --topnav-height: 50px; }
+    .top-nav { padding: 0 10px; gap: 6px; }
+    .logo-m { font-size: 0.95rem; }
+    .hamburger { width: 32px; height: 32px; padding: 4px; }
+}
+
+/* ≤360px — J4 Core territory, the floor for common devices still in use */
+@media (max-width: 360px) {
+    :root { --topnav-height: 48px; }
+    .top-nav { padding: 0 8px; gap: 4px; }
+    .logo { gap: 2px; }
+    .logo-m { font-size: 0.85rem; }
+    .breadcrumb-bar { font-size: 0.72rem; padding: 6px 10px; }
+    .hamburger { width: 30px; height: 30px; }
+}
+
+/* ≤320px — iPhone 5 / SE 1st gen, nearly extinct but exists */
+@media (max-width: 320px) {
+    .top-nav { padding: 0 6px; gap: 3px; }
+    /* At this width there just isn't room for the full name next
+       to a hamburger and search icon. Abbreviate instead of
+       shrinking past legibility. The full text stays in the DOM
+       (font-size: 0 hides it visually, not from screen readers),
+       so "Student Room Africa" is still what gets announced. */
+    .logo-m { font-size: 0; }
+    .logo-m::after {
+        content: "SRA";
+        font-size: 0.95rem;
+    }
 }
