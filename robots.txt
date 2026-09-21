@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block Pagefind's internal files from being indexed as pages
+Disallow: /pagefind/
+
+Sitemap: https://thestudentroom.africa/sitemap.xml
