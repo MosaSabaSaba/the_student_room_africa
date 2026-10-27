@@ -3,7 +3,10 @@ name: Generate Sitemap
 on:
   push:
     branches:
-      - main  # Change this to 'master' if your main branch is called master
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   sitemap_job:
